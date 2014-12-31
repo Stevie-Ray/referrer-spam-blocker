@@ -143,6 +143,5 @@ RewriteRule ^ – [F]
 Order allow,deny
 Allow from all
 Deny from env=spammer
-deny from 217.23.11.15
-deny from 217.23.7.130
+Deny from 217.23.7.130
 </IfModule>
