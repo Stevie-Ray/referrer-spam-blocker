@@ -55,7 +55,9 @@ RewriteCond %{HTTP_REFERER} ^http://.*kambasoft\.com/ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http://.*buttons\-for\-website\.com [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http://.*semalt\.com/ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http://.*srecorder\.com/ [NC,OR]
+RewriteCond %{HTTP_REFERER} ^http://.*openfrost\.com/ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http://.*forum\.topic16443549\.darodar\.com [NC,OR]
+RewriteCond %{HTTP_REFERER} ^http://.*forum\.topic48373797\.darodar\.com [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http://.*7makemoneyonline\.com/ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http://.make\-money\-online\.7makemoneyonline\.com/ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?.forum.topic16443549.darodar.com [NC,OR]
@@ -91,6 +93,7 @@ RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?.jasonpartington.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?.constantaservice.net.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?.mountainstream.ms.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?.mainlinehobby.net.*$ [NC,OR]
+RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?.priceg.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?.twincitiescarservice.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?.notaria-desalas.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?.williamrobsonproperty.com.*$ [NC,OR]
@@ -121,6 +124,7 @@ RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?.medi-fitt.hu.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?.thepokertimer.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?.abovetherivernc.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?.uzungil.com.*$ [NC,OR]
+RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?.ilovevitaly\.co.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?.hostingclub.lk.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?.invivo.hu.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?.freeseedsonline.com.*$ [NC,OR]
@@ -131,6 +135,13 @@ RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?.kambasoft.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?.srecorder.com.*$ [NC]
 RewriteRule ^(.*)$ – [F,L]
 
+SetEnvIfNoCase Referer ilovevitaly.com spambot=yes
+SetEnvIfNoCase Referer ilovevitaly.ru spambot=yes
+SetEnvIfNoCase Referer ilovevitaly.org spambot=yes
+SetEnvIfNoCase Referer ilovevitaly.info spambot=yes
+SetEnvIfNoCase Referer ilovevitaly.co spambot=yes
+SetEnvIfNoCase Referer shopping.ilovevitaly.ru spambot=yes
+SetEnvIfNoCase Referer maps.ilovevitaly.com spambot=yes
 SetEnvIfNoCase Referer darodar.com spambot=yes
 SetEnvIfNoCase Referer semalt.com spammer=yes
 SetEnvIfNoCase Referer make-money-online.7makemoneyonline.com spammer=yes
