@@ -105,7 +105,7 @@ RewriteCond% {HTTP_REFERER} ^http(s)://(.. * \)*website-errors-scanner\.com.*$ [
 RewriteCond% {HTTP_REFERER} ^http(s)://(.. * \)*williamrobsonproperty\.com.*$ [NC,OR]
 RewriteCond% {HTTP_REFERER} ^http(s)://(.. * \)*youtubedownload\.org.*$ [NC,OR]
 RewriteCond% {HTTP_REFERER} ^http(s)://(.. * \)*zazagames\.org.*$ [NC,OR]
-RewriteCond% {HTTP_REFERER} ^http(s)://(.. * \)*zverokruh-shop\.cz.*$ [NC,OR]
+RewriteCond% {HTTP_REFERER} ^http(s)://(.. * \)*zverokruh-shop\.cz.*$ [NC]
 RewriteRule ^(.*)$ – [F,L]
 
 SetEnvIfNoCase Referer 7makemoneyonline.com spambot=yes
