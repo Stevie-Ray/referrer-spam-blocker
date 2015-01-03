@@ -2,7 +2,7 @@ Options -Indexes
 
 <IfModule mod_rewrite.c>
 RewriteEngine On
-RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?makemoneyonline\.com.*$ [NC,OR]
+RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?7makemoneyonline\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?abovetherivernc\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?adelly\.bg.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?alessandraleone\.com.*$ [NC,OR]
