@@ -126,10 +126,33 @@ SetEnvIfNoCase Referer ilovevitaly.co spambot=yes
 SetEnvIfNoCase Referer shopping.ilovevitaly.ru spambot=yes
 SetEnvIfNoCase Referer maps.ilovevitaly.com spambot=yes
 SetEnvIfNoCase Referer darodar.com spambot=yes
-SetEnvIfNoCase Referer semalt.com spammer=yes
-SetEnvIfNoCase Referer make-money-online.7makemoneyonline.com spammer=yes
-SetEnvIfNoCase Referer st3.cwl.yahoo.com spammer=yes
-SetEnvIfNoCase Referer buttons-for-website.com spammer=yes
+SetEnvIfNoCase Referer semalt.com spambot=yes
+SetEnvIfNoCase Referer priceg.com spambot=yes
+SetEnvIfNoCase Referer make-money-online.7makemoneyonline.com spambot=yes
+SetEnvIfNoCase Referer st3.cwl.yahoo.com spambot=yes
+SetEnvIfNoCase Referer buttons-for-website.com spambot=yes
+SetEnvIfNoCase Referer 7makemoneyonline.com spambot=yes
+SetEnvIfNoCase Referer myftpupload.com spambot=yes
+SetEnvIfNoCase Referer econom.co spambot=yes
+SetEnvIfNoCase Referer iskalko.ru spambot=yes
+SetEnvIfNoCase Referer o-o-8-o-o.ru spambot=yes
+SetEnvIfNoCase Referer o-o-6-o-o.ru spambot=yes
+SetEnvIfNoCase Referer cenoval.ru spambot=yes
+SetEnvIfNoCase Referer cenokos.ru spambot=yes
+SetEnvIfNoCase Referer seoexperimenty.ru spambot=yes
+SetEnvIfNoCase Referer gobongo.info spambot=yes
+SetEnvIfNoCase Referer vodkoved.ru spambot=yes
+SetEnvIfNoCase Referer adcash.com spambot=yes
+SetEnvIfNoCase Referer websocial.me spambot=yes
+SetEnvIfNoCase Referer cityadspix.com spambot=yes
+SetEnvIfNoCase Referer luxup.ru spambot=yes
+SetEnvIfNoCase Referer ykecwqlixx.ru spambot=yes
+SetEnvIfNoCase Referer superiends.org spambot=yes
+SetEnvIfNoCase Referer slftsdybbg.ru spambot=yes
+SetEnvIfNoCase Referer edakgfvwql.ru spambot=yes
+SetEnvIfNoCase Referer socialseet.ru spambot=yes
+SetEnvIfNoCase Referer screentoolkit.com spambot=yes
+SetEnvIfNoCase Referer savetubevideo.com spambot=yes
 
 RewriteEngine on
 RewriteCond %{HTTP_USER_AGENT} NerdyBot [NC,OR]
@@ -142,6 +165,6 @@ RewriteRule ^ – [F]
 
 Order allow,deny
 Allow from all
-Deny from env=spammer
+Deny from env=spambot
 Deny from 217.23.7.130
 </IfModule>
