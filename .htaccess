@@ -43,8 +43,8 @@ RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?hostcritique\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?hostingclub.lk.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?houseofrose\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?ilovevitaly\.co.*$ [NC,OR]
-RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?ilovevitaly\.co.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?ilovevitaly\.com.*$ [NC,OR]
+RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?ilovevitaly\.ru.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?iminent\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?invivo.hu.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?istanbulit\.com.*$ [NC,OR]
@@ -83,6 +83,7 @@ RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?realting-moscow\.ru.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?retreatia\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?savetubevideo\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?semalt\.com.*$ [NC,OR]
+RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?setioweb\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?softomix\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?softomix\.net.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?softomix\.ru.*$ [NC,OR]
@@ -117,7 +118,9 @@ RewriteRule ^ – [F]
 
 </IfModule>
 
-# MARK SPAM DOMAINS AS SPAMBOT
+<IfModule mod_setenvif.c>
+
+# MARK SPAM DOMAINS/IP AS SPAMBOT
 SetEnvIfNoCase Referer 7makemoneyonline.com spambot=yes
 SetEnvIfNoCase Referer acunetix-referrer.com spambot=yes
 SetEnvIfNoCase Referer adcash.com spambot=yes
@@ -129,6 +132,7 @@ SetEnvIfNoCase Referer darodar.com spambot=yes
 SetEnvIfNoCase Referer econom.co spambot=yes
 SetEnvIfNoCase Referer edakgfvwql.ru spambot=yes
 SetEnvIfNoCase Referer gobongo.info spambot=yes
+SetEnvIfNoCase Referer iedit.ilovevitaly.com spambot=yes
 SetEnvIfNoCase Referer ilovevitaly.com spambot=yes
 SetEnvIfNoCase Referer ilovevitaly.co spambot=yes
 SetEnvIfNoCase Referer ilovevitaly.info spambot=yes
@@ -142,6 +146,7 @@ SetEnvIfNoCase Referer myftpupload.com spambot=yes
 SetEnvIfNoCase Referer o-o-6-o-o.ru spambot=yes
 SetEnvIfNoCase Referer o-o-8-o-o.ru spambot=yes
 SetEnvIfNoCase Referer priceg.com spambot=yes
+SetEnvIfNoCase Referer responsinator.com spambot=yes
 SetEnvIfNoCase Referer годом.рф spambot=yes
 SetEnvIfNoCase Referer savetubevideo.com spambot=yes
 SetEnvIfNoCase Referer screentoolkit.com spambot=yes
@@ -158,10 +163,13 @@ SetEnvIfNoCase Referer websocial.me spambot=yes
 SetEnvIfNoCase Referer ykecwqlixx.ru spambot=yes
 SetEnvIfNoCase Referer yougetsignal.com spambot=yes
 
+SetEnvIfNoCase REMOTE_ADDR "217\.23\.7\.130" spambot=yes
+SetEnvIfNoCase REMOTE_ADDR "78\.110\.60\.230" spambot=yes
+SetEnvIfNoCase REMOTE_ADDR "193\.227\.240\.37" spambot=yes
+SetEnvIfNoCase REMOTE_ADDR "193\.227\.240\.38" spambot=yes
+
 Order allow,deny
 Allow from all
 Deny from env=spambot
-Deny from 217.23.7.130
-Deny from 78.110.60.230
-Deny from 193.227.240.37
-Deny from 193.227.240.38
+
+</IfModule>
