@@ -75,6 +75,7 @@ RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?openfrost\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?openfrost\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?openmediasoft\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?priceg\.com.*$ [NC,OR]
+RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?rодом.рф\.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?princeadvantagesales\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?pyrodesigns.com.au.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?realting-moscow\.ru.*$ [NC,OR]
@@ -132,6 +133,7 @@ SetEnvIfNoCase Referer myftpupload.com spambot=yes
 SetEnvIfNoCase Referer o-o-6-o-o.ru spambot=yes
 SetEnvIfNoCase Referer o-o-8-o-o.ru spambot=yes
 SetEnvIfNoCase Referer priceg.com spambot=yes
+SetEnvIfNoCase Referer годом.рф spambot=yes
 SetEnvIfNoCase Referer savetubevideo.com spambot=yes
 SetEnvIfNoCase Referer screentoolkit.com spambot=yes
 SetEnvIfNoCase Referer semalt.com spambot=yes
@@ -160,4 +162,7 @@ Order allow,deny
 Allow from all
 Deny from env=spambot
 Deny from 217.23.7.130
+Deny from 78.110.60.230
+Deny from 193.227.240.37
+Deny from 193.227.240.38
 </IfModule>
