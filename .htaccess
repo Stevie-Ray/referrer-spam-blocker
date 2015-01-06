@@ -1,6 +1,7 @@
 Options -Indexes
 
 <IfModule mod_rewrite.c>
+
 RewriteEngine On
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?7makemoneyonline\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?abovetherivernc\.com.*$ [NC,OR]
@@ -109,6 +110,14 @@ RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?zazagames\.org.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?zverokruh-shop\.cz.*$ [NC]
 RewriteRule ^(.*)$ – [F,L]
 
+# BLOCK BLANK USER AGENTS (YOU CAN REMOVE THIS)
+RewriteEngine on
+RewriteCond %{HTTP_USER_AGENT} ^-?$
+RewriteRule ^ – [F]
+
+</IfModule>
+
+# MARK SPAM DOMAINS AS SPAMBOT
 SetEnvIfNoCase Referer 7makemoneyonline.com spambot=yes
 SetEnvIfNoCase Referer acunetix-referrer.com spambot=yes
 SetEnvIfNoCase Referer adcash.com spambot=yes
@@ -149,15 +158,6 @@ SetEnvIfNoCase Referer websocial.me spambot=yes
 SetEnvIfNoCase Referer ykecwqlixx.ru spambot=yes
 SetEnvIfNoCase Referer yougetsignal.com spambot=yes
 
-RewriteEngine on
-RewriteCond %{HTTP_USER_AGENT} NerdyBot [NC,OR]
-RewriteCond %{HTTP_USER_AGENT} Validator.nu/LV [NC]
-RewriteRule !^robots\.txt$ – [F]
-
-# BLOCK BLANK USER AGENTS
-RewriteCond %{HTTP_USER_AGENT} ^-?$
-RewriteRule ^ – [F]
-
 Order allow,deny
 Allow from all
 Deny from env=spambot
@@ -165,4 +165,3 @@ Deny from 217.23.7.130
 Deny from 78.110.60.230
 Deny from 193.227.240.37
 Deny from 193.227.240.38
-</IfModule>
