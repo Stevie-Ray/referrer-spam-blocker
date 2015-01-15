@@ -118,11 +118,6 @@ RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?zazagames\.org.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?zverokruh-shop\.cz.*$ [NC]
 RewriteRule ^(.*)$ – [F,L]
 
-# BLOCK BLANK USER AGENTS (YOU CAN REMOVE THIS)
-RewriteEngine on
-RewriteCond %{HTTP_USER_AGENT} ^-?$
-RewriteRule ^ – [F]
-
 </IfModule>
 
 <IfModule mod_setenvif.c>
@@ -186,12 +181,13 @@ SetEnvIfNoCase Referer http://blackhatworth.com/marketing/lounge/730430-apple-co
 SetEnvIfNoCase User-Agent blackhatworth.com spambot=yes
 SetEnvIfNoCase User-Agent blackhatworth.com/marketing/lounge/730430-apple-com-analytics-referral-traffic.html spambot=yes
 
-
 SetEnvIfNoCase REMOTE_ADDR "217\.23\.11\.15" spambot=yes
 SetEnvIfNoCase REMOTE_ADDR "217\.23\.7\.144" spambot=yes
 SetEnvIfNoCase REMOTE_ADDR "78\.110\.60\.230" spambot=yes
 SetEnvIfNoCase REMOTE_ADDR "193\.227\.240\.37" spambot=yes
 SetEnvIfNoCase REMOTE_ADDR "193\.227\.240\.38" spambot=yes
+SetEnvIfNoCase REMOTE_ADDR "208\.82\.116\.137" spambot=yes
+SetEnvIfNoCase REMOTE_ADDR "208\.82\.116\.137" spambot=yes
 
 Order allow,deny
 Allow from all
