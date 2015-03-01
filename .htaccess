@@ -80,7 +80,7 @@ RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?myprintscreen\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?notaria-desalas\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?noumeda\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?openfrost\.com.*$ [NC,OR]
-RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?openfrost\.com.*$ [NC,OR]
+RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?o-o-6-o-o\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?openmediasoft\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?priceg\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?rодом.рф\.*$ [NC,OR]
@@ -153,6 +153,7 @@ SetEnvIfNoCase Referer make-money-online.7makemoneyonline.com spambot=yes
 SetEnvIfNoCase Referer maps.ilovevitaly.com spambot=yes
 SetEnvIfNoCase Referer myftpupload.com spambot=yes
 SetEnvIfNoCase Referer o-o-6-o-o.ru spambot=yes
+SetEnvIfNoCase Referer o-o-6-o-o.com spambot=yes
 SetEnvIfNoCase Referer o-o-8-o-o.ru spambot=yes
 SetEnvIfNoCase Referer priceg.com spambot=yes
 SetEnvIfNoCase Referer responsinator.com spambot=yes
@@ -171,29 +172,6 @@ SetEnvIfNoCase Referer vodkoved.ru spambot=yes
 SetEnvIfNoCase Referer websocial.me spambot=yes
 SetEnvIfNoCase Referer ykecwqlixx.ru spambot=yes
 SetEnvIfNoCase Referer yougetsignal.com spambot=yes
-
-# Test -> Seems to work..
-SetEnvIfNoCase Referer http://priceg.com/item/388/ spambot=yes
-SetEnvIfNoCase Referer priceg.com/item/388/ spambot=yes
-SetEnvIfNoCase User-Agent priceg.com spambot=yes
-SetEnvIfNoCase User-Agent priceg.com/item/388/ spambot=yes
-
-SetEnvIfNoCase Referer http://blackhatworth.com/marketing/lounge/730430-apple-com-analytics-referral-traffic.html spambot=yes
-SetEnvIfNoCase User-Agent blackhatworth.com spambot=yes
-SetEnvIfNoCase User-Agent blackhatworth.com/marketing/lounge/730430-apple-com-analytics-referral-traffic.html spambot=yes
-
-SetEnvIfNoCase Referer http://hulfingtonpost.com/2015/01/15/woman_revenge_6424828.html spambot=yes
-SetEnvIfNoCase User-Agent hulfingtonpost.com spambot=yes
-SetEnvIfNoCase User-Agent hulfingtonpost.com/2015/01/15/woman_revenge_6424828.html spambot=yes
-
-
-SetEnvIfNoCase REMOTE_ADDR "217\.23\.11\.15" spambot=yes
-SetEnvIfNoCase REMOTE_ADDR "217\.23\.7\.144" spambot=yes
-SetEnvIfNoCase REMOTE_ADDR "78\.110\.60\.230" spambot=yes
-SetEnvIfNoCase REMOTE_ADDR "193\.227\.240\.37" spambot=yes
-SetEnvIfNoCase REMOTE_ADDR "193\.227\.240\.38" spambot=yes
-SetEnvIfNoCase REMOTE_ADDR "208\.82\.116\.137" spambot=yes
-SetEnvIfNoCase REMOTE_ADDR "208\.82\.116\.137" spambot=yes
 
 Order allow,deny
 Allow from all
