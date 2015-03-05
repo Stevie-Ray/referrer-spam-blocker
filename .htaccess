@@ -49,6 +49,7 @@ RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?hostcritique\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?hostingclub.lk.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?houseofrose\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?hulfingtonpost\.com.*$ [NC,OR]
+RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?humanorightswatch\.org.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?ilovevitaly\.co.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?ilovevitaly\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?ilovevitaly\.ru.*$ [NC,OR]
@@ -141,6 +142,7 @@ SetEnvIfNoCase Referer edakgfvwql.ru spambot=yes
 SetEnvIfNoCase Referer fbdownloader.com spambot=yes
 SetEnvIfNoCase Referer gobongo.info spambot=yes
 SetEnvIfNoCase Referer hulfingtonpost.com spambot=yes
+SetEnvIfNoCase Referer humanorightswatch.org spambot=yes
 SetEnvIfNoCase Referer iedit.ilovevitaly.com spambot=yes
 SetEnvIfNoCase Referer ilovevitaly.com spambot=yes
 SetEnvIfNoCase Referer ilovevitaly.co spambot=yes
