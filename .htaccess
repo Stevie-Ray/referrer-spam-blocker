@@ -12,6 +12,7 @@ RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?aosheng\-tech\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?audiobangout\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?backgroundpictures\.net.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?bbtec\.net.*$ [NC,OR]
+RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?bestwebsitesawards\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?bkns\.vn.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?blackhatworth\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?buttons\-for\-website\.com.*$ [NC,OR]
@@ -130,6 +131,7 @@ SetEnvIfNoCase Referer 7makemoneyonline.com spambot=yes
 SetEnvIfNoCase Referer acunetix-referrer.com spambot=yes
 SetEnvIfNoCase Referer adcash.com spambot=yes
 SetEnvIfNoCase Referer baixar-musicas-gratis.com spambot=yes
+SetEnvIfNoCase Referer bestwebsitesawards.com spambot=yes
 SetEnvIfNoCase Referer blackhatworth.com spambot=yes
 SetEnvIfNoCase Referer buttons-for-website.com spambot=yes
 SetEnvIfNoCase Referer cenokos.ru spambot=yes
