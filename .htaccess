@@ -88,9 +88,12 @@ RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?princeadvantagesales\.com.*$ [NC
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?pyrodesigns.com.au.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?realting-moscow\.ru.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?retreatia\.com.*$ [NC,OR]
+RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?s\.click\.aliexpress\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?savetubevideo\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?semalt\.com.*$ [NC,OR]
+RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?site37\.social-buttons\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?setioweb\.com.*$ [NC,OR]
+RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?social-buttons\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?softomix\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?softomix\.net.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?softomix\.ru.*$ [NC,OR]
@@ -168,6 +171,7 @@ SetEnvIfNoCase Referer seoexperimenty.ru spambot=yes
 SetEnvIfNoCase Referer shopping.ilovevitaly.ru spambot=yes
 SetEnvIfNoCase Referer slftsdybbg.ru spambot=yes
 SetEnvIfNoCase Referer socialseet.ru spambot=yes
+SetEnvIfNoCase Referer social-buttons.com spambot=yes
 SetEnvIfNoCase Referer srecorder.com spambot=yes
 SetEnvIfNoCase Referer st3.cwl.yahoo.com spambot=yes
 SetEnvIfNoCase Referer superiends.org spambot=yes
