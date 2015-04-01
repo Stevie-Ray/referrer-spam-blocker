@@ -3,6 +3,7 @@ Options -Indexes
 <IfModule mod_rewrite.c>
 
 RewriteEngine On
+RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?4webmasters\.org.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?7makemoneyonline\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?abovetherivernc\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?adelly\.bg.*$ [NC,OR]
@@ -129,6 +130,7 @@ RewriteRule ^(.*)$ – [F,L]
 <IfModule mod_setenvif.c>
 
 # MARK SPAM DOMAINS/IP AS SPAMBOT
+SetEnvIfNoCase Referer 4webmasters.org spambot=yes
 SetEnvIfNoCase Referer 7makemoneyonline.com spambot=yes
 SetEnvIfNoCase Referer acunetix-referrer.com spambot=yes
 SetEnvIfNoCase Referer adcash.com spambot=yes
