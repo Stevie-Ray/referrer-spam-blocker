@@ -181,8 +181,13 @@ SetEnvIfNoCase Referer websocial.me spambot=yes
 SetEnvIfNoCase Referer ykecwqlixx.ru spambot=yes
 SetEnvIfNoCase Referer yougetsignal.com spambot=yes
 
+</IfModule>
+
+<IfModule mod_authz_host.c>
+
 Order allow,deny
 Allow from all
 Deny from env=spambot
 
 </IfModule>
+
