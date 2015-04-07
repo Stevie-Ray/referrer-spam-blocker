@@ -1,5 +1,3 @@
-Options -Indexes
-
 <IfModule mod_rewrite.c>
 
 RewriteEngine On
@@ -47,6 +45,7 @@ RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?freeseedsonline\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?fungirlsgames\.net.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?funnypica\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?Get-Free-Traffic-Now.com\.*$ [NC,OR]
+RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?googlsucks\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?gototal\.co.nz.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?h2monline\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?hostcritique\.com.*$ [NC,OR]
@@ -97,6 +96,10 @@ RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?retreatia\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?s\.click\.aliexpress\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?savetubevideo\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?semalt\.com.*$ [NC,OR]
+RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?site15\.social-buttons\.com.*$ [NC,OR]
+RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?site26\.social-buttons\.com.*$ [NC,OR]
+RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?site31\.social-buttons\.com.*$ [NC,OR]
+RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?site32\.social-buttons\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?site37\.social-buttons\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?setioweb\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?social-buttons\.com.*$ [NC,OR]
@@ -114,7 +117,6 @@ RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?teastory.co.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?thecoral\.com.br.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?thepokertimer\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?touchmods.fr.*$ [NC,OR]
-RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?twincitiescarservice\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?twincitiescarservice\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?urlopener.blogspot\.com.au.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?uzungil\.com.*$ [NC,OR]
@@ -134,7 +136,6 @@ RewriteRule ^(.*)$ – [F,L]
 
 <IfModule mod_setenvif.c>
 
-# MARK SPAM DOMAINS/IP AS SPAMBOT
 SetEnvIfNoCase Referer 4webmasters.org spambot=yes
 SetEnvIfNoCase Referer 7makemoneyonline.com spambot=yes
 SetEnvIfNoCase Referer acunetix-referrer.com spambot=yes
@@ -152,6 +153,7 @@ SetEnvIfNoCase Referer econom.co spambot=yes
 SetEnvIfNoCase Referer edakgfvwql.ru spambot=yes
 SetEnvIfNoCase Referer fbdownloader.com spambot=yes
 SetEnvIfNoCase Referer forum20.smailik.org spambot=yes
+SetEnvIfNoCase Referer googlsucks.com spambot=yes
 SetEnvIfNoCase Referer gobongo.info spambot=yes
 SetEnvIfNoCase Referer hulfingtonpost.com spambot=yes
 SetEnvIfNoCase Referer humanorightswatch.org spambot=yes
