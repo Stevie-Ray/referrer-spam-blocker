@@ -13,11 +13,13 @@ RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?aosheng\-tech\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?audiobangout\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?backgroundpictures\.net.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?bbtec\.net.*$ [NC,OR]
+RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?best-seo-offer.com spambot=yes
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?best-seo-solution\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?bestwebsitesawards\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?bkns\.vn.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?blackhatworth\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?buttons\-for\-website\.com.*$ [NC,OR]
+RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?buy\-cheap\-online\.info.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?buypharmacydrug\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?cenoval\.ru.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?callejondelpozo\.es.*$ [NC,OR]
@@ -29,6 +31,7 @@ RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?constantaservice\.net.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?darodar\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?econom\.co.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?edelstahlschornstein-123\.de.*$ [NC,OR]
+RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?editors\.choice16443549\.hulfingtonpost.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?embedle\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?extener\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?family1st\.ca.*$ [NC,OR]
@@ -96,14 +99,14 @@ RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?retreatia\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?s\.click\.aliexpress\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?savetubevideo\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?semalt\.com.*$ [NC,OR]
-RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?site15\.social-buttons\.com.*$ [NC,OR]
-RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?site26\.social-buttons\.com.*$ [NC,OR]
-RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?site31\.social-buttons\.com.*$ [NC,OR]
-RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?site32\.social-buttons\.com.*$ [NC,OR]
-RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?site37\.social-buttons\.com.*$ [NC,OR]
+RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?site15\.social\-buttons\.com.*$ [NC,OR]
+RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?site26\.social\-buttons\.com.*$ [NC,OR]
+RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?site31\.social\-buttons\.com.*$ [NC,OR]
+RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?site32\.social\-buttons\.com.*$ [NC,OR]
+RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?site37\.social\-buttons\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?setioweb\.com.*$ [NC,OR]
-RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?social-buttons\.com.*$ [NC,OR]
-RewriteCond %{HTTP_REFERER} ^http(s)?://(www1\.)?social-buttons\.com.*$ [NC,OR]
+RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?social\-buttons\.com.*$ [NC,OR]
+RewriteCond %{HTTP_REFERER} ^http(s)?://(www1\.)?social\-buttons\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?softomix\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?softomix\.net.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?softomix\.ru.*$ [NC,OR]
@@ -115,6 +118,7 @@ RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?susanholtphotography\.com.*$ [NC
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?tastyfoodideas\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?teastory.co.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?thecoral\.com.br.*$ [NC,OR]
+RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?theguardlan.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?thepokertimer\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?touchmods.fr.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?twincitiescarservice\.com.*$ [NC,OR]
@@ -141,9 +145,13 @@ SetEnvIfNoCase Referer 7makemoneyonline.com spambot=yes
 SetEnvIfNoCase Referer acunetix-referrer.com spambot=yes
 SetEnvIfNoCase Referer adcash.com spambot=yes
 SetEnvIfNoCase Referer baixar-musicas-gratis.com spambot=yes
+SetEnvIfNoCase Referer best-seo-offer.com spambot=yes
+SetEnvIfNoCase Referer best-seo-solution.com spambot=yes
 SetEnvIfNoCase Referer bestwebsitesawards.com spambot=yes
 SetEnvIfNoCase Referer blackhatworth.com spambot=yes
 SetEnvIfNoCase Referer buttons-for-website.com spambot=yes
+SetEnvIfNoCase Referer buttons-for-your-website.com spambot=yes
+SetEnvIfNoCase Referer buy-cheap-online.info spambot=yes
 SetEnvIfNoCase Referer cenokos.ru spambot=yes
 SetEnvIfNoCase Referer cenoval.ru spambot=yes
 SetEnvIfNoCase Referer cityadspix.com spambot=yes
@@ -185,8 +193,11 @@ SetEnvIfNoCase Referer social-buttons.com spambot=yes
 SetEnvIfNoCase Referer srecorder.com spambot=yes
 SetEnvIfNoCase Referer st3.cwl.yahoo.com spambot=yes
 SetEnvIfNoCase Referer superiends.org spambot=yes
+SetEnvIfNoCase Referer theguardlan.com spambot=yes
 SetEnvIfNoCase Referer vodkoved.ru spambot=yes
 SetEnvIfNoCase Referer websocial.me spambot=yes
+SetEnvIfNoCase Referer www1.social-buttons.com spambot=yes
+SetEnvIfNoCase Referer www.Get-Free-Traffic-Now.com spambot=yes
 SetEnvIfNoCase Referer ykecwqlixx.ru spambot=yes
 SetEnvIfNoCase Referer yougetsignal.com spambot=yes
 
