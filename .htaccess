@@ -44,6 +44,7 @@ RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?forum\.topic48373797\.darodar\.c
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?forum20.smailik\.org.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?foxtechfpv\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?ftns\.ru*$ [NC,OR]
+RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?free\-share\-buttons\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?freeseedsonline\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?fungirlsgames\.net.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?funnypica\.com.*$ [NC,OR]
@@ -118,7 +119,7 @@ RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?susanholtphotography\.com.*$ [NC
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?tastyfoodideas\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?teastory.co.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?thecoral\.com.br.*$ [NC,OR]
-RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?theguardlan.com.*$ [NC,OR]
+RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?theguardlan\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?thepokertimer\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?touchmods.fr.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?twincitiescarservice\.com.*$ [NC,OR]
@@ -161,6 +162,7 @@ SetEnvIfNoCase Referer econom.co spambot=yes
 SetEnvIfNoCase Referer edakgfvwql.ru spambot=yes
 SetEnvIfNoCase Referer fbdownloader.com spambot=yes
 SetEnvIfNoCase Referer forum20.smailik.org spambot=yes
+SetEnvIfNoCase Referer free-share-buttons.com spambot=yes
 SetEnvIfNoCase Referer googlsucks.com spambot=yes
 SetEnvIfNoCase Referer gobongo.info spambot=yes
 SetEnvIfNoCase Referer hulfingtonpost.com spambot=yes
