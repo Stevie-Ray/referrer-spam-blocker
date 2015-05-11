@@ -95,7 +95,7 @@ RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?.*pyrodesigns\.com\.au.*$ [NC,OR
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?.*ranksonic\.info.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?.*realting-moscow\.ru.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?.*retreatia\.com.*$ [NC,OR]
-RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?.*.aliexpress\.com.*$ [NC,OR]
+RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?.*aliexpress\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?.*savetubevideo\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?.*semalt\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www1?\.)?.*social\-buttons\.com.*$ [NC,OR]
