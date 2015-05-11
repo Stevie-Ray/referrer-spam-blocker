@@ -207,6 +207,8 @@ SetEnvIfNoCase Referer www1.social-buttons.com spambot=yes
 SetEnvIfNoCase Referer www.Get-Free-Traffic-Now.com spambot=yes
 SetEnvIfNoCase Referer ykecwqlixx.ru spambot=yes
 SetEnvIfNoCase Referer yougetsignal.com spambot=yes
+SetEnvIfNoCase Referer event-tracking.com spambot=yes
+
 
 </IfModule>
 
