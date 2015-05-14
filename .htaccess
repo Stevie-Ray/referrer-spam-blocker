@@ -1,5 +1,5 @@
 <IfModule mod_rewrite.c>
-
+#https://github.com/Stevie-Ray/htaccess-referral-spam-blacklist-block
 RewriteEngine On
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?.*4webmasters\.org.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?.*7makemoneyonline\.com.*$ [NC,OR]
@@ -123,9 +123,11 @@ RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?.*xn--c1acygb\.xn--p1ai.*$ [NC,O
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?.*xn--q1a\.xn--b1aube0e\.xn--c1acygb\.xn--p1ai.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?.*youtubedownload\.org.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?.*zazagames\.org.*$ [NC,OR]
+RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?.*simple\-share\-buttons\.com.*$ [NC,OR]
+RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?.*event\-tracking\.com.*$ [NC,OR]
+RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?.*youporn\.uni\.me.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?.*zverokruh-shop\.cz.*$ [NC]
 RewriteRule ^(.*)$ – [F,L]
-
 </IfModule>
 
 <IfModule mod_setenvif.c>
