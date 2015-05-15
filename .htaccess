@@ -1,6 +1,9 @@
-<IfModule mod_rewrite.c>
 #https://github.com/Stevie-Ray/htaccess-referral-spam-blacklist-block
+
+<IfModule mod_rewrite.c>
+
 RewriteEngine On
+
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?.*4webmasters\.org.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?.*7makemoneyonline\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?.*abovetherivernc\.com.*$ [NC,OR]
@@ -46,7 +49,7 @@ RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?.*free\-share\-buttons\.com.*$ [
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?.*freeseedsonline\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?.*fungirlsgames\.net.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?.*funnypica\.com.*$ [NC,OR]
-RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?.*Get-Free-Traffic-Now.com\.*$ [NC,OR]
+RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?.*Get\-Free\-Traffic\-Now\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?.*googlsucks\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?.*gototal\.co.nz.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?.*h2monline\.com.*$ [NC,OR]
@@ -73,6 +76,7 @@ RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?.*lol-smurfs\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?.*mainlinehobby\.net.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?.*make\-money\-online\.7makemoneyonline\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?.*malls\.com.*$ [NC,OR]
+RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?.*maxthon\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?.*medi-fitt.hu.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?.*medicovi\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?.*medispainstitute\.com.au.*$ [NC,OR]
@@ -128,6 +132,7 @@ RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?.*event\-tracking\.com.*$ [NC,OR
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?.*youporn\.uni\.me.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?.*zverokruh-shop\.cz.*$ [NC]
 RewriteRule ^(.*)$ – [F,L]
+
 </IfModule>
 
 <IfModule mod_setenvif.c>
