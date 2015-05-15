@@ -46,9 +46,11 @@ RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?.*forum20.smailik\.org.*$ [NC,OR
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?.*foxtechfpv\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?.*ftns\.ru*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?.*free\-share\-buttons\.com.*$ [NC,OR]
+RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?.*free\-social\-buttons\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?.*freeseedsonline\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?.*fungirlsgames\.net.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?.*funnypica\.com.*$ [NC,OR]
+RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?.*guardlink\.(com?|org).*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?.*Get\-Free\-Traffic\-Now\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?.*googlsucks\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?.*gototal\.co.nz.*$ [NC,OR]
@@ -159,8 +161,10 @@ SetEnvIfNoCase Referer edakgfvwql.ru spambot=yes
 SetEnvIfNoCase Referer fbdownloader.com spambot=yes
 SetEnvIfNoCase Referer forum20.smailik.org spambot=yes
 SetEnvIfNoCase Referer free-share-buttons.com spambot=yes
+SetEnvIfNoCase Referer free-social-buttons.com spambot=yes
 SetEnvIfNoCase Referer googlsucks.com spambot=yes
 SetEnvIfNoCase Referer gobongo.info spambot=yes
+SetEnvIfNoCase Referer guardlink.org spambot=yes
 SetEnvIfNoCase Referer hulfingtonpost.com spambot=yes
 SetEnvIfNoCase Referer humanorightswatch.org spambot=yes
 SetEnvIfNoCase Referer iedit.ilovevitaly.com spambot=yes
