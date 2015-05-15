@@ -32,7 +32,7 @@ RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?.*clmforexeu\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?.*constantaservice\.net.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?.*darodar\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?.*econom\.co.*$ [NC,OR]
-RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?.*edelstahlschornstein-123\.de.*$ [NC,OR]
+RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?.*edelstahlschornstein\-123\.de.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?.*editors\.choice16443549\.hulfingtonpost.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?.*embedle\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?.*extener\.com.*$ [NC,OR]
@@ -47,7 +47,7 @@ RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?.*free\-share\-buttons\.com.*$ [
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?.*freeseedsonline\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?.*fungirlsgames\.net.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?.*funnypica\.com.*$ [NC,OR]
-RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?.*Get-Free-Traffic-Now.com\.*$ [NC,OR]
+RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?.*Get\-Free\-Traffic\-Now\.com\.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?.*googlsucks\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?.*gototal\.co.nz.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?.*h2monline\.com.*$ [NC,OR]
@@ -87,7 +87,7 @@ RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?.*notaria-desalas\.com.*$ [NC,OR
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?.*noumeda\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?.*offers\.bycontext\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?.*openfrost\.com.*$ [NC,OR]
-RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?.*o-o-6-o-o\.com.*$ [NC,OR]
+RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?.*o\-o\-6\-o\-o\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?.*openmediasoft\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?.*priceg\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?.*princeadvantagesales\.com.*$ [NC,OR]
@@ -127,6 +127,7 @@ RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?.*xn--c1acygb\.xn--p1ai.*$ [NC,O
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?.*xn--q1a\.xn--b1aube0e\.xn--c1acygb\.xn--p1ai.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?.*youtubedownload\.org.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?.*zazagames\.org.*$ [NC,OR]
+RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?.*event\-tracking\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?.*zverokruh-shop\.cz.*$ [NC]
 RewriteRule ^(.*)$ – [F,L]
 
@@ -134,6 +135,7 @@ RewriteRule ^(.*)$ – [F,L]
 
 <IfModule mod_setenvif.c>
 
+SetEnvIfNoCase Referer event-tracking.com spambot=yes
 SetEnvIfNoCase Referer 4webmasters.org spambot=yes
 SetEnvIfNoCase Referer 7makemoneyonline.com spambot=yes
 SetEnvIfNoCase Referer acunetix-referrer.com spambot=yes
