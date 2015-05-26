@@ -42,6 +42,7 @@ RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?.*extener\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?.*family1st\.ca.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?.*fbfreegifts\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?.*feedouble\.(com?|net).*$ [NC,OR]
+RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?.*fiverr\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?.*forum20.smailik\.org.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?.*foxtechfpv\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?.*ftns\.ru*$ [NC,OR]
@@ -103,6 +104,7 @@ RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?.*realting-moscow\.ru.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?.*retreatia\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?.*aliexpress\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?.*savetubevideo\.com.*$ [NC,OR]
+RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?.*sanjosestartups\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?.*semalt\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?.*seoanalyses\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?.*setioweb\.com.*$ [NC,OR]
@@ -192,7 +194,6 @@ SetEnvIfNoCase Referer o-o-8-o-o.ru spambot=yes
 SetEnvIfNoCase Referer priceg.com spambot=yes
 SetEnvIfNoCase Referer resellerclub.com spambot=yes
 SetEnvIfNoCase Referer responsinator.com spambot=yes
-SetEnvIfNoCase Referer годом.рф spambot=yes
 SetEnvIfNoCase Referer savetubevideo.com spambot=yes
 SetEnvIfNoCase Referer screentoolkit.com spambot=yes
 SetEnvIfNoCase Referer semalt.com spambot=yes
