@@ -34,6 +34,7 @@ RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?.*cherubinimobili\.it.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?.*clmforexeu\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?.*constantaservice\.net.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?.*darodar\.com.*$ [NC,OR]
+RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?.*domination\.ml.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?.*econom\.co.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?.*edelstahlschornstein\-123\.de.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?.*embedle\.com.*$ [NC,OR]
@@ -96,6 +97,7 @@ RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?.*offers\.bycontext\.com.*$ [NC,
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?.*openfrost\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?.*o\-o\-6\-o\-o\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?.*openmediasoft\.com.*$ [NC,OR]
+RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?.*pornhub-formun\.ga.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?.*priceg\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?.*princeadvantagesales\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?.*pyrodesigns\.com\.au.*$ [NC,OR]
@@ -133,6 +135,7 @@ RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?.*williamrobsonproperty\.com.*$ 
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?.*xn--c1acygb\.xn--p1ai.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?.*xn--q1a\.xn--b1aube0e\.xn--c1acygb\.xn--p1ai.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?.*uni\.me.*$ [NC,OR]
+RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?.*youporn-formun\.ga.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?.*youtubedownload\.org.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?.*zazagames\.org.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?.*zverokruh\-shop\.cz.*$ [NC]
@@ -194,6 +197,7 @@ SetEnvIfNoCase Referer o-o-8-o-o.ru spambot=yes
 SetEnvIfNoCase Referer priceg.com spambot=yes
 SetEnvIfNoCase Referer resellerclub.com spambot=yes
 SetEnvIfNoCase Referer responsinator.com spambot=yes
+SetEnvIfNoCase Referer sanjosestartups.com spambot=yes
 SetEnvIfNoCase Referer savetubevideo.com spambot=yes
 SetEnvIfNoCase Referer screentoolkit.com spambot=yes
 SetEnvIfNoCase Referer semalt.com spambot=yes
