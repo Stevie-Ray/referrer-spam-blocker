@@ -3,7 +3,7 @@ htaccess-spam-blacklist-block
 
 This file is created to collect and prevent referral spam traffic sources. 
 
-Referral spam has been spread wide across the web. Add this to your .htaccess file on a Apache server to prevent referral spam traffic from websites like semalt &amp; buttons-for-websites. This file is usually found in the root “public_html” folder of your website. 
+Referral spam has been spread wide across the web. Add this to your .htaccess or config file on a Apache or Nginx server to prevent referral spam traffic from websites like semalt &amp; buttons-for-websites. This file is usually found in the root “public_html” folder of your website. 
 
 NOTE:
 This method doesn't stop the Analytics referral spam (because they are hitting Analytics directly and not even touching your website / server). You should also use filters in Analytics to prevent referral spam. 
