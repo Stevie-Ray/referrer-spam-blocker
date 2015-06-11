@@ -1,9 +1,10 @@
-#https://github.com/Stevie-Ray/htaccess-referral-spam-blacklist-block
+# https://github.com/Stevie-Ray/htaccess-referral-spam-blacklist-block
 
 <IfModule mod_rewrite.c>
 
 RewriteEngine On
 
+RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?.*100dollars\-seo\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?.*4webmasters\.org.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?.*7makemoneyonline\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?.*abovetherivernc\.com.*$ [NC,OR]
@@ -60,6 +61,7 @@ RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?.*h2monline\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?.*hostcritique\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?.*hostingclub\.lk.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?.*houseofrose\.com.*$ [NC,OR]
+RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?.*howtostopreferralspam\.eu.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?.*hulfingtonpost\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?.*humanorightswatch\.org.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?.*ilovevitaly\.(com?|ru|org|info).*$ [NC,OR]
@@ -133,6 +135,7 @@ RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?.*website\-errors\-scanner\.com.
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?.*webmaster\-traffic\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?.*williamrobsonproperty\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?.*xn--c1acygb\.xn--p1ai.*$ [NC,OR]
+RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?.*xn--80adgcaax6acohn6r\.xn--p1ai.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?.*xn--q1a\.xn--b1aube0e\.xn--c1acygb\.xn--p1ai.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?.*uni\.me.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?.*youporn-forum\.ga.*$ [NC,OR]
