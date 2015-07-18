@@ -1,5 +1,5 @@
-apache-nginx-referral-spam-blacklist-block
-==========================================
+apache-nginx-referral-spam-blacklist
+====================================
 
 These files are created to collect and prevent referral spam traffic sources on a server level. 
 
@@ -16,11 +16,15 @@ If this method fails you can prevent referral spam by:
 
 ## Downloading
 
-If you just want the blacklist, see the [latest release](https://github.com/Stevie-Ray/apache-nginx-referral-spam-blacklist-block/releases). Otherwise, if you need to make changes to the blacklist, clone the repo with:
+If you want to download both files, see the [latest zip](https://github.com/Stevie-Ray/apache-nginx-referral-spam-blacklist/archive/master.zip). Otherwise, if you need to make changes to these files, clone the repo with:
 
 ```sh
 git clone --recursive https://github.com/Stevie-Ray/apache-nginx-referral-spam-blacklist-block.git
 ```
+
+## Apache: .htaccess usage
+.htaccess is a configuration file for use on web servers running Apache. 
+This file is usually found in the root “public_html” folder of your website. 
 
 ## Nginx: referral-spam.conf usage
 
@@ -41,10 +45,6 @@ server {
 	}
 }
 ```
-
-## Apache: .htaccess usage
-.htaccess is a configuration file for use on web servers running Apache. 
-This file is usually found in the root “public_html” folder of your website. 
 
 ##  Contributing
 
