@@ -48,4 +48,4 @@ server {
 
 ##  Contributing
 
-If you'd like to help, [contribute feedback](https://github.com/Stevie-Ray/apache-nginx-referral-spam-blacklist-block/issues), or just fork the repository, then add useful stuff and send a [pull request](https://github.com/Stevie-Ray/apache-nginx-referral-spam-blacklist-block/pulls).
+If you'd like to help, [contribute feedback](https://github.com/Stevie-Ray/apache-nginx-referral-spam-blacklist/issues), or just fork the repository, then add useful stuff and send a [pull request](https://github.com/Stevie-Ray/apache-nginx-referral-spam-blacklist/pulls).
