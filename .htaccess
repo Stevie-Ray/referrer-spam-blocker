@@ -247,6 +247,7 @@ RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?.*motion\-interactive\.com.*$ [N
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?.*mountainstream\.ms.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?.*moyakuhnia\.ru.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?.*mpftpupload\.com.*$ [NC,OR]
+RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?.*mrmoneymustache\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?.*msk.afora\.ru.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?.*muscle\-factory\.com\.au.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?.*musicas.baixar\-musicas\-gratis\.com.*$ [NC,OR]
@@ -315,6 +316,7 @@ RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?.*semaltmedia\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?.*seo\-smm\.kz.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?.*seoanalyses\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?.*seoexperimenty\.ru.*$ [NC,OR]
+RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?.*seokicks\.de.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?.*seopub\.net.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?.*setioweb\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?.*sharebutton\.(net?|to).*$ [NC,OR]
@@ -652,6 +654,7 @@ SetEnvIfNoCase Referer motion-interactive.com spambot=yes
 SetEnvIfNoCase Referer mountainstream.ms spambot=yes
 SetEnvIfNoCase Referer moyakuhnia.ru spambot=yes
 SetEnvIfNoCase Referer mpftpupload.com spambot=yes
+SetEnvIfNoCase Referer mrmoneymustache.com spambot=yes
 SetEnvIfNoCase Referer msk.afora.ru spambot=yes
 SetEnvIfNoCase Referer muscle-factory.com.au spambot=yes
 SetEnvIfNoCase Referer musicas.baixar-musicas-gratis.com spambot=yes
@@ -724,6 +727,7 @@ SetEnvIfNoCase Referer semaltmedia.com spambot=yes
 SetEnvIfNoCase Referer seo-smm.kz spambot=yes
 SetEnvIfNoCase Referer seoanalyses.com spambot=yes
 SetEnvIfNoCase Referer seoexperimenty.ru spambot=yes
+SetEnvIfNoCase Referer seokicks.de spambot=yes
 SetEnvIfNoCase Referer seopub.net spambot=yes
 SetEnvIfNoCase Referer setioweb.com spambot=yes
 SetEnvIfNoCase Referer sharebutton.net spambot=yes
