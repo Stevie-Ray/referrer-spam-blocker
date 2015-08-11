@@ -93,6 +93,7 @@ RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?.*cenoval\.ru.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?.*cezartabac\.ro.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?.*cherrypointplace\.ca.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?.*cherubinimobili\.it.*$ [NC,OR]
+RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?.*chinese-amezon\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?.*ci\.ua.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?.*cityadspix\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?.*civilwartheater\.com.*$ [NC,OR]
@@ -121,6 +122,7 @@ RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?.*doska\-vsem\.ru.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?.*dostavka\-v\-krym\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?.*drupa\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?.*dvr\.biz.ua.*$ [NC,OR]
+RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?.*e\-buyeasy\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?.*e\-kwiaciarz\.pl.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?.*ecomp3\.ru.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?.*econom\.co.*$ [NC,OR]
@@ -162,6 +164,7 @@ RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?.*fungirlsgames\.net.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?.*funnypica\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?.*generalporn\.org.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?.*germes\-trans\.com.*$ [NC,OR]
+RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?.*get\-free\-social\-traffic\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?.*get\-free\-traffic\-now\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?.*girlporn\.ru.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?.*gkvector\.ru.*$ [NC,OR]
@@ -296,7 +299,6 @@ RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?.*promoforum\.ru.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?.*psa48\.ru.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?.*putitin\.me.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?.*pyrodesigns\.com\.au.*$ [NC,OR]
-RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?.*qitt\.ru.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?.*qwesa\.ru.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?.*ranksonic\.(info?|org).*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?.*rapidgator\-porn\.ga.*$ [NC,OR]
@@ -495,6 +497,7 @@ SetEnvIfNoCase Referer cenoval.ru spambot=yes
 SetEnvIfNoCase Referer cezartabac.ro spambot=yes
 SetEnvIfNoCase Referer cherrypointplace.ca spambot=yes
 SetEnvIfNoCase Referer cherubinimobili.it spambot=yes
+SetEnvIfNoCase Referer chinese-amezon.com spambot=yes
 SetEnvIfNoCase Referer ci.ua spambot=yes
 SetEnvIfNoCase Referer cityadspix.com spambot=yes
 SetEnvIfNoCase Referer civilwartheater.com spambot=yes
@@ -523,6 +526,7 @@ SetEnvIfNoCase Referer doska-vsem.ru spambot=yes
 SetEnvIfNoCase Referer dostavka-v-krym.com spambot=yes
 SetEnvIfNoCase Referer drupa.com spambot=yes
 SetEnvIfNoCase Referer dvr.biz.ua spambot=yes
+SetEnvIfNoCase Referer e-buyeasy.com spambot=yes
 SetEnvIfNoCase Referer e-kwiaciarz.pl spambot=yes
 SetEnvIfNoCase Referer ecomp3.ru spambot=yes
 SetEnvIfNoCase Referer econom.co spambot=yes
@@ -565,6 +569,7 @@ SetEnvIfNoCase Referer fungirlsgames.net spambot=yes
 SetEnvIfNoCase Referer funnypica.com spambot=yes
 SetEnvIfNoCase Referer generalporn.org spambot=yes
 SetEnvIfNoCase Referer germes-trans.com spambot=yes
+SetEnvIfNoCase Referer get-free-social-traffic.com spambot=yes
 SetEnvIfNoCase Referer get-free-traffic-now.com spambot=yes
 SetEnvIfNoCase Referer girlporn.ru spambot=yes
 SetEnvIfNoCase Referer gkvector.ru spambot=yes
@@ -709,7 +714,6 @@ SetEnvIfNoCase Referer promoforum.ru spambot=yes
 SetEnvIfNoCase Referer psa48.ru spambot=yes
 SetEnvIfNoCase Referer putitin.me spambot=yes
 SetEnvIfNoCase Referer pyrodesigns.com.au spambot=yes
-SetEnvIfNoCase Referer qitt.ru spambot=yes
 SetEnvIfNoCase Referer qwesa.ru spambot=yes
 SetEnvIfNoCase Referer ranksonic.info spambot=yes
 SetEnvIfNoCase Referer ranksonic.org spambot=yes
@@ -820,10 +824,19 @@ SetEnvIfNoCase Referer zverokruh-shop.cz spambot=yes
 
 </IfModule>
 
-<IfModule mod_authz_host.c>
+# Apache 2.2
+<IfModule !mod_authz_core.c>
+    <IfModule mod_authz_host.c>
+        Order allow,deny
+        Allow from all
+        Deny from env=spambot
+    </IfModule>
+</IfModule>
 
-Order allow,deny
-Allow from all
-Deny from env=spambot
-
+# Apache 2.4
+<IfModule mod_authz_core.c>
+    <RequireAll>
+        Require all Granted
+        Require not env spambot
+    </RequireAll>
 </IfModule>
