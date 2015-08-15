@@ -6,8 +6,7 @@ These files are created to collect and prevent referral spam traffic sources on 
 - - - -
 
 ## Apache: .htaccess usage
-.htaccess is a configuration file for use on web servers running Apache. 
-This file is usually found in the root “public_html” folder of your website. The .htaccess file uses two modules to prevent referral spam, mod_rewrite and mod_setenvif. Decide which method is most suitable with your Apache server configuration. **Please note:** The usage of mod_authz_host has changed with Apache 2.4.
+.htaccess is a configuration file for use on web servers running Apache. This file is usually found in the root “public_html” folder of your website. The .htaccess file uses two modules to prevent referral spam, mod_rewrite and mod_setenvif. Decide which method is most suitable with your Apache server configuration. This file is **Apache 2.4** ready, where mod_authz_host got deprecated.
 
 ## Nginx: referral-spam.conf usage
 
