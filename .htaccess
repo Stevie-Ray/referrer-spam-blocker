@@ -154,6 +154,7 @@ RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?.*forex\-procto\.ru.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?.*forsex\.info.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?.*forum69\.info.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?.*foxtechfpv\.com.*$ [NC,OR]
+RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?.*free\-floating\-buttons\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?.*free\-share\-buttons\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?.*free\-social\-buttons\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?.*freeseedsonline\.com.*$ [NC,OR]
@@ -559,6 +560,7 @@ SetEnvIfNoCase Referer forex-procto.ru spambot=yes
 SetEnvIfNoCase Referer forsex.info spambot=yes
 SetEnvIfNoCase Referer forum69.info spambot=yes
 SetEnvIfNoCase Referer foxtechfpv.com spambot=yes
+SetEnvIfNoCase Referer free-floating-buttons.com spambot=yes
 SetEnvIfNoCase Referer free-share-buttons.com spambot=yes
 SetEnvIfNoCase Referer free-social-buttons.com spambot=yes
 SetEnvIfNoCase Referer freeseedsonline.com spambot=yes
