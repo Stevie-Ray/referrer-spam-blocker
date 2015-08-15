@@ -179,6 +179,7 @@ RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?.*h2monline\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?.*handicapvantoday\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?.*hazardky\.net.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?.*hol\.es.*$ [NC,OR]
+RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?.*hongfanji\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?.*hostcritique\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?.*hostingclub\.lk.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?.*houseofrose\.com.*$ [NC,OR]
@@ -326,6 +327,7 @@ RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?.*seoexperimenty\.ru.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?.*seokicks\.de.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?.*seopub\.net.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?.*setioweb\.com.*$ [NC,OR]
+RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?.*sexyali\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?.*sharebutton\.(net?|to).*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?.*shop.xz618\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?.*sibecoprom\.ru.*$ [NC,OR]
@@ -374,6 +376,7 @@ RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?.*uni\.me.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?.*urlopener\.blogspot\.com.\au.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?.*uzungil\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?.*vapmedia\.org.*$ [NC,OR]
+RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?.*video-\-\production\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?.*video\-woman\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?.*videofrost\.(com?|net).*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?.*videos\-for\-your\-business\.com.*$ [NC,OR]
@@ -585,6 +588,7 @@ SetEnvIfNoCase Referer h2monline.com spambot=yes
 SetEnvIfNoCase Referer handicapvantoday.com spambot=yes
 SetEnvIfNoCase Referer hazardky.net spambot=yes
 SetEnvIfNoCase Referer hol.es spambot=yes
+SetEnvIfNoCase Referer hongfanji.com spambot=yes
 SetEnvIfNoCase Referer hostcritique.com spambot=yes
 SetEnvIfNoCase Referer hostingclub.lk spambot=yes
 SetEnvIfNoCase Referer houseofrose.com spambot=yes
@@ -737,6 +741,7 @@ SetEnvIfNoCase Referer screentoolkit.com spambot=yes
 SetEnvIfNoCase Referer search-error.com spambot=yes
 SetEnvIfNoCase Referer semalt.com spambot=yes
 SetEnvIfNoCase Referer semaltmedia.com spambot=yes
+SetEnvIfNoCase Referer sexyali spambot=yes
 SetEnvIfNoCase Referer seo-smm.kz spambot=yes
 SetEnvIfNoCase Referer seoanalyses.com spambot=yes
 SetEnvIfNoCase Referer seoexperimenty.ru spambot=yes
@@ -800,6 +805,7 @@ SetEnvIfNoCase Referer video-woman.com spambot=yes
 SetEnvIfNoCase Referer videofrost.com spambot=yes
 SetEnvIfNoCase Referer videofrost.net spambot=yes
 SetEnvIfNoCase Referer videos-for-your-business.com spambot=yes
+SetEnvIfNoCase Referer video--production.com spambot=yes
 SetEnvIfNoCase Referer viel.su spambot=yes
 SetEnvIfNoCase Referer viktoria-center.ru spambot=yes
 SetEnvIfNoCase Referer vodaodessa.com spambot=yes
@@ -838,7 +844,7 @@ SetEnvIfNoCase Referer zverokruh-shop.cz spambot=yes
 # Apache 2.4
 <IfModule mod_authz_core.c>
     <RequireAll>
-        Require all Granted
+        Require all granted
         Require not env spambot
     </RequireAll>
 </IfModule>
