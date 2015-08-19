@@ -334,6 +334,7 @@ RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?.*sibecoprom\.ru.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?.*simple\-share\-buttons\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?.*siteripz\.net.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?.*sitevaluation.com.*$ [NC,OR]
+RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?.*sitevaluation.org.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?.*sklad\-24\.ru.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?.*sledstvie\-veli\.net.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?.*slftsdybbg\.ru.*$ [NC,OR]
@@ -754,7 +755,8 @@ SetEnvIfNoCase Referer shop.xz618.com spambot=yes
 SetEnvIfNoCase Referer sibecoprom.ru spambot=yes
 SetEnvIfNoCase Referer simple-share-buttons.com spambot=yes
 SetEnvIfNoCase Referer siteripz.net spambot=yes
-SetEnvIfNoCase Referer siteevaluation.com spambot=yes
+SetEnvIfNoCase Referer sitevaluation.com spambot=yes
+SetEnvIfNoCase Referer sitevaluation.org spambot=yes
 SetEnvIfNoCase Referer sklad-24.ru spambot=yes
 SetEnvIfNoCase Referer sledstvie-veli.net spambot=yes
 SetEnvIfNoCase Referer slftsdybbg.ru spambot=yes
