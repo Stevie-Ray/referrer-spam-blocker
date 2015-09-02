@@ -301,6 +301,7 @@ RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?.*promoforum\.ru.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?.*psa48\.ru.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?.*putitin\.me.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?.*pyrodesigns\.com\.au.*$ [NC,OR]
+RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?.*qualitymarketzone\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?.*qwesa\.ru.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?.*ranksonic\.(info?|org).*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?.*rapidgator\-porn\.ga.*$ [NC,OR]
@@ -721,6 +722,7 @@ SetEnvIfNoCase Referer promoforum.ru spambot=yes
 SetEnvIfNoCase Referer psa48.ru spambot=yes
 SetEnvIfNoCase Referer putitin.me spambot=yes
 SetEnvIfNoCase Referer pyrodesigns.com.au spambot=yes
+SetEnvIfNoCase Referer qualitymarketzone.com spambot=yes
 SetEnvIfNoCase Referer qwesa.ru spambot=yes
 SetEnvIfNoCase Referer ranksonic.info spambot=yes
 SetEnvIfNoCase Referer ranksonic.org spambot=yes
