@@ -45,11 +45,11 @@ Use the link above or go to your Google Analytics Admin panel and add a Segment.
 
 Filter | Session | **Include**
 ------------ | ------------- | -------------
-Hostname | matches regex | ```your-website.com|www.your-website.com|other-possible-way.com|googleusercontent.com ]```
+Hostname | matches regex | ```your-website\.com|www\.your-website\.com|other-possible-way\.com|googleusercontent\.com ]```
 
 Filter | Session | **Exclude**
 ------------ | ------------- | -------------
-Hostname | matches regex |```semalt.com|anticrawler.org|best-seo-offer|best-seo-solution|7makemoneyonline|-musicas*-gratis|kambasoft|savetubevideo|ranksonic|success-seo|medispainstitute|offers.bycontext|100dollars-seo|buttons-for-website|buttons-for-your-website|sitevaluation|semaltmedia|videos-for-your-business|www.Get-Free-Traffic-Now.com|maxthon.com```
+Source | matches regex |```semalt\.com|anticrawler\.org|best-seo-offer|best-seo-solution|7makemoneyonline|-musicas*-gratis|kambasoft|savetubevideo|ranksonic|success-seo|medispainstitute|offers\.bycontext|100dollars-seo|buttons-for-website|buttons-for-your-website|sitevaluation|semaltmedia|videos-for-your-business|www\.Get-Free-Traffic-Now\.com|maxthon\.com```
 
  and so on..
 
