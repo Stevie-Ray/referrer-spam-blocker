@@ -321,6 +321,7 @@ RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?.*screentoolkit\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?.*search\-error\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?.*semalt\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?.*semaltmedia\.com.*$ [NC,OR]
+RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?.*seo\-platform\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?.*seo\-smm\.kz.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?.*seoanalyses\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?.*seoexperimenty\.ru.*$ [NC,OR]
@@ -743,6 +744,7 @@ SetEnvIfNoCase Referer search-error.com spambot=yes
 SetEnvIfNoCase Referer semalt.com spambot=yes
 SetEnvIfNoCase Referer semaltmedia.com spambot=yes
 SetEnvIfNoCase Referer sexyali.com spambot=yes
+SetEnvIfNoCase Referer seo-platform.com spambot=yes
 SetEnvIfNoCase Referer seo-smm.kz spambot=yes
 SetEnvIfNoCase Referer seoanalyses.com spambot=yes
 SetEnvIfNoCase Referer seoexperimenty.ru spambot=yes
