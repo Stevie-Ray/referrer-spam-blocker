@@ -27,6 +27,7 @@ RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?.*affordablewebsitesandmobileapp
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?.*afora\.ru.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?.*akuhni\.by.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?.*alessandraleone\.com.*$ [NC,OR]
+RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?.*alfa9\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?.*allknow\.info.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?.*allnews\.md.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?.*allwomen\.info.*$ [NC,OR]
@@ -438,6 +439,7 @@ SetEnvIfNoCase Referer affordablewebsitesandmobileapps.com spambot=yes
 SetEnvIfNoCase Referer afora.ru spambot=yes
 SetEnvIfNoCase Referer akuhni.by spambot=yes
 SetEnvIfNoCase Referer alessandraleone.com spambot=yes
+SetEnvIfNoCase Referer alfa9.com spambot=yes
 SetEnvIfNoCase Referer allknow.info spambot=yes
 SetEnvIfNoCase Referer allnews.md spambot=yes
 SetEnvIfNoCase Referer allwomen.info spambot=yes
