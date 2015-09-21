@@ -210,6 +210,7 @@ RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?.*jasonpartington\.com.*$ [NC,OR
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?.*jjbabskoe\.ru.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?.*joinandplay\.me.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?.*joingames\.org.*$ [NC,OR]
+RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?.*justprofit\.xyz.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?.*jwss\.cc.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?.*kabbalah\-red\-bracelets\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?.*kambasoft\.com.*$ [NC,OR]
@@ -629,6 +630,7 @@ SetEnvIfNoCase Referer jasonpartington.com spambot=yes
 SetEnvIfNoCase Referer jjbabskoe.ru spambot=yes
 SetEnvIfNoCase Referer joinandplay.me spambot=yes
 SetEnvIfNoCase Referer joingames.org spambot=yes
+SetEnvIfNoCase Referer justprofit.xyz spambot=yes
 SetEnvIfNoCase Referer jwss.cc spambot=yes
 SetEnvIfNoCase Referer kabbalah-red-bracelets.com spambot=yes
 SetEnvIfNoCase Referer kambasoft.com spambot=yes
