@@ -57,6 +57,7 @@ RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?.*bard\-real\.com.ua.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?.*bbtec\.net.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?.*best\-seo\-offer\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?.*best\-seo\-solution\.com.*$ [NC,OR]
+RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?.*best\-seo\-software\.xyz.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?.*bestmobilityscooterstoday\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?.*bestwebsitesawards\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?.*bif\-ru\.info.*$ [NC,OR]
@@ -470,6 +471,7 @@ SetEnvIfNoCase Referer bard-real.com.ua spambot=yes
 SetEnvIfNoCase Referer bbtec.net spambot=yes
 SetEnvIfNoCase Referer best-seo-offer.com spambot=yes
 SetEnvIfNoCase Referer best-seo-solution.com spambot=yes
+SetEnvIfNoCase Referer best-seo-software.xyz spambot=yes
 SetEnvIfNoCase Referer bestmobilityscooterstoday.com spambot=yes
 SetEnvIfNoCase Referer bestwebsitesawards.com spambot=yes
 SetEnvIfNoCase Referer bif-ru.info spambot=yes
