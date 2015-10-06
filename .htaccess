@@ -1,4 +1,5 @@
 # https://github.com/Stevie-Ray/apache-nginx-referral-spam-blacklist
+# Updated 2015-10-06
 
 <IfModule mod_rewrite.c>
 
@@ -310,6 +311,7 @@ RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?.*ranksonic\.(info?|org).*$ [NC,
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?.*rapidgator\-porn\.ga.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?.*rcb101\.ru.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?.*realting\-moscow\.ru.*$ [NC,OR]
+RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?.*rednise\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?.*rentalmaty\.kz.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?.*research.ifmo\.ru.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?.*resellerclub\.com.*$ [NC,OR]
@@ -736,6 +738,7 @@ SetEnvIfNoCase Referer ranksonic.org spambot=yes
 SetEnvIfNoCase Referer rapidgator-porn.ga spambot=yes
 SetEnvIfNoCase Referer rcb101.ru spambot=yes
 SetEnvIfNoCase Referer realting-moscow.ru spambot=yes
+SetEnvIfNoCase Referer rednise.com spambot=yes
 SetEnvIfNoCase Referer rentalmaty.kz spambot=yes
 SetEnvIfNoCase Referer research.ifmo.ru spambot=yes
 SetEnvIfNoCase Referer resellerclub.com spambot=yes
