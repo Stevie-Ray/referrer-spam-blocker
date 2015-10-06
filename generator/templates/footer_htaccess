@@ -1,0 +1,19 @@
+
+</IfModule>
+
+# Apache 2.2
+<IfModule !mod_authz_core.c>
+    <IfModule mod_authz_host.c>
+        Order allow,deny
+        Allow from all
+        Deny from env=spambot
+    </IfModule>
+</IfModule>
+
+# Apache 2.4
+<IfModule mod_authz_core.c>
+    <RequireAll>
+        Require all granted
+        Require not env spambot
+    </RequireAll>
+</IfModule>
