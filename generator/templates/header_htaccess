@@ -1,0 +1,7 @@
+# https://github.com/Stevie-Ray/apache-nginx-referral-spam-blacklist
+# Updated ##DATE##
+
+<IfModule mod_rewrite.c>
+
+RewriteEngine On
+
