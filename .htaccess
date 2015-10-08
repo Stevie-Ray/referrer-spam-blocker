@@ -765,6 +765,7 @@ SetEnvIfNoCase Referer putitin.me spambot=yes
 SetEnvIfNoCase Referer pyrodesigns.com.au spambot=yes
 SetEnvIfNoCase Referer qualitymarketzone.com spambot=yes
 SetEnvIfNoCase Referer qwesa.ru spambot=yes
+SetEnvIfNoCase Referer rankings-analytics.com spambot=yes
 SetEnvIfNoCase Referer ranksonic.info spambot=yes
 SetEnvIfNoCase Referer ranksonic.org spambot=yes
 SetEnvIfNoCase Referer rapidgator-porn.ga spambot=yes

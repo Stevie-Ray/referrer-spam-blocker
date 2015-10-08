@@ -177,7 +177,8 @@ gobongo.info
 goodprotein.ru
 googlsucks.com
 gototal.co.nz
-guardlink.(com?|org)
+guardlink.com
+guardlink.org
 h2monline.com
 handicapvantoday.com
 hazardky.net
@@ -318,6 +319,7 @@ putitin.me
 pyrodesigns.com.au
 qualitymarketzone.com
 qwesa.ru
+rankings-analytics.com
 ranksonic.info
 ranksonic.org
 rapidgator-porn.ga
