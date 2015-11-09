@@ -439,6 +439,7 @@ RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?.*yurgorod\.ru.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?.*zastroyka\.org.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?.*zazagames\.org.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?.*zverokruh-shop\.cz.*$ [NC]
+RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?.*alibestsale\.com.*$ [NC]
 
 RewriteRule ^(.*)$ – [F,L]
 
@@ -881,6 +882,7 @@ SetEnvIfNoCase Referer yurgorod.ru spambot=yes
 SetEnvIfNoCase Referer zastroyka.org spambot=yes
 SetEnvIfNoCase Referer zazagames.org spambot=yes
 SetEnvIfNoCase Referer zverokruh-shop.cz spambot=yes
+SetEnvIfNoCase Referer alibestsale.com spambot=yes
 
 </IfModule>
 
