@@ -114,6 +114,7 @@ RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?.*codysbbq\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?.*conciergegroup\.org.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?.*connectikastudio\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?.*constantaservice\.net.*$ [NC,OR]
+RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?.*copyrightclaims\.org.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?.*covadhosting\.biz.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?.*cubook\.supernew\.org.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?.*customsua\.com\.ua.*$ [NC,OR]
@@ -555,6 +556,7 @@ SetEnvIfNoCase Referer codysbbq.com spambot=yes
 SetEnvIfNoCase Referer conciergegroup.org spambot=yes
 SetEnvIfNoCase Referer connectikastudio.com spambot=yes
 SetEnvIfNoCase Referer constantaservice.net spambot=yes
+SetEnvIfNoCase Referer copyrightclaims.org spambot=yes
 SetEnvIfNoCase Referer covadhosting.biz spambot=yes
 SetEnvIfNoCase Referer cubook.supernew.org spambot=yes
 SetEnvIfNoCase Referer customsua.com.ua spambot=yes
