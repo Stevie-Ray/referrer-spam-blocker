@@ -120,6 +120,7 @@ RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?.*cubook\.supernew\.org.*$ [NC,O
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?.*customsua\.com\.ua.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?.*dailyrank\.net.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?.*darodar\.com.*$ [NC,OR]
+RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?.*dbutton\.net.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?.*delfin-aqua\.com\.ua.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?.*demenageur\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?.*depositfiles-porn\.com.*$ [NC,OR]
@@ -303,6 +304,7 @@ RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?.*palvira\.com\.au.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?.*paparazzistudios\.com\.au.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?.*petrovka-online\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?.*photokitchendesign\.com.*$ [NC,OR]
+RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?.*pizza-imperia\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?.*pizza-tycoon\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?.*pochemychka\.net.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?.*poisk-zakona\.ru.*$ [NC,OR]
@@ -562,6 +564,7 @@ SetEnvIfNoCase Referer cubook.supernew.org spambot=yes
 SetEnvIfNoCase Referer customsua.com.ua spambot=yes
 SetEnvIfNoCase Referer dailyrank.net spambot=yes
 SetEnvIfNoCase Referer darodar.com spambot=yes
+SetEnvIfNoCase Referer dbutton.net spambot=yes
 SetEnvIfNoCase Referer delfin-aqua.com.ua spambot=yes
 SetEnvIfNoCase Referer demenageur.com spambot=yes
 SetEnvIfNoCase Referer depositfiles-porn.com spambot=yes
@@ -745,6 +748,7 @@ SetEnvIfNoCase Referer palvira.com.au spambot=yes
 SetEnvIfNoCase Referer paparazzistudios.com.au spambot=yes
 SetEnvIfNoCase Referer petrovka-online.com spambot=yes
 SetEnvIfNoCase Referer photokitchendesign.com spambot=yes
+SetEnvIfNoCase Referer pizza-imperia.com spambot=yes
 SetEnvIfNoCase Referer pizza-tycoon.com spambot=yes
 SetEnvIfNoCase Referer pochemychka.net spambot=yes
 SetEnvIfNoCase Referer poisk-zakona.ru spambot=yes
