@@ -371,6 +371,7 @@ RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?.*sledstvie-veli\.net.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?.*slftsdybbg\.ru.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?.*slkrm\.ru.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?.*smailik\.org.*$ [NC,OR]
+RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?.*snip\.to.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?.*soaksoak\.ru.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?.*social-buttons\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?.*socialseet\.ru.*$ [NC,OR]
@@ -816,6 +817,7 @@ SetEnvIfNoCase Referer sledstvie-veli.net spambot=yes
 SetEnvIfNoCase Referer slftsdybbg.ru spambot=yes
 SetEnvIfNoCase Referer slkrm.ru spambot=yes
 SetEnvIfNoCase Referer smailik.org spambot=yes
+SetEnvIfNoCase Referer snip.to spambot=yes
 SetEnvIfNoCase Referer soaksoak.ru spambot=yes
 SetEnvIfNoCase Referer social-buttons.com spambot=yes
 SetEnvIfNoCase Referer socialseet.ru spambot=yes
