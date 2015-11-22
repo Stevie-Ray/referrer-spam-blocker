@@ -180,6 +180,7 @@ RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?.*generalporn\.org.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?.*germes-trans\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?.*get-free-social-traffic\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?.*get-free-traffic-now\.com.*$ [NC,OR]
+RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?.*get-your-social-buttons\.info.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?.*girlporn\.ru.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?.*gkvector\.ru.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?.*glavprofit\.ru.*$ [NC,OR]
@@ -625,6 +626,7 @@ SetEnvIfNoCase Referer generalporn.org spambot=yes
 SetEnvIfNoCase Referer germes-trans.com spambot=yes
 SetEnvIfNoCase Referer get-free-social-traffic.com spambot=yes
 SetEnvIfNoCase Referer get-free-traffic-now.com spambot=yes
+SetEnvIfNoCase Referer get-your-social-buttons.info spambot=yes
 SetEnvIfNoCase Referer girlporn.ru spambot=yes
 SetEnvIfNoCase Referer gkvector.ru spambot=yes
 SetEnvIfNoCase Referer glavprofit.ru spambot=yes
