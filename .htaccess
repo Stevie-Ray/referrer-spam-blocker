@@ -20,6 +20,7 @@ RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?.*acunetix-referrer\.com.*$ [NC,
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?.*adcash\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?.*addons\.mozilla\.org/en-US/firefox/addon/ilovevitaly.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?.*adelly\.bg.*$ [NC,OR]
+RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?.*adf\.ly.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?.*adspart\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?.*adventureparkcostarica\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?.*adviceforum\.info.*$ [NC,OR]
@@ -466,6 +467,7 @@ SetEnvIfNoCase Referer acunetix-referrer.com spambot=yes
 SetEnvIfNoCase Referer adcash.com spambot=yes
 SetEnvIfNoCase Referer addons.mozilla.org/en-US/firefox/addon/ilovevitaly spambot=yes
 SetEnvIfNoCase Referer adelly.bg spambot=yes
+SetEnvIfNoCase Referer adf.ly spambot=yes
 SetEnvIfNoCase Referer adspart.com spambot=yes
 SetEnvIfNoCase Referer adventureparkcostarica.com spambot=yes
 SetEnvIfNoCase Referer adviceforum.info spambot=yes
