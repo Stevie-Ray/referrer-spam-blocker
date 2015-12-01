@@ -1,5 +1,5 @@
 # https://github.com/Stevie-Ray/apache-nginx-referral-spam-blacklist
-# Updated 2015-11-29
+# Updated 2015-12-01
 
 <IfModule mod_rewrite.c>
 
@@ -199,6 +199,7 @@ RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?.*hazardky\.net.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?.*hol\.es.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?.*hongfanji\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?.*hostcritique\.com.*$ [NC,OR]
+RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?.*hosting-tracker\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?.*hostingclub\.lk.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?.*houseofrose\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?.*howopen\.ru.*$ [NC,OR]
@@ -651,6 +652,7 @@ SetEnvIfNoCase Referer hazardky.net spambot=yes
 SetEnvIfNoCase Referer hol.es spambot=yes
 SetEnvIfNoCase Referer hongfanji.com spambot=yes
 SetEnvIfNoCase Referer hostcritique.com spambot=yes
+SetEnvIfNoCase Referer hosting-tracker.com spambot=yes
 SetEnvIfNoCase Referer hostingclub.lk spambot=yes
 SetEnvIfNoCase Referer houseofrose.com spambot=yes
 SetEnvIfNoCase Referer howopen.ru spambot=yes
