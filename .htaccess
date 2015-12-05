@@ -1,5 +1,5 @@
 # https://github.com/Stevie-Ray/apache-nginx-referral-spam-blacklist
-# Updated 2015-12-01
+# Updated 2015-12-05
 
 <IfModule mod_rewrite.c>
 
