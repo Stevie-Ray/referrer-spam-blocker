@@ -9,6 +9,7 @@ RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?.*0n-line\.tv.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?.*100dollars-seo\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?.*12masterov\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?.*1pamm\.ru.*$ [NC,OR]
+RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?.*1webmaster\.ml.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?.*4webmasters\.org.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?.*5forex\.ru.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?.*76brighton\.com.*$ [NC,OR]
@@ -253,6 +254,7 @@ RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?.*lmrauction\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?.*lol-smurfs\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?.*lombia\.co.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?.*lombia\.com.*$ [NC,OR]
+RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?.*lsex\.xyz.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?.*lumb\.co.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?.*luxup\.ru.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?.*m1media\.net.*$ [NC,OR]
@@ -466,6 +468,7 @@ SetEnvIfNoCase Referer 0n-line.tv spambot=yes
 SetEnvIfNoCase Referer 100dollars-seo.com spambot=yes
 SetEnvIfNoCase Referer 12masterov.com spambot=yes
 SetEnvIfNoCase Referer 1pamm.ru spambot=yes
+SetEnvIfNoCase Referer 1webmaster.ml spambot=yes
 SetEnvIfNoCase Referer 4webmasters.org spambot=yes
 SetEnvIfNoCase Referer 5forex.ru spambot=yes
 SetEnvIfNoCase Referer 76brighton.com spambot=yes
@@ -710,6 +713,7 @@ SetEnvIfNoCase Referer lmrauction.com spambot=yes
 SetEnvIfNoCase Referer lol-smurfs.com spambot=yes
 SetEnvIfNoCase Referer lombia.co spambot=yes
 SetEnvIfNoCase Referer lombia.com spambot=yes
+SetEnvIfNoCase Referer lsex.xyz spambot=yes
 SetEnvIfNoCase Referer lumb.co spambot=yes
 SetEnvIfNoCase Referer luxup.ru spambot=yes
 SetEnvIfNoCase Referer m1media.net spambot=yes
