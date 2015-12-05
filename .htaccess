@@ -330,8 +330,10 @@ RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?.*psa48\.ru.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?.*putitin\.me.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?.*pyrodesigns\.com\.au.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?.*qualitymarketzone\.com.*$ [NC,OR]
+RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?.*quit-smoking\.ga.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?.*qwesa\.ru.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?.*ranksonic\.info.*$ [NC,OR]
+RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?.*ranksonic\.net.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?.*ranksonic\.org.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?.*rapidgator-porn\.ga.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?.*rcb101\.ru.*$ [NC,OR]
@@ -347,6 +349,7 @@ RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?.*rospromtest\.ru.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?.*sady-urala\.ru.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?.*salutmontreal\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?.*sanjosestartups\.com.*$ [NC,OR]
+RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?.*santasgift\.ml.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?.*savetubevideo\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?.*screentoolkit\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?.*search-error\.com.*$ [NC,OR]
@@ -405,6 +408,7 @@ RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?.*thepokertimer\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?.*tomck\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?.*torture\.ml.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?.*touchmods\.fr.*$ [NC,OR]
+RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?.*traffic2cash\.org.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?.*traffic2money\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?.*trafficmonetize\.org.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?.*trafficmonetizer\.org.*$ [NC,OR]
@@ -778,9 +782,11 @@ SetEnvIfNoCase Referer psa48.ru spambot=yes
 SetEnvIfNoCase Referer putitin.me spambot=yes
 SetEnvIfNoCase Referer pyrodesigns.com.au spambot=yes
 SetEnvIfNoCase Referer qualitymarketzone.com spambot=yes
+SetEnvIfNoCase Referer quit-smoking.ga spambot=yes
 SetEnvIfNoCase Referer qwesa.ru spambot=yes
 SetEnvIfNoCase Referer rankings-analytics.com spambot=yes
 SetEnvIfNoCase Referer ranksonic.info spambot=yes
+SetEnvIfNoCase Referer ranksonic.net spambot=yes
 SetEnvIfNoCase Referer ranksonic.org spambot=yes
 SetEnvIfNoCase Referer rapidgator-porn.ga spambot=yes
 SetEnvIfNoCase Referer rcb101.ru spambot=yes
@@ -796,6 +802,7 @@ SetEnvIfNoCase Referer rospromtest.ru spambot=yes
 SetEnvIfNoCase Referer sady-urala.ru spambot=yes
 SetEnvIfNoCase Referer salutmontreal.com spambot=yes
 SetEnvIfNoCase Referer sanjosestartups.com spambot=yes
+SetEnvIfNoCase Referer santasgift.ml spambot=yes
 SetEnvIfNoCase Referer savetubevideo.com spambot=yes
 SetEnvIfNoCase Referer screentoolkit.com spambot=yes
 SetEnvIfNoCase Referer search-error.com spambot=yes
@@ -854,6 +861,7 @@ SetEnvIfNoCase Referer thepokertimer.com spambot=yes
 SetEnvIfNoCase Referer tomck.com spambot=yes
 SetEnvIfNoCase Referer torture.ml spambot=yes
 SetEnvIfNoCase Referer touchmods.fr spambot=yes
+SetEnvIfNoCase Referer traffic2cash.org spambot=yes
 SetEnvIfNoCase Referer traffic2money.com spambot=yes
 SetEnvIfNoCase Referer trafficmonetize.org spambot=yes
 SetEnvIfNoCase Referer trafficmonetizer.org spambot=yes
