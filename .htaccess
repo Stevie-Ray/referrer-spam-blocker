@@ -1,5 +1,5 @@
 # https://github.com/Stevie-Ray/apache-nginx-referral-spam-blacklist
-# Updated 2015-12-05
+# Updated 2015-12-08
 
 <IfModule mod_rewrite.c>
 
@@ -337,9 +337,11 @@ RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?.*pizza-imperia\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?.*pizza-tycoon\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?.*pochemychka\.net.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?.*poisk-zakona\.ru.*$ [NC,OR]
+RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?.*pops\.foundation.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?.*pornhub-forum\.ga.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?.*pornhub-forum\.uni\.me.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?.*pornhub-ru\.com.*$ [NC,OR]
+RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?.*pornhubforum\.tk.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?.*pornoforadult\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?.*portnoff\.od\.au.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?.*powitania\.pl.*$ [NC,OR]
@@ -831,9 +833,11 @@ SetEnvIfNoCase Referer pizza-imperia.com spambot=yes
 SetEnvIfNoCase Referer pizza-tycoon.com spambot=yes
 SetEnvIfNoCase Referer pochemychka.net spambot=yes
 SetEnvIfNoCase Referer poisk-zakona.ru spambot=yes
+SetEnvIfNoCase Referer pops.foundation spambot=yes
 SetEnvIfNoCase Referer pornhub-forum.ga spambot=yes
 SetEnvIfNoCase Referer pornhub-forum.uni.me spambot=yes
 SetEnvIfNoCase Referer pornhub-ru.com spambot=yes
+SetEnvIfNoCase Referer pornhubforum.tk spambot=yes
 SetEnvIfNoCase Referer pornoforadult.com spambot=yes
 SetEnvIfNoCase Referer portnoff.od.au spambot=yes
 SetEnvIfNoCase Referer powitania.pl spambot=yes
