@@ -1,4 +1,4 @@
-apache-nginx-referral-spam-blacklist
+apache-nginx-referral-spam-blacklist [![Build Status](https://travis-ci.org/Stevie-Ray/apache-nginx-referral-spam-blacklist.svg)](https://travis-ci.org/Stevie-Ray/apache-nginx-referral-spam-blacklist)
 ====================================
 
 These files are created to collect and prevent referral spam traffic sources on a server level. 
