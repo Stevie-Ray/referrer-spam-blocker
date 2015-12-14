@@ -1,32 +1,32 @@
 <?php
 
-class generator
+class Generator
 {
 
-    public function test()
+    public function execute()
     {
         date_default_timezone_set('UTC');
-        $date = date('Y-m-d');
+        $date = date('Y-m-d H:i:s');
         $file = '.htaccess';
 
         $data = "# https://github.com/Stevie-Ray/apache-nginx-referral-spam-blacklist
-# Updated " . $date . "\r\n
-<IfModule mod_rewrite.c>\r\n
-RewriteEngine On\r\n
-";
+# Updated " . $date . "\n
+<IfModule mod_rewrite.c>\n
+RewriteEngine On\n\n";
 
         $handle = fopen("generator/domains.txt", "r");
-        if ($handle) {
-            while (($line = fgets($handle)) !== false) {
-                $line = trim(preg_replace('/\s\s+/', ' ', $line));
-                $string = "RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*" . $line . ".*$ [NC,OR]
-";
-                $data .= $string;
-            }
-            fclose($handle);
-        } else {
-            // error opening the file.
+        if (!$handle) {
+            throw new \RuntimeException('Error opening file generator/domains.txt');
         }
+        
+        while (($line = fgets($handle)) !== false) {
+            $line = preg_quote(trim(preg_replace('/\s\s+/', ' ', $line)));
+            if (empty($line)){
+                continue;
+            }
+            $data .= "RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*" . $line . ".*$ [NC,OR]\n";
+        }
+        fclose($handle);
 
         $data .= "</IfModule>
 
@@ -52,3 +52,5 @@ RewriteEngine On\r\n
     }
 }
 
+$generator = new Generator();
+$generator->execute();
