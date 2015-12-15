@@ -1,4 +1,3 @@
-this-is-a-travis.test
 0n-line.tv
 100dollars-seo.com
 12masterov.com
