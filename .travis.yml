@@ -3,6 +3,7 @@ php:
   - '5.6'
   - '7.0'
 script: php generator/run.php
+before_deploy: "echo 'ready?'"
 deploy:
   provider: releases
   api_key:
@@ -10,6 +11,8 @@ deploy:
   file:
     - ".htaccess"
     - "referral-spam.conf"
+  skip_cleanup: true
   on:
+    tags: true
     repo: Stevie-Ray/apache-nginx-referral-spam-blacklist
     branch: develop
