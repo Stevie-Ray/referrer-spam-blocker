@@ -2,4 +2,4 @@ language: php
 php:
   - '5.6'
   - '7.0'
-script: php generator.php
+script: php generator/run.php

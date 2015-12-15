@@ -7,16 +7,16 @@ class Generate
     {
         date_default_timezone_set('UTC');
         $date = date('Y-m-d H:i:s');
-        $file = '.htaccess';
+        $file = '../.htaccess';
 
         $data = "# https://github.com/Stevie-Ray/apache-nginx-referral-spam-blacklist
 # Updated " . $date . "\n
 <IfModule mod_rewrite.c>\n
 RewriteEngine On\n\n";
 
-        $handle = fopen("generator/domains.txt", "r");
+        $handle = fopen("domains.txt", "r");
         if (!$handle) {
-            throw new \RuntimeException('Error opening file generator/domains.txt');
+            throw new \RuntimeException('Error opening file domains.txt');
         }
 
         while (($line = fgets($handle)) !== false) {
@@ -55,7 +55,7 @@ RewriteEngine On\n\n";
     {
         date_default_timezone_set('UTC');
         $date = date('Y-m-d H:i:s');
-        $file = 'referral-spam.conf';
+        $file = '../referral-spam.conf';
 
         $data = "# https://github.com/Stevie-Ray/apache-nginx-referral-spam-blacklist
 # Updated " . $date . "
@@ -77,9 +77,9 @@ RewriteEngine On\n\n";
 map \$http_referer \$bad_referer {
     default 0;\n\n";
 
-        $handle = fopen("generator/domains.txt", "r");
+        $handle = fopen("domains.txt", "r");
         if (!$handle) {
-            throw new \RuntimeException('Error opening file generator/domains.txt');
+            throw new \RuntimeException('Error opening file domains.txt');
         }
 
         while (($line = fgets($handle)) !== false) {
