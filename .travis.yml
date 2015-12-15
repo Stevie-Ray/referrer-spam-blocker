@@ -13,5 +13,6 @@ deploy:
     - "referral-spam.conf"
   skip_cleanup: true
   on:
+    tags: true
     repo: Stevie-Ray/apache-nginx-referral-spam-blacklist
     branch: develop
