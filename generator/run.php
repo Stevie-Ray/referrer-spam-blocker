@@ -13,8 +13,7 @@ class Generate
 # Updated " . $date . "\n
 <IfModule mod_rewrite.c>\n
 RewriteEngine On\n\n";
-
-        $handle = fopen("./domains.txt", "r");
+        $handle = fopen(__DIR__ . "/domains.txt", "r");
         if (!$handle) {
             throw new \RuntimeException('Error opening file domains.txt');
         }
@@ -77,7 +76,7 @@ RewriteEngine On\n\n";
 map \$http_referer \$bad_referer {
     default 0;\n\n";
 
-        $handle = fopen("./domains.txt", "r");
+        $handle = fopen(__DIR__ . "/domains.txt", "r");
         if (!$handle) {
             throw new \RuntimeException('Error opening file domains.txt');
         }
