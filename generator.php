@@ -1,9 +1,9 @@
 <?php
 
-class Generator
+class Generate
 {
 
-    public function execute()
+    public function createHtaccess()
     {
         date_default_timezone_set('UTC');
         $date = date('Y-m-d H:i:s');
@@ -18,10 +18,10 @@ RewriteEngine On\n\n";
         if (!$handle) {
             throw new \RuntimeException('Error opening file generator/domains.txt');
         }
-        
+
         while (($line = fgets($handle)) !== false) {
             $line = preg_quote(trim(preg_replace('/\s\s+/', ' ', $line)));
-            if (empty($line)){
+            if (empty($line)) {
                 continue;
             }
             $data .= "RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*" . $line . ".*$ [NC,OR]\n";
@@ -52,5 +52,5 @@ RewriteEngine On\n\n";
     }
 }
 
-$generator = new Generator();
-$generator->execute();
+$generator = new Generate();
+$generator->createHtaccess();
