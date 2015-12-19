@@ -1,26 +1,30 @@
 language: php
 php:
-  - '5.6'
-  - '7.0'
+- '5.6'
+- '7.0'
 script: php generator/run.php
 before_deploy:
-  - git config --global user.email "builds@travis-ci.com"
-  - git config --global user.name "Travis CI"
-  - export GIT_TAG=$TRAVIS_BRANCH-v0.1.$TRAVIS_BUILD_NUMBER
-  - git tag $GIT_TAG -a -m "Generated tag from TravisCI for build $TRAVIS_BUILD_NUMBER"
-  - git push -q https://$GITPERM@github.com/Stevie-Ray/apache-nginx-referral-spam-blacklist --tags
-  - ls -R
+- git config --global user.email "builds@travis-ci.com"
+- git config --global user.name "Travis CI"
+- export GIT_TAG=$TRAVIS_BRANCH-v0.1.$TRAVIS_BUILD_NUMBER
+- git tag $GIT_TAG -a -m "Generated tag from TravisCI for build $TRAVIS_BUILD_NUMBER"
+- git push -q https://$GITPERM@github.com/Stevie-Ray/apache-nginx-referral-spam-blacklist
+  --tags
+- ls -R
 deploy:
   provider: releases
   api_key:
     secure: c1S4L/D0jSLbbU+EkO9zt5ePHoCmW68nxqmucCv7F0dcKQzL4/HWFyBNJlgCYQttRg1KIhFR+4CmgKcf0Xe+T/rb4ncjRtYzFJOvh/jZBJ8CLIAndH58dMLb+nlgkpn9iul/zTqC7e+vUv8hqEi30BXY6302s1AfLQDyFCu/TDA=
   file:
-    - ".htaccess"
-    - "referral-spam.conf"
+  - .htaccess
+  - referral-spam.conf
   skip_cleanup: true
   on:
     tags: false
     all_branches: true
 branches:
   except:
-    - /^*-v[0-9]/
+  - /^*-v[0-9]/
+env:
+  global:
+    secure: MllgoJwOTJ00ZCDvgU5XHHtyJ9mRhROX3dZ23WCsSCOPk/fKTsdzWEiS46yXYSdZfy5gQGHftP0Htdt/h9LgQmd7KjxG1wdAohwFAnRUZCbOxfGc795r0U0lDWnj2Rx3zQyix06PyqYNjBK2cvBelOWX8SqBf8KPxXV0r8HAu2Y=
