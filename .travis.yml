@@ -1,7 +1,6 @@
 language: php
 php:
 - '5.6'
-- '7.0'
 script: php generator/run.php
 before_deploy:
 - git config --global user.email "builds@travis-ci.com"
@@ -14,7 +13,7 @@ before_deploy:
 deploy:
   provider: releases
   api_key:
-    secure: NuJ9cJGZv/cS1+hsvUcTzLZ3TV1uzFpvwjEXw9mNfolI8cqBXIvoYIVilybqQqYhId635Vaem2Z5ZC63qkA+rdpNUPf/SHDxjY3w9t5eySdpkh7gLmZjD9Wn/o7acXzt5Z+5qyH5da6DmoYt2Zueiyq4Mhy4NjMtaVCfXw2Yqtw=
+    secure: ${GH_TOKEN}
   file:
   - .htaccess
   - referral-spam.conf
