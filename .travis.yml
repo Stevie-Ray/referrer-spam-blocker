@@ -27,4 +27,5 @@ branches:
   - /^*-v[0-9]/
 env:
   global:
-    secure: MllgoJwOTJ00ZCDvgU5XHHtyJ9mRhROX3dZ23WCsSCOPk/fKTsdzWEiS46yXYSdZfy5gQGHftP0Htdt/h9LgQmd7KjxG1wdAohwFAnRUZCbOxfGc795r0U0lDWnj2Rx3zQyix06PyqYNjBK2cvBelOWX8SqBf8KPxXV0r8HAu2Y=
+  - secure: MllgoJwOTJ00ZCDvgU5XHHtyJ9mRhROX3dZ23WCsSCOPk/fKTsdzWEiS46yXYSdZfy5gQGHftP0Htdt/h9LgQmd7KjxG1wdAohwFAnRUZCbOxfGc795r0U0lDWnj2Rx3zQyix06PyqYNjBK2cvBelOWX8SqBf8KPxXV0r8HAu2Y=
+  - secure: A1du44fKxNh/cRA63rmh+HXQ1BiFK7yJWQjSufGSzGF+JJ+2sH0mUQkKE7dyJ8qiYz1OQyUeUY9Igbdb3Ar4qriN+zW8tqYoGjvY+8f+oSwn/1rAsI/gGSKGnzWQJVUVrJyeNkQnITYrx6WsBMJs1sbTaC1aAgT7zpNeigG9Q4Y=
