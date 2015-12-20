@@ -1,14 +1,12 @@
 language: php
-php:
-- '5.6'
+php: '5.6'
 script: php generator/run.php
 before_deploy:
 - git config --global user.email "builds@travis-ci.com"
 - git config --global user.name "Travis CI"
 - export GIT_TAG=$TRAVIS_BRANCH-v0.1.$TRAVIS_BUILD_NUMBER
 - git tag $GIT_TAG -a -m "Generated tag from TravisCI for build $TRAVIS_BUILD_NUMBER"
-- git push -q https://${GH_TOKEN}@github.com/Stevie-Ray/apache-nginx-referral-spam-blacklist
-  --tags
+- git push -q https://${GH_TOKEN}@github.com/Stevie-Ray/apache-nginx-referral-spam-blacklist --tags
 - ls -R
 deploy:
   provider: releases
@@ -22,8 +20,7 @@ deploy:
     tags: false
     all_branches: true
 branches:
-  except:
-  - /^*-v[0-9]/
+  except: /^*-v[0-9]/
 env:
   global:
-  - secure: PsZmBxVqbldtH/Ty0YkNvTw4HEKemwMUzXXHAI/ffIiYGnIh++gtA+rVRJOUi8tGIS+udL8Jt7AZ7CrPC1/ouhdg0YACZ3kxRGs8lTs071ONH41ve+ceLYg2TD0ImBII2uZCpXogNLGt2cOHuWWPy4xQNUsZBtGIVRL4WI0+efo=
+    secure: PsZmBxVqbldtH/Ty0YkNvTw4HEKemwMUzXXHAI/ffIiYGnIh++gtA+rVRJOUi8tGIS+udL8Jt7AZ7CrPC1/ouhdg0YACZ3kxRGs8lTs071ONH41ve+ceLYg2TD0ImBII2uZCpXogNLGt2cOHuWWPy4xQNUsZBtGIVRL4WI0+efo=
