@@ -7,7 +7,7 @@ before_deploy:
 - export GIT_TAG=$TRAVIS_BRANCH-v0.1.$TRAVIS_BUILD_NUMBER
 - git tag $GIT_TAG -a -m "Generated tag from TravisCI for build $TRAVIS_BUILD_NUMBER"
 - git push -q https://${GH_TOKEN}@github.com/Stevie-Ray/apache-nginx-referral-spam-blacklist --tags
-- ls -R
+- ls -aR
 deploy:
   provider: releases
   api_key:
