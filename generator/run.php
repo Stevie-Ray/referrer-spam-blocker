@@ -96,8 +96,34 @@ map \$http_referer \$bad_referer {
         // Write the contents back to the
         file_put_contents($file, $data);
     }
+
+    public function sortDomains()
+    {
+        $file = "/domains.txt";
+        $handle = fopen(__DIR__ . $file, "r");
+        $data = [];
+
+        if (!$handle) {
+            throw new \RuntimeException('Error opening file domains.txt');
+        }
+
+        while (($line = fgets($handle)) !== false) {
+//            $line = preg_quote(trim(preg_replace('/\s\s+/', ' ', $line)));
+            if (empty($line)) {
+                continue;
+            }
+            array_push($data, $line);
+        }
+
+        fclose($handle);
+
+        sort($data);
+
+        file_put_contents("domains.txt", $data);
+    }
 }
 
 $generator = new Generate();
 $generator->createApache();
 $generator->createNginx();
+$generator->sortDomains();
