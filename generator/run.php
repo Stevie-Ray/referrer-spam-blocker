@@ -2,18 +2,12 @@
 
 class Generate
 {
-
-    public function createApache()
+    public function domainWorker()
     {
-        date_default_timezone_set('UTC');
-        $date = date('Y-m-d H:i:s');
-        $file = '../.htaccess';
-
-        $data = "# https://github.com/Stevie-Ray/apache-nginx-referral-spam-blacklist
-# Updated " . $date . "\n
-<IfModule mod_rewrite.c>\n
-RewriteEngine On\n\n";
+        $sortedLines = "";
+        $lines = Array();
         $handle = fopen(__DIR__ . "/domains.txt", "r");
+
         if (!$handle) {
             throw new \RuntimeException('Error opening file domains.txt');
         }
@@ -23,9 +17,36 @@ RewriteEngine On\n\n";
             if (empty($line)) {
                 continue;
             }
-            $data .= "RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*" . $line . ".*$ [NC,OR]\n";
+            array_push($lines, $line);
         }
         fclose($handle);
+
+        // Make sure the domains are sorted properly
+        sort($lines);
+
+        foreach ($lines as $line) {
+            $sortedLines .= str_replace("\\", "", $line) . "\n";
+        }
+
+        file_put_contents("domains.txt", $sortedLines);
+
+        // Return the lines for later usage
+        return $lines;
+    }
+
+    public function createApache($date, $lines)
+    {
+
+        $file = '../.htaccess';
+
+        $data = "# https://github.com/Stevie-Ray/apache-nginx-referral-spam-blacklist
+# Updated " . $date . "\n
+<IfModule mod_rewrite.c>\n
+RewriteEngine On\n\n";
+
+        foreach ($lines as $line) {
+            $data .= "RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*" . $line . ".*$ [NC,OR]\n";
+        }
 
         $data .= "</IfModule>
 
@@ -50,10 +71,8 @@ RewriteEngine On\n\n";
         file_put_contents($file, $data);
     }
 
-    public function createNginx()
+    public function createNginx($date, $lines)
     {
-        date_default_timezone_set('UTC');
-        $date = date('Y-m-d H:i:s');
         $file = '../referral-spam.conf';
 
         $data = "# https://github.com/Stevie-Ray/apache-nginx-referral-spam-blacklist
@@ -76,28 +95,23 @@ RewriteEngine On\n\n";
 map \$http_referer \$bad_referer {
     default 0;\n\n";
 
-        $handle = fopen(__DIR__ . "/domains.txt", "r");
-        if (!$handle) {
-            throw new \RuntimeException('Error opening file domains.txt');
-        }
-
-        while (($line = fgets($handle)) !== false) {
-            $line = preg_quote(trim(preg_replace('/\s\s+/', ' ', $line)));
-            if (empty($line)) {
-                continue;
-            }
+        foreach ($lines as $line) {
             $data .= "\t\"~*" . $line . "\" 1;\n";
         }
-        fclose($handle);
 
         $data .= "\n}";
-
 
         // Write the contents back to the
         file_put_contents($file, $data);
     }
 }
 
+date_default_timezone_set('UTC');
+$date = date('Y-m-d H:i:s');
+
 $generator = new Generate();
-$generator->createApache();
-$generator->createNginx();
+
+$lines = $generator->domainWorker();
+
+$generator->createApache($date, $lines);
+$generator->createNginx($date, $lines);
