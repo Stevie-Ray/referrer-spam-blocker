@@ -24,3 +24,5 @@ branches:
 env:
   global:
     secure: PsZmBxVqbldtH/Ty0YkNvTw4HEKemwMUzXXHAI/ffIiYGnIh++gtA+rVRJOUi8tGIS+udL8Jt7AZ7CrPC1/ouhdg0YACZ3kxRGs8lTs071ONH41ve+ceLYg2TD0ImBII2uZCpXogNLGt2cOHuWWPy4xQNUsZBtGIVRL4WI0+efo=
+notifications:
+  email: false
