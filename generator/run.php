@@ -4,7 +4,7 @@ class Generate
 {
     public function domainWorker()
     {
-        $sortedLines = "";
+        $domainSting = "";
         $lines = Array();
         $handle = fopen(__DIR__ . "/domains.txt", "r");
 
@@ -21,14 +21,17 @@ class Generate
         }
         fclose($handle);
 
-        // Make sure the domains are sorted properly
+        // Sort the array
         sort($lines);
 
-        foreach ($lines as $line) {
-            $sortedLines .= str_replace("\\", "", $line) . "\n";
+        // Removes duplicate values from the array
+        $uniqueLines = array_unique($lines);
+
+        foreach ($uniqueLines as $line) {
+            $domainSting .= str_replace("\\", "", $line) . "\n";
         }
 
-        file_put_contents("domains.txt", $sortedLines);
+        file_put_contents("domains.txt", $domainSting);
 
         // Return the lines for later usage
         return $lines;
