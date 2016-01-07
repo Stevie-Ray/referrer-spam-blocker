@@ -68,5 +68,5 @@ If you open a pull request, it is appreciated if you run the **generator/run.php
 If you want to download both files, see the [latest zip](https://github.com/Stevie-Ray/apache-nginx-referral-spam-blacklist/archive/master.zip). Otherwise, if you need to make changes to these files, clone the repo with:
 
 ```sh
-git clone --recursive https://github.com/Stevie-Ray/apache-nginx-referral-spam-blacklist-block.git
+git clone --recursive https://github.com/Stevie-Ray/apache-nginx-referral-spam-blacklist.git
 ```
