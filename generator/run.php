@@ -89,14 +89,14 @@ RewriteEngine On\n\n";
 #
 # Add the following to each /etc/nginx/site-available/your-site.conf that needs protection:
 #
-#     server {
-#       if (\$bad_referer) {
-#         return 444;
-#       }
-#     }
+#      server {
+#        if (\$bad_referer) {
+#          return 444;
+#        }
+#      }
 #
 map \$http_referer \$bad_referer {
-    default 0;\n\n";
+\tdefault 0;\n\n";
 
         foreach ($lines as $line) {
             $data .= "\t\"~*" . $line . "\" 1;\n";
