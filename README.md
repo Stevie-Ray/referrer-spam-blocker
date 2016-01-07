@@ -8,6 +8,7 @@ These files are created to collect and prevent referral spam traffic sources on 
 ## Apache: .htaccess usage
 .htaccess is a configuration file for use on web servers running Apache. This file is usually found in the root “public_html” folder of your website. The .htaccess file uses two modules to prevent referral spam, mod_rewrite and mod_setenvif. Decide which method is most suitable with your Apache server configuration. This file is **Apache 2.4** ready, where mod_authz_host got deprecated.
 
+
 ## Nginx: referral-spam.conf usage
 
 With `referral-spam.conf` in `/etc/nginx`, include it globally from within `/etc/nginx/nginx.conf`:
@@ -27,6 +28,7 @@ server {
 	}
 }
 ```
+
 
 ## Options for Google Analytics 'ghost' spam
 **NOTE:**
@@ -53,6 +55,14 @@ Source | matches regex |```semalt\.com|anticrawler\.org|best-seo-offer|best-seo-
 
  and so on..
 
+
+## Contributing
+ 
+If you'd like to add a new referrer spammer to the list, [click here to edit the domains.txt file](https://github.com/Stevie-Ray/apache-nginx-referral-spam-blacklist/edit/master/generator/domains.txt) and create a pull request. Alternatively you can create a [new issue](https://github.com/Stevie-Ray/apache-nginx-referral-spam-blacklist/). In your issue or pull request please explain where the referrer domain appeared and why you think it is a spammer. **Please open one pull request per new domain**.
+ 
+If you open a pull request, it is appreciated if you run the generator/run.php **PHP** file. It sorts the domains, creates the Nginx and Anache files and checks if somebody already reported the domain.
+
+
 ## Downloading
 
 If you want to download both files, see the [latest zip](https://github.com/Stevie-Ray/apache-nginx-referral-spam-blacklist/archive/master.zip). Otherwise, if you need to make changes to these files, clone the repo with:
@@ -60,7 +70,3 @@ If you want to download both files, see the [latest zip](https://github.com/Stev
 ```sh
 git clone --recursive https://github.com/Stevie-Ray/apache-nginx-referral-spam-blacklist-block.git
 ```
-
-##  Contributing
-
-If you'd like to help, [contribute feedback](https://github.com/Stevie-Ray/apache-nginx-referral-spam-blacklist/issues), or just fork the repository, then add useful stuff and send a [pull request](https://github.com/Stevie-Ray/apache-nginx-referral-spam-blacklist/pulls).
