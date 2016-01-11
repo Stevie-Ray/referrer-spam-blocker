@@ -24,8 +24,8 @@ class Generate
         }
         fclose($handle);
 
-        $uniqueLines = array_unique($lines);
-        sort($uniqueLines);
+        $uniqueLines = array_unique($lines, SORT_STRING);
+        sort($uniqueLines, SORT_STRING);
 
         file_put_contents($domainsFile, implode("\n", $uniqueLines));
 
