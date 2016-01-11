@@ -1,58 +1,45 @@
 <?php
-
 class Generate
 {
+    /**
+     * @return array
+     */
     public function domainWorker()
     {
-        $domainSting = "";
-        $lines = Array();
-        $handle = fopen(__DIR__ . "/domains.txt", "r");
-
-        if (!$handle) {
-            throw new \RuntimeException('Error opening file domains.txt');
+        $domainsFile = __DIR__ . "/domains.txt";
+        $handle = fopen($domainsFile, "r");
+        if (! $handle) {
+            throw new \RuntimeException('Error opening file ' . $domainsFile);
         }
-
+        $lines = array();
         while (($line = fgets($handle)) !== false) {
-            $line = preg_quote(trim(preg_replace('/\s\s+/', ' ', $line)));
+            $line = trim(preg_replace('/\s\s+/', ' ', $line));
             if (empty($line)) {
                 continue;
             }
-            array_push($lines, $line);
+            $lines[] = $line;
         }
         fclose($handle);
-
-        // Sort the array
-        sort($lines);
-
-        // Removes duplicate values from the array
-        $uniqueLines = array_unique($lines);
-
-        foreach ($uniqueLines as $line) {
-            $domainSting .= str_replace("\\", "", $line) . "\n";
-        }
-
-        file_put_contents("domains.txt", $domainSting);
-
-        // Return the lines for later usage
+        $uniqueLines = array_unique($lines, SORT_STRING);
+        sort($uniqueLines, SORT_STRING);
+        file_put_contents($domainsFile, implode("\n", $uniqueLines));
         return $lines;
     }
-
-    public function createApache($date, $lines)
+    /**
+     * @param string $date
+     * @param array  $lines
+     */
+    public function createApache($date, array $lines)
     {
-
-        $file = '../.htaccess';
-
+        $file = __DIR__ . '/../.htaccess';
         $data = "# https://github.com/Stevie-Ray/apache-nginx-referral-spam-blacklist
 # Updated " . $date . "\n
 <IfModule mod_rewrite.c>\n
 RewriteEngine On\n\n";
-
         foreach ($lines as $line) {
-            $data .= "RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*" . $line . ".*$ [NC,OR]\n";
+            $data .= "RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*" . preg_quote($line) . ".*$ [NC,OR]\n";
         }
-
         $data .= "</IfModule>
-
 # Apache 2.2
 <IfModule !mod_authz_core.c>
     <IfModule mod_authz_host.c>
@@ -61,7 +48,6 @@ RewriteEngine On\n\n";
         Deny from env=spambot
     </IfModule>
 </IfModule>
-
 # Apache 2.4
 <IfModule mod_authz_core.c>
     <RequireAll>
@@ -69,15 +55,15 @@ RewriteEngine On\n\n";
         Require not env spambot
     </RequireAll>
 </IfModule>";
-
-        // Write the contents back to the
         file_put_contents($file, $data);
     }
-
-    public function createNginx($date, $lines)
+    /**
+     * @param string $date
+     * @param array  $lines
+     */
+    public function createNginx($date, array $lines)
     {
-        $file = '../referral-spam.conf';
-
+        $file = __DIR__ . '/../referral-spam.conf';
         $data = "# https://github.com/Stevie-Ray/apache-nginx-referral-spam-blacklist
 # Updated " . $date . "
 #
@@ -97,24 +83,16 @@ RewriteEngine On\n\n";
 #
 map \$http_referer \$bad_referer {
 \tdefault 0;\n\n";
-
         foreach ($lines as $line) {
-            $data .= "\t\"~*" . $line . "\" 1;\n";
+            $data .= "\t\"~*" . preg_quote($line) . "\" 1;\n";
         }
-
         $data .= "\n}";
-
-        // Write the contents back to the
         file_put_contents($file, $data);
     }
 }
-
 date_default_timezone_set('UTC');
 $date = date('Y-m-d H:i:s');
-
 $generator = new Generate();
-
 $lines = $generator->domainWorker();
-
 $generator->createApache($date, $lines);
 $generator->createNginx($date, $lines);
