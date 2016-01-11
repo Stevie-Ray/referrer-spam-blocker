@@ -2,45 +2,44 @@
 
 class Generate
 {
+    /**
+     * @return array
+     */
     public function domainWorker()
     {
-        $domainSting = "";
-        $lines = Array();
-        $handle = fopen(__DIR__ . "/domains.txt", "r");
+        $domainsFile = __DIR__ . "/domains.txt";
+        $handle = fopen($domainsFile, "r");
 
-        if (!$handle) {
-            throw new \RuntimeException('Error opening file domains.txt');
+        if (! $handle) {
+            throw new \RuntimeException('Error opening file ' . $domainsFile);
         }
 
+        $lines = array();
         while (($line = fgets($handle)) !== false) {
-            $line = preg_quote(trim(preg_replace('/\s\s+/', ' ', $line)));
+            $line = trim(preg_replace('/\s\s+/', ' ', $line));
             if (empty($line)) {
                 continue;
             }
-            array_push($lines, $line);
+            $lines[] = $line;
         }
         fclose($handle);
 
-        // Sort the array
-        sort($lines);
-
-        // Removes duplicate values from the array
         $uniqueLines = array_unique($lines);
+        sort($uniqueLines);
 
-        foreach ($uniqueLines as $line) {
-            $domainSting .= str_replace("\\", "", $line) . "\n";
-        }
+        file_put_contents($domainsFile, implode("\n", $uniqueLines));
 
-        file_put_contents("domains.txt", $domainSting);
-
-        // Return the lines for later usage
         return $lines;
     }
 
-    public function createApache($date, $lines)
+    /**
+     * @param string $date
+     * @param array  $lines
+     */
+    public function createApache($date, array $lines)
     {
 
-        $file = '../.htaccess';
+        $file = __DIR__ . '/../.htaccess';
 
         $data = "# https://github.com/Stevie-Ray/apache-nginx-referral-spam-blacklist
 # Updated " . $date . "\n
@@ -48,7 +47,7 @@ class Generate
 RewriteEngine On\n\n";
 
         foreach ($lines as $line) {
-            $data .= "RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*" . $line . ".*$ [NC,OR]\n";
+            $data .= "RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*" . preg_quote($line) . ".*$ [NC,OR]\n";
         }
 
         $data .= "</IfModule>
@@ -70,13 +69,16 @@ RewriteEngine On\n\n";
     </RequireAll>
 </IfModule>";
 
-        // Write the contents back to the
         file_put_contents($file, $data);
     }
 
-    public function createNginx($date, $lines)
+    /**
+     * @param string $date
+     * @param array  $lines
+     */
+    public function createNginx($date, array $lines)
     {
-        $file = '../referral-spam.conf';
+        $file = __DIR__ . '/../referral-spam.conf';
 
         $data = "# https://github.com/Stevie-Ray/apache-nginx-referral-spam-blacklist
 # Updated " . $date . "
@@ -99,12 +101,11 @@ map \$http_referer \$bad_referer {
 \tdefault 0;\n\n";
 
         foreach ($lines as $line) {
-            $data .= "\t\"~*" . $line . "\" 1;\n";
+            $data .= "\t\"~*" . preg_quote($line) . "\" 1;\n";
         }
 
         $data .= "\n}";
 
-        // Write the contents back to the
         file_put_contents($file, $data);
     }
 }
