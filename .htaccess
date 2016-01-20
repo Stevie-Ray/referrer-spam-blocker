@@ -1,5 +1,5 @@
 # https://github.com/Stevie-Ray/apache-nginx-referral-spam-blacklist
-# Updated 2016-01-20 23:30:29
+# Updated 2016-01-20 23:35:12
 
 <IfModule mod_rewrite.c>
 
@@ -532,7 +532,6 @@ RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*yurgorod\.ru.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*zastroyka\.org.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*zazagames\.org.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*zverokruh\-shop\.cz.*$ [NC,OR]
-RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*с\.новым\.годом\.рф.*$ [NC,OR]
 </IfModule>
 # Apache 2.2
 <IfModule !mod_authz_core.c>
