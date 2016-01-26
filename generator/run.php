@@ -89,6 +89,21 @@ map \$http_referer \$bad_referer {
         $data .= "\n}";
         file_put_contents($file, $data);
     }
+    /**
+     * @param string $date
+     * @param array  $lines
+     */
+    public function createGoogleExclude($date, array $lines)
+    {
+        $file = __DIR__ . '/../google-exclude.txt';
+        $reqexLines = [];
+        foreach ($lines as $line) {
+            $reqexLines[] = preg_quote($line);
+        }
+        $data = implode('|', $reqexLines);
+
+        file_put_contents($file, $data);
+    }
 }
 date_default_timezone_set('UTC');
 $date = date('Y-m-d H:i:s');
@@ -96,3 +111,4 @@ $generator = new Generate();
 $lines = $generator->domainWorker();
 $generator->createApache($date, $lines);
 $generator->createNginx($date, $lines);
+$generator->createGoogleExclude($date, $lines);
