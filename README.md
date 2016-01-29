@@ -1,7 +1,7 @@
 apache-nginx-referral-spam-blacklist [![Build Status](https://travis-ci.org/Stevie-Ray/apache-nginx-referral-spam-blacklist.svg)](https://travis-ci.org/Stevie-Ray/apache-nginx-referral-spam-blacklist)
 ====================================
 
-These files are created to collect and prevent referral spam traffic sources on a server level. 
+Generator to create Apache and Nginx files plus a Google Analytics segment to prevent referral spam traffic.
 
 - - - -
 
