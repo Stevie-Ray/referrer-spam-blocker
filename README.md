@@ -32,28 +32,23 @@ server {
 
 ## Options for Google Analytics 'ghost' spam
 **NOTE:**
-This method doesn't stop the Google Analytics **'ghost'** referral spam (because they are hitting Analytics directly and not even touching your website / server). You should also use filters in Analytics to prevent referral spam. 
+The above methods don't stop the Google Analytics **ghost** referral spam (because they are hitting Analytics directly and don't touching your website). You should use filters in Analytics to prevent **ghost** referral spam. 
 
-You can prevent referral spam by:
 
-  * [Adding a filter](https://support.google.com/analytics/answer/1033162)
-  * [Enabeling bot and Spider Filtering](https://plus.google.com/+GoogleAnalytics/posts/2tJ79CkfnZk) 
-  * [Adding a segment](https://www.google.com/analytics/gallery/#posts/search/%3F_.term%3Dspam%26_.start%3D0%26_.count%3D250%26_.viewId%3DeA5T2yD9TeOkCdY1zzFm0A/), the best (temporary) solution, there getting more aggressive.
-  
-Use the link above or go to your Google Analytics Admin panel and add a Segment.
-  
-![screen shot 2015-07-27 at 20 50 08](https://cloud.githubusercontent.com/assets/5747715/8914771/6a3a32a8-34a1-11e5-86ee-315a89fd5058.png)
-  
+Navigate to your Google Analytics Admin panel and add a Segment:
 
 Filter | Session | **Include**
 ------------ | ------------- | -------------
-Hostname | matches regex | ```your-website\.com|www\.your-website\.com|other-possible-way\.com|googleusercontent\.com ]```
+Hostname | matches regex | ```your-website\.com|www\.your-website\.com```
 
 Filter | Session | **Exclude**
 ------------ | ------------- | -------------
-Source | matches regex |```semalt\.com|anticrawler\.org|best-seo-offer|best-seo-solution|7makemoneyonline|-musicas*-gratis|kambasoft|savetubevideo|ranksonic|success-seo|medispainstitute|offers\.bycontext|100dollars-seo|buttons-for-website|buttons-for-your-website|sitevaluation|semaltmedia|videos-for-your-business|www\.Get-Free-Traffic-Now\.com|maxthon\.com```
+Source | matches regex |Copy all the domains from [google-exclude.txt](https://raw.githubusercontent.com/Stevie-Ray/apache-nginx-referral-spam-blacklist/master/google-exclude.txt) to this field
 
- and so on..
+You can also prevent **ghost** referral spam by:
+
+  * [Adding a filter](https://support.google.com/analytics/answer/1033162)
+  * [Enabeling bot and Spider Filtering](https://plus.google.com/+GoogleAnalytics/posts/2tJ79CkfnZk) 
 
 
 ## Contributing
