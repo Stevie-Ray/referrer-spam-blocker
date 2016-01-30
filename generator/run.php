@@ -1,6 +1,7 @@
 <?php
 class Generate
 {
+
     /**
      * @return array
      */
@@ -14,6 +15,18 @@ class Generate
         $lines = array();
         while (($line = fgets($handle)) !== false) {
             $line = trim(preg_replace('/\s\s+/', ' ', $line));
+
+            // convert russian domains
+            if (preg_match('/[А-Яа-яЁё]/u', $line)){
+
+                $IDN = new idna_convert();
+
+                $line = $IDN->encode($line);
+
+                echo $line."\n\n";
+
+            }
+
             if (empty($line)) {
                 continue;
             }
@@ -108,6 +121,7 @@ map \$http_referer \$bad_referer {
 date_default_timezone_set('UTC');
 $date = date('Y-m-d H:i:s');
 $generator = new Generate();
+require_once('idna_convert.class.php');
 $lines = $generator->domainWorker();
 $generator->createApache($date, $lines);
 $generator->createNginx($date, $lines);
