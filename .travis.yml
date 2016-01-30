@@ -1,6 +1,6 @@
 language: php
 php: '5.6'
-install: cd generator && composer install --dev && ..
+install: cd generator && composer install --dev && cd ..
 script: php generator/run.php
 before_deploy:
 - git config --global user.email "builds@travis-ci.com"
