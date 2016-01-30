@@ -150,7 +150,7 @@ map \$http_referer \$bad_referer {
 date_default_timezone_set('UTC');
 $date = date('Y-m-d H:i:s');
 $generator = new Generate();
-require_once('idna_convert.class.php');
+require __DIR__ . '/vendor/autoload.php';
 $lines = $generator->domainWorker();
 $generator->createApache($date, $lines);
 $generator->createNginx($date, $lines);
