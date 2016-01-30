@@ -1,4 +1,7 @@
 <?php
+ini_set('display_errors', true);
+error_reporting(E_ALL);
+
 class Generate
 {
 
@@ -8,6 +11,7 @@ class Generate
     public function domainWorker()
     {
         $domainsFile = __DIR__ . "/domains.txt";
+
         $handle = fopen($domainsFile, "r");
         if (! $handle) {
             throw new \RuntimeException('Error opening file ' . $domainsFile);
@@ -35,7 +39,12 @@ class Generate
         fclose($handle);
         $uniqueLines = array_unique($lines, SORT_STRING);
         sort($uniqueLines, SORT_STRING);
-        file_put_contents($domainsFile, implode("\n", $uniqueLines));
+        if (is_writable($domainsFile)) {
+            file_put_contents($domainsFile, implode("\n", $uniqueLines));
+        } else {
+            trigger_error("Permission denied");
+        }
+
         return $lines;
     }
     /**
@@ -68,7 +77,15 @@ RewriteEngine On\n\n";
         Require not env spambot
     </RequireAll>
 </IfModule>";
-        file_put_contents($file, $data);
+        if (is_readable($file) && is_writable($file)) {
+            file_put_contents($file, $data);
+            if(! chmod($file, 0644) ) {
+                trigger_error("Couldn't not set .htaccess permissions to 644");
+            }
+
+        } else {
+            trigger_error("Permission denied");
+        }
     }
     /**
      * @param string $date
@@ -100,13 +117,20 @@ map \$http_referer \$bad_referer {
             $data .= "\t\"~*" . preg_quote($line) . "\" 1;\n";
         }
         $data .= "\n}";
-        file_put_contents($file, $data);
+
+        if (is_readable($file) && is_writable($file)) {
+            file_put_contents($file, $data);
+            if(! chmod($file, 0644) ) {
+                trigger_error("Couldn't not set referral-spam.conf permissions to 644");
+            }
+        } else {
+            trigger_error("Permission denied");
+        }
     }
     /**
-     * @param string $date
      * @param array  $lines
      */
-    public function createGoogleExclude($date, array $lines)
+    public function createGoogleExclude(array $lines)
     {
         $file = __DIR__ . '/../google-exclude.txt';
         $reqexLines = [];
@@ -115,7 +139,12 @@ map \$http_referer \$bad_referer {
         }
         $data = implode('|', $reqexLines);
 
-        file_put_contents($file, $data);
+        if (is_readable($file) && is_writable($file)) {
+            file_put_contents($file, $data);
+        } else {
+            trigger_error("Permission denied");
+        }
+
     }
 }
 date_default_timezone_set('UTC');
@@ -125,4 +154,4 @@ require_once('idna_convert.class.php');
 $lines = $generator->domainWorker();
 $generator->createApache($date, $lines);
 $generator->createNginx($date, $lines);
-$generator->createGoogleExclude($date, $lines);
+$generator->createGoogleExclude($lines);
