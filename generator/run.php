@@ -27,8 +27,6 @@ class Generate
 
                 $line = $IDN->encode($line);
 
-                echo $line."\n\n";
-
             }
 
             if (empty($line)) {
