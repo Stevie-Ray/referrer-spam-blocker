@@ -13,7 +13,7 @@ class Generate
         $domainsFile = __DIR__ . "/domains.txt";
 
         $handle = fopen($domainsFile, "r");
-        if (! $handle) {
+        if (!$handle) {
             throw new \RuntimeException('Error opening file ' . $domainsFile);
         }
         $lines = array();
@@ -21,7 +21,7 @@ class Generate
             $line = trim(preg_replace('/\s\s+/', ' ', $line));
 
             // convert russian domains
-            if (preg_match('/[А-Яа-яЁё]/u', $line)){
+            if (preg_match('/[А-Яа-яЁё]/u', $line)) {
 
                 $IDN = new idna_convert();
 
@@ -45,9 +45,10 @@ class Generate
 
         return $lines;
     }
+
     /**
      * @param string $date
-     * @param array  $lines
+     * @param array $lines
      */
     public function createApache($date, array $lines)
     {
@@ -57,9 +58,27 @@ class Generate
 <IfModule mod_rewrite.c>\n
 RewriteEngine On\n\n";
         foreach ($lines as $line) {
+            if ($line === end($lines)) {
+                $data .= "RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*" . preg_quote($line) . ".*$ [NC]\n";
+            break;
+            }
+
             $data .= "RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*" . preg_quote($line) . ".*$ [NC,OR]\n";
         }
-        $data .= "</IfModule>
+
+        $data .= "RewriteRule ^(.*)$ – [F,L]
+
+</IfModule>
+
+<IfModule mod_setenvif.c>
+
+";
+        foreach ($lines as $line) {
+            $data .= "SetEnvIfNoCase Referer " . preg_quote($line) . " spambot=yes\n";
+        }
+        $data .= "
+</IfModule>
+
 # Apache 2.2
 <IfModule !mod_authz_core.c>
     <IfModule mod_authz_host.c>
@@ -77,7 +96,7 @@ RewriteEngine On\n\n";
 </IfModule>";
         if (is_readable($file) && is_writable($file)) {
             file_put_contents($file, $data);
-            if(! chmod($file, 0644) ) {
+            if (!chmod($file, 0644)) {
                 trigger_error("Couldn't not set .htaccess permissions to 644");
             }
 
@@ -85,9 +104,10 @@ RewriteEngine On\n\n";
             trigger_error("Permission denied");
         }
     }
+
     /**
      * @param string $date
-     * @param array  $lines
+     * @param array $lines
      */
     public function createNginx($date, array $lines)
     {
@@ -118,15 +138,16 @@ map \$http_referer \$bad_referer {
 
         if (is_readable($file) && is_writable($file)) {
             file_put_contents($file, $data);
-            if(! chmod($file, 0644) ) {
+            if (!chmod($file, 0644)) {
                 trigger_error("Couldn't not set referral-spam.conf permissions to 644");
             }
         } else {
             trigger_error("Permission denied");
         }
     }
+
     /**
-     * @param array  $lines
+     * @param array $lines
      */
     public function createGoogleExclude(array $lines)
     {
@@ -145,6 +166,7 @@ map \$http_referer \$bad_referer {
 
     }
 }
+
 date_default_timezone_set('UTC');
 $date = date('Y-m-d H:i:s');
 $generator = new Generate();
