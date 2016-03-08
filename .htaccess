@@ -1,5 +1,5 @@
 # https://github.com/Stevie-Ray/apache-nginx-referral-spam-blacklist
-# Updated 2016-03-06 23:15:40
+# Updated 2016-03-08 13:45:37
 
 <IfModule mod_rewrite.c>
 
@@ -378,6 +378,7 @@ RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*novosibirsk\.xrus\.org.*$ [NC,O
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*novosti\-hi\-tech\.ru.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*nufaq\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*nullrefer\.com.*$ [NC,OR]
+RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*o\-o\-11\-o\-o\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*o\-o\-6\-o\-o\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*o\-o\-6\-o\-o\.ru.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*o\-o\-8\-o\-o\.com.*$ [NC,OR]
@@ -989,6 +990,7 @@ SetEnvIfNoCase Referer novosibirsk\.xrus\.org spambot=yes
 SetEnvIfNoCase Referer novosti\-hi\-tech\.ru spambot=yes
 SetEnvIfNoCase Referer nufaq\.com spambot=yes
 SetEnvIfNoCase Referer nullrefer\.com spambot=yes
+SetEnvIfNoCase Referer o\-o\-11\-o\-o\.com spambot=yes
 SetEnvIfNoCase Referer o\-o\-6\-o\-o\.com spambot=yes
 SetEnvIfNoCase Referer o\-o\-6\-o\-o\.ru spambot=yes
 SetEnvIfNoCase Referer o\-o\-8\-o\-o\.com spambot=yes
