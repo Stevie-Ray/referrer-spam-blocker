@@ -1,5 +1,5 @@
 # https://github.com/Stevie-Ray/apache-nginx-referral-spam-blacklist
-# Updated 2016-03-13 22:49:52
+# Updated 2016-03-20 11:51:53
 
 <IfModule mod_rewrite.c>
 
@@ -204,6 +204,7 @@ RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*fast\-wordpress\-start\.com.*$ 
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*fbdownloader\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*fbfreegifts\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*fealq\.com.*$ [NC,OR]
+RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*feedback\.sharemyfile\.ru.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*feedouble\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*feedouble\.net.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*ferieboligkbh\.dk.*$ [NC,OR]
@@ -445,6 +446,7 @@ RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*qitt\.ru.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*qualitymarketzone\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*quit\-smoking\.ga.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*qwesa\.ru.*$ [NC,OR]
+RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*rank\-checker\.online.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*rankings\-analytics\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*rankscanner\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*ranksignals\.com.*$ [NC,OR]
@@ -826,6 +828,7 @@ SetEnvIfNoCase Referer fast\-wordpress\-start\.com spambot=yes
 SetEnvIfNoCase Referer fbdownloader\.com spambot=yes
 SetEnvIfNoCase Referer fbfreegifts\.com spambot=yes
 SetEnvIfNoCase Referer fealq\.com spambot=yes
+SetEnvIfNoCase Referer feedback\.sharemyfile\.ru spambot=yes
 SetEnvIfNoCase Referer feedouble\.com spambot=yes
 SetEnvIfNoCase Referer feedouble\.net spambot=yes
 SetEnvIfNoCase Referer ferieboligkbh\.dk spambot=yes
@@ -1067,6 +1070,7 @@ SetEnvIfNoCase Referer qitt\.ru spambot=yes
 SetEnvIfNoCase Referer qualitymarketzone\.com spambot=yes
 SetEnvIfNoCase Referer quit\-smoking\.ga spambot=yes
 SetEnvIfNoCase Referer qwesa\.ru spambot=yes
+SetEnvIfNoCase Referer rank\-checker\.online spambot=yes
 SetEnvIfNoCase Referer rankings\-analytics\.com spambot=yes
 SetEnvIfNoCase Referer rankscanner\.com spambot=yes
 SetEnvIfNoCase Referer ranksignals\.com spambot=yes
