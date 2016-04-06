@@ -1,5 +1,5 @@
 # https://github.com/Stevie-Ray/apache-nginx-referral-spam-blacklist
-# Updated 2016-04-03 20:06:32
+# Updated 2016-04-06 22:10:41
 
 <IfModule mod_rewrite.c>
 
@@ -238,6 +238,7 @@ RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*get\-your\-social\-buttons\.inf
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*getoutofdebtfree\.org.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*getprismatic\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*getrichquick\.ml.*$ [NC,OR]
+RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*getrichquickly\.info.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*ghazel\.ru.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*girlporn\.ru.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*gkvector\.ru.*$ [NC,OR]
@@ -866,6 +867,7 @@ SetEnvIfNoCase Referer get\-your\-social\-buttons\.info spambot=yes
 SetEnvIfNoCase Referer getoutofdebtfree\.org spambot=yes
 SetEnvIfNoCase Referer getprismatic\.com spambot=yes
 SetEnvIfNoCase Referer getrichquick\.ml spambot=yes
+SetEnvIfNoCase Referer getrichquickly\.info spambot=yes
 SetEnvIfNoCase Referer ghazel\.ru spambot=yes
 SetEnvIfNoCase Referer girlporn\.ru spambot=yes
 SetEnvIfNoCase Referer gkvector\.ru spambot=yes
