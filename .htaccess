@@ -1,5 +1,5 @@
 # https://github.com/Stevie-Ray/apache-nginx-referral-spam-blacklist
-# Updated 2016-04-12 13:12:36
+# Updated 2016-04-14 10:50:03
 
 <IfModule mod_rewrite.c>
 
@@ -209,6 +209,7 @@ RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*eurosamodelki\.ru.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*event\-tracking\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*extener\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*extremez\.net.*$ [NC,OR]
+RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*facebook\-mobile\.xyz.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*family1st\.ca.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*fast\-wordpress\-start\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*fbdownloader\.com.*$ [NC,OR]
@@ -233,10 +234,12 @@ RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*free\-share\-buttons\.com.*$ [N
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*free\-social\-buttons\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*free\-social\-buttons\.xyz.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*free\-traffic\.xyz.*$ [NC,OR]
+RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*free\-video\-tool\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*freeseedsonline\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*freewhatsappload\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*fsalas\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*ftns\.ru.*$ [NC,OR]
+RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*fuck\-paid\-share\-buttons\.xyz.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*fungirlsgames\.net.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*funnypica\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*gazobeton\-p\.com\.ua.*$ [NC,OR]
@@ -322,6 +325,7 @@ RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*kambasoft\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*karusel\-market\.ru.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*kazan\.xrus\.org.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*kazrent\.com.*$ [NC,OR]
+RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*keywords\-monitoring\-your\-success\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*kino\-fun\.ru.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*kino\-key\.info.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*kinopolet\.net.*$ [NC,OR]
@@ -345,10 +349,12 @@ RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*lombia\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*lsex\.xyz.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*lumb\.co.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*luxup\.ru.*$ [NC,OR]
+RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*m\-google\.xyz.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*m1media\.net.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*magento\-crew\.net.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*mainlinehobby\.net.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*makemoneyonline\.com.*$ [NC,OR]
+RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*makeprogress\.ga.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*malls\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*maridan\.com\.au.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*masterseek\.com.*$ [NC,OR]
@@ -516,6 +522,7 @@ RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*seokicks\.de.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*seopub\.net.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*setioweb\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*sexyali\.com.*$ [NC,OR]
+RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*share\-button\.xyz.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*share\-buttons\.xyz.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*sharebutton\.net.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*sharebutton\.to.*$ [NC,OR]
@@ -538,8 +545,12 @@ RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*smstraf\.ru.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*snip\.to.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*snip\.tw.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*soaksoak\.ru.*$ [NC,OR]
+RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*social\-button\.xyz.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*social\-buttons\.com.*$ [NC,OR]
+RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*social\-buttons\.xyz.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*social\-widget\.xyz.*$ [NC,OR]
+RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*socialbutton\.xyz.*$ [NC,OR]
+RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*socialbuttons\.xyz.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*socialseet\.ru.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*softomix\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*softomix\.net.*$ [NC,OR]
@@ -872,6 +883,7 @@ SetEnvIfNoCase Referer eurosamodelki\.ru spambot=yes
 SetEnvIfNoCase Referer event\-tracking\.com spambot=yes
 SetEnvIfNoCase Referer extener\.com spambot=yes
 SetEnvIfNoCase Referer extremez\.net spambot=yes
+SetEnvIfNoCase Referer facebook\-mobile\.xyz spambot=yes
 SetEnvIfNoCase Referer family1st\.ca spambot=yes
 SetEnvIfNoCase Referer fast\-wordpress\-start\.com spambot=yes
 SetEnvIfNoCase Referer fbdownloader\.com spambot=yes
@@ -896,10 +908,12 @@ SetEnvIfNoCase Referer free\-share\-buttons\.com spambot=yes
 SetEnvIfNoCase Referer free\-social\-buttons\.com spambot=yes
 SetEnvIfNoCase Referer free\-social\-buttons\.xyz spambot=yes
 SetEnvIfNoCase Referer free\-traffic\.xyz spambot=yes
+SetEnvIfNoCase Referer free\-video\-tool\.com spambot=yes
 SetEnvIfNoCase Referer freeseedsonline\.com spambot=yes
 SetEnvIfNoCase Referer freewhatsappload\.com spambot=yes
 SetEnvIfNoCase Referer fsalas\.com spambot=yes
 SetEnvIfNoCase Referer ftns\.ru spambot=yes
+SetEnvIfNoCase Referer fuck\-paid\-share\-buttons\.xyz spambot=yes
 SetEnvIfNoCase Referer fungirlsgames\.net spambot=yes
 SetEnvIfNoCase Referer funnypica\.com spambot=yes
 SetEnvIfNoCase Referer gazobeton\-p\.com\.ua spambot=yes
@@ -985,6 +999,7 @@ SetEnvIfNoCase Referer kambasoft\.com spambot=yes
 SetEnvIfNoCase Referer karusel\-market\.ru spambot=yes
 SetEnvIfNoCase Referer kazan\.xrus\.org spambot=yes
 SetEnvIfNoCase Referer kazrent\.com spambot=yes
+SetEnvIfNoCase Referer keywords\-monitoring\-your\-success\.com spambot=yes
 SetEnvIfNoCase Referer kino\-fun\.ru spambot=yes
 SetEnvIfNoCase Referer kino\-key\.info spambot=yes
 SetEnvIfNoCase Referer kinopolet\.net spambot=yes
@@ -1008,10 +1023,12 @@ SetEnvIfNoCase Referer lombia\.com spambot=yes
 SetEnvIfNoCase Referer lsex\.xyz spambot=yes
 SetEnvIfNoCase Referer lumb\.co spambot=yes
 SetEnvIfNoCase Referer luxup\.ru spambot=yes
+SetEnvIfNoCase Referer m\-google\.xyz spambot=yes
 SetEnvIfNoCase Referer m1media\.net spambot=yes
 SetEnvIfNoCase Referer magento\-crew\.net spambot=yes
 SetEnvIfNoCase Referer mainlinehobby\.net spambot=yes
 SetEnvIfNoCase Referer makemoneyonline\.com spambot=yes
+SetEnvIfNoCase Referer makeprogress\.ga spambot=yes
 SetEnvIfNoCase Referer malls\.com spambot=yes
 SetEnvIfNoCase Referer maridan\.com\.au spambot=yes
 SetEnvIfNoCase Referer masterseek\.com spambot=yes
@@ -1179,6 +1196,7 @@ SetEnvIfNoCase Referer seokicks\.de spambot=yes
 SetEnvIfNoCase Referer seopub\.net spambot=yes
 SetEnvIfNoCase Referer setioweb\.com spambot=yes
 SetEnvIfNoCase Referer sexyali\.com spambot=yes
+SetEnvIfNoCase Referer share\-button\.xyz spambot=yes
 SetEnvIfNoCase Referer share\-buttons\.xyz spambot=yes
 SetEnvIfNoCase Referer sharebutton\.net spambot=yes
 SetEnvIfNoCase Referer sharebutton\.to spambot=yes
@@ -1201,8 +1219,12 @@ SetEnvIfNoCase Referer smstraf\.ru spambot=yes
 SetEnvIfNoCase Referer snip\.to spambot=yes
 SetEnvIfNoCase Referer snip\.tw spambot=yes
 SetEnvIfNoCase Referer soaksoak\.ru spambot=yes
+SetEnvIfNoCase Referer social\-button\.xyz spambot=yes
 SetEnvIfNoCase Referer social\-buttons\.com spambot=yes
+SetEnvIfNoCase Referer social\-buttons\.xyz spambot=yes
 SetEnvIfNoCase Referer social\-widget\.xyz spambot=yes
+SetEnvIfNoCase Referer socialbutton\.xyz spambot=yes
+SetEnvIfNoCase Referer socialbuttons\.xyz spambot=yes
 SetEnvIfNoCase Referer socialseet\.ru spambot=yes
 SetEnvIfNoCase Referer softomix\.com spambot=yes
 SetEnvIfNoCase Referer softomix\.net spambot=yes
