@@ -1,5 +1,5 @@
 # https://github.com/Stevie-Ray/apache-nginx-referral-spam-blacklist
-# Updated 2016-04-14 10:50:03
+# Updated 2016-04-18 08:37:16
 
 <IfModule mod_rewrite.c>
 
@@ -17,6 +17,7 @@ RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*45tahunkhongguan\.com.*$ [NC,OR
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*4istoshop\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*4webmasters\.org.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*5forex\.ru.*$ [NC,OR]
+RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*6hopping\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*76brighton\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*7makemoneyonline\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*7zap\.com.*$ [NC,OR]
@@ -691,6 +692,7 @@ SetEnvIfNoCase Referer 45tahunkhongguan\.com spambot=yes
 SetEnvIfNoCase Referer 4istoshop\.com spambot=yes
 SetEnvIfNoCase Referer 4webmasters\.org spambot=yes
 SetEnvIfNoCase Referer 5forex\.ru spambot=yes
+SetEnvIfNoCase Referer 6hopping\.com spambot=yes
 SetEnvIfNoCase Referer 76brighton\.com spambot=yes
 SetEnvIfNoCase Referer 7makemoneyonline\.com spambot=yes
 SetEnvIfNoCase Referer 7zap\.com spambot=yes
