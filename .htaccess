@@ -1,5 +1,5 @@
 # https://github.com/Stevie-Ray/apache-nginx-referral-spam-blacklist
-# Updated 2016-04-18 08:37:16
+# Updated 2016-04-19 07:42:37
 
 <IfModule mod_rewrite.c>
 
@@ -234,6 +234,9 @@ RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*free\-floating\-buttons\.com.*$
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*free\-share\-buttons\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*free\-social\-buttons\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*free\-social\-buttons\.xyz.*$ [NC,OR]
+RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*free\-social\-buttons1\.xyz.*$ [NC,OR]
+RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*free\-social\-buttons6\.xyz.*$ [NC,OR]
+RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*free\-social\-buttons7\.xyz.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*free\-traffic\.xyz.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*free\-video\-tool\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*freeseedsonline\.com.*$ [NC,OR]
@@ -909,6 +912,9 @@ SetEnvIfNoCase Referer free\-floating\-buttons\.com spambot=yes
 SetEnvIfNoCase Referer free\-share\-buttons\.com spambot=yes
 SetEnvIfNoCase Referer free\-social\-buttons\.com spambot=yes
 SetEnvIfNoCase Referer free\-social\-buttons\.xyz spambot=yes
+SetEnvIfNoCase Referer free\-social\-buttons1\.xyz spambot=yes
+SetEnvIfNoCase Referer free\-social\-buttons6\.xyz spambot=yes
+SetEnvIfNoCase Referer free\-social\-buttons7\.xyz spambot=yes
 SetEnvIfNoCase Referer free\-traffic\.xyz spambot=yes
 SetEnvIfNoCase Referer free\-video\-tool\.com spambot=yes
 SetEnvIfNoCase Referer freeseedsonline\.com spambot=yes
