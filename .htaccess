@@ -1,5 +1,5 @@
 # https://github.com/Stevie-Ray/apache-nginx-referral-spam-blacklist
-# Updated 2016-04-19 07:42:37
+# Updated 2016-04-20 08:08:46
 
 <IfModule mod_rewrite.c>
 
@@ -545,6 +545,7 @@ RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*sledstvie\-veli\.net.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*slftsdybbg\.ru.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*slkrm\.ru.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*smailik\.org.*$ [NC,OR]
+RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*smartphonediscount\.info.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*smstraf\.ru.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*snip\.to.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*snip\.tw.*$ [NC,OR]
@@ -1223,6 +1224,7 @@ SetEnvIfNoCase Referer sledstvie\-veli\.net spambot=yes
 SetEnvIfNoCase Referer slftsdybbg\.ru spambot=yes
 SetEnvIfNoCase Referer slkrm\.ru spambot=yes
 SetEnvIfNoCase Referer smailik\.org spambot=yes
+SetEnvIfNoCase Referer smartphonediscount\.info spambot=yes
 SetEnvIfNoCase Referer smstraf\.ru spambot=yes
 SetEnvIfNoCase Referer snip\.to spambot=yes
 SetEnvIfNoCase Referer snip\.tw spambot=yes
