@@ -1,7 +1,7 @@
 apache-nginx-referral-spam-blacklist [![Build Status](https://travis-ci.org/Stevie-Ray/apache-nginx-referral-spam-blacklist.svg)](https://travis-ci.org/Stevie-Ray/apache-nginx-referral-spam-blacklist)
 ====================================
 
-Generator to create Apache and Nginx files plus a Google Analytics segment to prevent referral spam traffic.
+Generator to create Apache and Nginx files plus a Google Analytics segment to prevent (old) referral spam traffic.
 
 - - - -
 
@@ -31,9 +31,11 @@ server {
 ```
 
 
-## Options for Google Analytics 'ghost' spam
+## Options for old Google Analytics 'ghost' spam
 
-**NOTE:**
+**UPDATE:**
+The problem with future Google Analytics spam seems to be [fixed](http://www.thesempost.com/google-analytics-referral-spam-removed/). 
+
 The above methods don't stop the Google Analytics **ghost** referral spam (because they are hitting Analytics directly and don't touching your website). You should use filters in Analytics to prevent **ghost** referral spam. 
 
 
@@ -51,13 +53,6 @@ You can also prevent **ghost** referral spam by:
 
   * [Adding a filter](https://support.google.com/analytics/answer/1033162)
   * [Enabeling bot and Spider Filtering](https://plus.google.com/+GoogleAnalytics/posts/2tJ79CkfnZk) 
-
-
-## Contributing
- 
-If you'd like to add a new referrer spammer to the list, [click here to edit the domains.txt file](https://github.com/Stevie-Ray/apache-nginx-referral-spam-blacklist/edit/master/generator/domains.txt) and create a pull request. Alternatively you can create a [new issue](https://github.com/Stevie-Ray/apache-nginx-referral-spam-blacklist/issues/new). In your issue or pull request please explain where the referrer domain appeared and why you think it is a spammer. **Please open one pull request per new domain**.
- 
-If you open a pull request, it is appreciated if you run the **generator/run.php** file. It sorts the domains, creates the Nginx and Apache files and checks if somebody already reported the domain.
 
 
 ## Like it?
