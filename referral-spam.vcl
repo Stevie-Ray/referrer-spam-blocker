@@ -1,5 +1,5 @@
 # https://github.com/Stevie-Ray/apache-nginx-referral-spam-blacklist
-# Updated 2016-07-05 16:53:41
+# Updated 2016-07-05 16:58:41
 sub block_referral_spam {
 	if (
 		req.http.Referer ~ "(?i)0n\-line\.tv" ||
@@ -270,7 +270,21 @@ sub block_referral_spam {
 		req.http.Referer ~ "(?i)foxinsocks\.ru" ||
 		req.http.Referer ~ "(?i)foxtechfpv\.com" ||
 		req.http.Referer ~ "(?i)free\-floating\-buttons\.com" ||
+		req.http.Referer ~ "(?i)free\-share\-buttons\-aaa\.xyz" ||
+		req.http.Referer ~ "(?i)free\-share\-buttons\-bbb\.xyz" ||
+		req.http.Referer ~ "(?i)free\-share\-buttons\-ccc\.xyz" ||
+		req.http.Referer ~ "(?i)free\-share\-buttons\-ddd\.xyz" ||
+		req.http.Referer ~ "(?i)free\-share\-buttons\-eee\.xyz" ||
+		req.http.Referer ~ "(?i)free\-share\-buttons\-fff\.xyz" ||
 		req.http.Referer ~ "(?i)free\-share\-buttons\.com" ||
+		req.http.Referer ~ "(?i)free\-social\-buttons\-aaa\.xyz" ||
+		req.http.Referer ~ "(?i)free\-social\-buttons\-bbb\.xyz" ||
+		req.http.Referer ~ "(?i)free\-social\-buttons\-ccc\.xyz" ||
+		req.http.Referer ~ "(?i)free\-social\-buttons\-ddd\.xyz" ||
+		req.http.Referer ~ "(?i)free\-social\-buttons\-eee\.xyz" ||
+		req.http.Referer ~ "(?i)free\-social\-buttons\-fff\.xyz" ||
+		req.http.Referer ~ "(?i)free\-social\-buttons\-hhh\.xyz" ||
+		req.http.Referer ~ "(?i)free\-social\-buttons\-iii\.xyz" ||
 		req.http.Referer ~ "(?i)free\-social\-buttons\.com" ||
 		req.http.Referer ~ "(?i)free\-social\-buttons\.xyz" ||
 		req.http.Referer ~ "(?i)free\-social\-buttons1\.xyz" ||
@@ -356,6 +370,7 @@ sub block_referral_spam {
 		req.http.Referer ~ "(?i)ilovevitaly\.org" ||
 		req.http.Referer ~ "(?i)ilovevitaly\.ro" ||
 		req.http.Referer ~ "(?i)ilovevitaly\.ru" ||
+		req.http.Referer ~ "(?i)ilovevitaly\.xyz" ||
 		req.http.Referer ~ "(?i)imediadesk\.com" ||
 		req.http.Referer ~ "(?i)iminent\.com" ||
 		req.http.Referer ~ "(?i)imperiafilm\.ru" ||
@@ -406,11 +421,34 @@ sub block_referral_spam {
 		req.http.Referer ~ "(?i)kw21\.org" ||
 		req.http.Referer ~ "(?i)law\-enforcement\-aa\.xyz" ||
 		req.http.Referer ~ "(?i)law\-enforcement\-bb\.xyz" ||
+		req.http.Referer ~ "(?i)law\-enforcement\-bot\-aa\.xyz" ||
+		req.http.Referer ~ "(?i)law\-enforcement\-bot\-bb\.xyz" ||
+		req.http.Referer ~ "(?i)law\-enforcement\-bot\-cc\.xyz" ||
+		req.http.Referer ~ "(?i)law\-enforcement\-bot\-dd\.xyz" ||
+		req.http.Referer ~ "(?i)law\-enforcement\-bot\-ee\.xyz" ||
+		req.http.Referer ~ "(?i)law\-enforcement\-bot\-ff\.xyz" ||
+		req.http.Referer ~ "(?i)law\-enforcement\-bot\-hh\.xyz" ||
+		req.http.Referer ~ "(?i)law\-enforcement\-bot\-ii\.xyz" ||
 		req.http.Referer ~ "(?i)law\-enforcement\-cc\.xyz" ||
+		req.http.Referer ~ "(?i)law\-enforcement\-check\-eight\.xyz" ||
+		req.http.Referer ~ "(?i)law\-enforcement\-check\-five\.xyz" ||
+		req.http.Referer ~ "(?i)law\-enforcement\-check\-four\.xyz" ||
+		req.http.Referer ~ "(?i)law\-enforcement\-check\-nine\.xyz" ||
+		req.http.Referer ~ "(?i)law\-enforcement\-check\-one\.xyz" ||
+		req.http.Referer ~ "(?i)law\-enforcement\-check\-six\.xyz" ||
+		req.http.Referer ~ "(?i)law\-enforcement\-check\-three\.xyz" ||
+		req.http.Referer ~ "(?i)law\-enforcement\-check\-two\.xyz" ||
 		req.http.Referer ~ "(?i)law\-enforcement\-dd\.xyz" ||
 		req.http.Referer ~ "(?i)law\-enforcement\-ee\.xyz" ||
 		req.http.Referer ~ "(?i)law\-enforcement\-ff\.xyz" ||
 		req.http.Referer ~ "(?i)law\-enforcement\-gg\.xyz" ||
+		req.http.Referer ~ "(?i)law\-enforcement\-hh\.xyz" ||
+		req.http.Referer ~ "(?i)law\-five\.xyz" ||
+		req.http.Referer ~ "(?i)law\-four\.xyz" ||
+		req.http.Referer ~ "(?i)law\-one\.xyz" ||
+		req.http.Referer ~ "(?i)law\-six\.xyz" ||
+		req.http.Referer ~ "(?i)law\-three\.xyz" ||
+		req.http.Referer ~ "(?i)law\-two\.xyz" ||
 		req.http.Referer ~ "(?i)laxdrills\.com" ||
 		req.http.Referer ~ "(?i)leadwayau\.com" ||
 		req.http.Referer ~ "(?i)lego4x4\.ru" ||
@@ -463,6 +501,7 @@ sub block_referral_spam {
 		req.http.Referer ~ "(?i)mitrasound\.ru" ||
 		req.http.Referer ~ "(?i)mmog\-play\.ru" ||
 		req.http.Referer ~ "(?i)mobilemedia\.md" ||
+		req.http.Referer ~ "(?i)mobot\.site" ||
 		req.http.Referer ~ "(?i)monetizationking\.net" ||
 		req.http.Referer ~ "(?i)money\-every\-day\.com" ||
 		req.http.Referer ~ "(?i)moscow\.xrus\.org" ||
@@ -645,6 +684,7 @@ sub block_referral_spam {
 		req.http.Referer ~ "(?i)sibecoprom\.ru" ||
 		req.http.Referer ~ "(?i)silvermature\.net" ||
 		req.http.Referer ~ "(?i)simple\-share\-buttons\.com" ||
+		req.http.Referer ~ "(?i)site\-auditor\.online" ||
 		req.http.Referer ~ "(?i)siteripz\.net" ||
 		req.http.Referer ~ "(?i)sitevaluation\.com" ||
 		req.http.Referer ~ "(?i)sitevaluation\.org" ||
@@ -654,6 +694,7 @@ sub block_referral_spam {
 		req.http.Referer ~ "(?i)sledstvie\-veli\.net" ||
 		req.http.Referer ~ "(?i)slftsdybbg\.ru" ||
 		req.http.Referer ~ "(?i)slkrm\.ru" ||
+		req.http.Referer ~ "(?i)slow\-website\.xyz" ||
 		req.http.Referer ~ "(?i)smailik\.org" ||
 		req.http.Referer ~ "(?i)smartphonediscount\.info" ||
 		req.http.Referer ~ "(?i)smstraf\.ru" ||
@@ -664,8 +705,15 @@ sub block_referral_spam {
 		req.http.Referer ~ "(?i)social\-buttons\-aa\.xyz" ||
 		req.http.Referer ~ "(?i)social\-buttons\-bb\.xyz" ||
 		req.http.Referer ~ "(?i)social\-buttons\-cc\.xyz" ||
+		req.http.Referer ~ "(?i)social\-buttons\-dd\.xyz" ||
+		req.http.Referer ~ "(?i)social\-buttons\-ee\.xyz" ||
+		req.http.Referer ~ "(?i)social\-buttons\-ff\.xyz" ||
+		req.http.Referer ~ "(?i)social\-buttons\-gg\.xyz" ||
+		req.http.Referer ~ "(?i)social\-buttons\-hh\.xyz" ||
+		req.http.Referer ~ "(?i)social\-buttons\-ii\.xyz" ||
 		req.http.Referer ~ "(?i)social\-buttons\.com" ||
 		req.http.Referer ~ "(?i)social\-buttons\.xyz" ||
+		req.http.Referer ~ "(?i)social\-search\.me" ||
 		req.http.Referer ~ "(?i)social\-traffic\-1\.xyz" ||
 		req.http.Referer ~ "(?i)social\-traffic\-2\.xyz" ||
 		req.http.Referer ~ "(?i)social\-traffic\-7\.xyz" ||
@@ -776,6 +824,7 @@ sub block_referral_spam {
 		req.http.Referer ~ "(?i)webmonetizer\.net" ||
 		req.http.Referer ~ "(?i)website\-analyzer\.info" ||
 		req.http.Referer ~ "(?i)website\-errors\-scanner\.com" ||
+		req.http.Referer ~ "(?i)website\-stealer\-warning\-alert\.hdmoviecams\.com" ||
 		req.http.Referer ~ "(?i)websites\-reviews\.com" ||
 		req.http.Referer ~ "(?i)websocial\.me" ||
 		req.http.Referer ~ "(?i)wedding\-salon\.net" ||
