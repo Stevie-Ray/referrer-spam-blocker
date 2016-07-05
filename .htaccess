@@ -1,5 +1,5 @@
 # https://github.com/Stevie-Ray/apache-nginx-referral-spam-blacklist
-# Updated 2016-06-05 23:29:25
+# Updated 2016-07-05 16:39:23
 
 <IfModule mod_rewrite.c>
 
@@ -255,7 +255,6 @@ RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*feedouble\.net.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*ferieboligkbh\.dk.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*filmetricsasia\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*fitness\-video\.net.*$ [NC,OR]
-RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*fiverr\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*fix\-website\-errors\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*floating\-share\-buttons\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*flooringinstallation\-edmonton\.com.*$ [NC,OR]
@@ -1047,7 +1046,6 @@ SetEnvIfNoCase Referer feedouble\.net spambot=yes
 SetEnvIfNoCase Referer ferieboligkbh\.dk spambot=yes
 SetEnvIfNoCase Referer filmetricsasia\.com spambot=yes
 SetEnvIfNoCase Referer fitness\-video\.net spambot=yes
-SetEnvIfNoCase Referer fiverr\.com spambot=yes
 SetEnvIfNoCase Referer fix\-website\-errors\.com spambot=yes
 SetEnvIfNoCase Referer floating\-share\-buttons\.com spambot=yes
 SetEnvIfNoCase Referer flooringinstallation\-edmonton\.com spambot=yes
