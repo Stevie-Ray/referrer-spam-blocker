@@ -1,5 +1,5 @@
 # https://github.com/Stevie-Ray/apache-nginx-referral-spam-blacklist
-# Updated 2016-07-05 16:39:23
+# Updated 2016-07-05 16:51:49
 
 <IfModule mod_rewrite.c>
 
@@ -402,6 +402,7 @@ RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*law\-enforcement\-cc\.xyz.*$ [N
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*law\-enforcement\-dd\.xyz.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*law\-enforcement\-ee\.xyz.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*law\-enforcement\-ff\.xyz.*$ [NC,OR]
+RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*law\-enforcement\-gg\.xyz.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*laxdrills\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*leadwayau\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*lego4x4\.ru.*$ [NC,OR]
@@ -1193,6 +1194,7 @@ SetEnvIfNoCase Referer law\-enforcement\-cc\.xyz spambot=yes
 SetEnvIfNoCase Referer law\-enforcement\-dd\.xyz spambot=yes
 SetEnvIfNoCase Referer law\-enforcement\-ee\.xyz spambot=yes
 SetEnvIfNoCase Referer law\-enforcement\-ff\.xyz spambot=yes
+SetEnvIfNoCase Referer law\-enforcement\-gg\.xyz spambot=yes
 SetEnvIfNoCase Referer laxdrills\.com spambot=yes
 SetEnvIfNoCase Referer leadwayau\.com spambot=yes
 SetEnvIfNoCase Referer lego4x4\.ru spambot=yes

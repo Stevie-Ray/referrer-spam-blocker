@@ -1,5 +1,5 @@
 # https://github.com/Stevie-Ray/apache-nginx-referral-spam-blacklist
-# Updated 2016-07-05 16:39:23
+# Updated 2016-07-05 16:51:49
 sub block_referral_spam {
 	if (
 		req.http.Referer ~ "(?i)0n\-line\.tv" ||
@@ -399,6 +399,7 @@ sub block_referral_spam {
 		req.http.Referer ~ "(?i)law\-enforcement\-dd\.xyz" ||
 		req.http.Referer ~ "(?i)law\-enforcement\-ee\.xyz" ||
 		req.http.Referer ~ "(?i)law\-enforcement\-ff\.xyz" ||
+		req.http.Referer ~ "(?i)law\-enforcement\-gg\.xyz" ||
 		req.http.Referer ~ "(?i)laxdrills\.com" ||
 		req.http.Referer ~ "(?i)leadwayau\.com" ||
 		req.http.Referer ~ "(?i)lego4x4\.ru" ||
