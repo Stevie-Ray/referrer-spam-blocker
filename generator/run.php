@@ -60,7 +60,7 @@ RewriteEngine On\n\n";
         foreach ($lines as $line) {
             if ($line === end($lines)) {
                 $data .= "RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*" . preg_quote($line) . ".*$ [NC]\n";
-            break;
+                break;
             }
 
             $data .= "RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*" . preg_quote($line) . ".*$ [NC,OR]\n";
@@ -147,6 +147,36 @@ map \$http_referer \$bad_referer {
     }
 
     /**
+     * @param string $date
+     * @param array $lines
+     */
+    public function createVarnish($date, array $lines)
+    {
+        $file = __DIR__ . '/../referral-spam.vcl';
+
+        $data = "# https://github.com/Stevie-Ray/apache-nginx-referral-spam-blacklist\n# Updated " . $date . "\nsub block_referral_spam {\n\tif (\n";
+        foreach ($lines as $line) {
+            if ($line === end($lines)) {
+                $data .= "\t\treq.http.Referer ~ \"(?i)" . preg_quote($line) . "\"\n";
+                break;
+            }
+
+            $data .= "\t\treq.http.Referer ~ \"(?i)" . preg_quote($line) . "\" ||\n";
+        }
+
+        $data .= "\t) {\n\t\t\treturn (synth(444, \"No Response\"));\n\t}\n}";
+
+        if (is_readable($file) && is_writable($file)) {
+            file_put_contents($file, $data);
+            if (!chmod($file, 0644)) {
+                trigger_error("Couldn't not set referral-spam.vcl permissions to 644");
+            }
+        } else {
+            trigger_error("Permission denied");
+        }
+    }
+
+    /**
      * @param array $lines
      */
     public function createGoogleExclude(array $lines)
@@ -174,4 +204,5 @@ require __DIR__ . '/vendor/autoload.php';
 $lines = $generator->domainWorker();
 $generator->createApache($date, $lines);
 $generator->createNginx($date, $lines);
+$generator->createVarnish($date, $lines);
 $generator->createGoogleExclude($lines);

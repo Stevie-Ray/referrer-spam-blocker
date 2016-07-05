@@ -1,7 +1,7 @@
 apache-nginx-referral-spam-blacklist [![Build Status](https://travis-ci.org/Stevie-Ray/apache-nginx-referral-spam-blacklist.svg)](https://travis-ci.org/Stevie-Ray/apache-nginx-referral-spam-blacklist)
 ====================================
 
-Generator to create Apache and Nginx files plus a Google Analytics segment to prevent (old) referral spam traffic.
+Generator to create Apache, Nginx and Varnish files (plus a Google Analytics segment file) to prevent referral spam traffic.
 
 - - - -
 
@@ -31,10 +31,16 @@ server {
 ```
 
 
-## Options for old Google Analytics 'ghost' spam
+## Varnish: .refferal-spam.vcl usage
 
-**UPDATE:**
-The problem with future Google Analytics spam seems to be [fixed](http://www.thesempost.com/google-analytics-referral-spam-removed/). 
+Add `referral-spam.vcl` to **Varnish 4** default file: `default.vcl` by adding the following code right underneath your default backend definitions
+
+```conf
+include "referral-spam.vcl";
+sub vcl_recv { call block_referral_spam; }
+```
+
+## Options for Google Analytics 'ghost' spam
 
 The above methods don't stop the Google Analytics **ghost** referral spam (because they are hitting Analytics directly and don't touching your website). You should use filters in Analytics to prevent **ghost** referral spam. 
 
