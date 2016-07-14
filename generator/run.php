@@ -1,9 +1,23 @@
 <?php
-ini_set('display_errors', true);
-error_reporting(E_ALL);
 
 class Generate
 {
+
+    private $projectUrl = "https://github.com/Stevie-Ray/referrer-spam-blocker";
+
+    public function generateFiles()
+    {
+
+        date_default_timezone_set('UTC');
+        $date = date('Y-m-d H:i:s');
+
+        $lines = $this->domainWorker();
+
+        $this->createApache($date, $lines);
+        $this->createNginx($date, $lines);
+        $this->createVarnish($date, $lines);
+        $this->createGoogleExclude($lines);
+    }
 
     /**
      * @return array
@@ -53,10 +67,7 @@ class Generate
     public function createApache($date, array $lines)
     {
         $file = __DIR__ . '/../.htaccess';
-        $data = "# https://github.com/Stevie-Ray/apache-nginx-referral-spam-blacklist
-# Updated " . $date . "\n
-<IfModule mod_rewrite.c>\n
-RewriteEngine On\n\n";
+        $data = "# " . $this->projectUrl . "\n# Updated " . $date . "\n\n<IfModule mod_rewrite.c>\n\nRewriteEngine On\n\n";
         foreach ($lines as $line) {
             if ($line === end($lines)) {
                 $data .= "RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*" . preg_quote($line) . ".*$ [NC]\n";
@@ -66,34 +77,11 @@ RewriteEngine On\n\n";
             $data .= "RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*" . preg_quote($line) . ".*$ [NC,OR]\n";
         }
 
-        $data .= "RewriteRule ^(.*)$ – [F,L]
-
-</IfModule>
-
-<IfModule mod_setenvif.c>
-
-";
+        $data .= "RewriteRule ^(.*)$ – [F,L]\n\n</IfModule>\n\n<IfModule mod_setenvif.c>\n\n";
         foreach ($lines as $line) {
             $data .= "SetEnvIfNoCase Referer " . preg_quote($line) . " spambot=yes\n";
         }
-        $data .= "
-</IfModule>
-
-# Apache 2.2
-<IfModule !mod_authz_core.c>
-    <IfModule mod_authz_host.c>
-        Order allow,deny
-        Allow from all
-        Deny from env=spambot
-    </IfModule>
-</IfModule>
-# Apache 2.4
-<IfModule mod_authz_core.c>
-    <RequireAll>
-        Require all granted
-        Require not env spambot
-    </RequireAll>
-</IfModule>";
+        $data .= "\n</IfModule>\n\n# Apache 2.2\n<IfModule !mod_authz_core.c>\n\t<IfModule mod_authz_host.c>\n\t\tOrder allow,deny\n\t\tAllow from all\n\t\tDeny from env=spambot\n\t</IfModule>\n</IfModule>\n# Apache 2.4\n<IfModule mod_authz_core.c>\n\t<RequireAll>\n\t\tRequire all granted\n\t\tRequire not env spambot\n\t</RequireAll>\n</IfModule>";
         if (is_readable($file) && is_writable($file)) {
             file_put_contents($file, $data);
             if (!chmod($file, 0644)) {
@@ -112,25 +100,7 @@ RewriteEngine On\n\n";
     public function createNginx($date, array $lines)
     {
         $file = __DIR__ . '/../referral-spam.conf';
-        $data = "# https://github.com/Stevie-Ray/apache-nginx-referral-spam-blacklist
-# Updated " . $date . "
-#
-# /etc/nginx/referral-spam.conf
-#
-# With referral-spam.conf in /etc/nginx, include it globally from within /etc/nginx/nginx.conf:
-#
-#     include referral-spam.conf;
-#
-# Add the following to each /etc/nginx/site-available/your-site.conf that needs protection:
-#
-#      server {
-#        if (\$bad_referer) {
-#          return 444;
-#        }
-#      }
-#
-map \$http_referer \$bad_referer {
-\tdefault 0;\n\n";
+        $data = "# " . $this->projectUrl . "\n# Updated " . $date . "\n#\n# /etc/nginx/referral-spam.conf\n#\n# With referral-spam.conf in /etc/nginx, include it globally from within /etc/nginx/nginx.conf:\n#\n#     include referral-spam.conf;\n#\n# Add the following to each /etc/nginx/site-available/your-site.conf that needs protection:\n#\n#      server {\n#        if (\$bad_referer) {\n#          return 444;\n#        }\n#      }\n#\nmap \$http_referer \$bad_referer {\n\tdefault 0;\n\n";
         foreach ($lines as $line) {
             $data .= "\t\"~*" . preg_quote($line) . "\" 1;\n";
         }
@@ -154,7 +124,7 @@ map \$http_referer \$bad_referer {
     {
         $file = __DIR__ . '/../referral-spam.vcl';
 
-        $data = "# https://github.com/Stevie-Ray/apache-nginx-referral-spam-blacklist\n# Updated " . $date . "\nsub block_referral_spam {\n\tif (\n";
+        $data = "# " . $this->projectUrl . "\n# Updated " . $date . "\nsub block_referral_spam {\n\tif (\n";
         foreach ($lines as $line) {
             if ($line === end($lines)) {
                 $data .= "\t\treq.http.Referer ~ \"(?i)" . preg_quote($line) . "\"\n";
@@ -197,12 +167,6 @@ map \$http_referer \$bad_referer {
     }
 }
 
-date_default_timezone_set('UTC');
-$date = date('Y-m-d H:i:s');
-$generator = new Generate();
 require __DIR__ . '/vendor/autoload.php';
-$lines = $generator->domainWorker();
-$generator->createApache($date, $lines);
-$generator->createNginx($date, $lines);
-$generator->createVarnish($date, $lines);
-$generator->createGoogleExclude($lines);
+$generator = new Generate();
+$generator->generateFiles();
