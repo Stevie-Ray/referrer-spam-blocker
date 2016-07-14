@@ -1,5 +1,5 @@
-# https://github.com/Stevie-Ray/apache-nginx-referral-spam-blacklist
-# Updated 2016-07-05 16:58:41
+# https://github.com/Stevie-Ray/referrer-spam-blocker
+# Updated 2016-07-14 23:47:04
 sub block_referral_spam {
 	if (
 		req.http.Referer ~ "(?i)0n\-line\.tv" ||
@@ -90,6 +90,7 @@ sub block_referral_spam {
 		req.http.Referer ~ "(?i)best\-seo\-offer\.com" ||
 		req.http.Referer ~ "(?i)best\-seo\-software\.xyz" ||
 		req.http.Referer ~ "(?i)best\-seo\-solution\.com" ||
+		req.http.Referer ~ "(?i)bestchoice\.cf" ||
 		req.http.Referer ~ "(?i)bestmobilityscooterstoday\.com" ||
 		req.http.Referer ~ "(?i)bestwebsitesawards\.com" ||
 		req.http.Referer ~ "(?i)bif\-ru\.info" ||
@@ -100,6 +101,7 @@ sub block_referral_spam {
 		req.http.Referer ~ "(?i)bio\.trade\-jp\.net" ||
 		req.http.Referer ~ "(?i)bioca\.org" ||
 		req.http.Referer ~ "(?i)biznesluxe\.ru" ||
+		req.http.Referer ~ "(?i)biznesschat\.net" ||
 		req.http.Referer ~ "(?i)bizru\.info" ||
 		req.http.Referer ~ "(?i)bkns\.vn" ||
 		req.http.Referer ~ "(?i)black\-friday\.ga" ||
@@ -126,6 +128,7 @@ sub block_referral_spam {
 		req.http.Referer ~ "(?i)buttons\-for\-website\.com" ||
 		req.http.Referer ~ "(?i)buttons\-for\-your\-website\.com" ||
 		req.http.Referer ~ "(?i)buy\-cheap\-online\.info" ||
+		req.http.Referer ~ "(?i)buy\-cheap\-pills\-order\-online\.com" ||
 		req.http.Referer ~ "(?i)buy\-forum\.ru" ||
 		req.http.Referer ~ "(?i)buyantiviralwp\.com" ||
 		req.http.Referer ~ "(?i)buyessaynow\.biz" ||
@@ -237,6 +240,7 @@ sub block_referral_spam {
 		req.http.Referer ~ "(?i)eu\-cookie\-law\-enforcement\-7\.xyz" ||
 		req.http.Referer ~ "(?i)eu\-cookie\-law\-enforcement1\.xyz" ||
 		req.http.Referer ~ "(?i)eu\-cookie\-law\-enforcement2\.xyz" ||
+		req.http.Referer ~ "(?i)eu\-cookie\-law\.blogspot\.com" ||
 		req.http.Referer ~ "(?i)euromasterclass\.ru" ||
 		req.http.Referer ~ "(?i)euronis\-free\.com" ||
 		req.http.Referer ~ "(?i)europages\.com\.ru" ||
@@ -276,6 +280,7 @@ sub block_referral_spam {
 		req.http.Referer ~ "(?i)free\-share\-buttons\-ddd\.xyz" ||
 		req.http.Referer ~ "(?i)free\-share\-buttons\-eee\.xyz" ||
 		req.http.Referer ~ "(?i)free\-share\-buttons\-fff\.xyz" ||
+		req.http.Referer ~ "(?i)free\-share\-buttons\.blogspot\.com" ||
 		req.http.Referer ~ "(?i)free\-share\-buttons\.com" ||
 		req.http.Referer ~ "(?i)free\-social\-buttons\-aaa\.xyz" ||
 		req.http.Referer ~ "(?i)free\-social\-buttons\-bbb\.xyz" ||
@@ -419,6 +424,7 @@ sub block_referral_spam {
 		req.http.Referer ~ "(?i)krynica\.info" ||
 		req.http.Referer ~ "(?i)kupit\-adenu\.ru" ||
 		req.http.Referer ~ "(?i)kw21\.org" ||
+		req.http.Referer ~ "(?i)laudit\.ru" ||
 		req.http.Referer ~ "(?i)law\-enforcement\-aa\.xyz" ||
 		req.http.Referer ~ "(?i)law\-enforcement\-bb\.xyz" ||
 		req.http.Referer ~ "(?i)law\-enforcement\-bot\-aa\.xyz" ||
@@ -521,6 +527,7 @@ sub block_referral_spam {
 		req.http.Referer ~ "(?i)muz\-shoes\.ru" ||
 		req.http.Referer ~ "(?i)mycaf\.it" ||
 		req.http.Referer ~ "(?i)myftpupload\.com" ||
+		req.http.Referer ~ "(?i)mylida\.org" ||
 		req.http.Referer ~ "(?i)myplaycity\.com" ||
 		req.http.Referer ~ "(?i)myprintscreen\.com" ||
 		req.http.Referer ~ "(?i)nate\.com" ||
@@ -665,6 +672,7 @@ sub block_referral_spam {
 		req.http.Referer ~ "(?i)search\-helper\.ru" ||
 		req.http.Referer ~ "(?i)semalt\.com" ||
 		req.http.Referer ~ "(?i)semaltmedia\.com" ||
+		req.http.Referer ~ "(?i)seo\-2\-0\.com" ||
 		req.http.Referer ~ "(?i)seo\-platform\.com" ||
 		req.http.Referer ~ "(?i)seo\-smm\.kz" ||
 		req.http.Referer ~ "(?i)seoanalyses\.com" ||
@@ -795,8 +803,10 @@ sub block_referral_spam {
 		req.http.Referer ~ "(?i)vesnatehno\.ru" ||
 		req.http.Referer ~ "(?i)vgoloveboli\.net" ||
 		req.http.Referer ~ "(?i)video\-\-production\.com" ||
+		req.http.Referer ~ "(?i)video\-chat\.in" ||
 		req.http.Referer ~ "(?i)video\-woman\.com" ||
 		req.http.Referer ~ "(?i)videochat\.mx" ||
+		req.http.Referer ~ "(?i)videochat\.tv\.br" ||
 		req.http.Referer ~ "(?i)videofrost\.com" ||
 		req.http.Referer ~ "(?i)videofrost\.net" ||
 		req.http.Referer ~ "(?i)videos\-for\-your\-business\.com" ||
