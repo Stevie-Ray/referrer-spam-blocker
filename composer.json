@@ -1,5 +1,5 @@
 {
-  "name": "stevie-ray/referrer-spam-blocker ",
+  "name": "stevie-ray/referrer-spam-blocker",
   "description": "Apache, Nginx & Varnish blacklist plus Google Analytics segment to prevent referrer spam traffic",
   "keywords": ["spam", "blacklist", "blocker", "referrer", "analytics", "apache", "nginx", "varnish"],
   "license": "MIT",
