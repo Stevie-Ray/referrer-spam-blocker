@@ -1,16 +1,16 @@
-apache-nginx-referral-spam-blacklist [![Build Status](https://travis-ci.org/Stevie-Ray/apache-nginx-referral-spam-blacklist.svg)](https://travis-ci.org/Stevie-Ray/apache-nginx-referral-spam-blacklist)
+referrer-spam-blocker [![Build Status](https://travis-ci.org/Stevie-Ray/referrer-spam-blocker.svg)](https://travis-ci.org/Stevie-Ray/referrer-spam-blocker)
 ====================================
 
-Generator to create Apache, Nginx and Varnish files (plus a Google Analytics segment file) to prevent referral spam traffic.
+Apache, Nginx & Varnish blacklist plus Google Analytics segment to prevent referrer spam traffic 👾
 
 - - - -
 
-## Apache: .htaccess usage
+## Apache: .htaccess
 
 .htaccess is a configuration file for use on web servers running Apache. This file is usually found in the root “public_html” folder of your website. The .htaccess file uses two modules to prevent referral spam, mod_rewrite and mod_setenvif. Decide which method is most suitable with your Apache server configuration. This file is **Apache 2.4** ready, where mod_authz_host got deprecated.
 
 
-## Nginx: referral-spam.conf usage
+## Nginx: referral-spam.conf
 
 With `referral-spam.conf` in `/etc/nginx`, include it globally from within `/etc/nginx/nginx.conf`:
 
@@ -31,7 +31,7 @@ server {
 ```
 
 
-## Varnish: .refferal-spam.vcl usage
+## Varnish: .refferal-spam.vcl
 
 Add `referral-spam.vcl` to **Varnish 4** default file: `default.vcl` by adding the following code right underneath your default backend definitions
 
@@ -53,7 +53,7 @@ Hostname | matches regex | ```your-website\.com|www\.your-website\.com```
 
 Filter | Session | **Exclude**
 ------------ | ------------- | -------------
-Source | matches regex |Copy all the domains from [google-exclude.txt](https://raw.githubusercontent.com/Stevie-Ray/apache-nginx-referral-spam-blacklist/master/google-exclude.txt) to this field
+Source | matches regex |Copy all the domains from [google-exclude.txt](https://raw.githubusercontent.com/Stevie-Ray/referrer-spam-blocker/master/google-exclude.txt) to this field
 
 You can also prevent **ghost** referral spam by:
 

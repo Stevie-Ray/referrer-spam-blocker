@@ -1,4 +1,4 @@
-apache-nginx-referral-spam-blacklist [![Build Status](https://travis-ci.org/Stevie-Ray/apache-nginx-referral-spam-blacklist.svg)](https://travis-ci.org/Stevie-Ray/apache-nginx-referral-spam-blacklist)
+referrer-spam-blocker [![Build Status](https://travis-ci.org/Stevie-Ray/referrer-spam-blocker.svg)](https://travis-ci.org/Stevie-Ray/referrer-spam-blocker)
 ====================================
 
 ## Install
@@ -24,9 +24,9 @@ In your webbrowser run the **generator/run.php** file to generate the files.
 
 ## Contributing
  
-If you'd like to add a new referrer spammer to the list, [click here to edit the domains.txt file](https://github.com/Stevie-Ray/apache-nginx-referral-spam-blacklist/edit/master/generator/domains.txt) and create a pull request. Alternatively you can create a [new issue](https://github.com/Stevie-Ray/apache-nginx-referral-spam-blacklist/issues/new). In your issue or pull request please explain where the referrer domain appeared and why you think it is a spammer. **Please open one pull request per new domain**.
+If you'd like to add a new referrer spammer to the list, [click here to edit the domains.txt file](https://github.com/Stevie-Ray/referrer-spam-blocker/edit/master/generator/domains.txt) and create a pull request. Alternatively you can create a [new issue](https://github.com/Stevie-Ray/apache-nginx-referral-spam-blacklist/issues/new). In your issue or pull request please explain where the referrer domain appeared and why you think it is a spammer. **Please open one pull request per new domain**.
  
-If you open a pull request, it is appreciated if you run the **generator/run.php** file. It sorts the domains, creates the Nginx and Apache files and checks if somebody already reported the domain.
+If you open a pull request, it is appreciated if you run the **generator/run.php** file. It sorts the domains, creates the files and checks if somebody already reported the domain.
 
 
 ## Like it?
