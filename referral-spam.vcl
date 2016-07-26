@@ -1,5 +1,5 @@
 # https://github.com/Stevie-Ray/referrer-spam-blocker
-# Updated 2016-07-14 23:47:04
+# Updated 2016-07-26 15:59:30
 sub block_referral_spam {
 	if (
 		req.http.Referer ~ "(?i)0n\-line\.tv" ||
@@ -92,7 +92,9 @@ sub block_referral_spam {
 		req.http.Referer ~ "(?i)best\-seo\-solution\.com" ||
 		req.http.Referer ~ "(?i)bestchoice\.cf" ||
 		req.http.Referer ~ "(?i)bestmobilityscooterstoday\.com" ||
+		req.http.Referer ~ "(?i)bestofferswalkmydogouteveryday\.gq" ||
 		req.http.Referer ~ "(?i)bestwebsitesawards\.com" ||
+		req.http.Referer ~ "(?i)betonka\.pro" ||
 		req.http.Referer ~ "(?i)bif\-ru\.info" ||
 		req.http.Referer ~ "(?i)biglistofwebsites\.com" ||
 		req.http.Referer ~ "(?i)billiard\-classic\.com\.ua" ||
@@ -217,6 +219,7 @@ sub block_referral_spam {
 		req.http.Referer ~ "(?i)e\-kwiaciarz\.pl" ||
 		req.http.Referer ~ "(?i)e2click\.com" ||
 		req.http.Referer ~ "(?i)easycommerce\.cf" ||
+		req.http.Referer ~ "(?i)easync\.io" ||
 		req.http.Referer ~ "(?i)ecomp3\.ru" ||
 		req.http.Referer ~ "(?i)econom\.co" ||
 		req.http.Referer ~ "(?i)edakgfvwql\.ru" ||
@@ -246,6 +249,7 @@ sub block_referral_spam {
 		req.http.Referer ~ "(?i)europages\.com\.ru" ||
 		req.http.Referer ~ "(?i)eurosamodelki\.ru" ||
 		req.http.Referer ~ "(?i)event\-tracking\.com" ||
+		req.http.Referer ~ "(?i)exchangeit\.gq" ||
 		req.http.Referer ~ "(?i)extener\.com" ||
 		req.http.Referer ~ "(?i)extremez\.net" ||
 		req.http.Referer ~ "(?i)facebook\-mobile\.xyz" ||
@@ -394,6 +398,7 @@ sub block_referral_spam {
 		req.http.Referer ~ "(?i)istock\-mebel\.ru" ||
 		req.http.Referer ~ "(?i)it\-max\.com\.ua" ||
 		req.http.Referer ~ "(?i)itbc\.kiev\.ua" ||
+		req.http.Referer ~ "(?i)itrevolution\.cf" ||
 		req.http.Referer ~ "(?i)itronics\.ca" ||
 		req.http.Referer ~ "(?i)itsdp3\.com" ||
 		req.http.Referer ~ "(?i)izhevsk\.xrus\.org" ||
@@ -417,6 +422,7 @@ sub block_referral_spam {
 		req.http.Referer ~ "(?i)kinobaks\.com" ||
 		req.http.Referer ~ "(?i)kinopolet\.net" ||
 		req.http.Referer ~ "(?i)kiwe\-analytics\.com" ||
+		req.http.Referer ~ "(?i)kiwi237au\.tk" ||
 		req.http.Referer ~ "(?i)knigonosha\.net" ||
 		req.http.Referer ~ "(?i)konkursov\.net" ||
 		req.http.Referer ~ "(?i)kosova\.de" ||
@@ -446,9 +452,16 @@ sub block_referral_spam {
 		req.http.Referer ~ "(?i)law\-enforcement\-check\-two\.xyz" ||
 		req.http.Referer ~ "(?i)law\-enforcement\-dd\.xyz" ||
 		req.http.Referer ~ "(?i)law\-enforcement\-ee\.xyz" ||
+		req.http.Referer ~ "(?i)law\-enforcement\-eight\.xyz" ||
 		req.http.Referer ~ "(?i)law\-enforcement\-ff\.xyz" ||
+		req.http.Referer ~ "(?i)law\-enforcement\-five\.xyz" ||
+		req.http.Referer ~ "(?i)law\-enforcement\-four\.xyz" ||
 		req.http.Referer ~ "(?i)law\-enforcement\-gg\.xyz" ||
 		req.http.Referer ~ "(?i)law\-enforcement\-hh\.xyz" ||
+		req.http.Referer ~ "(?i)law\-enforcement\-one\.xyz" ||
+		req.http.Referer ~ "(?i)law\-enforcement\-seven\.xyz" ||
+		req.http.Referer ~ "(?i)law\-enforcement\-three\.xyz" ||
+		req.http.Referer ~ "(?i)law\-enforcement\-two\.xyz" ||
 		req.http.Referer ~ "(?i)law\-five\.xyz" ||
 		req.http.Referer ~ "(?i)law\-four\.xyz" ||
 		req.http.Referer ~ "(?i)law\-one\.xyz" ||
@@ -472,6 +485,7 @@ sub block_referral_spam {
 		req.http.Referer ~ "(?i)lombia\.com" ||
 		req.http.Referer ~ "(?i)lsex\.xyz" ||
 		req.http.Referer ~ "(?i)lumb\.co" ||
+		req.http.Referer ~ "(?i)luxmagazine\.cf" ||
 		req.http.Referer ~ "(?i)luxup\.ru" ||
 		req.http.Referer ~ "(?i)m\-google\.xyz" ||
 		req.http.Referer ~ "(?i)m1media\.net" ||
@@ -578,6 +592,7 @@ sub block_referral_spam {
 		req.http.Referer ~ "(?i)pizza\-tycoon\.com" ||
 		req.http.Referer ~ "(?i)pochemychka\.net" ||
 		req.http.Referer ~ "(?i)poisk\-zakona\.ru" ||
+		req.http.Referer ~ "(?i)pokemongooo\.ml" ||
 		req.http.Referer ~ "(?i)popads\.net" ||
 		req.http.Referer ~ "(?i)pops\.foundation" ||
 		req.http.Referer ~ "(?i)pornhub\-forum\.ga" ||
@@ -624,6 +639,7 @@ sub block_referral_spam {
 		req.http.Referer ~ "(?i)quit\-smoking\.ga" ||
 		req.http.Referer ~ "(?i)qwesa\.ru" ||
 		req.http.Referer ~ "(?i)rank\-checker\.online" ||
+		req.http.Referer ~ "(?i)ranking2017\.ga" ||
 		req.http.Referer ~ "(?i)rankings\-analytics\.com" ||
 		req.http.Referer ~ "(?i)rankscanner\.com" ||
 		req.http.Referer ~ "(?i)ranksignals\.com" ||
@@ -711,14 +727,22 @@ sub block_referral_spam {
 		req.http.Referer ~ "(?i)soaksoak\.ru" ||
 		req.http.Referer ~ "(?i)social\-button\.xyz" ||
 		req.http.Referer ~ "(?i)social\-buttons\-aa\.xyz" ||
+		req.http.Referer ~ "(?i)social\-buttons\-aaa\.xyz" ||
 		req.http.Referer ~ "(?i)social\-buttons\-bb\.xyz" ||
+		req.http.Referer ~ "(?i)social\-buttons\-bbb\.xyz" ||
 		req.http.Referer ~ "(?i)social\-buttons\-cc\.xyz" ||
+		req.http.Referer ~ "(?i)social\-buttons\-ccc\.xyz" ||
 		req.http.Referer ~ "(?i)social\-buttons\-dd\.xyz" ||
+		req.http.Referer ~ "(?i)social\-buttons\-ddd\.xyz" ||
 		req.http.Referer ~ "(?i)social\-buttons\-ee\.xyz" ||
+		req.http.Referer ~ "(?i)social\-buttons\-eee\.xyz" ||
 		req.http.Referer ~ "(?i)social\-buttons\-ff\.xyz" ||
+		req.http.Referer ~ "(?i)social\-buttons\-fff\.xyz" ||
 		req.http.Referer ~ "(?i)social\-buttons\-gg\.xyz" ||
+		req.http.Referer ~ "(?i)social\-buttons\-ggg\.xyz" ||
 		req.http.Referer ~ "(?i)social\-buttons\-hh\.xyz" ||
 		req.http.Referer ~ "(?i)social\-buttons\-ii\.xyz" ||
+		req.http.Referer ~ "(?i)social\-buttons\-iii\.xyz" ||
 		req.http.Referer ~ "(?i)social\-buttons\.com" ||
 		req.http.Referer ~ "(?i)social\-buttons\.xyz" ||
 		req.http.Referer ~ "(?i)social\-search\.me" ||
@@ -799,6 +823,7 @@ sub block_referral_spam {
 		req.http.Referer ~ "(?i)uzungil\.com" ||
 		req.http.Referer ~ "(?i)vapmedia\.org" ||
 		req.http.Referer ~ "(?i)vashsvet\.com" ||
+		req.http.Referer ~ "(?i)velobikestock\.com" ||
 		req.http.Referer ~ "(?i)vesnatehno\.com" ||
 		req.http.Referer ~ "(?i)vesnatehno\.ru" ||
 		req.http.Referer ~ "(?i)vgoloveboli\.net" ||
