@@ -1,11 +1,13 @@
 # https://github.com/Stevie-Ray/referrer-spam-blocker
-# Updated 2016-08-14 12:01:08
+# Updated 2016-09-08 19:58:23
 
 <IfModule mod_rewrite.c>
 
 RewriteEngine On
 
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*0n\-line\.tv.*$ [NC,OR]
+RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*1\-99seo\.com.*$ [NC,OR]
+RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*1\-free\-share\-buttons\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*100dollars\-seo\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*12masterov\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*1kinobig\.ru.*$ [NC,OR]
@@ -28,7 +30,6 @@ RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*acunetix\-referrer\.com.*$ [NC,
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*adcash\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*addons\.mozilla\.org/en\-US/firefox/addon/ilovevitaly.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*adelly\.bg.*$ [NC,OR]
-RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*adf\.ly.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*adspart\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*adtiger\.tk.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*adventureparkcostarica\.com.*$ [NC,OR]
@@ -124,6 +125,7 @@ RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*boleznikogi\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*bookmark4you\.biz.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*bookmark4you\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*boost\-my\-site\.com.*$ [NC,OR]
+RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*brains2\.biz.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*brakehawk\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*break\-the\-chains\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*bristolhostel\.com.*$ [NC,OR]
@@ -131,8 +133,10 @@ RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*bristolhotel\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*bristolhotel\.com\.ua.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*brk\-rti\.ru.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*brothers\-smaller\.ru.*$ [NC,OR]
+RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*brus\.city.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*budmavtomatika\.com\.ua.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*budpost\.com\.ua.*$ [NC,OR]
+RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*bugof\.gq.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*burger\-imperia\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*burn\-fat\.ga.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*buttons\-for\-website\.com.*$ [NC,OR]
@@ -144,6 +148,7 @@ RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*buyantiviralwp\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*buyessaynow\.biz.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*buypharmacydrug\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*bycontext\.com.*$ [NC,OR]
+RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*c\-english\.ru.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*californianews\.cf.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*call\-of\-duty\.info.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*callejondelpozo\.es.*$ [NC,OR]
@@ -167,6 +172,33 @@ RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*clicksor\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*clmforexeu\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*coderstate\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*codysbbq\.com.*$ [NC,OR]
+RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*compliance\-alex\.top.*$ [NC,OR]
+RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*compliance\-alexa\.top.*$ [NC,OR]
+RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*compliance\-andrew\.top.*$ [NC,OR]
+RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*compliance\-barak\.top.*$ [NC,OR]
+RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*compliance\-brian\.top.*$ [NC,OR]
+RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*compliance\-don\.top.*$ [NC,OR]
+RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*compliance\-elena\.top.*$ [NC,OR]
+RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*compliance\-fred\.top.*$ [NC,OR]
+RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*compliance\-george\.top.*$ [NC,OR]
+RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*compliance\-irvin\.top.*$ [NC,OR]
+RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*compliance\-ivan\.top.*$ [NC,OR]
+RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*compliance\-jack\.top.*$ [NC,OR]
+RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*compliance\-jane\.top.*$ [NC,OR]
+RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*compliance\-jess\.top.*$ [NC,OR]
+RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*compliance\-jessica\.top.*$ [NC,OR]
+RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*compliance\-john\.top.*$ [NC,OR]
+RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*compliance\-josh\.top.*$ [NC,OR]
+RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*compliance\-julia\.top.*$ [NC,OR]
+RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*compliance\-julianna\.top.*$ [NC,OR]
+RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*compliance\-margo\.top.*$ [NC,OR]
+RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*compliance\-mark\.top.*$ [NC,OR]
+RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*compliance\-mary\.top.*$ [NC,OR]
+RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*compliance\-nelson\.top.*$ [NC,OR]
+RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*compliance\-viktor\.top.*$ [NC,OR]
+RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*compliance\-walt\.top.*$ [NC,OR]
+RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*compliance\-walter\.top.*$ [NC,OR]
+RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*compliance\-willy\.top.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*conciergegroup\.org.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*connectikastudio\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*constantaservice\.net.*$ [NC,OR]
@@ -261,11 +293,15 @@ RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*europages\.com\.ru.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*eurosamodelki\.ru.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*event\-tracking\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*exchangeit\.gq.*$ [NC,OR]
+RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*executehosting\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*expdom\.com.*$ [NC,OR]
+RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*expresstoplivo\.ru.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*extener\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*extremez\.net.*$ [NC,OR]
+RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*eyes\-on\-you\.ga.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*facebook\-mobile\.xyz.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*family1st\.ca.*$ [NC,OR]
+RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*familyholiday\.ml.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*fashionindeed\.ml.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*fast\-wordpress\-start\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*fbdownloader\.com.*$ [NC,OR]
@@ -275,7 +311,9 @@ RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*feedback\.sharemyfile\.ru.*$ [N
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*feedouble\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*feedouble\.net.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*ferieboligkbh\.dk.*$ [NC,OR]
+RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*film\-one\.ru.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*filmetricsasia\.com.*$ [NC,OR]
+RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*filmgo\.ru.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*finteks\.ru.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*firma\-legion\.ru.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*fitness\-video\.net.*$ [NC,OR]
@@ -347,6 +385,7 @@ RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*goodprotein\.ru.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*googlemare\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*googlsucks\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*gototal\.co\.nz.*$ [NC,OR]
+RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*gq\-catalog\.gq.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*grand\-chlen\.ru.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*growshop\.es.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*gsmtlf\.ru.*$ [NC,OR]
@@ -363,7 +402,9 @@ RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*hdmoviecams\.net.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*hifidesign\.ru.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*hmmm\.cz.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*hol\.es.*$ [NC,OR]
+RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*home\.myplaycity\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*homelygarden\.com.*$ [NC,OR]
+RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*homemade\.gq.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*hongfanji\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*hostcritique\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*hosting\-tracker\.com.*$ [NC,OR]
@@ -436,6 +477,7 @@ RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*kiev\.ua.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*kino\-fun\.ru.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*kino\-key\.info.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*kinobaks\.com.*$ [NC,OR]
+RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*kinoflux\.net.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*kinopolet\.net.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*kiwe\-analytics\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*kiwi237au\.tk.*$ [NC,OR]
@@ -489,6 +531,7 @@ RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*law\-three\.xyz.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*law\-two\.xyz.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*laxdrills\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*leadwayau\.com.*$ [NC,OR]
+RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*ledis\.top.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*lego4x4\.ru.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*letolove\.ru.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*letsgotofriday\.com.*$ [NC,OR]
@@ -608,6 +651,7 @@ RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*perm\.xrus\.org.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*petrovka\-online\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*photokitchendesign\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*picscout\.com.*$ [NC,OR]
+RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*pinkduck\.ga.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*piter\.xrus\.org.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*pizza\-imperia\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*pizza\-tycoon\.com.*$ [NC,OR]
@@ -706,7 +750,34 @@ RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*sanjosestartups\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*santasgift\.ml.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*saratov\.xrus\.org.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*savetubevideo\.com.*$ [NC,OR]
+RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*scanner\-alex\.top.*$ [NC,OR]
+RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*scanner\-alexa\.top.*$ [NC,OR]
+RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*scanner\-andrew\.top.*$ [NC,OR]
+RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*scanner\-barak\.top.*$ [NC,OR]
+RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*scanner\-brian\.top.*$ [NC,OR]
+RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*scanner\-don\.top.*$ [NC,OR]
+RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*scanner\-donald\.top.*$ [NC,OR]
+RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*scanner\-elena\.top.*$ [NC,OR]
+RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*scanner\-fred\.top.*$ [NC,OR]
+RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*scanner\-george\.top.*$ [NC,OR]
+RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*scanner\-irvin\.top.*$ [NC,OR]
+RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*scanner\-ivan\.top.*$ [NC,OR]
+RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*scanner\-jack\.top.*$ [NC,OR]
+RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*scanner\-jane\.top.*$ [NC,OR]
+RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*scanner\-jess\.top.*$ [NC,OR]
+RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*scanner\-jessica\.top.*$ [NC,OR]
+RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*scanner\-john\.top.*$ [NC,OR]
+RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*scanner\-josh\.top.*$ [NC,OR]
+RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*scanner\-julia\.top.*$ [NC,OR]
+RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*scanner\-julianna\.top.*$ [NC,OR]
+RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*scanner\-margo\.top.*$ [NC,OR]
+RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*scanner\-mark\.top.*$ [NC,OR]
+RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*scanner\-marwin\.top.*$ [NC,OR]
+RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*scanner\-mary\.top.*$ [NC,OR]
+RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*scanner\-nelson\.top.*$ [NC,OR]
+RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*scanner\-olga\.top.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*scansafe\.net.*$ [NC,OR]
+RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*scenarii\-1\-sentyabrya\.uroki\.org\.ua.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*screentoolkit\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*scripted\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*sdi\-pme\.com.*$ [NC,OR]
@@ -729,6 +800,7 @@ RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*share\-buttons\.xyz.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*sharebutton\.net.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*sharebutton\.to.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*sharemyfile\.ru.*$ [NC,OR]
+RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*shariki\-zuma\-lines\.ru.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*ship\-marvel\.co\.ua.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*shopvilleroyboch\.com\.ua.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*sibecoprom\.ru.*$ [NC,OR]
@@ -821,6 +893,7 @@ RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*thecoral\.com\.br.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*theguardlan\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*thepokertimer\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*timer4web\.com.*$ [NC,OR]
+RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*tomatis\.gospartner\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*tomck\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*top1\-seo\-service\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*topquality\.cf.*$ [NC,OR]
@@ -854,6 +927,7 @@ RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*uptimebot\.net.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*uptimechecker\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*urlopener\.blogspot\.com\.au.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*userequip\.com.*$ [NC,OR]
+RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*ussearche\.cf.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*ustion\.ru.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*uzungil\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*vapmedia\.org.*$ [NC,OR]
@@ -908,8 +982,10 @@ RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*wordpress\-crew\.net.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*wordpresscore\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*work\-from\-home\-earn\-money\-online\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*wowas31\.ucoz\.ru.*$ [NC,OR]
+RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*xbaboon\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*xboxster\.ru.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*xn\-\-\-\-\-6kcaacnblni5c5bicdpcmficy\.xn\-\-p1ai.*$ [NC,OR]
+RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*xn\-\-\-\-\-7kceclhb4abre1b4a0ccl2fxch1a\.xn\-\-p1ai.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*xn\-\-\-\-7sbaphztdjeboffeiof6c\.xn\-\-p1ai.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*xn\-\-\-\-7sbho2agebbhlivy\.xn\-\-p1ai.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*xn\-\-\-\-8sbhefaln6acifdaon5c6f4axh\.xn\-\-p1ai.*$ [NC,OR]
@@ -920,7 +996,9 @@ RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*xn\-\-80adaggc5bdhlfamsfdij4p7b
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*xn\-\-80adgcaax6acohn6r\.xn\-\-p1ai.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*xn\-\-80ajjbdhgmudixfjc8c5a9df8b\.xn\-\-p1ai.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*xn\-\-90acenikpebbdd4f6d\.xn\-\-p1ai.*$ [NC,OR]
+RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*xn\-\-b1ag5cfn\.xn\-\-p1ai.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*xn\-\-c1acygb\.xn\-\-p1ai.*$ [NC,OR]
+RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*xn\-\-e1aggki3c\.xn\-\-80adxhks.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*xn\-\-q1a\.xn\-\-b1aube0e\.xn\-\-c1acygb\.xn\-\-p1ai.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*xpresscare\.ru.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*xz618\.com.*$ [NC,OR]
@@ -952,6 +1030,8 @@ RewriteRule ^(.*)$ – [F,L]
 <IfModule mod_setenvif.c>
 
 SetEnvIfNoCase Referer 0n\-line\.tv spambot=yes
+SetEnvIfNoCase Referer 1\-99seo\.com spambot=yes
+SetEnvIfNoCase Referer 1\-free\-share\-buttons\.com spambot=yes
 SetEnvIfNoCase Referer 100dollars\-seo\.com spambot=yes
 SetEnvIfNoCase Referer 12masterov\.com spambot=yes
 SetEnvIfNoCase Referer 1kinobig\.ru spambot=yes
@@ -974,7 +1054,6 @@ SetEnvIfNoCase Referer acunetix\-referrer\.com spambot=yes
 SetEnvIfNoCase Referer adcash\.com spambot=yes
 SetEnvIfNoCase Referer addons\.mozilla\.org/en\-US/firefox/addon/ilovevitaly spambot=yes
 SetEnvIfNoCase Referer adelly\.bg spambot=yes
-SetEnvIfNoCase Referer adf\.ly spambot=yes
 SetEnvIfNoCase Referer adspart\.com spambot=yes
 SetEnvIfNoCase Referer adtiger\.tk spambot=yes
 SetEnvIfNoCase Referer adventureparkcostarica\.com spambot=yes
@@ -1070,6 +1149,7 @@ SetEnvIfNoCase Referer boleznikogi\.com spambot=yes
 SetEnvIfNoCase Referer bookmark4you\.biz spambot=yes
 SetEnvIfNoCase Referer bookmark4you\.com spambot=yes
 SetEnvIfNoCase Referer boost\-my\-site\.com spambot=yes
+SetEnvIfNoCase Referer brains2\.biz spambot=yes
 SetEnvIfNoCase Referer brakehawk\.com spambot=yes
 SetEnvIfNoCase Referer break\-the\-chains\.com spambot=yes
 SetEnvIfNoCase Referer bristolhostel\.com spambot=yes
@@ -1077,8 +1157,10 @@ SetEnvIfNoCase Referer bristolhotel\.com spambot=yes
 SetEnvIfNoCase Referer bristolhotel\.com\.ua spambot=yes
 SetEnvIfNoCase Referer brk\-rti\.ru spambot=yes
 SetEnvIfNoCase Referer brothers\-smaller\.ru spambot=yes
+SetEnvIfNoCase Referer brus\.city spambot=yes
 SetEnvIfNoCase Referer budmavtomatika\.com\.ua spambot=yes
 SetEnvIfNoCase Referer budpost\.com\.ua spambot=yes
+SetEnvIfNoCase Referer bugof\.gq spambot=yes
 SetEnvIfNoCase Referer burger\-imperia\.com spambot=yes
 SetEnvIfNoCase Referer burn\-fat\.ga spambot=yes
 SetEnvIfNoCase Referer buttons\-for\-website\.com spambot=yes
@@ -1090,6 +1172,7 @@ SetEnvIfNoCase Referer buyantiviralwp\.com spambot=yes
 SetEnvIfNoCase Referer buyessaynow\.biz spambot=yes
 SetEnvIfNoCase Referer buypharmacydrug\.com spambot=yes
 SetEnvIfNoCase Referer bycontext\.com spambot=yes
+SetEnvIfNoCase Referer c\-english\.ru spambot=yes
 SetEnvIfNoCase Referer californianews\.cf spambot=yes
 SetEnvIfNoCase Referer call\-of\-duty\.info spambot=yes
 SetEnvIfNoCase Referer callejondelpozo\.es spambot=yes
@@ -1113,6 +1196,33 @@ SetEnvIfNoCase Referer clicksor\.com spambot=yes
 SetEnvIfNoCase Referer clmforexeu\.com spambot=yes
 SetEnvIfNoCase Referer coderstate\.com spambot=yes
 SetEnvIfNoCase Referer codysbbq\.com spambot=yes
+SetEnvIfNoCase Referer compliance\-alex\.top spambot=yes
+SetEnvIfNoCase Referer compliance\-alexa\.top spambot=yes
+SetEnvIfNoCase Referer compliance\-andrew\.top spambot=yes
+SetEnvIfNoCase Referer compliance\-barak\.top spambot=yes
+SetEnvIfNoCase Referer compliance\-brian\.top spambot=yes
+SetEnvIfNoCase Referer compliance\-don\.top spambot=yes
+SetEnvIfNoCase Referer compliance\-elena\.top spambot=yes
+SetEnvIfNoCase Referer compliance\-fred\.top spambot=yes
+SetEnvIfNoCase Referer compliance\-george\.top spambot=yes
+SetEnvIfNoCase Referer compliance\-irvin\.top spambot=yes
+SetEnvIfNoCase Referer compliance\-ivan\.top spambot=yes
+SetEnvIfNoCase Referer compliance\-jack\.top spambot=yes
+SetEnvIfNoCase Referer compliance\-jane\.top spambot=yes
+SetEnvIfNoCase Referer compliance\-jess\.top spambot=yes
+SetEnvIfNoCase Referer compliance\-jessica\.top spambot=yes
+SetEnvIfNoCase Referer compliance\-john\.top spambot=yes
+SetEnvIfNoCase Referer compliance\-josh\.top spambot=yes
+SetEnvIfNoCase Referer compliance\-julia\.top spambot=yes
+SetEnvIfNoCase Referer compliance\-julianna\.top spambot=yes
+SetEnvIfNoCase Referer compliance\-margo\.top spambot=yes
+SetEnvIfNoCase Referer compliance\-mark\.top spambot=yes
+SetEnvIfNoCase Referer compliance\-mary\.top spambot=yes
+SetEnvIfNoCase Referer compliance\-nelson\.top spambot=yes
+SetEnvIfNoCase Referer compliance\-viktor\.top spambot=yes
+SetEnvIfNoCase Referer compliance\-walt\.top spambot=yes
+SetEnvIfNoCase Referer compliance\-walter\.top spambot=yes
+SetEnvIfNoCase Referer compliance\-willy\.top spambot=yes
 SetEnvIfNoCase Referer conciergegroup\.org spambot=yes
 SetEnvIfNoCase Referer connectikastudio\.com spambot=yes
 SetEnvIfNoCase Referer constantaservice\.net spambot=yes
@@ -1207,11 +1317,15 @@ SetEnvIfNoCase Referer europages\.com\.ru spambot=yes
 SetEnvIfNoCase Referer eurosamodelki\.ru spambot=yes
 SetEnvIfNoCase Referer event\-tracking\.com spambot=yes
 SetEnvIfNoCase Referer exchangeit\.gq spambot=yes
+SetEnvIfNoCase Referer executehosting\.com spambot=yes
 SetEnvIfNoCase Referer expdom\.com spambot=yes
+SetEnvIfNoCase Referer expresstoplivo\.ru spambot=yes
 SetEnvIfNoCase Referer extener\.com spambot=yes
 SetEnvIfNoCase Referer extremez\.net spambot=yes
+SetEnvIfNoCase Referer eyes\-on\-you\.ga spambot=yes
 SetEnvIfNoCase Referer facebook\-mobile\.xyz spambot=yes
 SetEnvIfNoCase Referer family1st\.ca spambot=yes
+SetEnvIfNoCase Referer familyholiday\.ml spambot=yes
 SetEnvIfNoCase Referer fashionindeed\.ml spambot=yes
 SetEnvIfNoCase Referer fast\-wordpress\-start\.com spambot=yes
 SetEnvIfNoCase Referer fbdownloader\.com spambot=yes
@@ -1221,7 +1335,9 @@ SetEnvIfNoCase Referer feedback\.sharemyfile\.ru spambot=yes
 SetEnvIfNoCase Referer feedouble\.com spambot=yes
 SetEnvIfNoCase Referer feedouble\.net spambot=yes
 SetEnvIfNoCase Referer ferieboligkbh\.dk spambot=yes
+SetEnvIfNoCase Referer film\-one\.ru spambot=yes
 SetEnvIfNoCase Referer filmetricsasia\.com spambot=yes
+SetEnvIfNoCase Referer filmgo\.ru spambot=yes
 SetEnvIfNoCase Referer finteks\.ru spambot=yes
 SetEnvIfNoCase Referer firma\-legion\.ru spambot=yes
 SetEnvIfNoCase Referer fitness\-video\.net spambot=yes
@@ -1293,6 +1409,7 @@ SetEnvIfNoCase Referer goodprotein\.ru spambot=yes
 SetEnvIfNoCase Referer googlemare\.com spambot=yes
 SetEnvIfNoCase Referer googlsucks\.com spambot=yes
 SetEnvIfNoCase Referer gototal\.co\.nz spambot=yes
+SetEnvIfNoCase Referer gq\-catalog\.gq spambot=yes
 SetEnvIfNoCase Referer grand\-chlen\.ru spambot=yes
 SetEnvIfNoCase Referer growshop\.es spambot=yes
 SetEnvIfNoCase Referer gsmtlf\.ru spambot=yes
@@ -1309,7 +1426,9 @@ SetEnvIfNoCase Referer hdmoviecams\.net spambot=yes
 SetEnvIfNoCase Referer hifidesign\.ru spambot=yes
 SetEnvIfNoCase Referer hmmm\.cz spambot=yes
 SetEnvIfNoCase Referer hol\.es spambot=yes
+SetEnvIfNoCase Referer home\.myplaycity\.com spambot=yes
 SetEnvIfNoCase Referer homelygarden\.com spambot=yes
+SetEnvIfNoCase Referer homemade\.gq spambot=yes
 SetEnvIfNoCase Referer hongfanji\.com spambot=yes
 SetEnvIfNoCase Referer hostcritique\.com spambot=yes
 SetEnvIfNoCase Referer hosting\-tracker\.com spambot=yes
@@ -1382,6 +1501,7 @@ SetEnvIfNoCase Referer kiev\.ua spambot=yes
 SetEnvIfNoCase Referer kino\-fun\.ru spambot=yes
 SetEnvIfNoCase Referer kino\-key\.info spambot=yes
 SetEnvIfNoCase Referer kinobaks\.com spambot=yes
+SetEnvIfNoCase Referer kinoflux\.net spambot=yes
 SetEnvIfNoCase Referer kinopolet\.net spambot=yes
 SetEnvIfNoCase Referer kiwe\-analytics\.com spambot=yes
 SetEnvIfNoCase Referer kiwi237au\.tk spambot=yes
@@ -1435,6 +1555,7 @@ SetEnvIfNoCase Referer law\-three\.xyz spambot=yes
 SetEnvIfNoCase Referer law\-two\.xyz spambot=yes
 SetEnvIfNoCase Referer laxdrills\.com spambot=yes
 SetEnvIfNoCase Referer leadwayau\.com spambot=yes
+SetEnvIfNoCase Referer ledis\.top spambot=yes
 SetEnvIfNoCase Referer lego4x4\.ru spambot=yes
 SetEnvIfNoCase Referer letolove\.ru spambot=yes
 SetEnvIfNoCase Referer letsgotofriday\.com spambot=yes
@@ -1554,6 +1675,7 @@ SetEnvIfNoCase Referer perm\.xrus\.org spambot=yes
 SetEnvIfNoCase Referer petrovka\-online\.com spambot=yes
 SetEnvIfNoCase Referer photokitchendesign\.com spambot=yes
 SetEnvIfNoCase Referer picscout\.com spambot=yes
+SetEnvIfNoCase Referer pinkduck\.ga spambot=yes
 SetEnvIfNoCase Referer piter\.xrus\.org spambot=yes
 SetEnvIfNoCase Referer pizza\-imperia\.com spambot=yes
 SetEnvIfNoCase Referer pizza\-tycoon\.com spambot=yes
@@ -1652,7 +1774,34 @@ SetEnvIfNoCase Referer sanjosestartups\.com spambot=yes
 SetEnvIfNoCase Referer santasgift\.ml spambot=yes
 SetEnvIfNoCase Referer saratov\.xrus\.org spambot=yes
 SetEnvIfNoCase Referer savetubevideo\.com spambot=yes
+SetEnvIfNoCase Referer scanner\-alex\.top spambot=yes
+SetEnvIfNoCase Referer scanner\-alexa\.top spambot=yes
+SetEnvIfNoCase Referer scanner\-andrew\.top spambot=yes
+SetEnvIfNoCase Referer scanner\-barak\.top spambot=yes
+SetEnvIfNoCase Referer scanner\-brian\.top spambot=yes
+SetEnvIfNoCase Referer scanner\-don\.top spambot=yes
+SetEnvIfNoCase Referer scanner\-donald\.top spambot=yes
+SetEnvIfNoCase Referer scanner\-elena\.top spambot=yes
+SetEnvIfNoCase Referer scanner\-fred\.top spambot=yes
+SetEnvIfNoCase Referer scanner\-george\.top spambot=yes
+SetEnvIfNoCase Referer scanner\-irvin\.top spambot=yes
+SetEnvIfNoCase Referer scanner\-ivan\.top spambot=yes
+SetEnvIfNoCase Referer scanner\-jack\.top spambot=yes
+SetEnvIfNoCase Referer scanner\-jane\.top spambot=yes
+SetEnvIfNoCase Referer scanner\-jess\.top spambot=yes
+SetEnvIfNoCase Referer scanner\-jessica\.top spambot=yes
+SetEnvIfNoCase Referer scanner\-john\.top spambot=yes
+SetEnvIfNoCase Referer scanner\-josh\.top spambot=yes
+SetEnvIfNoCase Referer scanner\-julia\.top spambot=yes
+SetEnvIfNoCase Referer scanner\-julianna\.top spambot=yes
+SetEnvIfNoCase Referer scanner\-margo\.top spambot=yes
+SetEnvIfNoCase Referer scanner\-mark\.top spambot=yes
+SetEnvIfNoCase Referer scanner\-marwin\.top spambot=yes
+SetEnvIfNoCase Referer scanner\-mary\.top spambot=yes
+SetEnvIfNoCase Referer scanner\-nelson\.top spambot=yes
+SetEnvIfNoCase Referer scanner\-olga\.top spambot=yes
 SetEnvIfNoCase Referer scansafe\.net spambot=yes
+SetEnvIfNoCase Referer scenarii\-1\-sentyabrya\.uroki\.org\.ua spambot=yes
 SetEnvIfNoCase Referer screentoolkit\.com spambot=yes
 SetEnvIfNoCase Referer scripted\.com spambot=yes
 SetEnvIfNoCase Referer sdi\-pme\.com spambot=yes
@@ -1675,6 +1824,7 @@ SetEnvIfNoCase Referer share\-buttons\.xyz spambot=yes
 SetEnvIfNoCase Referer sharebutton\.net spambot=yes
 SetEnvIfNoCase Referer sharebutton\.to spambot=yes
 SetEnvIfNoCase Referer sharemyfile\.ru spambot=yes
+SetEnvIfNoCase Referer shariki\-zuma\-lines\.ru spambot=yes
 SetEnvIfNoCase Referer ship\-marvel\.co\.ua spambot=yes
 SetEnvIfNoCase Referer shopvilleroyboch\.com\.ua spambot=yes
 SetEnvIfNoCase Referer sibecoprom\.ru spambot=yes
@@ -1767,6 +1917,7 @@ SetEnvIfNoCase Referer thecoral\.com\.br spambot=yes
 SetEnvIfNoCase Referer theguardlan\.com spambot=yes
 SetEnvIfNoCase Referer thepokertimer\.com spambot=yes
 SetEnvIfNoCase Referer timer4web\.com spambot=yes
+SetEnvIfNoCase Referer tomatis\.gospartner\.com spambot=yes
 SetEnvIfNoCase Referer tomck\.com spambot=yes
 SetEnvIfNoCase Referer top1\-seo\-service\.com spambot=yes
 SetEnvIfNoCase Referer topquality\.cf spambot=yes
@@ -1800,6 +1951,7 @@ SetEnvIfNoCase Referer uptimebot\.net spambot=yes
 SetEnvIfNoCase Referer uptimechecker\.com spambot=yes
 SetEnvIfNoCase Referer urlopener\.blogspot\.com\.au spambot=yes
 SetEnvIfNoCase Referer userequip\.com spambot=yes
+SetEnvIfNoCase Referer ussearche\.cf spambot=yes
 SetEnvIfNoCase Referer ustion\.ru spambot=yes
 SetEnvIfNoCase Referer uzungil\.com spambot=yes
 SetEnvIfNoCase Referer vapmedia\.org spambot=yes
@@ -1854,8 +2006,10 @@ SetEnvIfNoCase Referer wordpress\-crew\.net spambot=yes
 SetEnvIfNoCase Referer wordpresscore\.com spambot=yes
 SetEnvIfNoCase Referer work\-from\-home\-earn\-money\-online\.com spambot=yes
 SetEnvIfNoCase Referer wowas31\.ucoz\.ru spambot=yes
+SetEnvIfNoCase Referer xbaboon\.com spambot=yes
 SetEnvIfNoCase Referer xboxster\.ru spambot=yes
 SetEnvIfNoCase Referer xn\-\-\-\-\-6kcaacnblni5c5bicdpcmficy\.xn\-\-p1ai spambot=yes
+SetEnvIfNoCase Referer xn\-\-\-\-\-7kceclhb4abre1b4a0ccl2fxch1a\.xn\-\-p1ai spambot=yes
 SetEnvIfNoCase Referer xn\-\-\-\-7sbaphztdjeboffeiof6c\.xn\-\-p1ai spambot=yes
 SetEnvIfNoCase Referer xn\-\-\-\-7sbho2agebbhlivy\.xn\-\-p1ai spambot=yes
 SetEnvIfNoCase Referer xn\-\-\-\-8sbhefaln6acifdaon5c6f4axh\.xn\-\-p1ai spambot=yes
@@ -1866,7 +2020,9 @@ SetEnvIfNoCase Referer xn\-\-80adaggc5bdhlfamsfdij4p7b\.xn\-\-p1ai spambot=yes
 SetEnvIfNoCase Referer xn\-\-80adgcaax6acohn6r\.xn\-\-p1ai spambot=yes
 SetEnvIfNoCase Referer xn\-\-80ajjbdhgmudixfjc8c5a9df8b\.xn\-\-p1ai spambot=yes
 SetEnvIfNoCase Referer xn\-\-90acenikpebbdd4f6d\.xn\-\-p1ai spambot=yes
+SetEnvIfNoCase Referer xn\-\-b1ag5cfn\.xn\-\-p1ai spambot=yes
 SetEnvIfNoCase Referer xn\-\-c1acygb\.xn\-\-p1ai spambot=yes
+SetEnvIfNoCase Referer xn\-\-e1aggki3c\.xn\-\-80adxhks spambot=yes
 SetEnvIfNoCase Referer xn\-\-q1a\.xn\-\-b1aube0e\.xn\-\-c1acygb\.xn\-\-p1ai spambot=yes
 SetEnvIfNoCase Referer xpresscare\.ru spambot=yes
 SetEnvIfNoCase Referer xz618\.com spambot=yes
