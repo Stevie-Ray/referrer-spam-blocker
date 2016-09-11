@@ -1,5 +1,5 @@
 # https://github.com/Stevie-Ray/referrer-spam-blocker
-# Updated 2016-09-08 19:58:23
+# Updated 2016-09-11 12:53:18
 
 <IfModule mod_rewrite.c>
 
@@ -749,6 +749,7 @@ RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*salutmontreal\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*sanjosestartups\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*santasgift\.ml.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*saratov\.xrus\.org.*$ [NC,OR]
+RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*sarf3omlat\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*savetubevideo\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*scanner\-alex\.top.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*scanner\-alexa\.top.*$ [NC,OR]
@@ -986,8 +987,10 @@ RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*xbaboon\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*xboxster\.ru.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*xn\-\-\-\-\-6kcaacnblni5c5bicdpcmficy\.xn\-\-p1ai.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*xn\-\-\-\-\-7kceclhb4abre1b4a0ccl2fxch1a\.xn\-\-p1ai.*$ [NC,OR]
+RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*xn\-\-\-\-\-8kcatubaocd1bneepefojs1h2e\.xn\-\-p1ai.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*xn\-\-\-\-7sbaphztdjeboffeiof6c\.xn\-\-p1ai.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*xn\-\-\-\-7sbho2agebbhlivy\.xn\-\-p1ai.*$ [NC,OR]
+RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*xn\-\-\-\-8sbdbjgb1ap7a9c4czbh\.xn\-\-p1acf.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*xn\-\-\-\-8sbhefaln6acifdaon5c6f4axh\.xn\-\-p1ai.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*xn\-\-\-\-gtbdb0beu1bb8gj\.xn\-\-p1ai.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*xn\-\-80aaajbdbddwj2alwjieei2afr3v\.xn\-\-p1ai.*$ [NC,OR]
@@ -1773,6 +1776,7 @@ SetEnvIfNoCase Referer salutmontreal\.com spambot=yes
 SetEnvIfNoCase Referer sanjosestartups\.com spambot=yes
 SetEnvIfNoCase Referer santasgift\.ml spambot=yes
 SetEnvIfNoCase Referer saratov\.xrus\.org spambot=yes
+SetEnvIfNoCase Referer sarf3omlat\.com spambot=yes
 SetEnvIfNoCase Referer savetubevideo\.com spambot=yes
 SetEnvIfNoCase Referer scanner\-alex\.top spambot=yes
 SetEnvIfNoCase Referer scanner\-alexa\.top spambot=yes
@@ -2010,8 +2014,10 @@ SetEnvIfNoCase Referer xbaboon\.com spambot=yes
 SetEnvIfNoCase Referer xboxster\.ru spambot=yes
 SetEnvIfNoCase Referer xn\-\-\-\-\-6kcaacnblni5c5bicdpcmficy\.xn\-\-p1ai spambot=yes
 SetEnvIfNoCase Referer xn\-\-\-\-\-7kceclhb4abre1b4a0ccl2fxch1a\.xn\-\-p1ai spambot=yes
+SetEnvIfNoCase Referer xn\-\-\-\-\-8kcatubaocd1bneepefojs1h2e\.xn\-\-p1ai spambot=yes
 SetEnvIfNoCase Referer xn\-\-\-\-7sbaphztdjeboffeiof6c\.xn\-\-p1ai spambot=yes
 SetEnvIfNoCase Referer xn\-\-\-\-7sbho2agebbhlivy\.xn\-\-p1ai spambot=yes
+SetEnvIfNoCase Referer xn\-\-\-\-8sbdbjgb1ap7a9c4czbh\.xn\-\-p1acf spambot=yes
 SetEnvIfNoCase Referer xn\-\-\-\-8sbhefaln6acifdaon5c6f4axh\.xn\-\-p1ai spambot=yes
 SetEnvIfNoCase Referer xn\-\-\-\-gtbdb0beu1bb8gj\.xn\-\-p1ai spambot=yes
 SetEnvIfNoCase Referer xn\-\-80aaajbdbddwj2alwjieei2afr3v\.xn\-\-p1ai spambot=yes

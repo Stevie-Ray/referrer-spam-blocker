@@ -1,5 +1,5 @@
 # https://github.com/Stevie-Ray/referrer-spam-blocker
-# Updated 2016-09-08 19:58:23
+# Updated 2016-09-11 12:53:18
 sub block_referral_spam {
 	if (
 		req.http.Referer ~ "(?i)0n\-line\.tv" ||
@@ -746,6 +746,7 @@ sub block_referral_spam {
 		req.http.Referer ~ "(?i)sanjosestartups\.com" ||
 		req.http.Referer ~ "(?i)santasgift\.ml" ||
 		req.http.Referer ~ "(?i)saratov\.xrus\.org" ||
+		req.http.Referer ~ "(?i)sarf3omlat\.com" ||
 		req.http.Referer ~ "(?i)savetubevideo\.com" ||
 		req.http.Referer ~ "(?i)scanner\-alex\.top" ||
 		req.http.Referer ~ "(?i)scanner\-alexa\.top" ||
@@ -983,8 +984,10 @@ sub block_referral_spam {
 		req.http.Referer ~ "(?i)xboxster\.ru" ||
 		req.http.Referer ~ "(?i)xn\-\-\-\-\-6kcaacnblni5c5bicdpcmficy\.xn\-\-p1ai" ||
 		req.http.Referer ~ "(?i)xn\-\-\-\-\-7kceclhb4abre1b4a0ccl2fxch1a\.xn\-\-p1ai" ||
+		req.http.Referer ~ "(?i)xn\-\-\-\-\-8kcatubaocd1bneepefojs1h2e\.xn\-\-p1ai" ||
 		req.http.Referer ~ "(?i)xn\-\-\-\-7sbaphztdjeboffeiof6c\.xn\-\-p1ai" ||
 		req.http.Referer ~ "(?i)xn\-\-\-\-7sbho2agebbhlivy\.xn\-\-p1ai" ||
+		req.http.Referer ~ "(?i)xn\-\-\-\-8sbdbjgb1ap7a9c4czbh\.xn\-\-p1acf" ||
 		req.http.Referer ~ "(?i)xn\-\-\-\-8sbhefaln6acifdaon5c6f4axh\.xn\-\-p1ai" ||
 		req.http.Referer ~ "(?i)xn\-\-\-\-gtbdb0beu1bb8gj\.xn\-\-p1ai" ||
 		req.http.Referer ~ "(?i)xn\-\-80aaajbdbddwj2alwjieei2afr3v\.xn\-\-p1ai" ||
