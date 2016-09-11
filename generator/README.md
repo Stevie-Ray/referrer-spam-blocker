@@ -3,9 +3,15 @@ referrer-spam-blocker [![Build Status](https://travis-ci.org/Stevie-Ray/referrer
 
 ## Install
 
+First, create a fork of the repository and copy the files to your local machine.
+
+```sh
+git clone https://github.com/yourname/referrer-spam-blocker.git
+```
+
 Install the [composer](https://getcomposer.org/) dependencies.
 
-Run these commands to globally install `composer` on your system:
+Tip: run these commands to globally install `composer` on your system:
 
 ```sh
 curl -sS https://getcomposer.org/installer | php
@@ -19,7 +25,17 @@ cd generator
 composer install
 ```
 
-In your webbrowser run the **generator/run.php** file to generate the files.
+
+## Usage
+
+In your CLI (or webbrowser) run the **generator/run.php** file to generate the files.
+This can be done using a local server like [MAMP](https://www.mamp.info/en/) or on a remote server.
+
+```sh
+php generator/run.php
+```
+
+The new domains are now included in your local files. Commit and push your work to your repository and create a [pull request](https://github.com/Stevie-Ray/referrer-spam-blocker/pulls/).
 
 
 ## Contributing
