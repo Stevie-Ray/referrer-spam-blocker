@@ -16,6 +16,7 @@ class Generate
         $this->createApache($date, $lines);
         $this->createNginx($date, $lines);
         $this->createVarnish($date, $lines);
+        $this->createIIS($date, $lines);
         $this->createGoogleExclude($lines);
     }
 
@@ -135,6 +136,32 @@ class Generate
         }
 
         $data .= "\t) {\n\t\t\treturn (synth(444, \"No Response\"));\n\t}\n}";
+
+        if (is_readable($file) && is_writable($file)) {
+            file_put_contents($file, $data);
+            if (!chmod($file, 0644)) {
+                trigger_error("Couldn't not set referral-spam.vcl permissions to 644");
+            }
+        } else {
+            trigger_error("Permission denied");
+        }
+    }
+
+    /**
+     * @param string $date
+     * @param array $lines
+     */
+    public function createIIS($date, array $lines)
+    {
+        $file = __DIR__ . '/../web.config';
+
+        $data = "<!-- " . $this->projectUrl . " -->\n<!-- Updated " . $date . " -->\n<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<configuration>\n\t<system.webServer>\n\t\t<rewrite>\n\t\t\t<rules>\n";
+        foreach ($lines as $line) {
+
+            $data .= "\t\t\t\t<rule name=\"Referrer Spam " . $line . "\" stopProcessing=\"true\"><match url=\".*\" /><conditions><add input=\"{HTTP_REFERER}\" pattern=\"(" . preg_quote($line) . ")\"/></conditions><action type=\"AbortRequest\" /></rule>\n";
+        }
+
+        $data .= "\t\t\t</rules>\n\t\t</rewrite>\n\t</system.webServer>\n</configuration>";
 
         if (is_readable($file) && is_writable($file)) {
             file_put_contents($file, $data);
