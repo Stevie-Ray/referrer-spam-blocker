@@ -1,5 +1,5 @@
 # https://github.com/Stevie-Ray/referrer-spam-blocker
-# Updated 2016-09-11 12:53:18
+# Updated 2016-09-21 23:15:38
 sub block_referral_spam {
 	if (
 		req.http.Referer ~ "(?i)0n\-line\.tv" ||
@@ -378,6 +378,7 @@ sub block_referral_spam {
 		req.http.Referer ~ "(?i)globalscam\.ga" ||
 		req.http.Referer ~ "(?i)gobongo\.info" ||
 		req.http.Referer ~ "(?i)gogps\.me" ||
+		req.http.Referer ~ "(?i)golden\-catalog\.pro" ||
 		req.http.Referer ~ "(?i)goodprotein\.ru" ||
 		req.http.Referer ~ "(?i)googlemare\.com" ||
 		req.http.Referer ~ "(?i)googlsucks\.com" ||
@@ -774,6 +775,10 @@ sub block_referral_spam {
 		req.http.Referer ~ "(?i)scanner\-mary\.top" ||
 		req.http.Referer ~ "(?i)scanner\-nelson\.top" ||
 		req.http.Referer ~ "(?i)scanner\-olga\.top" ||
+		req.http.Referer ~ "(?i)scanner\-viktor\.top" ||
+		req.http.Referer ~ "(?i)scanner\-walt\.top" ||
+		req.http.Referer ~ "(?i)scanner\-walter\.top" ||
+		req.http.Referer ~ "(?i)scanner\-willy\.top" ||
 		req.http.Referer ~ "(?i)scansafe\.net" ||
 		req.http.Referer ~ "(?i)scenarii\-1\-sentyabrya\.uroki\.org\.ua" ||
 		req.http.Referer ~ "(?i)screentoolkit\.com" ||

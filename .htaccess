@@ -1,5 +1,5 @@
 # https://github.com/Stevie-Ray/referrer-spam-blocker
-# Updated 2016-09-11 12:53:18
+# Updated 2016-09-21 23:15:38
 
 <IfModule mod_rewrite.c>
 
@@ -381,6 +381,7 @@ RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*glavprofit\.ru.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*globalscam\.ga.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*gobongo\.info.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*gogps\.me.*$ [NC,OR]
+RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*golden\-catalog\.pro.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*goodprotein\.ru.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*googlemare\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*googlsucks\.com.*$ [NC,OR]
@@ -777,6 +778,10 @@ RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*scanner\-marwin\.top.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*scanner\-mary\.top.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*scanner\-nelson\.top.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*scanner\-olga\.top.*$ [NC,OR]
+RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*scanner\-viktor\.top.*$ [NC,OR]
+RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*scanner\-walt\.top.*$ [NC,OR]
+RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*scanner\-walter\.top.*$ [NC,OR]
+RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*scanner\-willy\.top.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*scansafe\.net.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*scenarii\-1\-sentyabrya\.uroki\.org\.ua.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*screentoolkit\.com.*$ [NC,OR]
@@ -1408,6 +1413,7 @@ SetEnvIfNoCase Referer glavprofit\.ru spambot=yes
 SetEnvIfNoCase Referer globalscam\.ga spambot=yes
 SetEnvIfNoCase Referer gobongo\.info spambot=yes
 SetEnvIfNoCase Referer gogps\.me spambot=yes
+SetEnvIfNoCase Referer golden\-catalog\.pro spambot=yes
 SetEnvIfNoCase Referer goodprotein\.ru spambot=yes
 SetEnvIfNoCase Referer googlemare\.com spambot=yes
 SetEnvIfNoCase Referer googlsucks\.com spambot=yes
@@ -1804,6 +1810,10 @@ SetEnvIfNoCase Referer scanner\-marwin\.top spambot=yes
 SetEnvIfNoCase Referer scanner\-mary\.top spambot=yes
 SetEnvIfNoCase Referer scanner\-nelson\.top spambot=yes
 SetEnvIfNoCase Referer scanner\-olga\.top spambot=yes
+SetEnvIfNoCase Referer scanner\-viktor\.top spambot=yes
+SetEnvIfNoCase Referer scanner\-walt\.top spambot=yes
+SetEnvIfNoCase Referer scanner\-walter\.top spambot=yes
+SetEnvIfNoCase Referer scanner\-willy\.top spambot=yes
 SetEnvIfNoCase Referer scansafe\.net spambot=yes
 SetEnvIfNoCase Referer scenarii\-1\-sentyabrya\.uroki\.org\.ua spambot=yes
 SetEnvIfNoCase Referer screentoolkit\.com spambot=yes
