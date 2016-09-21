@@ -1,7 +1,7 @@
 referrer-spam-blocker [![Build Status](https://travis-ci.org/Stevie-Ray/referrer-spam-blocker.svg)](https://travis-ci.org/Stevie-Ray/referrer-spam-blocker)
 ====================================
 
-Apache, Nginx & Varnish blacklist plus Google Analytics segment to prevent referrer spam traffic 👾
+Apache, Nginx, IIS & Varnish blacklist plus Google Analytics segment to prevent referrer spam traffic 👾
 
 - - - -
 
@@ -39,6 +39,12 @@ Add `referral-spam.vcl` to **Varnish 4** default file: `default.vcl` by adding t
 include "referral-spam.vcl";
 sub vcl_recv { call block_referral_spam; }
 ```
+
+
+## Internet Information Services (IIS): web.config 
+
+The web.config file is located in the root directory of your Windows Server web application.
+
 
 ## Options for Google Analytics 'ghost' spam
 
