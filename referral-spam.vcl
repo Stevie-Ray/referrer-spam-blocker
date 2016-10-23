@@ -1,5 +1,5 @@
 # https://github.com/Stevie-Ray/referrer-spam-blocker
-# Updated 2016-09-21 23:15:38
+# Updated 2016-10-23 19:04:41
 sub block_referral_spam {
 	if (
 		req.http.Referer ~ "(?i)0n\-line\.tv" ||
@@ -10,6 +10,7 @@ sub block_referral_spam {
 		req.http.Referer ~ "(?i)1kinobig\.ru" ||
 		req.http.Referer ~ "(?i)1pamm\.ru" ||
 		req.http.Referer ~ "(?i)1webmaster\.ml" ||
+		req.http.Referer ~ "(?i)24x7\-server\-support\.site" ||
 		req.http.Referer ~ "(?i)273\-fz\.ru" ||
 		req.http.Referer ~ "(?i)2your\.site" ||
 		req.http.Referer ~ "(?i)45tahunkhongguan\.com" ||
@@ -73,6 +74,7 @@ sub block_referral_spam {
 		req.http.Referer ~ "(?i)auto\.rusvile\.lt" ||
 		req.http.Referer ~ "(?i)autobrennero\.it" ||
 		req.http.Referer ~ "(?i)autobudpostach\.club" ||
+		req.http.Referer ~ "(?i)autolombard\-krasnodar\.ru" ||
 		req.http.Referer ~ "(?i)autovideobroadcast\.com" ||
 		req.http.Referer ~ "(?i)aviva\-limoux\.com" ||
 		req.http.Referer ~ "(?i)avkzarabotok\.com" ||
@@ -143,6 +145,7 @@ sub block_referral_spam {
 		req.http.Referer ~ "(?i)buy\-forum\.ru" ||
 		req.http.Referer ~ "(?i)buyantiviralwp\.com" ||
 		req.http.Referer ~ "(?i)buyessaynow\.biz" ||
+		req.http.Referer ~ "(?i)buynorxx\.com" ||
 		req.http.Referer ~ "(?i)buypharmacydrug\.com" ||
 		req.http.Referer ~ "(?i)bycontext\.com" ||
 		req.http.Referer ~ "(?i)c\-english\.ru" ||
@@ -708,6 +711,7 @@ sub block_referral_spam {
 		req.http.Referer ~ "(?i)rank\-checker\.online" ||
 		req.http.Referer ~ "(?i)ranking2017\.ga" ||
 		req.http.Referer ~ "(?i)rankings\-analytics\.com" ||
+		req.http.Referer ~ "(?i)ranksays\.com" ||
 		req.http.Referer ~ "(?i)rankscanner\.com" ||
 		req.http.Referer ~ "(?i)ranksignals\.com" ||
 		req.http.Referer ~ "(?i)ranksonic\.info" ||
@@ -925,6 +929,7 @@ sub block_referral_spam {
 		req.http.Referer ~ "(?i)ufa\.xrus\.org" ||
 		req.http.Referer ~ "(?i)uni\.me" ||
 		req.http.Referer ~ "(?i)unpredictable\.ga" ||
+		req.http.Referer ~ "(?i)uptime\-alpha\.net" ||
 		req.http.Referer ~ "(?i)uptime\.com" ||
 		req.http.Referer ~ "(?i)uptimebot\.net" ||
 		req.http.Referer ~ "(?i)uptimechecker\.com" ||
@@ -935,6 +940,7 @@ sub block_referral_spam {
 		req.http.Referer ~ "(?i)uzungil\.com" ||
 		req.http.Referer ~ "(?i)vapmedia\.org" ||
 		req.http.Referer ~ "(?i)vashsvet\.com" ||
+		req.http.Referer ~ "(?i)vavilone\.com" ||
 		req.http.Referer ~ "(?i)velobikestock\.com" ||
 		req.http.Referer ~ "(?i)vesnatehno\.com" ||
 		req.http.Referer ~ "(?i)vesnatehno\.ru" ||
@@ -999,6 +1005,7 @@ sub block_referral_spam {
 		req.http.Referer ~ "(?i)xn\-\-80aanaardaperhcem4a6i\.com" ||
 		req.http.Referer ~ "(?i)xn\-\-80adaggc5bdhlfamsfdij4p7b\.xn\-\-p1ai" ||
 		req.http.Referer ~ "(?i)xn\-\-80adgcaax6acohn6r\.xn\-\-p1ai" ||
+		req.http.Referer ~ "(?i)xn\-\-80ajbshivpvn2i\.xn\-\-p1ai" ||
 		req.http.Referer ~ "(?i)xn\-\-80ajjbdhgmudixfjc8c5a9df8b\.xn\-\-p1ai" ||
 		req.http.Referer ~ "(?i)xn\-\-90acenikpebbdd4f6d\.xn\-\-p1ai" ||
 		req.http.Referer ~ "(?i)xn\-\-b1ag5cfn\.xn\-\-p1ai" ||
