@@ -28,7 +28,7 @@ class Generate
         $domainsFile = __DIR__ . "/domains.txt";
 
         $handle = fopen($domainsFile, "r");
-        if (!$handle) {
+        if (! $handle) {
             throw new \RuntimeException('Error opening file ' . $domainsFile);
         }
         $lines = array();
@@ -63,12 +63,13 @@ class Generate
 
     /**
      * @param string $date
-     * @param array $lines
+     * @param array  $lines
      */
     public function createApache($date, array $lines)
     {
         $file = __DIR__ . '/../.htaccess';
-        $data = "# " . $this->projectUrl . "\n# Updated " . $date . "\n\n<IfModule mod_rewrite.c>\n\nRewriteEngine On\n\n";
+        $data = "# " . $this->projectUrl . "\n# Updated " . $date . "\n\n" .
+            "<IfModule mod_rewrite.c>\n\nRewriteEngine On\n\n";
         foreach ($lines as $line) {
             if ($line === end($lines)) {
                 $data .= "RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*" . preg_quote($line) . ".*$ [NC]\n";
@@ -82,13 +83,25 @@ class Generate
         foreach ($lines as $line) {
             $data .= "SetEnvIfNoCase Referer " . preg_quote($line) . " spambot=yes\n";
         }
-        $data .= "\n</IfModule>\n\n# Apache 2.2\n<IfModule !mod_authz_core.c>\n\t<IfModule mod_authz_host.c>\n\t\tOrder allow,deny\n\t\tAllow from all\n\t\tDeny from env=spambot\n\t</IfModule>\n</IfModule>\n# Apache 2.4\n<IfModule mod_authz_core.c>\n\t<RequireAll>\n\t\tRequire all granted\n\t\tRequire not env spambot\n\t</RequireAll>\n</IfModule>";
-        if (is_readable($file) && is_writable($file)) {
-            file_put_contents($file, $data);
-            if (!chmod($file, 0644)) {
-                trigger_error("Couldn't not set .htaccess permissions to 644");
-            }
+        $data .= "\n</IfModule>\n\n# Apache 2.2\n<IfModule !mod_authz_core.c>\n\t<IfModule mod_authz_host.c>\n\t\t" .
+            "Order allow,deny\n\t\tAllow from all\n\t\tDeny from env=spambot\n\t</IfModule>\n</IfModule>\n# " .
+            "Apache 2.4\n<IfModule mod_authz_core.c>\n\t<RequireAll>" .
+            "\n\t\tRequire all granted\n\t\tRequire not env spambot\n\t</RequireAll>\n</IfModule>";
 
+        $this->writeToFile($file, $data);
+    }
+
+    /**
+     * @param $file
+     * @param $data
+     */
+    protected function writeToFile($file, $data)
+    {
+        if (is_writable($file)) {
+            file_put_contents($file, $data);
+            if (! chmod($file, 0644)) {
+                trigger_error("Couldn't not set " . basename($file) . " permissions to 644");
+            }
         } else {
             trigger_error("Permission denied");
         }
@@ -96,30 +109,28 @@ class Generate
 
     /**
      * @param string $date
-     * @param array $lines
+     * @param array  $lines
      */
     public function createNginx($date, array $lines)
     {
         $file = __DIR__ . '/../referral-spam.conf';
-        $data = "# " . $this->projectUrl . "\n# Updated " . $date . "\n#\n# /etc/nginx/referral-spam.conf\n#\n# With referral-spam.conf in /etc/nginx, include it globally from within /etc/nginx/nginx.conf:\n#\n#     include referral-spam.conf;\n#\n# Add the following to each /etc/nginx/site-available/your-site.conf that needs protection:\n#\n#      server {\n#        if (\$bad_referer) {\n#          return 444;\n#        }\n#      }\n#\nmap \$http_referer \$bad_referer {\n\tdefault 0;\n\n";
+        $data = "# " . $this->projectUrl . "\n# Updated " . $date . "\n#\n# /etc/nginx/referral-spam.conf\n#\n" .
+            "# With referral-spam.conf in /etc/nginx, include it globally from within /etc/nginx/nginx.conf:\n#\n" .
+            "#     include referral-spam.conf;\n#\n" .
+            "# Add the following to each /etc/nginx/site-available/your-site.conf that needs protection:\n#\n" .
+            "#      server {\n#        if (\$bad_referer) {\n#          return 444;\n#        }\n#      }\n" .
+            "#\nmap \$http_referer \$bad_referer {\n\tdefault 0;\n\n";
         foreach ($lines as $line) {
             $data .= "\t\"~*" . preg_quote($line) . "\" 1;\n";
         }
         $data .= "\n}";
 
-        if (is_readable($file) && is_writable($file)) {
-            file_put_contents($file, $data);
-            if (!chmod($file, 0644)) {
-                trigger_error("Couldn't not set referral-spam.conf permissions to 644");
-            }
-        } else {
-            trigger_error("Permission denied");
-        }
+        $this->writeToFile($file, $data);
     }
 
     /**
      * @param string $date
-     * @param array $lines
+     * @param array  $lines
      */
     public function createVarnish($date, array $lines)
     {
@@ -137,40 +148,31 @@ class Generate
 
         $data .= "\t) {\n\t\t\treturn (synth(444, \"No Response\"));\n\t}\n}";
 
-        if (is_readable($file) && is_writable($file)) {
-            file_put_contents($file, $data);
-            if (!chmod($file, 0644)) {
-                trigger_error("Couldn't not set referral-spam.vcl permissions to 644");
-            }
-        } else {
-            trigger_error("Permission denied");
-        }
+        $this->writeToFile($file, $data);
     }
 
     /**
      * @param string $date
-     * @param array $lines
+     * @param array  $lines
      */
     public function createIIS($date, array $lines)
     {
         $file = __DIR__ . '/../web.config';
 
-        $data = "<!-- " . $this->projectUrl . " -->\n<!-- Updated " . $date . " -->\n<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<configuration>\n\t<system.webServer>\n\t\t<rewrite>\n\t\t\t<rules>\n";
+        $data = "<!-- " . $this->projectUrl . " -->\n<!-- Updated " . $date . " -->\n" .
+            "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n" .
+            "<configuration>\n\t<system.webServer>\n\t\t<rewrite>\n\t\t\t<rules>\n";
         foreach ($lines as $line) {
 
-            $data .= "\t\t\t\t<rule name=\"Referrer Spam " . $line . "\" stopProcessing=\"true\"><match url=\".*\" /><conditions><add input=\"{HTTP_REFERER}\" pattern=\"(" . preg_quote($line) . ")\"/></conditions><action type=\"AbortRequest\" /></rule>\n";
+            $data .= "\t\t\t\t<rule name=\"Referrer Spam " . $line . "\" stopProcessing=\"true\">" .
+                "<match url=\".*\" /><conditions><add input=\"{HTTP_REFERER}\" pattern=\"(" .
+                preg_quote($line) .
+                ")\"/></conditions><action type=\"AbortRequest\" /></rule>\n";
         }
 
         $data .= "\t\t\t</rules>\n\t\t</rewrite>\n\t</system.webServer>\n</configuration>";
 
-        if (is_readable($file) && is_writable($file)) {
-            file_put_contents($file, $data);
-            if (!chmod($file, 0644)) {
-                trigger_error("Couldn't not set referral-spam.vcl permissions to 644");
-            }
-        } else {
-            trigger_error("Permission denied");
-        }
+        $this->writeToFile($file, $data);
     }
 
     /**
@@ -179,18 +181,13 @@ class Generate
     public function createGoogleExclude(array $lines)
     {
         $file = __DIR__ . '/../google-exclude.txt';
-        $reqexLines = [];
+        $regexLines = [];
         foreach ($lines as $line) {
-            $reqexLines[] = preg_quote($line);
+            $regexLines[] = preg_quote($line);
         }
-        $data = implode('|', $reqexLines);
+        $data = implode('|', $regexLines);
 
-        if (is_readable($file) && is_writable($file)) {
-            file_put_contents($file, $data);
-        } else {
-            trigger_error("Permission denied");
-        }
-
+        $this->writeToFile($file, $data);
     }
 }
 

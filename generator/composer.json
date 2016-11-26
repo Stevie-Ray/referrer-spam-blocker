@@ -1,5 +1,5 @@
 {
   "require": {
-    "phpwhois/idna-convert": "*"
+    "phpwhois/idna-convert": "^0.9.0"
   }
 }
