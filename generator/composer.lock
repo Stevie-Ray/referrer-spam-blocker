@@ -4,58 +4,57 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "bad863f7a6e26c4f7f0e33ed053e69d0",
-    "content-hash": "0c48207ed68f8977afd2e1f91fad81a6",
+    "hash": "cfb7f527e47cb3788c7f778b33ec46f1",
+    "content-hash": "450e9d30af878675fefd30922cb0cc8e",
     "packages": [
         {
-            "name": "phpwhois/idna-convert",
-            "version": "v0.9.0",
+            "name": "mso/idna-convert",
+            "version": "v1.1.0",
             "source": {
                 "type": "git",
-                "url": "https://github.com/phpWhois/idna-convert.git",
-                "reference": "663c4b170d4e542946e04840ee212e6c896ac80b"
+                "url": "https://github.com/phlylabs/idna-convert.git",
+                "reference": "a6dfb6f87611e3a89d2eec4924a0f51db755c573"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpWhois/idna-convert/zipball/663c4b170d4e542946e04840ee212e6c896ac80b",
-                "reference": "663c4b170d4e542946e04840ee212e6c896ac80b",
+                "url": "https://api.github.com/repos/phlylabs/idna-convert/zipball/a6dfb6f87611e3a89d2eec4924a0f51db755c573",
+                "reference": "a6dfb6f87611e3a89d2eec4924a0f51db755c573",
                 "shasum": ""
+            },
+            "require": {
+                "ext-pcre": "*",
+                "php": ">=5.6.0"
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "0.9.x-dev"
+                    "dev-master": "1.0.x-dev"
                 }
             },
             "autoload": {
-                "files": [
-                    "idna_convert.class.php"
-                ]
+                "psr-4": {
+                    "Mso\\IdnaConvert\\": "src"
+                }
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
-                "LGPL-2.1"
+                "LGPL-2.1+"
             ],
             "authors": [
                 {
                     "name": "Matthias Sommerfeld",
-                    "email": "phlymail@phlylabs.de",
+                    "email": "mso@phlylabs.de",
                     "role": "Developer"
-                },
-                {
-                    "name": "Dmitry Lukashin",
-                    "email": "dmitry@lukashin.ru",
-                    "role": "Maintainer"
                 }
             ],
-            "description": "idna-convert library based on http://idnaconv.phlymail.de/",
-            "homepage": "http://idnaconv.phlymail.de/",
+            "description": "A library for encoding and decoding internationalized domain names",
+            "homepage": "http://idnaconv.net/",
             "keywords": [
                 "idn",
                 "idna",
                 "php"
             ],
-            "time": "2015-01-09 03:31:11"
+            "time": "2016-06-19 18:08:43"
         }
     ],
     "packages-dev": [],

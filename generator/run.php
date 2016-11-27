@@ -2,7 +2,7 @@
 
 class Generate
 {
-
+    
     private $projectUrl = "https://github.com/Stevie-Ray/referrer-spam-blocker";
 
     public function generateFiles()
@@ -28,7 +28,7 @@ class Generate
         $domainsFile = __DIR__ . "/domains.txt";
 
         $handle = fopen($domainsFile, "r");
-        if (! $handle) {
+        if (!$handle) {
             throw new \RuntimeException('Error opening file ' . $domainsFile);
         }
         $lines = array();
@@ -38,7 +38,7 @@ class Generate
             // convert russian domains
             if (preg_match('/[А-Яа-яЁё]/u', $line)) {
 
-                $IDN = new idna_convert();
+                $IDN = new IdnaConvert();
 
                 $line = $IDN->encode($line);
 
@@ -62,8 +62,24 @@ class Generate
     }
 
     /**
+     * @param $file
+     * @param $data
+     */
+    protected function writeToFile($file, $data)
+    {
+        if (is_writable($file)) {
+            file_put_contents($file, $data);
+            if (!chmod($file, 0644)) {
+                trigger_error("Couldn't not set " . basename($file) . " permissions to 644");
+            }
+        } else {
+            trigger_error("Permission denied");
+        }
+    }
+
+    /**
      * @param string $date
-     * @param array  $lines
+     * @param array $lines
      */
     public function createApache($date, array $lines)
     {
@@ -92,24 +108,8 @@ class Generate
     }
 
     /**
-     * @param $file
-     * @param $data
-     */
-    protected function writeToFile($file, $data)
-    {
-        if (is_writable($file)) {
-            file_put_contents($file, $data);
-            if (! chmod($file, 0644)) {
-                trigger_error("Couldn't not set " . basename($file) . " permissions to 644");
-            }
-        } else {
-            trigger_error("Permission denied");
-        }
-    }
-
-    /**
      * @param string $date
-     * @param array  $lines
+     * @param array $lines
      */
     public function createNginx($date, array $lines)
     {
@@ -130,7 +130,7 @@ class Generate
 
     /**
      * @param string $date
-     * @param array  $lines
+     * @param array $lines
      */
     public function createVarnish($date, array $lines)
     {
@@ -153,7 +153,7 @@ class Generate
 
     /**
      * @param string $date
-     * @param array  $lines
+     * @param array $lines
      */
     public function createIIS($date, array $lines)
     {
