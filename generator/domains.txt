@@ -13,8 +13,6 @@
 45tahunkhongguan.com
 4istoshop.com
 4webmasters.org
-58921254-1.compliance-andrew.xyz
-58921254-1.compliance-don.xyz
 5forex.ru
 6hopping.com
 76brighton.com
@@ -27,7 +25,6 @@ abovetherivernc.com
 acads.net
 acunetix-referrer.com
 adcash.com
-addons.mozilla.org
 addons.mozilla.org/en-US/firefox/addon/ilovevitaly
 adelly.bg
 adspart.com
@@ -191,13 +188,16 @@ codysbbq.com
 compliance-alex.top
 compliance-alexa.top
 compliance-andrew.top
+compliance-andrew.xyz
 compliance-barak.top
 compliance-brian.top
 compliance-don.top
+compliance-don.xyz
 compliance-elena.top
 compliance-fred.top
 compliance-george.top
 compliance-irvin.top
+compliance-irvin.xyz
 compliance-ivan.top
 compliance-jack.top
 compliance-jane.top
@@ -814,7 +814,7 @@ scripted.com
 sdi-pme.com
 search-error.com
 search-helper.ru
-secret.ɢoogle.com
+secret.xn--oogle-wmc.com
 semalt.com
 semaltmedia.com
 seo-2-0.com
@@ -1043,6 +1043,7 @@ xn--90acenikpebbdd4f6d.xn--p1ai
 xn--b1ag5cfn.xn--p1ai
 xn--c1acygb.xn--p1ai
 xn--e1aggki3c.xn--80adxhks
+xn--oogle-wmc.com
 xn--q1a.xn--b1aube0e.xn--c1acygb.xn--p1ai
 xpresscare.ru
 xz618.com

@@ -1,5 +1,5 @@
 # https://github.com/Stevie-Ray/referrer-spam-blocker
-# Updated 2016-11-27 02:28:07
+# Updated 2016-11-27 22:08:16
 sub block_referral_spam {
 	if (
 		req.http.Referer ~ "(?i)0n\-line\.tv" ||
@@ -17,8 +17,6 @@ sub block_referral_spam {
 		req.http.Referer ~ "(?i)45tahunkhongguan\.com" ||
 		req.http.Referer ~ "(?i)4istoshop\.com" ||
 		req.http.Referer ~ "(?i)4webmasters\.org" ||
-		req.http.Referer ~ "(?i)58921254\-1\.compliance\-andrew\.xyz" ||
-		req.http.Referer ~ "(?i)58921254\-1\.compliance\-don\.xyz" ||
 		req.http.Referer ~ "(?i)5forex\.ru" ||
 		req.http.Referer ~ "(?i)6hopping\.com" ||
 		req.http.Referer ~ "(?i)76brighton\.com" ||
@@ -31,7 +29,6 @@ sub block_referral_spam {
 		req.http.Referer ~ "(?i)acads\.net" ||
 		req.http.Referer ~ "(?i)acunetix\-referrer\.com" ||
 		req.http.Referer ~ "(?i)adcash\.com" ||
-		req.http.Referer ~ "(?i)addons\.mozilla\.org" ||
 		req.http.Referer ~ "(?i)addons\.mozilla\.org/en\-US/firefox/addon/ilovevitaly" ||
 		req.http.Referer ~ "(?i)adelly\.bg" ||
 		req.http.Referer ~ "(?i)adspart\.com" ||
@@ -195,13 +192,16 @@ sub block_referral_spam {
 		req.http.Referer ~ "(?i)compliance\-alex\.top" ||
 		req.http.Referer ~ "(?i)compliance\-alexa\.top" ||
 		req.http.Referer ~ "(?i)compliance\-andrew\.top" ||
+		req.http.Referer ~ "(?i)compliance\-andrew\.xyz" ||
 		req.http.Referer ~ "(?i)compliance\-barak\.top" ||
 		req.http.Referer ~ "(?i)compliance\-brian\.top" ||
 		req.http.Referer ~ "(?i)compliance\-don\.top" ||
+		req.http.Referer ~ "(?i)compliance\-don\.xyz" ||
 		req.http.Referer ~ "(?i)compliance\-elena\.top" ||
 		req.http.Referer ~ "(?i)compliance\-fred\.top" ||
 		req.http.Referer ~ "(?i)compliance\-george\.top" ||
 		req.http.Referer ~ "(?i)compliance\-irvin\.top" ||
+		req.http.Referer ~ "(?i)compliance\-irvin\.xyz" ||
 		req.http.Referer ~ "(?i)compliance\-ivan\.top" ||
 		req.http.Referer ~ "(?i)compliance\-jack\.top" ||
 		req.http.Referer ~ "(?i)compliance\-jane\.top" ||
@@ -818,7 +818,7 @@ sub block_referral_spam {
 		req.http.Referer ~ "(?i)sdi\-pme\.com" ||
 		req.http.Referer ~ "(?i)search\-error\.com" ||
 		req.http.Referer ~ "(?i)search\-helper\.ru" ||
-		req.http.Referer ~ "(?i)secret\.ɢoogle\.com" ||
+		req.http.Referer ~ "(?i)secret\.xn\-\-oogle\-wmc\.com" ||
 		req.http.Referer ~ "(?i)semalt\.com" ||
 		req.http.Referer ~ "(?i)semaltmedia\.com" ||
 		req.http.Referer ~ "(?i)seo\-2\-0\.com" ||
@@ -1047,6 +1047,7 @@ sub block_referral_spam {
 		req.http.Referer ~ "(?i)xn\-\-b1ag5cfn\.xn\-\-p1ai" ||
 		req.http.Referer ~ "(?i)xn\-\-c1acygb\.xn\-\-p1ai" ||
 		req.http.Referer ~ "(?i)xn\-\-e1aggki3c\.xn\-\-80adxhks" ||
+		req.http.Referer ~ "(?i)xn\-\-oogle\-wmc\.com" ||
 		req.http.Referer ~ "(?i)xn\-\-q1a\.xn\-\-b1aube0e\.xn\-\-c1acygb\.xn\-\-p1ai" ||
 		req.http.Referer ~ "(?i)xpresscare\.ru" ||
 		req.http.Referer ~ "(?i)xz618\.com" ||
