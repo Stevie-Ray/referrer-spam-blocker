@@ -1,5 +1,5 @@
 # https://github.com/Stevie-Ray/referrer-spam-blocker
-# Updated 2016-10-23 19:04:41
+# Updated 2016-11-26 14:46:56
 sub block_referral_spam {
 	if (
 		req.http.Referer ~ "(?i)0n\-line\.tv" ||
@@ -16,16 +16,20 @@ sub block_referral_spam {
 		req.http.Referer ~ "(?i)45tahunkhongguan\.com" ||
 		req.http.Referer ~ "(?i)4istoshop\.com" ||
 		req.http.Referer ~ "(?i)4webmasters\.org" ||
+		req.http.Referer ~ "(?i)58921254\-1\.compliance\-andrew\.xyz" ||
+		req.http.Referer ~ "(?i)58921254\-1\.compliance\-don\.xyz" ||
 		req.http.Referer ~ "(?i)5forex\.ru" ||
 		req.http.Referer ~ "(?i)6hopping\.com" ||
 		req.http.Referer ~ "(?i)76brighton\.com" ||
 		req.http.Referer ~ "(?i)7makemoneyonline\.com" ||
 		req.http.Referer ~ "(?i)7zap\.com" ||
+		req.http.Referer ~ "(?i)abc\.xyz" ||
 		req.http.Referer ~ "(?i)abiente\.ru" ||
 		req.http.Referer ~ "(?i)abovetherivernc\.com" ||
 		req.http.Referer ~ "(?i)acads\.net" ||
 		req.http.Referer ~ "(?i)acunetix\-referrer\.com" ||
 		req.http.Referer ~ "(?i)adcash\.com" ||
+		req.http.Referer ~ "(?i)addons\.mozilla\.org" ||
 		req.http.Referer ~ "(?i)addons\.mozilla\.org/en\-US/firefox/addon/ilovevitaly" ||
 		req.http.Referer ~ "(?i)adelly\.bg" ||
 		req.http.Referer ~ "(?i)adspart\.com" ||
@@ -63,6 +67,7 @@ sub block_referral_spam {
 		req.http.Referer ~ "(?i)aosheng\-tech\.com" ||
 		req.http.Referer ~ "(?i)arate\.ru" ||
 		req.http.Referer ~ "(?i)arendakvartir\.kz" ||
+		req.http.Referer ~ "(?i)arendovalka\.xyz" ||
 		req.http.Referer ~ "(?i)arkkivoltti\.net" ||
 		req.http.Referer ~ "(?i)artdeko\.info" ||
 		req.http.Referer ~ "(?i)artparquet\.ru" ||
@@ -94,6 +99,7 @@ sub block_referral_spam {
 		req.http.Referer ~ "(?i)bausparen\.bz\.it" ||
 		req.http.Referer ~ "(?i)bbtec\.net" ||
 		req.http.Referer ~ "(?i)beauty\-clinic\.ru" ||
+		req.http.Referer ~ "(?i)begalka\.xyz" ||
 		req.http.Referer ~ "(?i)best\-seo\-offer\.com" ||
 		req.http.Referer ~ "(?i)best\-seo\-software\.xyz" ||
 		req.http.Referer ~ "(?i)best\-seo\-solution\.com" ||
@@ -102,6 +108,7 @@ sub block_referral_spam {
 		req.http.Referer ~ "(?i)bestofferswalkmydogouteveryday\.gq" ||
 		req.http.Referer ~ "(?i)bestwebsitesawards\.com" ||
 		req.http.Referer ~ "(?i)betonka\.pro" ||
+		req.http.Referer ~ "(?i)bezlimitko\.xyz" ||
 		req.http.Referer ~ "(?i)bif\-ru\.info" ||
 		req.http.Referer ~ "(?i)biglistofwebsites\.com" ||
 		req.http.Referer ~ "(?i)biketank\.ga" ||
@@ -110,6 +117,7 @@ sub block_referral_spam {
 		req.http.Referer ~ "(?i)bio\-japan\.net" ||
 		req.http.Referer ~ "(?i)bio\.trade\-jp\.net" ||
 		req.http.Referer ~ "(?i)bioca\.org" ||
+		req.http.Referer ~ "(?i)biteg\.xyz" ||
 		req.http.Referer ~ "(?i)biznesluxe\.ru" ||
 		req.http.Referer ~ "(?i)biznesschat\.net" ||
 		req.http.Referer ~ "(?i)bizru\.info" ||
@@ -121,11 +129,13 @@ sub block_referral_spam {
 		req.http.Referer ~ "(?i)blue\-square\.biz" ||
 		req.http.Referer ~ "(?i)bluerobot\.info" ||
 		req.http.Referer ~ "(?i)boleznikogi\.com" ||
+		req.http.Referer ~ "(?i)boltalko\.xyz" ||
 		req.http.Referer ~ "(?i)bookmark4you\.biz" ||
 		req.http.Referer ~ "(?i)bookmark4you\.com" ||
 		req.http.Referer ~ "(?i)boost\-my\-site\.com" ||
 		req.http.Referer ~ "(?i)brains2\.biz" ||
 		req.http.Referer ~ "(?i)brakehawk\.com" ||
+		req.http.Referer ~ "(?i)brateg\.xyz" ||
 		req.http.Referer ~ "(?i)break\-the\-chains\.com" ||
 		req.http.Referer ~ "(?i)bristolhostel\.com" ||
 		req.http.Referer ~ "(?i)bristolhotel\.com" ||
@@ -136,6 +146,8 @@ sub block_referral_spam {
 		req.http.Referer ~ "(?i)budmavtomatika\.com\.ua" ||
 		req.http.Referer ~ "(?i)budpost\.com\.ua" ||
 		req.http.Referer ~ "(?i)bugof\.gq" ||
+		req.http.Referer ~ "(?i)buketeg\.xyz" ||
+		req.http.Referer ~ "(?i)bukleteg\.xyz" ||
 		req.http.Referer ~ "(?i)burger\-imperia\.com" ||
 		req.http.Referer ~ "(?i)burn\-fat\.ga" ||
 		req.http.Referer ~ "(?i)buttons\-for\-website\.com" ||
@@ -898,6 +910,7 @@ sub block_referral_spam {
 		req.http.Referer ~ "(?i)tedxrj\.com" ||
 		req.http.Referer ~ "(?i)thecoral\.com\.br" ||
 		req.http.Referer ~ "(?i)theguardlan\.com" ||
+		req.http.Referer ~ "(?i)thenextweb\.com" ||
 		req.http.Referer ~ "(?i)thepokertimer\.com" ||
 		req.http.Referer ~ "(?i)timer4web\.com" ||
 		req.http.Referer ~ "(?i)tomatis\.gospartner\.com" ||
