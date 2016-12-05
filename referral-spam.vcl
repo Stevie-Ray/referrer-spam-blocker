@@ -1,158 +1,324 @@
 # https://github.com/Stevie-Ray/referrer-spam-blocker
-# Updated 2016-11-27 22:08:16
+# Updated 2016-12-05 18:11:39
 sub block_referral_spam {
 	if (
+		req.http.Referer ~ "(?i)000Free\.us" ||
+		req.http.Referer ~ "(?i)000free\.us" ||
+		req.http.Referer ~ "(?i)00author\.com" ||
+		req.http.Referer ~ "(?i)00go\.com" ||
+		req.http.Referer ~ "(?i)00it\.com" ||
 		req.http.Referer ~ "(?i)0n\-line\.tv" ||
 		req.http.Referer ~ "(?i)1\-99seo\.com" ||
 		req.http.Referer ~ "(?i)1\-free\-share\-buttons\.com" ||
 		req.http.Referer ~ "(?i)100dollars\-seo\.com" ||
+		req.http.Referer ~ "(?i)101flag\.ru" ||
+		req.http.Referer ~ "(?i)11235813\.webzdarma\.cz" ||
 		req.http.Referer ~ "(?i)12masterov\.com" ||
+		req.http.Referer ~ "(?i)1hwy\.com" ||
 		req.http.Referer ~ "(?i)1kinobig\.ru" ||
 		req.http.Referer ~ "(?i)1pamm\.ru" ||
 		req.http.Referer ~ "(?i)1webmaster\.ml" ||
+		req.http.Referer ~ "(?i)2015god\.org" ||
+		req.http.Referer ~ "(?i)24videos\.tv" ||
 		req.http.Referer ~ "(?i)24x7\-server\-support\.site" ||
+		req.http.Referer ~ "(?i)256bit\.by" ||
 		req.http.Referer ~ "(?i)273\-fz\.ru" ||
+		req.http.Referer ~ "(?i)2ads\.co\.uk" ||
+		req.http.Referer ~ "(?i)2itech\.ru" ||
+		req.http.Referer ~ "(?i)2kata\.ru" ||
+		req.http.Referer ~ "(?i)2nt\.ru" ||
 		req.http.Referer ~ "(?i)2your\.site" ||
 		req.http.Referer ~ "(?i)3\-letter\-domains\.net" ||
+		req.http.Referer ~ "(?i)3dracergames\.com" ||
+		req.http.Referer ~ "(?i)45en\.ru" ||
 		req.http.Referer ~ "(?i)45tahunkhongguan\.com" ||
 		req.http.Referer ~ "(?i)4istoshop\.com" ||
+		req.http.Referer ~ "(?i)4webmasters\.com" ||
 		req.http.Referer ~ "(?i)4webmasters\.org" ||
+		req.http.Referer ~ "(?i)5elementov\.ru" ||
 		req.http.Referer ~ "(?i)5forex\.ru" ||
 		req.http.Referer ~ "(?i)6hopping\.com" ||
+		req.http.Referer ~ "(?i)76brighton\.co\.uk" ||
 		req.http.Referer ~ "(?i)76brighton\.com" ||
 		req.http.Referer ~ "(?i)7makemoneyonline\.com" ||
 		req.http.Referer ~ "(?i)7zap\.com" ||
+		req.http.Referer ~ "(?i)a\-hau\.mk" ||
+		req.http.Referer ~ "(?i)a14download\.com" ||
+		req.http.Referer ~ "(?i)abbanreddy\.com" ||
 		req.http.Referer ~ "(?i)abc\.xyz" ||
 		req.http.Referer ~ "(?i)abcdefh\.xyz" ||
+		req.http.Referer ~ "(?i)abcdeg\.xyz" ||
 		req.http.Referer ~ "(?i)abiente\.ru" ||
 		req.http.Referer ~ "(?i)abovetherivernc\.com" ||
+		req.http.Referer ~ "(?i)abtasty\.com" ||
+		req.http.Referer ~ "(?i)academia\-nsk\.org" ||
 		req.http.Referer ~ "(?i)acads\.net" ||
+		req.http.Referer ~ "(?i)actata\.co" ||
 		req.http.Referer ~ "(?i)acunetix\-referrer\.com" ||
 		req.http.Referer ~ "(?i)adcash\.com" ||
-		req.http.Referer ~ "(?i)addons\.mozilla\.org/en\-US/firefox/addon/ilovevitaly" ||
+		req.http.Referer ~ "(?i)addblueoff\.com\.ua" ||
+		req.http.Referer ~ "(?i)addons\.mozilla\.org/en\-us/firefox/addon/ilovevitaly" ||
 		req.http.Referer ~ "(?i)adelly\.bg" ||
 		req.http.Referer ~ "(?i)adspart\.com" ||
 		req.http.Referer ~ "(?i)adtiger\.tk" ||
+		req.http.Referer ~ "(?i)adultfullhd\.com" ||
 		req.http.Referer ~ "(?i)adventureparkcostarica\.com" ||
 		req.http.Referer ~ "(?i)adviceforum\.info" ||
+		req.http.Referer ~ "(?i)advocatemsk\.ru" ||
 		req.http.Referer ~ "(?i)advokateg\.co" ||
 		req.http.Referer ~ "(?i)advokateg\.com" ||
 		req.http.Referer ~ "(?i)advokateg\.ru" ||
 		req.http.Referer ~ "(?i)advokateg\.xyz" ||
+		req.http.Referer ~ "(?i)aerogo\.com" ||
 		req.http.Referer ~ "(?i)affordablewebsitesandmobileapps\.com" ||
 		req.http.Referer ~ "(?i)afora\.ru" ||
+		req.http.Referer ~ "(?i)agreda\.pluto\.ro" ||
+		req.http.Referer ~ "(?i)akama\.com" ||
 		req.http.Referer ~ "(?i)akuhni\.by" ||
+		req.http.Referer ~ "(?i)akusherok\.ru" ||
+		req.http.Referer ~ "(?i)akvamaster\.dp\.ua" ||
 		req.http.Referer ~ "(?i)alborzan\.com" ||
 		req.http.Referer ~ "(?i)alert\-fdm\.xyz" ||
 		req.http.Referer ~ "(?i)alert\-hgd\.xyz" ||
 		req.http.Referer ~ "(?i)alert\-jdh\.xyz" ||
 		req.http.Referer ~ "(?i)alessandraleone\.com" ||
+		req.http.Referer ~ "(?i)alfa\-medosmotr\.ru" ||
 		req.http.Referer ~ "(?i)alfa9\.com" ||
 		req.http.Referer ~ "(?i)alfabot\.xyz" ||
+		req.http.Referer ~ "(?i)alfapro\.ru" ||
 		req.http.Referer ~ "(?i)alibestsale\.com" ||
+		req.http.Referer ~ "(?i)aliexpress\.com" ||
+		req.http.Referer ~ "(?i)alif\-ba\-ta\.com" ||
+		req.http.Referer ~ "(?i)alive\-ua\.com" ||
 		req.http.Referer ~ "(?i)all4invest\.ru" ||
+		req.http.Referer ~ "(?i)allcredits\.su" ||
+		req.http.Referer ~ "(?i)alldownload\.pw" ||
+		req.http.Referer ~ "(?i)allforminecraft\.ru" ||
 		req.http.Referer ~ "(?i)allknow\.info" ||
 		req.http.Referer ~ "(?i)allkrim\.com" ||
 		req.http.Referer ~ "(?i)allnews\.md" ||
+		req.http.Referer ~ "(?i)allpdfmags\.net" ||
 		req.http.Referer ~ "(?i)allsilver925\.co\.il" ||
+		req.http.Referer ~ "(?i)alltheviews\.com" ||
 		req.http.Referer ~ "(?i)allwomen\.info" ||
 		req.http.Referer ~ "(?i)alot\.com" ||
+		req.http.Referer ~ "(?i)alphaforum\.ru" ||
 		req.http.Referer ~ "(?i)alpharma\.net" ||
+		req.http.Referer ~ "(?i)alpinaskate\.com" ||
 		req.http.Referer ~ "(?i)altermix\.ua" ||
 		req.http.Referer ~ "(?i)alveris\.ru" ||
+		req.http.Referer ~ "(?i)am\-se\.com" ||
 		req.http.Referer ~ "(?i)amanda\-porn\.ga" ||
+		req.http.Referer ~ "(?i)amoi\.tn" ||
+		req.http.Referer ~ "(?i)amoremio\.by" ||
+		req.http.Referer ~ "(?i)amospalla\.es" ||
 		req.http.Referer ~ "(?i)amt\-k\.ru" ||
+		req.http.Referer ~ "(?i)anal\-acrobats\.hol\.es" ||
 		req.http.Referer ~ "(?i)anapa\-inns\.ru" ||
 		req.http.Referer ~ "(?i)android\-style\.com" ||
+		req.http.Referer ~ "(?i)android\-systems\.ru" ||
+		req.http.Referer ~ "(?i)android\-vsem\.org" ||
+		req.http.Referer ~ "(?i)android4fun\.org" ||
+		req.http.Referer ~ "(?i)androids\-store\.com" ||
+		req.http.Referer ~ "(?i)animebox\.com\.ua" ||
 		req.http.Referer ~ "(?i)anticrawler\.org" ||
 		req.http.Referer ~ "(?i)aosheng\-tech\.com" ||
+		req.http.Referer ~ "(?i)apartmentbay\.ru" ||
+		req.http.Referer ~ "(?i)apartmentratings\.com" ||
+		req.http.Referer ~ "(?i)apishops\.ru" ||
 		req.http.Referer ~ "(?i)apxeo\.info" ||
+		req.http.Referer ~ "(?i)aramaicmedia\.org" ||
 		req.http.Referer ~ "(?i)arate\.ru" ||
+		req.http.Referer ~ "(?i)arcadepages\.com" ||
+		req.http.Referer ~ "(?i)architecturebest\.com" ||
 		req.http.Referer ~ "(?i)arendakvartir\.kz" ||
+		req.http.Referer ~ "(?i)arendas\.net" ||
 		req.http.Referer ~ "(?i)arendovalka\.xyz" ||
+		req.http.Referer ~ "(?i)arkartex\.ru" ||
 		req.http.Referer ~ "(?i)arkkivoltti\.net" ||
+		req.http.Referer ~ "(?i)arraty\.altervista\.org" ||
 		req.http.Referer ~ "(?i)artdeko\.info" ||
+		req.http.Referer ~ "(?i)artefakct\.com" ||
 		req.http.Referer ~ "(?i)artparquet\.ru" ||
 		req.http.Referer ~ "(?i)aruplighting\.com" ||
 		req.http.Referer ~ "(?i)asacopaco\.tk" ||
+		req.http.Referer ~ "(?i)asia\-forum\.ru" ||
+		req.http.Referer ~ "(?i)asmxsatadriverin\.aircus\.com" ||
+		req.http.Referer ~ "(?i)atlant\-auto\.info" ||
+		req.http.Referer ~ "(?i)atlasvkusov\.ru" ||
+		req.http.Referer ~ "(?i)atley\.eu\.pn" ||
+		req.http.Referer ~ "(?i)atmagroup\.ru" ||
 		req.http.Referer ~ "(?i)audiobangout\.com" ||
+		req.http.Referer ~ "(?i)ausergrubhof\.info" ||
 		req.http.Referer ~ "(?i)australia\-opening\-times\.com" ||
 		req.http.Referer ~ "(?i)auto\-moto\-elektronika\.cz" ||
+		req.http.Referer ~ "(?i)auto\-news\-digest\.ru" ||
 		req.http.Referer ~ "(?i)auto\-zapchasti\.org" ||
 		req.http.Referer ~ "(?i)auto\.rusvile\.lt" ||
+		req.http.Referer ~ "(?i)auto4style\.ru" ||
 		req.http.Referer ~ "(?i)autobrennero\.it" ||
 		req.http.Referer ~ "(?i)autobudpostach\.club" ||
+		req.http.Referer ~ "(?i)autoloans\.com" ||
 		req.http.Referer ~ "(?i)autolombard\-krasnodar\.ru" ||
+		req.http.Referer ~ "(?i)autonew\.biz" ||
+		req.http.Referer ~ "(?i)autotop\.com\.ua" ||
 		req.http.Referer ~ "(?i)autovideobroadcast\.com" ||
+		req.http.Referer ~ "(?i)autowebmarket\.com\.ua" ||
+		req.http.Referer ~ "(?i)avek\.ru" ||
+		req.http.Referer ~ "(?i)aviapanda\.ru" ||
+		req.http.Referer ~ "(?i)avitocars\.ru" ||
 		req.http.Referer ~ "(?i)aviva\-limoux\.com" ||
 		req.http.Referer ~ "(?i)avkzarabotok\.com" ||
 		req.http.Referer ~ "(?i)avkzarabotok\.info" ||
+		req.http.Referer ~ "(?i)avon\-severozapad\.ru" ||
+		req.http.Referer ~ "(?i)avtoarenda\.by" ||
 		req.http.Referer ~ "(?i)avtocredit\-legko\.ru" ||
+		req.http.Referer ~ "(?i)avtointeres\.ru" ||
+		req.http.Referer ~ "(?i)avtovolop\.ru" ||
 		req.http.Referer ~ "(?i)awency\.com" ||
+		req.http.Referer ~ "(?i)ayerbo\.xhost\.ro" ||
+		req.http.Referer ~ "(?i)azadnegar\.com" ||
 		req.http.Referer ~ "(?i)azartclub\.org" ||
 		req.http.Referer ~ "(?i)azartniy\-bonus\.com" ||
 		req.http.Referer ~ "(?i)azazu\.ru" ||
+		req.http.Referer ~ "(?i)azbuka\-mo\.ru" ||
+		req.http.Referer ~ "(?i)azbukadiets\.ru" ||
 		req.http.Referer ~ "(?i)azlex\.uz" ||
+		req.http.Referer ~ "(?i)b\-buyeasy\.com" ||
+		req.http.Referer ~ "(?i)b2b\-lounge\.com" ||
 		req.http.Referer ~ "(?i)bablonow\.ru" ||
 		req.http.Referer ~ "(?i)backgroundpictures\.net" ||
+		req.http.Referer ~ "(?i)bag77\.ru" ||
 		req.http.Referer ~ "(?i)baixar\-musicas\-gratis\.com" ||
+		req.http.Referer ~ "(?i)baixar\-musicas\-gratis\.comsavetubevideo\.com" ||
+		req.http.Referer ~ "(?i)bala\.getenjoyment\.net" ||
 		req.http.Referer ~ "(?i)baladur\.ru" ||
 		req.http.Referer ~ "(?i)balitouroffice\.com" ||
 		req.http.Referer ~ "(?i)balkanfarma\.ru" ||
+		req.http.Referer ~ "(?i)balois\.worldbreak\.com" ||
+		req.http.Referer ~ "(?i)bambi\.ck\.ua" ||
+		req.http.Referer ~ "(?i)banan\.tv" ||
+		req.http.Referer ~ "(?i)bankcrediti\.ru" ||
+		req.http.Referer ~ "(?i)bankiem\.pl" ||
 		req.http.Referer ~ "(?i)bard\-real\.com\.ua" ||
+		req.http.Referer ~ "(?i)bashtime\.ru" ||
+		req.http.Referer ~ "(?i)basisches\-wasser\.net" ||
 		req.http.Referer ~ "(?i)bausparen\.bz\.it" ||
+		req.http.Referer ~ "(?i)bazaronline24\.ru" ||
 		req.http.Referer ~ "(?i)bbtec\.net" ||
+		req.http.Referer ~ "(?i)beamfall\.info" ||
+		req.http.Referer ~ "(?i)beauby\.ru" ||
 		req.http.Referer ~ "(?i)beauty\-clinic\.ru" ||
 		req.http.Referer ~ "(?i)begalka\.xyz" ||
+		req.http.Referer ~ "(?i)belinvestdom\.by" ||
+		req.http.Referer ~ "(?i)berdasovivan\.ru" ||
+		req.http.Referer ~ "(?i)berlininsl\.com" ||
+		req.http.Referer ~ "(?i)berrymall\.ru" ||
 		req.http.Referer ~ "(?i)best\-seo\-offer\.com" ||
 		req.http.Referer ~ "(?i)best\-seo\-software\.xyz" ||
 		req.http.Referer ~ "(?i)best\-seo\-solution\.com" ||
 		req.http.Referer ~ "(?i)bestchoice\.cf" ||
+		req.http.Referer ~ "(?i)bestempresas\.es" ||
 		req.http.Referer ~ "(?i)bestmobilityscooterstoday\.com" ||
 		req.http.Referer ~ "(?i)bestofferswalkmydogouteveryday\.gq" ||
+		req.http.Referer ~ "(?i)bestplacetobuyeriacta\.jw\.lt" ||
+		req.http.Referer ~ "(?i)bestwebsiteawards\.com" ||
 		req.http.Referer ~ "(?i)bestwebsitesawards\.com" ||
+		req.http.Referer ~ "(?i)bet\-prognoz\.com" ||
 		req.http.Referer ~ "(?i)betonka\.pro" ||
+		req.http.Referer ~ "(?i)betune\.onlinewebshop\.net" ||
+		req.http.Referer ~ "(?i)betwinservice\.com" ||
+		req.http.Referer ~ "(?i)beyan\.host\.sk" ||
+		req.http.Referer ~ "(?i)bezcmexa\.ru" ||
 		req.http.Referer ~ "(?i)bezlimitko\.xyz" ||
+		req.http.Referer ~ "(?i)bezsporno\.ru" ||
+		req.http.Referer ~ "(?i)beztuberkuleza\.ru" ||
 		req.http.Referer ~ "(?i)bif\-ru\.info" ||
+		req.http.Referer ~ "(?i)bigcities\.org" ||
 		req.http.Referer ~ "(?i)biglistofwebsites\.com" ||
 		req.http.Referer ~ "(?i)biketank\.ga" ||
 		req.http.Referer ~ "(?i)billiard\-classic\.com\.ua" ||
+		req.http.Referer ~ "(?i)billigerstrom\.co" ||
+		req.http.Referer ~ "(?i)bimatoprost\-careprost\.com" ||
+		req.http.Referer ~ "(?i)bimatoprost\-careprost\.com\.ua" ||
 		req.http.Referer ~ "(?i)binomo\.kz" ||
 		req.http.Referer ~ "(?i)bio\-japan\.net" ||
 		req.http.Referer ~ "(?i)bio\.trade\-jp\.net" ||
 		req.http.Referer ~ "(?i)bioca\.org" ||
+		req.http.Referer ~ "(?i)birzha\-truda\.eu" ||
+		req.http.Referer ~ "(?i)bisign\.info" ||
+		req.http.Referer ~ "(?i)bitcoins\-live\.ru" ||
 		req.http.Referer ~ "(?i)biteg\.xyz" ||
 		req.http.Referer ~ "(?i)biznesluxe\.ru" ||
+		req.http.Referer ~ "(?i)biznesrealnost\.ru" ||
 		req.http.Referer ~ "(?i)biznesschat\.net" ||
 		req.http.Referer ~ "(?i)bizru\.info" ||
 		req.http.Referer ~ "(?i)bkns\.vn" ||
 		req.http.Referer ~ "(?i)black\-friday\.ga" ||
 		req.http.Referer ~ "(?i)blackhatworth\.com" ||
 		req.http.Referer ~ "(?i)blackle\.com" ||
+		req.http.Referer ~ "(?i)blackplanet\.com" ||
+		req.http.Referer ~ "(?i)blackwitchcraft\.ru" ||
+		req.http.Referer ~ "(?i)blavia\.00author\.com" ||
+		req.http.Referer ~ "(?i)bleacherreport\.com" ||
+		req.http.Referer ~ "(?i)blockworld\.ru" ||
+		req.http.Referer ~ "(?i)blog\.f00kclan\.de" ||
+		req.http.Referer ~ "(?i)blog\.koorg\.ru" ||
+		req.http.Referer ~ "(?i)blog\.latuti\.net" ||
+		req.http.Referer ~ "(?i)blog\.remote\-computer\.de" ||
+		req.http.Referer ~ "(?i)blog\.yam\.com" ||
+		req.http.Referer ~ "(?i)blogarun\.co" ||
+		req.http.Referer ~ "(?i)bloggen\.be" ||
+		req.http.Referer ~ "(?i)bloggers\.nl" ||
+		req.http.Referer ~ "(?i)blogig\.org" ||
+		req.http.Referer ~ "(?i)blogos\.kz" ||
+		req.http.Referer ~ "(?i)blogs\.rediff\.com" ||
+		req.http.Referer ~ "(?i)blogster\.com" ||
 		req.http.Referer ~ "(?i)blogtotal\.de" ||
 		req.http.Referer ~ "(?i)blue\-square\.biz" ||
 		req.http.Referer ~ "(?i)bluerobot\.info" ||
+		req.http.Referer ~ "(?i)board\.f00d\.de" ||
+		req.http.Referer ~ "(?i)bobba\.dzaba\.com" ||
+		req.http.Referer ~ "(?i)bodybuilding\-shop\.biz" ||
 		req.http.Referer ~ "(?i)boleznikogi\.com" ||
+		req.http.Referer ~ "(?i)bolezniorganov\.ru" ||
 		req.http.Referer ~ "(?i)boltalko\.xyz" ||
+		req.http.Referer ~ "(?i)bombla\.org" ||
+		req.http.Referer ~ "(?i)bonux\.nextview\.ru" ||
+		req.http.Referer ~ "(?i)bookmaker\-bet\.com" ||
 		req.http.Referer ~ "(?i)bookmark4you\.biz" ||
 		req.http.Referer ~ "(?i)bookmark4you\.com" ||
+		req.http.Referer ~ "(?i)bookmark4you\.com\.biz" ||
+		req.http.Referer ~ "(?i)boole\.onlinewebshop\.net" ||
 		req.http.Referer ~ "(?i)boost\-my\-site\.com" ||
+		req.http.Referer ~ "(?i)boostmyppc\.com" ||
+		req.http.Referer ~ "(?i)bosefux\.esy\.es" ||
+		req.http.Referer ~ "(?i)bosman\.pluto\.ro" ||
+		req.http.Referer ~ "(?i)bouda\.kvalitne\.cz" ||
 		req.http.Referer ~ "(?i)brains2\.biz" ||
 		req.http.Referer ~ "(?i)brakehawk\.com" ||
+		req.http.Referer ~ "(?i)brandov\.ru" ||
 		req.http.Referer ~ "(?i)brateg\.xyz" ||
 		req.http.Referer ~ "(?i)break\-the\-chains\.com" ||
+		req.http.Referer ~ "(?i)breget74\.ru" ||
+		req.http.Referer ~ "(?i)brendbutik\.ru" ||
 		req.http.Referer ~ "(?i)bristolhostel\.com" ||
 		req.http.Referer ~ "(?i)bristolhotel\.com" ||
 		req.http.Referer ~ "(?i)bristolhotel\.com\.ua" ||
 		req.http.Referer ~ "(?i)brk\-rti\.ru" ||
+		req.http.Referer ~ "(?i)brokergid\.ru" ||
+		req.http.Referer ~ "(?i)brooklyn\-ads\.com" ||
 		req.http.Referer ~ "(?i)brothers\-smaller\.ru" ||
+		req.http.Referer ~ "(?i)brus\-vsem\.ru" ||
 		req.http.Referer ~ "(?i)brus\.city" ||
 		req.http.Referer ~ "(?i)budilneg\.xyz" ||
 		req.http.Referer ~ "(?i)budmavtomatika\.com\.ua" ||
 		req.http.Referer ~ "(?i)budpost\.com\.ua" ||
 		req.http.Referer ~ "(?i)bugof\.gq" ||
+		req.http.Referer ~ "(?i)buigas\.00it\.com" ||
 		req.http.Referer ~ "(?i)buketeg\.xyz" ||
 		req.http.Referer ~ "(?i)bukleteg\.xyz" ||
+		req.http.Referer ~ "(?i)buqayy0\.livejournal\.com" ||
 		req.http.Referer ~ "(?i)burger\-imperia\.com" ||
 		req.http.Referer ~ "(?i)burn\-fat\.ga" ||
 		req.http.Referer ~ "(?i)buttons\-for\-website\.com" ||
@@ -161,48 +327,113 @@ sub block_referral_spam {
 		req.http.Referer ~ "(?i)buy\-cheap\-pills\-order\-online\.com" ||
 		req.http.Referer ~ "(?i)buy\-forum\.ru" ||
 		req.http.Referer ~ "(?i)buyantiviralwp\.com" ||
+		req.http.Referer ~ "(?i)buyessay3\.blogspot\.ru" ||
 		req.http.Referer ~ "(?i)buyessaynow\.biz" ||
+		req.http.Referer ~ "(?i)buyessayonline19\.blogspot\.ru" ||
+		req.http.Referer ~ "(?i)buyfriend\.ru" ||
+		req.http.Referer ~ "(?i)buyk\.host\.sk" ||
 		req.http.Referer ~ "(?i)buynorxx\.com" ||
 		req.http.Referer ~ "(?i)buypharmacydrug\.com" ||
+		req.http.Referer ~ "(?i)buypillsorderonline\.com" ||
+		req.http.Referer ~ "(?i)buyscabiescream\.com" ||
+		req.http.Referer ~ "(?i)buytizanidineonline\.blogspot\.com" ||
+		req.http.Referer ~ "(?i)buytizanidineonlinenoprescription\.blogspot\.com" ||
+		req.http.Referer ~ "(?i)buyviagraa\.blogspot\.com" ||
+		req.http.Referer ~ "(?i)bvps8\.com" ||
 		req.http.Referer ~ "(?i)bycontext\.com" ||
+		req.http.Referer ~ "(?i)byme\.se" ||
+		req.http.Referer ~ "(?i)bytimedance\.ru" ||
 		req.http.Referer ~ "(?i)c\-english\.ru" ||
 		req.http.Referer ~ "(?i)californianews\.cf" ||
 		req.http.Referer ~ "(?i)call\-of\-duty\.info" ||
 		req.http.Referer ~ "(?i)callejondelpozo\.es" ||
+		req.http.Referer ~ "(?i)calvet\.altervista\.org" ||
+		req.http.Referer ~ "(?i)canoncdriverq3\.pen\.io" ||
+		req.http.Referer ~ "(?i)canyougethighofftizanidine\.blogspot\.com" ||
+		req.http.Referer ~ "(?i)canzoni\.ru" ||
+		req.http.Referer ~ "(?i)carabela\.com\.do" ||
 		req.http.Referer ~ "(?i)cardiosport\.com\.ua" ||
+		req.http.Referer ~ "(?i)cardsharp1\.ru" ||
+		req.http.Referer ~ "(?i)cardul\.ru" ||
+		req.http.Referer ~ "(?i)carfax\.com\.ua" ||
+		req.http.Referer ~ "(?i)carloans\.com" ||
+		req.http.Referer ~ "(?i)carsdined\.org" ||
 		req.http.Referer ~ "(?i)carsnumber\.com" ||
+		req.http.Referer ~ "(?i)carson\.getenjoyment\.net" ||
+		req.http.Referer ~ "(?i)carsoncitypizza\.com" ||
 		req.http.Referer ~ "(?i)cartechnic\.ru" ||
+		req.http.Referer ~ "(?i)casablancamanor\.co\.za" ||
 		req.http.Referer ~ "(?i)castingbank\.ru" ||
+		req.http.Referer ~ "(?i)catalogs\-parts\.com" ||
+		req.http.Referer ~ "(?i)cayado\.snn\.gr" ||
 		req.http.Referer ~ "(?i)cbcseward\.com" ||
 		req.http.Referer ~ "(?i)cbox\.ws" ||
+		req.http.Referer ~ "(?i)celldog\.ru" ||
 		req.http.Referer ~ "(?i)cenokos\.ru" ||
 		req.http.Referer ~ "(?i)cenoval\.ru" ||
+		req.http.Referer ~ "(?i)centre\-indigo\.org\.ua" ||
+		req.http.Referer ~ "(?i)centrumcoachingu\.com" ||
+		req.http.Referer ~ "(?i)cercacamion\.it" ||
 		req.http.Referer ~ "(?i)cezartabac\.ro" ||
+		req.http.Referer ~ "(?i)cfsrating\.sonicwall\.com" ||
+		req.http.Referer ~ "(?i)cgi2\.nintendo\.co\.jp" ||
+		req.http.Referer ~ "(?i)chastnoeporno\.com" ||
+		req.http.Referer ~ "(?i)chat\.ru" ||
+		req.http.Referer ~ "(?i)chcu\.net" ||
+		req.http.Referer ~ "(?i)chee\-by\.biz" ||
 		req.http.Referer ~ "(?i)chelyabinsk\.xrus\.org" ||
 		req.http.Referer ~ "(?i)cherrypointplace\.ca" ||
 		req.http.Referer ~ "(?i)cherubinimobili\.it" ||
+		req.http.Referer ~ "(?i)chimiver\.info" ||
 		req.http.Referer ~ "(?i)chinese\-amezon\.com" ||
+		req.http.Referer ~ "(?i)choosecuisine\.com" ||
 		req.http.Referer ~ "(?i)ci\.ua" ||
+		req.http.Referer ~ "(?i)cigarpass\.com" ||
+		req.http.Referer ~ "(?i)cinemaenergy\-hd\.ru" ||
+		req.http.Referer ~ "(?i)ciproandtizanidine\.blogspot\.com" ||
+		req.http.Referer ~ "(?i)citizenclsdriveri7\.pen\.io" ||
 		req.http.Referer ~ "(?i)cityadspix\.com" ||
 		req.http.Referer ~ "(?i)civilwartheater\.com" ||
+		req.http.Referer ~ "(?i)clarithromycin500mg\.com" ||
+		req.http.Referer ~ "(?i)clash\-clans\.ru" ||
+		req.http.Referer ~ "(?i)classicakuhni\.ru" ||
 		req.http.Referer ~ "(?i)clicksor\.com" ||
 		req.http.Referer ~ "(?i)clmforexeu\.com" ||
+		req.http.Referer ~ "(?i)club\-musics\.ru" ||
+		req.http.Referer ~ "(?i)club\-samodelkin\.ru" ||
+		req.http.Referer ~ "(?i)cmd\.kz" ||
+		req.http.Referer ~ "(?i)cobaltpro\.ru" ||
+		req.http.Referer ~ "(?i)cocyq\.inwtrade\.com" ||
 		req.http.Referer ~ "(?i)coderstate\.com" ||
+		req.http.Referer ~ "(?i)codq\.info" ||
 		req.http.Referer ~ "(?i)codysbbq\.com" ||
+		req.http.Referer ~ "(?i)coldfilm\.ru" ||
+		req.http.Referer ~ "(?i)collegeessay19\.blogspot\.ru" ||
+		req.http.Referer ~ "(?i)cometorussia\.net" ||
+		req.http.Referer ~ "(?i)comissionka\.net" ||
 		req.http.Referer ~ "(?i)compliance\-alex\.top" ||
+		req.http.Referer ~ "(?i)compliance\-alex\.xyz" ||
 		req.http.Referer ~ "(?i)compliance\-alexa\.top" ||
+		req.http.Referer ~ "(?i)compliance\-alexa\.xyz" ||
 		req.http.Referer ~ "(?i)compliance\-andrew\.top" ||
 		req.http.Referer ~ "(?i)compliance\-andrew\.xyz" ||
 		req.http.Referer ~ "(?i)compliance\-barak\.top" ||
+		req.http.Referer ~ "(?i)compliance\-barak\.xyz" ||
 		req.http.Referer ~ "(?i)compliance\-brian\.top" ||
+		req.http.Referer ~ "(?i)compliance\-brian\.xyz" ||
 		req.http.Referer ~ "(?i)compliance\-don\.top" ||
 		req.http.Referer ~ "(?i)compliance\-don\.xyz" ||
+		req.http.Referer ~ "(?i)compliance\-donald\.xyz" ||
 		req.http.Referer ~ "(?i)compliance\-elena\.top" ||
+		req.http.Referer ~ "(?i)compliance\-elena\.xyz" ||
 		req.http.Referer ~ "(?i)compliance\-fred\.top" ||
+		req.http.Referer ~ "(?i)compliance\-fred\.xyz" ||
 		req.http.Referer ~ "(?i)compliance\-george\.top" ||
+		req.http.Referer ~ "(?i)compliance\-george\.xyz" ||
 		req.http.Referer ~ "(?i)compliance\-irvin\.top" ||
 		req.http.Referer ~ "(?i)compliance\-irvin\.xyz" ||
 		req.http.Referer ~ "(?i)compliance\-ivan\.top" ||
+		req.http.Referer ~ "(?i)compliance\-ivan\.xyz" ||
 		req.http.Referer ~ "(?i)compliance\-jack\.top" ||
 		req.http.Referer ~ "(?i)compliance\-jane\.top" ||
 		req.http.Referer ~ "(?i)compliance\-jess\.top" ||
@@ -222,6 +453,7 @@ sub block_referral_spam {
 		req.http.Referer ~ "(?i)conciergegroup\.org" ||
 		req.http.Referer ~ "(?i)connectikastudio\.com" ||
 		req.http.Referer ~ "(?i)constantaservice\.net" ||
+		req.http.Referer ~ "(?i)construmac\.com\.mx" ||
 		req.http.Referer ~ "(?i)contextualyield\.com" ||
 		req.http.Referer ~ "(?i)cookie\-law\-enforcement\-aa\.xyz" ||
 		req.http.Referer ~ "(?i)cookie\-law\-enforcement\-bb\.xyz" ||
@@ -232,74 +464,211 @@ sub block_referral_spam {
 		req.http.Referer ~ "(?i)cookie\-law\-enforcement\-gg\.xyz" ||
 		req.http.Referer ~ "(?i)cookie\-law\-enforcement\-hh\.xyz" ||
 		req.http.Referer ~ "(?i)cookie\-law\-enforcement\-ii\.xyz" ||
+		req.http.Referer ~ "(?i)cookie\-law\-enforcement\-jj\.xyz" ||
+		req.http.Referer ~ "(?i)cookie\-law\-enforcement\-kk\.xyz" ||
+		req.http.Referer ~ "(?i)cookie\-law\-enforcement\-ll\.xyz" ||
+		req.http.Referer ~ "(?i)cookie\-law\-enforcement\-mm\.xyz" ||
+		req.http.Referer ~ "(?i)cookie\-law\-enforcement\-nn\.xyz" ||
+		req.http.Referer ~ "(?i)cookie\-law\-enforcement\-oo\.xyz" ||
+		req.http.Referer ~ "(?i)cookie\-law\-enforcement\-pp\.xyz" ||
+		req.http.Referer ~ "(?i)cookie\-law\-enforcement\-qq\.xyz" ||
+		req.http.Referer ~ "(?i)cookie\-law\-enforcement\-rr\.xyz" ||
+		req.http.Referer ~ "(?i)cookie\-law\-enforcement\-ss\.xyz" ||
+		req.http.Referer ~ "(?i)cookie\-law\-enforcement\-tt\.xyz" ||
+		req.http.Referer ~ "(?i)cookie\-law\-enforcement\-uu\.xyz" ||
+		req.http.Referer ~ "(?i)cookie\-law\-enforcement\-vv\.xyz" ||
+		req.http.Referer ~ "(?i)cookie\-law\-enforcement\-ww\.xyz" ||
+		req.http.Referer ~ "(?i)cookie\-law\-enforcement\-xx\.xyz" ||
+		req.http.Referer ~ "(?i)cookie\-law\-enforcement\-yy\.xyz" ||
+		req.http.Referer ~ "(?i)cookie\-law\-enforcement\-zz\.xyz" ||
 		req.http.Referer ~ "(?i)cookielawblog\.wordpress\.com" ||
 		req.http.Referer ~ "(?i)cookingmeat\.ru" ||
 		req.http.Referer ~ "(?i)cool\-wedding\.net" ||
+		req.http.Referer ~ "(?i)coop\-gamers\.ru" ||
+		req.http.Referer ~ "(?i)copblock\.org" ||
 		req.http.Referer ~ "(?i)copyrightclaims\.org" ||
+		req.http.Referer ~ "(?i)countravel\.net" ||
 		req.http.Referer ~ "(?i)covadhosting\.biz" ||
+		req.http.Referer ~ "(?i)covetnica\.com" ||
+		req.http.Referer ~ "(?i)cowblog\.fr" ||
+		req.http.Referer ~ "(?i)cranly\.net" ||
+		req.http.Referer ~ "(?i)crd\.clan\.su" ||
+		req.http.Referer ~ "(?i)creams\.makeforum\.eu" ||
 		req.http.Referer ~ "(?i)creditmoney\.com\.ua" ||
+		req.http.Referer ~ "(?i)crest\-poloski\.ru" ||
+		req.http.Referer ~ "(?i)crest3d\.ru" ||
+		req.http.Referer ~ "(?i)crirussian\.ru" ||
+		req.http.Referer ~ "(?i)cruiseraf\.net" ||
+		req.http.Referer ~ "(?i)crystalslot\.com" ||
 		req.http.Referer ~ "(?i)cubook\.supernew\.org" ||
 		req.http.Referer ~ "(?i)customsua\.com\.ua" ||
 		req.http.Referer ~ "(?i)cutalltheshit\.com" ||
+		req.http.Referer ~ "(?i)cvety24\.by" ||
+		req.http.Referer ~ "(?i)cxpromote\.com" ||
 		req.http.Referer ~ "(?i)cyber\-monday\.ga" ||
+		req.http.Referer ~ "(?i)cyclobenzaprinevstizanidine\.blogspot\.com" ||
+		req.http.Referer ~ "(?i)cymbaltaandtizanidine\.blogspot\.com" ||
 		req.http.Referer ~ "(?i)cyprusbuyproperties\.com" ||
 		req.http.Referer ~ "(?i)dailyrank\.net" ||
+		req.http.Referer ~ "(?i)dailystrength\.org" ||
+		req.http.Referer ~ "(?i)dame\-ns\.kz" ||
+		req.http.Referer ~ "(?i)damedingel\.ya\.ru" ||
+		req.http.Referer ~ "(?i)danashop\.ru" ||
+		req.http.Referer ~ "(?i)danceuniverse\.ru" ||
+		req.http.Referer ~ "(?i)daptravel\.com" ||
+		req.http.Referer ~ "(?i)darkbooks\.org" ||
 		req.http.Referer ~ "(?i)darodar\.com" ||
+		req.http.Referer ~ "(?i)datsun\-do\.com" ||
+		req.http.Referer ~ "(?i)dbmkfhqk\.bloger\.index\.hr" ||
 		req.http.Referer ~ "(?i)dbutton\.net" ||
+		req.http.Referer ~ "(?i)ddlmega\.net" ||
+		req.http.Referer ~ "(?i)ddpills\.com" ||
+		req.http.Referer ~ "(?i)de\.zapmeta\.com" ||
 		req.http.Referer ~ "(?i)dear\-diary\.ru" ||
+		req.http.Referer ~ "(?i)deda\-moroza\-zakaz\.ru" ||
 		req.http.Referer ~ "(?i)dekorkeramik\.ru" ||
+		req.http.Referer ~ "(?i)delayreferat\.ru" ||
 		req.http.Referer ~ "(?i)delfin\-aqua\.com\.ua" ||
 		req.http.Referer ~ "(?i)demenageur\.com" ||
 		req.http.Referer ~ "(?i)den\-noch24\.ru" ||
+		req.http.Referer ~ "(?i)deniven\.1bb\.ru" ||
 		req.http.Referer ~ "(?i)depositfiles\-porn\.com" ||
+		req.http.Referer ~ "(?i)depositfiles\-porn\.ga" ||
 		req.http.Referer ~ "(?i)descargar\-musica\-gratis\.net" ||
+		req.http.Referer ~ "(?i)descargar\-musicas\-gratis\.com" ||
+		req.http.Referer ~ "(?i)design\-lands\.ru" ||
+		req.http.Referer ~ "(?i)designdevise\.com" ||
+		req.http.Referer ~ "(?i)detalizaciya\-tut\.biz" ||
+		req.http.Referer ~ "(?i)detective01\.ru" ||
+		req.http.Referer ~ "(?i)detki\-opt\.ru" ||
 		req.http.Referer ~ "(?i)detskie\-konstruktory\.ru" ||
+		req.http.Referer ~ "(?i)detskie\-zabavi\.ru" ||
+		req.http.Referer ~ "(?i)diarioaconcagua\.com" ||
+		req.http.Referer ~ "(?i)diebesten\.co" ||
+		req.http.Referer ~ "(?i)diesel\-parts28\.ru" ||
+		req.http.Referer ~ "(?i)digest\-project\.ru" ||
+		req.http.Referer ~ "(?i)digilander\.libero\.it" ||
 		req.http.Referer ~ "(?i)dimkino\.ru" ||
+		req.http.Referer ~ "(?i)dinkolove\.ya\.ru" ||
+		req.http.Referer ~ "(?i)diplom\-nk\.com" ||
 		req.http.Referer ~ "(?i)dipstar\.org" ||
 		req.http.Referer ~ "(?i)directrev\.com" ||
 		req.http.Referer ~ "(?i)diy\-handmade\-ideas\.com" ||
 		req.http.Referer ~ "(?i)djekxa\.ru" ||
 		req.http.Referer ~ "(?i)djonwatch\.ru" ||
+		req.http.Referer ~ "(?i)djstools\.com" ||
 		req.http.Referer ~ "(?i)dktr\.ru" ||
+		req.http.Referer ~ "(?i)dlya\-android\.org" ||
+		req.http.Referer ~ "(?i)dms\-sw\.ru" ||
 		req.http.Referer ~ "(?i)dnepr\-avtospar\.com\.ua" ||
 		req.http.Referer ~ "(?i)dneprsvet\.com\.ua" ||
+		req.http.Referer ~ "(?i)docstoc\.com" ||
+		req.http.Referer ~ "(?i)doeco\.ru" ||
 		req.http.Referer ~ "(?i)dogshowsonice\.com" ||
+		req.http.Referer ~ "(?i)dogsrun\.net" ||
 		req.http.Referer ~ "(?i)dojki\-hd\.com" ||
 		req.http.Referer ~ "(?i)doktoronline\.no" ||
 		req.http.Referer ~ "(?i)dokumentalkino\.net" ||
 		req.http.Referer ~ "(?i)domain\-tracker\.com" ||
+		req.http.Referer ~ "(?i)domashneeruporno\.com" ||
+		req.http.Referer ~ "(?i)domcran\.net" ||
+		req.http.Referer ~ "(?i)domik\-derevne\.ru" ||
 		req.http.Referer ~ "(?i)dominateforex\.ml" ||
 		req.http.Referer ~ "(?i)domination\.ml" ||
 		req.http.Referer ~ "(?i)dominterior\.org" ||
+		req.http.Referer ~ "(?i)domoysshop\.ru" ||
+		req.http.Referer ~ "(?i)donvito\.unas\.cz" ||
 		req.http.Referer ~ "(?i)doska\-vsem\.ru" ||
 		req.http.Referer ~ "(?i)dostavka\-v\-krym\.com" ||
+		req.http.Referer ~ "(?i)dostavka\-v\-ukrainu\.ru" ||
+		req.http.Referer ~ "(?i)dosug\-lux\.ru" ||
+		req.http.Referer ~ "(?i)download\-of\-the\-warez\.blogspot\.com" ||
+		req.http.Referer ~ "(?i)downloadmefiranaratb1972\.xpg\.com\.br" ||
 		req.http.Referer ~ "(?i)doyouknowtheword\-flummox\.ml" ||
+		req.http.Referer ~ "(?i)dprkboards\.com" ||
+		req.http.Referer ~ "(?i)driving\.kiev\.ua" ||
+		req.http.Referer ~ "(?i)drugspowerstore\.com" ||
 		req.http.Referer ~ "(?i)drugstoreforyou\.com" ||
 		req.http.Referer ~ "(?i)drupa\.com" ||
+		req.http.Referer ~ "(?i)druzhbany\.ru" ||
+		req.http.Referer ~ "(?i)druzhininevgeniy63\.blogspot\.com" ||
+		req.http.Referer ~ "(?i)dstroy\.su" ||
+		req.http.Referer ~ "(?i)dvd\-famille\.com" ||
 		req.http.Referer ~ "(?i)dvr\.biz\.ua" ||
+		req.http.Referer ~ "(?i)e\-avon\.ru" ||
 		req.http.Referer ~ "(?i)e\-buyeasy\.com" ||
 		req.http.Referer ~ "(?i)e\-collantes\.com" ||
 		req.http.Referer ~ "(?i)e\-kwiaciarz\.pl" ||
 		req.http.Referer ~ "(?i)e2click\.com" ||
+		req.http.Referer ~ "(?i)eandsgallery\.com" ||
 		req.http.Referer ~ "(?i)easycommerce\.cf" ||
 		req.http.Referer ~ "(?i)easync\.io" ||
+		req.http.Referer ~ "(?i)easytuningshop\.ru" ||
 		req.http.Referer ~ "(?i)ecomp3\.ru" ||
 		req.http.Referer ~ "(?i)econom\.co" ||
+		req.http.Referer ~ "(?i)ecookna\.com\.ua" ||
 		req.http.Referer ~ "(?i)edakgfvwql\.ru" ||
 		req.http.Referer ~ "(?i)edelstahlschornstein\-123\.de" ||
+		req.http.Referer ~ "(?i)editmedios\.com" ||
+		req.http.Referer ~ "(?i)edshopping\.net" ||
+		req.http.Referer ~ "(?i)education\-cz\.ru" ||
 		req.http.Referer ~ "(?i)egovaleo\.it" ||
+		req.http.Referer ~ "(?i)egvar\.net" ||
 		req.http.Referer ~ "(?i)ekatalog\.xyz" ||
 		req.http.Referer ~ "(?i)ekaterinburg\.xrus\.org" ||
+		req.http.Referer ~ "(?i)ekobata\.ru" ||
 		req.http.Referer ~ "(?i)ekspertmed\.com" ||
 		req.http.Referer ~ "(?i)ekto\.ee" ||
 		req.http.Referer ~ "(?i)el\-nation\.com" ||
+		req.http.Referer ~ "(?i)electro\-prom\.com" ||
+		req.http.Referer ~ "(?i)elektrischezi\.canalblog\.com" ||
+		req.http.Referer ~ "(?i)elektrischeziga\.livejournal\.com" ||
+		req.http.Referer ~ "(?i)elektrischezigarette1\.blog\.pl" ||
+		req.http.Referer ~ "(?i)elektrischezigarette1\.onsugar\.com" ||
+		req.http.Referer ~ "(?i)elektrischezigarette2\.devhub\.com" ||
+		req.http.Referer ~ "(?i)elektrischezigarette2\.onsugar\.com" ||
+		req.http.Referer ~ "(?i)elektrischezigarettekaufen2\.cowblog\.fr" ||
+		req.http.Referer ~ "(?i)elektrischezigaretten1\.blogse\.nl" ||
+		req.http.Referer ~ "(?i)elektrischezigaretten2\.beeplog\.com" ||
+		req.http.Referer ~ "(?i)elektronischezi\.livejournal\.com" ||
+		req.http.Referer ~ "(?i)elektronischezigarette2\.mex\.tl" ||
+		req.http.Referer ~ "(?i)elektronischezigarettekaufen1\.beeplog\.com" ||
+		req.http.Referer ~ "(?i)elektronischezigarettekaufen1\.myblog\.de" ||
+		req.http.Referer ~ "(?i)elektronischezigarettekaufen2\.tumblr\.com" ||
+		req.http.Referer ~ "(?i)elektrozigarette1\.dreamwidth\.org" ||
+		req.http.Referer ~ "(?i)elektrozigarette2\.webs\.com" ||
+		req.http.Referer ~ "(?i)elektrozigarette2\.wordpressy\.pl" ||
+		req.http.Referer ~ "(?i)elektrozigarettekaufen1\.devhub\.com" ||
+		req.http.Referer ~ "(?i)elektrozigarettekaufen2\.blogse\.nl" ||
+		req.http.Referer ~ "(?i)elektrozigaretten1\.postbit\.com" ||
+		req.http.Referer ~ "(?i)elektrozigaretten1\.tumblr\.com" ||
+		req.http.Referer ~ "(?i)elektrozigaretten1\.webs\.com" ||
+		req.http.Referer ~ "(?i)elektrozigaretten2\.yn\.lt" ||
+		req.http.Referer ~ "(?i)elidelcream\.weebly\.com" ||
 		req.http.Referer ~ "(?i)elitesportsadvisor\.com" ||
+		req.http.Referer ~ "(?i)elkacentr\.ru" ||
 		req.http.Referer ~ "(?i)elmifarhangi\.com" ||
+		req.http.Referer ~ "(?i)eloconcream\.blogspot\.com" ||
 		req.http.Referer ~ "(?i)eloxal\.ru" ||
+		req.http.Referer ~ "(?i)elvel\.com\.ua" ||
 		req.http.Referer ~ "(?i)embedle\.com" ||
+		req.http.Referer ~ "(?i)empis\.magix\.net" ||
+		req.http.Referer ~ "(?i)energy\-ua\.com" ||
+		req.http.Referer ~ "(?i)energydiet\-info\.ru" ||
+		req.http.Referer ~ "(?i)energydiet24\.ru" ||
+		req.http.Referer ~ "(?i)enginebay\.ru" ||
+		req.http.Referer ~ "(?i)englishdictionaryfree\.com" ||
+		req.http.Referer ~ "(?i)eonpal\.com" ||
+		req.http.Referer ~ "(?i)erank\.eu" ||
 		req.http.Referer ~ "(?i)eredijovon\.com" ||
+		req.http.Referer ~ "(?i)ereko\.ru" ||
 		req.http.Referer ~ "(?i)erot\.co" ||
+		req.http.Referer ~ "(?i)erotikstories\.ru" ||
+		req.http.Referer ~ "(?i)es5\.com" ||
 		req.http.Referer ~ "(?i)escort\-russian\.com" ||
+		req.http.Referer ~ "(?i)escortplius\.com" ||
+		req.http.Referer ~ "(?i)eshop\.md" ||
+		req.http.Referer ~ "(?i)esnm\.ru" ||
 		req.http.Referer ~ "(?i)este\-line\.com\.ua" ||
 		req.http.Referer ~ "(?i)eu\-cookie\-law\-enforcement\-4\.xyz" ||
 		req.http.Referer ~ "(?i)eu\-cookie\-law\-enforcement\-5\.xyz" ||
@@ -311,45 +680,118 @@ sub block_referral_spam {
 		req.http.Referer ~ "(?i)euromasterclass\.ru" ||
 		req.http.Referer ~ "(?i)euronis\-free\.com" ||
 		req.http.Referer ~ "(?i)europages\.com\.ru" ||
+		req.http.Referer ~ "(?i)europeanwatches\.ru" ||
 		req.http.Referer ~ "(?i)eurosamodelki\.ru" ||
+		req.http.Referer ~ "(?i)euroskat\.ru" ||
+		req.http.Referer ~ "(?i)evaashop\.ru" ||
 		req.http.Referer ~ "(?i)event\-tracking\.com" ||
 		req.http.Referer ~ "(?i)exchangeit\.gq" ||
+		req.http.Referer ~ "(?i)exchanges\-bet\.com" ||
 		req.http.Referer ~ "(?i)executehosting\.com" ||
 		req.http.Referer ~ "(?i)expdom\.com" ||
+		req.http.Referer ~ "(?i)expertnaya\-ocenka\.ru" ||
 		req.http.Referer ~ "(?i)expresstoplivo\.ru" ||
 		req.http.Referer ~ "(?i)extener\.com" ||
+		req.http.Referer ~ "(?i)extener\.org" ||
+		req.http.Referer ~ "(?i)extrabot\.com" ||
 		req.http.Referer ~ "(?i)extremez\.net" ||
 		req.http.Referer ~ "(?i)eyes\-on\-you\.ga" ||
+		req.http.Referer ~ "(?i)eyessurgery\.ru" ||
+		req.http.Referer ~ "(?i)ez8motelseaworldsandiego\.com" ||
+		req.http.Referer ~ "(?i)ezigarettekaufen\.myblog\.de" ||
+		req.http.Referer ~ "(?i)ezigarettekaufen1\.hpage\.com" ||
+		req.http.Referer ~ "(?i)ezigarettekaufen2\.blox\.pl" ||
+		req.http.Referer ~ "(?i)ezigarettekaufen2\.mpbloggar\.se" ||
+		req.http.Referer ~ "(?i)ezigarettekaufen2\.yolasite\.com" ||
+		req.http.Referer ~ "(?i)ezigarettenkaufen1\.deviantart\.com" ||
+		req.http.Referer ~ "(?i)ezigarettenkaufen1\.pagina\.gr" ||
+		req.http.Referer ~ "(?i)ezigarettenkaufen2\.dreamwidth\.org" ||
+		req.http.Referer ~ "(?i)ezigarettenshop1\.yolasite\.com" ||
+		req.http.Referer ~ "(?i)ezigarettenshop2\.myblog\.de" ||
+		req.http.Referer ~ "(?i)ezigarettenshop2\.postbit\.com" ||
+		req.http.Referer ~ "(?i)ezigaretteshop\.webs\.com" ||
+		req.http.Referer ~ "(?i)ezigaretteshop2\.mywapblog\.com" ||
+		req.http.Referer ~ "(?i)ezigaretteshop2\.vefblog\.net" ||
+		req.http.Referer ~ "(?i)ezofest\.sk" ||
+		req.http.Referer ~ "(?i)ezrvrentals\.com" ||
+		req.http.Referer ~ "(?i)f\-loaded\.de" ||
+		req.http.Referer ~ "(?i)f\-online\.de" ||
+		req.http.Referer ~ "(?i)f00kclan\.de" ||
+		req.http.Referer ~ "(?i)f012\.de" ||
+		req.http.Referer ~ "(?i)f07\.de" ||
+		req.http.Referer ~ "(?i)f0815\.de" ||
 		req.http.Referer ~ "(?i)facebook\-mobile\.xyz" ||
 		req.http.Referer ~ "(?i)family1st\.ca" ||
 		req.http.Referer ~ "(?i)familyholiday\.ml" ||
+		req.http.Referer ~ "(?i)familyphysician\.ru" ||
+		req.http.Referer ~ "(?i)fanoboi\.com" ||
+		req.http.Referer ~ "(?i)fashion\-mk\.net" ||
 		req.http.Referer ~ "(?i)fashionindeed\.ml" ||
 		req.http.Referer ~ "(?i)fast\-wordpress\-start\.com" ||
+		req.http.Referer ~ "(?i)favorcosmetics\.com" ||
+		req.http.Referer ~ "(?i)favoritemoney\.ru" ||
+		req.http.Referer ~ "(?i)favornews\.com" ||
+		req.http.Referer ~ "(?i)fba\-mexico\.com" ||
 		req.http.Referer ~ "(?i)fbdownloader\.com" ||
 		req.http.Referer ~ "(?i)fbfreegifts\.com" ||
+		req.http.Referer ~ "(?i)fc\-007\.com" ||
 		req.http.Referer ~ "(?i)fealq\.com" ||
+		req.http.Referer ~ "(?i)feargames\.ru" ||
 		req.http.Referer ~ "(?i)feedback\.sharemyfile\.ru" ||
 		req.http.Referer ~ "(?i)feedouble\.com" ||
 		req.http.Referer ~ "(?i)feedouble\.net" ||
+		req.http.Referer ~ "(?i)feel\-planet\.com" ||
+		req.http.Referer ~ "(?i)feeriaclub\.ru" ||
+		req.http.Referer ~ "(?i)femmesdenudees\.com" ||
+		req.http.Referer ~ "(?i)fenoyl\.batcave\.net" ||
 		req.http.Referer ~ "(?i)ferieboligkbh\.dk" ||
+		req.http.Referer ~ "(?i)fermersovet\.ru" ||
+		req.http.Referer ~ "(?i)fetishinside\.com" ||
+		req.http.Referer ~ "(?i)filesvine\.com" ||
 		req.http.Referer ~ "(?i)film\-one\.ru" ||
 		req.http.Referer ~ "(?i)filmetricsasia\.com" ||
 		req.http.Referer ~ "(?i)filmgo\.ru" ||
+		req.http.Referer ~ "(?i)filmidivx\.com" ||
+		req.http.Referer ~ "(?i)findacheaplawyers\.com" ||
+		req.http.Referer ~ "(?i)finstroy\.net" ||
 		req.http.Referer ~ "(?i)finteks\.ru" ||
 		req.http.Referer ~ "(?i)firma\-legion\.ru" ||
 		req.http.Referer ~ "(?i)fitness\-video\.net" ||
+		req.http.Referer ~ "(?i)fiuxy\.com" ||
+		req.http.Referer ~ "(?i)fiverr\.com" ||
 		req.http.Referer ~ "(?i)fix\-website\-errors\.com" ||
+		req.http.Referer ~ "(?i)fizika\.tv" ||
+		req.http.Referer ~ "(?i)flash4fun\.com" ||
+		req.http.Referer ~ "(?i)flavors\.me" ||
+		req.http.Referer ~ "(?i)flex4launch\.ru" ||
 		req.http.Referer ~ "(?i)floating\-share\-buttons\.com" ||
 		req.http.Referer ~ "(?i)flooringinstallation\-edmonton\.com" ||
+		req.http.Referer ~ "(?i)flowwwers\.com" ||
 		req.http.Referer ~ "(?i)flprog\.com" ||
+		req.http.Referer ~ "(?i)flytourisme\.org" ||
 		req.http.Referer ~ "(?i)fm\-upgrade\.ru" ||
+		req.http.Referer ~ "(?i)fmgrupe\.it" ||
 		req.http.Referer ~ "(?i)for\-your\.website" ||
+		req.http.Referer ~ "(?i)forensicpsychiatry\.ru" ||
+		req.http.Referer ~ "(?i)forex\-indextop20\.ru" ||
 		req.http.Referer ~ "(?i)forex\-procto\.ru" ||
+		req.http.Referer ~ "(?i)forex\.osobye\.ru" ||
+		req.http.Referer ~ "(?i)forex21\.ru" ||
+		req.http.Referer ~ "(?i)forexgb\.ru" ||
+		req.http.Referer ~ "(?i)forexunion\.net" ||
+		req.http.Referer ~ "(?i)forminecrafters\.ru" ||
+		req.http.Referer ~ "(?i)forms\-mtm\.ru" ||
+		req.http.Referer ~ "(?i)forpostlock\.ru" ||
 		req.http.Referer ~ "(?i)forsex\.info" ||
+		req.http.Referer ~ "(?i)forum\-engineering\.ru" ||
+		req.http.Referer ~ "(?i)forum\.poker4life\.ru" ||
 		req.http.Referer ~ "(?i)forum\.tvmir\.org" ||
 		req.http.Referer ~ "(?i)forum69\.info" ||
+		req.http.Referer ~ "(?i)forums\.toucharcade\.com" ||
+		req.http.Referer ~ "(?i)fotoxxxru\.com" ||
 		req.http.Referer ~ "(?i)foxinsocks\.ru" ||
 		req.http.Referer ~ "(?i)foxtechfpv\.com" ||
+		req.http.Referer ~ "(?i)fr\.netlog\.com" ||
 		req.http.Referer ~ "(?i)free\-floating\-buttons\.com" ||
 		req.http.Referer ~ "(?i)free\-share\-buttons\-aaa\.xyz" ||
 		req.http.Referer ~ "(?i)free\-share\-buttons\-bbb\.xyz" ||
@@ -358,6 +800,7 @@ sub block_referral_spam {
 		req.http.Referer ~ "(?i)free\-share\-buttons\-eee\.xyz" ||
 		req.http.Referer ~ "(?i)free\-share\-buttons\-fff\.xyz" ||
 		req.http.Referer ~ "(?i)free\-share\-buttons\.blogspot\.com" ||
+		req.http.Referer ~ "(?i)free\-share\-buttons\.co" ||
 		req.http.Referer ~ "(?i)free\-share\-buttons\.com" ||
 		req.http.Referer ~ "(?i)free\-social\-buttons\-aaa\.xyz" ||
 		req.http.Referer ~ "(?i)free\-social\-buttons\-bbb\.xyz" ||
@@ -368,23 +811,51 @@ sub block_referral_spam {
 		req.http.Referer ~ "(?i)free\-social\-buttons\-hhh\.xyz" ||
 		req.http.Referer ~ "(?i)free\-social\-buttons\-iii\.xyz" ||
 		req.http.Referer ~ "(?i)free\-social\-buttons\.com" ||
+		req.http.Referer ~ "(?i)free\-social\-buttons\.org" ||
 		req.http.Referer ~ "(?i)free\-social\-buttons\.xyz" ||
 		req.http.Referer ~ "(?i)free\-social\-buttons1\.xyz" ||
 		req.http.Referer ~ "(?i)free\-social\-buttons6\.xyz" ||
 		req.http.Referer ~ "(?i)free\-social\-buttons7\.xyz" ||
 		req.http.Referer ~ "(?i)free\-traffic\.xyz" ||
 		req.http.Referer ~ "(?i)free\-video\-tool\.com" ||
+		req.http.Referer ~ "(?i)freeasecret\.com" ||
+		req.http.Referer ~ "(?i)freenode\.info" ||
 		req.http.Referer ~ "(?i)freeseedsonline\.com" ||
 		req.http.Referer ~ "(?i)freetangodownload\.com" ||
+		req.http.Referer ~ "(?i)freewebs\.com" ||
 		req.http.Referer ~ "(?i)freewhatsappload\.com" ||
+		req.http.Referer ~ "(?i)freshberry\.com\.ua" ||
+		req.http.Referer ~ "(?i)front\.ru" ||
 		req.http.Referer ~ "(?i)fsalas\.com" ||
 		req.http.Referer ~ "(?i)ftns\.ru" ||
 		req.http.Referer ~ "(?i)fuck\-paid\-share\-buttons\.xyz" ||
+		req.http.Referer ~ "(?i)fuel\-gas\.com" ||
 		req.http.Referer ~ "(?i)fungirlsgames\.net" ||
 		req.http.Referer ~ "(?i)funnypica\.com" ||
+		req.http.Referer ~ "(?i)furniture\-ukraine\.com" ||
+		req.http.Referer ~ "(?i)futbolkisales\.ru" ||
+		req.http.Referer ~ "(?i)fxtips\.ru" ||
+		req.http.Referer ~ "(?i)g7m\.pl" ||
+		req.http.Referer ~ "(?i)gabeshop\.ru" ||
+		req.http.Referer ~ "(?i)gael\-s\.ru" ||
+		req.http.Referer ~ "(?i)gagrasector\.ru" ||
+		req.http.Referer ~ "(?i)galaxy\-family\.ru" ||
+		req.http.Referer ~ "(?i)galaxyflowers\.ru" ||
+		req.http.Referer ~ "(?i)galeon\.com" ||
+		req.http.Referer ~ "(?i)game\-mmorpg\.net" ||
+		req.http.Referer ~ "(?i)game\-top\.su" ||
+		req.http.Referer ~ "(?i)games\.kolossale\.ru" ||
+		req.http.Referer ~ "(?i)gap\-search\.com" ||
+		req.http.Referer ~ "(?i)gardene\.ru" ||
+		req.http.Referer ~ "(?i)gaz\-voshod\.ru" ||
 		req.http.Referer ~ "(?i)gazobeton\-p\.com\.ua" ||
 		req.http.Referer ~ "(?i)gazoblok\.net\.ua" ||
+		req.http.Referer ~ "(?i)gcup\.ru" ||
+		req.http.Referer ~ "(?i)gdcentre\.ru" ||
+		req.http.Referer ~ "(?i)gelezki\.com" ||
 		req.http.Referer ~ "(?i)generalporn\.org" ||
+		req.http.Referer ~ "(?i)genericlowlatencyasiodriverhq\.aircus\.com" ||
+		req.http.Referer ~ "(?i)gentamicineyedrops\.blogspot\.com" ||
 		req.http.Referer ~ "(?i)germes\-trans\.com" ||
 		req.http.Referer ~ "(?i)get\-free\-social\-traffic\.com" ||
 		req.http.Referer ~ "(?i)get\-free\-traffic\-now\.com" ||
@@ -394,62 +865,155 @@ sub block_referral_spam {
 		req.http.Referer ~ "(?i)getprismatic\.com" ||
 		req.http.Referer ~ "(?i)getrichquick\.ml" ||
 		req.http.Referer ~ "(?i)getrichquickly\.info" ||
+		req.http.Referer ~ "(?i)getyourprofit\.net" ||
+		req.http.Referer ~ "(?i)gfaq\.ru" ||
 		req.http.Referer ~ "(?i)ghazel\.ru" ||
+		req.http.Referer ~ "(?i)ghernnqr\.skyrock\.com" ||
+		req.http.Referer ~ "(?i)gheus\.altervista\.org" ||
 		req.http.Referer ~ "(?i)ghostvisitor\.com" ||
 		req.http.Referer ~ "(?i)girlporn\.ru" ||
+		req.http.Referer ~ "(?i)girls\-ufa\.ru" ||
+		req.http.Referer ~ "(?i)girlsatgames\.ru" ||
+		req.http.Referer ~ "(?i)gk\-atlant\.info" ||
 		req.http.Referer ~ "(?i)gkvector\.ru" ||
+		req.http.Referer ~ "(?i)glall\.ru" ||
 		req.http.Referer ~ "(?i)glass\-msk\.ru" ||
 		req.http.Referer ~ "(?i)glavprofit\.ru" ||
+		req.http.Referer ~ "(?i)glcomputers\.ru" ||
 		req.http.Referer ~ "(?i)globalscam\.ga" ||
+		req.http.Referer ~ "(?i)globatur\.ru" ||
+		req.http.Referer ~ "(?i)globetrotting\-culture\.ru" ||
+		req.http.Referer ~ "(?i)glogow\.pl" ||
+		req.http.Referer ~ "(?i)glopages\.ru" ||
+		req.http.Referer ~ "(?i)go2album\.com" ||
 		req.http.Referer ~ "(?i)gobongo\.info" ||
+		req.http.Referer ~ "(?i)goforexvps\.com" ||
 		req.http.Referer ~ "(?i)gogps\.me" ||
+		req.http.Referer ~ "(?i)gojiberriess\.apishops\.ru" ||
+		req.http.Referer ~ "(?i)gok\-kasten\.net" ||
+		req.http.Referer ~ "(?i)goldandcard\.ru" ||
 		req.http.Referer ~ "(?i)golden\-catalog\.pro" ||
+		req.http.Referer ~ "(?i)golden\-praga\.ru" ||
+		req.http.Referer ~ "(?i)goldenggames\.com" ||
+		req.http.Referer ~ "(?i)golmau\.host\.sk" ||
+		req.http.Referer ~ "(?i)gonextmedia\.com" ||
+		req.http.Referer ~ "(?i)goodnightjournal\.com" ||
 		req.http.Referer ~ "(?i)goodprotein\.ru" ||
+		req.http.Referer ~ "(?i)googlefeud\.com" ||
 		req.http.Referer ~ "(?i)googlemare\.com" ||
 		req.http.Referer ~ "(?i)googlsucks\.com" ||
+		req.http.Referer ~ "(?i)gorabagrata\.ru" ||
+		req.http.Referer ~ "(?i)goroda\-vsego\-mira\.ru" ||
+		req.http.Referer ~ "(?i)gorodservis\.ru" ||
+		req.http.Referer ~ "(?i)gosreg\.amchs\.ru" ||
 		req.http.Referer ~ "(?i)gototal\.co\.nz" ||
+		req.http.Referer ~ "(?i)gourcy\.altervista\.org" ||
 		req.http.Referer ~ "(?i)gq\-catalog\.gq" ||
 		req.http.Referer ~ "(?i)grand\-chlen\.ru" ||
+		req.http.Referer ~ "(?i)graphid\.com" ||
+		req.http.Referer ~ "(?i)gratuitbaise\.com" ||
+		req.http.Referer ~ "(?i)greatgrace\.ru" ||
+		req.http.Referer ~ "(?i)grizzlysgrill\.com" ||
+		req.http.Referer ~ "(?i)groupmoney\.ru" ||
+		req.http.Referer ~ "(?i)growmyfunds\.ca" ||
 		req.http.Referer ~ "(?i)growshop\.es" ||
+		req.http.Referer ~ "(?i)grupografico\-pilar\.com\.ar" ||
+		req.http.Referer ~ "(?i)gsbs\.com\.ua" ||
+		req.http.Referer ~ "(?i)gsmlab\.pl" ||
 		req.http.Referer ~ "(?i)gsmtlf\.ru" ||
+		req.http.Referer ~ "(?i)gta\-club\.ru" ||
+		req.http.Referer ~ "(?i)gta\-top\.ru" ||
 		req.http.Referer ~ "(?i)guardlink\.com" ||
 		req.http.Referer ~ "(?i)guardlink\.org" ||
+		req.http.Referer ~ "(?i)guge\.io" ||
+		req.http.Referer ~ "(?i)gungamesz\.com" ||
 		req.http.Referer ~ "(?i)guruofcasino\.com" ||
+		req.http.Referer ~ "(?i)gwhwpxbw\.bloger\.index\.hr" ||
 		req.http.Referer ~ "(?i)h2monline\.com" ||
+		req.http.Referer ~ "(?i)hacktougroup\.ru" ||
+		req.http.Referer ~ "(?i)hahashka\.ru" ||
+		req.http.Referer ~ "(?i)haikuware\.com" ||
 		req.http.Referer ~ "(?i)handicapvantoday\.com" ||
+		req.http.Referer ~ "(?i)handsandlegs\.ru" ||
+		req.http.Referer ~ "(?i)hanink\.biz\.ly" ||
+		req.http.Referer ~ "(?i)hardcore\.anzwers\.net" ||
+		req.http.Referer ~ "(?i)havepussy\.com" ||
 		req.http.Referer ~ "(?i)hazardky\.net" ||
 		req.http.Referer ~ "(?i)hd720kino\.ru" ||
+		req.http.Referer ~ "(?i)hdfreeporno\.net" ||
 		req.http.Referer ~ "(?i)hdmoviecamera\.net" ||
 		req.http.Referer ~ "(?i)hdmoviecams\.com" ||
 		req.http.Referer ~ "(?i)hdmoviecams\.net" ||
+		req.http.Referer ~ "(?i)healbio\.ru" ||
+		req.http.Referer ~ "(?i)healing\-dysplasia\.ru" ||
+		req.http.Referer ~ "(?i)healmytrauma\.info" ||
+		req.http.Referer ~ "(?i)hem\.passagen\.se" ||
 		req.http.Referer ~ "(?i)hifidesign\.ru" ||
+		req.http.Referer ~ "(?i)hitsbox\.info" ||
+		req.http.Referer ~ "(?i)hiwibyh\.bugs3\.com" ||
+		req.http.Referer ~ "(?i)hkdiiohi\.skyrock\.com" ||
 		req.http.Referer ~ "(?i)hmmm\.cz" ||
+		req.http.Referer ~ "(?i)hmywwogw\.bloger\.index\.hr" ||
+		req.http.Referer ~ "(?i)hobild\.net" ||
 		req.http.Referer ~ "(?i)hol\.es" ||
+		req.http.Referer ~ "(?i)holidaypics\.org" ||
 		req.http.Referer ~ "(?i)home\.myplaycity\.com" ||
+		req.http.Referer ~ "(?i)homedo\.fabpage\.com" ||
+		req.http.Referer ~ "(?i)homeinns\.com" ||
 		req.http.Referer ~ "(?i)homelygarden\.com" ||
 		req.http.Referer ~ "(?i)homemade\.gq" ||
 		req.http.Referer ~ "(?i)hongfanji\.com" ||
+		req.http.Referer ~ "(?i)hoporno\.com" ||
+		req.http.Referer ~ "(?i)horoshieokna\.com" ||
+		req.http.Referer ~ "(?i)host\-protection\.com" ||
 		req.http.Referer ~ "(?i)hostcritique\.com" ||
+		req.http.Referer ~ "(?i)hoste\.octopis\.com" ||
 		req.http.Referer ~ "(?i)hosting\-tracker\.com" ||
 		req.http.Referer ~ "(?i)hostingclub\.lk" ||
+		req.http.Referer ~ "(?i)hostsshop\.ru" ||
+		req.http.Referer ~ "(?i)hotdl\.in" ||
+		req.http.Referer ~ "(?i)hotspot\.ipb\.co\.id" ||
 		req.http.Referer ~ "(?i)hotwatersdamps\.com" ||
+		req.http.Referer ~ "(?i)houdom\.net" ||
+		req.http.Referer ~ "(?i)housekuba\.org" ||
+		req.http.Referer ~ "(?i)houseofgaga\.ru" ||
 		req.http.Referer ~ "(?i)houseofrose\.com" ||
+		req.http.Referer ~ "(?i)houston\-vikings\.com" ||
 		req.http.Referer ~ "(?i)how\-to\-earn\-quick\-money\.com" ||
+		req.http.Referer ~ "(?i)howlongdoestizanidinestayinyoursystem\.blogspot\.com" ||
+		req.http.Referer ~ "(?i)howmuchdoestizanidinecost\.blogspot\.com" ||
 		req.http.Referer ~ "(?i)howopen\.ru" ||
+		req.http.Referer ~ "(?i)howtostopreferralspam\.com" ||
 		req.http.Referer ~ "(?i)howtostopreferralspam\.eu" ||
+		req.http.Referer ~ "(?i)hplaserjetpdriver8y\.pen\.io" ||
+		req.http.Referer ~ "(?i)hptwaakw\.blog\.fc2\.com" ||
+		req.http.Referer ~ "(?i)hscsscotland\.com" ||
 		req.http.Referer ~ "(?i)hspline\.com" ||
 		req.http.Referer ~ "(?i)https\-legalrc\.biz" ||
+		req.http.Referer ~ "(?i)huhn\.altervista\.org" ||
 		req.http.Referer ~ "(?i)hulfingtonpost\.com" ||
+		req.http.Referer ~ "(?i)hully\.altervista\.org" ||
 		req.http.Referer ~ "(?i)humanorightswatch\.org" ||
 		req.http.Referer ~ "(?i)hundejo\.com" ||
+		req.http.Referer ~ "(?i)husky\-shop\.cz" ||
+		req.http.Referer ~ "(?i)hustoon\.over\-blog\.com" ||
 		req.http.Referer ~ "(?i)hvd\-store\.com" ||
+		req.http.Referer ~ "(?i)hydropump\.su" ||
 		req.http.Referer ~ "(?i)hyipmanager\.in" ||
+		req.http.Referer ~ "(?i)iamsport\.org" ||
 		req.http.Referer ~ "(?i)ico\.re" ||
+		req.http.Referer ~ "(?i)ictizanidinehcl4mg\.blogspot\.com" ||
 		req.http.Referer ~ "(?i)idc\.com\.ua" ||
+		req.http.Referer ~ "(?i)idealtits\.net" ||
+		req.http.Referer ~ "(?i)idegenvezeto\.eu" ||
 		req.http.Referer ~ "(?i)ideibiznesa2015\.ru" ||
 		req.http.Referer ~ "(?i)ifirestarter\.ru" ||
+		req.http.Referer ~ "(?i)ifmo\.ru" ||
+		req.http.Referer ~ "(?i)igadgetsworld\.com" ||
 		req.http.Referer ~ "(?i)igru\-xbox\.net" ||
 		req.http.Referer ~ "(?i)ilikevitaly\.com" ||
+		req.http.Referer ~ "(?i)illagedusexe\.com" ||
+		req.http.Referer ~ "(?i)ilmen\.net" ||
 		req.http.Referer ~ "(?i)iloveitaly\.ro" ||
 		req.http.Referer ~ "(?i)iloveitaly\.ru" ||
 		req.http.Referer ~ "(?i)ilovevitaly\.co" ||
@@ -461,20 +1025,44 @@ sub block_referral_spam {
 		req.http.Referer ~ "(?i)ilovevitaly\.xyz" ||
 		req.http.Referer ~ "(?i)imediadesk\.com" ||
 		req.http.Referer ~ "(?i)iminent\.com" ||
+		req.http.Referer ~ "(?i)immobiliaremassaro\.com" ||
+		req.http.Referer ~ "(?i)imperia31\.ru" ||
 		req.http.Referer ~ "(?i)imperiafilm\.ru" ||
+		req.http.Referer ~ "(?i)impresagaia\.it" ||
+		req.http.Referer ~ "(?i)inbabes\.sexushost\.com" ||
 		req.http.Referer ~ "(?i)inboxdollars\.com" ||
 		req.http.Referer ~ "(?i)increasewwwtraffic\.info" ||
+		req.http.Referer ~ "(?i)indetiske\.ya\.ru" ||
+		req.http.Referer ~ "(?i)indo\-export\.ru" ||
+		req.http.Referer ~ "(?i)infazavr\.ru" ||
+		req.http.Referer ~ "(?i)infobabki\.ru" ||
+		req.http.Referer ~ "(?i)innodgfdriverhm\.aircus\.com" ||
+		req.http.Referer ~ "(?i)intelhdgraphicsgtdrive6w\.metroblog\.com" ||
+		req.http.Referer ~ "(?i)interfucks\.net" ||
 		req.http.Referer ~ "(?i)intermesh\.net" ||
+		req.http.Referer ~ "(?i)internet\-apteka\.ru" ||
+		req.http.Referer ~ "(?i)intimver\.3dgayxxx\.com" ||
+		req.http.Referer ~ "(?i)invest\-pamm\.ru" ||
 		req.http.Referer ~ "(?i)investingclub\.ru" ||
 		req.http.Referer ~ "(?i)investpamm\.ru" ||
+		req.http.Referer ~ "(?i)investsuccess\.org" ||
 		req.http.Referer ~ "(?i)invivo\.hu" ||
 		req.http.Referer ~ "(?i)inzn\.ru" ||
+		req.http.Referer ~ "(?i)io9\.com" ||
+		req.http.Referer ~ "(?i)ipod\-app\-reviews\.com" ||
+		req.http.Referer ~ "(?i)ipostroika\.ru" ||
 		req.http.Referer ~ "(?i)iqoption\-bin\.com" ||
+		req.http.Referer ~ "(?i)iqoption\.com" ||
 		req.http.Referer ~ "(?i)iqoption\.pro" ||
+		req.http.Referer ~ "(?i)iradiology\.ru" ||
 		req.http.Referer ~ "(?i)isistaylorporn\.info" ||
 		req.http.Referer ~ "(?i)iskalko\.ru" ||
 		req.http.Referer ~ "(?i)ispaniya\-costa\-blanca\.ru" ||
 		req.http.Referer ~ "(?i)istanbulit\.com" ||
+		req.http.Referer ~ "(?i)istizanidineacontrolledsubstance\.blogspot\.com" ||
+		req.http.Referer ~ "(?i)istizanidineanarcoticdrug\.blogspot\.com" ||
+		req.http.Referer ~ "(?i)istizanidineanopiate\.blogspot\.com" ||
+		req.http.Referer ~ "(?i)istizanidinelikexanax\.blogspot\.com" ||
 		req.http.Referer ~ "(?i)istock\-mebel\.ru" ||
 		req.http.Referer ~ "(?i)it\-max\.com\.ua" ||
 		req.http.Referer ~ "(?i)itbc\.kiev\.ua" ||
@@ -483,40 +1071,94 @@ sub block_referral_spam {
 		req.http.Referer ~ "(?i)itsdp3\.com" ||
 		req.http.Referer ~ "(?i)izhevsk\.xrus\.org" ||
 		req.http.Referer ~ "(?i)janettabridal\.com" ||
+		req.http.Referer ~ "(?i)japfm\.com" ||
 		req.http.Referer ~ "(?i)jasonpartington\.com" ||
+		req.http.Referer ~ "(?i)javatex\.co\.id" ||
+		req.http.Referer ~ "(?i)jaxcube\.info" ||
 		req.http.Referer ~ "(?i)jazzstyle4us\.com" ||
+		req.http.Referer ~ "(?i)jennyfire\.ru" ||
 		req.http.Referer ~ "(?i)jjbabskoe\.ru" ||
+		req.http.Referer ~ "(?i)jobfree24\.pl" ||
 		req.http.Referer ~ "(?i)joinandplay\.me" ||
 		req.http.Referer ~ "(?i)joingames\.org" ||
+		req.http.Referer ~ "(?i)journalhome\.com" ||
+		req.http.Referer ~ "(?i)juliadiets\.com" ||
+		req.http.Referer ~ "(?i)juliaworld\.net" ||
 		req.http.Referer ~ "(?i)justprofit\.xyz" ||
 		req.http.Referer ~ "(?i)jwss\.cc" ||
+		req.http.Referer ~ "(?i)kaac\.ru" ||
 		req.http.Referer ~ "(?i)kabbalah\-red\-bracelets\.com" ||
+		req.http.Referer ~ "(?i)kalb\.ru" ||
 		req.http.Referer ~ "(?i)kambasoft\.com" ||
+		req.http.Referer ~ "(?i)kamorel\.com" ||
+		req.http.Referer ~ "(?i)karachev\-city\.ru" ||
+		req.http.Referer ~ "(?i)karadene\.com" ||
 		req.http.Referer ~ "(?i)karusel\-market\.ru" ||
+		req.http.Referer ~ "(?i)katjimej\.blog\.fc2\.com" ||
+		req.http.Referer ~ "(?i)katushka\.net" ||
+		req.http.Referer ~ "(?i)kaz\.kz" ||
 		req.http.Referer ~ "(?i)kazan\.xrus\.org" ||
 		req.http.Referer ~ "(?i)kazrent\.com" ||
+		req.http.Referer ~ "(?i)ketrzyn\.pl" ||
 		req.http.Referer ~ "(?i)keywords\-monitoring\-success\.com" ||
 		req.http.Referer ~ "(?i)keywords\-monitoring\-your\-success\.com" ||
+		req.http.Referer ~ "(?i)kidd\.reunionwatch\.com" ||
 		req.http.Referer ~ "(?i)kiev\.ua" ||
+		req.http.Referer ~ "(?i)kino\-filmi\.com" ||
 		req.http.Referer ~ "(?i)kino\-fun\.ru" ||
 		req.http.Referer ~ "(?i)kino\-key\.info" ||
 		req.http.Referer ~ "(?i)kinobaks\.com" ||
 		req.http.Referer ~ "(?i)kinoflux\.net" ||
+		req.http.Referer ~ "(?i)kinohit1\.ru" ||
 		req.http.Referer ~ "(?i)kinopolet\.net" ||
+		req.http.Referer ~ "(?i)kiprinform\.com" ||
 		req.http.Referer ~ "(?i)kiwe\-analytics\.com" ||
 		req.http.Referer ~ "(?i)kiwi237au\.tk" ||
+		req.http.Referer ~ "(?i)kletkimehan\.ru" ||
+		req.http.Referer ~ "(?i)kndxbkdx\.bloger\.index\.hr" ||
 		req.http.Referer ~ "(?i)knigonosha\.net" ||
+		req.http.Referer ~ "(?i)kochanelli\.com" ||
+		req.http.Referer ~ "(?i)koleso24\.com\.ua" ||
+		req.http.Referer ~ "(?i)kolotiloff\.ru" ||
+		req.http.Referer ~ "(?i)komputernaya\-pomosh\-moscow\.ru" ||
+		req.http.Referer ~ "(?i)komputers\-best\.ru" ||
+		req.http.Referer ~ "(?i)kongoultry\.net" ||
 		req.http.Referer ~ "(?i)konkursov\.net" ||
+		req.http.Referer ~ "(?i)koopilka\.com" ||
+		req.http.Referer ~ "(?i)koptims\.tiu\.ru" ||
+		req.http.Referer ~ "(?i)koronirealestate\.gr" ||
 		req.http.Referer ~ "(?i)kosova\.de" ||
+		req.http.Referer ~ "(?i)kotaku\.com" ||
+		req.http.Referer ~ "(?i)krafte\.ru" ||
+		req.http.Referer ~ "(?i)krasivoe\-hd\.com" ||
 		req.http.Referer ~ "(?i)krasnodar\.xrus\.org" ||
 		req.http.Referer ~ "(?i)krynica\.info" ||
+		req.http.Referer ~ "(?i)ktotut\.net" ||
+		req.http.Referer ~ "(?i)kumuk\.info" ||
 		req.http.Referer ~ "(?i)kupit\-adenu\.ru" ||
+		req.http.Referer ~ "(?i)kustanay\.kz" ||
+		req.http.Referer ~ "(?i)kvartir\-remont\.biz" ||
+		req.http.Referer ~ "(?i)kvartira\-sutochno\.com" ||
+		req.http.Referer ~ "(?i)kvartiry\-remont\.ucoz\.ru" ||
 		req.http.Referer ~ "(?i)kw21\.org" ||
+		req.http.Referer ~ "(?i)la\-fa\.ru" ||
+		req.http.Referer ~ "(?i)labplus\.ru" ||
+		req.http.Referer ~ "(?i)labvis\.host\.sk" ||
+		req.http.Referer ~ "(?i)ladov\.ru" ||
+		req.http.Referer ~ "(?i)lampokrat\.ws" ||
+		req.http.Referer ~ "(?i)lanasshop\.ru" ||
+		req.http.Referer ~ "(?i)languagecode\.com" ||
+		req.http.Referer ~ "(?i)lankarns\.com" ||
+		req.http.Referer ~ "(?i)laparfumotec\.com" ||
+		req.http.Referer ~ "(?i)lapitec\.eu" ||
+		req.http.Referer ~ "(?i)laptoper\.net" ||
+		req.http.Referer ~ "(?i)larchik\.net" ||
 		req.http.Referer ~ "(?i)larutti\.ru" ||
 		req.http.Referer ~ "(?i)laudit\.ru" ||
 		req.http.Referer ~ "(?i)law\-check\-eight\.xyz" ||
 		req.http.Referer ~ "(?i)law\-check\-nine\.xyz" ||
 		req.http.Referer ~ "(?i)law\-check\-seven\.xyz" ||
+		req.http.Referer ~ "(?i)law\-check\-two\.xyz" ||
 		req.http.Referer ~ "(?i)law\-enforcement\-aa\.xyz" ||
 		req.http.Referer ~ "(?i)law\-enforcement\-bb\.xyz" ||
 		req.http.Referer ~ "(?i)law\-enforcement\-bot\-aa\.xyz" ||
@@ -555,96 +1197,261 @@ sub block_referral_spam {
 		req.http.Referer ~ "(?i)law\-three\.xyz" ||
 		req.http.Referer ~ "(?i)law\-two\.xyz" ||
 		req.http.Referer ~ "(?i)laxdrills\.com" ||
+		req.http.Referer ~ "(?i)layola\.biz\.tc" ||
+		req.http.Referer ~ "(?i)lazy\-z\.com" ||
 		req.http.Referer ~ "(?i)leadwayau\.com" ||
 		req.http.Referer ~ "(?i)ledis\.top" ||
+		req.http.Referer ~ "(?i)ledpolice\.ru" ||
+		req.http.Referer ~ "(?i)legalrc\.biz" ||
 		req.http.Referer ~ "(?i)lego4x4\.ru" ||
+		req.http.Referer ~ "(?i)lenvred\.org" ||
+		req.http.Referer ~ "(?i)lernur\.net" ||
 		req.http.Referer ~ "(?i)letolove\.ru" ||
 		req.http.Referer ~ "(?i)letsgotofriday\.com" ||
+		req.http.Referer ~ "(?i)levaquin750mg\.blogspot\.com" ||
+		req.http.Referer ~ "(?i)lezbiyanki\.net" ||
 		req.http.Referer ~ "(?i)lflash\.ru" ||
+		req.http.Referer ~ "(?i)li\-er\.ru" ||
+		req.http.Referer ~ "(?i)lida\-ru\.com" ||
+		req.http.Referer ~ "(?i)lifebyleese\.com" ||
+		req.http.Referer ~ "(?i)lifehacĸer\.com" ||
+		req.http.Referer ~ "(?i)light\.ifmo\.ru" ||
 		req.http.Referer ~ "(?i)likesdesign\.com" ||
 		req.http.Referer ~ "(?i)lilishopstogether\.com" ||
 		req.http.Referer ~ "(?i)linerdrilling\.com" ||
 		req.http.Referer ~ "(?i)link\.web\-list\.xyz" ||
+		req.http.Referer ~ "(?i)liquimondo\.com" ||
+		req.http.Referer ~ "(?i)lirunet\.ru" ||
+		req.http.Referer ~ "(?i)lisque\.batcave\.net" ||
 		req.http.Referer ~ "(?i)littleberry\.ru" ||
+		req.http.Referer ~ "(?i)live\-sexchat\.ru" ||
 		req.http.Referer ~ "(?i)livefixer\.com" ||
+		req.http.Referer ~ "(?i)liveinternet\.ro" ||
+		req.http.Referer ~ "(?i)liveinternet\.ru" ||
+		req.http.Referer ~ "(?i)llastbuy\.ru" ||
 		req.http.Referer ~ "(?i)lmrauction\.com" ||
+		req.http.Referer ~ "(?i)loadopia\.com" ||
+		req.http.Referer ~ "(?i)loginduepunti\.it" ||
 		req.http.Referer ~ "(?i)lol\-smurfs\.com" ||
+		req.http.Referer ~ "(?i)lombardfinder\.ru" ||
 		req.http.Referer ~ "(?i)lombia\.co" ||
 		req.http.Referer ~ "(?i)lombia\.com" ||
+		req.http.Referer ~ "(?i)lomza\.info" ||
+		req.http.Referer ~ "(?i)londonstratford\.co\.uk" ||
+		req.http.Referer ~ "(?i)lost\-alpha\.ru" ||
+		req.http.Referer ~ "(?i)low\-format\.ru" ||
 		req.http.Referer ~ "(?i)lsex\.xyz" ||
+		req.http.Referer ~ "(?i)luckyshop\.net\.ua" ||
 		req.http.Referer ~ "(?i)lumb\.co" ||
+		req.http.Referer ~ "(?i)lutherstable\.org" ||
 		req.http.Referer ~ "(?i)luxmagazine\.cf" ||
 		req.http.Referer ~ "(?i)luxup\.ru" ||
 		req.http.Referer ~ "(?i)m\-google\.xyz" ||
 		req.http.Referer ~ "(?i)m1media\.net" ||
+		req.http.Referer ~ "(?i)macresource\.co\.uk" ||
+		req.http.Referer ~ "(?i)madot\.onlinewebshop\.net" ||
+		req.http.Referer ~ "(?i)mafcards\.ru" ||
+		req.http.Referer ~ "(?i)magazintiande\.ru" ||
+		req.http.Referer ~ "(?i)magda\-gadalka\.ru" ||
 		req.http.Referer ~ "(?i)magento\-crew\.net" ||
 		req.http.Referer ~ "(?i)magicdiet\.gq" ||
 		req.http.Referer ~ "(?i)mainlinehobby\.net" ||
+		req.http.Referer ~ "(?i)make\-money\-online\.com" ||
+		req.http.Referer ~ "(?i)makedo\.ru" ||
 		req.http.Referer ~ "(?i)makemoneyonline\.com" ||
 		req.http.Referer ~ "(?i)makeprogress\.ga" ||
+		req.http.Referer ~ "(?i)maladot\.com" ||
 		req.http.Referer ~ "(?i)malls\.com" ||
+		req.http.Referer ~ "(?i)manipulyator\-peterburg\.ru" ||
+		req.http.Referer ~ "(?i)manualterap\.roleforum\.ru" ||
+		req.http.Referer ~ "(?i)marcogrup\.com" ||
 		req.http.Referer ~ "(?i)maridan\.com\.au" ||
+		req.http.Referer ~ "(?i)maridan\.com\.ua" ||
 		req.http.Referer ~ "(?i)marketland\.ml" ||
+		req.http.Referer ~ "(?i)marktforschung\-stuttgart\.com" ||
+		req.http.Referer ~ "(?i)marmitaco\.cat" ||
+		req.http.Referer ~ "(?i)martlinker\.com" ||
 		req.http.Referer ~ "(?i)massage\-info\.nl" ||
+		req.http.Referer ~ "(?i)masserect\.com" ||
+		req.http.Referer ~ "(?i)master\-muznachas\.ru" ||
 		req.http.Referer ~ "(?i)masterseek\.com" ||
 		req.http.Referer ~ "(?i)mastershef\.club" ||
+		req.http.Referer ~ "(?i)masturbate\.co\.uk" ||
+		req.http.Referer ~ "(?i)mature\.free\-websites\.com" ||
+		req.http.Referer ~ "(?i)maximilitary\.ru" ||
 		req.http.Referer ~ "(?i)maxthon\.com" ||
+		req.http.Referer ~ "(?i)mazda\-roadsters\.com" ||
+		req.http.Referer ~ "(?i)mbiologi\.ru" ||
+		req.http.Referer ~ "(?i)mebel\-alait\.ru" ||
 		req.http.Referer ~ "(?i)mebelcomplekt\.ru" ||
 		req.http.Referer ~ "(?i)mebeldekor\.com\.au" ||
+		req.http.Referer ~ "(?i)mebeldekor\.com\.ua" ||
 		req.http.Referer ~ "(?i)med\-zdorovie\.com\.au" ||
+		req.http.Referer ~ "(?i)med\-zdorovie\.com\.ua" ||
+		req.http.Referer ~ "(?i)medanestesia\.ru" ||
 		req.http.Referer ~ "(?i)medi\-fitt\.hu" ||
+		req.http.Referer ~ "(?i)medicinacom\.ru" ||
 		req.http.Referer ~ "(?i)medicovi\.com" ||
+		req.http.Referer ~ "(?i)medictube\.ru" ||
 		req.http.Referer ~ "(?i)medispainstitute\.com\.au" ||
+		req.http.Referer ~ "(?i)medkletki\.ru" ||
+		req.http.Referer ~ "(?i)medkritika\.ru" ||
+		req.http.Referer ~ "(?i)medmajor\.ru" ||
+		req.http.Referer ~ "(?i)medosmotr\-ufa\.ru" ||
 		req.http.Referer ~ "(?i)meds\-online24\.com" ||
+		req.http.Referer ~ "(?i)medtherapy\.ru" ||
 		req.http.Referer ~ "(?i)meendo\-free\-traffic\.ga" ||
+		req.http.Referer ~ "(?i)megaapteka\.ru" ||
+		req.http.Referer ~ "(?i)megakino\.net" ||
+		req.http.Referer ~ "(?i)megavolt\.net\.ua" ||
+		req.http.Referer ~ "(?i)members\.ghanaweb\.com" ||
 		req.http.Referer ~ "(?i)memovn\.com" ||
+		req.http.Referer ~ "(?i)menhealed\.net" ||
+		req.http.Referer ~ "(?i)mere\.host\.sk" ||
 		req.http.Referer ~ "(?i)mericanmopedstore\.com" ||
+		req.http.Referer ~ "(?i)mesto\-x\.com" ||
+		req.http.Referer ~ "(?i)metarip\.ru" ||
+		req.http.Referer ~ "(?i)metaxalonevstizanidine\.blogspot\.com" ||
+		req.http.Referer ~ "(?i)mex\-annushka\.ru" ||
 		req.http.Referer ~ "(?i)micasainvest\.com" ||
 		req.http.Referer ~ "(?i)microsearch\.ru" ||
+		req.http.Referer ~ "(?i)microsoftportal\.net" ||
+		req.http.Referer ~ "(?i)mielec\.pl" ||
+		req.http.Referer ~ "(?i)migente\.com" ||
+		req.http.Referer ~ "(?i)migera\.net" ||
+		req.http.Referer ~ "(?i)mikrobiologies\.ru" ||
+		req.http.Referer ~ "(?i)minecraft\-neo\.ru" ||
+		req.http.Referer ~ "(?i)minecraft\-rus\.org" ||
 		req.http.Referer ~ "(?i)minegam\.com" ||
 		req.http.Referer ~ "(?i)mini\.7zap\.com" ||
+		req.http.Referer ~ "(?i)minyetki\.ru" ||
 		req.http.Referer ~ "(?i)mir\-betting\.ru" ||
+		req.http.Referer ~ "(?i)mir\-business\-24\.ru" ||
+		req.http.Referer ~ "(?i)mir\-limuzinov\.ru" ||
+		req.http.Referer ~ "(?i)mirmedinfo\.ru" ||
 		req.http.Referer ~ "(?i)mirobuvi\.com\.au" ||
+		req.http.Referer ~ "(?i)mirobuvi\.com\.ua" ||
 		req.http.Referer ~ "(?i)mirtorrent\.net" ||
+		req.http.Referer ~ "(?i)mirzonru\.net" ||
+		req.http.Referer ~ "(?i)mister\-shop\.com" ||
 		req.http.Referer ~ "(?i)mitrasound\.ru" ||
+		req.http.Referer ~ "(?i)mixed\-wrestling\.ru" ||
 		req.http.Referer ~ "(?i)mmog\-play\.ru" ||
+		req.http.Referer ~ "(?i)mmoguider\.ru" ||
 		req.http.Referer ~ "(?i)mobilemedia\.md" ||
 		req.http.Referer ~ "(?i)mobot\.site" ||
 		req.http.Referer ~ "(?i)mobplayer\.net" ||
+		req.http.Referer ~ "(?i)mobplayer\.ru" ||
+		req.http.Referer ~ "(?i)modabutik\.ru" ||
+		req.http.Referer ~ "(?i)moesonce\.com" ||
+		req.http.Referer ~ "(?i)moi\-glazki\.ru" ||
+		req.http.Referer ~ "(?i)mokrayakiska\.com" ||
+		req.http.Referer ~ "(?i)mole\.pluto\.ro" ||
 		req.http.Referer ~ "(?i)monetizationking\.net" ||
 		req.http.Referer ~ "(?i)money\-every\-day\.com" ||
+		req.http.Referer ~ "(?i)moneymaster\.ru" ||
+		req.http.Referer ~ "(?i)moneytop\.ru" ||
+		req.http.Referer ~ "(?i)moomi\-daeri\.com" ||
+		req.http.Referer ~ "(?i)more\-letom\.ru" ||
+		req.http.Referer ~ "(?i)morf\.snn\.gr" ||
+		req.http.Referer ~ "(?i)morlat\.altervista\.org" ||
+		req.http.Referer ~ "(?i)moroccosurfadventures\.com" ||
+		req.http.Referer ~ "(?i)moscow\-clining\.ru" ||
+		req.http.Referer ~ "(?i)moscow\-region\.ru" ||
 		req.http.Referer ~ "(?i)moscow\.xrus\.org" ||
+		req.http.Referer ~ "(?i)mosdverka\.ru" ||
+		req.http.Referer ~ "(?i)mosrif\.ru" ||
+		req.http.Referer ~ "(?i)mossmesi\.com" ||
 		req.http.Referer ~ "(?i)most\-kerch\.org" ||
+		req.http.Referer ~ "(?i)most\.gov\.iq" ||
+		req.http.Referer ~ "(?i)mostantikor\.ru" ||
 		req.http.Referer ~ "(?i)motion\-interactive\.com" ||
 		req.http.Referer ~ "(?i)mototsikl\.org" ||
 		req.http.Referer ~ "(?i)mountainstream\.ms" ||
 		req.http.Referer ~ "(?i)moyakuhnia\.ru" ||
+		req.http.Referer ~ "(?i)moyaterapiya\.ru" ||
+		req.http.Referer ~ "(?i)mp3films\.ru" ||
 		req.http.Referer ~ "(?i)mpftpupload\.com" ||
+		req.http.Referer ~ "(?i)mrcsa\.com\.au" ||
 		req.http.Referer ~ "(?i)mriyadh\.com" ||
 		req.http.Referer ~ "(?i)mrmoneymustache\.com" ||
 		req.http.Referer ~ "(?i)mrwhite\.biz" ||
+		req.http.Referer ~ "(?i)msk\-diplomat\.com" ||
+		req.http.Referer ~ "(?i)mug\-na\-chas\-moscow\.ru" ||
+		req.http.Referer ~ "(?i)muizre\.ru" ||
+		req.http.Referer ~ "(?i)mundoaberrante\.com" ||
 		req.http.Referer ~ "(?i)muscle\-factory\.com\.au" ||
+		req.http.Referer ~ "(?i)muscle\-factory\.com\.ua" ||
+		req.http.Referer ~ "(?i)music\.utrolive\.ru" ||
 		req.http.Referer ~ "(?i)musicas\.baixar\-musicas\-gratis\.com" ||
 		req.http.Referer ~ "(?i)musicprojectfoundation\.com" ||
+		req.http.Referer ~ "(?i)musicvidz\.ru" ||
 		req.http.Referer ~ "(?i)muz\-baza\.net" ||
 		req.http.Referer ~ "(?i)muz\-shoes\.ru" ||
+		req.http.Referer ~ "(?i)muznachas\-service\.ru" ||
+		req.http.Referer ~ "(?i)muztops\.ru" ||
+		req.http.Referer ~ "(?i)my\-bc\.ru" ||
+		req.http.Referer ~ "(?i)my\.opera\.com" ||
 		req.http.Referer ~ "(?i)mycaf\.it" ||
+		req.http.Referer ~ "(?i)mydownloadengine\.com" ||
+		req.http.Referer ~ "(?i)mydownlodablefiles\.com" ||
+		req.http.Referer ~ "(?i)myfreemp3\.eu" ||
 		req.http.Referer ~ "(?i)myftpupload\.com" ||
+		req.http.Referer ~ "(?i)myindospace\.com" ||
 		req.http.Referer ~ "(?i)mylida\.org" ||
+		req.http.Referer ~ "(?i)myliveblog\.ru" ||
+		req.http.Referer ~ "(?i)mypets\.by" ||
 		req.http.Referer ~ "(?i)myplaycity\.com" ||
 		req.http.Referer ~ "(?i)myprintscreen\.com" ||
+		req.http.Referer ~ "(?i)na\-telefon\.biz" ||
+		req.http.Referer ~ "(?i)na15\.ru" ||
+		req.http.Referer ~ "(?i)nacap\.ru" ||
+		req.http.Referer ~ "(?i)nagdak\.ru" ||
 		req.http.Referer ~ "(?i)nalogovyy\-kodeks\.ru" ||
+		req.http.Referer ~ "(?i)naphukete\.ru" ||
+		req.http.Referer ~ "(?i)nardulan\.com" ||
+		req.http.Referer ~ "(?i)narkologiya\-belgorod\.ru" ||
+		req.http.Referer ~ "(?i)narkologiya\-orel\.ru" ||
+		req.http.Referer ~ "(?i)narkologiya\-penza\.ru" ||
+		req.http.Referer ~ "(?i)narkologiya\-peterburg\.ru" ||
+		req.http.Referer ~ "(?i)narkologiya\-voronezh\.ru" ||
+		req.http.Referer ~ "(?i)narutonaruto\.ru" ||
+		req.http.Referer ~ "(?i)nastroyke\.net" ||
 		req.http.Referer ~ "(?i)nate\.com" ||
+		req.http.Referer ~ "(?i)naval\.jislaaik\.com" ||
+		req.http.Referer ~ "(?i)nbsproject\.ru" ||
+		req.http.Referer ~ "(?i)negral\.pluto\.ro" ||
 		req.http.Referer ~ "(?i)net\-profits\.xyz" ||
+		req.http.Referer ~ "(?i)netallergy\.ru" ||
+		req.http.Referer ~ "(?i)netpics\.org" ||
+		req.http.Referer ~ "(?i)nevansk\.ru" ||
+		req.http.Referer ~ "(?i)new\-apps\.ru" ||
+		req.http.Referer ~ "(?i)newstraveller\.ru" ||
+		req.http.Referer ~ "(?i)newstudio\.tv" ||
 		req.http.Referer ~ "(?i)nextconseil\.com" ||
+		req.http.Referer ~ "(?i)ngps1\.ru" ||
+		req.http.Referer ~ "(?i)nhsports\.cl" ||
 		req.http.Referer ~ "(?i)niki\-mlt\.ru" ||
+		req.http.Referer ~ "(?i)nikitsyringedrivelg\.pen\.io" ||
+		req.http.Referer ~ "(?i)nl\.netlog\.com" ||
+		req.http.Referer ~ "(?i)noclegonline\.info" ||
+		req.http.Referer ~ "(?i)nonews\.co" ||
+		req.http.Referer ~ "(?i)nordstar\.pro" ||
 		req.http.Referer ~ "(?i)notaria\-desalas\.com" ||
+		req.http.Referer ~ "(?i)notebook\-pro\.ru" ||
+		req.http.Referer ~ "(?i)notfastfood\.ru" ||
 		req.http.Referer ~ "(?i)noumeda\.com" ||
 		req.http.Referer ~ "(?i)novgorod\.xrus\.org" ||
 		req.http.Referer ~ "(?i)novosibirsk\.xrus\.org" ||
 		req.http.Referer ~ "(?i)novosti\-hi\-tech\.ru" ||
+		req.http.Referer ~ "(?i)npoet\.ru" ||
+		req.http.Referer ~ "(?i)nucia\.biz\.ly" ||
+		req.http.Referer ~ "(?i)nudepatch\.net" ||
+		req.http.Referer ~ "(?i)nudo\.ca" ||
 		req.http.Referer ~ "(?i)nufaq\.com" ||
 		req.http.Referer ~ "(?i)nullrefer\.com" ||
+		req.http.Referer ~ "(?i)nuup\.info" ||
+		req.http.Referer ~ "(?i)nvformula\.ru" ||
 		req.http.Referer ~ "(?i)nyfinance\.ml" ||
 		req.http.Referer ~ "(?i)o\-o\-11\-o\-o\.com" ||
 		req.http.Referer ~ "(?i)o\-o\-6\-o\-o\.com" ||
@@ -652,135 +1459,327 @@ sub block_referral_spam {
 		req.http.Referer ~ "(?i)o\-o\-8\-o\-o\.com" ||
 		req.http.Referer ~ "(?i)o\-o\-8\-o\-o\.ru" ||
 		req.http.Referer ~ "(?i)o00\.in" ||
+		req.http.Referer ~ "(?i)obnal\.org" ||
 		req.http.Referer ~ "(?i)obuv\-kupit\.ru" ||
+		req.http.Referer ~ "(?i)ochistka\-stokov\.ru" ||
+		req.http.Referer ~ "(?i)odesproperty\.com" ||
+		req.http.Referer ~ "(?i)odywpjtw\.bloger\.index\.hr" ||
 		req.http.Referer ~ "(?i)offers\.bycontext\.com" ||
 		req.http.Referer ~ "(?i)office\-windows\.ru" ||
+		req.http.Referer ~ "(?i)offtime\.ru" ||
 		req.http.Referer ~ "(?i)ok\.ru" ||
+		req.http.Referer ~ "(?i)oklogistic\.ru" ||
+		req.http.Referer ~ "(?i)okroshki\.ru" ||
+		req.http.Referer ~ "(?i)oktube\.ru" ||
+		req.http.Referer ~ "(?i)olvanto\.ru" ||
 		req.http.Referer ~ "(?i)omsk\.xrus\.org" ||
+		req.http.Referer ~ "(?i)one\-gear\.com" ||
+		req.http.Referer ~ "(?i)onefilms\.net" ||
 		req.http.Referer ~ "(?i)online\-hit\.info" ||
+		req.http.Referer ~ "(?i)online\-templatestore\.com" ||
+		req.http.Referer ~ "(?i)online\-x\.ru" ||
+		req.http.Referer ~ "(?i)online\.ktc45\.ru" ||
+		req.http.Referer ~ "(?i)onlinebay\.ru" ||
+		req.http.Referer ~ "(?i)onlinedomains\.ru" ||
+		req.http.Referer ~ "(?i)onlinefilmz\.net" ||
+		req.http.Referer ~ "(?i)onlineserialy\.ru" ||
 		req.http.Referer ~ "(?i)onlinetvseries\.me" ||
+		req.http.Referer ~ "(?i)onlinewritingjobs17\.blogspot\.ru" ||
+		req.http.Referer ~ "(?i)onload\.pw" ||
 		req.http.Referer ~ "(?i)onlyforemont\.ru" ||
+		req.http.Referer ~ "(?i)onlythegames\.com" ||
 		req.http.Referer ~ "(?i)onlywoman\.org" ||
+		req.http.Referer ~ "(?i)ooo\-gotovie\.ru" ||
 		req.http.Referer ~ "(?i)ooo\-olni\.ru" ||
 		req.http.Referer ~ "(?i)openfrost\.com" ||
+		req.http.Referer ~ "(?i)openfrost\.net" ||
+		req.http.Referer ~ "(?i)openlibrary\.org" ||
 		req.http.Referer ~ "(?i)openmediasoft\.com" ||
+		req.http.Referer ~ "(?i)optitrade24\.com" ||
+		req.http.Referer ~ "(?i)oranga\.host\.sk" ||
 		req.http.Referer ~ "(?i)ordernorxx\.com" ||
+		req.http.Referer ~ "(?i)orel\-reshka\.net" ||
+		req.http.Referer ~ "(?i)oren\-cats\.ru" ||
+		req.http.Referer ~ "(?i)origin\-my\.ru" ||
+		req.http.Referer ~ "(?i)ororodnik\.goodbb\.ru" ||
+		req.http.Referer ~ "(?i)osb\.se11\.ru" ||
 		req.http.Referer ~ "(?i)osoznanie\-narkotikam\.net" ||
+		req.http.Referer ~ "(?i)ostroike\.org" ||
+		req.http.Referer ~ "(?i)ostrovtaxi\.ru" ||
+		req.http.Referer ~ "(?i)otbelivanie\-zubov\.com" ||
+		req.http.Referer ~ "(?i)ourtherapy\.ru" ||
 		req.http.Referer ~ "(?i)outshop\.ru" ||
+		req.http.Referer ~ "(?i)ovirus\.ru" ||
 		req.http.Referer ~ "(?i)ownshop\.cf" ||
 		req.http.Referer ~ "(?i)owohho\.com" ||
 		req.http.Referer ~ "(?i)ozas\.net" ||
+		req.http.Referer ~ "(?i)p\-business\.ru" ||
+		req.http.Referer ~ "(?i)paceform\.com" ||
 		req.http.Referer ~ "(?i)palvira\.com\.au" ||
+		req.http.Referer ~ "(?i)palvira\.com\.ua" ||
+		req.http.Referer ~ "(?i)pammik\.ru" ||
 		req.http.Referer ~ "(?i)paparazzistudios\.com\.au" ||
+		req.http.Referer ~ "(?i)paperwritingservice17\.blogspot\.ru" ||
+		req.http.Referer ~ "(?i)paradontozanet\.ru" ||
+		req.http.Referer ~ "(?i)paydayonlinecom\.com" ||
 		req.http.Referer ~ "(?i)pechikamini\.ru" ||
 		req.http.Referer ~ "(?i)pensplan\.com" ||
 		req.http.Referer ~ "(?i)pensplan4u\.com" ||
+		req.http.Referer ~ "(?i)percin\.biz\.ly" ||
+		req.http.Referer ~ "(?i)perfection\-pleasure\.ru" ||
 		req.http.Referer ~ "(?i)perm\.xrus\.org" ||
+		req.http.Referer ~ "(?i)perso\.wanadoo\.es" ||
+		req.http.Referer ~ "(?i)personalhoro\.ru" ||
+		req.http.Referer ~ "(?i)petedrummond\.com" ||
+		req.http.Referer ~ "(?i)petroleumgeo\.com" ||
 		req.http.Referer ~ "(?i)petrovka\-online\.com" ||
+		req.http.Referer ~ "(?i)phobia\.us" ||
+		req.http.Referer ~ "(?i)photo\.houseofgaga\.ru" ||
+		req.http.Referer ~ "(?i)photochki\.com" ||
 		req.http.Referer ~ "(?i)photokitchendesign\.com" ||
 		req.http.Referer ~ "(?i)photorepair\.ru" ||
+		req.http.Referer ~ "(?i)physfunc\.ru" ||
 		req.http.Referer ~ "(?i)picscout\.com" ||
 		req.http.Referer ~ "(?i)pinkduck\.ga" ||
+		req.http.Referer ~ "(?i)pipki\.pp\.ua" ||
+		req.http.Referer ~ "(?i)pirateday\.ru" ||
+		req.http.Referer ~ "(?i)pisze\.pisz\.pl" ||
 		req.http.Referer ~ "(?i)piter\.xrus\.org" ||
 		req.http.Referer ~ "(?i)pizza\-imperia\.com" ||
 		req.http.Referer ~ "(?i)pizza\-tycoon\.com" ||
+		req.http.Referer ~ "(?i)pkr1hand\.com" ||
+		req.http.Referer ~ "(?i)plastweb\.ru" ||
+		req.http.Referer ~ "(?i)platesauto\.com" ||
+		req.http.Referer ~ "(?i)platinumdeals\.gr" ||
+		req.http.Referer ~ "(?i)plohaya\-kreditnaya\-istoriya\.ru" ||
+		req.http.Referer ~ "(?i)plusnetwork\.com" ||
 		req.http.Referer ~ "(?i)pochemychka\.net" ||
 		req.http.Referer ~ "(?i)pogodnyyeavarii\.gq" ||
+		req.http.Referer ~ "(?i)pogosh\.com" ||
+		req.http.Referer ~ "(?i)pogruztehnik\.ru" ||
 		req.http.Referer ~ "(?i)poisk\-zakona\.ru" ||
 		req.http.Referer ~ "(?i)pokemongooo\.ml" ||
+		req.http.Referer ~ "(?i)polcin\.de" ||
+		req.http.Referer ~ "(?i)pomoc\-drogowa\.cba\.pl" ||
+		req.http.Referer ~ "(?i)pony\-business\.com" ||
 		req.http.Referer ~ "(?i)popads\.net" ||
 		req.http.Referer ~ "(?i)pops\.foundation" ||
 		req.http.Referer ~ "(?i)popup\-fdm\.xyz" ||
 		req.http.Referer ~ "(?i)popup\-hgd\.xyz" ||
 		req.http.Referer ~ "(?i)popup\-jdh\.xyz" ||
+		req.http.Referer ~ "(?i)porn\-w\.org" ||
 		req.http.Referer ~ "(?i)pornhub\-forum\.ga" ||
 		req.http.Referer ~ "(?i)pornhub\-forum\.uni\.me" ||
 		req.http.Referer ~ "(?i)pornhub\-ru\.com" ||
 		req.http.Referer ~ "(?i)pornhubforum\.tk" ||
+		req.http.Referer ~ "(?i)porno\-dojki\.net" ||
+		req.http.Referer ~ "(?i)porno\-play\.net" ||
+		req.http.Referer ~ "(?i)porno\-raskazy\.ru" ||
+		req.http.Referer ~ "(?i)porno\-transsexuals\.ru" ||
 		req.http.Referer ~ "(?i)porno\-video\-chati\.ru" ||
 		req.http.Referer ~ "(?i)pornoblood\.com" ||
+		req.http.Referer ~ "(?i)pornobrazzers\.biz" ||
 		req.http.Referer ~ "(?i)pornodojd\.ru" ||
+		req.http.Referer ~ "(?i)pornofiljmi\.com" ||
 		req.http.Referer ~ "(?i)pornoforadult\.com" ||
 		req.http.Referer ~ "(?i)pornogig\.com" ||
+		req.http.Referer ~ "(?i)pornokajf\.com" ||
 		req.http.Referer ~ "(?i)pornoklad\.net" ||
+		req.http.Referer ~ "(?i)pornoklad\.ru" ||
+		req.http.Referer ~ "(?i)pornokorol\.com" ||
 		req.http.Referer ~ "(?i)pornophoto\.xyz" ||
+		req.http.Referer ~ "(?i)pornotubexxx\.name" ||
 		req.http.Referer ~ "(?i)porodasobak\.net" ||
+		req.http.Referer ~ "(?i)portal\-eu\.ru" ||
 		req.http.Referer ~ "(?i)portnoff\.od\.au" ||
+		req.http.Referer ~ "(?i)portnoff\.od\.ua" ||
+		req.http.Referer ~ "(?i)poshiv\-chehol\.ru" ||
 		req.http.Referer ~ "(?i)positive2b\.ru" ||
+		req.http.Referer ~ "(?i)postclass\.com" ||
 		req.http.Referer ~ "(?i)powitania\.pl" ||
 		req.http.Referer ~ "(?i)pozdravleniya\-c\.ru" ||
 		req.http.Referer ~ "(?i)pozdrawleniya\.com" ||
 		req.http.Referer ~ "(?i)pozdrawleniya\.ru" ||
+		req.http.Referer ~ "(?i)pozvonim\.com" ||
 		req.http.Referer ~ "(?i)pp\-budpostach\.com\.ua" ||
 		req.http.Referer ~ "(?i)pravoholding\.ru" ||
 		req.http.Referer ~ "(?i)priceg\.com" ||
+		req.http.Referer ~ "(?i)pricheskaonline\.ru" ||
 		req.http.Referer ~ "(?i)pricheski\-video\.com" ||
 		req.http.Referer ~ "(?i)princeadvantagesales\.com" ||
+		req.http.Referer ~ "(?i)printie\.com" ||
 		req.http.Referer ~ "(?i)printingpeach\.com" ||
+		req.http.Referer ~ "(?i)priora\-2\.com" ||
+		req.http.Referer ~ "(?i)privatbank46\.ru" ||
+		req.http.Referer ~ "(?i)privatov\-zapisi\.ru" ||
+		req.http.Referer ~ "(?i)privhosting\.com" ||
 		req.http.Referer ~ "(?i)prlog\.ru" ||
+		req.http.Referer ~ "(?i)pro\-okis\.ru" ||
 		req.http.Referer ~ "(?i)producm\.ru" ||
 		req.http.Referer ~ "(?i)prodvigator\.au" ||
+		req.http.Referer ~ "(?i)prodvigator\.ua" ||
+		req.http.Referer ~ "(?i)proekt\-gaz\.ru" ||
 		req.http.Referer ~ "(?i)proekt\-mos\.ru" ||
+		req.http.Referer ~ "(?i)professionalwritingservices15\.blogspot\.ru" ||
+		req.http.Referer ~ "(?i)proftests\.net" ||
 		req.http.Referer ~ "(?i)prohoster\.info" ||
 		req.http.Referer ~ "(?i)prointer\.net\.au" ||
+		req.http.Referer ~ "(?i)prointer\.net\.ua" ||
+		req.http.Referer ~ "(?i)projectforte\.ru" ||
+		req.http.Referer ~ "(?i)projefrio\.com\.br" ||
 		req.http.Referer ~ "(?i)prokotov\.com" ||
 		req.http.Referer ~ "(?i)prombudpostach\.com\.ua" ||
+		req.http.Referer ~ "(?i)promodj\.com" ||
 		req.http.Referer ~ "(?i)promoforum\.ru" ||
 		req.http.Referer ~ "(?i)pron\.pro" ||
+		req.http.Referer ~ "(?i)pronekut\.com" ||
 		req.http.Referer ~ "(?i)proposal\-engine\.com" ||
+		req.http.Referer ~ "(?i)propranolol40mg\.blogspot\.com" ||
+		req.http.Referer ~ "(?i)prosmibank\.ru" ||
+		req.http.Referer ~ "(?i)prostitutki\-almata\.org" ||
+		req.http.Referer ~ "(?i)prostitutki\-astana\.org" ||
+		req.http.Referer ~ "(?i)prostitutki\-belgoroda\.org" ||
+		req.http.Referer ~ "(?i)prostitutki\-kharkova\.org" ||
+		req.http.Referer ~ "(?i)prostitutki\-kiev\.org" ||
+		req.http.Referer ~ "(?i)prostitutki\-novgoroda\.org" ||
+		req.http.Referer ~ "(?i)prostitutki\-odessa\.org" ||
+		req.http.Referer ~ "(?i)prostitutki\-rostova\.org" ||
+		req.http.Referer ~ "(?i)prostitutki\-tolyatti\.org" ||
+		req.http.Referer ~ "(?i)prostitutki\-tyumeni\.org" ||
+		req.http.Referer ~ "(?i)prostitutki\-yaroslavlya\.org" ||
 		req.http.Referer ~ "(?i)psa48\.ru" ||
+		req.http.Referer ~ "(?i)pskcijdc\.bloger\.index\.hr" ||
+		req.http.Referer ~ "(?i)psvita\.ru" ||
+		req.http.Referer ~ "(?i)psychocryonics\.net" ||
 		req.http.Referer ~ "(?i)purchasepillsnorx\.com" ||
+		req.http.Referer ~ "(?i)puteshestvennik\.com" ||
+		req.http.Referer ~ "(?i)putevka24\.ru" ||
 		req.http.Referer ~ "(?i)putitin\.me" ||
+		req.http.Referer ~ "(?i)puzo2arbuza\.ru" ||
 		req.http.Referer ~ "(?i)pyrodesigns\.com\.au" ||
+		req.http.Referer ~ "(?i)q\-moto\.ru" ||
+		req.http.Referer ~ "(?i)qcstrtvt\.bloger\.index\.hr" ||
+		req.http.Referer ~ "(?i)qexyfu\.bugs3\.com" ||
 		req.http.Referer ~ "(?i)qitt\.ru" ||
 		req.http.Referer ~ "(?i)qualitymarketzone\.com" ||
+		req.http.Referer ~ "(?i)quick\-seeker\.com" ||
 		req.http.Referer ~ "(?i)quit\-smoking\.ga" ||
+		req.http.Referer ~ "(?i)qwarckoine\.com" ||
 		req.http.Referer ~ "(?i)qwesa\.ru" ||
+		req.http.Referer ~ "(?i)r\-control\.ru" ||
+		req.http.Referer ~ "(?i)rabot\.host\.sk" ||
+		req.http.Referer ~ "(?i)rabotaetvse\.ru" ||
+		req.http.Referer ~ "(?i)radiogambling\.com" ||
+		req.http.Referer ~ "(?i)ranedaly\.net" ||
+		req.http.Referer ~ "(?i)rangapoker\.com" ||
 		req.http.Referer ~ "(?i)rank\-checker\.online" ||
 		req.http.Referer ~ "(?i)ranking2017\.ga" ||
 		req.http.Referer ~ "(?i)rankings\-analytics\.com" ||
 		req.http.Referer ~ "(?i)ranksays\.com" ||
 		req.http.Referer ~ "(?i)rankscanner\.com" ||
 		req.http.Referer ~ "(?i)ranksignals\.com" ||
+		req.http.Referer ~ "(?i)ranksonic\.com" ||
 		req.http.Referer ~ "(?i)ranksonic\.info" ||
 		req.http.Referer ~ "(?i)ranksonic\.net" ||
 		req.http.Referer ~ "(?i)ranksonic\.org" ||
+		req.http.Referer ~ "(?i)rapevideosmovies\.com" ||
 		req.http.Referer ~ "(?i)rapidgator\-porn\.ga" ||
+		req.http.Referer ~ "(?i)rasteniya\-vs\-zombi\.ru" ||
+		req.http.Referer ~ "(?i)rattan\.co\.ua" ||
+		req.http.Referer ~ "(?i)razamicroelectronics\.com" ||
 		req.http.Referer ~ "(?i)rcb101\.ru" ||
+		req.http.Referer ~ "(?i)realnye\-otzyvy\.info" ||
 		req.http.Referer ~ "(?i)realting\-moscow\.ru" ||
+		req.http.Referer ~ "(?i)recipedays\.ru" ||
 		req.http.Referer ~ "(?i)rednise\.com" ||
+		req.http.Referer ~ "(?i)refererx\.com" ||
+		req.http.Referer ~ "(?i)refudiatethissarah\.info" ||
 		req.http.Referer ~ "(?i)regionshop\.biz" ||
+		req.http.Referer ~ "(?i)registratciya\-v\-moskve\.ru" ||
+		req.http.Referer ~ "(?i)reklama\-i\-rabota\.ru" ||
+		req.http.Referer ~ "(?i)reklama1\.ru" ||
+		req.http.Referer ~ "(?i)reklamuss\.ru" ||
+		req.http.Referer ~ "(?i)remedyotc\.com" ||
+		req.http.Referer ~ "(?i)remmling\.de" ||
+		req.http.Referer ~ "(?i)remont\-comp\-pomosh\.ru" ||
+		req.http.Referer ~ "(?i)remont\-fridge\-tv\.ru" ||
+		req.http.Referer ~ "(?i)remont\-komputerov\-notebook\.ru" ||
+		req.http.Referer ~ "(?i)remont\-mobile\-phones\.ru" ||
+		req.http.Referer ~ "(?i)remont\-ustanovka\-tehniki\.ru" ||
 		req.http.Referer ~ "(?i)remontgruzovik\.ru" ||
+		req.http.Referer ~ "(?i)remote\-dba\.de" ||
+		req.http.Referer ~ "(?i)remotecomputingservices\.net" ||
 		req.http.Referer ~ "(?i)rentalmaty\.kz" ||
 		req.http.Referer ~ "(?i)replica\-watch\.ru" ||
 		req.http.Referer ~ "(?i)replicaclub\.ru" ||
 		req.http.Referer ~ "(?i)research\.ifmo\.ru" ||
 		req.http.Referer ~ "(?i)resellerclub\.com" ||
 		req.http.Referer ~ "(?i)responsive\-test\.net" ||
+		req.http.Referer ~ "(?i)respublica\-otel\.ru" ||
 		req.http.Referer ~ "(?i)retreatia\.com" ||
 		req.http.Referer ~ "(?i)reversing\.cc" ||
+		req.http.Referer ~ "(?i)reyel1985\.webnode\.fr" ||
+		req.http.Referer ~ "(?i)rezeptiblud\.ru" ||
+		req.http.Referer ~ "(?i)rfd\-split\.hr" ||
+		req.http.Referer ~ "(?i)rialp\.getenjoyment\.net" ||
+		req.http.Referer ~ "(?i)richinvestmonitor\.com" ||
+		req.http.Referer ~ "(?i)rietisvi\.co" ||
 		req.http.Referer ~ "(?i)rightenergysolutions\.com\.au" ||
 		req.http.Referer ~ "(?i)ring4rhino\.com" ||
+		req.http.Referer ~ "(?i)ringporno\.com" ||
+		req.http.Referer ~ "(?i)rique\.host\.sk" ||
 		req.http.Referer ~ "(?i)risparmiocasa\.bz\.it" ||
+		req.http.Referer ~ "(?i)robot\-forex\.biz" ||
 		req.http.Referer ~ "(?i)roleforum\.ru" ||
+		req.http.Referer ~ "(?i)roma\-kukareku\.livejournal\.com" ||
+		req.http.Referer ~ "(?i)ros\-ctm\.ru" ||
 		req.http.Referer ~ "(?i)rospromtest\.ru" ||
+		req.http.Referer ~ "(?i)rossanasaavedra\.net" ||
+		req.http.Referer ~ "(?i)rossmark\.ru" ||
 		req.http.Referer ~ "(?i)rostov\.xrus\.org" ||
 		req.http.Referer ~ "(?i)royal\-betting\.net" ||
 		req.http.Referer ~ "(?i)royal\-investments\.net" ||
+		req.http.Referer ~ "(?i)rozalli\.com" ||
+		req.http.Referer ~ "(?i)roznica\.com\.ua" ||
+		req.http.Referer ~ "(?i)rp9\.ru" ||
+		req.http.Referer ~ "(?i)ruex\.org\.ua" ||
 		req.http.Referer ~ "(?i)rumamba\.com" ||
 		req.http.Referer ~ "(?i)runovschool\.ua" ||
 		req.http.Referer ~ "(?i)runstocks\.com" ||
+		req.http.Referer ~ "(?i)rus\-teh\.narod\.ru" ||
+		req.http.Referer ~ "(?i)rusenvironmental\.net" ||
 		req.http.Referer ~ "(?i)rusexy\.xyz" ||
+		req.http.Referer ~ "(?i)rusoft\-zone\.ru" ||
+		req.http.Referer ~ "(?i)russia\-tao\.ru" ||
+		req.http.Referer ~ "(?i)russia\-today\-video\.ru" ||
+		req.http.Referer ~ "(?i)russintv\.fr" ||
+		req.http.Referer ~ "(?i)russkoe\-zdorovie\.ru" ||
+		req.http.Referer ~ "(?i)rvtv\.ru" ||
+		req.http.Referer ~ "(?i)sabaapress\.com" ||
+		req.http.Referer ~ "(?i)sack\.net" ||
 		req.http.Referer ~ "(?i)sad\-torg\.com\.ua" ||
 		req.http.Referer ~ "(?i)sady\-urala\.ru" ||
+		req.http.Referer ~ "(?i)sahohev\.000host\.co\.uk" ||
 		req.http.Referer ~ "(?i)saitevpatorii\.com" ||
+		req.http.Referer ~ "(?i)sakhboard\.ru" ||
 		req.http.Referer ~ "(?i)sale\-japan\.com" ||
 		req.http.Referer ~ "(?i)salutmontreal\.com" ||
+		req.http.Referer ~ "(?i)samo\-soznanie\.ru" ||
+		req.http.Referer ~ "(?i)sanatorrii\.ru" ||
 		req.http.Referer ~ "(?i)sanjosestartups\.com" ||
 		req.http.Referer ~ "(?i)santasgift\.ml" ||
+		req.http.Referer ~ "(?i)santechnik\.jimdo\.com" ||
+		req.http.Referer ~ "(?i)sarafangel\.ru" ||
 		req.http.Referer ~ "(?i)saratov\.xrus\.org" ||
 		req.http.Referer ~ "(?i)sarf3omlat\.com" ||
+		req.http.Referer ~ "(?i)sashagreyblog\.ga" ||
 		req.http.Referer ~ "(?i)savetubevideo\.com" ||
+		req.http.Referer ~ "(?i)savetubevideo\.info" ||
+		req.http.Referer ~ "(?i)savne\.org" ||
+		req.http.Referer ~ "(?i)sax\-sex\.com" ||
+		req.http.Referer ~ "(?i)sbdl\.no" ||
+		req.http.Referer ~ "(?i)sbornik\-zakonov\.ru" ||
+		req.http.Referer ~ "(?i)sc\-specialhost\.com" ||
 		req.http.Referer ~ "(?i)scanner\-alex\.top" ||
 		req.http.Referer ~ "(?i)scanner\-alexa\.top" ||
 		req.http.Referer ~ "(?i)scanner\-andrew\.top" ||
@@ -813,14 +1812,24 @@ sub block_referral_spam {
 		req.http.Referer ~ "(?i)scanner\-willy\.top" ||
 		req.http.Referer ~ "(?i)scansafe\.net" ||
 		req.http.Referer ~ "(?i)scenarii\-1\-sentyabrya\.uroki\.org\.ua" ||
+		req.http.Referer ~ "(?i)school\-diplomat\.ru" ||
 		req.http.Referer ~ "(?i)screentoolkit\.com" ||
 		req.http.Referer ~ "(?i)scripted\.com" ||
+		req.http.Referer ~ "(?i)sdelai\-prosto\.ru" ||
+		req.http.Referer ~ "(?i)sdelatmebel\.ru" ||
 		req.http.Referer ~ "(?i)sdi\-pme\.com" ||
 		req.http.Referer ~ "(?i)search\-error\.com" ||
 		req.http.Referer ~ "(?i)search\-helper\.ru" ||
+		req.http.Referer ~ "(?i)searchlock\.com" ||
+		req.http.Referer ~ "(?i)seccioncontrabajo\.com" ||
 		req.http.Referer ~ "(?i)secret\.xn\-\-oogle\-wmc\.com" ||
+		req.http.Referer ~ "(?i)secret\.ɢoogle\.com" ||
+		req.http.Referer ~ "(?i)secretscook\.ru" ||
+		req.http.Referer ~ "(?i)securityallianceservices\.com" ||
+		req.http.Referer ~ "(?i)seksotur\.ru" ||
 		req.http.Referer ~ "(?i)semalt\.com" ||
 		req.http.Referer ~ "(?i)semaltmedia\.com" ||
+		req.http.Referer ~ "(?i)senger\.atspace\.co\.uk" ||
 		req.http.Referer ~ "(?i)seo\-2\-0\.com" ||
 		req.http.Referer ~ "(?i)seo\-platform\.com" ||
 		req.http.Referer ~ "(?i)seo\-smm\.kz" ||
@@ -828,37 +1837,89 @@ sub block_referral_spam {
 		req.http.Referer ~ "(?i)seoexperimenty\.ru" ||
 		req.http.Referer ~ "(?i)seokicks\.de" ||
 		req.http.Referer ~ "(?i)seopub\.net" ||
+		req.http.Referer ~ "(?i)serialsway\.ucoz\.ru" ||
+		req.http.Referer ~ "(?i)servisural\.ru" ||
+		req.http.Referer ~ "(?i)seryeznie\-znakomstva\.ru" ||
 		req.http.Referer ~ "(?i)setioweb\.com" ||
+		req.http.Referer ~ "(?i)sex\-dating\.co" ||
+		req.http.Referer ~ "(?i)sexkrasivo\.net" ||
 		req.http.Referer ~ "(?i)sexsaoy\.com" ||
+		req.http.Referer ~ "(?i)sexvideo\-sex\.com" ||
+		req.http.Referer ~ "(?i)sexvporno\.ru" ||
 		req.http.Referer ~ "(?i)sexyali\.com" ||
+		req.http.Referer ~ "(?i)sexyteens\.hol\.es" ||
+		req.http.Referer ~ "(?i)sexytrend\.ru" ||
+		req.http.Referer ~ "(?i)sfd\-chess\.ru" ||
+		req.http.Referer ~ "(?i)shakhtar\-doneck\.ru" ||
 		req.http.Referer ~ "(?i)share\-button\.xyz" ||
 		req.http.Referer ~ "(?i)share\-buttons\.xyz" ||
 		req.http.Referer ~ "(?i)sharebutton\.net" ||
 		req.http.Referer ~ "(?i)sharebutton\.to" ||
 		req.http.Referer ~ "(?i)sharemyfile\.ru" ||
 		req.http.Referer ~ "(?i)shariki\-zuma\-lines\.ru" ||
+		req.http.Referer ~ "(?i)shemy\-vishivki\.com" ||
+		req.http.Referer ~ "(?i)shiksabd\.com" ||
+		req.http.Referer ~ "(?i)shinikiev\.com\.ua" ||
 		req.http.Referer ~ "(?i)ship\-marvel\.co\.ua" ||
+		req.http.Referer ~ "(?i)shisha\-swag\.de" ||
+		req.http.Referer ~ "(?i)shlyahten\.ru" ||
+		req.http.Referer ~ "(?i)shodanhq\.com" ||
+		req.http.Referer ~ "(?i)shop\-electron\.ru" ||
+		req.http.Referer ~ "(?i)shoppingmiracles\.co\.uk" ||
 		req.http.Referer ~ "(?i)shopvilleroyboch\.com\.ua" ||
+		req.http.Referer ~ "(?i)shopwme\.ru" ||
+		req.http.Referer ~ "(?i)shtaketniki\.ru" ||
 		req.http.Referer ~ "(?i)sibecoprom\.ru" ||
+		req.http.Referer ~ "(?i)sideeffectsoftizanidine\.blogspot\.com" ||
+		req.http.Referer ~ "(?i)signx\.info" ||
+		req.http.Referer ~ "(?i)silverage\.ru" ||
 		req.http.Referer ~ "(?i)silvermature\.net" ||
+		req.http.Referer ~ "(?i)sim\-service\.net" ||
 		req.http.Referer ~ "(?i)simple\-share\-buttons\.com" ||
+		req.http.Referer ~ "(?i)simplepooltips\.com" ||
+		req.http.Referer ~ "(?i)sims\-sims\.ru" ||
+		req.http.Referer ~ "(?i)sinel\.info" ||
+		req.http.Referer ~ "(?i)sinestesia\.host\.sk" ||
+		req.http.Referer ~ "(?i)sisiynas\.ru" ||
 		req.http.Referer ~ "(?i)site\-auditor\.online" ||
+		req.http.Referer ~ "(?i)site3\.free\-share\-buttons\.com" ||
+		req.http.Referer ~ "(?i)site5\.com" ||
+		req.http.Referer ~ "(?i)siteexpress\.co\.il" ||
 		req.http.Referer ~ "(?i)siteripz\.net" ||
 		req.http.Referer ~ "(?i)sitevaluation\.com" ||
 		req.http.Referer ~ "(?i)sitevaluation\.org" ||
 		req.http.Referer ~ "(?i)sivs\.ru" ||
+		req.http.Referer ~ "(?i)sk\.golden\-praga\.ru" ||
+		req.http.Referer ~ "(?i)ski\-centers\.com" ||
 		req.http.Referer ~ "(?i)sklad\-24\.ru" ||
+		req.http.Referer ~ "(?i)skladvaz\.ru" ||
 		req.http.Referer ~ "(?i)sky\-mine\.ru" ||
+		req.http.Referer ~ "(?i)skylta\.com" ||
+		req.http.Referer ~ "(?i)slavic\-magic\.ru" ||
+		req.http.Referer ~ "(?i)slavkokacunko\.de" ||
 		req.http.Referer ~ "(?i)sledstvie\-veli\.net" ||
 		req.http.Referer ~ "(?i)slftsdybbg\.ru" ||
 		req.http.Referer ~ "(?i)slkrm\.ru" ||
+		req.http.Referer ~ "(?i)slonechka\.ru" ||
 		req.http.Referer ~ "(?i)slow\-website\.xyz" ||
+		req.http.Referer ~ "(?i)slujbauborki\.ru" ||
 		req.http.Referer ~ "(?i)smailik\.org" ||
+		req.http.Referer ~ "(?i)small\-game\.com" ||
+		req.http.Referer ~ "(?i)small\-games\.biz" ||
+		req.http.Referer ~ "(?i)smartpet\.ru" ||
 		req.http.Referer ~ "(?i)smartphonediscount\.info" ||
+		req.http.Referer ~ "(?i)sms2x2\.ru" ||
 		req.http.Referer ~ "(?i)smstraf\.ru" ||
 		req.http.Referer ~ "(?i)snip\.to" ||
 		req.http.Referer ~ "(?i)snip\.tw" ||
+		req.http.Referer ~ "(?i)snjatie\-geroinovoy\-lomki\.ru" ||
+		req.http.Referer ~ "(?i)snomer1\.ru" ||
+		req.http.Referer ~ "(?i)snyatie\-lomki\-v\-stacionare\.ru" ||
 		req.http.Referer ~ "(?i)soaksoak\.ru" ||
+		req.http.Referer ~ "(?i)soblaznu\.net" ||
+		req.http.Referer ~ "(?i)soc\-econom\-problems\.ru" ||
+		req.http.Referer ~ "(?i)soc\-proof\.su" ||
+		req.http.Referer ~ "(?i)socas\.pluto\.ro" ||
 		req.http.Referer ~ "(?i)social\-button\.xyz" ||
 		req.http.Referer ~ "(?i)social\-buttons\-aa\.xyz" ||
 		req.http.Referer ~ "(?i)social\-buttons\-aaa\.xyz" ||
@@ -879,67 +1940,220 @@ sub block_referral_spam {
 		req.http.Referer ~ "(?i)social\-buttons\-iii\.xyz" ||
 		req.http.Referer ~ "(?i)social\-buttons\.com" ||
 		req.http.Referer ~ "(?i)social\-buttons\.xyz" ||
+		req.http.Referer ~ "(?i)social\-fun\.ru" ||
 		req.http.Referer ~ "(?i)social\-s\-ggg\.xyz" ||
 		req.http.Referer ~ "(?i)social\-s\-hhh\.xyz" ||
 		req.http.Referer ~ "(?i)social\-s\-iii\.xyz" ||
 		req.http.Referer ~ "(?i)social\-search\.me" ||
 		req.http.Referer ~ "(?i)social\-traffic\-1\.xyz" ||
 		req.http.Referer ~ "(?i)social\-traffic\-2\.xyz" ||
+		req.http.Referer ~ "(?i)social\-traffic\-3\.xyz" ||
+		req.http.Referer ~ "(?i)social\-traffic\-4\.xyz" ||
+		req.http.Referer ~ "(?i)social\-traffic\-5\.xyz" ||
 		req.http.Referer ~ "(?i)social\-traffic\-7\.xyz" ||
+		req.http.Referer ~ "(?i)social\-vestnik\.ru" ||
 		req.http.Referer ~ "(?i)social\-widget\.xyz" ||
+		req.http.Referer ~ "(?i)socialbookmarksubmission\.org" ||
 		req.http.Referer ~ "(?i)socialbutton\.xyz" ||
 		req.http.Referer ~ "(?i)socialbuttons\.xyz" ||
 		req.http.Referer ~ "(?i)socialseet\.ru" ||
+		req.http.Referer ~ "(?i)socialtrade\.biz" ||
+		req.http.Referer ~ "(?i)sofit\-dmd\.ru" ||
+		req.http.Referer ~ "(?i)soft\-program\.com" ||
 		req.http.Referer ~ "(?i)softomix\.com" ||
 		req.http.Referer ~ "(?i)softomix\.net" ||
 		req.http.Referer ~ "(?i)softomix\.org" ||
 		req.http.Referer ~ "(?i)softomix\.ru" ||
+		req.http.Referer ~ "(?i)softtor\.com" ||
+		req.http.Referer ~ "(?i)softxaker\.ru" ||
 		req.http.Referer ~ "(?i)sohoindia\.net" ||
+		req.http.Referer ~ "(?i)soki\.tv" ||
 		req.http.Referer ~ "(?i)solitaire\-game\.ru" ||
 		req.http.Referer ~ "(?i)solnplast\.ru" ||
+		req.http.Referer ~ "(?i)sonata\-arctica\.wz\.cz" ||
+		req.http.Referer ~ "(?i)songoo\.wz\.cz" ||
+		req.http.Referer ~ "(?i)sonnikforme\.ru" ||
 		req.http.Referer ~ "(?i)sonyelektronik\.com" ||
 		req.http.Referer ~ "(?i)sosdepotdebilan\.com" ||
+		req.http.Referer ~ "(?i)sotkal\.lark\.ru" ||
 		req.http.Referer ~ "(?i)soundfrost\.org" ||
+		req.http.Referer ~ "(?i)soup\.io" ||
+		req.http.Referer ~ "(?i)sovetogorod\.ru" ||
+		req.http.Referer ~ "(?i)soviet\-portal\.do\.am" ||
+		req.http.Referer ~ "(?i)spb\.ru" ||
+		req.http.Referer ~ "(?i)spbchampionat\.ru" ||
 		req.http.Referer ~ "(?i)special\-porn\.com" ||
 		req.http.Referer ~ "(?i)speedup\-my\.site" ||
 		req.http.Referer ~ "(?i)spin2016\.cf" ||
+		req.http.Referer ~ "(?i)sport\-video\-obzor\.ru" ||
+		req.http.Referer ~ "(?i)sportbetfair\.com" ||
 		req.http.Referer ~ "(?i)spravka130\.ru" ||
+		req.http.Referer ~ "(?i)spuemonti\.net" ||
+		req.http.Referer ~ "(?i)spy\-sts\.com" ||
+		req.http.Referer ~ "(?i)squidoo\.com" ||
 		req.http.Referer ~ "(?i)srecorder\.com" ||
 		req.http.Referer ~ "(?i)stairliftstrue\.com" ||
+		req.http.Referer ~ "(?i)star61\.de" ||
+		req.http.Referer ~ "(?i)stardevine\.com" ||
+		req.http.Referer ~ "(?i)stariy\-baku\.com" ||
 		req.http.Referer ~ "(?i)start\.myplaycity\.com" ||
+		req.http.Referer ~ "(?i)startufa\.ru" ||
+		req.http.Referer ~ "(?i)startwp\.org" ||
+		req.http.Referer ~ "(?i)statustroll\.com" ||
+		req.http.Referer ~ "(?i)stauga\.altervista\.org" ||
 		req.http.Referer ~ "(?i)steame\.ru" ||
+		req.http.Referer ~ "(?i)steelmaster\.lv" ||
 		req.http.Referer ~ "(?i)stoki\.ru" ||
+		req.http.Referer ~ "(?i)strana\-krasoty\.ru" ||
+		req.http.Referer ~ "(?i)strana\-solnca\.ru" ||
+		req.http.Referer ~ "(?i)streetfire\.net" ||
+		req.http.Referer ~ "(?i)streetfooduncovered\.com" ||
 		req.http.Referer ~ "(?i)streha\-metalko\.si" ||
+		req.http.Referer ~ "(?i)strigkaomsk\.ru" ||
+		req.http.Referer ~ "(?i)stroicol\.net" ||
+		req.http.Referer ~ "(?i)stroimajor\.ru" ||
+		req.http.Referer ~ "(?i)stroiminsk\.com" ||
+		req.http.Referer ~ "(?i)stroiminsk\.org" ||
+		req.http.Referer ~ "(?i)strongholdsb\.ru" ||
+		req.http.Referer ~ "(?i)stroydetali\.ru" ||
+		req.http.Referer ~ "(?i)stroymonolit\.su" ||
+		req.http.Referer ~ "(?i)studiofaca\.com" ||
+		req.http.Referer ~ "(?i)stuff\-about\-money\.com" ||
 		req.http.Referer ~ "(?i)styro\.ru" ||
 		req.http.Referer ~ "(?i)success\-seo\.com" ||
 		req.http.Referer ~ "(?i)suche\.t\-online\.de" ||
+		req.http.Referer ~ "(?i)sugarkun\.com" ||
+		req.http.Referer ~ "(?i)sugvant\.ru" ||
 		req.http.Referer ~ "(?i)superiends\.org" ||
+		req.http.Referer ~ "(?i)supermesta\.ru" ||
 		req.http.Referer ~ "(?i)supernew\.org" ||
 		req.http.Referer ~ "(?i)superpages\.com" ||
 		req.http.Referer ~ "(?i)supervesti\.ru" ||
+		req.http.Referer ~ "(?i)surflinksmedical\.com" ||
 		req.http.Referer ~ "(?i)susanholtphotography\.com" ||
+		req.http.Referer ~ "(?i)svarbit\.com" ||
+		req.http.Referer ~ "(?i)svetlotorg\.ru" ||
+		req.http.Referer ~ "(?i)svetodiodoff\.ru" ||
+		req.http.Referer ~ "(?i)swagbucks\.com" ||
 		req.http.Referer ~ "(?i)sygraem\.com" ||
+		req.http.Referer ~ "(?i)szansadlarolnikow\.com\.pl" ||
 		req.http.Referer ~ "(?i)taihouse\.ru" ||
 		req.http.Referer ~ "(?i)tasteidea\.com" ||
 		req.http.Referer ~ "(?i)tastyfoodideas\.com" ||
+		req.http.Referer ~ "(?i)tattoo33\.ru" ||
 		req.http.Referer ~ "(?i)tattooha\.com" ||
+		req.http.Referer ~ "(?i)taximytishi\.ru" ||
 		req.http.Referer ~ "(?i)td\-33\.ru" ||
 		req.http.Referer ~ "(?i)teastory\.co" ||
+		req.http.Referer ~ "(?i)techart24\.com" ||
+		req.http.Referer ~ "(?i)technopellet\.gr" ||
+		req.http.Referer ~ "(?i)tecspb\.ru" ||
 		req.http.Referer ~ "(?i)tedxrj\.com" ||
+		req.http.Referer ~ "(?i)tedy\.su" ||
+		req.http.Referer ~ "(?i)teedle\.co" ||
+		req.http.Referer ~ "(?i)tehngr\.ru" ||
+		req.http.Referer ~ "(?i)telesvoboda\.ru" ||
+		req.http.Referer ~ "(?i)teplolidoma\.ru" ||
+		req.http.Referer ~ "(?i)teslathemes\.com" ||
+		req.http.Referer ~ "(?i)texbaza\.by" ||
+		req.http.Referer ~ "(?i)the\-torrent\-tracker\.blogspot\.com" ||
+		req.http.Referer ~ "(?i)the\-usa\-games\.blogspot\.com" ||
+		req.http.Referer ~ "(?i)thebluenoodle\.com" ||
 		req.http.Referer ~ "(?i)thecoral\.com\.br" ||
+		req.http.Referer ~ "(?i)thedownloadfreeonlinegames\.blogspot\.com" ||
+		req.http.Referer ~ "(?i)thedownloadfromwarez\.blogspot\.com" ||
+		req.http.Referer ~ "(?i)thefds\.net" ||
 		req.http.Referer ~ "(?i)theguardlan\.com" ||
+		req.http.Referer ~ "(?i)theheroes\.ru" ||
+		req.http.Referer ~ "(?i)thejournal\.ru" ||
 		req.http.Referer ~ "(?i)thenextweb\.com" ||
 		req.http.Referer ~ "(?i)thepokertimer\.com" ||
+		req.http.Referer ~ "(?i)thewomenlife\.com" ||
+		req.http.Referer ~ "(?i)thiegs\.reco\.ws" ||
+		req.http.Referer ~ "(?i)thin\.me\.pn" ||
+		req.http.Referer ~ "(?i)tiandeural\.ru" ||
+		req.http.Referer ~ "(?i)tiens2010\.ru" ||
+		req.http.Referer ~ "(?i)timeallnews\.ru" ||
 		req.http.Referer ~ "(?i)timer4web\.com" ||
+		req.http.Referer ~ "(?i)timetorelax\.biz" ||
+		req.http.Referer ~ "(?i)tizanidine4mg\.blogspot\.com" ||
+		req.http.Referer ~ "(?i)tizanidine4mgprice\.blogspot\.com" ||
+		req.http.Referer ~ "(?i)tizanidine4mgstreetprice\.blogspot\.com" ||
+		req.http.Referer ~ "(?i)tizanidine4mgstreetvalue\.blogspot\.com" ||
+		req.http.Referer ~ "(?i)tizanidine4mgtablets\.blogspot\.com" ||
+		req.http.Referer ~ "(?i)tizanidine4mguses\.blogspot\.com" ||
+		req.http.Referer ~ "(?i)tizanidine6mg\.blogspot\.com" ||
+		req.http.Referer ~ "(?i)tizanidineandcipro\.blogspot\.com" ||
+		req.http.Referer ~ "(?i)tizanidineandgabapentin\.blogspot\.com" ||
+		req.http.Referer ~ "(?i)tizanidineandhydrocodone\.blogspot\.com" ||
+		req.http.Referer ~ "(?i)tizanidinecapsules\.blogspot\.com" ||
+		req.http.Referer ~ "(?i)tizanidinecost\.blogspot\.com" ||
+		req.http.Referer ~ "(?i)tizanidinedosage\.blogspot\.com" ||
+		req.http.Referer ~ "(?i)tizanidinedosageforsleep\.blogspot\.com" ||
+		req.http.Referer ~ "(?i)tizanidinedruginteractions\.blogspot\.com" ||
+		req.http.Referer ~ "(?i)tizanidinedrugtest\.blogspot\.com" ||
+		req.http.Referer ~ "(?i)tizanidineduringpregnancy\.blogspot\.com" ||
+		req.http.Referer ~ "(?i)tizanidinefibromyalgia\.blogspot\.com" ||
+		req.http.Referer ~ "(?i)tizanidineformigraines\.blogspot\.com" ||
+		req.http.Referer ~ "(?i)tizanidineforopiatewithdrawal\.blogspot\.com" ||
+		req.http.Referer ~ "(?i)tizanidinehcl2mg\.blogspot\.com" ||
+		req.http.Referer ~ "(?i)tizanidinehcl2mgsideeffects\.blogspot\.com" ||
+		req.http.Referer ~ "(?i)tizanidinehcl2mgtablet\.blogspot\.com" ||
+		req.http.Referer ~ "(?i)tizanidinehcl4mgisitanarcotic\.blogspot\.com" ||
+		req.http.Referer ~ "(?i)tizanidinehcl4mgtab\.blogspot\.com" ||
+		req.http.Referer ~ "(?i)tizanidinehcl4mgtabinfo\.blogspot\.com" ||
+		req.http.Referer ~ "(?i)tizanidinehcl4mgtablet\.blogspot\.com" ||
+		req.http.Referer ~ "(?i)tizanidinehclsideeffects\.blogspot\.com" ||
+		req.http.Referer ~ "(?i)tizanidinehydrochloride2mg\.blogspot\.com" ||
+		req.http.Referer ~ "(?i)tizanidinehydrochloride4mgstreetvalue\.blogspot\.com" ||
+		req.http.Referer ~ "(?i)tizanidineinfo\.blogspot\.com" ||
+		req.http.Referer ~ "(?i)tizanidineingredients\.blogspot\.com" ||
+		req.http.Referer ~ "(?i)tizanidineinteractions\.blogspot\.com" ||
+		req.http.Referer ~ "(?i)tizanidinemusclerelaxant\.blogspot\.com" ||
+		req.http.Referer ~ "(?i)tizanidinenarcotic\.blogspot\.com" ||
+		req.http.Referer ~ "(?i)tizanidineonline\.blogspot\.com" ||
+		req.http.Referer ~ "(?i)tizanidineoral\.blogspot\.com" ||
+		req.http.Referer ~ "(?i)tizanidineorflexeril\.blogspot\.com" ||
+		req.http.Referer ~ "(?i)tizanidinepain\.blogspot\.com" ||
+		req.http.Referer ~ "(?i)tizanidinepills\.blogspot\.com" ||
+		req.http.Referer ~ "(?i)tizanidinerecreationaluse\.blogspot\.com" ||
+		req.http.Referer ~ "(?i)tizanidinerestlesslegsyndrome\.blogspot\.com" ||
+		req.http.Referer ~ "(?i)tizanidineshowupondrugtest\.blogspot\.com" ||
+		req.http.Referer ~ "(?i)tizanidinesideeffects\.blogspot\.com" ||
+		req.http.Referer ~ "(?i)tizanidinesideeffectsweightloss\.blogspot\.com" ||
+		req.http.Referer ~ "(?i)tizanidinesleepaid\.blogspot\.com" ||
+		req.http.Referer ~ "(?i)tizanidinestreetprice\.blogspot\.com" ||
+		req.http.Referer ~ "(?i)tizanidinestreetvalue\.blogspot\.com" ||
+		req.http.Referer ~ "(?i)tizanidineusedfor\.blogspot\.com" ||
+		req.http.Referer ~ "(?i)tizanidinevscyclobenzaprine\.blogspot\.com" ||
+		req.http.Referer ~ "(?i)tizanidinevssoma\.blogspot\.com" ||
+		req.http.Referer ~ "(?i)tizanidinevsvalium\.blogspot\.com" ||
+		req.http.Referer ~ "(?i)tizanidinewithdrawal\.blogspot\.com" ||
+		req.http.Referer ~ "(?i)tizanidinewithdrawalsymptoms\.blogspot\.com" ||
+		req.http.Referer ~ "(?i)tizanidinezanaflex\.blogspot\.com" ||
+		req.http.Referer ~ "(?i)tkanorganizma\.ru" ||
+		req.http.Referer ~ "(?i)tksn\.ru" ||
+		req.http.Referer ~ "(?i)toloka\.hurtom\.com" ||
 		req.http.Referer ~ "(?i)tomatis\.gospartner\.com" ||
 		req.http.Referer ~ "(?i)tomck\.com" ||
 		req.http.Referer ~ "(?i)top1\-seo\-service\.com" ||
+		req.http.Referer ~ "(?i)top250movies\.ru" ||
+		req.http.Referer ~ "(?i)topmira\.com" ||
 		req.http.Referer ~ "(?i)topquality\.cf" ||
 		req.http.Referer ~ "(?i)topseoservices\.co" ||
+		req.http.Referer ~ "(?i)topshef\.ru" ||
+		req.http.Referer ~ "(?i)topvidos\.ru" ||
+		req.http.Referer ~ "(?i)torontoplumbinggroup\.com" ||
+		req.http.Referer ~ "(?i)torrents\-tracker\.com" ||
+		req.http.Referer ~ "(?i)torrnada\.ru" ||
 		req.http.Referer ~ "(?i)torture\.ml" ||
 		req.http.Referer ~ "(?i)touchmods\.fr" ||
+		req.http.Referer ~ "(?i)tovaroboom\.vast\.ru" ||
 		req.http.Referer ~ "(?i)tpu\.ru" ||
+		req.http.Referer ~ "(?i)trafaret74\.ru" ||
 		req.http.Referer ~ "(?i)traffic\-cash\.xyz" ||
+		req.http.Referer ~ "(?i)traffic\-paradise\.org" ||
+		req.http.Referer ~ "(?i)traffic2cash\.net" ||
 		req.http.Referer ~ "(?i)traffic2cash\.org" ||
 		req.http.Referer ~ "(?i)traffic2cash\.xyz" ||
 		req.http.Referer ~ "(?i)traffic2money\.com" ||
@@ -947,87 +2161,226 @@ sub block_referral_spam {
 		req.http.Referer ~ "(?i)trafficmonetize\.org" ||
 		req.http.Referer ~ "(?i)trafficmonetizer\.org" ||
 		req.http.Referer ~ "(?i)traffictomoney\.com" ||
+		req.http.Referer ~ "(?i)trahvid\.com" ||
+		req.http.Referer ~ "(?i)tramadolandtizanidine\.blogspot\.com" ||
+		req.http.Referer ~ "(?i)traxdom\.ru" ||
 		req.http.Referer ~ "(?i)trion\.od\.au" ||
+		req.http.Referer ~ "(?i)trion\.od\.ua" ||
+		req.http.Referer ~ "(?i)triumf\-realty\.ru" ||
 		req.http.Referer ~ "(?i)trk\-4\.net" ||
+		req.http.Referer ~ "(?i)trubywriting\.com" ||
+		req.http.Referer ~ "(?i)tsstcorpcddvdwshbbdriverfb\.aircus\.com" ||
+		req.http.Referer ~ "(?i)tuberkulezanet\.ru" ||
+		req.http.Referer ~ "(?i)tuberkuleznik\.ru" ||
+		req.http.Referer ~ "(?i)tula\.mdverey\.ru" ||
+		req.http.Referer ~ "(?i)tupper\-posuda\.ru" ||
+		req.http.Referer ~ "(?i)tupper\-shop\.ru" ||
 		req.http.Referer ~ "(?i)turbo\-suslik\.org" ||
+		req.http.Referer ~ "(?i)turist\-strani\.ru" ||
 		req.http.Referer ~ "(?i)turkeyreport\.tk" ||
+		req.http.Referer ~ "(?i)turvgori\.ru" ||
 		req.http.Referer ~ "(?i)tvand\.ru" ||
+		req.http.Referer ~ "(?i)tvgoals\.tv" ||
+		req.http.Referer ~ "(?i)tvoystartup\.ru" ||
 		req.http.Referer ~ "(?i)twincitiescarservice\.com" ||
+		req.http.Referer ~ "(?i)twojebook\.pl" ||
+		req.http.Referer ~ "(?i)twu\.com\.ua" ||
 		req.http.Referer ~ "(?i)tytoona\.com" ||
 		req.http.Referer ~ "(?i)tyumen\.xrus\.org" ||
+		req.http.Referer ~ "(?i)u\-cheats\.ru" ||
+		req.http.Referer ~ "(?i)u17795\.netangels\.ru" ||
+		req.http.Referer ~ "(?i)ua\-company\.ru" ||
 		req.http.Referer ~ "(?i)uasb\.ru" ||
+		req.http.Referer ~ "(?i)ublaze\.ru" ||
+		req.http.Referer ~ "(?i)uchebavchehii\.ru" ||
+		req.http.Referer ~ "(?i)uchil\.net" ||
 		req.http.Referer ~ "(?i)ucoz\.ru" ||
+		req.http.Referer ~ "(?i)ucsol\.ru" ||
 		req.http.Referer ~ "(?i)ufa\.xrus\.org" ||
+		req.http.Referer ~ "(?i)ultimateuninstall\.com" ||
+		req.http.Referer ~ "(?i)um\-razum\.ru" ||
+		req.http.Referer ~ "(?i)umg\-stroy\.ru" ||
+		req.http.Referer ~ "(?i)umityangin\.net" ||
 		req.http.Referer ~ "(?i)uni\.me" ||
+		req.http.Referer ~ "(?i)unimodemhalfduplefw\.pen\.io" ||
+		req.http.Referer ~ "(?i)unitygame3d\.com" ||
+		req.http.Referer ~ "(?i)unmaroll\.ya\.ru" ||
 		req.http.Referer ~ "(?i)unpredictable\.ga" ||
 		req.http.Referer ~ "(?i)uptime\-alpha\.net" ||
 		req.http.Referer ~ "(?i)uptime\.com" ||
 		req.http.Referer ~ "(?i)uptimebot\.net" ||
 		req.http.Referer ~ "(?i)uptimechecker\.com" ||
+		req.http.Referer ~ "(?i)ural\-buldozer\.ru" ||
+		req.http.Referer ~ "(?i)urccvfmc\.bloger\.index\.hr" ||
 		req.http.Referer ~ "(?i)urlopener\.blogspot\.com\.au" ||
+		req.http.Referer ~ "(?i)urlopener\.com" ||
+		req.http.Referer ~ "(?i)us\-america\.ru" ||
+		req.http.Referer ~ "(?i)usadacha\.net" ||
 		req.http.Referer ~ "(?i)userequip\.com" ||
 		req.http.Referer ~ "(?i)ussearche\.cf" ||
 		req.http.Referer ~ "(?i)ustion\.ru" ||
+		req.http.Referer ~ "(?i)utrolive\.ru" ||
 		req.http.Referer ~ "(?i)uzungil\.com" ||
+		req.http.Referer ~ "(?i)vabasa\.inwtrade\.com" ||
 		req.http.Referer ~ "(?i)vadimkravtcov\.ru" ||
+		req.http.Referer ~ "(?i)valkiria\-tk\.ru" ||
 		req.http.Referer ~ "(?i)vapmedia\.org" ||
+		req.http.Referer ~ "(?i)vapsy\.com" ||
+		req.http.Referer ~ "(?i)varikozdok\.ru" ||
 		req.http.Referer ~ "(?i)vashsvet\.com" ||
 		req.http.Referer ~ "(?i)vavilone\.com" ||
+		req.http.Referer ~ "(?i)vbabule\.net" ||
+		req.http.Referer ~ "(?i)vduplo\.ru" ||
+		req.http.Referer ~ "(?i)vegascosmetics\.ru" ||
+		req.http.Referer ~ "(?i)vekzdorov\.ru" ||
 		req.http.Referer ~ "(?i)velobikestock\.com" ||
+		req.http.Referer ~ "(?i)venta\-prom\.ru" ||
+		req.http.Referer ~ "(?i)ventelnos\.com" ||
 		req.http.Referer ~ "(?i)vesnatehno\.com" ||
 		req.http.Referer ~ "(?i)vesnatehno\.ru" ||
+		req.http.Referer ~ "(?i)vesta\-lada\.net" ||
+		req.http.Referer ~ "(?i)vezuviy\.su" ||
 		req.http.Referer ~ "(?i)vgoloveboli\.net" ||
+		req.http.Referer ~ "(?i)via\-gra\.webstarts\.com" ||
+		req.http.Referer ~ "(?i)viagra\.pp\.ua" ||
+		req.http.Referer ~ "(?i)viagroid\.ru" ||
+		req.http.Referer ~ "(?i)viandpet\.com" ||
 		req.http.Referer ~ "(?i)viberdownload10\.com" ||
 		req.http.Referer ~ "(?i)video\-\-production\.com" ||
 		req.http.Referer ~ "(?i)video\-chat\.in" ||
+		req.http.Referer ~ "(?i)video\-hollywood\.ru" ||
 		req.http.Referer ~ "(?i)video\-woman\.com" ||
 		req.http.Referer ~ "(?i)videochat\.mx" ||
 		req.http.Referer ~ "(?i)videochat\.tv\.br" ||
+		req.http.Referer ~ "(?i)videochaty\.ru" ||
 		req.http.Referer ~ "(?i)videofrost\.com" ||
 		req.http.Referer ~ "(?i)videofrost\.net" ||
+		req.http.Referer ~ "(?i)videokrik\.net" ||
 		req.http.Referer ~ "(?i)videos\-for\-your\-business\.com" ||
+		req.http.Referer ~ "(?i)videosbox\.ru" ||
+		req.http.Referer ~ "(?i)videotuber\.ru" ||
 		req.http.Referer ~ "(?i)viel\.su" ||
+		req.http.Referer ~ "(?i)vigrx\-original\.ru" ||
 		req.http.Referer ~ "(?i)viktoria\-center\.ru" ||
 		req.http.Referer ~ "(?i)vilingstore\.net" ||
+		req.http.Referer ~ "(?i)vinsit\.ru" ||
 		req.http.Referer ~ "(?i)vip\-dom\.in" ||
+		req.http.Referer ~ "(?i)vip\-parfumeria\.ru" ||
 		req.http.Referer ~ "(?i)vipsiterip\.org" ||
 		req.http.Referer ~ "(?i)visa\-china\.ru" ||
+		req.http.Referer ~ "(?i)visa\-pasport\.ru" ||
+		req.http.Referer ~ "(?i)vita\.com\.hr" ||
+		req.http.Referer ~ "(?i)vitanail\.ru" ||
+		req.http.Referer ~ "(?i)viven\.host\.sk" ||
+		req.http.Referer ~ "(?i)vizag\.kharkov\.ua" ||
+		req.http.Referer ~ "(?i)vk\-mus\.ru" ||
+		req.http.Referer ~ "(?i)vkak\.ru" ||
+		req.http.Referer ~ "(?i)vkontaktemusic\.ru" ||
+		req.http.Referer ~ "(?i)vkontarkte\.com" ||
+		req.http.Referer ~ "(?i)vksaver\-all\.ru" ||
+		req.http.Referer ~ "(?i)vladhistory\.com" ||
+		req.http.Referer ~ "(?i)vltai\.com" ||
+		req.http.Referer ~ "(?i)vmnmvzsmn\.over\-blog\.com" ||
+		req.http.Referer ~ "(?i)vod\.com\.ua" ||
 		req.http.Referer ~ "(?i)vodaodessa\.com" ||
+		req.http.Referer ~ "(?i)voditeltrezviy\.ru" ||
 		req.http.Referer ~ "(?i)vodkoved\.ru" ||
 		req.http.Referer ~ "(?i)volgograd\.xrus\.org" ||
 		req.http.Referer ~ "(?i)voloomoney\.com" ||
+		req.http.Referer ~ "(?i)volume\-pills\.biz" ||
+		req.http.Referer ~ "(?i)voprosotvet24\.ru" ||
 		req.http.Referer ~ "(?i)voronezh\.xrus\.org" ||
+		req.http.Referer ~ "(?i)vostgard\.com" ||
+		req.http.Referer ~ "(?i)vostoktrade\.info" ||
 		req.http.Referer ~ "(?i)vote\-up\.ru" ||
+		req.http.Referer ~ "(?i)vozbujdenie\.com" ||
 		req.http.Referer ~ "(?i)vpnhowto\.info" ||
+		req.http.Referer ~ "(?i)vriel\.batcave\.net" ||
+		req.http.Referer ~ "(?i)vrnelectro\.ru" ||
+		req.http.Referer ~ "(?i)vrotike\.ru" ||
+		req.http.Referer ~ "(?i)vsesubwaysurfers\.com" ||
+		req.http.Referer ~ "(?i)vseuznaem\.com" ||
+		req.http.Referer ~ "(?i)vucms\.com" ||
 		req.http.Referer ~ "(?i)vykup\-avto\-krasnodar\.ru" ||
 		req.http.Referer ~ "(?i)vykupavto\-krasnodar\.ru" ||
+		req.http.Referer ~ "(?i)vzlom\-na\-zakaz\.com" ||
 		req.http.Referer ~ "(?i)w3javascript\.com" ||
+		req.http.Referer ~ "(?i)w7s\.ru" ||
+		req.http.Referer ~ "(?i)wallpaperdesk\.info" ||
+		req.http.Referer ~ "(?i)wallpapers\-best\.com" ||
 		req.http.Referer ~ "(?i)wallpapersdesk\.info" ||
+		req.http.Referer ~ "(?i)wapsite\.me" ||
+		req.http.Referer ~ "(?i)warningwar\.ru" ||
+		req.http.Referer ~ "(?i)watch\-movies\.ru" ||
+		req.http.Referer ~ "(?i)wcb\.su" ||
 		req.http.Referer ~ "(?i)wdfdocando\.com" ||
 		req.http.Referer ~ "(?i)web\-betting\.ru" ||
 		req.http.Referer ~ "(?i)web\-revenue\.xyz" ||
+		req.http.Referer ~ "(?i)web\.cvut\.cz" ||
+		req.http.Referer ~ "(?i)webix\.me" ||
+		req.http.Referer ~ "(?i)webjam\.com" ||
 		req.http.Referer ~ "(?i)webmaster\-traffic\.com" ||
 		req.http.Referer ~ "(?i)webmonetizer\.net" ||
+		req.http.Referer ~ "(?i)webradiology\.ru" ||
+		req.http.Referer ~ "(?i)webs\.com" ||
 		req.http.Referer ~ "(?i)website\-analyzer\.info" ||
 		req.http.Referer ~ "(?i)website\-errors\-scanner\.com" ||
+		req.http.Referer ~ "(?i)website\-speed\-check\.site" ||
+		req.http.Referer ~ "(?i)website\-speed\-checker\.site" ||
 		req.http.Referer ~ "(?i)website\-stealer\-warning\-alert\.hdmoviecams\.com" ||
 		req.http.Referer ~ "(?i)websites\-reviews\.com" ||
 		req.http.Referer ~ "(?i)websocial\.me" ||
+		req.http.Referer ~ "(?i)webtherapy\.ru" ||
 		req.http.Referer ~ "(?i)wedding\-salon\.net" ||
+		req.http.Referer ~ "(?i)weebly\.com" ||
+		req.http.Referer ~ "(?i)weekes\.biz\.tc" ||
+		req.http.Referer ~ "(?i)weightatraining\.com" ||
+		req.http.Referer ~ "(?i)welck\.octopis\.com" ||
+		req.http.Referer ~ "(?i)welcomeauto\.ru" ||
+		req.http.Referer ~ "(?i)weprik\.ru" ||
+		req.http.Referer ~ "(?i)wetgames\.ru" ||
+		req.http.Referer ~ "(?i)whatistizanidine2mg\.blogspot\.com" ||
+		req.http.Referer ~ "(?i)whatistizanidinehclusedfor\.blogspot\.com" ||
 		req.http.Referer ~ "(?i)whatsappdownload10\.com" ||
+		req.http.Referer ~ "(?i)whereiskentoday\.com" ||
+		req.http.Referer ~ "(?i)wicivow\.007h\.ml" ||
+		req.http.Referer ~ "(?i)wikes\.20fr\.com" ||
 		req.http.Referer ~ "(?i)williamrobsonproperty\.com" ||
+		req.http.Referer ~ "(?i)winx\-play\.ru" ||
+		req.http.Referer ~ "(?i)witherrom55\.eklablog\.fr" ||
 		req.http.Referer ~ "(?i)wmasterlead\.com" ||
+		req.http.Referer ~ "(?i)wnoz\.de" ||
 		req.http.Referer ~ "(?i)woman\-h\.ru" ||
 		req.http.Referer ~ "(?i)woman\-orgasm\.ru" ||
+		req.http.Referer ~ "(?i)woman\-tampon\.ru" ||
+		req.http.Referer ~ "(?i)womens\-journal\.net" ||
 		req.http.Referer ~ "(?i)womensplay\.net" ||
 		req.http.Referer ~ "(?i)womensterritory\.ru" ||
 		req.http.Referer ~ "(?i)wordpress\-crew\.net" ||
 		req.http.Referer ~ "(?i)wordpresscore\.com" ||
 		req.http.Referer ~ "(?i)work\-from\-home\-earn\-money\-online\.com" ||
+		req.http.Referer ~ "(?i)works\.if\.ua" ||
+		req.http.Referer ~ "(?i)world\-mmo\.com" ||
+		req.http.Referer ~ "(?i)worldhistory\.biz" ||
+		req.http.Referer ~ "(?i)worldis\.me" ||
+		req.http.Referer ~ "(?i)worldlovers\.ru" ||
+		req.http.Referer ~ "(?i)wormix\-cheats\.ru" ||
 		req.http.Referer ~ "(?i)wowas31\.ucoz\.ru" ||
+		req.http.Referer ~ "(?i)wrazilwispolecznie\.pl" ||
+		req.http.Referer ~ "(?i)writingservices17\.blogspot\.ru" ||
+		req.http.Referer ~ "(?i)wrona\.it" ||
+		req.http.Referer ~ "(?i)wstroika\.ru" ||
+		req.http.Referer ~ "(?i)wurr\.voila\.net" ||
+		req.http.Referer ~ "(?i)ww1943\.ru" ||
+		req.http.Referer ~ "(?i)wzgyyq\.com" ||
 		req.http.Referer ~ "(?i)x\-musics\.com" ||
+		req.http.Referer ~ "(?i)x\-stars\.ru" ||
 		req.http.Referer ~ "(?i)xbaboon\.com" ||
 		req.http.Referer ~ "(?i)xboxster\.ru" ||
+		req.http.Referer ~ "(?i)xfire\.com" ||
+		req.http.Referer ~ "(?i)xgftnlrt\.bloger\.index\.hr" ||
+		req.http.Referer ~ "(?i)xjrul\.com" ||
+		req.http.Referer ~ "(?i)xlolitka\.com" ||
 		req.http.Referer ~ "(?i)xn\-\-\-\-\-6kcaacnblni5c5bicdpcmficy\.xn\-\-p1ai" ||
 		req.http.Referer ~ "(?i)xn\-\-\-\-\-7kceclhb4abre1b4a0ccl2fxch1a\.xn\-\-p1ai" ||
 		req.http.Referer ~ "(?i)xn\-\-\-\-\-8kcatubaocd1bneepefojs1h2e\.xn\-\-p1ai" ||
@@ -1038,41 +2391,106 @@ sub block_referral_spam {
 		req.http.Referer ~ "(?i)xn\-\-\-\-gtbdb0beu1bb8gj\.xn\-\-p1ai" ||
 		req.http.Referer ~ "(?i)xn\-\-80aaafbn2bc2ahdfrfkln6l\.xn\-\-p1ai" ||
 		req.http.Referer ~ "(?i)xn\-\-80aaajbdbddwj2alwjieei2afr3v\.xn\-\-p1ai" ||
+		req.http.Referer ~ "(?i)xn\-\-80aaaks3bbhabgbigamdr2h\.xn\-\-p1ai" ||
 		req.http.Referer ~ "(?i)xn\-\-80aanaardaperhcem4a6i\.com" ||
+		req.http.Referer ~ "(?i)xn\-\-80ab4aa2g\.xn\-\-p1ai" ||
 		req.http.Referer ~ "(?i)xn\-\-80adaggc5bdhlfamsfdij4p7b\.xn\-\-p1ai" ||
 		req.http.Referer ~ "(?i)xn\-\-80adgcaax6acohn6r\.xn\-\-p1ai" ||
+		req.http.Referer ~ "(?i)xn\-\-80aeahghtf8ac5i\.xn\-\-p1ai" ||
+		req.http.Referer ~ "(?i)xn\-\-80ahvj9e\.xn\-\-p1ai" ||
 		req.http.Referer ~ "(?i)xn\-\-80ajbshivpvn2i\.xn\-\-p1ai" ||
 		req.http.Referer ~ "(?i)xn\-\-80ajjbdhgmudixfjc8c5a9df8b\.xn\-\-p1ai" ||
 		req.http.Referer ~ "(?i)xn\-\-90acenikpebbdd4f6d\.xn\-\-p1ai" ||
+		req.http.Referer ~ "(?i)xn\-\-90adhhccf5aeewt7j\.xn\-\-p1ai" ||
 		req.http.Referer ~ "(?i)xn\-\-b1ag5cfn\.xn\-\-p1ai" ||
+		req.http.Referer ~ "(?i)xn\-\-b1agm2d\.net" ||
 		req.http.Referer ~ "(?i)xn\-\-c1acygb\.xn\-\-p1ai" ||
 		req.http.Referer ~ "(?i)xn\-\-e1aggki3c\.xn\-\-80adxhks" ||
+		req.http.Referer ~ "(?i)xn\-\-h1ahbi\.com\.ua" ||
+		req.http.Referer ~ "(?i)xn\-\-hxazdsfy\.blogspot\.com" ||
+		req.http.Referer ~ "(?i)xn\-\-l1aengat\.xn\-\-p1ai" ||
 		req.http.Referer ~ "(?i)xn\-\-oogle\-wmc\.com" ||
 		req.http.Referer ~ "(?i)xn\-\-q1a\.xn\-\-b1aube0e\.xn\-\-c1acygb\.xn\-\-p1ai" ||
+		req.http.Referer ~ "(?i)xnxx\-n\.com" ||
+		req.http.Referer ~ "(?i)xolodremont\.ru" ||
+		req.http.Referer ~ "(?i)xportvusbdriver8i\.snack\.ws" ||
 		req.http.Referer ~ "(?i)xpresscare\.ru" ||
+		req.http.Referer ~ "(?i)xrus\.org" ||
+		req.http.Referer ~ "(?i)xsion\.net" ||
+		req.http.Referer ~ "(?i)xtubeporno\.net" ||
+		req.http.Referer ~ "(?i)xvideosbay\.com" ||
+		req.http.Referer ~ "(?i)xxart\.ru" ||
+		req.http.Referer ~ "(?i)xxx\-treker\.ru" ||
+		req.http.Referer ~ "(?i)xxxtube69\.com" ||
 		req.http.Referer ~ "(?i)xz618\.com" ||
+		req.http.Referer ~ "(?i)xzlive\.com" ||
+		req.http.Referer ~ "(?i)yaderenergy\.ru" ||
+		req.http.Referer ~ "(?i)yaminecraft\.ru" ||
 		req.http.Referer ~ "(?i)yeartwit\.com" ||
 		req.http.Referer ~ "(?i)ykecwqlixx\.ru" ||
+		req.http.Referer ~ "(?i)ynymnwbm\.bloger\.index\.hr" ||
 		req.http.Referer ~ "(?i)youandcredit\.ru" ||
+		req.http.Referer ~ "(?i)youbloodyripper\.com" ||
+		req.http.Referer ~ "(?i)youdesigner\.kz" ||
+		req.http.Referer ~ "(?i)yougetsignal\.com" ||
+		req.http.Referer ~ "(?i)youghbould\.wordpress\.com" ||
+		req.http.Referer ~ "(?i)youjizz\.vc" ||
 		req.http.Referer ~ "(?i)youporn\-forum\.ga" ||
 		req.http.Referer ~ "(?i)youporn\-forum\.uni\.me" ||
 		req.http.Referer ~ "(?i)youporn\-ru\.com" ||
 		req.http.Referer ~ "(?i)yourdesires\.ru" ||
+		req.http.Referer ~ "(?i)yourothersite\.com" ||
 		req.http.Referer ~ "(?i)yourserverisdown\.com" ||
+		req.http.Referer ~ "(?i)yoursite\.com" ||
+		req.http.Referer ~ "(?i)youtoner\.it" ||
 		req.http.Referer ~ "(?i)youtubedownload\.org" ||
+		req.http.Referer ~ "(?i)yuarra\.pluto\.ro" ||
+		req.http.Referer ~ "(?i)yubikk\.info" ||
+		req.http.Referer ~ "(?i)yugk\.net" ||
+		req.http.Referer ~ "(?i)yugo\-star\.ru" ||
+		req.http.Referer ~ "(?i)yunque\.pluto\.ro" ||
 		req.http.Referer ~ "(?i)yurgorod\.ru" ||
 		req.http.Referer ~ "(?i)zahvat\.ru" ||
+		req.http.Referer ~ "(?i)zaidia\.xhost\.ro" ||
 		req.http.Referer ~ "(?i)zaim\-pod\-zalog\-krasnodar\.ru" ||
+		req.http.Referer ~ "(?i)zaimhelp\.ru" ||
 		req.http.Referer ~ "(?i)zajm\-pod\-zalog\-nedvizhimosti\.ru" ||
+		req.http.Referer ~ "(?i)zakazfutbolki\.com" ||
+		req.http.Referer ~ "(?i)zakazvzloma\.com" ||
+		req.http.Referer ~ "(?i)zakon\-ob\-obrazovanii\.ru" ||
+		req.http.Referer ~ "(?i)zaloadi\.ru" ||
 		req.http.Referer ~ "(?i)zarabotat\-na\-sajte\.ru" ||
+		req.http.Referer ~ "(?i)zarenica\.net" ||
 		req.http.Referer ~ "(?i)zastenchivosti\.net" ||
 		req.http.Referer ~ "(?i)zastroyka\.org" ||
 		req.http.Referer ~ "(?i)zazagames\.org" ||
+		req.http.Referer ~ "(?i)zdesformula\.ru" ||
 		req.http.Referer ~ "(?i)zdesoboi\.com" ||
 		req.http.Referer ~ "(?i)zebradudka\.com" ||
+		req.http.Referer ~ "(?i)zeleznobeton\.ru" ||
+		req.http.Referer ~ "(?i)zerocash\.msk\.ru" ||
+		req.http.Referer ~ "(?i)zhorapankratov7\.blogspot\.com" ||
+		req.http.Referer ~ "(?i)zigarettenonl\.canalblog\.com" ||
+		req.http.Referer ~ "(?i)zigarettenonlinekaufen\.tumblr\.com" ||
+		req.http.Referer ~ "(?i)zigarettenonlinekaufen1\.bloog\.pl" ||
+		req.http.Referer ~ "(?i)zigarettenonlinekaufen1\.blox\.pl" ||
+		req.http.Referer ~ "(?i)zigarettenonlinekaufen2\.bloog\.pl" ||
+		req.http.Referer ~ "(?i)zigarettenonlinekaufen2\.drupalgardens\.com" ||
+		req.http.Referer ~ "(?i)zigzog\.ru" ||
+		req.http.Referer ~ "(?i)zlatnajesen\.com" ||
+		req.http.Referer ~ "(?i)zmoda\.hostreo\.com" ||
+		req.http.Referer ~ "(?i)znakomstva\-moskva77\.ru" ||
+		req.http.Referer ~ "(?i)znakomstva\-piter78\.ru" ||
+		req.http.Referer ~ "(?i)znakomstvaonlain\.ru" ||
 		req.http.Referer ~ "(?i)znaniyapolza\.ru" ||
+		req.http.Referer ~ "(?i)zojirushi\-products\.ru" ||
+		req.http.Referer ~ "(?i)zolotoy\-lis\.ru" ||
+		req.http.Referer ~ "(?i)zoominfo\.com" ||
+		req.http.Referer ~ "(?i)zuchn\.com" ||
 		req.http.Referer ~ "(?i)zverokruh\-shop\.cz" ||
-		req.http.Referer ~ "(?i)zvetki\.ru"
+		req.http.Referer ~ "(?i)zvetki\.ru" ||
+		req.http.Referer ~ "(?i)zyzzcentral\.ru" ||
+		req.http.Referer ~ "(?i)ɢoogle\.com"
 	) {
 			return (synth(444, "No Response"));
 	}

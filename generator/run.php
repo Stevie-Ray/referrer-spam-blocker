@@ -192,5 +192,8 @@ class Generate
 }
 
 require __DIR__ . '/vendor/autoload.php';
+
+use Mso\IdnaConvert\IdnaConvert;
+
 $generator = new Generate();
 $generator->generateFiles();
