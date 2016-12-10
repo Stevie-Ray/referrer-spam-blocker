@@ -66,6 +66,30 @@ You can also prevent **ghost** referral spam by:
   * [Adding a filter](https://support.google.com/analytics/answer/1033162)
   * [Enabeling bot and Spider Filtering](https://plus.google.com/+GoogleAnalytics/posts/2tJ79CkfnZk) 
 
+## Intregrate in a Dockerfile
+
+You can also integrate these configuration file in your Docker repo, so you will get always the most updated version when you build your image.
+
+For `Apache` add the following line to your `Dockerfile`
+```conf
+# Download referral-spam.conf to /usr/local/apache2/htdocs/
+ADD https://raw.githubusercontent.com/Stevie-Ray/referrer-spam-blocker/master/.htaccess /usr/local/apache2/htdocs/
+```
+For `nginx` add the following line to your `Dockerfile`
+```conf
+# Download referral-spam.conf to /etc/nginx/
+ADD https://raw.githubusercontent.com/Stevie-Ray/referrer-spam-blocker/master/referral-spam.conf /etc/nginx/
+```
+For `Varnish 4` add the following line to your `Dockerfile`
+```conf
+# Download referral-spam.vcl to /etc/varnish/
+ADD https://raw.githubusercontent.com/Stevie-Ray/referrer-spam-blocker/master/referral-spam.vcl /etc/varnish/
+```
+For `IIS` add the following line to your `Dockerfile` (change sitepath accordingly)
+```conf
+# Download web.config to /sitepath/
+ADD https://raw.githubusercontent.com/Stevie-Ray/referrer-spam-blocker/master/web.config /sitepath/
+```
 
 ## Like it?
 
