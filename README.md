@@ -69,25 +69,19 @@ You can also prevent **ghost** referral spam by:
 ## Intregrate in a Dockerfile
 
 You can also integrate these configuration file in your Docker repo, so you will get always the most updated version when you build your image.
+For `Apache, Nginx, Varnish 4` or `IIS` add the following line to your `Dockerfile`
 
-For `Apache` add the following line to your `Dockerfile`
 ```conf
-# Download referral-spam.conf to /usr/local/apache2/htdocs/
+# Apache: Download referral-spam.conf to /usr/local/apache2/htdocs/
 ADD https://raw.githubusercontent.com/Stevie-Ray/referrer-spam-blocker/master/.htaccess /usr/local/apache2/htdocs/
-```
-For `nginx` add the following line to your `Dockerfile`
-```conf
-# Download referral-spam.conf to /etc/nginx/
+ 
+# Nginx: Download referral-spam.conf to /etc/nginx/
 ADD https://raw.githubusercontent.com/Stevie-Ray/referrer-spam-blocker/master/referral-spam.conf /etc/nginx/
-```
-For `Varnish 4` add the following line to your `Dockerfile`
-```conf
-# Download referral-spam.vcl to /etc/varnish/
+ 
+# Varnish 4: Download referral-spam.vcl to /etc/varnish/
 ADD https://raw.githubusercontent.com/Stevie-Ray/referrer-spam-blocker/master/referral-spam.vcl /etc/varnish/
-```
-For `IIS` add the following line to your `Dockerfile` (change sitepath accordingly)
-```conf
-# Download web.config to /sitepath/
+ 
+# IIS: Download web.config to /sitepath/ (change sitepath accordingly)
 ADD https://raw.githubusercontent.com/Stevie-Ray/referrer-spam-blocker/master/web.config /sitepath/
 ```
 
