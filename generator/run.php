@@ -1,5 +1,7 @@
 <?php
 
+use Mso\IdnaConvert\IdnaConvert;
+
 class Generate
 {
     
@@ -35,8 +37,8 @@ class Generate
         while (($line = fgets($handle)) !== false) {
             $line = trim(preg_replace('/\s\s+/', ' ', $line));
 
-            // convert russian domains
-            if (preg_match('/[А-Яа-яЁё]/u', $line)) {
+            // convert internationalized domain names
+            if (preg_match('/[А-Яа-яЁёɢ]/u', $line)) {
 
                 $IDN = new IdnaConvert();
 
@@ -192,8 +194,6 @@ class Generate
 }
 
 require __DIR__ . '/vendor/autoload.php';
-
-use Mso\IdnaConvert\IdnaConvert;
 
 $generator = new Generate();
 $generator->generateFiles();

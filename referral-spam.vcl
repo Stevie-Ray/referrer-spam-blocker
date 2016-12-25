@@ -1,5 +1,5 @@
 # https://github.com/Stevie-Ray/referrer-spam-blocker
-# Updated 2016-12-05 18:11:39
+# Updated 2016-12-25 14:24:59
 sub block_referral_spam {
 	if (
 		req.http.Referer ~ "(?i)000Free\.us" ||
@@ -601,6 +601,7 @@ sub block_referral_spam {
 		req.http.Referer ~ "(?i)e\-kwiaciarz\.pl" ||
 		req.http.Referer ~ "(?i)e2click\.com" ||
 		req.http.Referer ~ "(?i)eandsgallery\.com" ||
+		req.http.Referer ~ "(?i)eaplay\.ru/a00af605" ||
 		req.http.Referer ~ "(?i)easycommerce\.cf" ||
 		req.http.Referer ~ "(?i)easync\.io" ||
 		req.http.Referer ~ "(?i)easytuningshop\.ru" ||
@@ -620,6 +621,7 @@ sub block_referral_spam {
 		req.http.Referer ~ "(?i)ekspertmed\.com" ||
 		req.http.Referer ~ "(?i)ekto\.ee" ||
 		req.http.Referer ~ "(?i)el\-nation\.com" ||
+		req.http.Referer ~ "(?i)electricwheelchairsarea\.com" ||
 		req.http.Referer ~ "(?i)electro\-prom\.com" ||
 		req.http.Referer ~ "(?i)elektrischezi\.canalblog\.com" ||
 		req.http.Referer ~ "(?i)elektrischeziga\.livejournal\.com" ||
@@ -1070,6 +1072,7 @@ sub block_referral_spam {
 		req.http.Referer ~ "(?i)itronics\.ca" ||
 		req.http.Referer ~ "(?i)itsdp3\.com" ||
 		req.http.Referer ~ "(?i)izhevsk\.xrus\.org" ||
+		req.http.Referer ~ "(?i)j\-times\.ru" ||
 		req.http.Referer ~ "(?i)janettabridal\.com" ||
 		req.http.Referer ~ "(?i)japfm\.com" ||
 		req.http.Referer ~ "(?i)jasonpartington\.com" ||
@@ -1347,6 +1350,7 @@ sub block_referral_spam {
 		req.http.Referer ~ "(?i)moi\-glazki\.ru" ||
 		req.http.Referer ~ "(?i)mokrayakiska\.com" ||
 		req.http.Referer ~ "(?i)mole\.pluto\.ro" ||
+		req.http.Referer ~ "(?i)monarhs\.info" ||
 		req.http.Referer ~ "(?i)monetizationking\.net" ||
 		req.http.Referer ~ "(?i)money\-every\-day\.com" ||
 		req.http.Referer ~ "(?i)moneymaster\.ru" ||
@@ -1469,6 +1473,7 @@ sub block_referral_spam {
 		req.http.Referer ~ "(?i)offtime\.ru" ||
 		req.http.Referer ~ "(?i)ok\.ru" ||
 		req.http.Referer ~ "(?i)oklogistic\.ru" ||
+		req.http.Referer ~ "(?i)okout\.ru/a00af605" ||
 		req.http.Referer ~ "(?i)okroshki\.ru" ||
 		req.http.Referer ~ "(?i)oktube\.ru" ||
 		req.http.Referer ~ "(?i)olvanto\.ru" ||
@@ -1823,7 +1828,6 @@ sub block_referral_spam {
 		req.http.Referer ~ "(?i)searchlock\.com" ||
 		req.http.Referer ~ "(?i)seccioncontrabajo\.com" ||
 		req.http.Referer ~ "(?i)secret\.xn\-\-oogle\-wmc\.com" ||
-		req.http.Referer ~ "(?i)secret\.ɢoogle\.com" ||
 		req.http.Referer ~ "(?i)secretscook\.ru" ||
 		req.http.Referer ~ "(?i)securityallianceservices\.com" ||
 		req.http.Referer ~ "(?i)seksotur\.ru" ||
@@ -2052,6 +2056,7 @@ sub block_referral_spam {
 		req.http.Referer ~ "(?i)tedy\.su" ||
 		req.http.Referer ~ "(?i)teedle\.co" ||
 		req.http.Referer ~ "(?i)tehngr\.ru" ||
+		req.http.Referer ~ "(?i)telegramdownload10\.com" ||
 		req.http.Referer ~ "(?i)telesvoboda\.ru" ||
 		req.http.Referer ~ "(?i)teplolidoma\.ru" ||
 		req.http.Referer ~ "(?i)teslathemes\.com" ||
@@ -2066,7 +2071,6 @@ sub block_referral_spam {
 		req.http.Referer ~ "(?i)theguardlan\.com" ||
 		req.http.Referer ~ "(?i)theheroes\.ru" ||
 		req.http.Referer ~ "(?i)thejournal\.ru" ||
-		req.http.Referer ~ "(?i)thenextweb\.com" ||
 		req.http.Referer ~ "(?i)thepokertimer\.com" ||
 		req.http.Referer ~ "(?i)thewomenlife\.com" ||
 		req.http.Referer ~ "(?i)thiegs\.reco\.ws" ||
@@ -2164,6 +2168,7 @@ sub block_referral_spam {
 		req.http.Referer ~ "(?i)trahvid\.com" ||
 		req.http.Referer ~ "(?i)tramadolandtizanidine\.blogspot\.com" ||
 		req.http.Referer ~ "(?i)traxdom\.ru" ||
+		req.http.Referer ~ "(?i)tri\-slona\.org" ||
 		req.http.Referer ~ "(?i)trion\.od\.au" ||
 		req.http.Referer ~ "(?i)trion\.od\.ua" ||
 		req.http.Referer ~ "(?i)triumf\-realty\.ru" ||
@@ -2323,6 +2328,7 @@ sub block_referral_spam {
 		req.http.Referer ~ "(?i)webmonetizer\.net" ||
 		req.http.Referer ~ "(?i)webradiology\.ru" ||
 		req.http.Referer ~ "(?i)webs\.com" ||
+		req.http.Referer ~ "(?i)website\-analytics\.online" ||
 		req.http.Referer ~ "(?i)website\-analyzer\.info" ||
 		req.http.Referer ~ "(?i)website\-errors\-scanner\.com" ||
 		req.http.Referer ~ "(?i)website\-speed\-check\.site" ||
@@ -2489,8 +2495,7 @@ sub block_referral_spam {
 		req.http.Referer ~ "(?i)zuchn\.com" ||
 		req.http.Referer ~ "(?i)zverokruh\-shop\.cz" ||
 		req.http.Referer ~ "(?i)zvetki\.ru" ||
-		req.http.Referer ~ "(?i)zyzzcentral\.ru" ||
-		req.http.Referer ~ "(?i)ɢoogle\.com"
+		req.http.Referer ~ "(?i)zyzzcentral\.ru"
 	) {
 			return (synth(444, "No Response"));
 	}
