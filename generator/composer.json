@@ -1,5 +1,5 @@
 {
   "require": {
-    "mso/idna-convert": "^1.1.0"
+    "mso/idna-convert": "~1.1"
   }
 }

@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "cfb7f527e47cb3788c7f778b33ec46f1",
-    "content-hash": "450e9d30af878675fefd30922cb0cc8e",
+    "hash": "ebce8f4913a69858fd8f41d6ee11da05",
+    "content-hash": "f5a9a5ac82ffa8df79c11ee4dc717e79",
     "packages": [
         {
             "name": "mso/idna-convert",
