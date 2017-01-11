@@ -1,5 +1,5 @@
 # https://github.com/Stevie-Ray/referrer-spam-blocker
-# Updated 2017-01-11 13:43:21
+# Updated 2017-01-11 13:54:44
 
 <IfModule mod_rewrite.c>
 
@@ -62,8 +62,8 @@ RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*adcash\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*addblueoff\.com\.ua.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*addons\.mozilla\.org/en\-us/firefox/addon/ilovevitaly.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*adelly\.bg.*$ [NC,OR]
-RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*adspart\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*adf\.ly.*$ [NC,OR]
+RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*adspart\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*adtiger\.tk.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*adultfullhd\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*adventureparkcostarica\.com.*$ [NC,OR]
@@ -2600,8 +2600,8 @@ SetEnvIfNoCase Referer adcash\.com spambot=yes
 SetEnvIfNoCase Referer addblueoff\.com\.ua spambot=yes
 SetEnvIfNoCase Referer addons\.mozilla\.org/en\-us/firefox/addon/ilovevitaly spambot=yes
 SetEnvIfNoCase Referer adelly\.bg spambot=yes
-SetEnvIfNoCase Referer adspart\.com spambot=yes
 SetEnvIfNoCase Referer adf\.ly spambot=yes
+SetEnvIfNoCase Referer adspart\.com spambot=yes
 SetEnvIfNoCase Referer adtiger\.tk spambot=yes
 SetEnvIfNoCase Referer adultfullhd\.com spambot=yes
 SetEnvIfNoCase Referer adventureparkcostarica\.com spambot=yes

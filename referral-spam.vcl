@@ -1,5 +1,5 @@
 # https://github.com/Stevie-Ray/referrer-spam-blocker
-# Updated 2017-01-11 13:43:21
+# Updated 2017-01-11 13:54:44
 sub block_referral_spam {
 	if (
 		req.http.Referer ~ "(?i)000Free\.us" ||
@@ -59,8 +59,8 @@ sub block_referral_spam {
 		req.http.Referer ~ "(?i)addblueoff\.com\.ua" ||
 		req.http.Referer ~ "(?i)addons\.mozilla\.org/en\-us/firefox/addon/ilovevitaly" ||
 		req.http.Referer ~ "(?i)adelly\.bg" ||
-		req.http.Referer ~ "(?i)adspart\.com" ||
 		req.http.Referer ~ "(?i)adf\.ly" ||
+		req.http.Referer ~ "(?i)adspart\.com" ||
 		req.http.Referer ~ "(?i)adtiger\.tk" ||
 		req.http.Referer ~ "(?i)adultfullhd\.com" ||
 		req.http.Referer ~ "(?i)adventureparkcostarica\.com" ||
