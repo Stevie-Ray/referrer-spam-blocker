@@ -1,5 +1,5 @@
 # https://github.com/Stevie-Ray/referrer-spam-blocker
-# Updated 2017-01-11 14:54:33
+# Updated 2017-01-11 15:29:55
 #
 # Put referral-spam.res in /path/to/vassals, then include it from within /path/to/vassals/vassal.ini:
 #
@@ -2546,11 +2546,4 @@ route-referer = ~*zuchn\.com break:403 Forbidden
 route-referer = ~*zverokruh\-shop\.cz break:403 Forbidden
 route-referer = ~*zvetki\.ru break:403 Forbidden
 route-referer = ~*zyzzcentral\.ru break:403 Forbidden
-route-referer = ~*xn\-\-c1acygb\.xn\-\-p1ai break:403 Forbidden
-route-referer = ~*xn\-\-\-\-8sbhefaln6acifdaon5c6f4axh\.xn\-\-p1ai break:403 Forbidden
-route-referer = ~*xn\-\-80aanaardaperhcem4a6i\.com break:403 Forbidden
-route-referer = ~*xn\-\-80adgcaax6acohn6r\.xn\-\-p1ai break:403 Forbidden
-route-referer = ~*xn\-\-\-\-7sbho2agebbhlivy\.xn\-\-p1ai break:403 Forbidden
-route-referer = ~*xn\-\-80adaggc5bdhlfamsfdij4p7b\.xn\-\-p1ai break:403 Forbidden
-route-referer = ~*xn\-\-90acenikpebbdd4f6d\.xn\-\-p1ai break:403 Forbidden
 route-label = referral_spam
