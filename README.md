@@ -1,7 +1,7 @@
 referrer-spam-blocker [![Build Status](https://travis-ci.org/Stevie-Ray/referrer-spam-blocker.svg)](https://travis-ci.org/Stevie-Ray/referrer-spam-blocker)
 ====================================
 
-Apache, Nginx, IIS & Varnish blacklist plus Google Analytics segment to prevent referrer spam traffic 👾
+Apache, Nginx, IIS, uWSGI & Varnish blacklist plus Google Analytics segment to prevent referrer spam traffic 👾
 
 - - - -
 
