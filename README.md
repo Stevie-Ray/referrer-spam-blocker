@@ -41,14 +41,22 @@ sub vcl_recv { call block_referral_spam; }
 ```
 
 
-## Internet Information Services (IIS): web.config 
+## Internet Information Services (IIS): web.config
 
 The web.config file is located in the root directory of your Windows Server web application.
 
 
+## uWSGI: referral_spam.res
+
+Include the file `referral_spam.res` into your vassal ini configuration file:
+
+```
+ini = referral-spam:blacklist_spam
+```
+
 ## Options for Google Analytics 'ghost' spam
 
-The above methods don't stop the Google Analytics **ghost** referral spam (because they are hitting Analytics directly and don't touching your website). You should use filters in Analytics to prevent **ghost** referral spam. 
+The above methods don't stop the Google Analytics **ghost** referral spam (because they are hitting Analytics directly and don't touching your website). You should use filters in Analytics to prevent **ghost** referral spam.
 
 
 Navigate to your Google Analytics Admin panel and add a Segment:
@@ -64,7 +72,7 @@ Source | matches regex |Copy all the domains from [google-exclude.txt](https://r
 You can also prevent **ghost** referral spam by:
 
   * [Adding a filter](https://support.google.com/analytics/answer/1033162)
-  * [Enabeling bot and Spider Filtering](https://plus.google.com/+GoogleAnalytics/posts/2tJ79CkfnZk) 
+  * [Enabeling bot and Spider Filtering](https://plus.google.com/+GoogleAnalytics/posts/2tJ79CkfnZk)
 
 ## Intregrate in a Dockerfile
 
@@ -74,13 +82,13 @@ For `Apache, Nginx, Varnish 4` or `IIS` add the following line to your `Dockerfi
 ```conf
 # Apache: Download referral-spam.conf to /usr/local/apache2/htdocs/
 ADD https://raw.githubusercontent.com/Stevie-Ray/referrer-spam-blocker/master/.htaccess /usr/local/apache2/htdocs/
- 
+
 # Nginx: Download referral-spam.conf to /etc/nginx/
 ADD https://raw.githubusercontent.com/Stevie-Ray/referrer-spam-blocker/master/referral-spam.conf /etc/nginx/
- 
+
 # Varnish 4: Download referral-spam.vcl to /etc/varnish/
 ADD https://raw.githubusercontent.com/Stevie-Ray/referrer-spam-blocker/master/referral-spam.vcl /etc/varnish/
- 
+
 # IIS: Download web.config to /sitepath/ (change sitepath accordingly)
 ADD https://raw.githubusercontent.com/Stevie-Ray/referrer-spam-blocker/master/web.config /sitepath/
 ```
