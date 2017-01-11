@@ -1,5 +1,5 @@
 # https://github.com/Stevie-Ray/referrer-spam-blocker
-# Updated 2017-01-11 14:34:39
+# Updated 2017-01-11 14:54:33
 #
 # Put referral-spam.res in /path/to/vassals, then include it from within /path/to/vassals/vassal.ini:
 #
@@ -53,6 +53,7 @@ route-referer = ~*abbanreddy\.com break:403 Forbidden
 route-referer = ~*abc\.xyz break:403 Forbidden
 route-referer = ~*abcdefh\.xyz break:403 Forbidden
 route-referer = ~*abcdeg\.xyz break:403 Forbidden
+route-referer = ~*abclauncher\.com break:403 Forbidden
 route-referer = ~*abiente\.ru break:403 Forbidden
 route-referer = ~*abovetherivernc\.com break:403 Forbidden
 route-referer = ~*abtasty\.com break:403 Forbidden
@@ -174,6 +175,7 @@ route-referer = ~*autovideobroadcast\.com break:403 Forbidden
 route-referer = ~*autowebmarket\.com\.ua break:403 Forbidden
 route-referer = ~*avek\.ru break:403 Forbidden
 route-referer = ~*aviapanda\.ru break:403 Forbidden
+route-referer = ~*aviav\.ru\.com break:403 Forbidden
 route-referer = ~*avitocars\.ru break:403 Forbidden
 route-referer = ~*aviva\-limoux\.com break:403 Forbidden
 route-referer = ~*avkzarabotok\.com break:403 Forbidden
@@ -191,6 +193,7 @@ route-referer = ~*azartniy\-bonus\.com break:403 Forbidden
 route-referer = ~*azazu\.ru break:403 Forbidden
 route-referer = ~*azbuka\-mo\.ru break:403 Forbidden
 route-referer = ~*azbukadiets\.ru break:403 Forbidden
+route-referer = ~*azbukafree\.com break:403 Forbidden
 route-referer = ~*azlex\.uz break:403 Forbidden
 route-referer = ~*b\-buyeasy\.com break:403 Forbidden
 route-referer = ~*b2b\-lounge\.com break:403 Forbidden
@@ -1323,6 +1326,7 @@ route-referer = ~*medmajor\.ru break:403 Forbidden
 route-referer = ~*medosmotr\-ufa\.ru break:403 Forbidden
 route-referer = ~*meds\-online24\.com break:403 Forbidden
 route-referer = ~*medtherapy\.ru break:403 Forbidden
+route-referer = ~*meduza\-consult\.ru break:403 Forbidden
 route-referer = ~*meendo\-free\-traffic\.ga break:403 Forbidden
 route-referer = ~*megaapteka\.ru break:403 Forbidden
 route-referer = ~*megakino\.net break:403 Forbidden
@@ -1365,6 +1369,7 @@ route-referer = ~*mobilemedia\.md break:403 Forbidden
 route-referer = ~*mobot\.site break:403 Forbidden
 route-referer = ~*mobplayer\.net break:403 Forbidden
 route-referer = ~*mobplayer\.ru break:403 Forbidden
+route-referer = ~*mockupui\.com break:403 Forbidden
 route-referer = ~*modabutik\.ru break:403 Forbidden
 route-referer = ~*moesonce\.com break:403 Forbidden
 route-referer = ~*moi\-glazki\.ru break:403 Forbidden
@@ -1896,6 +1901,7 @@ route-referer = ~*shisha\-swag\.de break:403 Forbidden
 route-referer = ~*shlyahten\.ru break:403 Forbidden
 route-referer = ~*shodanhq\.com break:403 Forbidden
 route-referer = ~*shop\-electron\.ru break:403 Forbidden
+route-referer = ~*shop\.xz618\.com break:403 Forbidden
 route-referer = ~*shoppingmiracles\.co\.uk break:403 Forbidden
 route-referer = ~*shopvilleroyboch\.com\.ua break:403 Forbidden
 route-referer = ~*shopwme\.ru break:403 Forbidden
@@ -2377,6 +2383,7 @@ route-referer = ~*website\-stealer\-warning\-alert\.hdmoviecams\.com break:403 F
 route-referer = ~*websites\-reviews\.com break:403 Forbidden
 route-referer = ~*websocial\.me break:403 Forbidden
 route-referer = ~*webtherapy\.ru break:403 Forbidden
+route-referer = ~*weburlopener\.com break:403 Forbidden
 route-referer = ~*wedding\-salon\.net break:403 Forbidden
 route-referer = ~*weebly\.com break:403 Forbidden
 route-referer = ~*weekes\.biz\.tc break:403 Forbidden
@@ -2539,4 +2546,11 @@ route-referer = ~*zuchn\.com break:403 Forbidden
 route-referer = ~*zverokruh\-shop\.cz break:403 Forbidden
 route-referer = ~*zvetki\.ru break:403 Forbidden
 route-referer = ~*zyzzcentral\.ru break:403 Forbidden
+route-referer = ~*xn\-\-c1acygb\.xn\-\-p1ai break:403 Forbidden
+route-referer = ~*xn\-\-\-\-8sbhefaln6acifdaon5c6f4axh\.xn\-\-p1ai break:403 Forbidden
+route-referer = ~*xn\-\-80aanaardaperhcem4a6i\.com break:403 Forbidden
+route-referer = ~*xn\-\-80adgcaax6acohn6r\.xn\-\-p1ai break:403 Forbidden
+route-referer = ~*xn\-\-\-\-7sbho2agebbhlivy\.xn\-\-p1ai break:403 Forbidden
+route-referer = ~*xn\-\-80adaggc5bdhlfamsfdij4p7b\.xn\-\-p1ai break:403 Forbidden
+route-referer = ~*xn\-\-90acenikpebbdd4f6d\.xn\-\-p1ai break:403 Forbidden
 route-label = referral_spam
