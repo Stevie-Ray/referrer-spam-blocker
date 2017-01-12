@@ -1,9 +1,9 @@
 # https://github.com/Stevie-Ray/referrer-spam-blocker
-# Updated 2017-01-11 15:29:55
+# Updated 2017-01-12 10:25:36
 #
 # Put referral-spam.res in /path/to/vassals, then include it from within /path/to/vassals/vassal.ini:
 #
-# ini = referral-spam:blacklist_spam
+# ini = referral_spam.res:blacklist_spam
 #
 
 [blacklist_spam]
@@ -783,6 +783,7 @@ route-referer = ~*flavors\.me break:403 Forbidden
 route-referer = ~*flex4launch\.ru break:403 Forbidden
 route-referer = ~*floating\-share\-buttons\.com break:403 Forbidden
 route-referer = ~*flooringinstallation\-edmonton\.com break:403 Forbidden
+route-referer = ~*flowersbazar\.com break:403 Forbidden
 route-referer = ~*flowwwers\.com break:403 Forbidden
 route-referer = ~*flprog\.com break:403 Forbidden
 route-referer = ~*flytourisme\.org break:403 Forbidden
@@ -957,6 +958,7 @@ route-referer = ~*h2monline\.com break:403 Forbidden
 route-referer = ~*hacktougroup\.ru break:403 Forbidden
 route-referer = ~*hahashka\.ru break:403 Forbidden
 route-referer = ~*haikuware\.com break:403 Forbidden
+route-referer = ~*handicapvansarea\.com break:403 Forbidden
 route-referer = ~*handicapvantoday\.com break:403 Forbidden
 route-referer = ~*handsandlegs\.ru break:403 Forbidden
 route-referer = ~*hanink\.biz\.ly break:403 Forbidden
@@ -1060,6 +1062,7 @@ route-referer = ~*indetiske\.ya\.ru break:403 Forbidden
 route-referer = ~*indo\-export\.ru break:403 Forbidden
 route-referer = ~*infazavr\.ru break:403 Forbidden
 route-referer = ~*infobabki\.ru break:403 Forbidden
+route-referer = ~*infokonkurs\.ru break:403 Forbidden
 route-referer = ~*innodgfdriverhm\.aircus\.com break:403 Forbidden
 route-referer = ~*intelhdgraphicsgtdrive6w\.metroblog\.com break:403 Forbidden
 route-referer = ~*interfucks\.net break:403 Forbidden
@@ -1238,6 +1241,7 @@ route-referer = ~*lezbiyanki\.net break:403 Forbidden
 route-referer = ~*lflash\.ru break:403 Forbidden
 route-referer = ~*li\-er\.ru break:403 Forbidden
 route-referer = ~*lida\-ru\.com break:403 Forbidden
+route-referer = ~*life\.biz\.ua break:403 Forbidden
 route-referer = ~*lifebyleese\.com break:403 Forbidden
 route-referer = ~*lifehacĸer\.com break:403 Forbidden
 route-referer = ~*light\.ifmo\.ru break:403 Forbidden
@@ -1415,6 +1419,7 @@ route-referer = ~*muscle\-factory\.com\.ua break:403 Forbidden
 route-referer = ~*music\.utrolive\.ru break:403 Forbidden
 route-referer = ~*musicas\.baixar\-musicas\-gratis\.com break:403 Forbidden
 route-referer = ~*musicprojectfoundation\.com break:403 Forbidden
+route-referer = ~*musicstock\.me break:403 Forbidden
 route-referer = ~*musicvidz\.ru break:403 Forbidden
 route-referer = ~*muz\-baza\.net break:403 Forbidden
 route-referer = ~*muz\-shoes\.ru break:403 Forbidden
@@ -1688,6 +1693,7 @@ route-referer = ~*puteshestvennik\.com break:403 Forbidden
 route-referer = ~*putevka24\.ru break:403 Forbidden
 route-referer = ~*putitin\.me break:403 Forbidden
 route-referer = ~*puzo2arbuza\.ru break:403 Forbidden
+route-referer = ~*puzzleweb\.ru break:403 Forbidden
 route-referer = ~*pyrodesigns\.com\.au break:403 Forbidden
 route-referer = ~*q\-moto\.ru break:403 Forbidden
 route-referer = ~*qcstrtvt\.bloger\.index\.hr break:403 Forbidden
@@ -1781,6 +1787,7 @@ route-referer = ~*rumamba\.com break:403 Forbidden
 route-referer = ~*runovschool\.ua break:403 Forbidden
 route-referer = ~*runstocks\.com break:403 Forbidden
 route-referer = ~*rus\-teh\.narod\.ru break:403 Forbidden
+route-referer = ~*ruscopybook\.com break:403 Forbidden
 route-referer = ~*rusenvironmental\.net break:403 Forbidden
 route-referer = ~*rusexy\.xyz break:403 Forbidden
 route-referer = ~*rusoft\-zone\.ru break:403 Forbidden
@@ -1797,6 +1804,7 @@ route-referer = ~*sahohev\.000host\.co\.uk break:403 Forbidden
 route-referer = ~*saitevpatorii\.com break:403 Forbidden
 route-referer = ~*sakhboard\.ru break:403 Forbidden
 route-referer = ~*sale\-japan\.com break:403 Forbidden
+route-referer = ~*saletool\.ru break:403 Forbidden
 route-referer = ~*salutmontreal\.com break:403 Forbidden
 route-referer = ~*samo\-soznanie\.ru break:403 Forbidden
 route-referer = ~*sanatorrii\.ru break:403 Forbidden
@@ -2459,6 +2467,7 @@ route-referer = ~*xn\-\-90adhhccf5aeewt7j\.xn\-\-p1ai break:403 Forbidden
 route-referer = ~*xn\-\-b1ag5cfn\.xn\-\-p1ai break:403 Forbidden
 route-referer = ~*xn\-\-b1agm2d\.net break:403 Forbidden
 route-referer = ~*xn\-\-c1acygb\.xn\-\-p1ai break:403 Forbidden
+route-referer = ~*xn\-\-d1abj0abs9d\.in\.ua break:403 Forbidden
 route-referer = ~*xn\-\-e1aggki3c\.xn\-\-80adxhks break:403 Forbidden
 route-referer = ~*xn\-\-h1ahbi\.com\.ua break:403 Forbidden
 route-referer = ~*xn\-\-hxazdsfy\.blogspot\.com break:403 Forbidden
