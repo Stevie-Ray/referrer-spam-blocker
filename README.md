@@ -51,7 +51,7 @@ The web.config file is located in the root directory of your Windows Server web 
 Include the file `referral_spam.res` into your vassal ini configuration file:
 
 ```
-ini = referral-spam:blacklist_spam
+ini = referral_spam.res:blacklist_spam
 ```
 
 ## Options for Google Analytics 'ghost' spam
