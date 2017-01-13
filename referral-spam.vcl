@@ -1,5 +1,5 @@
 # https://github.com/Stevie-Ray/referrer-spam-blocker
-# Updated 2017-01-13 09:47:08
+# Updated 2017-01-13 15:37:59
 sub block_referral_spam {
 	if (
 		req.http.Referer ~ "(?i)000Free\.us" ||
@@ -60,7 +60,6 @@ sub block_referral_spam {
 		req.http.Referer ~ "(?i)addblueoff\.com\.ua" ||
 		req.http.Referer ~ "(?i)addons\.mozilla\.org/en\-us/firefox/addon/ilovevitaly" ||
 		req.http.Referer ~ "(?i)adelly\.bg" ||
-		req.http.Referer ~ "(?i)adf\.ly" ||
 		req.http.Referer ~ "(?i)adspart\.com" ||
 		req.http.Referer ~ "(?i)adtiger\.tk" ||
 		req.http.Referer ~ "(?i)adultfullhd\.com" ||
@@ -100,6 +99,7 @@ sub block_referral_spam {
 		req.http.Referer ~ "(?i)allknow\.info" ||
 		req.http.Referer ~ "(?i)allkrim\.com" ||
 		req.http.Referer ~ "(?i)allnews\.md" ||
+		req.http.Referer ~ "(?i)allnews24\.in" ||
 		req.http.Referer ~ "(?i)allpdfmags\.net" ||
 		req.http.Referer ~ "(?i)allsilver925\.co\.il" ||
 		req.http.Referer ~ "(?i)alltheviews\.com" ||
@@ -592,6 +592,7 @@ sub block_referral_spam {
 		req.http.Referer ~ "(?i)dostavka\-v\-ukrainu\.ru" ||
 		req.http.Referer ~ "(?i)dosug\-lux\.ru" ||
 		req.http.Referer ~ "(?i)download\-of\-the\-warez\.blogspot\.com" ||
+		req.http.Referer ~ "(?i)downloadkakaotalk\.com" ||
 		req.http.Referer ~ "(?i)downloadmefiranaratb1972\.xpg\.com\.br" ||
 		req.http.Referer ~ "(?i)doyouknowtheword\-flummox\.ml" ||
 		req.http.Referer ~ "(?i)dprkboards\.com" ||
@@ -1134,6 +1135,7 @@ sub block_referral_spam {
 		req.http.Referer ~ "(?i)kinoflux\.net" ||
 		req.http.Referer ~ "(?i)kinohit1\.ru" ||
 		req.http.Referer ~ "(?i)kinopolet\.net" ||
+		req.http.Referer ~ "(?i)kinotorka\.ru" ||
 		req.http.Referer ~ "(?i)kiprinform\.com" ||
 		req.http.Referer ~ "(?i)kiwe\-analytics\.com" ||
 		req.http.Referer ~ "(?i)kiwi237au\.tk" ||
@@ -1280,6 +1282,7 @@ sub block_referral_spam {
 		req.http.Referer ~ "(?i)magda\-gadalka\.ru" ||
 		req.http.Referer ~ "(?i)magento\-crew\.net" ||
 		req.http.Referer ~ "(?i)magicdiet\.gq" ||
+		req.http.Referer ~ "(?i)mail\.allnews24\.in" ||
 		req.http.Referer ~ "(?i)mainlinehobby\.net" ||
 		req.http.Referer ~ "(?i)make\-money\-online\.com" ||
 		req.http.Referer ~ "(?i)makedo\.ru" ||
@@ -1725,6 +1728,7 @@ sub block_referral_spam {
 		req.http.Referer ~ "(?i)real\-time\-analytics\.com" ||
 		req.http.Referer ~ "(?i)realnye\-otzyvy\.info" ||
 		req.http.Referer ~ "(?i)realting\-moscow\.ru" ||
+		req.http.Referer ~ "(?i)recipedays\.com" ||
 		req.http.Referer ~ "(?i)recipedays\.ru" ||
 		req.http.Referer ~ "(?i)rednise\.com" ||
 		req.http.Referer ~ "(?i)refererx\.com" ||
@@ -2422,6 +2426,7 @@ sub block_referral_spam {
 		req.http.Referer ~ "(?i)worldlovers\.ru" ||
 		req.http.Referer ~ "(?i)wormix\-cheats\.ru" ||
 		req.http.Referer ~ "(?i)wowas31\.ucoz\.ru" ||
+		req.http.Referer ~ "(?i)woweb\.com\.ua" ||
 		req.http.Referer ~ "(?i)wrazilwispolecznie\.pl" ||
 		req.http.Referer ~ "(?i)writingservices17\.blogspot\.ru" ||
 		req.http.Referer ~ "(?i)wrona\.it" ||

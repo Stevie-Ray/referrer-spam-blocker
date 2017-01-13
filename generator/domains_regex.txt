@@ -1,6 +1,0 @@
-social-buttons.*.xyz
-social-s-....xyz
-free-share-buttons.*.xyz
-law-enforcement.*.xyz
-alert-....xyz
-law-enforcement-...xyz

@@ -1,10 +1,9 @@
 # https://github.com/Stevie-Ray/referrer-spam-blocker
-# Updated 2017-01-13 09:47:08
+# Updated 2017-01-13 15:37:59
 #
 # Put referral-spam.res in /path/to/vassals, then include it from within /path/to/vassals/vassal.ini:
 #
 # ini = referral_spam.res:blacklist_spam
-#
 
 [blacklist_spam]
 route-referer = (?i)000Free\.us break:403 Forbidden
@@ -65,7 +64,6 @@ route-referer = (?i)adcash\.com break:403 Forbidden
 route-referer = (?i)addblueoff\.com\.ua break:403 Forbidden
 route-referer = (?i)addons\.mozilla\.org/en\-us/firefox/addon/ilovevitaly break:403 Forbidden
 route-referer = (?i)adelly\.bg break:403 Forbidden
-route-referer = (?i)adf\.ly break:403 Forbidden
 route-referer = (?i)adspart\.com break:403 Forbidden
 route-referer = (?i)adtiger\.tk break:403 Forbidden
 route-referer = (?i)adultfullhd\.com break:403 Forbidden
@@ -105,6 +103,7 @@ route-referer = (?i)allforminecraft\.ru break:403 Forbidden
 route-referer = (?i)allknow\.info break:403 Forbidden
 route-referer = (?i)allkrim\.com break:403 Forbidden
 route-referer = (?i)allnews\.md break:403 Forbidden
+route-referer = (?i)allnews24\.in break:403 Forbidden
 route-referer = (?i)allpdfmags\.net break:403 Forbidden
 route-referer = (?i)allsilver925\.co\.il break:403 Forbidden
 route-referer = (?i)alltheviews\.com break:403 Forbidden
@@ -597,6 +596,7 @@ route-referer = (?i)dostavka\-v\-krym\.com break:403 Forbidden
 route-referer = (?i)dostavka\-v\-ukrainu\.ru break:403 Forbidden
 route-referer = (?i)dosug\-lux\.ru break:403 Forbidden
 route-referer = (?i)download\-of\-the\-warez\.blogspot\.com break:403 Forbidden
+route-referer = (?i)downloadkakaotalk\.com break:403 Forbidden
 route-referer = (?i)downloadmefiranaratb1972\.xpg\.com\.br break:403 Forbidden
 route-referer = (?i)doyouknowtheword\-flummox\.ml break:403 Forbidden
 route-referer = (?i)dprkboards\.com break:403 Forbidden
@@ -1139,6 +1139,7 @@ route-referer = (?i)kinobaks\.com break:403 Forbidden
 route-referer = (?i)kinoflux\.net break:403 Forbidden
 route-referer = (?i)kinohit1\.ru break:403 Forbidden
 route-referer = (?i)kinopolet\.net break:403 Forbidden
+route-referer = (?i)kinotorka\.ru break:403 Forbidden
 route-referer = (?i)kiprinform\.com break:403 Forbidden
 route-referer = (?i)kiwe\-analytics\.com break:403 Forbidden
 route-referer = (?i)kiwi237au\.tk break:403 Forbidden
@@ -1285,6 +1286,7 @@ route-referer = (?i)magazintiande\.ru break:403 Forbidden
 route-referer = (?i)magda\-gadalka\.ru break:403 Forbidden
 route-referer = (?i)magento\-crew\.net break:403 Forbidden
 route-referer = (?i)magicdiet\.gq break:403 Forbidden
+route-referer = (?i)mail\.allnews24\.in break:403 Forbidden
 route-referer = (?i)mainlinehobby\.net break:403 Forbidden
 route-referer = (?i)make\-money\-online\.com break:403 Forbidden
 route-referer = (?i)makedo\.ru break:403 Forbidden
@@ -1730,6 +1732,7 @@ route-referer = (?i)rcb101\.ru break:403 Forbidden
 route-referer = (?i)real\-time\-analytics\.com break:403 Forbidden
 route-referer = (?i)realnye\-otzyvy\.info break:403 Forbidden
 route-referer = (?i)realting\-moscow\.ru break:403 Forbidden
+route-referer = (?i)recipedays\.com break:403 Forbidden
 route-referer = (?i)recipedays\.ru break:403 Forbidden
 route-referer = (?i)rednise\.com break:403 Forbidden
 route-referer = (?i)refererx\.com break:403 Forbidden
@@ -2427,6 +2430,7 @@ route-referer = (?i)worldis\.me break:403 Forbidden
 route-referer = (?i)worldlovers\.ru break:403 Forbidden
 route-referer = (?i)wormix\-cheats\.ru break:403 Forbidden
 route-referer = (?i)wowas31\.ucoz\.ru break:403 Forbidden
+route-referer = (?i)woweb\.com\.ua break:403 Forbidden
 route-referer = (?i)wrazilwispolecznie\.pl break:403 Forbidden
 route-referer = (?i)writingservices17\.blogspot\.ru break:403 Forbidden
 route-referer = (?i)wrona\.it break:403 Forbidden

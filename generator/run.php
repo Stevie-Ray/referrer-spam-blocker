@@ -189,7 +189,7 @@ class Generate
 
         $data = "# " . $this->projectUrl . "\n# Updated " . $date . "\n#\n" .
 			"# Put referral-spam.res in /path/to/vassals, then include it from within /path/to/vassals/vassal.ini:\n" .
-			"#\n# ini = referral_spam.res:blacklist_spam\n#\n\n" .
+			"#\n# ini = referral_spam.res:blacklist_spam\n\n" .
 			"[blacklist_spam]\n";
         foreach ($lines as $line) {
         	$data .= "route-referer = (?i)" . preg_quote($line) . " break:403 Forbidden\n";
