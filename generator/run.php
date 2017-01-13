@@ -4,7 +4,7 @@ use Mso\IdnaConvert\IdnaConvert;
 
 class Generate
 {
-    
+
     private $projectUrl = "https://github.com/Stevie-Ray/referrer-spam-blocker";
 
     public function generateFiles()
@@ -19,6 +19,7 @@ class Generate
         $this->createNginx($date, $lines);
         $this->createVarnish($date, $lines);
         $this->createIIS($date, $lines);
+        $this->createuWSGI($date, $lines);
         $this->createGoogleExclude($lines);
     }
 
@@ -173,6 +174,27 @@ class Generate
         }
 
         $data .= "\t\t\t</rules>\n\t\t</rewrite>\n\t</system.webServer>\n</configuration>";
+
+        $this->writeToFile($file, $data);
+    }
+
+
+    /**
+     * @param string $date
+     * @param array $lines
+     */
+    public function createuWSGI($date, array $lines)
+    {
+        $file = __DIR__ . '/../referral_spam.res';
+
+        $data = "# " . $this->projectUrl . "\n# Updated " . $date . "\n#\n" .
+			"# Put referral-spam.res in /path/to/vassals, then include it from within /path/to/vassals/vassal.ini:\n" .
+			"#\n# ini = referral_spam.res:blacklist_spam\n#\n\n" .
+			"[blacklist_spam]\n";
+        foreach ($lines as $line) {
+        	$data .= "route-referer = (?i)" . preg_quote($line) . " break:403 Forbidden\n";
+        }
+        $data .= "route-label = referral_spam";
 
         $this->writeToFile($file, $data);
     }
