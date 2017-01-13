@@ -1,5 +1,5 @@
 # https://github.com/Stevie-Ray/referrer-spam-blocker
-# Updated 2017-01-12 10:25:36
+# Updated 2017-01-13 09:47:08
 sub block_referral_spam {
 	if (
 		req.http.Referer ~ "(?i)000Free\.us" ||
