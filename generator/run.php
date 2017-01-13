@@ -192,7 +192,7 @@ class Generate
 			"#\n# ini = referral_spam.res:blacklist_spam\n#\n\n" .
 			"[blacklist_spam]\n";
         foreach ($lines as $line) {
-        	$data .= "route-referer = ~*" . preg_quote($line) . " break:403 Forbidden\n";
+        	$data .= "route-referer = (?i)" . preg_quote($line) . " break:403 Forbidden\n";
         }
         $data .= "route-label = referral_spam";
 
