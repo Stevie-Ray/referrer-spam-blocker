@@ -1,5 +1,5 @@
 # https://github.com/Stevie-Ray/referrer-spam-blocker
-# Updated 2017-01-13 15:37:59
+# Updated 2017-02-26 23:34:31
 sub block_referral_spam {
 	if (
 		req.http.Referer ~ "(?i)000Free\.us" ||
@@ -11,6 +11,7 @@ sub block_referral_spam {
 		req.http.Referer ~ "(?i)1\-99seo\.com" ||
 		req.http.Referer ~ "(?i)1\-free\-share\-buttons\.com" ||
 		req.http.Referer ~ "(?i)100dollars\-seo\.com" ||
+		req.http.Referer ~ "(?i)100searchengines\.com" ||
 		req.http.Referer ~ "(?i)101flag\.ru" ||
 		req.http.Referer ~ "(?i)11235813\.webzdarma\.cz" ||
 		req.http.Referer ~ "(?i)12masterov\.com" ||
@@ -249,6 +250,7 @@ sub block_referral_spam {
 		req.http.Referer ~ "(?i)bimatoprost\-careprost\.com\.ua" ||
 		req.http.Referer ~ "(?i)binomo\.kz" ||
 		req.http.Referer ~ "(?i)bio\-japan\.net" ||
+		req.http.Referer ~ "(?i)bio\-market\.kz" ||
 		req.http.Referer ~ "(?i)bio\.trade\-jp\.net" ||
 		req.http.Referer ~ "(?i)bioca\.org" ||
 		req.http.Referer ~ "(?i)birzha\-truda\.eu" ||
@@ -562,6 +564,7 @@ sub block_referral_spam {
 		req.http.Referer ~ "(?i)diplom\-nk\.com" ||
 		req.http.Referer ~ "(?i)dipstar\.org" ||
 		req.http.Referer ~ "(?i)directrev\.com" ||
+		req.http.Referer ~ "(?i)dividendo\.ru" ||
 		req.http.Referer ~ "(?i)diy\-handmade\-ideas\.com" ||
 		req.http.Referer ~ "(?i)djekxa\.ru" ||
 		req.http.Referer ~ "(?i)djonwatch\.ru" ||
@@ -920,6 +923,7 @@ sub block_referral_spam {
 		req.http.Referer ~ "(?i)gonextmedia\.com" ||
 		req.http.Referer ~ "(?i)goodnightjournal\.com" ||
 		req.http.Referer ~ "(?i)goodprotein\.ru" ||
+		req.http.Referer ~ "(?i)google\-liar\.ru" ||
 		req.http.Referer ~ "(?i)googlefeud\.com" ||
 		req.http.Referer ~ "(?i)googlemare\.com" ||
 		req.http.Referer ~ "(?i)googlsucks\.com" ||
@@ -997,6 +1001,7 @@ sub block_referral_spam {
 		req.http.Referer ~ "(?i)hotspot\.ipb\.co\.id" ||
 		req.http.Referer ~ "(?i)hotwatersdamps\.com" ||
 		req.http.Referer ~ "(?i)houdom\.net" ||
+		req.http.Referer ~ "(?i)housediz\.com" ||
 		req.http.Referer ~ "(?i)housekuba\.org" ||
 		req.http.Referer ~ "(?i)houseofgaga\.ru" ||
 		req.http.Referer ~ "(?i)houseofrose\.com" ||
@@ -1060,6 +1065,7 @@ sub block_referral_spam {
 		req.http.Referer ~ "(?i)infobabki\.ru" ||
 		req.http.Referer ~ "(?i)infokonkurs\.ru" ||
 		req.http.Referer ~ "(?i)innodgfdriverhm\.aircus\.com" ||
+		req.http.Referer ~ "(?i)insider\.pro" ||
 		req.http.Referer ~ "(?i)intelhdgraphicsgtdrive6w\.metroblog\.com" ||
 		req.http.Referer ~ "(?i)interfucks\.net" ||
 		req.http.Referer ~ "(?i)intermesh\.net" ||
@@ -1176,6 +1182,7 @@ sub block_referral_spam {
 		req.http.Referer ~ "(?i)lankarns\.com" ||
 		req.http.Referer ~ "(?i)laparfumotec\.com" ||
 		req.http.Referer ~ "(?i)lapitec\.eu" ||
+		req.http.Referer ~ "(?i)laptop\-4\-less\.com" ||
 		req.http.Referer ~ "(?i)laptoper\.net" ||
 		req.http.Referer ~ "(?i)larchik\.net" ||
 		req.http.Referer ~ "(?i)larutti\.ru" ||
@@ -1292,6 +1299,7 @@ sub block_referral_spam {
 		req.http.Referer ~ "(?i)malls\.com" ||
 		req.http.Referer ~ "(?i)manipulyator\-peterburg\.ru" ||
 		req.http.Referer ~ "(?i)manualterap\.roleforum\.ru" ||
+		req.http.Referer ~ "(?i)marblestyle\.ru" ||
 		req.http.Referer ~ "(?i)marcogrup\.com" ||
 		req.http.Referer ~ "(?i)maridan\.com\.au" ||
 		req.http.Referer ~ "(?i)maridan\.com\.ua" ||
@@ -1895,6 +1903,7 @@ sub block_referral_spam {
 		req.http.Referer ~ "(?i)shakhtar\-doneck\.ru" ||
 		req.http.Referer ~ "(?i)share\-button\.xyz" ||
 		req.http.Referer ~ "(?i)share\-buttons\.xyz" ||
+		req.http.Referer ~ "(?i)sharebutton\.io" ||
 		req.http.Referer ~ "(?i)sharebutton\.net" ||
 		req.http.Referer ~ "(?i)sharebutton\.org" ||
 		req.http.Referer ~ "(?i)sharebutton\.to" ||
