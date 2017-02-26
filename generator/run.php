@@ -204,14 +204,33 @@ class Generate
      */
     public function createGoogleExclude(array $lines)
     {
-        $file = __DIR__ . '/../google-exclude.txt';
+        $firstFile = __DIR__ . '/../google-exclude.txt';
+        $secondFile  = __DIR__ . '/../google-exclude-2.txt';
+
         $regexLines = [];
+
         foreach ($lines as $line) {
             $regexLines[] = preg_quote($line);
         }
         $data = implode('|', $regexLines);
 
-        $this->writeToFile($file, $data);
+        $googleLimit = 30000;
+        $dataLenght = strlen($data);
+
+        // make sure the output is less than the limit set by Google
+        if ($dataLenght > $googleLimit) {
+
+            $middle = strrpos(substr($data, 0, floor($dataLenght / 2)), '|') + 1;
+
+            $data1 = substr($data, 0, $middle);
+            $data2 = substr($data, $middle);
+
+            $this->writeToFile($firstFile, $data1);
+            $this->writeToFile($secondFile, $data2);
+
+        } else {
+            $this->writeToFile($firstFile, $data);
+        };
     }
 }
 
