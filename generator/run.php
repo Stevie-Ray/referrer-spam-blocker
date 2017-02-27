@@ -215,14 +215,15 @@ class Generate
         $data = implode('|', $regexLines);
 
         $googleLimit = 30000;
-        $dataLenght = strlen($data);
+        $dataLength = strlen($data);
 
         // make sure the output is less than the limit set by Google
-        if ($dataLenght > $googleLimit) {
+        if ($dataLength > $googleLimit) {
 
-            $middle = strrpos(substr($data, 0, floor($dataLenght / 2)), '|') + 1;
+            $middle = strrpos(substr($data, 0, floor($dataLength / 2)), '|') + 1;
 
-            $data1 = substr($data, 0, $middle);
+            // Remove trailing |
+            $data1 = substr($data, 0, $middle-1);
             $data2 = substr($data, $middle);
 
             $this->writeToFile($firstFile, $data1);
