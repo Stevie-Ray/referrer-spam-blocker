@@ -48,7 +48,7 @@ The web.config file is located in the root directory of your Windows Server web 
 
 ## uWSGI: referral_spam.res
 
-Include the file `referral_spam.res` into your vassal ini configuration file:
+Include the file `referral_spam.res` into your vassal .ini configuration file:
 
 ```
 ini = referral_spam.res:blacklist_spam
@@ -57,7 +57,7 @@ ini = referral_spam.res:blacklist_spam
 ## Options for Google Analytics 'ghost' spam
 
 The above methods don't stop the Google Analytics **ghost** referral spam (because they are hitting Analytics directly and don't touching your website). You should use filters in Analytics to prevent **ghost** referral spam and hide spam form the **past**. 
-Because Google Analytics segments are limited to *30.000* characters the files are separated into multiple parts. 
+Because Google Analytics segments are limited to *30.000* characters the exclude list is separated into multiple parts. 
 
 Navigate to your Google Analytics Admin panel and add these Segments:
 
@@ -82,7 +82,7 @@ You can also integrate these configuration file in your Docker repo, so you will
 For `Apache, Nginx, Varnish 4` or `IIS` add the following line to your `Dockerfile`
 
 ```conf
-# Apache: Download referral-spam.conf to /usr/local/apache2/htdocs/
+# Apache: Download .htaccess to /usr/local/apache2/htdocs/
 ADD https://raw.githubusercontent.com/Stevie-Ray/referrer-spam-blocker/master/.htaccess /usr/local/apache2/htdocs/
 
 # Nginx: Download referral-spam.conf to /etc/nginx/
@@ -93,6 +93,9 @@ ADD https://raw.githubusercontent.com/Stevie-Ray/referrer-spam-blocker/master/re
 
 # IIS: Download web.config to /sitepath/ (change sitepath accordingly)
 ADD https://raw.githubusercontent.com/Stevie-Ray/referrer-spam-blocker/master/web.config /sitepath/
+
+# uWSGI: Download referral_spam.res to /sitepath/ (change sitepath accordingly)
+ADD https://raw.githubusercontent.com/Stevie-Ray/referrer-spam-blocker/master/referral_spam.res /sitepath/
 ```
 
 ## Like it?
