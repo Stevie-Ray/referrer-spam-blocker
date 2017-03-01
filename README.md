@@ -56,10 +56,10 @@ ini = referral_spam.res:blacklist_spam
 
 ## Options for Google Analytics 'ghost' spam
 
-The above methods don't stop the Google Analytics **ghost** referral spam (because they are hitting Analytics directly and don't touching your website). You should use filters in Analytics to prevent **ghost** referral spam.
+The above methods don't stop the Google Analytics **ghost** referral spam (because they are hitting Analytics directly and don't touching your website). You should use filters in Analytics to prevent **ghost** referral spam and hide spam form the **past**. 
+Because Google Analytics segments are limited to *30.000* characters the files are separated into multiple parts. 
 
-
-Navigate to your Google Analytics Admin panel and add a Segment:
+Navigate to your Google Analytics Admin panel and add these Segments:
 
 Filter | Session | **Include**
 ------------ | ------------- | -------------
@@ -67,7 +67,9 @@ Hostname | matches regex | ```your-website\.com|www\.your-website\.com```
 
 Filter | Session | **Exclude**
 ------------ | ------------- | -------------
-Source | matches regex |Copy all the domains from [google-exclude.txt](https://raw.githubusercontent.com/Stevie-Ray/referrer-spam-blocker/master/google-exclude.txt) to this field
+Source | matches regex |Copy all the domains from [google-exclude-1.txt](https://raw.githubusercontent.com/Stevie-Ray/referrer-spam-blocker/master/google-exclude-1.txt) to this field
+
+Do the same for [google-exclude-2.txt](https://raw.githubusercontent.com/Stevie-Ray/referrer-spam-blocker/master/google-exclude-2.txt). Please note there may be more files in the future. 
 
 You can also prevent **ghost** referral spam by:
 
