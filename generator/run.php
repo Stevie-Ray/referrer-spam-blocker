@@ -204,9 +204,6 @@ class Generate
      */
     public function createGoogleExclude(array $lines)
     {
-        $firstFile = __DIR__ . '/../google-exclude-1.txt';
-        $secondFile  = __DIR__ . '/../google-exclude-2.txt';
-        // $thirdFile  = __DIR__ . '/../google-exclude-3.txt';
 
         $regexLines = [];
 
@@ -217,25 +214,25 @@ class Generate
 
         $googleLimit = 30000;
         $dataLength = strlen($data);
+        $wordCount = 0;
 
-        // make sure the output is less than the limit set by Google
-        if ($dataLength > $googleLimit) {
+        // amount of files to create
+        $divisible = ceil($dataLength / $googleLimit);
 
-            $divisible = ceil($dataLength / $googleLimit);
+        // length of each file
+        $eachFile = strrpos(substr($data, 0, floor($dataLength / $divisible)), '|') + 1;
 
-            $eachFile = strrpos(substr($data, 0, floor($dataLength / $divisible)), '|') + 1;
+        for ($x = 1; $x <= $divisible; $x++) {
 
-            $data1 = substr($data, 0, $eachFile - 1);
-            $data2 = substr($data, $eachFile, ($eachFile* 2));
-            // $data3 = substr($data, ($eachFile* 2), ($eachFile* 3));
+            $dataSplit = substr($data, $wordCount, ($eachFile * $x) - 1);
 
-            $this->writeToFile($firstFile, $data1);
-            $this->writeToFile($secondFile, $data2);
-            // $this->writeToFile($thirdFile, $data3);
+            $wordCount += $eachFile;
 
-        } else {
-            $this->writeToFile($firstFile, $data);
-        };
+            $file = __DIR__ . '/../google-exclude-' . $x . '.txt';
+
+            $this->writeToFile($file, $dataSplit);
+        }
+
     }
 }
 
