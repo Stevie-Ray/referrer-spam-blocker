@@ -214,22 +214,27 @@ class Generate
 
         $googleLimit = 30000;
         $dataLength = strlen($data);
-        $wordCount = 0;
 
-        // amount of files to create
-        $divisible = ceil($dataLength / $googleLimit);
+        // keep track of the last split
+        $lastPosition = 0;
+        for ($x = 1; $lastPosition < $dataLength; $x++) {
 
-        // length of each file
-        $eachFile = strrpos(substr($data, 0, floor($dataLength / $divisible)), '|') + 1;
+            // already in the boundary limits?
+            if( ($dataLength-$lastPosition) >= $googleLimit){
+                // search for the last occurence of | in the boundary limits
+                $pipePosition = strrpos(substr($data, $lastPosition, $googleLimit), '|');
 
-        for ($x = 1; $x <= $divisible; $x++) {
+                $dataSplit = substr($data, $lastPosition, $pipePosition);
 
-            $dataSplit = substr($data, $wordCount, ($eachFile * $x) - 1);
-
-            $wordCount += $eachFile;
+                // without trailing pipe at the beginning of next round
+                $lastPosition = $lastPosition + $pipePosition+1;
+            }else{
+                // Rest of the regex (no pipe at the end)
+                $dataSplit = substr($data, $lastPosition);
+                $lastPosition = $dataLength; // Break
+            }
 
             $file = __DIR__ . '/../google-exclude-' . $x . '.txt';
-
             $this->writeToFile($file, $dataSplit);
         }
 
