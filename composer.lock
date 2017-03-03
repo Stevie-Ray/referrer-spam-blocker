@@ -4,9 +4,10 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "ebce8f4913a69858fd8f41d6ee11da05",
-    "content-hash": "f5a9a5ac82ffa8df79c11ee4dc717e79",
-    "packages": [
+    "hash": "4cb3547435c117afd4b16f0fd7430501",
+    "content-hash": "8631fa6a62942977c74263f7ee173dec",
+    "packages": [],
+    "packages-dev": [
         {
             "name": "mso/idna-convert",
             "version": "v1.1.0",
@@ -57,12 +58,13 @@
             "time": "2016-06-19 18:08:43"
         }
     ],
-    "packages-dev": [],
     "aliases": [],
     "minimum-stability": "stable",
     "stability-flags": [],
     "prefer-stable": false,
     "prefer-lowest": false,
-    "platform": [],
+    "platform": {
+        "php": ">=5.6"
+    },
     "platform-dev": []
 }
