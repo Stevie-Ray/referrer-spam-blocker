@@ -1,12 +1,11 @@
 # https://github.com/Stevie-Ray/referrer-spam-blocker
-# Updated 2017-02-26 23:34:31
+# Updated 2017-03-11 22:39:55
 #
 # Put referral-spam.res in /path/to/vassals, then include it from within /path/to/vassals/vassal.ini:
 #
 # ini = referral_spam.res:blacklist_spam
 
 [blacklist_spam]
-route-referer = (?i)000Free\.us break:403 Forbidden
 route-referer = (?i)000free\.us break:403 Forbidden
 route-referer = (?i)00author\.com break:403 Forbidden
 route-referer = (?i)00go\.com break:403 Forbidden
@@ -615,6 +614,7 @@ route-referer = (?i)dvr\.biz\.ua break:403 Forbidden
 route-referer = (?i)e\-avon\.ru break:403 Forbidden
 route-referer = (?i)e\-buyeasy\.com break:403 Forbidden
 route-referer = (?i)e\-collantes\.com break:403 Forbidden
+route-referer = (?i)e\-commerce\-seo\.com break:403 Forbidden
 route-referer = (?i)e\-kwiaciarz\.pl break:403 Forbidden
 route-referer = (?i)e2click\.com break:403 Forbidden
 route-referer = (?i)eandsgallery\.com break:403 Forbidden

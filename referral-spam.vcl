@@ -1,8 +1,7 @@
 # https://github.com/Stevie-Ray/referrer-spam-blocker
-# Updated 2017-02-26 23:34:31
+# Updated 2017-03-11 22:39:55
 sub block_referral_spam {
 	if (
-		req.http.Referer ~ "(?i)000Free\.us" ||
 		req.http.Referer ~ "(?i)000free\.us" ||
 		req.http.Referer ~ "(?i)00author\.com" ||
 		req.http.Referer ~ "(?i)00go\.com" ||
@@ -611,6 +610,7 @@ sub block_referral_spam {
 		req.http.Referer ~ "(?i)e\-avon\.ru" ||
 		req.http.Referer ~ "(?i)e\-buyeasy\.com" ||
 		req.http.Referer ~ "(?i)e\-collantes\.com" ||
+		req.http.Referer ~ "(?i)e\-commerce\-seo\.com" ||
 		req.http.Referer ~ "(?i)e\-kwiaciarz\.pl" ||
 		req.http.Referer ~ "(?i)e2click\.com" ||
 		req.http.Referer ~ "(?i)eandsgallery\.com" ||

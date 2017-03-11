@@ -1,11 +1,10 @@
 # https://github.com/Stevie-Ray/referrer-spam-blocker
-# Updated 2017-02-26 23:34:31
+# Updated 2017-03-11 22:39:55
 
 <IfModule mod_rewrite.c>
 
 RewriteEngine On
 
-RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*000Free\.us.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*000free\.us.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*00author\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*00go\.com.*$ [NC,OR]
@@ -614,6 +613,7 @@ RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*dvr\.biz\.ua.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*e\-avon\.ru.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*e\-buyeasy\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*e\-collantes\.com.*$ [NC,OR]
+RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*e\-commerce\-seo\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*e\-kwiaciarz\.pl.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*e2click\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*eandsgallery\.com.*$ [NC,OR]
@@ -2573,7 +2573,6 @@ RewriteRule ^(.*)$ – [F,L]
 
 <IfModule mod_setenvif.c>
 
-SetEnvIfNoCase Referer 000Free\.us spambot=yes
 SetEnvIfNoCase Referer 000free\.us spambot=yes
 SetEnvIfNoCase Referer 00author\.com spambot=yes
 SetEnvIfNoCase Referer 00go\.com spambot=yes
@@ -3182,6 +3181,7 @@ SetEnvIfNoCase Referer dvr\.biz\.ua spambot=yes
 SetEnvIfNoCase Referer e\-avon\.ru spambot=yes
 SetEnvIfNoCase Referer e\-buyeasy\.com spambot=yes
 SetEnvIfNoCase Referer e\-collantes\.com spambot=yes
+SetEnvIfNoCase Referer e\-commerce\-seo\.com spambot=yes
 SetEnvIfNoCase Referer e\-kwiaciarz\.pl spambot=yes
 SetEnvIfNoCase Referer e2click\.com spambot=yes
 SetEnvIfNoCase Referer eandsgallery\.com spambot=yes
