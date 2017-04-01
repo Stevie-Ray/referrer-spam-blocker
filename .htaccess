@@ -1,5 +1,5 @@
 # https://github.com/Stevie-Ray/referrer-spam-blocker
-# Updated 2017-03-11 22:39:55
+# Updated 2017-04-01 14:00:58
 
 <IfModule mod_rewrite.c>
 
@@ -115,6 +115,7 @@ RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*altermix\.ua.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*alveris\.ru.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*am\-se\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*amanda\-porn\.ga.*$ [NC,OR]
+RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*amazon\-seo\-service\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*amoi\.tn.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*amoremio\.by.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*amospalla\.es.*$ [NC,OR]
@@ -614,6 +615,7 @@ RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*e\-avon\.ru.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*e\-buyeasy\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*e\-collantes\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*e\-commerce\-seo\.com.*$ [NC,OR]
+RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*e\-commerce\-seo1\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*e\-kwiaciarz\.pl.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*e2click\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*eandsgallery\.com.*$ [NC,OR]
@@ -1905,6 +1907,7 @@ RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*sexytrend\.ru.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*sfd\-chess\.ru.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*shakhtar\-doneck\.ru.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*share\-button\.xyz.*$ [NC,OR]
+RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*share\-buttons\-for\-free\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*share\-buttons\.xyz.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*sharebutton\.io.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*sharebutton\.net.*$ [NC,OR]
@@ -2295,6 +2298,7 @@ RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*varikozdok\.ru.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*vashsvet\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*vavilone\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*vbabule\.net.*$ [NC,OR]
+RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*vc\.ru.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*vduplo\.ru.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*veerotech\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*vegascosmetics\.ru.*$ [NC,OR]
@@ -2683,6 +2687,7 @@ SetEnvIfNoCase Referer altermix\.ua spambot=yes
 SetEnvIfNoCase Referer alveris\.ru spambot=yes
 SetEnvIfNoCase Referer am\-se\.com spambot=yes
 SetEnvIfNoCase Referer amanda\-porn\.ga spambot=yes
+SetEnvIfNoCase Referer amazon\-seo\-service\.com spambot=yes
 SetEnvIfNoCase Referer amoi\.tn spambot=yes
 SetEnvIfNoCase Referer amoremio\.by spambot=yes
 SetEnvIfNoCase Referer amospalla\.es spambot=yes
@@ -3182,6 +3187,7 @@ SetEnvIfNoCase Referer e\-avon\.ru spambot=yes
 SetEnvIfNoCase Referer e\-buyeasy\.com spambot=yes
 SetEnvIfNoCase Referer e\-collantes\.com spambot=yes
 SetEnvIfNoCase Referer e\-commerce\-seo\.com spambot=yes
+SetEnvIfNoCase Referer e\-commerce\-seo1\.com spambot=yes
 SetEnvIfNoCase Referer e\-kwiaciarz\.pl spambot=yes
 SetEnvIfNoCase Referer e2click\.com spambot=yes
 SetEnvIfNoCase Referer eandsgallery\.com spambot=yes
@@ -4473,6 +4479,7 @@ SetEnvIfNoCase Referer sexytrend\.ru spambot=yes
 SetEnvIfNoCase Referer sfd\-chess\.ru spambot=yes
 SetEnvIfNoCase Referer shakhtar\-doneck\.ru spambot=yes
 SetEnvIfNoCase Referer share\-button\.xyz spambot=yes
+SetEnvIfNoCase Referer share\-buttons\-for\-free\.com spambot=yes
 SetEnvIfNoCase Referer share\-buttons\.xyz spambot=yes
 SetEnvIfNoCase Referer sharebutton\.io spambot=yes
 SetEnvIfNoCase Referer sharebutton\.net spambot=yes
@@ -4863,6 +4870,7 @@ SetEnvIfNoCase Referer varikozdok\.ru spambot=yes
 SetEnvIfNoCase Referer vashsvet\.com spambot=yes
 SetEnvIfNoCase Referer vavilone\.com spambot=yes
 SetEnvIfNoCase Referer vbabule\.net spambot=yes
+SetEnvIfNoCase Referer vc\.ru spambot=yes
 SetEnvIfNoCase Referer vduplo\.ru spambot=yes
 SetEnvIfNoCase Referer veerotech\.com spambot=yes
 SetEnvIfNoCase Referer vegascosmetics\.ru spambot=yes

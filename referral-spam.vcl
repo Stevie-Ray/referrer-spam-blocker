@@ -1,5 +1,5 @@
 # https://github.com/Stevie-Ray/referrer-spam-blocker
-# Updated 2017-03-11 22:39:55
+# Updated 2017-04-01 14:00:58
 sub block_referral_spam {
 	if (
 		req.http.Referer ~ "(?i)000free\.us" ||
@@ -112,6 +112,7 @@ sub block_referral_spam {
 		req.http.Referer ~ "(?i)alveris\.ru" ||
 		req.http.Referer ~ "(?i)am\-se\.com" ||
 		req.http.Referer ~ "(?i)amanda\-porn\.ga" ||
+		req.http.Referer ~ "(?i)amazon\-seo\-service\.com" ||
 		req.http.Referer ~ "(?i)amoi\.tn" ||
 		req.http.Referer ~ "(?i)amoremio\.by" ||
 		req.http.Referer ~ "(?i)amospalla\.es" ||
@@ -611,6 +612,7 @@ sub block_referral_spam {
 		req.http.Referer ~ "(?i)e\-buyeasy\.com" ||
 		req.http.Referer ~ "(?i)e\-collantes\.com" ||
 		req.http.Referer ~ "(?i)e\-commerce\-seo\.com" ||
+		req.http.Referer ~ "(?i)e\-commerce\-seo1\.com" ||
 		req.http.Referer ~ "(?i)e\-kwiaciarz\.pl" ||
 		req.http.Referer ~ "(?i)e2click\.com" ||
 		req.http.Referer ~ "(?i)eandsgallery\.com" ||
@@ -1902,6 +1904,7 @@ sub block_referral_spam {
 		req.http.Referer ~ "(?i)sfd\-chess\.ru" ||
 		req.http.Referer ~ "(?i)shakhtar\-doneck\.ru" ||
 		req.http.Referer ~ "(?i)share\-button\.xyz" ||
+		req.http.Referer ~ "(?i)share\-buttons\-for\-free\.com" ||
 		req.http.Referer ~ "(?i)share\-buttons\.xyz" ||
 		req.http.Referer ~ "(?i)sharebutton\.io" ||
 		req.http.Referer ~ "(?i)sharebutton\.net" ||
@@ -2292,6 +2295,7 @@ sub block_referral_spam {
 		req.http.Referer ~ "(?i)vashsvet\.com" ||
 		req.http.Referer ~ "(?i)vavilone\.com" ||
 		req.http.Referer ~ "(?i)vbabule\.net" ||
+		req.http.Referer ~ "(?i)vc\.ru" ||
 		req.http.Referer ~ "(?i)vduplo\.ru" ||
 		req.http.Referer ~ "(?i)veerotech\.com" ||
 		req.http.Referer ~ "(?i)vegascosmetics\.ru" ||

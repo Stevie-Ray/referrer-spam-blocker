@@ -1,5 +1,5 @@
 # https://github.com/Stevie-Ray/referrer-spam-blocker
-# Updated 2017-03-11 22:39:55
+# Updated 2017-04-01 14:00:58
 #
 # Put referral-spam.res in /path/to/vassals, then include it from within /path/to/vassals/vassal.ini:
 #
@@ -116,6 +116,7 @@ route-referer = (?i)altermix\.ua break:403 Forbidden
 route-referer = (?i)alveris\.ru break:403 Forbidden
 route-referer = (?i)am\-se\.com break:403 Forbidden
 route-referer = (?i)amanda\-porn\.ga break:403 Forbidden
+route-referer = (?i)amazon\-seo\-service\.com break:403 Forbidden
 route-referer = (?i)amoi\.tn break:403 Forbidden
 route-referer = (?i)amoremio\.by break:403 Forbidden
 route-referer = (?i)amospalla\.es break:403 Forbidden
@@ -615,6 +616,7 @@ route-referer = (?i)e\-avon\.ru break:403 Forbidden
 route-referer = (?i)e\-buyeasy\.com break:403 Forbidden
 route-referer = (?i)e\-collantes\.com break:403 Forbidden
 route-referer = (?i)e\-commerce\-seo\.com break:403 Forbidden
+route-referer = (?i)e\-commerce\-seo1\.com break:403 Forbidden
 route-referer = (?i)e\-kwiaciarz\.pl break:403 Forbidden
 route-referer = (?i)e2click\.com break:403 Forbidden
 route-referer = (?i)eandsgallery\.com break:403 Forbidden
@@ -1906,6 +1908,7 @@ route-referer = (?i)sexytrend\.ru break:403 Forbidden
 route-referer = (?i)sfd\-chess\.ru break:403 Forbidden
 route-referer = (?i)shakhtar\-doneck\.ru break:403 Forbidden
 route-referer = (?i)share\-button\.xyz break:403 Forbidden
+route-referer = (?i)share\-buttons\-for\-free\.com break:403 Forbidden
 route-referer = (?i)share\-buttons\.xyz break:403 Forbidden
 route-referer = (?i)sharebutton\.io break:403 Forbidden
 route-referer = (?i)sharebutton\.net break:403 Forbidden
@@ -2296,6 +2299,7 @@ route-referer = (?i)varikozdok\.ru break:403 Forbidden
 route-referer = (?i)vashsvet\.com break:403 Forbidden
 route-referer = (?i)vavilone\.com break:403 Forbidden
 route-referer = (?i)vbabule\.net break:403 Forbidden
+route-referer = (?i)vc\.ru break:403 Forbidden
 route-referer = (?i)vduplo\.ru break:403 Forbidden
 route-referer = (?i)veerotech\.com break:403 Forbidden
 route-referer = (?i)vegascosmetics\.ru break:403 Forbidden
