@@ -1,5 +1,5 @@
 # https://github.com/Stevie-Ray/referrer-spam-blocker
-# Updated 2017-04-01 14:00:58
+# Updated 2017-04-16 15:16:33
 
 <IfModule mod_rewrite.c>
 
@@ -623,6 +623,8 @@ RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*eaplay\.ru/a00af605.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*easycommerce\.cf.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*easync\.io.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*easytuningshop\.ru.*$ [NC,OR]
+RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*ecommerce\-seo\.com.*$ [NC,OR]
+RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*ecommerce\-seo\.org.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*ecomp3\.ru.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*econom\.co.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*ecookna\.com\.ua.*$ [NC,OR]
@@ -815,6 +817,7 @@ RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*fotoxxxru\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*foxinsocks\.ru.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*foxtechfpv\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*fr\.netlog\.com.*$ [NC,OR]
+RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*free\-fb\-traffic\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*free\-floating\-buttons\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*free\-share\-buttons\-aaa\.xyz.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*free\-share\-buttons\-bbb\.xyz.*$ [NC,OR]
@@ -1072,6 +1075,7 @@ RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*infokonkurs\.ru.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*innodgfdriverhm\.aircus\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*insider\.pro.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*intelhdgraphicsgtdrive6w\.metroblog\.com.*$ [NC,OR]
+RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*interferencer\.ru.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*interfucks\.net.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*intermesh\.net.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*internet\-apteka\.ru.*$ [NC,OR]
@@ -2217,6 +2221,7 @@ RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*torture\.ml.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*touchmods\.fr.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*tovaroboom\.vast\.ru.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*tpu\.ru.*$ [NC,OR]
+RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*track\-rankings\.online.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*trafaret74\.ru.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*traffic\-cash\.xyz.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*traffic\-paradise\.org.*$ [NC,OR]
@@ -3195,6 +3200,8 @@ SetEnvIfNoCase Referer eaplay\.ru/a00af605 spambot=yes
 SetEnvIfNoCase Referer easycommerce\.cf spambot=yes
 SetEnvIfNoCase Referer easync\.io spambot=yes
 SetEnvIfNoCase Referer easytuningshop\.ru spambot=yes
+SetEnvIfNoCase Referer ecommerce\-seo\.com spambot=yes
+SetEnvIfNoCase Referer ecommerce\-seo\.org spambot=yes
 SetEnvIfNoCase Referer ecomp3\.ru spambot=yes
 SetEnvIfNoCase Referer econom\.co spambot=yes
 SetEnvIfNoCase Referer ecookna\.com\.ua spambot=yes
@@ -3387,6 +3394,7 @@ SetEnvIfNoCase Referer fotoxxxru\.com spambot=yes
 SetEnvIfNoCase Referer foxinsocks\.ru spambot=yes
 SetEnvIfNoCase Referer foxtechfpv\.com spambot=yes
 SetEnvIfNoCase Referer fr\.netlog\.com spambot=yes
+SetEnvIfNoCase Referer free\-fb\-traffic\.com spambot=yes
 SetEnvIfNoCase Referer free\-floating\-buttons\.com spambot=yes
 SetEnvIfNoCase Referer free\-share\-buttons\-aaa\.xyz spambot=yes
 SetEnvIfNoCase Referer free\-share\-buttons\-bbb\.xyz spambot=yes
@@ -3644,6 +3652,7 @@ SetEnvIfNoCase Referer infokonkurs\.ru spambot=yes
 SetEnvIfNoCase Referer innodgfdriverhm\.aircus\.com spambot=yes
 SetEnvIfNoCase Referer insider\.pro spambot=yes
 SetEnvIfNoCase Referer intelhdgraphicsgtdrive6w\.metroblog\.com spambot=yes
+SetEnvIfNoCase Referer interferencer\.ru spambot=yes
 SetEnvIfNoCase Referer interfucks\.net spambot=yes
 SetEnvIfNoCase Referer intermesh\.net spambot=yes
 SetEnvIfNoCase Referer internet\-apteka\.ru spambot=yes
@@ -4789,6 +4798,7 @@ SetEnvIfNoCase Referer torture\.ml spambot=yes
 SetEnvIfNoCase Referer touchmods\.fr spambot=yes
 SetEnvIfNoCase Referer tovaroboom\.vast\.ru spambot=yes
 SetEnvIfNoCase Referer tpu\.ru spambot=yes
+SetEnvIfNoCase Referer track\-rankings\.online spambot=yes
 SetEnvIfNoCase Referer trafaret74\.ru spambot=yes
 SetEnvIfNoCase Referer traffic\-cash\.xyz spambot=yes
 SetEnvIfNoCase Referer traffic\-paradise\.org spambot=yes

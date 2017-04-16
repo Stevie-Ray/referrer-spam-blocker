@@ -1,5 +1,5 @@
 # https://github.com/Stevie-Ray/referrer-spam-blocker
-# Updated 2017-04-01 14:00:58
+# Updated 2017-04-16 15:16:33
 sub block_referral_spam {
 	if (
 		req.http.Referer ~ "(?i)000free\.us" ||
@@ -620,6 +620,8 @@ sub block_referral_spam {
 		req.http.Referer ~ "(?i)easycommerce\.cf" ||
 		req.http.Referer ~ "(?i)easync\.io" ||
 		req.http.Referer ~ "(?i)easytuningshop\.ru" ||
+		req.http.Referer ~ "(?i)ecommerce\-seo\.com" ||
+		req.http.Referer ~ "(?i)ecommerce\-seo\.org" ||
 		req.http.Referer ~ "(?i)ecomp3\.ru" ||
 		req.http.Referer ~ "(?i)econom\.co" ||
 		req.http.Referer ~ "(?i)ecookna\.com\.ua" ||
@@ -812,6 +814,7 @@ sub block_referral_spam {
 		req.http.Referer ~ "(?i)foxinsocks\.ru" ||
 		req.http.Referer ~ "(?i)foxtechfpv\.com" ||
 		req.http.Referer ~ "(?i)fr\.netlog\.com" ||
+		req.http.Referer ~ "(?i)free\-fb\-traffic\.com" ||
 		req.http.Referer ~ "(?i)free\-floating\-buttons\.com" ||
 		req.http.Referer ~ "(?i)free\-share\-buttons\-aaa\.xyz" ||
 		req.http.Referer ~ "(?i)free\-share\-buttons\-bbb\.xyz" ||
@@ -1069,6 +1072,7 @@ sub block_referral_spam {
 		req.http.Referer ~ "(?i)innodgfdriverhm\.aircus\.com" ||
 		req.http.Referer ~ "(?i)insider\.pro" ||
 		req.http.Referer ~ "(?i)intelhdgraphicsgtdrive6w\.metroblog\.com" ||
+		req.http.Referer ~ "(?i)interferencer\.ru" ||
 		req.http.Referer ~ "(?i)interfucks\.net" ||
 		req.http.Referer ~ "(?i)intermesh\.net" ||
 		req.http.Referer ~ "(?i)internet\-apteka\.ru" ||
@@ -2214,6 +2218,7 @@ sub block_referral_spam {
 		req.http.Referer ~ "(?i)touchmods\.fr" ||
 		req.http.Referer ~ "(?i)tovaroboom\.vast\.ru" ||
 		req.http.Referer ~ "(?i)tpu\.ru" ||
+		req.http.Referer ~ "(?i)track\-rankings\.online" ||
 		req.http.Referer ~ "(?i)trafaret74\.ru" ||
 		req.http.Referer ~ "(?i)traffic\-cash\.xyz" ||
 		req.http.Referer ~ "(?i)traffic\-paradise\.org" ||

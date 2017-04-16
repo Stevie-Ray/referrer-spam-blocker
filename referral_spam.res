@@ -1,5 +1,5 @@
 # https://github.com/Stevie-Ray/referrer-spam-blocker
-# Updated 2017-04-01 14:00:58
+# Updated 2017-04-16 15:16:33
 #
 # Put referral-spam.res in /path/to/vassals, then include it from within /path/to/vassals/vassal.ini:
 #
@@ -624,6 +624,8 @@ route-referer = (?i)eaplay\.ru/a00af605 break:403 Forbidden
 route-referer = (?i)easycommerce\.cf break:403 Forbidden
 route-referer = (?i)easync\.io break:403 Forbidden
 route-referer = (?i)easytuningshop\.ru break:403 Forbidden
+route-referer = (?i)ecommerce\-seo\.com break:403 Forbidden
+route-referer = (?i)ecommerce\-seo\.org break:403 Forbidden
 route-referer = (?i)ecomp3\.ru break:403 Forbidden
 route-referer = (?i)econom\.co break:403 Forbidden
 route-referer = (?i)ecookna\.com\.ua break:403 Forbidden
@@ -816,6 +818,7 @@ route-referer = (?i)fotoxxxru\.com break:403 Forbidden
 route-referer = (?i)foxinsocks\.ru break:403 Forbidden
 route-referer = (?i)foxtechfpv\.com break:403 Forbidden
 route-referer = (?i)fr\.netlog\.com break:403 Forbidden
+route-referer = (?i)free\-fb\-traffic\.com break:403 Forbidden
 route-referer = (?i)free\-floating\-buttons\.com break:403 Forbidden
 route-referer = (?i)free\-share\-buttons\-aaa\.xyz break:403 Forbidden
 route-referer = (?i)free\-share\-buttons\-bbb\.xyz break:403 Forbidden
@@ -1073,6 +1076,7 @@ route-referer = (?i)infokonkurs\.ru break:403 Forbidden
 route-referer = (?i)innodgfdriverhm\.aircus\.com break:403 Forbidden
 route-referer = (?i)insider\.pro break:403 Forbidden
 route-referer = (?i)intelhdgraphicsgtdrive6w\.metroblog\.com break:403 Forbidden
+route-referer = (?i)interferencer\.ru break:403 Forbidden
 route-referer = (?i)interfucks\.net break:403 Forbidden
 route-referer = (?i)intermesh\.net break:403 Forbidden
 route-referer = (?i)internet\-apteka\.ru break:403 Forbidden
@@ -2218,6 +2222,7 @@ route-referer = (?i)torture\.ml break:403 Forbidden
 route-referer = (?i)touchmods\.fr break:403 Forbidden
 route-referer = (?i)tovaroboom\.vast\.ru break:403 Forbidden
 route-referer = (?i)tpu\.ru break:403 Forbidden
+route-referer = (?i)track\-rankings\.online break:403 Forbidden
 route-referer = (?i)trafaret74\.ru break:403 Forbidden
 route-referer = (?i)traffic\-cash\.xyz break:403 Forbidden
 route-referer = (?i)traffic\-paradise\.org break:403 Forbidden
