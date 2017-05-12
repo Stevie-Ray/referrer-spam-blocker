@@ -1,5 +1,5 @@
 # https://github.com/Stevie-Ray/referrer-spam-blocker
-# Updated 2017-04-16 15:16:33
+# Updated 2017-05-12 16:09:07
 sub block_referral_spam {
 	if (
 		req.http.Referer ~ "(?i)000free\.us" ||
@@ -429,6 +429,7 @@ sub block_referral_spam {
 		req.http.Referer ~ "(?i)compliance\-barak\.xyz" ||
 		req.http.Referer ~ "(?i)compliance\-brian\.top" ||
 		req.http.Referer ~ "(?i)compliance\-brian\.xyz" ||
+		req.http.Referer ~ "(?i)compliance\-checker\-7\.info" ||
 		req.http.Referer ~ "(?i)compliance\-don\.top" ||
 		req.http.Referer ~ "(?i)compliance\-don\.xyz" ||
 		req.http.Referer ~ "(?i)compliance\-donald\.xyz" ||
@@ -881,6 +882,7 @@ sub block_referral_spam {
 		req.http.Referer ~ "(?i)gazoblok\.net\.ua" ||
 		req.http.Referer ~ "(?i)gcup\.ru" ||
 		req.http.Referer ~ "(?i)gdcentre\.ru" ||
+		req.http.Referer ~ "(?i)gearcraft\.us" ||
 		req.http.Referer ~ "(?i)gelezki\.com" ||
 		req.http.Referer ~ "(?i)generalporn\.org" ||
 		req.http.Referer ~ "(?i)genericlowlatencyasiodriverhq\.aircus\.com" ||
@@ -1184,6 +1186,7 @@ sub block_referral_spam {
 		req.http.Referer ~ "(?i)ladov\.ru" ||
 		req.http.Referer ~ "(?i)lampokrat\.ws" ||
 		req.http.Referer ~ "(?i)lanasshop\.ru" ||
+		req.http.Referer ~ "(?i)landoftracking\.com" ||
 		req.http.Referer ~ "(?i)languagecode\.com" ||
 		req.http.Referer ~ "(?i)lankarns\.com" ||
 		req.http.Referer ~ "(?i)laparfumotec\.com" ||
@@ -1564,6 +1567,7 @@ sub block_referral_spam {
 		req.http.Referer ~ "(?i)ozas\.net" ||
 		req.http.Referer ~ "(?i)p\-business\.ru" ||
 		req.http.Referer ~ "(?i)paceform\.com" ||
+		req.http.Referer ~ "(?i)paidonlinesites\.com" ||
 		req.http.Referer ~ "(?i)palvira\.com\.au" ||
 		req.http.Referer ~ "(?i)palvira\.com\.ua" ||
 		req.http.Referer ~ "(?i)pammik\.ru" ||
@@ -1594,6 +1598,7 @@ sub block_referral_spam {
 		req.http.Referer ~ "(?i)pirateday\.ru" ||
 		req.http.Referer ~ "(?i)pisze\.pisz\.pl" ||
 		req.http.Referer ~ "(?i)piter\.xrus\.org" ||
+		req.http.Referer ~ "(?i)piulatte\.cz" ||
 		req.http.Referer ~ "(?i)pizza\-imperia\.com" ||
 		req.http.Referer ~ "(?i)pizza\-tycoon\.com" ||
 		req.http.Referer ~ "(?i)pkr1hand\.com" ||
@@ -2135,6 +2140,7 @@ sub block_referral_spam {
 		req.http.Referer ~ "(?i)theheroes\.ru" ||
 		req.http.Referer ~ "(?i)thejournal\.ru" ||
 		req.http.Referer ~ "(?i)thepokertimer\.com" ||
+		req.http.Referer ~ "(?i)thesmartsearch\.net" ||
 		req.http.Referer ~ "(?i)thewomenlife\.com" ||
 		req.http.Referer ~ "(?i)thiegs\.reco\.ws" ||
 		req.http.Referer ~ "(?i)thin\.me\.pn" ||

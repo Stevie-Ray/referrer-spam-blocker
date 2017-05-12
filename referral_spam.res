@@ -1,5 +1,5 @@
 # https://github.com/Stevie-Ray/referrer-spam-blocker
-# Updated 2017-04-16 15:16:33
+# Updated 2017-05-12 16:09:07
 #
 # Put referral-spam.res in /path/to/vassals, then include it from within /path/to/vassals/vassal.ini:
 #
@@ -433,6 +433,7 @@ route-referer = (?i)compliance\-barak\.top break:403 Forbidden
 route-referer = (?i)compliance\-barak\.xyz break:403 Forbidden
 route-referer = (?i)compliance\-brian\.top break:403 Forbidden
 route-referer = (?i)compliance\-brian\.xyz break:403 Forbidden
+route-referer = (?i)compliance\-checker\-7\.info break:403 Forbidden
 route-referer = (?i)compliance\-don\.top break:403 Forbidden
 route-referer = (?i)compliance\-don\.xyz break:403 Forbidden
 route-referer = (?i)compliance\-donald\.xyz break:403 Forbidden
@@ -885,6 +886,7 @@ route-referer = (?i)gazobeton\-p\.com\.ua break:403 Forbidden
 route-referer = (?i)gazoblok\.net\.ua break:403 Forbidden
 route-referer = (?i)gcup\.ru break:403 Forbidden
 route-referer = (?i)gdcentre\.ru break:403 Forbidden
+route-referer = (?i)gearcraft\.us break:403 Forbidden
 route-referer = (?i)gelezki\.com break:403 Forbidden
 route-referer = (?i)generalporn\.org break:403 Forbidden
 route-referer = (?i)genericlowlatencyasiodriverhq\.aircus\.com break:403 Forbidden
@@ -1188,6 +1190,7 @@ route-referer = (?i)labvis\.host\.sk break:403 Forbidden
 route-referer = (?i)ladov\.ru break:403 Forbidden
 route-referer = (?i)lampokrat\.ws break:403 Forbidden
 route-referer = (?i)lanasshop\.ru break:403 Forbidden
+route-referer = (?i)landoftracking\.com break:403 Forbidden
 route-referer = (?i)languagecode\.com break:403 Forbidden
 route-referer = (?i)lankarns\.com break:403 Forbidden
 route-referer = (?i)laparfumotec\.com break:403 Forbidden
@@ -1568,6 +1571,7 @@ route-referer = (?i)owohho\.com break:403 Forbidden
 route-referer = (?i)ozas\.net break:403 Forbidden
 route-referer = (?i)p\-business\.ru break:403 Forbidden
 route-referer = (?i)paceform\.com break:403 Forbidden
+route-referer = (?i)paidonlinesites\.com break:403 Forbidden
 route-referer = (?i)palvira\.com\.au break:403 Forbidden
 route-referer = (?i)palvira\.com\.ua break:403 Forbidden
 route-referer = (?i)pammik\.ru break:403 Forbidden
@@ -1598,6 +1602,7 @@ route-referer = (?i)pipki\.pp\.ua break:403 Forbidden
 route-referer = (?i)pirateday\.ru break:403 Forbidden
 route-referer = (?i)pisze\.pisz\.pl break:403 Forbidden
 route-referer = (?i)piter\.xrus\.org break:403 Forbidden
+route-referer = (?i)piulatte\.cz break:403 Forbidden
 route-referer = (?i)pizza\-imperia\.com break:403 Forbidden
 route-referer = (?i)pizza\-tycoon\.com break:403 Forbidden
 route-referer = (?i)pkr1hand\.com break:403 Forbidden
@@ -2139,6 +2144,7 @@ route-referer = (?i)theguardlan\.com break:403 Forbidden
 route-referer = (?i)theheroes\.ru break:403 Forbidden
 route-referer = (?i)thejournal\.ru break:403 Forbidden
 route-referer = (?i)thepokertimer\.com break:403 Forbidden
+route-referer = (?i)thesmartsearch\.net break:403 Forbidden
 route-referer = (?i)thewomenlife\.com break:403 Forbidden
 route-referer = (?i)thiegs\.reco\.ws break:403 Forbidden
 route-referer = (?i)thin\.me\.pn break:403 Forbidden
