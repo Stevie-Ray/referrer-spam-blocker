@@ -7,15 +7,12 @@ before_deploy:
 - git config --global user.name "Travis CI"
 - export GIT_TAG=v1.0.$TRAVIS_BUILD_NUMBER
 - git tag $GIT_TAG -a -m "Generated tag from TravisCI for build $TRAVIS_BUILD_NUMBER [ci skip]"
-- git push -q https://${GH_TOKEN}@github.com/Stevie-Ray/apache-nginx-referral-spam-blacklist --tags
+- git push -q https://${GH_TOKEN}@github.com/Stevie-Ray/referrer-spam-blocker --tags
 - ls -aR
 deploy:
   provider: releases
   api_key:
     secure: ${GH_TOKEN}
-  file:
-  - .htaccess
-  - referral-spam.conf
   skip_cleanup: true
   on:
     tags: false
