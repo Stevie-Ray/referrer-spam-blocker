@@ -1,5 +1,5 @@
 # https://github.com/Stevie-Ray/referrer-spam-blocker
-# Updated 2017-05-12 16:09:07
+# Updated 2017-06-04 09:22:27
 
 <IfModule mod_rewrite.c>
 
@@ -556,6 +556,7 @@ RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*detective01\.ru.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*detki\-opt\.ru.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*detskie\-konstruktory\.ru.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*detskie\-zabavi\.ru.*$ [NC,OR]
+RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*dev\-seo\.blog.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*diarioaconcagua\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*diebesten\.co.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*diesel\-parts28\.ru.*$ [NC,OR]
@@ -642,6 +643,7 @@ RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*ekobata\.ru.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*ekspertmed\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*ekto\.ee.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*el\-nation\.com.*$ [NC,OR]
+RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*election\.interferencer\.ru.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*electricwheelchairsarea\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*electro\-prom\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*elektrischezi\.canalblog\.com.*$ [NC,OR]
@@ -3139,6 +3141,7 @@ SetEnvIfNoCase Referer detective01\.ru spambot=yes
 SetEnvIfNoCase Referer detki\-opt\.ru spambot=yes
 SetEnvIfNoCase Referer detskie\-konstruktory\.ru spambot=yes
 SetEnvIfNoCase Referer detskie\-zabavi\.ru spambot=yes
+SetEnvIfNoCase Referer dev\-seo\.blog spambot=yes
 SetEnvIfNoCase Referer diarioaconcagua\.com spambot=yes
 SetEnvIfNoCase Referer diebesten\.co spambot=yes
 SetEnvIfNoCase Referer diesel\-parts28\.ru spambot=yes
@@ -3225,6 +3228,7 @@ SetEnvIfNoCase Referer ekobata\.ru spambot=yes
 SetEnvIfNoCase Referer ekspertmed\.com spambot=yes
 SetEnvIfNoCase Referer ekto\.ee spambot=yes
 SetEnvIfNoCase Referer el\-nation\.com spambot=yes
+SetEnvIfNoCase Referer election\.interferencer\.ru spambot=yes
 SetEnvIfNoCase Referer electricwheelchairsarea\.com spambot=yes
 SetEnvIfNoCase Referer electro\-prom\.com spambot=yes
 SetEnvIfNoCase Referer elektrischezi\.canalblog\.com spambot=yes
