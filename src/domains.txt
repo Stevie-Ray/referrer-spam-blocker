@@ -812,8 +812,10 @@ forums.toucharcade.com
 fotoxxxru.com
 foxinsocks.ru
 foxtechfpv.com
+foxweber.com
 fr.netlog.com
 free-fb-traffic.com
+free-fbook-traffic.com
 free-floating-buttons.com
 free-share-buttons-aaa.xyz
 free-share-buttons-bbb.xyz
@@ -1878,6 +1880,7 @@ sdelatmebel.ru
 sdi-pme.com
 search-error.com
 search-helper.ru
+searchencrypt.com
 searchlock.com
 seccioncontrabajo.com
 secret.xn--oogle-wmc.com

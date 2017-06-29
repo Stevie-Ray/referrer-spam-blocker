@@ -1,5 +1,5 @@
 # https://github.com/Stevie-Ray/referrer-spam-blocker
-# Updated 2017-06-04 09:22:27
+# Updated 2017-06-29 18:07:08
 sub block_referral_spam {
 	if (
 		req.http.Referer ~ "(?i)000free\.us" ||
@@ -816,8 +816,10 @@ sub block_referral_spam {
 		req.http.Referer ~ "(?i)fotoxxxru\.com" ||
 		req.http.Referer ~ "(?i)foxinsocks\.ru" ||
 		req.http.Referer ~ "(?i)foxtechfpv\.com" ||
+		req.http.Referer ~ "(?i)foxweber\.com" ||
 		req.http.Referer ~ "(?i)fr\.netlog\.com" ||
 		req.http.Referer ~ "(?i)free\-fb\-traffic\.com" ||
+		req.http.Referer ~ "(?i)free\-fbook\-traffic\.com" ||
 		req.http.Referer ~ "(?i)free\-floating\-buttons\.com" ||
 		req.http.Referer ~ "(?i)free\-share\-buttons\-aaa\.xyz" ||
 		req.http.Referer ~ "(?i)free\-share\-buttons\-bbb\.xyz" ||
@@ -1882,6 +1884,7 @@ sub block_referral_spam {
 		req.http.Referer ~ "(?i)sdi\-pme\.com" ||
 		req.http.Referer ~ "(?i)search\-error\.com" ||
 		req.http.Referer ~ "(?i)search\-helper\.ru" ||
+		req.http.Referer ~ "(?i)searchencrypt\.com" ||
 		req.http.Referer ~ "(?i)searchlock\.com" ||
 		req.http.Referer ~ "(?i)seccioncontrabajo\.com" ||
 		req.http.Referer ~ "(?i)secret\.xn\-\-oogle\-wmc\.com" ||

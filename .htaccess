@@ -1,5 +1,5 @@
 # https://github.com/Stevie-Ray/referrer-spam-blocker
-# Updated 2017-06-04 09:22:27
+# Updated 2017-06-29 18:07:08
 
 <IfModule mod_rewrite.c>
 
@@ -819,8 +819,10 @@ RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*forums\.toucharcade\.com.*$ [NC
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*fotoxxxru\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*foxinsocks\.ru.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*foxtechfpv\.com.*$ [NC,OR]
+RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*foxweber\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*fr\.netlog\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*free\-fb\-traffic\.com.*$ [NC,OR]
+RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*free\-fbook\-traffic\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*free\-floating\-buttons\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*free\-share\-buttons\-aaa\.xyz.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*free\-share\-buttons\-bbb\.xyz.*$ [NC,OR]
@@ -1885,6 +1887,7 @@ RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*sdelatmebel\.ru.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*sdi\-pme\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*search\-error\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*search\-helper\.ru.*$ [NC,OR]
+RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*searchencrypt\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*searchlock\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*seccioncontrabajo\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*secret\.xn\-\-oogle\-wmc\.com.*$ [NC,OR]
@@ -3404,8 +3407,10 @@ SetEnvIfNoCase Referer forums\.toucharcade\.com spambot=yes
 SetEnvIfNoCase Referer fotoxxxru\.com spambot=yes
 SetEnvIfNoCase Referer foxinsocks\.ru spambot=yes
 SetEnvIfNoCase Referer foxtechfpv\.com spambot=yes
+SetEnvIfNoCase Referer foxweber\.com spambot=yes
 SetEnvIfNoCase Referer fr\.netlog\.com spambot=yes
 SetEnvIfNoCase Referer free\-fb\-traffic\.com spambot=yes
+SetEnvIfNoCase Referer free\-fbook\-traffic\.com spambot=yes
 SetEnvIfNoCase Referer free\-floating\-buttons\.com spambot=yes
 SetEnvIfNoCase Referer free\-share\-buttons\-aaa\.xyz spambot=yes
 SetEnvIfNoCase Referer free\-share\-buttons\-bbb\.xyz spambot=yes
@@ -4470,6 +4475,7 @@ SetEnvIfNoCase Referer sdelatmebel\.ru spambot=yes
 SetEnvIfNoCase Referer sdi\-pme\.com spambot=yes
 SetEnvIfNoCase Referer search\-error\.com spambot=yes
 SetEnvIfNoCase Referer search\-helper\.ru spambot=yes
+SetEnvIfNoCase Referer searchencrypt\.com spambot=yes
 SetEnvIfNoCase Referer searchlock\.com spambot=yes
 SetEnvIfNoCase Referer seccioncontrabajo\.com spambot=yes
 SetEnvIfNoCase Referer secret\.xn\-\-oogle\-wmc\.com spambot=yes

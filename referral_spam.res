@@ -1,5 +1,5 @@
 # https://github.com/Stevie-Ray/referrer-spam-blocker
-# Updated 2017-06-04 09:22:27
+# Updated 2017-06-29 18:07:08
 #
 # Put referral-spam.res in /path/to/vassals, then include it from within /path/to/vassals/vassal.ini:
 #
@@ -820,8 +820,10 @@ route-referer = (?i)forums\.toucharcade\.com break:403 Forbidden
 route-referer = (?i)fotoxxxru\.com break:403 Forbidden
 route-referer = (?i)foxinsocks\.ru break:403 Forbidden
 route-referer = (?i)foxtechfpv\.com break:403 Forbidden
+route-referer = (?i)foxweber\.com break:403 Forbidden
 route-referer = (?i)fr\.netlog\.com break:403 Forbidden
 route-referer = (?i)free\-fb\-traffic\.com break:403 Forbidden
+route-referer = (?i)free\-fbook\-traffic\.com break:403 Forbidden
 route-referer = (?i)free\-floating\-buttons\.com break:403 Forbidden
 route-referer = (?i)free\-share\-buttons\-aaa\.xyz break:403 Forbidden
 route-referer = (?i)free\-share\-buttons\-bbb\.xyz break:403 Forbidden
@@ -1886,6 +1888,7 @@ route-referer = (?i)sdelatmebel\.ru break:403 Forbidden
 route-referer = (?i)sdi\-pme\.com break:403 Forbidden
 route-referer = (?i)search\-error\.com break:403 Forbidden
 route-referer = (?i)search\-helper\.ru break:403 Forbidden
+route-referer = (?i)searchencrypt\.com break:403 Forbidden
 route-referer = (?i)searchlock\.com break:403 Forbidden
 route-referer = (?i)seccioncontrabajo\.com break:403 Forbidden
 route-referer = (?i)secret\.xn\-\-oogle\-wmc\.com break:403 Forbidden
