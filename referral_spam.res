@@ -1,5 +1,5 @@
 # https://github.com/Stevie-Ray/referrer-spam-blocker
-# Updated 2017-06-29 18:07:08
+# Updated 2017-07-25 20:48:54
 #
 # Put referral-spam.res in /path/to/vassals, then include it from within /path/to/vassals/vassal.ini:
 #
@@ -170,6 +170,7 @@ route-referer = (?i)autobudpostach\.club break:403 Forbidden
 route-referer = (?i)autoloans\.com break:403 Forbidden
 route-referer = (?i)autolombard\-krasnodar\.ru break:403 Forbidden
 route-referer = (?i)autonew\.biz break:403 Forbidden
+route-referer = (?i)autoseo\-traffic\.com break:403 Forbidden
 route-referer = (?i)autotop\.com\.ua break:403 Forbidden
 route-referer = (?i)autovideobroadcast\.com break:403 Forbidden
 route-referer = (?i)autowebmarket\.com\.ua break:403 Forbidden
@@ -623,6 +624,7 @@ route-referer = (?i)e\-kwiaciarz\.pl break:403 Forbidden
 route-referer = (?i)e2click\.com break:403 Forbidden
 route-referer = (?i)eandsgallery\.com break:403 Forbidden
 route-referer = (?i)eaplay\.ru/a00af605 break:403 Forbidden
+route-referer = (?i)earn\-from\-articles\.com break:403 Forbidden
 route-referer = (?i)easycommerce\.cf break:403 Forbidden
 route-referer = (?i)easync\.io break:403 Forbidden
 route-referer = (?i)easytuningshop\.ru break:403 Forbidden
@@ -1405,6 +1407,7 @@ route-referer = (?i)mole\.pluto\.ro break:403 Forbidden
 route-referer = (?i)monarhs\.info break:403 Forbidden
 route-referer = (?i)monetizationking\.net break:403 Forbidden
 route-referer = (?i)money\-every\-day\.com break:403 Forbidden
+route-referer = (?i)money\-for\-placing\-articles\.com break:403 Forbidden
 route-referer = (?i)moneymaster\.ru break:403 Forbidden
 route-referer = (?i)moneytop\.ru break:403 Forbidden
 route-referer = (?i)monitorwebsitespeed\.com break:403 Forbidden
@@ -1896,6 +1899,7 @@ route-referer = (?i)secretscook\.ru break:403 Forbidden
 route-referer = (?i)securityallianceservices\.com break:403 Forbidden
 route-referer = (?i)see\-your\-website\-here\.com break:403 Forbidden
 route-referer = (?i)seksotur\.ru break:403 Forbidden
+route-referer = (?i)sell\-fb\-group\-here\.com break:403 Forbidden
 route-referer = (?i)semalt\.com break:403 Forbidden
 route-referer = (?i)semalt\.semalt\.com break:403 Forbidden
 route-referer = (?i)semaltmedia\.com break:403 Forbidden

@@ -1,5 +1,5 @@
 # https://github.com/Stevie-Ray/referrer-spam-blocker
-# Updated 2017-06-29 18:07:08
+# Updated 2017-07-25 20:48:54
 
 <IfModule mod_rewrite.c>
 
@@ -169,6 +169,7 @@ RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*autobudpostach\.club.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*autoloans\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*autolombard\-krasnodar\.ru.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*autonew\.biz.*$ [NC,OR]
+RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*autoseo\-traffic\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*autotop\.com\.ua.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*autovideobroadcast\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*autowebmarket\.com\.ua.*$ [NC,OR]
@@ -622,6 +623,7 @@ RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*e\-kwiaciarz\.pl.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*e2click\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*eandsgallery\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*eaplay\.ru/a00af605.*$ [NC,OR]
+RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*earn\-from\-articles\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*easycommerce\.cf.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*easync\.io.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*easytuningshop\.ru.*$ [NC,OR]
@@ -1404,6 +1406,7 @@ RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*mole\.pluto\.ro.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*monarhs\.info.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*monetizationking\.net.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*money\-every\-day\.com.*$ [NC,OR]
+RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*money\-for\-placing\-articles\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*moneymaster\.ru.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*moneytop\.ru.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*monitorwebsitespeed\.com.*$ [NC,OR]
@@ -1895,6 +1898,7 @@ RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*secretscook\.ru.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*securityallianceservices\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*see\-your\-website\-here\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*seksotur\.ru.*$ [NC,OR]
+RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*sell\-fb\-group\-here\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*semalt\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*semalt\.semalt\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*semaltmedia\.com.*$ [NC,OR]
@@ -2757,6 +2761,7 @@ SetEnvIfNoCase Referer autobudpostach\.club spambot=yes
 SetEnvIfNoCase Referer autoloans\.com spambot=yes
 SetEnvIfNoCase Referer autolombard\-krasnodar\.ru spambot=yes
 SetEnvIfNoCase Referer autonew\.biz spambot=yes
+SetEnvIfNoCase Referer autoseo\-traffic\.com spambot=yes
 SetEnvIfNoCase Referer autotop\.com\.ua spambot=yes
 SetEnvIfNoCase Referer autovideobroadcast\.com spambot=yes
 SetEnvIfNoCase Referer autowebmarket\.com\.ua spambot=yes
@@ -3210,6 +3215,7 @@ SetEnvIfNoCase Referer e\-kwiaciarz\.pl spambot=yes
 SetEnvIfNoCase Referer e2click\.com spambot=yes
 SetEnvIfNoCase Referer eandsgallery\.com spambot=yes
 SetEnvIfNoCase Referer eaplay\.ru/a00af605 spambot=yes
+SetEnvIfNoCase Referer earn\-from\-articles\.com spambot=yes
 SetEnvIfNoCase Referer easycommerce\.cf spambot=yes
 SetEnvIfNoCase Referer easync\.io spambot=yes
 SetEnvIfNoCase Referer easytuningshop\.ru spambot=yes
@@ -3992,6 +3998,7 @@ SetEnvIfNoCase Referer mole\.pluto\.ro spambot=yes
 SetEnvIfNoCase Referer monarhs\.info spambot=yes
 SetEnvIfNoCase Referer monetizationking\.net spambot=yes
 SetEnvIfNoCase Referer money\-every\-day\.com spambot=yes
+SetEnvIfNoCase Referer money\-for\-placing\-articles\.com spambot=yes
 SetEnvIfNoCase Referer moneymaster\.ru spambot=yes
 SetEnvIfNoCase Referer moneytop\.ru spambot=yes
 SetEnvIfNoCase Referer monitorwebsitespeed\.com spambot=yes
@@ -4483,6 +4490,7 @@ SetEnvIfNoCase Referer secretscook\.ru spambot=yes
 SetEnvIfNoCase Referer securityallianceservices\.com spambot=yes
 SetEnvIfNoCase Referer see\-your\-website\-here\.com spambot=yes
 SetEnvIfNoCase Referer seksotur\.ru spambot=yes
+SetEnvIfNoCase Referer sell\-fb\-group\-here\.com spambot=yes
 SetEnvIfNoCase Referer semalt\.com spambot=yes
 SetEnvIfNoCase Referer semalt\.semalt\.com spambot=yes
 SetEnvIfNoCase Referer semaltmedia\.com spambot=yes

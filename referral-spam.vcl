@@ -1,5 +1,5 @@
 # https://github.com/Stevie-Ray/referrer-spam-blocker
-# Updated 2017-06-29 18:07:08
+# Updated 2017-07-25 20:48:54
 sub block_referral_spam {
 	if (
 		req.http.Referer ~ "(?i)000free\.us" ||
@@ -166,6 +166,7 @@ sub block_referral_spam {
 		req.http.Referer ~ "(?i)autoloans\.com" ||
 		req.http.Referer ~ "(?i)autolombard\-krasnodar\.ru" ||
 		req.http.Referer ~ "(?i)autonew\.biz" ||
+		req.http.Referer ~ "(?i)autoseo\-traffic\.com" ||
 		req.http.Referer ~ "(?i)autotop\.com\.ua" ||
 		req.http.Referer ~ "(?i)autovideobroadcast\.com" ||
 		req.http.Referer ~ "(?i)autowebmarket\.com\.ua" ||
@@ -619,6 +620,7 @@ sub block_referral_spam {
 		req.http.Referer ~ "(?i)e2click\.com" ||
 		req.http.Referer ~ "(?i)eandsgallery\.com" ||
 		req.http.Referer ~ "(?i)eaplay\.ru/a00af605" ||
+		req.http.Referer ~ "(?i)earn\-from\-articles\.com" ||
 		req.http.Referer ~ "(?i)easycommerce\.cf" ||
 		req.http.Referer ~ "(?i)easync\.io" ||
 		req.http.Referer ~ "(?i)easytuningshop\.ru" ||
@@ -1401,6 +1403,7 @@ sub block_referral_spam {
 		req.http.Referer ~ "(?i)monarhs\.info" ||
 		req.http.Referer ~ "(?i)monetizationking\.net" ||
 		req.http.Referer ~ "(?i)money\-every\-day\.com" ||
+		req.http.Referer ~ "(?i)money\-for\-placing\-articles\.com" ||
 		req.http.Referer ~ "(?i)moneymaster\.ru" ||
 		req.http.Referer ~ "(?i)moneytop\.ru" ||
 		req.http.Referer ~ "(?i)monitorwebsitespeed\.com" ||
@@ -1892,6 +1895,7 @@ sub block_referral_spam {
 		req.http.Referer ~ "(?i)securityallianceservices\.com" ||
 		req.http.Referer ~ "(?i)see\-your\-website\-here\.com" ||
 		req.http.Referer ~ "(?i)seksotur\.ru" ||
+		req.http.Referer ~ "(?i)sell\-fb\-group\-here\.com" ||
 		req.http.Referer ~ "(?i)semalt\.com" ||
 		req.http.Referer ~ "(?i)semalt\.semalt\.com" ||
 		req.http.Referer ~ "(?i)semaltmedia\.com" ||
