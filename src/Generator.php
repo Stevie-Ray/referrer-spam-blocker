@@ -1,4 +1,5 @@
 <?php
+
 namespace StevieRay;
 
 use Mso\IdnaConvert\IdnaConvert;
@@ -38,7 +39,7 @@ class Generator
         $domainsFile = __DIR__ . "/domains.txt";
 
         $handle = fopen($domainsFile, "r");
-        if (! $handle) {
+        if (!$handle) {
             throw new \RuntimeException('Error opening file ' . $domainsFile);
         }
         $lines = array();
@@ -80,7 +81,7 @@ class Generator
         $file = $this->outputDir . '/' . $filename;
         if (is_writable($file)) {
             file_put_contents($file, $data);
-            if (! chmod($file, 0644)) {
+            if (!chmod($file, 0644)) {
                 trigger_error("Couldn't not set " . $filename . " permissions to 644");
             }
         } else {
@@ -90,7 +91,7 @@ class Generator
 
     /**
      * @param string $date
-     * @param array  $lines
+     * @param array $lines
      */
     public function createApache($date, array $lines)
     {
@@ -119,7 +120,7 @@ class Generator
 
     /**
      * @param string $date
-     * @param array  $lines
+     * @param array $lines
      */
     public function createNginx($date, array $lines)
     {
@@ -139,7 +140,7 @@ class Generator
 
     /**
      * @param string $date
-     * @param array  $lines
+     * @param array $lines
      */
     public function createVarnish($date, array $lines)
     {
@@ -160,7 +161,7 @@ class Generator
 
     /**
      * @param string $date
-     * @param array  $lines
+     * @param array $lines
      */
     public function createIIS($date, array $lines)
     {
@@ -183,7 +184,7 @@ class Generator
 
     /**
      * @param string $date
-     * @param array  $lines
+     * @param array $lines
      */
     public function createuWSGI($date, array $lines)
     {
