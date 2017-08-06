@@ -1,5 +1,5 @@
 # https://github.com/Stevie-Ray/referrer-spam-blocker
-# Updated 2017-07-25 20:48:54
+# Updated 2017-08-06 11:55:31
 #
 # Put referral-spam.res in /path/to/vassals, then include it from within /path/to/vassals/vassal.ini:
 #
@@ -680,6 +680,7 @@ route-referer = (?i)eloconcream\.blogspot\.com break:403 Forbidden
 route-referer = (?i)eloxal\.ru break:403 Forbidden
 route-referer = (?i)elvel\.com\.ua break:403 Forbidden
 route-referer = (?i)embedle\.com break:403 Forbidden
+route-referer = (?i)emerson\-rus\.ru break:403 Forbidden
 route-referer = (?i)empis\.magix\.net break:403 Forbidden
 route-referer = (?i)energy\-ua\.com break:403 Forbidden
 route-referer = (?i)energydiet\-info\.ru break:403 Forbidden
@@ -2279,6 +2280,7 @@ route-referer = (?i)tyumen\.xrus\.org break:403 Forbidden
 route-referer = (?i)u\-cheats\.ru break:403 Forbidden
 route-referer = (?i)u17795\.netangels\.ru break:403 Forbidden
 route-referer = (?i)ua\-company\.ru break:403 Forbidden
+route-referer = (?i)ua\.tc break:403 Forbidden
 route-referer = (?i)uasb\.ru break:403 Forbidden
 route-referer = (?i)ublaze\.ru break:403 Forbidden
 route-referer = (?i)uchebavchehii\.ru break:403 Forbidden
@@ -2479,6 +2481,7 @@ route-referer = (?i)xboxster\.ru break:403 Forbidden
 route-referer = (?i)xfire\.com break:403 Forbidden
 route-referer = (?i)xgftnlrt\.bloger\.index\.hr break:403 Forbidden
 route-referer = (?i)xjrul\.com break:403 Forbidden
+route-referer = (?i)xkaz\.org break:403 Forbidden
 route-referer = (?i)xlolitka\.com break:403 Forbidden
 route-referer = (?i)xn\-\-\-\-\-6kcaacnblni5c5bicdpcmficy\.xn\-\-p1ai break:403 Forbidden
 route-referer = (?i)xn\-\-\-\-\-7kceclhb4abre1b4a0ccl2fxch1a\.xn\-\-p1ai break:403 Forbidden
@@ -2505,6 +2508,7 @@ route-referer = (?i)xn\-\-b1ag5cfn\.xn\-\-p1ai break:403 Forbidden
 route-referer = (?i)xn\-\-b1agm2d\.net break:403 Forbidden
 route-referer = (?i)xn\-\-c1acygb\.xn\-\-p1ai break:403 Forbidden
 route-referer = (?i)xn\-\-d1abj0abs9d\.in\.ua break:403 Forbidden
+route-referer = (?i)xn\-\-d1aifoe0a9a\.top break:403 Forbidden
 route-referer = (?i)xn\-\-e1aggki3c\.xn\-\-80adxhks break:403 Forbidden
 route-referer = (?i)xn\-\-h1ahbi\.com\.ua break:403 Forbidden
 route-referer = (?i)xn\-\-hxazdsfy\.blogspot\.com break:403 Forbidden
@@ -2592,4 +2596,5 @@ route-referer = (?i)zuchn\.com break:403 Forbidden
 route-referer = (?i)zverokruh\-shop\.cz break:403 Forbidden
 route-referer = (?i)zvetki\.ru break:403 Forbidden
 route-referer = (?i)zyzzcentral\.ru break:403 Forbidden
+route-referer = (?i)ḷ\.com break:403 Forbidden
 route-label = referral_spam
