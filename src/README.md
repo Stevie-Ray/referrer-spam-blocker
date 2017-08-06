@@ -1,5 +1,14 @@
-referrer-spam-blocker [![Build Status](https://travis-ci.org/Stevie-Ray/referrer-spam-blocker.svg)](https://travis-ci.org/Stevie-Ray/referrer-spam-blocker)
+referrer-spam-blocker
 ====================================
+
+[![Latest Stable Version](https://img.shields.io/packagist/v/Stevie-Ray/referrer-spam-blocker.svg?style=square)](https://packagist.org/packages/Stevie-Ray/referrer-spam-blocker)
+[![Build Status](https://travis-ci.org/Stevie-Ray/referrer-spam-blocker.svg)](https://travis-ci.org/Stevie-Ray/referrer-spam-blocker)
+[![Dependency Status](https://www.versioneye.com/php/Stevie-Ray:referrer-spam-blocker/badge.svg?style=flat)](https://www.versioneye.com/php/Stevie-Ray:referrer-spam-blocker)
+[![Code Quality](https://img.shields.io/scrutinizer/g/Stevie-Ray/referrer-spam-blocker.svg?style=flat)](https://scrutinizer-ci.com/g/Stevie-Ray/referrer-spam-blocker/?branch=master)
+[![Packagist Downloads](https://img.shields.io/packagist/dt/Stevie-Ray/referrer-spam-blocker.svg?style=flat)](https://packagist.org/packages/Stevie-Ray/referrer-spam-blocker)
+[![License](https://img.shields.io/packagist/l/Stevie-Ray/referrer-spam-blocker.svg?style=flat)](https://packagist.org/packages/Stevie-Ray/referrer-spam-blocker)
+
+- - - -
 
 ## Install
 
