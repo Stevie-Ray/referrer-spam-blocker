@@ -1,5 +1,5 @@
 # https://github.com/Stevie-Ray/referrer-spam-blocker
-# Updated 2017-08-06 11:55:31
+# Updated 2017-09-01 21:39:28
 sub block_referral_spam {
 	if (
 		req.http.Referer ~ "(?i)000free\.us" ||
@@ -35,6 +35,7 @@ sub block_referral_spam {
 		req.http.Referer ~ "(?i)4istoshop\.com" ||
 		req.http.Referer ~ "(?i)4webmasters\.com" ||
 		req.http.Referer ~ "(?i)4webmasters\.org" ||
+		req.http.Referer ~ "(?i)5\-steps\-to\-start\-business\.com" ||
 		req.http.Referer ~ "(?i)5elementov\.ru" ||
 		req.http.Referer ~ "(?i)5forex\.ru" ||
 		req.http.Referer ~ "(?i)6hopping\.com" ||
@@ -810,6 +811,7 @@ sub block_referral_spam {
 		req.http.Referer ~ "(?i)forms\-mtm\.ru" ||
 		req.http.Referer ~ "(?i)forpostlock\.ru" ||
 		req.http.Referer ~ "(?i)forsex\.info" ||
+		req.http.Referer ~ "(?i)fortwosmartcar\.pw" ||
 		req.http.Referer ~ "(?i)forum\-engineering\.ru" ||
 		req.http.Referer ~ "(?i)forum\.poker4life\.ru" ||
 		req.http.Referer ~ "(?i)forum\.tvmir\.org" ||
@@ -890,6 +892,7 @@ sub block_referral_spam {
 		req.http.Referer ~ "(?i)gcup\.ru" ||
 		req.http.Referer ~ "(?i)gdcentre\.ru" ||
 		req.http.Referer ~ "(?i)gearcraft\.us" ||
+		req.http.Referer ~ "(?i)gearsadspromo\.club" ||
 		req.http.Referer ~ "(?i)gelezki\.com" ||
 		req.http.Referer ~ "(?i)generalporn\.org" ||
 		req.http.Referer ~ "(?i)genericlowlatencyasiodriverhq\.aircus\.com" ||
@@ -1129,6 +1132,7 @@ sub block_referral_spam {
 		req.http.Referer ~ "(?i)journalhome\.com" ||
 		req.http.Referer ~ "(?i)juliadiets\.com" ||
 		req.http.Referer ~ "(?i)juliaworld\.net" ||
+		req.http.Referer ~ "(?i)justkillingti\.me" ||
 		req.http.Referer ~ "(?i)justprofit\.xyz" ||
 		req.http.Referer ~ "(?i)jwss\.cc" ||
 		req.http.Referer ~ "(?i)kaac\.ru" ||
@@ -1478,12 +1482,14 @@ sub block_referral_spam {
 		req.http.Referer ~ "(?i)nate\.com" ||
 		req.http.Referer ~ "(?i)naval\.jislaaik\.com" ||
 		req.http.Referer ~ "(?i)nbsproject\.ru" ||
+		req.http.Referer ~ "(?i)needtosellmyhousefast\.com" ||
 		req.http.Referer ~ "(?i)negral\.pluto\.ro" ||
 		req.http.Referer ~ "(?i)net\-profits\.xyz" ||
 		req.http.Referer ~ "(?i)netallergy\.ru" ||
 		req.http.Referer ~ "(?i)netpics\.org" ||
 		req.http.Referer ~ "(?i)nevansk\.ru" ||
 		req.http.Referer ~ "(?i)new\-apps\.ru" ||
+		req.http.Referer ~ "(?i)newstaffadsshop\.club" ||
 		req.http.Referer ~ "(?i)newstraveller\.ru" ||
 		req.http.Referer ~ "(?i)newstudio\.tv" ||
 		req.http.Referer ~ "(?i)nextconseil\.com" ||
@@ -1521,6 +1527,7 @@ sub block_referral_spam {
 		req.http.Referer ~ "(?i)obuv\-kupit\.ru" ||
 		req.http.Referer ~ "(?i)ochistka\-stokov\.ru" ||
 		req.http.Referer ~ "(?i)odesproperty\.com" ||
+		req.http.Referer ~ "(?i)odsadsmobile\.biz" ||
 		req.http.Referer ~ "(?i)odywpjtw\.bloger\.index\.hr" ||
 		req.http.Referer ~ "(?i)offers\.bycontext\.com" ||
 		req.http.Referer ~ "(?i)office\-windows\.ru" ||

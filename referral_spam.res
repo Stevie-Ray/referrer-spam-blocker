@@ -1,5 +1,5 @@
 # https://github.com/Stevie-Ray/referrer-spam-blocker
-# Updated 2017-08-06 11:55:31
+# Updated 2017-09-01 21:39:28
 #
 # Put referral-spam.res in /path/to/vassals, then include it from within /path/to/vassals/vassal.ini:
 #
@@ -39,6 +39,7 @@ route-referer = (?i)45tahunkhongguan\.com break:403 Forbidden
 route-referer = (?i)4istoshop\.com break:403 Forbidden
 route-referer = (?i)4webmasters\.com break:403 Forbidden
 route-referer = (?i)4webmasters\.org break:403 Forbidden
+route-referer = (?i)5\-steps\-to\-start\-business\.com break:403 Forbidden
 route-referer = (?i)5elementov\.ru break:403 Forbidden
 route-referer = (?i)5forex\.ru break:403 Forbidden
 route-referer = (?i)6hopping\.com break:403 Forbidden
@@ -814,6 +815,7 @@ route-referer = (?i)forminecrafters\.ru break:403 Forbidden
 route-referer = (?i)forms\-mtm\.ru break:403 Forbidden
 route-referer = (?i)forpostlock\.ru break:403 Forbidden
 route-referer = (?i)forsex\.info break:403 Forbidden
+route-referer = (?i)fortwosmartcar\.pw break:403 Forbidden
 route-referer = (?i)forum\-engineering\.ru break:403 Forbidden
 route-referer = (?i)forum\.poker4life\.ru break:403 Forbidden
 route-referer = (?i)forum\.tvmir\.org break:403 Forbidden
@@ -894,6 +896,7 @@ route-referer = (?i)gazoblok\.net\.ua break:403 Forbidden
 route-referer = (?i)gcup\.ru break:403 Forbidden
 route-referer = (?i)gdcentre\.ru break:403 Forbidden
 route-referer = (?i)gearcraft\.us break:403 Forbidden
+route-referer = (?i)gearsadspromo\.club break:403 Forbidden
 route-referer = (?i)gelezki\.com break:403 Forbidden
 route-referer = (?i)generalporn\.org break:403 Forbidden
 route-referer = (?i)genericlowlatencyasiodriverhq\.aircus\.com break:403 Forbidden
@@ -1133,6 +1136,7 @@ route-referer = (?i)joingames\.org break:403 Forbidden
 route-referer = (?i)journalhome\.com break:403 Forbidden
 route-referer = (?i)juliadiets\.com break:403 Forbidden
 route-referer = (?i)juliaworld\.net break:403 Forbidden
+route-referer = (?i)justkillingti\.me break:403 Forbidden
 route-referer = (?i)justprofit\.xyz break:403 Forbidden
 route-referer = (?i)jwss\.cc break:403 Forbidden
 route-referer = (?i)kaac\.ru break:403 Forbidden
@@ -1482,12 +1486,14 @@ route-referer = (?i)nastroyke\.net break:403 Forbidden
 route-referer = (?i)nate\.com break:403 Forbidden
 route-referer = (?i)naval\.jislaaik\.com break:403 Forbidden
 route-referer = (?i)nbsproject\.ru break:403 Forbidden
+route-referer = (?i)needtosellmyhousefast\.com break:403 Forbidden
 route-referer = (?i)negral\.pluto\.ro break:403 Forbidden
 route-referer = (?i)net\-profits\.xyz break:403 Forbidden
 route-referer = (?i)netallergy\.ru break:403 Forbidden
 route-referer = (?i)netpics\.org break:403 Forbidden
 route-referer = (?i)nevansk\.ru break:403 Forbidden
 route-referer = (?i)new\-apps\.ru break:403 Forbidden
+route-referer = (?i)newstaffadsshop\.club break:403 Forbidden
 route-referer = (?i)newstraveller\.ru break:403 Forbidden
 route-referer = (?i)newstudio\.tv break:403 Forbidden
 route-referer = (?i)nextconseil\.com break:403 Forbidden
@@ -1525,6 +1531,7 @@ route-referer = (?i)obnal\.org break:403 Forbidden
 route-referer = (?i)obuv\-kupit\.ru break:403 Forbidden
 route-referer = (?i)ochistka\-stokov\.ru break:403 Forbidden
 route-referer = (?i)odesproperty\.com break:403 Forbidden
+route-referer = (?i)odsadsmobile\.biz break:403 Forbidden
 route-referer = (?i)odywpjtw\.bloger\.index\.hr break:403 Forbidden
 route-referer = (?i)offers\.bycontext\.com break:403 Forbidden
 route-referer = (?i)office\-windows\.ru break:403 Forbidden
