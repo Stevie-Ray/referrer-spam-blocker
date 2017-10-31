@@ -29,6 +29,7 @@ class Generator
         $this->createIIS($date, $lines);
         $this->createuWSGI($date, $lines);
         $this->createGoogleExclude($lines);
+        $this->createCaddyfile($date, $lines);
     }
 
     /**
@@ -238,5 +239,36 @@ class Generator
             $this->writeToFile('google-exclude-' . $x . '.txt', $dataSplit);
         }
 
+    }
+
+    /**
+     * @param string $date
+     * @param array $lines
+     */
+    public function createCaddyfile($date, array $lines)
+    {
+      $redir_rules = "";
+
+      foreach ($lines as $line) {
+        if ( !empty($redir_rules ) ) $redir_rules .= "\n\t";
+        $redir_rules .= "if {>Referer} is $line";
+      }
+
+      $data = <<<EOT
+# $this->projectUrl
+# Updated $date
+#
+# Move this file next to your Caddy config file given through -conf, and include it by doing:
+#
+#     include ./referral-spam.caddy;
+#
+# Then start your caddy server. All the referrers will now be redirected to a 444 HTTP answer
+#
+redir 444 {
+  if_op or
+  $redir_rules
+}
+EOT;
+      $this->writeToFile('referral-spam.caddy', $data);
     }
 }
