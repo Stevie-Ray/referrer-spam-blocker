@@ -265,8 +265,8 @@ class Generator
 # Then start your caddy server. All the referrers will now be redirected to a 444 HTTP answer
 #
 redir 444 {
-  if_op or
-  $redir_rules
+	if_op or
+	$redir_rules
 }
 EOT;
       $this->writeToFile('referral-spam.caddy', $data);

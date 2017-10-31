@@ -1,5 +1,5 @@
 # https://github.com/Stevie-Ray/referrer-spam-blocker
-# Updated 2017-10-31 11:56:34
+# Updated 2017-10-31 13:14:42
 #
 # Move this file next to your Caddy config file given through -conf, and include it by doing:
 #
@@ -8,8 +8,8 @@
 # Then start your caddy server. All the referrers will now be redirected to a 444 HTTP answer
 #
 redir 444 {
-  if_op or
-  if {>Referer} is 000free.us
+	if_op or
+	if {>Referer} is 000free.us
 	if {>Referer} is 00author.com
 	if {>Referer} is 00go.com
 	if {>Referer} is 00it.com
