@@ -1,5 +1,5 @@
 # https://github.com/Stevie-Ray/referrer-spam-blocker
-# Updated 2017-10-07 22:37:19
+# Updated 2017-11-01 23:32:31
 sub block_referral_spam {
 	if (
 		req.http.Referer ~ "(?i)000free\.us" ||
@@ -57,6 +57,7 @@ sub block_referral_spam {
 		req.http.Referer ~ "(?i)acads\.net" ||
 		req.http.Referer ~ "(?i)actata\.co" ||
 		req.http.Referer ~ "(?i)acunetix\-referrer\.com" ||
+		req.http.Referer ~ "(?i)adanih\.com" ||
 		req.http.Referer ~ "(?i)adcash\.com" ||
 		req.http.Referer ~ "(?i)addblueoff\.com\.ua" ||
 		req.http.Referer ~ "(?i)addons\.mozilla\.org/en\-us/firefox/addon/ilovevitaly" ||
@@ -783,6 +784,7 @@ sub block_referral_spam {
 		req.http.Referer ~ "(?i)filmgo\.ru" ||
 		req.http.Referer ~ "(?i)filmidivx\.com" ||
 		req.http.Referer ~ "(?i)findacheaplawyers\.com" ||
+		req.http.Referer ~ "(?i)findercarphotos\.com" ||
 		req.http.Referer ~ "(?i)finstroy\.net" ||
 		req.http.Referer ~ "(?i)finteks\.ru" ||
 		req.http.Referer ~ "(?i)firma\-legion\.ru" ||
@@ -865,6 +867,7 @@ sub block_referral_spam {
 		req.http.Referer ~ "(?i)freetangodownload\.com" ||
 		req.http.Referer ~ "(?i)freewebs\.com" ||
 		req.http.Referer ~ "(?i)freewhatsappload\.com" ||
+		req.http.Referer ~ "(?i)freewlan\.info" ||
 		req.http.Referer ~ "(?i)freshberry\.com\.ua" ||
 		req.http.Referer ~ "(?i)front\.ru" ||
 		req.http.Referer ~ "(?i)front\.to" ||
@@ -1005,10 +1008,12 @@ sub block_referral_spam {
 		req.http.Referer ~ "(?i)hol\.es" ||
 		req.http.Referer ~ "(?i)holidaypics\.org" ||
 		req.http.Referer ~ "(?i)home\.myplaycity\.com" ||
+		req.http.Referer ~ "(?i)homeafrikalike\.tk" ||
 		req.http.Referer ~ "(?i)homedo\.fabpage\.com" ||
 		req.http.Referer ~ "(?i)homeinns\.com" ||
 		req.http.Referer ~ "(?i)homelygarden\.com" ||
 		req.http.Referer ~ "(?i)homemade\.gq" ||
+		req.http.Referer ~ "(?i)homemypicture\.tk" ||
 		req.http.Referer ~ "(?i)hongfanji\.com" ||
 		req.http.Referer ~ "(?i)hoporno\.com" ||
 		req.http.Referer ~ "(?i)horoshieokna\.com" ||
@@ -1286,6 +1291,7 @@ sub block_referral_spam {
 		req.http.Referer ~ "(?i)livefixer\.com" ||
 		req.http.Referer ~ "(?i)liveinternet\.ro" ||
 		req.http.Referer ~ "(?i)liveinternet\.ru" ||
+		req.http.Referer ~ "(?i)livingroomdecoratingideas\.website" ||
 		req.http.Referer ~ "(?i)llastbuy\.ru" ||
 		req.http.Referer ~ "(?i)lmrauction\.com" ||
 		req.http.Referer ~ "(?i)loadopia\.com" ||
@@ -1306,6 +1312,7 @@ sub block_referral_spam {
 		req.http.Referer ~ "(?i)luxmagazine\.cf" ||
 		req.http.Referer ~ "(?i)luxup\.ru" ||
 		req.http.Referer ~ "(?i)m\-google\.xyz" ||
+		req.http.Referer ~ "(?i)m\.ok\.ru" ||
 		req.http.Referer ~ "(?i)m1media\.net" ||
 		req.http.Referer ~ "(?i)macresource\.co\.uk" ||
 		req.http.Referer ~ "(?i)madot\.onlinewebshop\.net" ||
@@ -1338,6 +1345,7 @@ sub block_referral_spam {
 		req.http.Referer ~ "(?i)masterseek\.com" ||
 		req.http.Referer ~ "(?i)mastershef\.club" ||
 		req.http.Referer ~ "(?i)masturbate\.co\.uk" ||
+		req.http.Referer ~ "(?i)mattgibson\.us" ||
 		req.http.Referer ~ "(?i)mature\.free\-websites\.com" ||
 		req.http.Referer ~ "(?i)maximilitary\.ru" ||
 		req.http.Referer ~ "(?i)maxthon\.com" ||
@@ -2312,6 +2320,9 @@ sub block_referral_spam {
 		req.http.Referer ~ "(?i)unmaroll\.ya\.ru" ||
 		req.http.Referer ~ "(?i)unpredictable\.ga" ||
 		req.http.Referer ~ "(?i)uptime\-alpha\.net" ||
+		req.http.Referer ~ "(?i)uptime\-beta\.net" ||
+		req.http.Referer ~ "(?i)uptime\-delta\.net" ||
+		req.http.Referer ~ "(?i)uptime\-gamma\.net" ||
 		req.http.Referer ~ "(?i)uptime\.com" ||
 		req.http.Referer ~ "(?i)uptimebot\.net" ||
 		req.http.Referer ~ "(?i)uptimechecker\.com" ||

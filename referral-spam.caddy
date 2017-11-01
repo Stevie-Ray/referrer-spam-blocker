@@ -1,5 +1,5 @@
 # https://github.com/Stevie-Ray/referrer-spam-blocker
-# Updated 2017-10-31 13:14:42
+# Updated 2017-11-01 23:32:31
 #
 # Move this file next to your Caddy config file given through -conf, and include it by doing:
 #
@@ -64,6 +64,7 @@ redir 444 {
 	if {>Referer} is acads.net
 	if {>Referer} is actata.co
 	if {>Referer} is acunetix-referrer.com
+	if {>Referer} is adanih.com
 	if {>Referer} is adcash.com
 	if {>Referer} is addblueoff.com.ua
 	if {>Referer} is addons.mozilla.org/en-us/firefox/addon/ilovevitaly
@@ -790,6 +791,7 @@ redir 444 {
 	if {>Referer} is filmgo.ru
 	if {>Referer} is filmidivx.com
 	if {>Referer} is findacheaplawyers.com
+	if {>Referer} is findercarphotos.com
 	if {>Referer} is finstroy.net
 	if {>Referer} is finteks.ru
 	if {>Referer} is firma-legion.ru
@@ -872,6 +874,7 @@ redir 444 {
 	if {>Referer} is freetangodownload.com
 	if {>Referer} is freewebs.com
 	if {>Referer} is freewhatsappload.com
+	if {>Referer} is freewlan.info
 	if {>Referer} is freshberry.com.ua
 	if {>Referer} is front.ru
 	if {>Referer} is front.to
@@ -1012,10 +1015,12 @@ redir 444 {
 	if {>Referer} is hol.es
 	if {>Referer} is holidaypics.org
 	if {>Referer} is home.myplaycity.com
+	if {>Referer} is homeafrikalike.tk
 	if {>Referer} is homedo.fabpage.com
 	if {>Referer} is homeinns.com
 	if {>Referer} is homelygarden.com
 	if {>Referer} is homemade.gq
+	if {>Referer} is homemypicture.tk
 	if {>Referer} is hongfanji.com
 	if {>Referer} is hoporno.com
 	if {>Referer} is horoshieokna.com
@@ -1293,6 +1298,7 @@ redir 444 {
 	if {>Referer} is livefixer.com
 	if {>Referer} is liveinternet.ro
 	if {>Referer} is liveinternet.ru
+	if {>Referer} is livingroomdecoratingideas.website
 	if {>Referer} is llastbuy.ru
 	if {>Referer} is lmrauction.com
 	if {>Referer} is loadopia.com
@@ -1313,6 +1319,7 @@ redir 444 {
 	if {>Referer} is luxmagazine.cf
 	if {>Referer} is luxup.ru
 	if {>Referer} is m-google.xyz
+	if {>Referer} is m.ok.ru
 	if {>Referer} is m1media.net
 	if {>Referer} is macresource.co.uk
 	if {>Referer} is madot.onlinewebshop.net
@@ -1345,6 +1352,7 @@ redir 444 {
 	if {>Referer} is masterseek.com
 	if {>Referer} is mastershef.club
 	if {>Referer} is masturbate.co.uk
+	if {>Referer} is mattgibson.us
 	if {>Referer} is mature.free-websites.com
 	if {>Referer} is maximilitary.ru
 	if {>Referer} is maxthon.com
@@ -2319,6 +2327,9 @@ redir 444 {
 	if {>Referer} is unmaroll.ya.ru
 	if {>Referer} is unpredictable.ga
 	if {>Referer} is uptime-alpha.net
+	if {>Referer} is uptime-beta.net
+	if {>Referer} is uptime-delta.net
+	if {>Referer} is uptime-gamma.net
 	if {>Referer} is uptime.com
 	if {>Referer} is uptimebot.net
 	if {>Referer} is uptimechecker.com

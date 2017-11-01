@@ -1,5 +1,5 @@
 # https://github.com/Stevie-Ray/referrer-spam-blocker
-# Updated 2017-10-07 22:37:19
+# Updated 2017-11-01 23:32:31
 #
 # Put referral-spam.res in /path/to/vassals, then include it from within /path/to/vassals/vassal.ini:
 #
@@ -61,6 +61,7 @@ route-referer = (?i)academia\-nsk\.org break:403 Forbidden
 route-referer = (?i)acads\.net break:403 Forbidden
 route-referer = (?i)actata\.co break:403 Forbidden
 route-referer = (?i)acunetix\-referrer\.com break:403 Forbidden
+route-referer = (?i)adanih\.com break:403 Forbidden
 route-referer = (?i)adcash\.com break:403 Forbidden
 route-referer = (?i)addblueoff\.com\.ua break:403 Forbidden
 route-referer = (?i)addons\.mozilla\.org/en\-us/firefox/addon/ilovevitaly break:403 Forbidden
@@ -787,6 +788,7 @@ route-referer = (?i)filmetricsasia\.com break:403 Forbidden
 route-referer = (?i)filmgo\.ru break:403 Forbidden
 route-referer = (?i)filmidivx\.com break:403 Forbidden
 route-referer = (?i)findacheaplawyers\.com break:403 Forbidden
+route-referer = (?i)findercarphotos\.com break:403 Forbidden
 route-referer = (?i)finstroy\.net break:403 Forbidden
 route-referer = (?i)finteks\.ru break:403 Forbidden
 route-referer = (?i)firma\-legion\.ru break:403 Forbidden
@@ -869,6 +871,7 @@ route-referer = (?i)freeseedsonline\.com break:403 Forbidden
 route-referer = (?i)freetangodownload\.com break:403 Forbidden
 route-referer = (?i)freewebs\.com break:403 Forbidden
 route-referer = (?i)freewhatsappload\.com break:403 Forbidden
+route-referer = (?i)freewlan\.info break:403 Forbidden
 route-referer = (?i)freshberry\.com\.ua break:403 Forbidden
 route-referer = (?i)front\.ru break:403 Forbidden
 route-referer = (?i)front\.to break:403 Forbidden
@@ -1009,10 +1012,12 @@ route-referer = (?i)hobild\.net break:403 Forbidden
 route-referer = (?i)hol\.es break:403 Forbidden
 route-referer = (?i)holidaypics\.org break:403 Forbidden
 route-referer = (?i)home\.myplaycity\.com break:403 Forbidden
+route-referer = (?i)homeafrikalike\.tk break:403 Forbidden
 route-referer = (?i)homedo\.fabpage\.com break:403 Forbidden
 route-referer = (?i)homeinns\.com break:403 Forbidden
 route-referer = (?i)homelygarden\.com break:403 Forbidden
 route-referer = (?i)homemade\.gq break:403 Forbidden
+route-referer = (?i)homemypicture\.tk break:403 Forbidden
 route-referer = (?i)hongfanji\.com break:403 Forbidden
 route-referer = (?i)hoporno\.com break:403 Forbidden
 route-referer = (?i)horoshieokna\.com break:403 Forbidden
@@ -1290,6 +1295,7 @@ route-referer = (?i)live\-sexchat\.ru break:403 Forbidden
 route-referer = (?i)livefixer\.com break:403 Forbidden
 route-referer = (?i)liveinternet\.ro break:403 Forbidden
 route-referer = (?i)liveinternet\.ru break:403 Forbidden
+route-referer = (?i)livingroomdecoratingideas\.website break:403 Forbidden
 route-referer = (?i)llastbuy\.ru break:403 Forbidden
 route-referer = (?i)lmrauction\.com break:403 Forbidden
 route-referer = (?i)loadopia\.com break:403 Forbidden
@@ -1310,6 +1316,7 @@ route-referer = (?i)lutherstable\.org break:403 Forbidden
 route-referer = (?i)luxmagazine\.cf break:403 Forbidden
 route-referer = (?i)luxup\.ru break:403 Forbidden
 route-referer = (?i)m\-google\.xyz break:403 Forbidden
+route-referer = (?i)m\.ok\.ru break:403 Forbidden
 route-referer = (?i)m1media\.net break:403 Forbidden
 route-referer = (?i)macresource\.co\.uk break:403 Forbidden
 route-referer = (?i)madot\.onlinewebshop\.net break:403 Forbidden
@@ -1342,6 +1349,7 @@ route-referer = (?i)master\-muznachas\.ru break:403 Forbidden
 route-referer = (?i)masterseek\.com break:403 Forbidden
 route-referer = (?i)mastershef\.club break:403 Forbidden
 route-referer = (?i)masturbate\.co\.uk break:403 Forbidden
+route-referer = (?i)mattgibson\.us break:403 Forbidden
 route-referer = (?i)mature\.free\-websites\.com break:403 Forbidden
 route-referer = (?i)maximilitary\.ru break:403 Forbidden
 route-referer = (?i)maxthon\.com break:403 Forbidden
@@ -2316,6 +2324,9 @@ route-referer = (?i)unitygame3d\.com break:403 Forbidden
 route-referer = (?i)unmaroll\.ya\.ru break:403 Forbidden
 route-referer = (?i)unpredictable\.ga break:403 Forbidden
 route-referer = (?i)uptime\-alpha\.net break:403 Forbidden
+route-referer = (?i)uptime\-beta\.net break:403 Forbidden
+route-referer = (?i)uptime\-delta\.net break:403 Forbidden
+route-referer = (?i)uptime\-gamma\.net break:403 Forbidden
 route-referer = (?i)uptime\.com break:403 Forbidden
 route-referer = (?i)uptimebot\.net break:403 Forbidden
 route-referer = (?i)uptimechecker\.com break:403 Forbidden
