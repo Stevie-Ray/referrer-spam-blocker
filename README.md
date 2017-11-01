@@ -1,7 +1,7 @@
 referrer-spam-blocker
 ====================================
 
-Apache, Nginx, IIS, uWSGI & Varnish blacklist plus Google Analytics segment to prevent referrer spam traffic 👾
+Apache, Nginx, IIS, uWSGI, Caddy & Varnish blacklist + Google Analytics segments to prevent referrer spam traffic 👾
 
 [![Latest Stable Version](https://img.shields.io/packagist/v/Stevie-Ray/referrer-spam-blocker.svg?style=square)](https://packagist.org/packages/Stevie-Ray/referrer-spam-blocker)
 [![Build Status](https://travis-ci.org/Stevie-Ray/referrer-spam-blocker.svg)](https://travis-ci.org/Stevie-Ray/referrer-spam-blocker)
@@ -48,9 +48,18 @@ sub vcl_recv { call block_referral_spam; }
 ```
 
 
-## Internet Information Services (IIS): web.config
+## IIS (Internet Information Services): web.config
 
 The web.config file is located in the root directory of your Windows Server web application.
+
+
+## Caddy (HTTP/2 Web Server with Automatic HTTPS): referral-spam.caddy
+
+Move this file next to your Caddy config file given through -conf, and include it by doing:
+
+     include ./referral-spam.caddy;
+
+ Then start your caddy server. All the referrers will now be redirected to a 444 HTTP answer
 
 
 ## uWSGI: referral_spam.res
@@ -100,6 +109,9 @@ ADD https://raw.githubusercontent.com/Stevie-Ray/referrer-spam-blocker/master/re
 
 # IIS: Download web.config to /sitepath/ (change sitepath accordingly)
 ADD https://raw.githubusercontent.com/Stevie-Ray/referrer-spam-blocker/master/web.config /sitepath/
+
+# Caddy: Download referral-spam.caddy to /sitepath/ (next to your Caddy config file given through -conf)
+ADD https://raw.githubusercontent.com/Stevie-Ray/referrer-spam-blocker/master/referral-spam.caddy /sitepath/
 
 # uWSGI: Download referral_spam.res to /sitepath/ (change sitepath accordingly)
 ADD https://raw.githubusercontent.com/Stevie-Ray/referrer-spam-blocker/master/referral_spam.res /sitepath/
