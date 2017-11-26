@@ -1,5 +1,5 @@
 # https://github.com/Stevie-Ray/referrer-spam-blocker
-# Updated 2017-11-01 23:32:31
+# Updated 2017-11-26 21:29:54
 #
 # Put referral-spam.res in /path/to/vassals, then include it from within /path/to/vassals/vassal.ini:
 #
@@ -34,6 +34,7 @@ route-referer = (?i)2nt\.ru break:403 Forbidden
 route-referer = (?i)2your\.site break:403 Forbidden
 route-referer = (?i)3\-letter\-domains\.net break:403 Forbidden
 route-referer = (?i)3dracergames\.com break:403 Forbidden
+route-referer = (?i)3waynetworks\.com break:403 Forbidden
 route-referer = (?i)45en\.ru break:403 Forbidden
 route-referer = (?i)45tahunkhongguan\.com break:403 Forbidden
 route-referer = (?i)4istoshop\.com break:403 Forbidden
@@ -132,6 +133,7 @@ route-referer = (?i)android\-systems\.ru break:403 Forbidden
 route-referer = (?i)android\-vsem\.org break:403 Forbidden
 route-referer = (?i)android4fun\.org break:403 Forbidden
 route-referer = (?i)androids\-store\.com break:403 Forbidden
+route-referer = (?i)animalphotos\.xyz break:403 Forbidden
 route-referer = (?i)animebox\.com\.ua break:403 Forbidden
 route-referer = (?i)anticrawler\.org break:403 Forbidden
 route-referer = (?i)aosheng\-tech\.com break:403 Forbidden
@@ -224,6 +226,7 @@ route-referer = (?i)bbtec\.net break:403 Forbidden
 route-referer = (?i)beamfall\.info break:403 Forbidden
 route-referer = (?i)beauby\.ru break:403 Forbidden
 route-referer = (?i)beauty\-clinic\.ru break:403 Forbidden
+route-referer = (?i)bedroomlighting\.us break:403 Forbidden
 route-referer = (?i)begalka\.xyz break:403 Forbidden
 route-referer = (?i)belinvestdom\.by break:403 Forbidden
 route-referer = (?i)berdasovivan\.ru break:403 Forbidden
@@ -506,6 +509,7 @@ route-referer = (?i)cool\-wedding\.net break:403 Forbidden
 route-referer = (?i)coop\-gamers\.ru break:403 Forbidden
 route-referer = (?i)copblock\.org break:403 Forbidden
 route-referer = (?i)copyrightclaims\.org break:403 Forbidden
+route-referer = (?i)copyrightinstitute\.org break:403 Forbidden
 route-referer = (?i)countravel\.net break:403 Forbidden
 route-referer = (?i)covadhosting\.biz break:403 Forbidden
 route-referer = (?i)covetnica\.com break:403 Forbidden
@@ -1933,6 +1937,7 @@ route-referer = (?i)seo\-2\-0\.com break:403 Forbidden
 route-referer = (?i)seo\-platform\.com break:403 Forbidden
 route-referer = (?i)seo\-smm\.kz break:403 Forbidden
 route-referer = (?i)seoanalyses\.com break:403 Forbidden
+route-referer = (?i)seocheckupx\.com break:403 Forbidden
 route-referer = (?i)seoexperimenty\.ru break:403 Forbidden
 route-referer = (?i)seojokes\.net break:403 Forbidden
 route-referer = (?i)seokicks\.de break:403 Forbidden
@@ -2561,6 +2566,7 @@ route-referer = (?i)xzlive\.com break:403 Forbidden
 route-referer = (?i)yaderenergy\.ru break:403 Forbidden
 route-referer = (?i)yaminecraft\.ru break:403 Forbidden
 route-referer = (?i)yeartwit\.com break:403 Forbidden
+route-referer = (?i)yellowstonevisitortours\.com break:403 Forbidden
 route-referer = (?i)ykecwqlixx\.ru break:403 Forbidden
 route-referer = (?i)ynymnwbm\.bloger\.index\.hr break:403 Forbidden
 route-referer = (?i)youandcredit\.ru break:403 Forbidden

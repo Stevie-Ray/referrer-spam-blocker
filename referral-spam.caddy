@@ -1,5 +1,5 @@
 # https://github.com/Stevie-Ray/referrer-spam-blocker
-# Updated 2017-11-01 23:32:31
+# Updated 2017-11-26 21:29:54
 #
 # Move this file next to your Caddy config file given through -conf, and include it by doing:
 #
@@ -37,6 +37,7 @@ redir 444 {
 	if {>Referer} is 2your.site
 	if {>Referer} is 3-letter-domains.net
 	if {>Referer} is 3dracergames.com
+	if {>Referer} is 3waynetworks.com
 	if {>Referer} is 45en.ru
 	if {>Referer} is 45tahunkhongguan.com
 	if {>Referer} is 4istoshop.com
@@ -135,6 +136,7 @@ redir 444 {
 	if {>Referer} is android-vsem.org
 	if {>Referer} is android4fun.org
 	if {>Referer} is androids-store.com
+	if {>Referer} is animalphotos.xyz
 	if {>Referer} is animebox.com.ua
 	if {>Referer} is anticrawler.org
 	if {>Referer} is aosheng-tech.com
@@ -227,6 +229,7 @@ redir 444 {
 	if {>Referer} is beamfall.info
 	if {>Referer} is beauby.ru
 	if {>Referer} is beauty-clinic.ru
+	if {>Referer} is bedroomlighting.us
 	if {>Referer} is begalka.xyz
 	if {>Referer} is belinvestdom.by
 	if {>Referer} is berdasovivan.ru
@@ -509,6 +512,7 @@ redir 444 {
 	if {>Referer} is coop-gamers.ru
 	if {>Referer} is copblock.org
 	if {>Referer} is copyrightclaims.org
+	if {>Referer} is copyrightinstitute.org
 	if {>Referer} is countravel.net
 	if {>Referer} is covadhosting.biz
 	if {>Referer} is covetnica.com
@@ -1936,6 +1940,7 @@ redir 444 {
 	if {>Referer} is seo-platform.com
 	if {>Referer} is seo-smm.kz
 	if {>Referer} is seoanalyses.com
+	if {>Referer} is seocheckupx.com
 	if {>Referer} is seoexperimenty.ru
 	if {>Referer} is seojokes.net
 	if {>Referer} is seokicks.de
@@ -2564,6 +2569,7 @@ redir 444 {
 	if {>Referer} is yaderenergy.ru
 	if {>Referer} is yaminecraft.ru
 	if {>Referer} is yeartwit.com
+	if {>Referer} is yellowstonevisitortours.com
 	if {>Referer} is ykecwqlixx.ru
 	if {>Referer} is ynymnwbm.bloger.index.hr
 	if {>Referer} is youandcredit.ru

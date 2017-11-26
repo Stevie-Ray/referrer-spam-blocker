@@ -1,5 +1,5 @@
 # https://github.com/Stevie-Ray/referrer-spam-blocker
-# Updated 2017-11-01 23:32:31
+# Updated 2017-11-26 21:29:54
 sub block_referral_spam {
 	if (
 		req.http.Referer ~ "(?i)000free\.us" ||
@@ -30,6 +30,7 @@ sub block_referral_spam {
 		req.http.Referer ~ "(?i)2your\.site" ||
 		req.http.Referer ~ "(?i)3\-letter\-domains\.net" ||
 		req.http.Referer ~ "(?i)3dracergames\.com" ||
+		req.http.Referer ~ "(?i)3waynetworks\.com" ||
 		req.http.Referer ~ "(?i)45en\.ru" ||
 		req.http.Referer ~ "(?i)45tahunkhongguan\.com" ||
 		req.http.Referer ~ "(?i)4istoshop\.com" ||
@@ -128,6 +129,7 @@ sub block_referral_spam {
 		req.http.Referer ~ "(?i)android\-vsem\.org" ||
 		req.http.Referer ~ "(?i)android4fun\.org" ||
 		req.http.Referer ~ "(?i)androids\-store\.com" ||
+		req.http.Referer ~ "(?i)animalphotos\.xyz" ||
 		req.http.Referer ~ "(?i)animebox\.com\.ua" ||
 		req.http.Referer ~ "(?i)anticrawler\.org" ||
 		req.http.Referer ~ "(?i)aosheng\-tech\.com" ||
@@ -220,6 +222,7 @@ sub block_referral_spam {
 		req.http.Referer ~ "(?i)beamfall\.info" ||
 		req.http.Referer ~ "(?i)beauby\.ru" ||
 		req.http.Referer ~ "(?i)beauty\-clinic\.ru" ||
+		req.http.Referer ~ "(?i)bedroomlighting\.us" ||
 		req.http.Referer ~ "(?i)begalka\.xyz" ||
 		req.http.Referer ~ "(?i)belinvestdom\.by" ||
 		req.http.Referer ~ "(?i)berdasovivan\.ru" ||
@@ -502,6 +505,7 @@ sub block_referral_spam {
 		req.http.Referer ~ "(?i)coop\-gamers\.ru" ||
 		req.http.Referer ~ "(?i)copblock\.org" ||
 		req.http.Referer ~ "(?i)copyrightclaims\.org" ||
+		req.http.Referer ~ "(?i)copyrightinstitute\.org" ||
 		req.http.Referer ~ "(?i)countravel\.net" ||
 		req.http.Referer ~ "(?i)covadhosting\.biz" ||
 		req.http.Referer ~ "(?i)covetnica\.com" ||
@@ -1929,6 +1933,7 @@ sub block_referral_spam {
 		req.http.Referer ~ "(?i)seo\-platform\.com" ||
 		req.http.Referer ~ "(?i)seo\-smm\.kz" ||
 		req.http.Referer ~ "(?i)seoanalyses\.com" ||
+		req.http.Referer ~ "(?i)seocheckupx\.com" ||
 		req.http.Referer ~ "(?i)seoexperimenty\.ru" ||
 		req.http.Referer ~ "(?i)seojokes\.net" ||
 		req.http.Referer ~ "(?i)seokicks\.de" ||
@@ -2557,6 +2562,7 @@ sub block_referral_spam {
 		req.http.Referer ~ "(?i)yaderenergy\.ru" ||
 		req.http.Referer ~ "(?i)yaminecraft\.ru" ||
 		req.http.Referer ~ "(?i)yeartwit\.com" ||
+		req.http.Referer ~ "(?i)yellowstonevisitortours\.com" ||
 		req.http.Referer ~ "(?i)ykecwqlixx\.ru" ||
 		req.http.Referer ~ "(?i)ynymnwbm\.bloger\.index\.hr" ||
 		req.http.Referer ~ "(?i)youandcredit\.ru" ||
