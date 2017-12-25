@@ -1,5 +1,5 @@
 # https://github.com/Stevie-Ray/referrer-spam-blocker
-# Updated 2017-11-26 21:29:54
+# Updated 2017-12-25 14:44:57
 
 <IfModule mod_rewrite.c>
 
@@ -543,6 +543,7 @@ RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*darodar\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*datsun\-do\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*dbmkfhqk\.bloger\.index\.hr.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*dbutton\.net.*$ [NC,OR]
+RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*dcdcapital\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*ddlmega\.net.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*ddpills\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*de\.zapmeta\.com.*$ [NC,OR]
@@ -1937,6 +1938,7 @@ RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*seo\-platform\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*seo\-smm\.kz.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*seoanalyses\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*seocheckupx\.com.*$ [NC,OR]
+RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*seocheckupx\.net.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*seoexperimenty\.ru.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*seojokes\.net.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*seokicks\.de.*$ [NC,OR]
@@ -2115,6 +2117,7 @@ RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*statustroll\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*stauga\.altervista\.org.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*steame\.ru.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*steelmaster\.lv.*$ [NC,OR]
+RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*stocktwists\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*stoki\.ru.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*strana\-krasoty\.ru.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*strana\-solnca\.ru.*$ [NC,OR]
@@ -2547,6 +2550,7 @@ RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*xn\-\-e1aggki3c\.xn\-\-80adxhks
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*xn\-\-h1ahbi\.com\.ua.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*xn\-\-hxazdsfy\.blogspot\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*xn\-\-l1aengat\.xn\-\-p1ai.*$ [NC,OR]
+RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*xn\-\-mhg\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*xn\-\-oogle\-wmc\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*xn\-\-q1a\.xn\-\-b1aube0e\.xn\-\-c1acygb\.xn\-\-p1ai.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*xnxx\-n\.com.*$ [NC,OR]
@@ -2630,8 +2634,7 @@ RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*zoominfo\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*zuchn\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*zverokruh\-shop\.cz.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*zvetki\.ru.*$ [NC,OR]
-RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*zyzzcentral\.ru.*$ [NC,OR]
-RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*ḷ\.com.*$ [NC]
+RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*zyzzcentral\.ru.*$ [NC]
 RewriteRule ^(.*)$ – [F,L]
 
 </IfModule>
@@ -3176,6 +3179,7 @@ SetEnvIfNoCase Referer darodar\.com spambot=yes
 SetEnvIfNoCase Referer datsun\-do\.com spambot=yes
 SetEnvIfNoCase Referer dbmkfhqk\.bloger\.index\.hr spambot=yes
 SetEnvIfNoCase Referer dbutton\.net spambot=yes
+SetEnvIfNoCase Referer dcdcapital\.com spambot=yes
 SetEnvIfNoCase Referer ddlmega\.net spambot=yes
 SetEnvIfNoCase Referer ddpills\.com spambot=yes
 SetEnvIfNoCase Referer de\.zapmeta\.com spambot=yes
@@ -4570,6 +4574,7 @@ SetEnvIfNoCase Referer seo\-platform\.com spambot=yes
 SetEnvIfNoCase Referer seo\-smm\.kz spambot=yes
 SetEnvIfNoCase Referer seoanalyses\.com spambot=yes
 SetEnvIfNoCase Referer seocheckupx\.com spambot=yes
+SetEnvIfNoCase Referer seocheckupx\.net spambot=yes
 SetEnvIfNoCase Referer seoexperimenty\.ru spambot=yes
 SetEnvIfNoCase Referer seojokes\.net spambot=yes
 SetEnvIfNoCase Referer seokicks\.de spambot=yes
@@ -4748,6 +4753,7 @@ SetEnvIfNoCase Referer statustroll\.com spambot=yes
 SetEnvIfNoCase Referer stauga\.altervista\.org spambot=yes
 SetEnvIfNoCase Referer steame\.ru spambot=yes
 SetEnvIfNoCase Referer steelmaster\.lv spambot=yes
+SetEnvIfNoCase Referer stocktwists\.com spambot=yes
 SetEnvIfNoCase Referer stoki\.ru spambot=yes
 SetEnvIfNoCase Referer strana\-krasoty\.ru spambot=yes
 SetEnvIfNoCase Referer strana\-solnca\.ru spambot=yes
@@ -5180,6 +5186,7 @@ SetEnvIfNoCase Referer xn\-\-e1aggki3c\.xn\-\-80adxhks spambot=yes
 SetEnvIfNoCase Referer xn\-\-h1ahbi\.com\.ua spambot=yes
 SetEnvIfNoCase Referer xn\-\-hxazdsfy\.blogspot\.com spambot=yes
 SetEnvIfNoCase Referer xn\-\-l1aengat\.xn\-\-p1ai spambot=yes
+SetEnvIfNoCase Referer xn\-\-mhg\.com spambot=yes
 SetEnvIfNoCase Referer xn\-\-oogle\-wmc\.com spambot=yes
 SetEnvIfNoCase Referer xn\-\-q1a\.xn\-\-b1aube0e\.xn\-\-c1acygb\.xn\-\-p1ai spambot=yes
 SetEnvIfNoCase Referer xnxx\-n\.com spambot=yes
@@ -5264,7 +5271,6 @@ SetEnvIfNoCase Referer zuchn\.com spambot=yes
 SetEnvIfNoCase Referer zverokruh\-shop\.cz spambot=yes
 SetEnvIfNoCase Referer zvetki\.ru spambot=yes
 SetEnvIfNoCase Referer zyzzcentral\.ru spambot=yes
-SetEnvIfNoCase Referer ḷ\.com spambot=yes
 
 </IfModule>
 

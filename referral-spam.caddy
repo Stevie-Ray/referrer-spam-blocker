@@ -1,5 +1,5 @@
 # https://github.com/Stevie-Ray/referrer-spam-blocker
-# Updated 2017-11-26 21:29:54
+# Updated 2017-12-25 14:44:57
 #
 # Move this file next to your Caddy config file given through -conf, and include it by doing:
 #
@@ -547,6 +547,7 @@ redir 444 {
 	if {>Referer} is datsun-do.com
 	if {>Referer} is dbmkfhqk.bloger.index.hr
 	if {>Referer} is dbutton.net
+	if {>Referer} is dcdcapital.com
 	if {>Referer} is ddlmega.net
 	if {>Referer} is ddpills.com
 	if {>Referer} is de.zapmeta.com
@@ -1941,6 +1942,7 @@ redir 444 {
 	if {>Referer} is seo-smm.kz
 	if {>Referer} is seoanalyses.com
 	if {>Referer} is seocheckupx.com
+	if {>Referer} is seocheckupx.net
 	if {>Referer} is seoexperimenty.ru
 	if {>Referer} is seojokes.net
 	if {>Referer} is seokicks.de
@@ -2119,6 +2121,7 @@ redir 444 {
 	if {>Referer} is stauga.altervista.org
 	if {>Referer} is steame.ru
 	if {>Referer} is steelmaster.lv
+	if {>Referer} is stocktwists.com
 	if {>Referer} is stoki.ru
 	if {>Referer} is strana-krasoty.ru
 	if {>Referer} is strana-solnca.ru
@@ -2551,6 +2554,7 @@ redir 444 {
 	if {>Referer} is xn--h1ahbi.com.ua
 	if {>Referer} is xn--hxazdsfy.blogspot.com
 	if {>Referer} is xn--l1aengat.xn--p1ai
+	if {>Referer} is xn--mhg.com
 	if {>Referer} is xn--oogle-wmc.com
 	if {>Referer} is xn--q1a.xn--b1aube0e.xn--c1acygb.xn--p1ai
 	if {>Referer} is xnxx-n.com
@@ -2635,5 +2639,4 @@ redir 444 {
 	if {>Referer} is zverokruh-shop.cz
 	if {>Referer} is zvetki.ru
 	if {>Referer} is zyzzcentral.ru
-	if {>Referer} is ḷ.com
 }

@@ -1,5 +1,5 @@
 # https://github.com/Stevie-Ray/referrer-spam-blocker
-# Updated 2017-11-26 21:29:54
+# Updated 2017-12-25 14:44:57
 sub block_referral_spam {
 	if (
 		req.http.Referer ~ "(?i)000free\.us" ||
@@ -540,6 +540,7 @@ sub block_referral_spam {
 		req.http.Referer ~ "(?i)datsun\-do\.com" ||
 		req.http.Referer ~ "(?i)dbmkfhqk\.bloger\.index\.hr" ||
 		req.http.Referer ~ "(?i)dbutton\.net" ||
+		req.http.Referer ~ "(?i)dcdcapital\.com" ||
 		req.http.Referer ~ "(?i)ddlmega\.net" ||
 		req.http.Referer ~ "(?i)ddpills\.com" ||
 		req.http.Referer ~ "(?i)de\.zapmeta\.com" ||
@@ -1934,6 +1935,7 @@ sub block_referral_spam {
 		req.http.Referer ~ "(?i)seo\-smm\.kz" ||
 		req.http.Referer ~ "(?i)seoanalyses\.com" ||
 		req.http.Referer ~ "(?i)seocheckupx\.com" ||
+		req.http.Referer ~ "(?i)seocheckupx\.net" ||
 		req.http.Referer ~ "(?i)seoexperimenty\.ru" ||
 		req.http.Referer ~ "(?i)seojokes\.net" ||
 		req.http.Referer ~ "(?i)seokicks\.de" ||
@@ -2112,6 +2114,7 @@ sub block_referral_spam {
 		req.http.Referer ~ "(?i)stauga\.altervista\.org" ||
 		req.http.Referer ~ "(?i)steame\.ru" ||
 		req.http.Referer ~ "(?i)steelmaster\.lv" ||
+		req.http.Referer ~ "(?i)stocktwists\.com" ||
 		req.http.Referer ~ "(?i)stoki\.ru" ||
 		req.http.Referer ~ "(?i)strana\-krasoty\.ru" ||
 		req.http.Referer ~ "(?i)strana\-solnca\.ru" ||
@@ -2544,6 +2547,7 @@ sub block_referral_spam {
 		req.http.Referer ~ "(?i)xn\-\-h1ahbi\.com\.ua" ||
 		req.http.Referer ~ "(?i)xn\-\-hxazdsfy\.blogspot\.com" ||
 		req.http.Referer ~ "(?i)xn\-\-l1aengat\.xn\-\-p1ai" ||
+		req.http.Referer ~ "(?i)xn\-\-mhg\.com" ||
 		req.http.Referer ~ "(?i)xn\-\-oogle\-wmc\.com" ||
 		req.http.Referer ~ "(?i)xn\-\-q1a\.xn\-\-b1aube0e\.xn\-\-c1acygb\.xn\-\-p1ai" ||
 		req.http.Referer ~ "(?i)xnxx\-n\.com" ||
@@ -2627,8 +2631,7 @@ sub block_referral_spam {
 		req.http.Referer ~ "(?i)zuchn\.com" ||
 		req.http.Referer ~ "(?i)zverokruh\-shop\.cz" ||
 		req.http.Referer ~ "(?i)zvetki\.ru" ||
-		req.http.Referer ~ "(?i)zyzzcentral\.ru" ||
-		req.http.Referer ~ "(?i)ḷ\.com"
+		req.http.Referer ~ "(?i)zyzzcentral\.ru"
 	) {
 			return (synth(444, "No Response"));
 	}
