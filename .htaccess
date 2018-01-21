@@ -1,5 +1,5 @@
 # https://github.com/Stevie-Ray/referrer-spam-blocker
-# Updated 2017-12-25 14:44:57
+# Updated 2018-01-21 12:20:26
 
 <IfModule mod_rewrite.c>
 
@@ -64,7 +64,6 @@ RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*acunetix\-referrer\.com.*$ [NC,
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*adanih\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*adcash\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*addblueoff\.com\.ua.*$ [NC,OR]
-RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*addons\.mozilla\.org/en\-us/firefox/addon/ilovevitaly.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*adelly\.bg.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*adspart\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*adtiger\.tk.*$ [NC,OR]
@@ -418,6 +417,7 @@ RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*clash\-clans\.ru.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*classicakuhni\.ru.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*clicksor\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*clmforexeu\.com.*$ [NC,OR]
+RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*cloudsendchef\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*club\-musics\.ru.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*club\-samodelkin\.ru.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*cmd\.kz.*$ [NC,OR]
@@ -1945,6 +1945,7 @@ RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*seokicks\.de.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*seopub\.net.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*serialsway\.ucoz\.ru.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*servisural\.ru.*$ [NC,OR]
+RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*serw\.clicksor\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*seryeznie\-znakomstva\.ru.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*setioweb\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*sex\-dating\.co.*$ [NC,OR]
@@ -2178,6 +2179,7 @@ RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*texbaza\.by.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*tgtclick\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*the\-torrent\-tracker\.blogspot\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*the\-usa\-games\.blogspot\.com.*$ [NC,OR]
+RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*theautoprofit\.ml.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*thebluenoodle\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*thecoral\.com\.br.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*thedownloadfreeonlinegames\.blogspot\.com.*$ [NC,OR]
@@ -2331,9 +2333,12 @@ RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*unitygame3d\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*unmaroll\.ya\.ru.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*unpredictable\.ga.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*uptime\-alpha\.net.*$ [NC,OR]
+RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*uptime\-as\.net.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*uptime\-beta\.net.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*uptime\-delta\.net.*$ [NC,OR]
+RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*uptime\-eu\.net.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*uptime\-gamma\.net.*$ [NC,OR]
+RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*uptime\-us\.net.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*uptime\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*uptimebot\.net.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*uptimechecker\.com.*$ [NC,OR]
@@ -2700,7 +2705,6 @@ SetEnvIfNoCase Referer acunetix\-referrer\.com spambot=yes
 SetEnvIfNoCase Referer adanih\.com spambot=yes
 SetEnvIfNoCase Referer adcash\.com spambot=yes
 SetEnvIfNoCase Referer addblueoff\.com\.ua spambot=yes
-SetEnvIfNoCase Referer addons\.mozilla\.org/en\-us/firefox/addon/ilovevitaly spambot=yes
 SetEnvIfNoCase Referer adelly\.bg spambot=yes
 SetEnvIfNoCase Referer adspart\.com spambot=yes
 SetEnvIfNoCase Referer adtiger\.tk spambot=yes
@@ -3054,6 +3058,7 @@ SetEnvIfNoCase Referer clash\-clans\.ru spambot=yes
 SetEnvIfNoCase Referer classicakuhni\.ru spambot=yes
 SetEnvIfNoCase Referer clicksor\.com spambot=yes
 SetEnvIfNoCase Referer clmforexeu\.com spambot=yes
+SetEnvIfNoCase Referer cloudsendchef\.com spambot=yes
 SetEnvIfNoCase Referer club\-musics\.ru spambot=yes
 SetEnvIfNoCase Referer club\-samodelkin\.ru spambot=yes
 SetEnvIfNoCase Referer cmd\.kz spambot=yes
@@ -4581,6 +4586,7 @@ SetEnvIfNoCase Referer seokicks\.de spambot=yes
 SetEnvIfNoCase Referer seopub\.net spambot=yes
 SetEnvIfNoCase Referer serialsway\.ucoz\.ru spambot=yes
 SetEnvIfNoCase Referer servisural\.ru spambot=yes
+SetEnvIfNoCase Referer serw\.clicksor\.com spambot=yes
 SetEnvIfNoCase Referer seryeznie\-znakomstva\.ru spambot=yes
 SetEnvIfNoCase Referer setioweb\.com spambot=yes
 SetEnvIfNoCase Referer sex\-dating\.co spambot=yes
@@ -4814,6 +4820,7 @@ SetEnvIfNoCase Referer texbaza\.by spambot=yes
 SetEnvIfNoCase Referer tgtclick\.com spambot=yes
 SetEnvIfNoCase Referer the\-torrent\-tracker\.blogspot\.com spambot=yes
 SetEnvIfNoCase Referer the\-usa\-games\.blogspot\.com spambot=yes
+SetEnvIfNoCase Referer theautoprofit\.ml spambot=yes
 SetEnvIfNoCase Referer thebluenoodle\.com spambot=yes
 SetEnvIfNoCase Referer thecoral\.com\.br spambot=yes
 SetEnvIfNoCase Referer thedownloadfreeonlinegames\.blogspot\.com spambot=yes
@@ -4967,9 +4974,12 @@ SetEnvIfNoCase Referer unitygame3d\.com spambot=yes
 SetEnvIfNoCase Referer unmaroll\.ya\.ru spambot=yes
 SetEnvIfNoCase Referer unpredictable\.ga spambot=yes
 SetEnvIfNoCase Referer uptime\-alpha\.net spambot=yes
+SetEnvIfNoCase Referer uptime\-as\.net spambot=yes
 SetEnvIfNoCase Referer uptime\-beta\.net spambot=yes
 SetEnvIfNoCase Referer uptime\-delta\.net spambot=yes
+SetEnvIfNoCase Referer uptime\-eu\.net spambot=yes
 SetEnvIfNoCase Referer uptime\-gamma\.net spambot=yes
+SetEnvIfNoCase Referer uptime\-us\.net spambot=yes
 SetEnvIfNoCase Referer uptime\.com spambot=yes
 SetEnvIfNoCase Referer uptimebot\.net spambot=yes
 SetEnvIfNoCase Referer uptimechecker\.com spambot=yes

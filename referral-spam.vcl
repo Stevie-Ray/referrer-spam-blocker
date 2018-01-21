@@ -1,5 +1,5 @@
 # https://github.com/Stevie-Ray/referrer-spam-blocker
-# Updated 2017-12-25 14:44:57
+# Updated 2018-01-21 12:20:26
 sub block_referral_spam {
 	if (
 		req.http.Referer ~ "(?i)000free\.us" ||
@@ -61,7 +61,6 @@ sub block_referral_spam {
 		req.http.Referer ~ "(?i)adanih\.com" ||
 		req.http.Referer ~ "(?i)adcash\.com" ||
 		req.http.Referer ~ "(?i)addblueoff\.com\.ua" ||
-		req.http.Referer ~ "(?i)addons\.mozilla\.org/en\-us/firefox/addon/ilovevitaly" ||
 		req.http.Referer ~ "(?i)adelly\.bg" ||
 		req.http.Referer ~ "(?i)adspart\.com" ||
 		req.http.Referer ~ "(?i)adtiger\.tk" ||
@@ -415,6 +414,7 @@ sub block_referral_spam {
 		req.http.Referer ~ "(?i)classicakuhni\.ru" ||
 		req.http.Referer ~ "(?i)clicksor\.com" ||
 		req.http.Referer ~ "(?i)clmforexeu\.com" ||
+		req.http.Referer ~ "(?i)cloudsendchef\.com" ||
 		req.http.Referer ~ "(?i)club\-musics\.ru" ||
 		req.http.Referer ~ "(?i)club\-samodelkin\.ru" ||
 		req.http.Referer ~ "(?i)cmd\.kz" ||
@@ -1942,6 +1942,7 @@ sub block_referral_spam {
 		req.http.Referer ~ "(?i)seopub\.net" ||
 		req.http.Referer ~ "(?i)serialsway\.ucoz\.ru" ||
 		req.http.Referer ~ "(?i)servisural\.ru" ||
+		req.http.Referer ~ "(?i)serw\.clicksor\.com" ||
 		req.http.Referer ~ "(?i)seryeznie\-znakomstva\.ru" ||
 		req.http.Referer ~ "(?i)setioweb\.com" ||
 		req.http.Referer ~ "(?i)sex\-dating\.co" ||
@@ -2175,6 +2176,7 @@ sub block_referral_spam {
 		req.http.Referer ~ "(?i)tgtclick\.com" ||
 		req.http.Referer ~ "(?i)the\-torrent\-tracker\.blogspot\.com" ||
 		req.http.Referer ~ "(?i)the\-usa\-games\.blogspot\.com" ||
+		req.http.Referer ~ "(?i)theautoprofit\.ml" ||
 		req.http.Referer ~ "(?i)thebluenoodle\.com" ||
 		req.http.Referer ~ "(?i)thecoral\.com\.br" ||
 		req.http.Referer ~ "(?i)thedownloadfreeonlinegames\.blogspot\.com" ||
@@ -2328,9 +2330,12 @@ sub block_referral_spam {
 		req.http.Referer ~ "(?i)unmaroll\.ya\.ru" ||
 		req.http.Referer ~ "(?i)unpredictable\.ga" ||
 		req.http.Referer ~ "(?i)uptime\-alpha\.net" ||
+		req.http.Referer ~ "(?i)uptime\-as\.net" ||
 		req.http.Referer ~ "(?i)uptime\-beta\.net" ||
 		req.http.Referer ~ "(?i)uptime\-delta\.net" ||
+		req.http.Referer ~ "(?i)uptime\-eu\.net" ||
 		req.http.Referer ~ "(?i)uptime\-gamma\.net" ||
+		req.http.Referer ~ "(?i)uptime\-us\.net" ||
 		req.http.Referer ~ "(?i)uptime\.com" ||
 		req.http.Referer ~ "(?i)uptimebot\.net" ||
 		req.http.Referer ~ "(?i)uptimechecker\.com" ||

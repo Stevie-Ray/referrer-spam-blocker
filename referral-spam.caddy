@@ -1,5 +1,5 @@
 # https://github.com/Stevie-Ray/referrer-spam-blocker
-# Updated 2017-12-25 14:44:57
+# Updated 2018-01-21 12:20:26
 #
 # Move this file next to your Caddy config file given through -conf, and include it by doing:
 #
@@ -68,7 +68,6 @@ redir 444 {
 	if {>Referer} is adanih.com
 	if {>Referer} is adcash.com
 	if {>Referer} is addblueoff.com.ua
-	if {>Referer} is addons.mozilla.org/en-us/firefox/addon/ilovevitaly
 	if {>Referer} is adelly.bg
 	if {>Referer} is adspart.com
 	if {>Referer} is adtiger.tk
@@ -422,6 +421,7 @@ redir 444 {
 	if {>Referer} is classicakuhni.ru
 	if {>Referer} is clicksor.com
 	if {>Referer} is clmforexeu.com
+	if {>Referer} is cloudsendchef.com
 	if {>Referer} is club-musics.ru
 	if {>Referer} is club-samodelkin.ru
 	if {>Referer} is cmd.kz
@@ -1949,6 +1949,7 @@ redir 444 {
 	if {>Referer} is seopub.net
 	if {>Referer} is serialsway.ucoz.ru
 	if {>Referer} is servisural.ru
+	if {>Referer} is serw.clicksor.com
 	if {>Referer} is seryeznie-znakomstva.ru
 	if {>Referer} is setioweb.com
 	if {>Referer} is sex-dating.co
@@ -2182,6 +2183,7 @@ redir 444 {
 	if {>Referer} is tgtclick.com
 	if {>Referer} is the-torrent-tracker.blogspot.com
 	if {>Referer} is the-usa-games.blogspot.com
+	if {>Referer} is theautoprofit.ml
 	if {>Referer} is thebluenoodle.com
 	if {>Referer} is thecoral.com.br
 	if {>Referer} is thedownloadfreeonlinegames.blogspot.com
@@ -2335,9 +2337,12 @@ redir 444 {
 	if {>Referer} is unmaroll.ya.ru
 	if {>Referer} is unpredictable.ga
 	if {>Referer} is uptime-alpha.net
+	if {>Referer} is uptime-as.net
 	if {>Referer} is uptime-beta.net
 	if {>Referer} is uptime-delta.net
+	if {>Referer} is uptime-eu.net
 	if {>Referer} is uptime-gamma.net
+	if {>Referer} is uptime-us.net
 	if {>Referer} is uptime.com
 	if {>Referer} is uptimebot.net
 	if {>Referer} is uptimechecker.com

@@ -57,7 +57,6 @@ acunetix-referrer.com
 adanih.com
 adcash.com
 addblueoff.com.ua
-addons.mozilla.org/en-us/firefox/addon/ilovevitaly
 adelly.bg
 adspart.com
 adtiger.tk
@@ -411,6 +410,7 @@ clash-clans.ru
 classicakuhni.ru
 clicksor.com
 clmforexeu.com
+cloudsendchef.com
 club-musics.ru
 club-samodelkin.ru
 cmd.kz
@@ -1938,6 +1938,7 @@ seokicks.de
 seopub.net
 serialsway.ucoz.ru
 servisural.ru
+serw.clicksor.com
 seryeznie-znakomstva.ru
 setioweb.com
 sex-dating.co
@@ -2171,6 +2172,7 @@ texbaza.by
 tgtclick.com
 the-torrent-tracker.blogspot.com
 the-usa-games.blogspot.com
+theautoprofit.ml
 thebluenoodle.com
 thecoral.com.br
 thedownloadfreeonlinegames.blogspot.com
@@ -2324,9 +2326,12 @@ unitygame3d.com
 unmaroll.ya.ru
 unpredictable.ga
 uptime-alpha.net
+uptime-as.net
 uptime-beta.net
 uptime-delta.net
+uptime-eu.net
 uptime-gamma.net
+uptime-us.net
 uptime.com
 uptimebot.net
 uptimechecker.com

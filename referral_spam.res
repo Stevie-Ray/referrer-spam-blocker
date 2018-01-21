@@ -1,5 +1,5 @@
 # https://github.com/Stevie-Ray/referrer-spam-blocker
-# Updated 2017-12-25 14:44:57
+# Updated 2018-01-21 12:20:26
 #
 # Put referral-spam.res in /path/to/vassals, then include it from within /path/to/vassals/vassal.ini:
 #
@@ -65,7 +65,6 @@ route-referer = (?i)acunetix\-referrer\.com break:403 Forbidden
 route-referer = (?i)adanih\.com break:403 Forbidden
 route-referer = (?i)adcash\.com break:403 Forbidden
 route-referer = (?i)addblueoff\.com\.ua break:403 Forbidden
-route-referer = (?i)addons\.mozilla\.org/en\-us/firefox/addon/ilovevitaly break:403 Forbidden
 route-referer = (?i)adelly\.bg break:403 Forbidden
 route-referer = (?i)adspart\.com break:403 Forbidden
 route-referer = (?i)adtiger\.tk break:403 Forbidden
@@ -419,6 +418,7 @@ route-referer = (?i)clash\-clans\.ru break:403 Forbidden
 route-referer = (?i)classicakuhni\.ru break:403 Forbidden
 route-referer = (?i)clicksor\.com break:403 Forbidden
 route-referer = (?i)clmforexeu\.com break:403 Forbidden
+route-referer = (?i)cloudsendchef\.com break:403 Forbidden
 route-referer = (?i)club\-musics\.ru break:403 Forbidden
 route-referer = (?i)club\-samodelkin\.ru break:403 Forbidden
 route-referer = (?i)cmd\.kz break:403 Forbidden
@@ -1946,6 +1946,7 @@ route-referer = (?i)seokicks\.de break:403 Forbidden
 route-referer = (?i)seopub\.net break:403 Forbidden
 route-referer = (?i)serialsway\.ucoz\.ru break:403 Forbidden
 route-referer = (?i)servisural\.ru break:403 Forbidden
+route-referer = (?i)serw\.clicksor\.com break:403 Forbidden
 route-referer = (?i)seryeznie\-znakomstva\.ru break:403 Forbidden
 route-referer = (?i)setioweb\.com break:403 Forbidden
 route-referer = (?i)sex\-dating\.co break:403 Forbidden
@@ -2179,6 +2180,7 @@ route-referer = (?i)texbaza\.by break:403 Forbidden
 route-referer = (?i)tgtclick\.com break:403 Forbidden
 route-referer = (?i)the\-torrent\-tracker\.blogspot\.com break:403 Forbidden
 route-referer = (?i)the\-usa\-games\.blogspot\.com break:403 Forbidden
+route-referer = (?i)theautoprofit\.ml break:403 Forbidden
 route-referer = (?i)thebluenoodle\.com break:403 Forbidden
 route-referer = (?i)thecoral\.com\.br break:403 Forbidden
 route-referer = (?i)thedownloadfreeonlinegames\.blogspot\.com break:403 Forbidden
@@ -2332,9 +2334,12 @@ route-referer = (?i)unitygame3d\.com break:403 Forbidden
 route-referer = (?i)unmaroll\.ya\.ru break:403 Forbidden
 route-referer = (?i)unpredictable\.ga break:403 Forbidden
 route-referer = (?i)uptime\-alpha\.net break:403 Forbidden
+route-referer = (?i)uptime\-as\.net break:403 Forbidden
 route-referer = (?i)uptime\-beta\.net break:403 Forbidden
 route-referer = (?i)uptime\-delta\.net break:403 Forbidden
+route-referer = (?i)uptime\-eu\.net break:403 Forbidden
 route-referer = (?i)uptime\-gamma\.net break:403 Forbidden
+route-referer = (?i)uptime\-us\.net break:403 Forbidden
 route-referer = (?i)uptime\.com break:403 Forbidden
 route-referer = (?i)uptimebot\.net break:403 Forbidden
 route-referer = (?i)uptimechecker\.com break:403 Forbidden
