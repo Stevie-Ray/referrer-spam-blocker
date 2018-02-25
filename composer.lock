@@ -4,7 +4,6 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "4cb3547435c117afd4b16f0fd7430501",
     "content-hash": "8631fa6a62942977c74263f7ee173dec",
     "packages": [],
     "packages-dev": [
@@ -55,7 +54,7 @@
                 "idna",
                 "php"
             ],
-            "time": "2016-06-19 18:08:43"
+            "time": "2016-06-19T18:08:43+00:00"
         }
     ],
     "aliases": [],

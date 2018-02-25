@@ -1,5 +1,5 @@
 # https://github.com/Stevie-Ray/referrer-spam-blocker
-# Updated 2018-01-21 12:20:26
+# Updated 2018-02-25 22:30:14
 #
 # Move this file next to your Caddy config file given through -conf, and include it by doing:
 #
@@ -129,6 +129,8 @@ redir 444 {
 	if {>Referer} is amt-k.ru
 	if {>Referer} is anal-acrobats.hol.es
 	if {>Referer} is analytics-ads.xyz
+	if {>Referer} is analyze-best-copywriting-services.party
+	if {>Referer} is analyze-extra-analytic-service.stream
 	if {>Referer} is anapa-inns.ru
 	if {>Referer} is android-style.com
 	if {>Referer} is android-systems.ru
@@ -583,6 +585,9 @@ redir 444 {
 	if {>Referer} is diplom-nk.com
 	if {>Referer} is dipstar.org
 	if {>Referer} is directrev.com
+	if {>Referer} is discover-prior-full-stack-services.party
+	if {>Referer} is discover-prior-ppc-service.party
+	if {>Referer} is discover-top-seo-service.review
 	if {>Referer} is dividendo.ru
 	if {>Referer} is diy-handmade-ideas.com
 	if {>Referer} is djekxa.ru
@@ -732,6 +737,7 @@ redir 444 {
 	if {>Referer} is executehosting.com
 	if {>Referer} is expdom.com
 	if {>Referer} is expertnaya-ocenka.ru
+	if {>Referer} is explore-prior-web-service.review
 	if {>Referer} is expresstoplivo.ru
 	if {>Referer} is extener.com
 	if {>Referer} is extener.org
@@ -916,8 +922,10 @@ redir 444 {
 	if {>Referer} is genericlowlatencyasiodriverhq.aircus.com
 	if {>Referer} is gentamicineyedrops.blogspot.com
 	if {>Referer} is germes-trans.com
+	if {>Referer} is get-best-copywriting-service.stream
 	if {>Referer} is get-free-social-traffic.com
 	if {>Referer} is get-free-traffic-now.com
+	if {>Referer} is get-prime-seo-services.review
 	if {>Referer} is get-your-social-buttons.info
 	if {>Referer} is getlamborghini.ga
 	if {>Referer} is getoutofdebtfree.org
@@ -1591,6 +1599,7 @@ redir 444 {
 	if {>Referer} is ops.picscout.com
 	if {>Referer} is optitrade24.com
 	if {>Referer} is oranga.host.sk
+	if {>Referer} is order-prime-smm-service.party
 	if {>Referer} is ordernorxx.com
 	if {>Referer} is orel-reshka.net
 	if {>Referer} is oren-cats.ru
@@ -1917,6 +1926,7 @@ redir 444 {
 	if {>Referer} is scansafe.net
 	if {>Referer} is scenarii-1-sentyabrya.uroki.org.ua
 	if {>Referer} is school-diplomat.ru
+	if {>Referer} is score-prime-web-service.stream
 	if {>Referer} is screentoolkit.com
 	if {>Referer} is scripted.com
 	if {>Referer} is sdelai-prosto.ru
@@ -2178,6 +2188,8 @@ redir 444 {
 	if {>Referer} is telesvoboda.ru
 	if {>Referer} is teplolidoma.ru
 	if {>Referer} is teslathemes.com
+	if {>Referer} is test-extra-full-stack-services.stream
+	if {>Referer} is test-prime-smm-service.review
 	if {>Referer} is test.xyz
 	if {>Referer} is texbaza.by
 	if {>Referer} is tgtclick.com
@@ -2453,6 +2465,7 @@ redir 444 {
 	if {>Referer} is wcb.su
 	if {>Referer} is wdfdocando.com
 	if {>Referer} is web-betting.ru
+	if {>Referer} is web-lazy-services.review
 	if {>Referer} is web-list.xyz
 	if {>Referer} is web-revenue.xyz
 	if {>Referer} is web.cvut.cz

@@ -1,5 +1,5 @@
 # https://github.com/Stevie-Ray/referrer-spam-blocker
-# Updated 2018-01-21 12:20:26
+# Updated 2018-02-25 22:30:14
 sub block_referral_spam {
 	if (
 		req.http.Referer ~ "(?i)000free\.us" ||
@@ -122,6 +122,8 @@ sub block_referral_spam {
 		req.http.Referer ~ "(?i)amt\-k\.ru" ||
 		req.http.Referer ~ "(?i)anal\-acrobats\.hol\.es" ||
 		req.http.Referer ~ "(?i)analytics\-ads\.xyz" ||
+		req.http.Referer ~ "(?i)analyze\-best\-copywriting\-services\.party" ||
+		req.http.Referer ~ "(?i)analyze\-extra\-analytic\-service\.stream" ||
 		req.http.Referer ~ "(?i)anapa\-inns\.ru" ||
 		req.http.Referer ~ "(?i)android\-style\.com" ||
 		req.http.Referer ~ "(?i)android\-systems\.ru" ||
@@ -576,6 +578,9 @@ sub block_referral_spam {
 		req.http.Referer ~ "(?i)diplom\-nk\.com" ||
 		req.http.Referer ~ "(?i)dipstar\.org" ||
 		req.http.Referer ~ "(?i)directrev\.com" ||
+		req.http.Referer ~ "(?i)discover\-prior\-full\-stack\-services\.party" ||
+		req.http.Referer ~ "(?i)discover\-prior\-ppc\-service\.party" ||
+		req.http.Referer ~ "(?i)discover\-top\-seo\-service\.review" ||
 		req.http.Referer ~ "(?i)dividendo\.ru" ||
 		req.http.Referer ~ "(?i)diy\-handmade\-ideas\.com" ||
 		req.http.Referer ~ "(?i)djekxa\.ru" ||
@@ -725,6 +730,7 @@ sub block_referral_spam {
 		req.http.Referer ~ "(?i)executehosting\.com" ||
 		req.http.Referer ~ "(?i)expdom\.com" ||
 		req.http.Referer ~ "(?i)expertnaya\-ocenka\.ru" ||
+		req.http.Referer ~ "(?i)explore\-prior\-web\-service\.review" ||
 		req.http.Referer ~ "(?i)expresstoplivo\.ru" ||
 		req.http.Referer ~ "(?i)extener\.com" ||
 		req.http.Referer ~ "(?i)extener\.org" ||
@@ -909,8 +915,10 @@ sub block_referral_spam {
 		req.http.Referer ~ "(?i)genericlowlatencyasiodriverhq\.aircus\.com" ||
 		req.http.Referer ~ "(?i)gentamicineyedrops\.blogspot\.com" ||
 		req.http.Referer ~ "(?i)germes\-trans\.com" ||
+		req.http.Referer ~ "(?i)get\-best\-copywriting\-service\.stream" ||
 		req.http.Referer ~ "(?i)get\-free\-social\-traffic\.com" ||
 		req.http.Referer ~ "(?i)get\-free\-traffic\-now\.com" ||
+		req.http.Referer ~ "(?i)get\-prime\-seo\-services\.review" ||
 		req.http.Referer ~ "(?i)get\-your\-social\-buttons\.info" ||
 		req.http.Referer ~ "(?i)getlamborghini\.ga" ||
 		req.http.Referer ~ "(?i)getoutofdebtfree\.org" ||
@@ -1584,6 +1592,7 @@ sub block_referral_spam {
 		req.http.Referer ~ "(?i)ops\.picscout\.com" ||
 		req.http.Referer ~ "(?i)optitrade24\.com" ||
 		req.http.Referer ~ "(?i)oranga\.host\.sk" ||
+		req.http.Referer ~ "(?i)order\-prime\-smm\-service\.party" ||
 		req.http.Referer ~ "(?i)ordernorxx\.com" ||
 		req.http.Referer ~ "(?i)orel\-reshka\.net" ||
 		req.http.Referer ~ "(?i)oren\-cats\.ru" ||
@@ -1910,6 +1919,7 @@ sub block_referral_spam {
 		req.http.Referer ~ "(?i)scansafe\.net" ||
 		req.http.Referer ~ "(?i)scenarii\-1\-sentyabrya\.uroki\.org\.ua" ||
 		req.http.Referer ~ "(?i)school\-diplomat\.ru" ||
+		req.http.Referer ~ "(?i)score\-prime\-web\-service\.stream" ||
 		req.http.Referer ~ "(?i)screentoolkit\.com" ||
 		req.http.Referer ~ "(?i)scripted\.com" ||
 		req.http.Referer ~ "(?i)sdelai\-prosto\.ru" ||
@@ -2171,6 +2181,8 @@ sub block_referral_spam {
 		req.http.Referer ~ "(?i)telesvoboda\.ru" ||
 		req.http.Referer ~ "(?i)teplolidoma\.ru" ||
 		req.http.Referer ~ "(?i)teslathemes\.com" ||
+		req.http.Referer ~ "(?i)test\-extra\-full\-stack\-services\.stream" ||
+		req.http.Referer ~ "(?i)test\-prime\-smm\-service\.review" ||
 		req.http.Referer ~ "(?i)test\.xyz" ||
 		req.http.Referer ~ "(?i)texbaza\.by" ||
 		req.http.Referer ~ "(?i)tgtclick\.com" ||
@@ -2446,6 +2458,7 @@ sub block_referral_spam {
 		req.http.Referer ~ "(?i)wcb\.su" ||
 		req.http.Referer ~ "(?i)wdfdocando\.com" ||
 		req.http.Referer ~ "(?i)web\-betting\.ru" ||
+		req.http.Referer ~ "(?i)web\-lazy\-services\.review" ||
 		req.http.Referer ~ "(?i)web\-list\.xyz" ||
 		req.http.Referer ~ "(?i)web\-revenue\.xyz" ||
 		req.http.Referer ~ "(?i)web\.cvut\.cz" ||

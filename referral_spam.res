@@ -1,5 +1,5 @@
 # https://github.com/Stevie-Ray/referrer-spam-blocker
-# Updated 2018-01-21 12:20:26
+# Updated 2018-02-25 22:30:14
 #
 # Put referral-spam.res in /path/to/vassals, then include it from within /path/to/vassals/vassal.ini:
 #
@@ -126,6 +126,8 @@ route-referer = (?i)amospalla\.es break:403 Forbidden
 route-referer = (?i)amt\-k\.ru break:403 Forbidden
 route-referer = (?i)anal\-acrobats\.hol\.es break:403 Forbidden
 route-referer = (?i)analytics\-ads\.xyz break:403 Forbidden
+route-referer = (?i)analyze\-best\-copywriting\-services\.party break:403 Forbidden
+route-referer = (?i)analyze\-extra\-analytic\-service\.stream break:403 Forbidden
 route-referer = (?i)anapa\-inns\.ru break:403 Forbidden
 route-referer = (?i)android\-style\.com break:403 Forbidden
 route-referer = (?i)android\-systems\.ru break:403 Forbidden
@@ -580,6 +582,9 @@ route-referer = (?i)dinkolove\.ya\.ru break:403 Forbidden
 route-referer = (?i)diplom\-nk\.com break:403 Forbidden
 route-referer = (?i)dipstar\.org break:403 Forbidden
 route-referer = (?i)directrev\.com break:403 Forbidden
+route-referer = (?i)discover\-prior\-full\-stack\-services\.party break:403 Forbidden
+route-referer = (?i)discover\-prior\-ppc\-service\.party break:403 Forbidden
+route-referer = (?i)discover\-top\-seo\-service\.review break:403 Forbidden
 route-referer = (?i)dividendo\.ru break:403 Forbidden
 route-referer = (?i)diy\-handmade\-ideas\.com break:403 Forbidden
 route-referer = (?i)djekxa\.ru break:403 Forbidden
@@ -729,6 +734,7 @@ route-referer = (?i)exchanges\-bet\.com break:403 Forbidden
 route-referer = (?i)executehosting\.com break:403 Forbidden
 route-referer = (?i)expdom\.com break:403 Forbidden
 route-referer = (?i)expertnaya\-ocenka\.ru break:403 Forbidden
+route-referer = (?i)explore\-prior\-web\-service\.review break:403 Forbidden
 route-referer = (?i)expresstoplivo\.ru break:403 Forbidden
 route-referer = (?i)extener\.com break:403 Forbidden
 route-referer = (?i)extener\.org break:403 Forbidden
@@ -913,8 +919,10 @@ route-referer = (?i)generalporn\.org break:403 Forbidden
 route-referer = (?i)genericlowlatencyasiodriverhq\.aircus\.com break:403 Forbidden
 route-referer = (?i)gentamicineyedrops\.blogspot\.com break:403 Forbidden
 route-referer = (?i)germes\-trans\.com break:403 Forbidden
+route-referer = (?i)get\-best\-copywriting\-service\.stream break:403 Forbidden
 route-referer = (?i)get\-free\-social\-traffic\.com break:403 Forbidden
 route-referer = (?i)get\-free\-traffic\-now\.com break:403 Forbidden
+route-referer = (?i)get\-prime\-seo\-services\.review break:403 Forbidden
 route-referer = (?i)get\-your\-social\-buttons\.info break:403 Forbidden
 route-referer = (?i)getlamborghini\.ga break:403 Forbidden
 route-referer = (?i)getoutofdebtfree\.org break:403 Forbidden
@@ -1588,6 +1596,7 @@ route-referer = (?i)openmediasoft\.com break:403 Forbidden
 route-referer = (?i)ops\.picscout\.com break:403 Forbidden
 route-referer = (?i)optitrade24\.com break:403 Forbidden
 route-referer = (?i)oranga\.host\.sk break:403 Forbidden
+route-referer = (?i)order\-prime\-smm\-service\.party break:403 Forbidden
 route-referer = (?i)ordernorxx\.com break:403 Forbidden
 route-referer = (?i)orel\-reshka\.net break:403 Forbidden
 route-referer = (?i)oren\-cats\.ru break:403 Forbidden
@@ -1914,6 +1923,7 @@ route-referer = (?i)scanner\-willy\.top break:403 Forbidden
 route-referer = (?i)scansafe\.net break:403 Forbidden
 route-referer = (?i)scenarii\-1\-sentyabrya\.uroki\.org\.ua break:403 Forbidden
 route-referer = (?i)school\-diplomat\.ru break:403 Forbidden
+route-referer = (?i)score\-prime\-web\-service\.stream break:403 Forbidden
 route-referer = (?i)screentoolkit\.com break:403 Forbidden
 route-referer = (?i)scripted\.com break:403 Forbidden
 route-referer = (?i)sdelai\-prosto\.ru break:403 Forbidden
@@ -2175,6 +2185,8 @@ route-referer = (?i)telegramdownload10\.com break:403 Forbidden
 route-referer = (?i)telesvoboda\.ru break:403 Forbidden
 route-referer = (?i)teplolidoma\.ru break:403 Forbidden
 route-referer = (?i)teslathemes\.com break:403 Forbidden
+route-referer = (?i)test\-extra\-full\-stack\-services\.stream break:403 Forbidden
+route-referer = (?i)test\-prime\-smm\-service\.review break:403 Forbidden
 route-referer = (?i)test\.xyz break:403 Forbidden
 route-referer = (?i)texbaza\.by break:403 Forbidden
 route-referer = (?i)tgtclick\.com break:403 Forbidden
@@ -2450,6 +2462,7 @@ route-referer = (?i)watch\-movies\.ru break:403 Forbidden
 route-referer = (?i)wcb\.su break:403 Forbidden
 route-referer = (?i)wdfdocando\.com break:403 Forbidden
 route-referer = (?i)web\-betting\.ru break:403 Forbidden
+route-referer = (?i)web\-lazy\-services\.review break:403 Forbidden
 route-referer = (?i)web\-list\.xyz break:403 Forbidden
 route-referer = (?i)web\-revenue\.xyz break:403 Forbidden
 route-referer = (?i)web\.cvut\.cz break:403 Forbidden
