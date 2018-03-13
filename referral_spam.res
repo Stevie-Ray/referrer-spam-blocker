@@ -1,5 +1,5 @@
 # https://github.com/Stevie-Ray/referrer-spam-blocker
-# Updated 2018-02-25 22:30:14
+# Updated 2018-03-13 21:11:06
 #
 # Put referral-spam.res in /path/to/vassals, then include it from within /path/to/vassals/vassal.ini:
 #
@@ -267,6 +267,10 @@ route-referer = (?i)bio\.trade\-jp\.net break:403 Forbidden
 route-referer = (?i)bioca\.org break:403 Forbidden
 route-referer = (?i)birzha\-truda\.eu break:403 Forbidden
 route-referer = (?i)bisign\.info break:403 Forbidden
+route-referer = (?i)bitcoins\-forum\.club break:403 Forbidden
+route-referer = (?i)bitcoins\-forum\.info break:403 Forbidden
+route-referer = (?i)bitcoins\-forum\.online break:403 Forbidden
+route-referer = (?i)bitcoins\-forum\.pro break:403 Forbidden
 route-referer = (?i)bitcoins\-live\.ru break:403 Forbidden
 route-referer = (?i)biteg\.xyz break:403 Forbidden
 route-referer = (?i)biznesluxe\.ru break:403 Forbidden
@@ -1049,7 +1053,19 @@ route-referer = (?i)housekuba\.org break:403 Forbidden
 route-referer = (?i)houseofgaga\.ru break:403 Forbidden
 route-referer = (?i)houseofrose\.com break:403 Forbidden
 route-referer = (?i)houston\-vikings\.com break:403 Forbidden
+route-referer = (?i)how\-i\-build\-website\.review break:403 Forbidden
+route-referer = (?i)how\-i\-promote\-website\.review break:403 Forbidden
+route-referer = (?i)how\-to\-buy\-bitcoin\.club break:403 Forbidden
+route-referer = (?i)how\-to\-buy\-bitcoin\.stream break:403 Forbidden
+route-referer = (?i)how\-to\-buy\-bitcoins\-cheap\.party break:403 Forbidden
+route-referer = (?i)how\-to\-buy\-bitcoins\-cheap\.review break:403 Forbidden
+route-referer = (?i)how\-to\-buy\-bitcoins\-cheap\.stream break:403 Forbidden
+route-referer = (?i)how\-to\-buy\-bitcoins\-cheap\.trade break:403 Forbidden
+route-referer = (?i)how\-to\-buy\-bitcoins\.stream break:403 Forbidden
+route-referer = (?i)how\-to\-buy\-bitcoins\.trade break:403 Forbidden
 route-referer = (?i)how\-to\-earn\-quick\-money\.com break:403 Forbidden
+route-referer = (?i)how\-to\-promote\-website\.faith break:403 Forbidden
+route-referer = (?i)how\-to\-promote\-website\.review break:403 Forbidden
 route-referer = (?i)howlongdoestizanidinestayinyoursystem\.blogspot\.com break:403 Forbidden
 route-referer = (?i)howmuchdoestizanidinecost\.blogspot\.com break:403 Forbidden
 route-referer = (?i)howopen\.ru break:403 Forbidden
@@ -2476,6 +2492,20 @@ route-referer = (?i)webs\.com break:403 Forbidden
 route-referer = (?i)website\-analytics\.online break:403 Forbidden
 route-referer = (?i)website\-analyzer\.info break:403 Forbidden
 route-referer = (?i)website\-errors\-scanner\.com break:403 Forbidden
+route-referer = (?i)website\-services\-promotion\.bid break:403 Forbidden
+route-referer = (?i)website\-services\-promotion\.review break:403 Forbidden
+route-referer = (?i)website\-services\-promotion\.stream break:403 Forbidden
+route-referer = (?i)website\-services\-promotion\.win break:403 Forbidden
+route-referer = (?i)website\-services\-seo\.bid break:403 Forbidden
+route-referer = (?i)website\-services\-seo\.stream break:403 Forbidden
+route-referer = (?i)website\-services\-seo\.win break:403 Forbidden
+route-referer = (?i)website\-services\-smm\.bid break:403 Forbidden
+route-referer = (?i)website\-services\-smm\.review break:403 Forbidden
+route-referer = (?i)website\-services\-smm\.stream break:403 Forbidden
+route-referer = (?i)website\-services\-smm\.win break:403 Forbidden
+route-referer = (?i)website\-services\.review break:403 Forbidden
+route-referer = (?i)website\-services\.stream break:403 Forbidden
+route-referer = (?i)website\-services\.win break:403 Forbidden
 route-referer = (?i)website\-speed\-check\.site break:403 Forbidden
 route-referer = (?i)website\-speed\-checker\.site break:403 Forbidden
 route-referer = (?i)website\-speed\-up\.site break:403 Forbidden

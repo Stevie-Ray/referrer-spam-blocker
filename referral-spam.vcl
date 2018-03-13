@@ -1,5 +1,5 @@
 # https://github.com/Stevie-Ray/referrer-spam-blocker
-# Updated 2018-02-25 22:30:14
+# Updated 2018-03-13 21:11:06
 sub block_referral_spam {
 	if (
 		req.http.Referer ~ "(?i)000free\.us" ||
@@ -263,6 +263,10 @@ sub block_referral_spam {
 		req.http.Referer ~ "(?i)bioca\.org" ||
 		req.http.Referer ~ "(?i)birzha\-truda\.eu" ||
 		req.http.Referer ~ "(?i)bisign\.info" ||
+		req.http.Referer ~ "(?i)bitcoins\-forum\.club" ||
+		req.http.Referer ~ "(?i)bitcoins\-forum\.info" ||
+		req.http.Referer ~ "(?i)bitcoins\-forum\.online" ||
+		req.http.Referer ~ "(?i)bitcoins\-forum\.pro" ||
 		req.http.Referer ~ "(?i)bitcoins\-live\.ru" ||
 		req.http.Referer ~ "(?i)biteg\.xyz" ||
 		req.http.Referer ~ "(?i)biznesluxe\.ru" ||
@@ -1045,7 +1049,19 @@ sub block_referral_spam {
 		req.http.Referer ~ "(?i)houseofgaga\.ru" ||
 		req.http.Referer ~ "(?i)houseofrose\.com" ||
 		req.http.Referer ~ "(?i)houston\-vikings\.com" ||
+		req.http.Referer ~ "(?i)how\-i\-build\-website\.review" ||
+		req.http.Referer ~ "(?i)how\-i\-promote\-website\.review" ||
+		req.http.Referer ~ "(?i)how\-to\-buy\-bitcoin\.club" ||
+		req.http.Referer ~ "(?i)how\-to\-buy\-bitcoin\.stream" ||
+		req.http.Referer ~ "(?i)how\-to\-buy\-bitcoins\-cheap\.party" ||
+		req.http.Referer ~ "(?i)how\-to\-buy\-bitcoins\-cheap\.review" ||
+		req.http.Referer ~ "(?i)how\-to\-buy\-bitcoins\-cheap\.stream" ||
+		req.http.Referer ~ "(?i)how\-to\-buy\-bitcoins\-cheap\.trade" ||
+		req.http.Referer ~ "(?i)how\-to\-buy\-bitcoins\.stream" ||
+		req.http.Referer ~ "(?i)how\-to\-buy\-bitcoins\.trade" ||
 		req.http.Referer ~ "(?i)how\-to\-earn\-quick\-money\.com" ||
+		req.http.Referer ~ "(?i)how\-to\-promote\-website\.faith" ||
+		req.http.Referer ~ "(?i)how\-to\-promote\-website\.review" ||
 		req.http.Referer ~ "(?i)howlongdoestizanidinestayinyoursystem\.blogspot\.com" ||
 		req.http.Referer ~ "(?i)howmuchdoestizanidinecost\.blogspot\.com" ||
 		req.http.Referer ~ "(?i)howopen\.ru" ||
@@ -2472,6 +2488,20 @@ sub block_referral_spam {
 		req.http.Referer ~ "(?i)website\-analytics\.online" ||
 		req.http.Referer ~ "(?i)website\-analyzer\.info" ||
 		req.http.Referer ~ "(?i)website\-errors\-scanner\.com" ||
+		req.http.Referer ~ "(?i)website\-services\-promotion\.bid" ||
+		req.http.Referer ~ "(?i)website\-services\-promotion\.review" ||
+		req.http.Referer ~ "(?i)website\-services\-promotion\.stream" ||
+		req.http.Referer ~ "(?i)website\-services\-promotion\.win" ||
+		req.http.Referer ~ "(?i)website\-services\-seo\.bid" ||
+		req.http.Referer ~ "(?i)website\-services\-seo\.stream" ||
+		req.http.Referer ~ "(?i)website\-services\-seo\.win" ||
+		req.http.Referer ~ "(?i)website\-services\-smm\.bid" ||
+		req.http.Referer ~ "(?i)website\-services\-smm\.review" ||
+		req.http.Referer ~ "(?i)website\-services\-smm\.stream" ||
+		req.http.Referer ~ "(?i)website\-services\-smm\.win" ||
+		req.http.Referer ~ "(?i)website\-services\.review" ||
+		req.http.Referer ~ "(?i)website\-services\.stream" ||
+		req.http.Referer ~ "(?i)website\-services\.win" ||
 		req.http.Referer ~ "(?i)website\-speed\-check\.site" ||
 		req.http.Referer ~ "(?i)website\-speed\-checker\.site" ||
 		req.http.Referer ~ "(?i)website\-speed\-up\.site" ||

@@ -1,5 +1,5 @@
 # https://github.com/Stevie-Ray/referrer-spam-blocker
-# Updated 2018-02-25 22:30:14
+# Updated 2018-03-13 21:11:06
 #
 # Move this file next to your Caddy config file given through -conf, and include it by doing:
 #
@@ -270,6 +270,10 @@ redir 444 {
 	if {>Referer} is bioca.org
 	if {>Referer} is birzha-truda.eu
 	if {>Referer} is bisign.info
+	if {>Referer} is bitcoins-forum.club
+	if {>Referer} is bitcoins-forum.info
+	if {>Referer} is bitcoins-forum.online
+	if {>Referer} is bitcoins-forum.pro
 	if {>Referer} is bitcoins-live.ru
 	if {>Referer} is biteg.xyz
 	if {>Referer} is biznesluxe.ru
@@ -1052,7 +1056,19 @@ redir 444 {
 	if {>Referer} is houseofgaga.ru
 	if {>Referer} is houseofrose.com
 	if {>Referer} is houston-vikings.com
+	if {>Referer} is how-i-build-website.review
+	if {>Referer} is how-i-promote-website.review
+	if {>Referer} is how-to-buy-bitcoin.club
+	if {>Referer} is how-to-buy-bitcoin.stream
+	if {>Referer} is how-to-buy-bitcoins-cheap.party
+	if {>Referer} is how-to-buy-bitcoins-cheap.review
+	if {>Referer} is how-to-buy-bitcoins-cheap.stream
+	if {>Referer} is how-to-buy-bitcoins-cheap.trade
+	if {>Referer} is how-to-buy-bitcoins.stream
+	if {>Referer} is how-to-buy-bitcoins.trade
 	if {>Referer} is how-to-earn-quick-money.com
+	if {>Referer} is how-to-promote-website.faith
+	if {>Referer} is how-to-promote-website.review
 	if {>Referer} is howlongdoestizanidinestayinyoursystem.blogspot.com
 	if {>Referer} is howmuchdoestizanidinecost.blogspot.com
 	if {>Referer} is howopen.ru
@@ -2479,6 +2495,20 @@ redir 444 {
 	if {>Referer} is website-analytics.online
 	if {>Referer} is website-analyzer.info
 	if {>Referer} is website-errors-scanner.com
+	if {>Referer} is website-services-promotion.bid
+	if {>Referer} is website-services-promotion.review
+	if {>Referer} is website-services-promotion.stream
+	if {>Referer} is website-services-promotion.win
+	if {>Referer} is website-services-seo.bid
+	if {>Referer} is website-services-seo.stream
+	if {>Referer} is website-services-seo.win
+	if {>Referer} is website-services-smm.bid
+	if {>Referer} is website-services-smm.review
+	if {>Referer} is website-services-smm.stream
+	if {>Referer} is website-services-smm.win
+	if {>Referer} is website-services.review
+	if {>Referer} is website-services.stream
+	if {>Referer} is website-services.win
 	if {>Referer} is website-speed-check.site
 	if {>Referer} is website-speed-checker.site
 	if {>Referer} is website-speed-up.site
