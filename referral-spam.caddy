@@ -1,5 +1,5 @@
 # https://github.com/Stevie-Ray/referrer-spam-blocker
-# Updated 2018-08-14 08:14:03
+# Updated 2018-09-15 17:38:20
 #
 # Move this file next to your Caddy config file given through -conf, and include it by doing:
 #
@@ -84,6 +84,7 @@ redir 444 {
 	if {>Referer} is advokateg.com
 	if {>Referer} is advokateg.ru
 	if {>Referer} is advokateg.xyz
+	if {>Referer} is aerodizain.com
 	if {>Referer} is aerogo.com
 	if {>Referer} is affordablewebsitesandmobileapps.com
 	if {>Referer} is afora.ru
@@ -194,6 +195,8 @@ redir 444 {
 	if {>Referer} is auto-kia-fulldrive.ru
 	if {>Referer} is auto-moto-elektronika.cz
 	if {>Referer} is auto-news-digest.ru
+	if {>Referer} is auto-seo-service.com
+	if {>Referer} is auto-seo-service.org
 	if {>Referer} is auto-zapchasti.org
 	if {>Referer} is auto.rusvile.lt
 	if {>Referer} is auto4style.ru
@@ -204,7 +207,9 @@ redir 444 {
 	if {>Referer} is autolombard-krasnodar.ru
 	if {>Referer} is automate-amazon-affiliation.com
 	if {>Referer} is autonew.biz
+	if {>Referer} is autoseo-service.org
 	if {>Referer} is autoseo-traffic.com
+	if {>Referer} is autoseoservice.org
 	if {>Referer} is autotop.com.ua
 	if {>Referer} is autovideobroadcast.com
 	if {>Referer} is autowebmarket.com.ua
@@ -237,7 +242,6 @@ redir 444 {
 	if {>Referer} is backgroundpictures.net
 	if {>Referer} is bag77.ru
 	if {>Referer} is baixar-musicas-gratis.com
-	if {>Referer} is baixar-musicas-gratis.comsavetubevideo.com
 	if {>Referer} is bala.getenjoyment.net
 	if {>Referer} is baladur.ru
 	if {>Referer} is balitouroffice.com
@@ -739,6 +743,7 @@ redir 444 {
 	if {>Referer} is eandsgallery.com
 	if {>Referer} is eaplay.ru/a00af605
 	if {>Referer} is earn-from-articles.com
+	if {>Referer} is earnian-money.info
 	if {>Referer} is earnity-money.info
 	if {>Referer} is easycommerce.cf
 	if {>Referer} is easync.io
@@ -919,6 +924,7 @@ redir 444 {
 	if {>Referer} is filmgo.ru
 	if {>Referer} is filmidivx.com
 	if {>Referer} is filter-ot-zheleza.ru
+	if {>Referer} is financial-simulation.com
 	if {>Referer} is finansov.info
 	if {>Referer} is findacheaplawyers.com
 	if {>Referer} is findercarphotos.com
@@ -1023,6 +1029,7 @@ redir 444 {
 	if {>Referer} is fxtips.ru
 	if {>Referer} is g7m.pl
 	if {>Referer} is gabeshop.ru
+	if {>Referer} is gabysuniqueboutique.com
 	if {>Referer} is gael-s.ru
 	if {>Referer} is gagrasector.ru
 	if {>Referer} is galaxy-family.ru
@@ -1046,6 +1053,7 @@ redir 444 {
 	if {>Referer} is generalporn.org
 	if {>Referer} is genericlowlatencyasiodriverhq.aircus.com
 	if {>Referer} is gentamicineyedrops.blogspot.com
+	if {>Referer} is gepatit-info.top
 	if {>Referer} is germes-trans.com
 	if {>Referer} is get-best-copywriting-service.stream
 	if {>Referer} is get-clickize.info
@@ -1071,6 +1079,7 @@ redir 444 {
 	if {>Referer} is getlamborghini.ga
 	if {>Referer} is getoutofdebtfree.org
 	if {>Referer} is getprismatic.com
+	if {>Referer} is getpy-click.info
 	if {>Referer} is getpy-more-free-visitors.info
 	if {>Referer} is getrichquick.ml
 	if {>Referer} is getrichquickly.info
@@ -1123,6 +1132,7 @@ redir 444 {
 	if {>Referer} is gototal.co.nz
 	if {>Referer} is gourcy.altervista.org
 	if {>Referer} is gq-catalog.gq
+	if {>Referer} is grafaman.ru
 	if {>Referer} is grand-chlen.ru
 	if {>Referer} is graphid.com
 	if {>Referer} is gratuitbaise.com
@@ -1361,6 +1371,7 @@ redir 444 {
 	if {>Referer} is kabinet-online-vtb.ru
 	if {>Referer} is kabinet-tinkoff.ru
 	if {>Referer} is kabinet-ttk.ru
+	if {>Referer} is kakablog.net
 	if {>Referer} is kalb.ru
 	if {>Referer} is kambasoft.com
 	if {>Referer} is kamin-sam.ru
@@ -1377,6 +1388,7 @@ redir 444 {
 	if {>Referer} is kazrent.com
 	if {>Referer} is kerch.site
 	if {>Referer} is ketrzyn.pl
+	if {>Referer} is kevblog.top
 	if {>Referer} is keywords-monitoring-success.com
 	if {>Referer} is keywords-monitoring-your-success.com
 	if {>Referer} is kharkov.ua
@@ -1508,6 +1520,7 @@ redir 444 {
 	if {>Referer} is lflash.ru
 	if {>Referer} is li-er.ru
 	if {>Referer} is lida-ru.com
+	if {>Referer} is lider82.ru
 	if {>Referer} is life.biz.ua
 	if {>Referer} is lifebyleese.com
 	if {>Referer} is lifehacĸer.com
@@ -1794,6 +1807,7 @@ redir 444 {
 	if {>Referer} is novosibirsk.xrus.org
 	if {>Referer} is novosti-hi-tech.ru
 	if {>Referer} is npoet.ru
+	if {>Referer} is nubuilderian.info
 	if {>Referer} is nucia.biz.ly
 	if {>Referer} is nudepatch.net
 	if {>Referer} is nudo.ca
@@ -2452,6 +2466,7 @@ redir 444 {
 	if {>Referer} is spy-sts.com
 	if {>Referer} is squidoo.com
 	if {>Referer} is srecorder.com
+	if {>Referer} is sribno.net
 	if {>Referer} is stairliftstrue.com
 	if {>Referer} is star61.de
 	if {>Referer} is stardevine.com
@@ -2708,6 +2723,7 @@ redir 444 {
 	if {>Referer} is um-razum.ru
 	if {>Referer} is umg-stroy.ru
 	if {>Referer} is umityangin.net
+	if {>Referer} is undergroundcityphoto.com
 	if {>Referer} is uni.me
 	if {>Referer} is unibus.su
 	if {>Referer} is unimodemhalfduplefw.pen.io
@@ -2985,6 +3001,7 @@ redir 444 {
 	if {>Referer} is xn--c1acygb.xn--p1ai
 	if {>Referer} is xn--d1abj0abs9d.in.ua
 	if {>Referer} is xn--d1aifoe0a9a.top
+	if {>Referer} is xn--e1aaajzchnkg.ru.com
 	if {>Referer} is xn--e1agf4c.xn--80adxhks
 	if {>Referer} is xn--e1aggki3c.xn--80adxhks
 	if {>Referer} is xn--h1ahbi.com.ua
@@ -3010,6 +3027,7 @@ redir 444 {
 	if {>Referer} is yaminecraft.ru
 	if {>Referer} is yeartwit.com
 	if {>Referer} is yellowstonevisitortours.com
+	if {>Referer} is yes-com.com
 	if {>Referer} is yhirurga.ru
 	if {>Referer} is ykecwqlixx.ru
 	if {>Referer} is ynymnwbm.bloger.index.hr
