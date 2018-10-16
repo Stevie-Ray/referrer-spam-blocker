@@ -1,5 +1,5 @@
 # https://github.com/Stevie-Ray/referrer-spam-blocker
-# Updated 2018-09-15 17:38:20
+# Updated 2018-10-16 19:46:19
 #
 # Put referral-spam.res in /path/to/vassals, then include it from within /path/to/vassals/vassal.ini:
 #
@@ -359,6 +359,7 @@ route-referer = (?i)bloggers\.nl break:403 Forbidden
 route-referer = (?i)blogig\.org break:403 Forbidden
 route-referer = (?i)blogos\.kz break:403 Forbidden
 route-referer = (?i)blogs\.rediff\.com break:403 Forbidden
+route-referer = (?i)blogstar\.fun break:403 Forbidden
 route-referer = (?i)blogster\.com break:403 Forbidden
 route-referer = (?i)blogtotal\.de break:403 Forbidden
 route-referer = (?i)blue\-square\.biz break:403 Forbidden
@@ -3013,6 +3014,7 @@ route-referer = (?i)xportvusbdriver8i\.snack\.ws break:403 Forbidden
 route-referer = (?i)xpresscare\.ru break:403 Forbidden
 route-referer = (?i)xrus\.org break:403 Forbidden
 route-referer = (?i)xsion\.net break:403 Forbidden
+route-referer = (?i)xtrafficplus\.com break:403 Forbidden
 route-referer = (?i)xtubeporno\.net break:403 Forbidden
 route-referer = (?i)xvideosbay\.com break:403 Forbidden
 route-referer = (?i)xxart\.ru break:403 Forbidden

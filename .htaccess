@@ -1,5 +1,5 @@
 # https://github.com/Stevie-Ray/referrer-spam-blocker
-# Updated 2018-09-15 17:38:20
+# Updated 2018-10-16 19:46:19
 
 <IfModule mod_rewrite.c>
 
@@ -358,6 +358,7 @@ RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*bloggers\.nl.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*blogig\.org.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*blogos\.kz.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*blogs\.rediff\.com.*$ [NC,OR]
+RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*blogstar\.fun.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*blogster\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*blogtotal\.de.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*blue\-square\.biz.*$ [NC,OR]
@@ -3012,6 +3013,7 @@ RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*xportvusbdriver8i\.snack\.ws.*$
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*xpresscare\.ru.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*xrus\.org.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*xsion\.net.*$ [NC,OR]
+RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*xtrafficplus\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*xtubeporno\.net.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*xvideosbay\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*xxart\.ru.*$ [NC,OR]
@@ -3454,6 +3456,7 @@ SetEnvIfNoCase Referer bloggers\.nl spambot=yes
 SetEnvIfNoCase Referer blogig\.org spambot=yes
 SetEnvIfNoCase Referer blogos\.kz spambot=yes
 SetEnvIfNoCase Referer blogs\.rediff\.com spambot=yes
+SetEnvIfNoCase Referer blogstar\.fun spambot=yes
 SetEnvIfNoCase Referer blogster\.com spambot=yes
 SetEnvIfNoCase Referer blogtotal\.de spambot=yes
 SetEnvIfNoCase Referer blue\-square\.biz spambot=yes
@@ -6108,6 +6111,7 @@ SetEnvIfNoCase Referer xportvusbdriver8i\.snack\.ws spambot=yes
 SetEnvIfNoCase Referer xpresscare\.ru spambot=yes
 SetEnvIfNoCase Referer xrus\.org spambot=yes
 SetEnvIfNoCase Referer xsion\.net spambot=yes
+SetEnvIfNoCase Referer xtrafficplus\.com spambot=yes
 SetEnvIfNoCase Referer xtubeporno\.net spambot=yes
 SetEnvIfNoCase Referer xvideosbay\.com spambot=yes
 SetEnvIfNoCase Referer xxart\.ru spambot=yes

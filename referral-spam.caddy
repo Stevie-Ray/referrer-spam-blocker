@@ -1,5 +1,5 @@
 # https://github.com/Stevie-Ray/referrer-spam-blocker
-# Updated 2018-09-15 17:38:20
+# Updated 2018-10-16 19:46:19
 #
 # Move this file next to your Caddy config file given through -conf, and include it by doing:
 #
@@ -362,6 +362,7 @@ redir 444 {
 	if {>Referer} is blogig.org
 	if {>Referer} is blogos.kz
 	if {>Referer} is blogs.rediff.com
+	if {>Referer} is blogstar.fun
 	if {>Referer} is blogster.com
 	if {>Referer} is blogtotal.de
 	if {>Referer} is blue-square.biz
@@ -3016,6 +3017,7 @@ redir 444 {
 	if {>Referer} is xpresscare.ru
 	if {>Referer} is xrus.org
 	if {>Referer} is xsion.net
+	if {>Referer} is xtrafficplus.com
 	if {>Referer} is xtubeporno.net
 	if {>Referer} is xvideosbay.com
 	if {>Referer} is xxart.ru

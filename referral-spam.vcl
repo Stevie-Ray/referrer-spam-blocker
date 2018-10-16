@@ -1,5 +1,5 @@
 # https://github.com/Stevie-Ray/referrer-spam-blocker
-# Updated 2018-09-15 17:38:20
+# Updated 2018-10-16 19:46:19
 sub block_referral_spam {
 	if (
 		req.http.Referer ~ "(?i)000free\.us" ||
@@ -355,6 +355,7 @@ sub block_referral_spam {
 		req.http.Referer ~ "(?i)blogig\.org" ||
 		req.http.Referer ~ "(?i)blogos\.kz" ||
 		req.http.Referer ~ "(?i)blogs\.rediff\.com" ||
+		req.http.Referer ~ "(?i)blogstar\.fun" ||
 		req.http.Referer ~ "(?i)blogster\.com" ||
 		req.http.Referer ~ "(?i)blogtotal\.de" ||
 		req.http.Referer ~ "(?i)blue\-square\.biz" ||
@@ -3009,6 +3010,7 @@ sub block_referral_spam {
 		req.http.Referer ~ "(?i)xpresscare\.ru" ||
 		req.http.Referer ~ "(?i)xrus\.org" ||
 		req.http.Referer ~ "(?i)xsion\.net" ||
+		req.http.Referer ~ "(?i)xtrafficplus\.com" ||
 		req.http.Referer ~ "(?i)xtubeporno\.net" ||
 		req.http.Referer ~ "(?i)xvideosbay\.com" ||
 		req.http.Referer ~ "(?i)xxart\.ru" ||
