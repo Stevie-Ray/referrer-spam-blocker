@@ -206,6 +206,7 @@ RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*autonew\.biz.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*autoseo\-service\.org.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*autoseo\-traffic\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*autoseoservice\.org.*$ [NC,OR]
+RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*autoseo\-trial\-for\-1\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*autotop\.com\.ua.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*autovideobroadcast\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*autowebmarket\.com\.ua.*$ [NC,OR]
@@ -3304,6 +3305,7 @@ SetEnvIfNoCase Referer autonew\.biz spambot=yes
 SetEnvIfNoCase Referer autoseo\-service\.org spambot=yes
 SetEnvIfNoCase Referer autoseo\-traffic\.com spambot=yes
 SetEnvIfNoCase Referer autoseoservice\.org spambot=yes
+SetEnvIfNoCase Referer autoseo\-trial\-for\-1\.com spambot=yes
 SetEnvIfNoCase Referer autotop\.com\.ua spambot=yes
 SetEnvIfNoCase Referer autovideobroadcast\.com spambot=yes
 SetEnvIfNoCase Referer autowebmarket\.com\.ua spambot=yes
