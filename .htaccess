@@ -3098,6 +3098,7 @@ RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*zuchn\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*zverokruh\-shop\.cz.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*zvetki\.ru.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*zyzzcentral\.ru.*$ [NC]
+RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*seo\-b2b\.com.*$ [NC]
 RewriteRule ^(.*)$ – [F,L]
 
 </IfModule>
@@ -6197,7 +6198,7 @@ SetEnvIfNoCase Referer zuchn\.com spambot=yes
 SetEnvIfNoCase Referer zverokruh\-shop\.cz spambot=yes
 SetEnvIfNoCase Referer zvetki\.ru spambot=yes
 SetEnvIfNoCase Referer zyzzcentral\.ru spambot=yes
-
+SetEnvIfNoCase Referer seo\-b2b\.com spambot=yes
 </IfModule>
 
 # Apache 2.2
