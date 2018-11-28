@@ -1,5 +1,5 @@
 # https://github.com/Stevie-Ray/referrer-spam-blocker
-# Updated 2018-10-16 19:46:19
+# Updated 2018-11-28 00:02:35
 #
 # Move this file next to your Caddy config file given through -conf, and include it by doing:
 #
@@ -173,6 +173,7 @@ redir 444 {
 	if {>Referer} is arkartex.ru
 	if {>Referer} is arkkivoltti.net
 	if {>Referer} is arraty.altervista.org
+	if {>Referer} is artblog.top
 	if {>Referer} is artdeko.info
 	if {>Referer} is artefakct.com
 	if {>Referer} is artpaint-market.ru
@@ -209,6 +210,7 @@ redir 444 {
 	if {>Referer} is autonew.biz
 	if {>Referer} is autoseo-service.org
 	if {>Referer} is autoseo-traffic.com
+	if {>Referer} is autoseo-trial-for-1.com
 	if {>Referer} is autoseoservice.org
 	if {>Referer} is autotop.com.ua
 	if {>Referer} is autovideobroadcast.com
@@ -356,6 +358,8 @@ redir 444 {
 	if {>Referer} is blog.remote-computer.de
 	if {>Referer} is blog.yam.com
 	if {>Referer} is blog100.org
+	if {>Referer} is blog2019.xyz
+	if {>Referer} is blog4u.top
 	if {>Referer} is blogarun.co
 	if {>Referer} is bloggen.be
 	if {>Referer} is bloggers.nl
@@ -749,6 +753,7 @@ redir 444 {
 	if {>Referer} is easycommerce.cf
 	if {>Referer} is easync.io
 	if {>Referer} is easytuningshop.ru
+	if {>Referer} is ecblog.xyz
 	if {>Referer} is ecommerce-seo.com
 	if {>Referer} is ecommerce-seo.org
 	if {>Referer} is ecomp3.ru
@@ -946,6 +951,7 @@ redir 444 {
 	if {>Referer} is flowertherapy.ru
 	if {>Referer} is flowwwers.com
 	if {>Referer} is flprog.com
+	if {>Referer} is flyblog.xyz
 	if {>Referer} is flytourisme.org
 	if {>Referer} is fm-upgrade.ru
 	if {>Referer} is fmgrupe.it
@@ -1067,12 +1073,14 @@ redir 444 {
 	if {>Referer} is get-more-freele-visitors.info
 	if {>Referer} is get-morebit-free-visitors.info
 	if {>Referer} is get-prime-seo-services.review
+	if {>Referer} is get-seo-help.com
 	if {>Referer} is get-your-social-buttons.info
 	if {>Referer} is getaadsincome.info
 	if {>Referer} is getadsincomeian.info
 	if {>Referer} is getadsincomely.info
 	if {>Referer} is getadsincomeof.info
 	if {>Referer} is getbytadsincome.info
+	if {>Referer} is getfy-click.info
 	if {>Referer} is getism-more-free-visitors.info
 	if {>Referer} is getity-more-free-visitors.info
 	if {>Referer} is getityadsincome.info
@@ -1142,6 +1150,8 @@ redir 444 {
 	if {>Referer} is groupmoney.ru
 	if {>Referer} is growmyfunds.ca
 	if {>Referer} is growshop.es
+	if {>Referer} is growth-hackingan.info
+	if {>Referer} is growth-hackingy.info
 	if {>Referer} is grupografico-pilar.com.ar
 	if {>Referer} is gsbs.com.ua
 	if {>Referer} is gsmlab.pl
@@ -1433,6 +1443,7 @@ redir 444 {
 	if {>Referer} is krasnodar-avtolombard.ru
 	if {>Referer} is krasnodar.xrus.org
 	if {>Referer} is kredytbank.com.ua
+	if {>Referer} is krumble-adsen.info
 	if {>Referer} is krynica.info
 	if {>Referer} is ktotut.net
 	if {>Referer} is kumuk.info
@@ -1749,6 +1760,7 @@ redir 444 {
 	if {>Referer} is my.opera.com
 	if {>Referer} is mybuh.kz
 	if {>Referer} is mycaf.it
+	if {>Referer} is mycheaptraffic.com
 	if {>Referer} is mydownloadengine.com
 	if {>Referer} is mydownlodablefiles.com
 	if {>Referer} is myfreemp3.eu
@@ -1910,6 +1922,7 @@ redir 444 {
 	if {>Referer} is pensplan4u.com
 	if {>Referer} is percin.biz.ly
 	if {>Referer} is perfection-pleasure.ru
+	if {>Referer} is perform-like-alibabaity.info
 	if {>Referer} is perm.dienai.ru
 	if {>Referer} is perm.xrus.org
 	if {>Referer} is perper.ru
@@ -2272,7 +2285,9 @@ redir 444 {
 	if {>Referer} is semaltmedia.com
 	if {>Referer} is senger.atspace.co.uk
 	if {>Referer} is seo-2-0.com
+	if {>Referer} is seo-b2b.com
 	if {>Referer} is seo-platform.com
+	if {>Referer} is seo-services-b2b.com
 	if {>Referer} is seo-smm.kz
 	if {>Referer} is seoanalyses.com
 	if {>Referer} is seocheckupx.com

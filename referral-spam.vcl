@@ -1,5 +1,5 @@
 # https://github.com/Stevie-Ray/referrer-spam-blocker
-# Updated 2018-10-16 19:46:19
+# Updated 2018-11-28 00:02:35
 sub block_referral_spam {
 	if (
 		req.http.Referer ~ "(?i)000free\.us" ||
@@ -166,6 +166,7 @@ sub block_referral_spam {
 		req.http.Referer ~ "(?i)arkartex\.ru" ||
 		req.http.Referer ~ "(?i)arkkivoltti\.net" ||
 		req.http.Referer ~ "(?i)arraty\.altervista\.org" ||
+		req.http.Referer ~ "(?i)artblog\.top" ||
 		req.http.Referer ~ "(?i)artdeko\.info" ||
 		req.http.Referer ~ "(?i)artefakct\.com" ||
 		req.http.Referer ~ "(?i)artpaint\-market\.ru" ||
@@ -202,6 +203,7 @@ sub block_referral_spam {
 		req.http.Referer ~ "(?i)autonew\.biz" ||
 		req.http.Referer ~ "(?i)autoseo\-service\.org" ||
 		req.http.Referer ~ "(?i)autoseo\-traffic\.com" ||
+		req.http.Referer ~ "(?i)autoseo\-trial\-for\-1\.com" ||
 		req.http.Referer ~ "(?i)autoseoservice\.org" ||
 		req.http.Referer ~ "(?i)autotop\.com\.ua" ||
 		req.http.Referer ~ "(?i)autovideobroadcast\.com" ||
@@ -349,6 +351,8 @@ sub block_referral_spam {
 		req.http.Referer ~ "(?i)blog\.remote\-computer\.de" ||
 		req.http.Referer ~ "(?i)blog\.yam\.com" ||
 		req.http.Referer ~ "(?i)blog100\.org" ||
+		req.http.Referer ~ "(?i)blog2019\.xyz" ||
+		req.http.Referer ~ "(?i)blog4u\.top" ||
 		req.http.Referer ~ "(?i)blogarun\.co" ||
 		req.http.Referer ~ "(?i)bloggen\.be" ||
 		req.http.Referer ~ "(?i)bloggers\.nl" ||
@@ -742,6 +746,7 @@ sub block_referral_spam {
 		req.http.Referer ~ "(?i)easycommerce\.cf" ||
 		req.http.Referer ~ "(?i)easync\.io" ||
 		req.http.Referer ~ "(?i)easytuningshop\.ru" ||
+		req.http.Referer ~ "(?i)ecblog\.xyz" ||
 		req.http.Referer ~ "(?i)ecommerce\-seo\.com" ||
 		req.http.Referer ~ "(?i)ecommerce\-seo\.org" ||
 		req.http.Referer ~ "(?i)ecomp3\.ru" ||
@@ -939,6 +944,7 @@ sub block_referral_spam {
 		req.http.Referer ~ "(?i)flowertherapy\.ru" ||
 		req.http.Referer ~ "(?i)flowwwers\.com" ||
 		req.http.Referer ~ "(?i)flprog\.com" ||
+		req.http.Referer ~ "(?i)flyblog\.xyz" ||
 		req.http.Referer ~ "(?i)flytourisme\.org" ||
 		req.http.Referer ~ "(?i)fm\-upgrade\.ru" ||
 		req.http.Referer ~ "(?i)fmgrupe\.it" ||
@@ -1060,12 +1066,14 @@ sub block_referral_spam {
 		req.http.Referer ~ "(?i)get\-more\-freele\-visitors\.info" ||
 		req.http.Referer ~ "(?i)get\-morebit\-free\-visitors\.info" ||
 		req.http.Referer ~ "(?i)get\-prime\-seo\-services\.review" ||
+		req.http.Referer ~ "(?i)get\-seo\-help\.com" ||
 		req.http.Referer ~ "(?i)get\-your\-social\-buttons\.info" ||
 		req.http.Referer ~ "(?i)getaadsincome\.info" ||
 		req.http.Referer ~ "(?i)getadsincomeian\.info" ||
 		req.http.Referer ~ "(?i)getadsincomely\.info" ||
 		req.http.Referer ~ "(?i)getadsincomeof\.info" ||
 		req.http.Referer ~ "(?i)getbytadsincome\.info" ||
+		req.http.Referer ~ "(?i)getfy\-click\.info" ||
 		req.http.Referer ~ "(?i)getism\-more\-free\-visitors\.info" ||
 		req.http.Referer ~ "(?i)getity\-more\-free\-visitors\.info" ||
 		req.http.Referer ~ "(?i)getityadsincome\.info" ||
@@ -1135,6 +1143,8 @@ sub block_referral_spam {
 		req.http.Referer ~ "(?i)groupmoney\.ru" ||
 		req.http.Referer ~ "(?i)growmyfunds\.ca" ||
 		req.http.Referer ~ "(?i)growshop\.es" ||
+		req.http.Referer ~ "(?i)growth\-hackingan\.info" ||
+		req.http.Referer ~ "(?i)growth\-hackingy\.info" ||
 		req.http.Referer ~ "(?i)grupografico\-pilar\.com\.ar" ||
 		req.http.Referer ~ "(?i)gsbs\.com\.ua" ||
 		req.http.Referer ~ "(?i)gsmlab\.pl" ||
@@ -1426,6 +1436,7 @@ sub block_referral_spam {
 		req.http.Referer ~ "(?i)krasnodar\-avtolombard\.ru" ||
 		req.http.Referer ~ "(?i)krasnodar\.xrus\.org" ||
 		req.http.Referer ~ "(?i)kredytbank\.com\.ua" ||
+		req.http.Referer ~ "(?i)krumble\-adsen\.info" ||
 		req.http.Referer ~ "(?i)krynica\.info" ||
 		req.http.Referer ~ "(?i)ktotut\.net" ||
 		req.http.Referer ~ "(?i)kumuk\.info" ||
@@ -1742,6 +1753,7 @@ sub block_referral_spam {
 		req.http.Referer ~ "(?i)my\.opera\.com" ||
 		req.http.Referer ~ "(?i)mybuh\.kz" ||
 		req.http.Referer ~ "(?i)mycaf\.it" ||
+		req.http.Referer ~ "(?i)mycheaptraffic\.com" ||
 		req.http.Referer ~ "(?i)mydownloadengine\.com" ||
 		req.http.Referer ~ "(?i)mydownlodablefiles\.com" ||
 		req.http.Referer ~ "(?i)myfreemp3\.eu" ||
@@ -1903,6 +1915,7 @@ sub block_referral_spam {
 		req.http.Referer ~ "(?i)pensplan4u\.com" ||
 		req.http.Referer ~ "(?i)percin\.biz\.ly" ||
 		req.http.Referer ~ "(?i)perfection\-pleasure\.ru" ||
+		req.http.Referer ~ "(?i)perform\-like\-alibabaity\.info" ||
 		req.http.Referer ~ "(?i)perm\.dienai\.ru" ||
 		req.http.Referer ~ "(?i)perm\.xrus\.org" ||
 		req.http.Referer ~ "(?i)perper\.ru" ||
@@ -2265,7 +2278,9 @@ sub block_referral_spam {
 		req.http.Referer ~ "(?i)semaltmedia\.com" ||
 		req.http.Referer ~ "(?i)senger\.atspace\.co\.uk" ||
 		req.http.Referer ~ "(?i)seo\-2\-0\.com" ||
+		req.http.Referer ~ "(?i)seo\-b2b\.com" ||
 		req.http.Referer ~ "(?i)seo\-platform\.com" ||
+		req.http.Referer ~ "(?i)seo\-services\-b2b\.com" ||
 		req.http.Referer ~ "(?i)seo\-smm\.kz" ||
 		req.http.Referer ~ "(?i)seoanalyses\.com" ||
 		req.http.Referer ~ "(?i)seocheckupx\.com" ||
