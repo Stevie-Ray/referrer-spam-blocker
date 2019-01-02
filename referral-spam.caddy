@@ -1,5 +1,5 @@
 # https://github.com/Stevie-Ray/referrer-spam-blocker
-# Updated 2018-11-28 00:02:35
+# Updated 2019-01-02 15:53:31
 #
 # Move this file next to your Caddy config file given through -conf, and include it by doing:
 #
@@ -16,17 +16,22 @@ redir 444 {
 	if {>Referer} is 03e.info
 	if {>Referer} is 0n-line.tv
 	if {>Referer} is 1-99seo.com
+	if {>Referer} is 1-best-seo.com
 	if {>Referer} is 1-free-share-buttons.com
+	if {>Referer} is 100-reasons-for-seo.com
 	if {>Referer} is 100dollars-seo.com
 	if {>Referer} is 100searchengines.com
 	if {>Referer} is 101flag.ru
 	if {>Referer} is 11235813.webzdarma.cz
+	if {>Referer} is 12-reasons-for-seo.net
 	if {>Referer} is 12masterov.com
 	if {>Referer} is 12u.info
+	if {>Referer} is 15-reasons-for-seo.com
 	if {>Referer} is 1hwy.com
 	if {>Referer} is 1kinobig.ru
 	if {>Referer} is 1pamm.ru
 	if {>Referer} is 1webmaster.ml
+	if {>Referer} is 2-best-seo.com
 	if {>Referer} is 2015god.org
 	if {>Referer} is 24videos.tv
 	if {>Referer} is 24x7-server-support.site
@@ -37,24 +42,32 @@ redir 444 {
 	if {>Referer} is 2kata.ru
 	if {>Referer} is 2nt.ru
 	if {>Referer} is 2your.site
+	if {>Referer} is 3-best-seo.com
 	if {>Referer} is 3-letter-domains.net
 	if {>Referer} is 3dracergames.com
 	if {>Referer} is 3waynetworks.com
+	if {>Referer} is 4-best-seo.com
 	if {>Referer} is 45en.ru
 	if {>Referer} is 45tahunkhongguan.com
 	if {>Referer} is 4inn.ru
 	if {>Referer} is 4istoshop.com
 	if {>Referer} is 4webmasters.com
 	if {>Referer} is 4webmasters.org
+	if {>Referer} is 5-best-seo.com
 	if {>Referer} is 5-steps-to-start-business.com
 	if {>Referer} is 5elementov.ru
 	if {>Referer} is 5forex.ru
+	if {>Referer} is 6-best-seo.com
 	if {>Referer} is 6hopping.com
+	if {>Referer} is 7-best-seo.com
 	if {>Referer} is 76brighton.co.uk
 	if {>Referer} is 76brighton.com
 	if {>Referer} is 7kop.ru
 	if {>Referer} is 7makemoneyonline.com
 	if {>Referer} is 7zap.com
+	if {>Referer} is 8-best-seo.com
+	if {>Referer} is 9-best-seo.com
+	if {>Referer} is 99-reasons-for-seo.com
 	if {>Referer} is a-hau.mk
 	if {>Referer} is a14download.com
 	if {>Referer} is abbanreddy.com
@@ -161,6 +174,7 @@ redir 444 {
 	if {>Referer} is apartmentbay.ru
 	if {>Referer} is apartmentratings.com
 	if {>Referer} is apishops.ru
+	if {>Referer} is apteka-doc.ru
 	if {>Referer} is apteka-pharm.ru
 	if {>Referer} is apxeo.info
 	if {>Referer} is aramaicmedia.org
@@ -192,6 +206,7 @@ redir 444 {
 	if {>Referer} is audiobangout.com
 	if {>Referer} is ausergrubhof.info
 	if {>Referer} is australia-opening-times.com
+	if {>Referer} is auto-b2b-seo-service.com
 	if {>Referer} is auto-complex.by
 	if {>Referer} is auto-kia-fulldrive.ru
 	if {>Referer} is auto-moto-elektronika.cz
@@ -365,7 +380,9 @@ redir 444 {
 	if {>Referer} is bloggers.nl
 	if {>Referer} is blogig.org
 	if {>Referer} is blogos.kz
+	if {>Referer} is blogping.xyz
 	if {>Referer} is blogs.rediff.com
+	if {>Referer} is blogseo.xyz
 	if {>Referer} is blogstar.fun
 	if {>Referer} is blogster.com
 	if {>Referer} is blogtotal.de
@@ -955,6 +972,7 @@ redir 444 {
 	if {>Referer} is flytourisme.org
 	if {>Referer} is fm-upgrade.ru
 	if {>Referer} is fmgrupe.it
+	if {>Referer} is for-marketersy.info
 	if {>Referer} is for-your.website
 	if {>Referer} is forensicpsychiatry.ru
 	if {>Referer} is forex-indextop20.ru
@@ -1063,6 +1081,7 @@ redir 444 {
 	if {>Referer} is gepatit-info.top
 	if {>Referer} is germes-trans.com
 	if {>Referer} is get-best-copywriting-service.stream
+	if {>Referer} is get-clickir.info
 	if {>Referer} is get-clickize.info
 	if {>Referer} is get-free-social-traffic.com
 	if {>Referer} is get-free-traffic-now.com
@@ -1151,6 +1170,9 @@ redir 444 {
 	if {>Referer} is growmyfunds.ca
 	if {>Referer} is growshop.es
 	if {>Referer} is growth-hackingan.info
+	if {>Referer} is growth-hackingead.info
+	if {>Referer} is growth-hackingeads.info
+	if {>Referer} is growth-hackingor.info
 	if {>Referer} is growth-hackingy.info
 	if {>Referer} is grupografico-pilar.com.ar
 	if {>Referer} is gsbs.com.ua
@@ -1438,12 +1460,16 @@ redir 444 {
 	if {>Referer} is kosova.de
 	if {>Referer} is kotaku.com
 	if {>Referer} is kozhasobak.com
+	if {>Referer} is kozhniebolezni.com
 	if {>Referer} is krafte.ru
 	if {>Referer} is krasivoe-hd.com
 	if {>Referer} is krasnodar-avtolombard.ru
 	if {>Referer} is krasnodar.xrus.org
 	if {>Referer} is kredytbank.com.ua
+	if {>Referer} is krumble-adsde.info
 	if {>Referer} is krumble-adsen.info
+	if {>Referer} is krumble-adsic.info
+	if {>Referer} is krumbleent-ads.info
 	if {>Referer} is krynica.info
 	if {>Referer} is ktotut.net
 	if {>Referer} is kumuk.info
@@ -1556,6 +1582,7 @@ redir 444 {
 	if {>Referer} is llastbuy.ru
 	if {>Referer} is lmrauction.com
 	if {>Referer} is loadopia.com
+	if {>Referer} is local-seo-for-multiple-locations.com
 	if {>Referer} is login-tinkoff.ru
 	if {>Referer} is loginduepunti.it
 	if {>Referer} is lol-smurfs.com
@@ -1684,6 +1711,7 @@ redir 444 {
 	if {>Referer} is mirobuvi.com.ua
 	if {>Referer} is mirtorrent.net
 	if {>Referer} is mirzonru.net
+	if {>Referer} is misselle.ru
 	if {>Referer} is mister-shop.com
 	if {>Referer} is mitrasound.ru
 	if {>Referer} is mixed-wrestling.ru
@@ -1909,6 +1937,7 @@ redir 444 {
 	if {>Referer} is p-business.ru
 	if {>Referer} is paceform.com
 	if {>Referer} is paidonlinesites.com
+	if {>Referer} is painting-planet.com
 	if {>Referer} is palvira.com.au
 	if {>Referer} is palvira.com.ua
 	if {>Referer} is pammik.ru
@@ -1923,6 +1952,7 @@ redir 444 {
 	if {>Referer} is percin.biz.ly
 	if {>Referer} is perfection-pleasure.ru
 	if {>Referer} is perform-like-alibabaity.info
+	if {>Referer} is perform-likeism-alibaba.info
 	if {>Referer} is perm.dienai.ru
 	if {>Referer} is perm.xrus.org
 	if {>Referer} is perper.ru
@@ -2050,6 +2080,8 @@ redir 444 {
 	if {>Referer} is prombudpostach.com.ua
 	if {>Referer} is promodj.com
 	if {>Referer} is promoforum.ru
+	if {>Referer} is promoteapps.online
+	if {>Referer} is promotion-for99.com
 	if {>Referer} is pron.pro
 	if {>Referer} is pronekut.com
 	if {>Referer} is proposal-engine.com
@@ -2196,6 +2228,7 @@ redir 444 {
 	if {>Referer} is russian-postindex.ru
 	if {>Referer} is russian-translator.com
 	if {>Referer} is russintv.fr
+	if {>Referer} is russkie-sochineniya.ru
 	if {>Referer} is russkoe-zdorovie.ru
 	if {>Referer} is rvtv.ru
 	if {>Referer} is rybalka-opt.ru
@@ -2288,8 +2321,11 @@ redir 444 {
 	if {>Referer} is seo-b2b.com
 	if {>Referer} is seo-platform.com
 	if {>Referer} is seo-services-b2b.com
+	if {>Referer} is seo-services-wordpress.com
 	if {>Referer} is seo-smm.kz
+	if {>Referer} is seo-tips.top
 	if {>Referer} is seoanalyses.com
+	if {>Referer} is seobook.top
 	if {>Referer} is seocheckupx.com
 	if {>Referer} is seocheckupx.net
 	if {>Referer} is seoexperimenty.ru
@@ -2777,6 +2813,7 @@ redir 444 {
 	if {>Referer} is valkiria-tk.ru
 	if {>Referer} is vapmedia.org
 	if {>Referer} is vapsy.com
+	if {>Referer} is vardenafil20.com
 	if {>Referer} is varikozdok.ru
 	if {>Referer} is vashsvet.com
 	if {>Referer} is vavilone.com
@@ -2815,6 +2852,7 @@ redir 444 {
 	if {>Referer} is videokrik.net
 	if {>Referer} is videos-for-your-business.com
 	if {>Referer} is videosbox.ru
+	if {>Referer} is videotop.biz
 	if {>Referer} is videotuber.ru
 	if {>Referer} is viel.su
 	if {>Referer} is vigrx-original.ru
