@@ -1,5 +1,5 @@
 # https://github.com/Stevie-Ray/referrer-spam-blocker
-# Updated 2019-01-02 15:53:31
+# Updated 2019-04-03 19:17:38
 #
 # Move this file next to your Caddy config file given through -conf, and include it by doing:
 #
@@ -14,6 +14,7 @@ redir 444 {
 	if {>Referer} is 00go.com
 	if {>Referer} is 00it.com
 	if {>Referer} is 03e.info
+	if {>Referer} is 03p.info
 	if {>Referer} is 0n-line.tv
 	if {>Referer} is 1-99seo.com
 	if {>Referer} is 1-best-seo.com
@@ -32,6 +33,7 @@ redir 444 {
 	if {>Referer} is 1pamm.ru
 	if {>Referer} is 1webmaster.ml
 	if {>Referer} is 2-best-seo.com
+	if {>Referer} is 2-go-now.xyz
 	if {>Referer} is 2015god.org
 	if {>Referer} is 24videos.tv
 	if {>Referer} is 24x7-server-support.site
@@ -66,6 +68,7 @@ redir 444 {
 	if {>Referer} is 7makemoneyonline.com
 	if {>Referer} is 7zap.com
 	if {>Referer} is 8-best-seo.com
+	if {>Referer} is 8xv8.com
 	if {>Referer} is 9-best-seo.com
 	if {>Referer} is 99-reasons-for-seo.com
 	if {>Referer} is a-hau.mk
@@ -102,8 +105,10 @@ redir 444 {
 	if {>Referer} is affordablewebsitesandmobileapps.com
 	if {>Referer} is afora.ru
 	if {>Referer} is agreda.pluto.ro
+	if {>Referer} is ai-seo-services.com
 	if {>Referer} is aibolita.com
 	if {>Referer} is aidarmebel.kz
+	if {>Referer} is aitiman.ae
 	if {>Referer} is akama.com
 	if {>Referer} is akuhni.by
 	if {>Referer} is akusherok.ru
@@ -139,6 +144,7 @@ redir 444 {
 	if {>Referer} is allpdfmags.net
 	if {>Referer} is allsilver925.co.il
 	if {>Referer} is alltheviews.com
+	if {>Referer} is allvacancy.ru
 	if {>Referer} is allwomen.info
 	if {>Referer} is allwrighter.ru
 	if {>Referer} is alot.com
@@ -155,6 +161,7 @@ redir 444 {
 	if {>Referer} is amospalla.es
 	if {>Referer} is amt-k.ru
 	if {>Referer} is amtel-vredestein.com
+	if {>Referer} is anabolics.shop
 	if {>Referer} is anal-acrobats.hol.es
 	if {>Referer} is analytics-ads.xyz
 	if {>Referer} is analyze-best-copywriting-services.party
@@ -177,6 +184,7 @@ redir 444 {
 	if {>Referer} is apteka-doc.ru
 	if {>Referer} is apteka-pharm.ru
 	if {>Referer} is apxeo.info
+	if {>Referer} is arabic-poetry.com
 	if {>Referer} is aramaicmedia.org
 	if {>Referer} is arate.ru
 	if {>Referer} is arcadepages.com
@@ -188,6 +196,7 @@ redir 444 {
 	if {>Referer} is arkkivoltti.net
 	if {>Referer} is arraty.altervista.org
 	if {>Referer} is artblog.top
+	if {>Referer} is artclipart.ru
 	if {>Referer} is artdeko.info
 	if {>Referer} is artefakct.com
 	if {>Referer} is artpaint-market.ru
@@ -222,14 +231,17 @@ redir 444 {
 	if {>Referer} is autoloans.com
 	if {>Referer} is autolombard-krasnodar.ru
 	if {>Referer} is automate-amazon-affiliation.com
+	if {>Referer} is automobile-spec.com
 	if {>Referer} is autonew.biz
 	if {>Referer} is autoseo-service.org
 	if {>Referer} is autoseo-traffic.com
 	if {>Referer} is autoseo-trial-for-1.com
 	if {>Referer} is autoseoservice.org
+	if {>Referer} is autoseotips.com
 	if {>Referer} is autotop.com.ua
 	if {>Referer} is autovideobroadcast.com
 	if {>Referer} is autowebmarket.com.ua
+	if {>Referer} is avcoast.com
 	if {>Referer} is avek.ru
 	if {>Referer} is aviapanda.ru
 	if {>Referer} is aviav.ru.com
@@ -257,6 +269,7 @@ redir 444 {
 	if {>Referer} is b2b-lounge.com
 	if {>Referer} is bablonow.ru
 	if {>Referer} is backgroundpictures.net
+	if {>Referer} is backlinks-fast-top.com
 	if {>Referer} is bag77.ru
 	if {>Referer} is baixar-musicas-gratis.com
 	if {>Referer} is bala.getenjoyment.net
@@ -281,9 +294,12 @@ redir 444 {
 	if {>Referer} is beamfall.info
 	if {>Referer} is beauby.ru
 	if {>Referer} is beauty-clinic.ru
+	if {>Referer} is beauty-lesson.com
+	if {>Referer} is beclean-nn.ru
 	if {>Referer} is bedroomlighting.us
 	if {>Referer} is begalka.xyz
 	if {>Referer} is belinvestdom.by
+	if {>Referer} is belreferatov.net
 	if {>Referer} is berdasovivan.ru
 	if {>Referer} is beremenyashka.com
 	if {>Referer} is berlininsl.com
@@ -303,10 +319,12 @@ redir 444 {
 	if {>Referer} is best-ping-service-usa.top
 	if {>Referer} is best-ping-service-usa.xyz
 	if {>Referer} is best-seo-offer.com
+	if {>Referer} is best-seo-service.tk
 	if {>Referer} is best-seo-software.xyz
 	if {>Referer} is best-seo-solution.com
 	if {>Referer} is bestchoice.cf
 	if {>Referer} is bestempresas.es
+	if {>Referer} is bestfortraders.com
 	if {>Referer} is bestleofferhdd.info
 	if {>Referer} is bestmobilityscooterstoday.com
 	if {>Referer} is bestofferfyhdd.info
@@ -339,6 +357,7 @@ redir 444 {
 	if {>Referer} is billigerstrom.co
 	if {>Referer} is bimatoprost-careprost.com
 	if {>Referer} is bimatoprost-careprost.com.ua
+	if {>Referer} is bin-brokers.com
 	if {>Referer} is binomo.kz
 	if {>Referer} is bio-japan.net
 	if {>Referer} is bio-market.kz
@@ -348,6 +367,7 @@ redir 444 {
 	if {>Referer} is bird1.ru
 	if {>Referer} is birzha-truda.eu
 	if {>Referer} is bisign.info
+	if {>Referer} is bitcoin-ua.top
 	if {>Referer} is bitcoins-forum.club
 	if {>Referer} is bitcoins-forum.info
 	if {>Referer} is bitcoins-forum.online
@@ -373,6 +393,7 @@ redir 444 {
 	if {>Referer} is blog.remote-computer.de
 	if {>Referer} is blog.yam.com
 	if {>Referer} is blog100.org
+	if {>Referer} is blog2019.top
 	if {>Referer} is blog2019.xyz
 	if {>Referer} is blog4u.top
 	if {>Referer} is blogarun.co
@@ -451,6 +472,7 @@ redir 444 {
 	if {>Referer} is buyk.host.sk
 	if {>Referer} is buynorxx.com
 	if {>Referer} is buypharmacydrug.com
+	if {>Referer} is buypillsonline24h.com
 	if {>Referer} is buypillsorderonline.com
 	if {>Referer} is buyscabiescream.com
 	if {>Referer} is buytizanidineonline.blogspot.com
@@ -483,6 +505,7 @@ redir 444 {
 	if {>Referer} is casablancamanor.co.za
 	if {>Referer} is castingbank.ru
 	if {>Referer} is catalogs-parts.com
+	if {>Referer} is cattyhealth.com
 	if {>Referer} is cayado.snn.gr
 	if {>Referer} is cbcseward.com
 	if {>Referer} is cbox.ws
@@ -500,6 +523,7 @@ redir 444 {
 	if {>Referer} is chat.ru
 	if {>Referer} is chcu.net
 	if {>Referer} is cheap-trusted-backlinks.com
+	if {>Referer} is cheappills24h.com
 	if {>Referer} is chee-by.biz
 	if {>Referer} is chelyabinsk.dienai.ru
 	if {>Referer} is chelyabinsk.xrus.org
@@ -623,12 +647,14 @@ redir 444 {
 	if {>Referer} is copyrightinstitute.org
 	if {>Referer} is countravel.net
 	if {>Referer} is covadhosting.biz
+	if {>Referer} is coverage-my.com
 	if {>Referer} is covetnica.com
 	if {>Referer} is cowblog.fr
 	if {>Referer} is cp24.com.ua
 	if {>Referer} is cranly.net
 	if {>Referer} is crd.clan.su
 	if {>Referer} is creams.makeforum.eu
+	if {>Referer} is credit.co.ua
 	if {>Referer} is creditmoney.com.ua
 	if {>Referer} is crest-poloski.ru
 	if {>Referer} is crest3d.ru
@@ -645,6 +671,7 @@ redir 444 {
 	if {>Referer} is cymbaltaandtizanidine.blogspot.com
 	if {>Referer} is cyprusbuyproperties.com
 	if {>Referer} is dailyrank.net
+	if {>Referer} is dailyseo.xyz
 	if {>Referer} is dailystrength.org
 	if {>Referer} is dame-ns.kz
 	if {>Referer} is damedingel.ya.ru
@@ -683,6 +710,7 @@ redir 444 {
 	if {>Referer} is detki-opt.ru
 	if {>Referer} is detskie-konstruktory.ru
 	if {>Referer} is detskie-zabavi.ru
+	if {>Referer} is deutsche-poesie.com
 	if {>Referer} is dev-seo.blog
 	if {>Referer} is diarioaconcagua.com
 	if {>Referer} is diebesten.co
@@ -720,8 +748,10 @@ redir 444 {
 	if {>Referer} is documentserver.net
 	if {>Referer} is documentsite.net
 	if {>Referer} is doeco.ru
+	if {>Referer} is doggyhealthy.com
 	if {>Referer} is dogshowsonice.com
 	if {>Referer} is dogsrun.net
+	if {>Referer} is dojki-devki.ru
 	if {>Referer} is dojki-hd.com
 	if {>Referer} is doktoronline.no
 	if {>Referer} is dokumentalkino.net
@@ -744,8 +774,11 @@ redir 444 {
 	if {>Referer} is download-of-the-warez.blogspot.com
 	if {>Referer} is downloadkakaotalk.com
 	if {>Referer} is downloadmefiranaratb1972.xpg.com.br
+	if {>Referer} is doxysexy.com
 	if {>Referer} is doyouknowtheword-flummox.ml
 	if {>Referer} is dprkboards.com
+	if {>Referer} is draniki.org
+	if {>Referer} is drev.biz
 	if {>Referer} is driving.kiev.ua
 	if {>Referer} is drugspowerstore.com
 	if {>Referer} is drugstoreforyou.com
@@ -784,6 +817,7 @@ redir 444 {
 	if {>Referer} is edudocs.net
 	if {>Referer} is eduinfosite.com
 	if {>Referer} is eduserver.net
+	if {>Referer} is ege-essay.ru
 	if {>Referer} is egovaleo.it
 	if {>Referer} is egvar.net
 	if {>Referer} is ek-invest.ru
@@ -839,12 +873,14 @@ redir 444 {
 	if {>Referer} is energydiet24.ru
 	if {>Referer} is enginebay.ru
 	if {>Referer} is englishdictionaryfree.com
+	if {>Referer} is englishtopic.ru
 	if {>Referer} is entgetadsincome.info
 	if {>Referer} is eonpal.com
 	if {>Referer} is erank.eu
 	if {>Referer} is eredijovon.com
 	if {>Referer} is ereko.ru
 	if {>Referer} is eric-artem.com
+	if {>Referer} is eropho.com
 	if {>Referer} is erot.co
 	if {>Referer} is erotikstories.ru
 	if {>Referer} is es5.com
@@ -863,6 +899,7 @@ redir 444 {
 	if {>Referer} is eu-cookie-law-enforcement2.xyz
 	if {>Referer} is eu-cookie-law.blogspot.com
 	if {>Referer} is eu-cookie-law.info
+	if {>Referer} is eurocredit.xyz
 	if {>Referer} is euromasterclass.ru
 	if {>Referer} is euronis-free.com
 	if {>Referer} is europages.com.ru
@@ -876,6 +913,7 @@ redir 444 {
 	if {>Referer} is exdocsfiles.com
 	if {>Referer} is executehosting.com
 	if {>Referer} is expdom.com
+	if {>Referer} is expediacustomerservicenumber.online
 	if {>Referer} is expertnaya-ocenka.ru
 	if {>Referer} is explore-prior-web-service.review
 	if {>Referer} is express-vyvoz.ru
@@ -938,6 +976,7 @@ redir 444 {
 	if {>Referer} is ferieboligkbh.dk
 	if {>Referer} is fermersovet.ru
 	if {>Referer} is fetishinside.com
+	if {>Referer} is fialka.tomsk.ru
 	if {>Referer} is fidalsa.de
 	if {>Referer} is filesclub.net
 	if {>Referer} is filesdatabase.net
@@ -997,6 +1036,7 @@ redir 444 {
 	if {>Referer} is foxtechfpv.com
 	if {>Referer} is foxweber.com
 	if {>Referer} is fr.netlog.com
+	if {>Referer} is francaise-poesie.com
 	if {>Referer} is frauplus.ru
 	if {>Referer} is free-fb-traffic.com
 	if {>Referer} is free-fbook-traffic.com
@@ -1075,6 +1115,7 @@ redir 444 {
 	if {>Referer} is gearcraft.us
 	if {>Referer} is gearsadspromo.club
 	if {>Referer} is gelezki.com
+	if {>Referer} is gelstate.ru
 	if {>Referer} is generalporn.org
 	if {>Referer} is genericlowlatencyasiodriverhq.aircus.com
 	if {>Referer} is gentamicineyedrops.blogspot.com
@@ -1117,6 +1158,7 @@ redir 444 {
 	if {>Referer} is ghernnqr.skyrock.com
 	if {>Referer} is gheus.altervista.org
 	if {>Referer} is ghostvisitor.com
+	if {>Referer} is gidonline.one
 	if {>Referer} is giftbig.ru
 	if {>Referer} is girlporn.ru
 	if {>Referer} is girls-ufa.ru
@@ -1164,6 +1206,7 @@ redir 444 {
 	if {>Referer} is grand-chlen.ru
 	if {>Referer} is graphid.com
 	if {>Referer} is gratuitbaise.com
+	if {>Referer} is greatblog.top
 	if {>Referer} is greatgrace.ru
 	if {>Referer} is grizzlysgrill.com
 	if {>Referer} is groupmoney.ru
@@ -1213,6 +1256,7 @@ redir 444 {
 	if {>Referer} is hem.passagen.se
 	if {>Referer} is hifidesign.ru
 	if {>Referer} is hill-accent-withdraw-sentiment.info
+	if {>Referer} is hit-kino.ru
 	if {>Referer} is hitsbox.info
 	if {>Referer} is hiwibyh.bugs3.com
 	if {>Referer} is hkdiiohi.skyrock.com
@@ -1327,8 +1371,10 @@ redir 444 {
 	if {>Referer} is infektsii.com
 	if {>Referer} is infobabki.ru
 	if {>Referer} is infodocsportal.com
+	if {>Referer} is infogame.name
 	if {>Referer} is infokonkurs.ru
 	if {>Referer} is inform-ua.info
+	if {>Referer} is inmoll.com
 	if {>Referer} is innodgfdriverhm.aircus.com
 	if {>Referer} is insider.pro
 	if {>Referer} is intelhdgraphicsgtdrive6w.metroblog.com
@@ -1354,6 +1400,7 @@ redir 444 {
 	if {>Referer} is ishgetadsincome.info
 	if {>Referer} is isistaylorporn.info
 	if {>Referer} is iskalko.ru
+	if {>Referer} is iskussnica.ru
 	if {>Referer} is isotoner.com
 	if {>Referer} is ispaniya-costa-blanca.ru
 	if {>Referer} is istanbulit.com
@@ -1374,7 +1421,11 @@ redir 444 {
 	if {>Referer} is janettabridal.com
 	if {>Referer} is japfm.com
 	if {>Referer} is jasonpartington.com
+	if {>Referer} is jav-fetish.com
+	if {>Referer} is jav-fetish.site
 	if {>Referer} is javatex.co.id
+	if {>Referer} is javcoast.com
+	if {>Referer} is javlibrary.cc
 	if {>Referer} is jaxcube.info
 	if {>Referer} is jazzstyle4us.com
 	if {>Referer} is jennyfire.ru
@@ -1405,6 +1456,7 @@ redir 444 {
 	if {>Referer} is kabinet-tinkoff.ru
 	if {>Referer} is kabinet-ttk.ru
 	if {>Referer} is kakablog.net
+	if {>Referer} is kakadu-interior.com.ua
 	if {>Referer} is kalb.ru
 	if {>Referer} is kambasoft.com
 	if {>Referer} is kamin-sam.ru
@@ -1418,6 +1470,7 @@ redir 444 {
 	if {>Referer} is kaz.kz
 	if {>Referer} is kazan.xrus.org
 	if {>Referer} is kazka.ru
+	if {>Referer} is kazlenta.kz
 	if {>Referer} is kazrent.com
 	if {>Referer} is kerch.site
 	if {>Referer} is ketrzyn.pl
@@ -1438,6 +1491,7 @@ redir 444 {
 	if {>Referer} is kinohit1.ru
 	if {>Referer} is kinopolet.net
 	if {>Referer} is kinosed.net
+	if {>Referer} is kinostar.online
 	if {>Referer} is kinotorka.ru
 	if {>Referer} is kiprinform.com
 	if {>Referer} is kiwe-analytics.com
@@ -1483,6 +1537,7 @@ redir 444 {
 	if {>Referer} is labplus.ru
 	if {>Referer} is labvis.host.sk
 	if {>Referer} is ladov.ru
+	if {>Referer} is lalalove.ru
 	if {>Referer} is laminat.com.ua
 	if {>Referer} is lampokrat.ws
 	if {>Referer} is lanasshop.ru
@@ -1623,6 +1678,7 @@ redir 444 {
 	if {>Referer} is makeprogress.ga
 	if {>Referer} is maladot.com
 	if {>Referer} is malls.com
+	if {>Referer} is mamylik.ru
 	if {>Referer} is manimpotence.com
 	if {>Referer} is manipulyator-peterburg.ru
 	if {>Referer} is manualterap.roleforum.ru
@@ -1630,6 +1686,7 @@ redir 444 {
 	if {>Referer} is marcogrup.com
 	if {>Referer} is maridan.com.au
 	if {>Referer} is maridan.com.ua
+	if {>Referer} is marinetraffic.com
 	if {>Referer} is marketland.ml
 	if {>Referer} is marktforschung-stuttgart.com
 	if {>Referer} is marmitaco.cat
@@ -1658,6 +1715,7 @@ redir 444 {
 	if {>Referer} is med-zdorovie.com.au
 	if {>Referer} is med-zdorovie.com.ua
 	if {>Referer} is medanestesia.ru
+	if {>Referer} is medbrowse.info
 	if {>Referer} is medi-fitt.hu
 	if {>Referer} is medicinacom.ru
 	if {>Referer} is medicineseasybuy.com
@@ -1694,6 +1752,7 @@ redir 444 {
 	if {>Referer} is mifepriston.net
 	if {>Referer} is migente.com
 	if {>Referer} is migera.net
+	if {>Referer} is migronis.com
 	if {>Referer} is mikozstop.com
 	if {>Referer} is mikrobiologies.ru
 	if {>Referer} is mikrocement.com.ua
@@ -1718,6 +1777,7 @@ redir 444 {
 	if {>Referer} is mksport.ru
 	if {>Referer} is mmog-play.ru
 	if {>Referer} is mmoguider.ru
+	if {>Referer} is mnogabukaff.net
 	if {>Referer} is mobile.ok.ru
 	if {>Referer} is mobilemedia.md
 	if {>Referer} is mobot.site
@@ -1762,8 +1822,10 @@ redir 444 {
 	if {>Referer} is moy-dokument.com
 	if {>Referer} is moyakuhnia.ru
 	if {>Referer} is moyaterapiya.ru
+	if {>Referer} is moyparnik.com
 	if {>Referer} is mp3films.ru
 	if {>Referer} is mpftpupload.com
+	if {>Referer} is mrbojikobi4.biz
 	if {>Referer} is mrcsa.com.au
 	if {>Referer} is mriyadh.com
 	if {>Referer} is mrmoneymustache.com
@@ -1789,6 +1851,7 @@ redir 444 {
 	if {>Referer} is mybuh.kz
 	if {>Referer} is mycaf.it
 	if {>Referer} is mycheaptraffic.com
+	if {>Referer} is mydoctorok.ru
 	if {>Referer} is mydownloadengine.com
 	if {>Referer} is mydownlodablefiles.com
 	if {>Referer} is myfreemp3.eu
@@ -1813,10 +1876,14 @@ redir 444 {
 	if {>Referer} is narkologiya-penza.ru
 	if {>Referer} is narkologiya-peterburg.ru
 	if {>Referer} is narkologiya-voronezh.ru
+	if {>Referer} is narosty.com
 	if {>Referer} is narutonaruto.ru
 	if {>Referer} is nastroyke.net
+	if {>Referer} is natali-forex.com
 	if {>Referer} is nate.com
+	if {>Referer} is naturalpharm.com.ua
 	if {>Referer} is naval.jislaaik.com
+	if {>Referer} is nbok.net
 	if {>Referer} is nbsproject.ru
 	if {>Referer} is needtosellmyhousefast.com
 	if {>Referer} is negral.pluto.ro
@@ -1880,11 +1947,13 @@ redir 444 {
 	if {>Referer} is ogorodnic.com
 	if {>Referer} is ok.ru
 	if {>Referer} is oklogistic.ru
+	if {>Referer} is okoshkah.com
 	if {>Referer} is okout.ru/a00af605
 	if {>Referer} is okroshki.ru
 	if {>Referer} is oktube.ru
 	if {>Referer} is olvanto.ru
 	if {>Referer} is omsk.xrus.org
+	if {>Referer} is one-a-plus.xyz
 	if {>Referer} is one-gear.com
 	if {>Referer} is onefilms.net
 	if {>Referer} is online-binbank.ru
@@ -1900,6 +1969,7 @@ redir 444 {
 	if {>Referer} is onlinefilmz.net
 	if {>Referer} is onlineserialy.ru
 	if {>Referer} is onlinetvseries.me
+	if {>Referer} is onlinewot.ru
 	if {>Referer} is onlinewritingjobs17.blogspot.ru
 	if {>Referer} is onload.pw
 	if {>Referer} is onlyforemont.ru
@@ -1967,10 +2037,12 @@ redir 444 {
 	if {>Referer} is photochki.com
 	if {>Referer} is photokitchendesign.com
 	if {>Referer} is photorepair.ru
+	if {>Referer} is php-market.ru
 	if {>Referer} is physfunc.ru
 	if {>Referer} is picscout.com
 	if {>Referer} is picturesmania.com
 	if {>Referer} is pills24h.com
+	if {>Referer} is piluli.info
 	if {>Referer} is pinkduck.ga
 	if {>Referer} is pipki.pp.ua
 	if {>Referer} is pirateday.ru
@@ -2009,6 +2081,8 @@ redir 444 {
 	if {>Referer} is popup-hgd.xyz
 	if {>Referer} is popup-jdh.xyz
 	if {>Referer} is porn-w.org
+	if {>Referer} is porndl.org
+	if {>Referer} is pornhive.org
 	if {>Referer} is pornhub-forum.ga
 	if {>Referer} is pornhub-forum.uni.me
 	if {>Referer} is pornhub-ru.com
@@ -2019,6 +2093,7 @@ redir 444 {
 	if {>Referer} is porno-raskazy.ru
 	if {>Referer} is porno-transsexuals.ru
 	if {>Referer} is porno-video-chati.ru
+	if {>Referer} is pornobest.su
 	if {>Referer} is pornoblood.com
 	if {>Referer} is pornobrazzers.biz
 	if {>Referer} is pornodojd.ru
@@ -2034,6 +2109,8 @@ redir 444 {
 	if {>Referer} is pornonik.com
 	if {>Referer} is pornophoto.xyz
 	if {>Referer} is pornoplen.com
+	if {>Referer} is pornosemki.info
+	if {>Referer} is pornoslave.net
 	if {>Referer} is pornotubexxx.name
 	if {>Referer} is porodasobak.net
 	if {>Referer} is portal-eu.ru
@@ -2041,6 +2118,7 @@ redir 444 {
 	if {>Referer} is portnoff.od.ua
 	if {>Referer} is poshiv-chehol.ru
 	if {>Referer} is positive2b.ru
+	if {>Referer} is pospektr.ru
 	if {>Referer} is postclass.com
 	if {>Referer} is powitania.pl
 	if {>Referer} is pozdravleniya-c.ru
@@ -2049,6 +2127,7 @@ redir 444 {
 	if {>Referer} is pozvonim.com
 	if {>Referer} is pp-budpostach.com.ua
 	if {>Referer} is pravoholding.ru
+	if {>Referer} is predmety.in.ua
 	if {>Referer} is priceg.com
 	if {>Referer} is pricheskaonline.ru
 	if {>Referer} is pricheski-video.com
@@ -2101,6 +2180,7 @@ redir 444 {
 	if {>Referer} is prostitutki-yaroslavlya.org
 	if {>Referer} is psa48.ru
 	if {>Referer} is pskcijdc.bloger.index.hr
+	if {>Referer} is psn-card.ru
 	if {>Referer} is psvita.ru
 	if {>Referer} is psychocryonics.net
 	if {>Referer} is punch.media
@@ -2217,6 +2297,7 @@ redir 444 {
 	if {>Referer} is runovschool.ua
 	if {>Referer} is runstocks.com
 	if {>Referer} is rupolitshow.ru
+	if {>Referer} is rus-lit.com
 	if {>Referer} is rus-teh.narod.ru
 	if {>Referer} is ruscopybook.com
 	if {>Referer} is rusenvironmental.net
@@ -2230,8 +2311,12 @@ redir 444 {
 	if {>Referer} is russintv.fr
 	if {>Referer} is russkie-sochineniya.ru
 	if {>Referer} is russkoe-zdorovie.ru
+	if {>Referer} is rustag.ru
+	if {>Referer} is rutor.group
 	if {>Referer} is rvtv.ru
+	if {>Referer} is rxshop.md
 	if {>Referer} is rybalka-opt.ru
+	if {>Referer} is s-forum.biz
 	if {>Referer} is sabaapress.com
 	if {>Referer} is sack.net
 	if {>Referer} is sad-torg.com.ua
@@ -2312,6 +2397,7 @@ redir 444 {
 	if {>Referer} is securityallianceservices.com
 	if {>Referer} is see-your-website-here.com
 	if {>Referer} is seksotur.ru
+	if {>Referer} is sel-hoz.com
 	if {>Referer} is sell-fb-group-here.com
 	if {>Referer} is semalt.com
 	if {>Referer} is semalt.semalt.com
@@ -2334,6 +2420,7 @@ redir 444 {
 	if {>Referer} is seopub.net
 	if {>Referer} is seoservices2018.com
 	if {>Referer} is serialsway.ucoz.ru
+	if {>Referer} is serialsx.ru
 	if {>Referer} is servisural.ru
 	if {>Referer} is serw.clicksor.com
 	if {>Referer} is seryeznie-znakomstva.ru
@@ -2341,6 +2428,7 @@ redir 444 {
 	if {>Referer} is sex-dating.co
 	if {>Referer} is sexkrasivo.net
 	if {>Referer} is sexsaoy.com
+	if {>Referer} is sexuria.net
 	if {>Referer} is sexvideo-sex.com
 	if {>Referer} is sexvporno.ru
 	if {>Referer} is sexyali.com
@@ -2368,6 +2456,7 @@ redir 444 {
 	if {>Referer} is shodanhq.com
 	if {>Referer} is shop-electron.ru
 	if {>Referer} is shop.xz618.com
+	if {>Referer} is shopfishing.com.ua
 	if {>Referer} is shoppingmiracles.co.uk
 	if {>Referer} is shops-ru.ru
 	if {>Referer} is shopvilleroyboch.com.ua
@@ -2401,6 +2490,7 @@ redir 444 {
 	if {>Referer} is sk.golden-praga.ru
 	if {>Referer} is ski-centers.com
 	if {>Referer} is skinali.com
+	if {>Referer} is skinali.photo-clip.ru
 	if {>Referer} is sklad-24.ru
 	if {>Referer} is skladvaz.ru
 	if {>Referer} is sky-mine.ru
@@ -2498,10 +2588,13 @@ redir 444 {
 	if {>Referer} is sovetogorod.ru
 	if {>Referer} is sovetskie-plakaty.ru
 	if {>Referer} is soviet-portal.do.am
+	if {>Referer} is sowhoz.ru
 	if {>Referer} is soyuzexpedition.ru
 	if {>Referer} is sp-laptop.ru
 	if {>Referer} is sp-zakupki.ru
+	if {>Referer} is space2019.top
 	if {>Referer} is spacebarnot.work
+	if {>Referer} is spain-poetry.com
 	if {>Referer} is spb-plitka.ru
 	if {>Referer} is spb-scenar.ru
 	if {>Referer} is spb.ru
@@ -2519,6 +2612,8 @@ redir 444 {
 	if {>Referer} is squidoo.com
 	if {>Referer} is srecorder.com
 	if {>Referer} is sribno.net
+	if {>Referer} is sssexxx.net
+	if {>Referer} is sta-grand.ru
 	if {>Referer} is stairliftstrue.com
 	if {>Referer} is star61.de
 	if {>Referer} is stardevine.com
@@ -2542,6 +2637,7 @@ redir 444 {
 	if {>Referer} is streetfooduncovered.com
 	if {>Referer} is streha-metalko.si
 	if {>Referer} is strigkaomsk.ru
+	if {>Referer} is stroi-24.ru
 	if {>Referer} is stroicol.net
 	if {>Referer} is stroimajor.ru
 	if {>Referer} is stroiminsk.com
@@ -2555,6 +2651,7 @@ redir 444 {
 	if {>Referer} is studiofaca.com
 	if {>Referer} is stuff-about-money.com
 	if {>Referer} is styro.ru
+	if {>Referer} is su1ufa.ru
 	if {>Referer} is success-seo.com
 	if {>Referer} is suche.t-online.de
 	if {>Referer} is sugarkun.com
@@ -2563,23 +2660,27 @@ redir 444 {
 	if {>Referer} is superiends.org
 	if {>Referer} is supermama.top
 	if {>Referer} is supermesta.ru
+	if {>Referer} is supermodni.com.ua
 	if {>Referer} is supernew.org
 	if {>Referer} is superpages.com
 	if {>Referer} is supervesti.ru
 	if {>Referer} is surflinksmedical.com
 	if {>Referer} is susanholtphotography.com
 	if {>Referer} is svarbit.com
+	if {>Referer} is svensk-poesi.com
 	if {>Referer} is svetka.info
 	if {>Referer} is svetlotorg.ru
 	if {>Referer} is svetoch.moscow
 	if {>Referer} is svetodiodoff.ru
 	if {>Referer} is swagbucks.com
+	if {>Referer} is sweet.tv
 	if {>Referer} is sygraem.com
 	if {>Referer} is szansadlarolnikow.com.pl
 	if {>Referer} is t-machinery.ru
 	if {>Referer} is t-rec.su
 	if {>Referer} is t3chtonic.com
 	if {>Referer} is taihouse.ru
+	if {>Referer} is tamada69.com
 	if {>Referer} is tasteidea.com
 	if {>Referer} is tastyfoodideas.com
 	if {>Referer} is tattoo-stickers.ru
@@ -2695,6 +2796,7 @@ redir 444 {
 	if {>Referer} is top-gan.ru
 	if {>Referer} is top-l2.com
 	if {>Referer} is top1-seo-service.com
+	if {>Referer} is top10-online-games.com
 	if {>Referer} is top10-way.com
 	if {>Referer} is top250movies.ru
 	if {>Referer} is topmira.com
@@ -2703,6 +2805,7 @@ redir 444 {
 	if {>Referer} is topshef.ru
 	if {>Referer} is topvidos.ru
 	if {>Referer} is torontoplumbinggroup.com
+	if {>Referer} is torrentgamer.net
 	if {>Referer} is torrents-tracker.com
 	if {>Referer} is torrnada.ru
 	if {>Referer} is torture.ml
@@ -2769,7 +2872,9 @@ redir 444 {
 	if {>Referer} is udav.net
 	if {>Referer} is ufa.dienai.ru
 	if {>Referer} is ufa.xrus.org
+	if {>Referer} is uginekologa.com
 	if {>Referer} is ukrainian-poetry.com
+	if {>Referer} is ukrtvory.in.ua
 	if {>Referer} is ul-potolki.ru
 	if {>Referer} is ultimateuninstall.com
 	if {>Referer} is um-razum.ru
@@ -2823,6 +2928,7 @@ redir 444 {
 	if {>Referer} is veerotech.com
 	if {>Referer} is vegascosmetics.ru
 	if {>Referer} is vekzdorov.ru
+	if {>Referer} is veles.shop
 	if {>Referer} is velobikestock.com
 	if {>Referer} is veloland.in.ua
 	if {>Referer} is venta-prom.ru
@@ -2832,6 +2938,7 @@ redir 444 {
 	if {>Referer} is vesnatehno.com
 	if {>Referer} is vesnatehno.ru
 	if {>Referer} is vesta-lada.net
+	if {>Referer} is vezdevoz.com.ua
 	if {>Referer} is vezuviy.su
 	if {>Referer} is vgoloveboli.net
 	if {>Referer} is via-gra.webstarts.com
@@ -2889,10 +2996,12 @@ redir 444 {
 	if {>Referer} is vostoktrade.info
 	if {>Referer} is vote-up.ru
 	if {>Referer} is vozbujdenie.com
+	if {>Referer} is vpdr.pl
 	if {>Referer} is vpnhowto.info
 	if {>Referer} is vriel.batcave.net
 	if {>Referer} is vrnelectro.ru
 	if {>Referer} is vrotike.ru
+	if {>Referer} is vseigru.one
 	if {>Referer} is vsesubwaysurfers.com
 	if {>Referer} is vseuznaem.com
 	if {>Referer} is vucms.com
@@ -2900,9 +3009,11 @@ redir 444 {
 	if {>Referer} is vykupavto-krasnodar.ru
 	if {>Referer} is vzheludke.com
 	if {>Referer} is vzlom-na-zakaz.com
+	if {>Referer} is vzubah.com
 	if {>Referer} is vzubkah.com
 	if {>Referer} is w3javascript.com
 	if {>Referer} is w7s.ru
+	if {>Referer} is wakeupseoconsultant.com
 	if {>Referer} is wallpaperdesk.info
 	if {>Referer} is wallpapers-best.com
 	if {>Referer} is wallpapersdesk.info
@@ -3001,6 +3112,7 @@ redir 444 {
 	if {>Referer} is www-lk-rt.ru
 	if {>Referer} is www1.free-share-buttons.top
 	if {>Referer} is wzgyyq.com
+	if {>Referer} is x-lime.com
 	if {>Referer} is x-musics.com
 	if {>Referer} is x-stars.ru
 	if {>Referer} is x5market.ru
@@ -3029,6 +3141,7 @@ redir 444 {
 	if {>Referer} is xn----8sbdbjgb1ap7a9c4czbh.xn--p1acf
 	if {>Referer} is xn----8sbhefaln6acifdaon5c6f4axh.xn--p1ai
 	if {>Referer} is xn----8sblgmbj1a1bk8l.xn----161-4vemb6cjl7anbaea3afninj.xn--p1ai
+	if {>Referer} is xn----btbdvdh4aafrfciljm6k.xn--p1ai
 	if {>Referer} is xn----ctbbcjd3dbsehgi.xn--p1ai
 	if {>Referer} is xn----ctbfcdjl8baejhfb1oh.xn--p1ai
 	if {>Referer} is xn----ctbigni3aj4h.xn--p1ai
@@ -3083,6 +3196,7 @@ redir 444 {
 	if {>Referer} is yeartwit.com
 	if {>Referer} is yellowstonevisitortours.com
 	if {>Referer} is yes-com.com
+	if {>Referer} is yes-do-now.com
 	if {>Referer} is yhirurga.ru
 	if {>Referer} is ykecwqlixx.ru
 	if {>Referer} is ynymnwbm.bloger.index.hr
@@ -3096,6 +3210,8 @@ redir 444 {
 	if {>Referer} is youporn-forum.ga
 	if {>Referer} is youporn-forum.uni.me
 	if {>Referer} is youporn-ru.com
+	if {>Referer} is your-good-links.com
+	if {>Referer} is your-tales.ru
 	if {>Referer} is yourdesires.ru
 	if {>Referer} is youresponsive.com
 	if {>Referer} is yourothersite.com
@@ -3110,6 +3226,7 @@ redir 444 {
 	if {>Referer} is yugo-star.ru
 	if {>Referer} is yunque.pluto.ro
 	if {>Referer} is yurgorod.ru
+	if {>Referer} is zagadki.in.ua
 	if {>Referer} is zahvat.ru
 	if {>Referer} is zaidia.xhost.ro
 	if {>Referer} is zaim-pod-zalog-krasnodar.ru
