@@ -1,39 +1,39 @@
 {
     "_readme": [
         "This file locks the dependencies of your project to a known state",
-        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "8631fa6a62942977c74263f7ee173dec",
+    "content-hash": "77d4846dbf3cb4599a4b4de339c40901",
     "packages": [],
     "packages-dev": [
         {
-            "name": "mso/idna-convert",
-            "version": "v1.1.0",
+            "name": "algo26-matthias/idna-convert",
+            "version": "v3.0.1",
             "source": {
                 "type": "git",
-                "url": "https://github.com/phlylabs/idna-convert.git",
-                "reference": "a6dfb6f87611e3a89d2eec4924a0f51db755c573"
+                "url": "https://github.com/algo26-matthias/idna-convert.git",
+                "reference": "893d5918fd99ea12a427c714f3a02031fabe60b0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phlylabs/idna-convert/zipball/a6dfb6f87611e3a89d2eec4924a0f51db755c573",
-                "reference": "a6dfb6f87611e3a89d2eec4924a0f51db755c573",
+                "url": "https://api.github.com/repos/algo26-matthias/idna-convert/zipball/893d5918fd99ea12a427c714f3a02031fabe60b0",
+                "reference": "893d5918fd99ea12a427c714f3a02031fabe60b0",
                 "shasum": ""
             },
             "require": {
                 "ext-pcre": "*",
-                "php": ">=5.6.0"
+                "jakeasmith/http_build_url": "^1",
+                "php": "^7.2.0"
+            },
+            "suggest": {
+                "ext-iconv": "Install ext/iconv for using input / output other than UTF-8 or ISO-8859-1",
+                "ext-mbstring": "Install ext/mbstring for using input / output other than UTF-8 or ISO-8859-1"
             },
             "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "1.0.x-dev"
-                }
-            },
             "autoload": {
                 "psr-4": {
-                    "Mso\\IdnaConvert\\": "src"
+                    "Algo26\\IdnaConvert\\": "src/"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -43,7 +43,7 @@
             "authors": [
                 {
                     "name": "Matthias Sommerfeld",
-                    "email": "mso@phlylabs.de",
+                    "email": "matthias.sommerfeld@algo26.de",
                     "role": "Developer"
                 }
             ],
@@ -54,7 +54,40 @@
                 "idna",
                 "php"
             ],
-            "time": "2016-06-19T18:08:43+00:00"
+            "time": "2019-03-28T17:45:10+00:00"
+        },
+        {
+            "name": "jakeasmith/http_build_url",
+            "version": "1.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/jakeasmith/http_build_url.git",
+                "reference": "93c273e77cb1edead0cf8bcf8cd2003428e74e37"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/jakeasmith/http_build_url/zipball/93c273e77cb1edead0cf8bcf8cd2003428e74e37",
+                "reference": "93c273e77cb1edead0cf8bcf8cd2003428e74e37",
+                "shasum": ""
+            },
+            "type": "library",
+            "autoload": {
+                "files": [
+                    "src/http_build_url.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Jake A. Smith",
+                    "email": "theman@jakeasmith.com"
+                }
+            ],
+            "description": "Provides functionality for http_build_url() to environments without pecl_http.",
+            "time": "2017-05-01T15:36:40+00:00"
         }
     ],
     "aliases": [],
@@ -63,7 +96,7 @@
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {
-        "php": ">=5.6"
+        "php": ">=7.2"
     },
     "platform-dev": []
 }

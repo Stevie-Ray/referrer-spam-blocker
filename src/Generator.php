@@ -2,7 +2,7 @@
 
 namespace StevieRay;
 
-use Mso\IdnaConvert\IdnaConvert;
+use Algo26\IdnaConvert\ToIdn;
 
 class Generator
 {
@@ -50,7 +50,7 @@ class Generator
             // convert internationalized domain names
             if (preg_match('/[А-Яа-яЁёɢ]/u', $line)) {
 
-                $IDN = new IdnaConvert();
+                $IDN = new ToIdn();
 
                 $line = $IDN->encode($line);
 
