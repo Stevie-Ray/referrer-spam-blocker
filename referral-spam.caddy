@@ -1,5 +1,5 @@
 # https://github.com/Stevie-Ray/referrer-spam-blocker
-# Updated 2019-04-03 19:17:38
+# Updated 2019-06-13 18:58:33
 #
 # Move this file next to your Caddy config file given through -conf, and include it by doing:
 #
@@ -33,6 +33,7 @@ redir 444 {
 	if {>Referer} is 1pamm.ru
 	if {>Referer} is 1webmaster.ml
 	if {>Referer} is 2-best-seo.com
+	if {>Referer} is 2-easy.xyz
 	if {>Referer} is 2-go-now.xyz
 	if {>Referer} is 2015god.org
 	if {>Referer} is 24videos.tv
@@ -84,6 +85,7 @@ redir 444 {
 	if {>Referer} is academia-nsk.org
 	if {>Referer} is acads.net
 	if {>Referer} is acarreo.ru
+	if {>Referer} is account-my1.xyz
 	if {>Referer} is actata.co
 	if {>Referer} is acunetix-referrer.com
 	if {>Referer} is adanih.com
@@ -114,6 +116,7 @@ redir 444 {
 	if {>Referer} is akusherok.ru
 	if {>Referer} is akvamaster.dp.ua
 	if {>Referer} is alborzan.com
+	if {>Referer} is albuteroli.com
 	if {>Referer} is alert-fdm.xyz
 	if {>Referer} is alert-fjg.xyz
 	if {>Referer} is alert-hgd.xyz
@@ -175,6 +178,7 @@ redir 444 {
 	if {>Referer} is animalphotos.xyz
 	if {>Referer} is animebox.com.ua
 	if {>Referer} is animenime.ru
+	if {>Referer} is annaeydlish.top
 	if {>Referer} is anticrawler.org
 	if {>Referer} is antiguabarbuda.ru
 	if {>Referer} is aosheng-tech.com
@@ -677,6 +681,7 @@ redir 444 {
 	if {>Referer} is damedingel.ya.ru
 	if {>Referer} is danashop.ru
 	if {>Referer} is danceuniverse.ru
+	if {>Referer} is dantk.kz
 	if {>Referer} is daptravel.com
 	if {>Referer} is darkbooks.org
 	if {>Referer} is darodar.com
@@ -1033,6 +1038,7 @@ redir 444 {
 	if {>Referer} is forums.toucharcade.com
 	if {>Referer} is fotoxxxru.com
 	if {>Referer} is foxinsocks.ru
+	if {>Referer} is foxjuegos.com
 	if {>Referer} is foxtechfpv.com
 	if {>Referer} is foxweber.com
 	if {>Referer} is fr.netlog.com
@@ -1434,6 +1440,7 @@ redir 444 {
 	if {>Referer} is jobius.com.ua
 	if {>Referer} is joinandplay.me
 	if {>Referer} is joingames.org
+	if {>Referer} is josephineblog.top
 	if {>Referer} is journalhome.com
 	if {>Referer} is juliadiets.com
 	if {>Referer} is juliaworld.net
@@ -2222,6 +2229,7 @@ redir 444 {
 	if {>Referer} is rapidsites.pro
 	if {>Referer} is rasteniya-vs-zombi.ru
 	if {>Referer} is rattan.co.ua
+	if {>Referer} is raymondblog.top
 	if {>Referer} is razamicroelectronics.com
 	if {>Referer} is razborka-skoda.org.ua
 	if {>Referer} is rcb101.ru
@@ -2703,6 +2711,7 @@ redir 444 {
 	if {>Referer} is tentcomplekt.ru
 	if {>Referer} is teplohod-gnezdo.ru
 	if {>Referer} is teplolidoma.ru
+	if {>Referer} is teresablog.top
 	if {>Referer} is teslathemes.com
 	if {>Referer} is test-extra-full-stack-services.stream
 	if {>Referer} is test-prime-smm-service.review
@@ -3011,6 +3020,7 @@ redir 444 {
 	if {>Referer} is vzlom-na-zakaz.com
 	if {>Referer} is vzubah.com
 	if {>Referer} is vzubkah.com
+	if {>Referer} is w2mobile-za.com
 	if {>Referer} is w3javascript.com
 	if {>Referer} is w7s.ru
 	if {>Referer} is wakeupseoconsultant.com
