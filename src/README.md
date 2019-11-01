@@ -1,13 +1,18 @@
-referrer-spam-blocker
-====================================
+<h1 align="center">Referrer Spam Blocker Generator :robot:</h1>
 
-[![Latest Stable Version](https://img.shields.io/packagist/v/Stevie-Ray/referrer-spam-blocker.svg?style=square)](https://packagist.org/packages/Stevie-Ray/referrer-spam-blocker)
+<p align="center"><strong>Converts <em>domains.txt</em> to valid server configuration</strong></p>
+
+<p align="center">Supported Servers: Apache, Nginx, IIS, uWSGI, Caddy & Varnish (+ Google Analytics segments)</p>
+
+
+<br />
+
+[![Latest Stable Version](https://img.shields.io/packagist/v/stevie-ray/referrer-spam-blocker)](https://packagist.org/packages/Stevie-Ray/referrer-spam-blocker)
 [![Build Status](https://travis-ci.org/Stevie-Ray/referrer-spam-blocker.svg)](https://travis-ci.org/Stevie-Ray/referrer-spam-blocker)
-[![Dependency Status](https://www.versioneye.com/php/Stevie-Ray:referrer-spam-blocker/badge.svg?style=flat)](https://www.versioneye.com/php/Stevie-Ray:referrer-spam-blocker)
-[![Code Quality](https://img.shields.io/scrutinizer/g/Stevie-Ray/referrer-spam-blocker.svg?style=flat)](https://scrutinizer-ci.com/g/Stevie-Ray/referrer-spam-blocker/?branch=master)
-[![Packagist Downloads](https://img.shields.io/packagist/dt/Stevie-Ray/referrer-spam-blocker.svg?style=flat)](https://packagist.org/packages/Stevie-Ray/referrer-spam-blocker)
-[![License](https://img.shields.io/packagist/l/Stevie-Ray/referrer-spam-blocker.svg?style=flat)](https://packagist.org/packages/Stevie-Ray/referrer-spam-blocker)
-
+[![Libraries.io dependency status for latest release](https://img.shields.io/librariesio/release/github/stevie-ray/referrer-spam-blocker)](https://libraries.io/github/Stevie-Ray/referrer-spam-blocker)
+[![Code Quality](https://img.shields.io/scrutinizer/g/Stevie-Ray/referrer-spam-blocker)](https://scrutinizer-ci.com/g/Stevie-Ray/referrer-spam-blocker/?branch=master)
+[![Packagist](https://img.shields.io/packagist/dt/Stevie-Ray/referrer-spam-blocker)](https://packagist.org/packages/stevie-ray/referrer-spam-blocker/stats)
+[![License](https://img.shields.io/packagist/l/stevie-ray/referrer-spam-blocker)](https://packagist.org/packages/Stevie-Ray/referrer-spam-blocker)
 - - - -
 
 ## Install
