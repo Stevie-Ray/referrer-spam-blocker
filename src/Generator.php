@@ -3,6 +3,7 @@
 namespace StevieRay;
 
 use Algo26\IdnaConvert\ToIdn;
+use Algo26\IdnaConvert\EncodingHelper\ToUtf8;
 
 class Generator
 {
@@ -44,15 +45,21 @@ class Generator
             throw new \RuntimeException('Error opening file ' . $domainsFile);
         }
         $lines = array();
+        $IDN = new ToIdn();
+        $encodingHelper = new ToUtf8();
+
         while (($line = fgets($handle)) !== false) {
             $line = trim(preg_replace('/\s\s+/', ' ', $line));
 
             // convert internationalized domain names
-            if (preg_match('/[А-Яа-яЁёɢ]/u', $line)) {
+            if (preg_match('/[А-Яа-яЁёöɢ]/u', $line)) {
+
 
                 $IDN = new ToIdn();
 
-                $line = $IDN->encode($line);
+                $line = $encodingHelper->convert($line);
+
+                $line = $IDN->convert($line);
 
             }
 

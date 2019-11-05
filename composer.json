@@ -27,6 +27,10 @@
   "require-dev": {
     "algo26-matthias/idna-convert": "^3.0"
   },
+  "suggest":  {
+    "ext-mbstring": "Install ext/mbstring for using input / output other than UTF-8 or ISO-8859-1",
+    "ext-iconv": "Install ext/iconv for using input / output other than UTF-8 or ISO-8859-1"
+  },
   "autoload-dev": {
     "psr-4": {
       "StevieRay\\": "src"
