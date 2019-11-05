@@ -54,9 +54,6 @@ class Generator
             // convert internationalized domain names
             if (preg_match('/[А-Яа-яЁёöɢ]/u', $line)) {
 
-
-                $IDN = new ToIdn();
-
                 $line = $encodingHelper->convert($line);
 
                 $line = $IDN->convert($line);
