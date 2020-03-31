@@ -9,16 +9,16 @@
     "packages-dev": [
         {
             "name": "algo26-matthias/idna-convert",
-            "version": "v3.0.3",
+            "version": "v3.0.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/algo26-matthias/idna-convert.git",
-                "reference": "367d19e971232c48fb531183fef6c737aee7f550"
+                "reference": "0786979b5ee8a8fee4731bd6d2be34490174bf74"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/algo26-matthias/idna-convert/zipball/367d19e971232c48fb531183fef6c737aee7f550",
-                "reference": "367d19e971232c48fb531183fef6c737aee7f550",
+                "url": "https://api.github.com/repos/algo26-matthias/idna-convert/zipball/0786979b5ee8a8fee4731bd6d2be34490174bf74",
+                "reference": "0786979b5ee8a8fee4731bd6d2be34490174bf74",
                 "shasum": ""
             },
             "require": {
@@ -57,7 +57,7 @@
                 "idna",
                 "php"
             ],
-            "time": "2019-10-09T14:34:20+00:00"
+            "time": "2019-12-05T12:27:39+00:00"
         },
         {
             "name": "jakeasmith/http_build_url",
@@ -101,5 +101,6 @@
     "platform": {
         "php": ">=7.2"
     },
-    "platform-dev": []
+    "platform-dev": [],
+    "plugin-api-version": "1.1.0"
 }

@@ -90,7 +90,7 @@ class Generator
                 trigger_error("Couldn't not set " . $filename . " permissions to 644");
             }
         } else {
-            trigger_error("Permission denied");
+            trigger_error("Permission denied for ${filename}");
         }
     }
 
