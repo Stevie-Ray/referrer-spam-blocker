@@ -1,5 +1,5 @@
 # https://github.com/Stevie-Ray/referrer-spam-blocker
-# Updated 2021-08-23 13:00:22
+# Updated 2022-09-26 12:27:45
 sub block_referral_spam {
 	if (
 		req.http.Referer ~ "(?i)0\-0\.fr" ||

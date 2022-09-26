@@ -53,13 +53,16 @@ sub vcl_recv { call block_referral_spam; }
 The web.config file is located in the root directory of your Windows Server web application.
 
 
-## Caddy (HTTP/2 Web Server with Automatic HTTPS): referral-spam.caddy
+## Caddy (HTTP/2 Web Server with Automatic HTTPS): referral-spam.caddy and referral-spam.caddy2
 
-Move this file next to your Caddy config file given through -conf, and include it by doing:
+Move this file next to your Caddy config file, and include it by doing:
 
+    # For Caddy 1:
      include ./referral-spam.caddy;
+    # For Caddy 2:
+     import ./referral-spam.caddy2
 
- Then start your caddy server. All the referrers will now be redirected to a 444 HTTP answer
+Then start your caddy server. All the referrers will now be redirected to a 444 HTTP answer
 
 
 ## uWSGI: referral_spam.res
