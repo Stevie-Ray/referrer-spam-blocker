@@ -31,6 +31,7 @@ class Generator
         $this->createuWSGI($date, $lines);
         $this->createGoogleExclude($lines);
         $this->createCaddyfile($date, $lines);
+        $this->createCaddyfileV2($date, $lines);
     }
 
     /**
@@ -274,5 +275,39 @@ redir 444 {
 }
 EOT;
       $this->writeToFile('referral-spam.caddy', $data);
+    }
+
+    /**
+     * @param string $date
+     * @param array $lines
+     */
+    public function createCaddyfileV2($date, array $lines)
+    {
+      $redir_rules = [];
+
+      foreach ($lines as $line) {
+        $redir_rules[] = str_replace('.', '\.', $line);
+      }
+
+      $redir_rules = implode('|', $redir_rules);
+
+      $data = <<<EOT
+# $this->projectUrl
+# Updated $date
+#
+# Move this file next to your main Caddyfile, and include it by doing:
+#
+#     import ./referral-spam.caddy2
+#
+# Then start your caddy server. All the referrers will now be redirected to a 444 HTTP answer
+#
+@blocker {
+    header_regexp Referer "^$redir_rules$"
+}
+respond @blocker "Traffic blocked" 444 {
+     close
+}
+EOT;
+      $this->writeToFile('referral-spam.caddy2', $data);
     }
 }
