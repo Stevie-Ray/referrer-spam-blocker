@@ -1,20 +1,22 @@
-name: Bump version
+name: Create Release
 on:
   push:
     branches:
       - master
 jobs:
   build:
-    runs-on: ubuntu-22.04
+    runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
-        with:
-          fetch-depth: '0'
+      - name: Checkout code
+        uses: actions/checkout@master
 
-      - name: Bump version and push tag
-        uses: anothrNick/github-tag-action@v1
+      - name: Create Release
+        id: create_release
+        uses: actions/create-release@latest
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          DEFAULT_BUMP: patch
-          WITH_V: true
-          INITIAL_VERSION: 1.0.281
+        with:
+          tag_name: ${{ github.ref }}
+          release_name: Release ${{ github.ref }}
+          draft: false
+          prerelease: false
