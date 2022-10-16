@@ -1,4 +1,4 @@
-name: Create Release
+name: Create tag and release
 on:
   push:
     branches:
@@ -10,7 +10,13 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@master
 
-      - name: Create Release
+      - name: Bump version and push tag
+        id: create_tag
+        uses: mathieudutour/github-tag-action@v6.0
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Create Github Release
         id: create_release
         uses: actions/create-release@latest
         env:
