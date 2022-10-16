@@ -2,24 +2,33 @@
 
 namespace StevieRay;
 
+use Algo26\IdnaConvert\Exception\AlreadyPunycodeException;
+use Algo26\IdnaConvert\Exception\InvalidCharacterException;
 use Algo26\IdnaConvert\ToIdn;
 use Algo26\IdnaConvert\EncodingHelper\ToUtf8;
+use RuntimeException;
 
 class Generator
 {
     private $projectUrl = "https://github.com/Stevie-Ray/referrer-spam-blocker";
 
-    /** @var string string */
+    /**
+     * @var string string
+     */
     private $outputDir;
 
     /**
      * @param string $outputDir
      */
-    public function __construct($outputDir)
+    public function __construct(string $outputDir)
     {
         $this->outputDir = $outputDir;
     }
 
+    /**
+     * @throws AlreadyPunycodeException
+     * @throws InvalidCharacterException
+     */
     public function generateFiles()
     {
         $date = date('Y-m-d H:i:s');
@@ -36,14 +45,16 @@ class Generator
 
     /**
      * @return array
+     * @throws AlreadyPunycodeException
+     * @throws InvalidCharacterException
      */
-    public function domainWorker()
+    public function domainWorker(): array
     {
         $domainsFile = __DIR__ . "/domains.txt";
 
         $handle = fopen($domainsFile, "r");
         if (!$handle) {
-            throw new \RuntimeException('Error opening file ' . $domainsFile);
+            throw new RuntimeException('Error opening file ' . $domainsFile);
         }
         $lines = array();
         $IDN = new ToIdn();
@@ -67,7 +78,7 @@ class Generator
             $lines[] = $line;
         }
         fclose($handle);
-        $uniqueLines = array_unique($lines, SORT_STRING);
+        $uniqueLines = array_unique($lines);
         sort($uniqueLines, SORT_STRING);
         if (is_writable($domainsFile)) {
             file_put_contents($domainsFile, implode("\n", $uniqueLines));
@@ -82,7 +93,7 @@ class Generator
      * @param string $filename
      * @param string $data
      */
-    protected function writeToFile($filename, $data)
+    protected function writeToFile(string $filename, string $data)
     {
         $file = $this->outputDir . '/' . $filename;
         if (is_writable($file)) {
@@ -91,7 +102,7 @@ class Generator
                 trigger_error("Couldn't not set " . $filename . " permissions to 644");
             }
         } else {
-            trigger_error("Permission denied for ${filename}");
+            trigger_error("Permission denied for $filename");
         }
     }
 
@@ -99,7 +110,7 @@ class Generator
      * @param string $date
      * @param array $lines
      */
-    public function createApache($date, array $lines)
+    public function createApache(string $date, array $lines)
     {
         $data = "# " . $this->projectUrl . "\n# Updated " . $date . "\n\n" .
             "<IfModule mod_rewrite.c>\n\nRewriteEngine On\n\n";
@@ -128,7 +139,7 @@ class Generator
      * @param string $date
      * @param array $lines
      */
-    public function createNginx($date, array $lines)
+    public function createNginx(string $date, array $lines)
     {
         $data = "# " . $this->projectUrl . "\n# Updated " . $date . "\n#\n# /etc/nginx/referral-spam.conf\n#\n" .
             "# With referral-spam.conf in /etc/nginx, include it globally from within /etc/nginx/nginx.conf:\n#\n" .
@@ -148,7 +159,7 @@ class Generator
      * @param string $date
      * @param array $lines
      */
-    public function createVarnish($date, array $lines)
+    public function createVarnish(string $date, array $lines)
     {
         $data = "# " . $this->projectUrl . "\n# Updated " . $date . "\nsub block_referral_spam {\n\tif (\n";
         foreach ($lines as $line) {
@@ -169,7 +180,7 @@ class Generator
      * @param string $date
      * @param array $lines
      */
-    public function createIIS($date, array $lines)
+    public function createIIS(string $date, array $lines)
     {
         $data = "<!-- " . $this->projectUrl . " -->\n<!-- Updated " . $date . " -->\n" .
             "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n" .
@@ -192,7 +203,7 @@ class Generator
      * @param string $date
      * @param array $lines
      */
-    public function createuWSGI($date, array $lines)
+    public function createuWSGI(string $date, array $lines)
     {
         $data = "# " . $this->projectUrl . "\n# Updated " . $date . "\n#\n" .
             "# Put referral-spam.res in /path/to/vassals, then include it from within /path/to/vassals/vassal.ini:\n" .
@@ -250,7 +261,7 @@ class Generator
      * @param string $date
      * @param array $lines
      */
-    public function createCaddyfile($date, array $lines)
+    public function createCaddyfile(string $date, array $lines)
     {
       $redir_rules = "";
 
@@ -281,7 +292,7 @@ EOT;
      * @param string $date
      * @param array $lines
      */
-    public function createCaddyfileV2($date, array $lines)
+    public function createCaddyfileV2(string $date, array $lines)
     {
       $redir_rules = [];
 
