@@ -1,5 +1,5 @@
 # https://github.com/Stevie-Ray/referrer-spam-blocker
-# Updated 2022-10-16 18:00:22
+# Updated 2023-01-19 19:45:13
 sub block_referral_spam {
 	if (
 		req.http.Referer ~ "(?i)0\-0\.fr" ||
@@ -124,7 +124,6 @@ sub block_referral_spam {
 		req.http.Referer ~ "(?i)addblueoff\.com\.ua" ||
 		req.http.Referer ~ "(?i)adelachrist\.top" ||
 		req.http.Referer ~ "(?i)adelly\.bg" ||
-		req.http.Referer ~ "(?i)adf\.ly" ||
 		req.http.Referer ~ "(?i)adpostmalta\.com" ||
 		req.http.Referer ~ "(?i)adrenalinebot\.net" ||
 		req.http.Referer ~ "(?i)adrenalinebot\.ru" ||
@@ -290,6 +289,7 @@ sub block_referral_spam {
 		req.http.Referer ~ "(?i)atleticpharm\.org" ||
 		req.http.Referer ~ "(?i)atley\.eu\.pn" ||
 		req.http.Referer ~ "(?i)atmagroup\.ru" ||
+		req.http.Referer ~ "(?i)atoblog\.online" ||
 		req.http.Referer ~ "(?i)atyks\.ru" ||
 		req.http.Referer ~ "(?i)aucoinhomes\.com" ||
 		req.http.Referer ~ "(?i)audiobangout\.com" ||
@@ -1714,6 +1714,7 @@ sub block_referral_spam {
 		req.http.Referer ~ "(?i)hsoutdoor\.com" ||
 		req.http.Referer ~ "(?i)hspline\.com" ||
 		req.http.Referer ~ "(?i)https\-legalrc\.biz" ||
+		req.http.Referer ~ "(?i)hugblog\.xyz" ||
 		req.http.Referer ~ "(?i)huhn\.altervista\.org" ||
 		req.http.Referer ~ "(?i)hulfingtonpost\.com" ||
 		req.http.Referer ~ "(?i)hully\.altervista\.org" ||
@@ -1914,6 +1915,7 @@ sub block_referral_spam {
 		req.http.Referer ~ "(?i)josephineblog\.top" ||
 		req.http.Referer ~ "(?i)journalhome\.com" ||
 		req.http.Referer ~ "(?i)joyceblog\.top" ||
+		req.http.Referer ~ "(?i)judyandsimon\.com" ||
 		req.http.Referer ~ "(?i)juliadiets\.com" ||
 		req.http.Referer ~ "(?i)juliaworld\.net" ||
 		req.http.Referer ~ "(?i)jumkite\.com" ||
@@ -2402,6 +2404,7 @@ sub block_referral_spam {
 		req.http.Referer ~ "(?i)mosputana\.info" ||
 		req.http.Referer ~ "(?i)mosputana\.top" ||
 		req.http.Referer ~ "(?i)mosrif\.ru" ||
+		req.http.Referer ~ "(?i)mossiemckenzie\.shop" ||
 		req.http.Referer ~ "(?i)mossmesi\.com" ||
 		req.http.Referer ~ "(?i)most\-kerch\.org" ||
 		req.http.Referer ~ "(?i)most\.gov\.iq" ||
@@ -2995,6 +2998,7 @@ sub block_referral_spam {
 		req.http.Referer ~ "(?i)research\.ifmo\.ru" ||
 		req.http.Referer ~ "(?i)resell\-seo\-services\.com" ||
 		req.http.Referer ~ "(?i)resellerclub\.com" ||
+		req.http.Referer ~ "(?i)residualforlife\.com" ||
 		req.http.Referer ~ "(?i)responsive\-test\.net" ||
 		req.http.Referer ~ "(?i)respublica\-otel\.ru" ||
 		req.http.Referer ~ "(?i)resurs\-2012\.ru" ||
@@ -3185,6 +3189,7 @@ sub block_referral_spam {
 		req.http.Referer ~ "(?i)seo\-services\-wordpress\.com" ||
 		req.http.Referer ~ "(?i)seo\-smm\.kz" ||
 		req.http.Referer ~ "(?i)seo\-tips\.top" ||
+		req.http.Referer ~ "(?i)seo\-traffic\.xyz" ||
 		req.http.Referer ~ "(?i)seoanalyses\.com" ||
 		req.http.Referer ~ "(?i)seobook\.top" ||
 		req.http.Referer ~ "(?i)seocheckupx\.com" ||
@@ -3248,6 +3253,7 @@ sub block_referral_spam {
 		req.http.Referer ~ "(?i)shop2hydra\.com" ||
 		req.http.Referer ~ "(?i)shop4fit\.ru" ||
 		req.http.Referer ~ "(?i)shopfishing\.com\.ua" ||
+		req.http.Referer ~ "(?i)shoppinglocation\.com" ||
 		req.http.Referer ~ "(?i)shoppingmiracles\.co\.uk" ||
 		req.http.Referer ~ "(?i)shoprybalka\.ru" ||
 		req.http.Referer ~ "(?i)shops\-ru\.ru" ||
@@ -3588,6 +3594,7 @@ sub block_referral_spam {
 		req.http.Referer ~ "(?i)thedownloadfreeonlinegames\.blogspot\.com" ||
 		req.http.Referer ~ "(?i)thedownloadfromwarez\.blogspot\.com" ||
 		req.http.Referer ~ "(?i)thefds\.net" ||
+		req.http.Referer ~ "(?i)thegreensociety\.net" ||
 		req.http.Referer ~ "(?i)theguardlan\.com" ||
 		req.http.Referer ~ "(?i)theheroes\.ru" ||
 		req.http.Referer ~ "(?i)thejournal\.ru" ||
@@ -3697,6 +3704,7 @@ sub block_referral_spam {
 		req.http.Referer ~ "(?i)tpu\.ru" ||
 		req.http.Referer ~ "(?i)track\-rankings\.online" ||
 		req.http.Referer ~ "(?i)tracker24\-gps\.ru" ||
+		req.http.Referer ~ "(?i)trade365\.org" ||
 		req.http.Referer ~ "(?i)trafaret74\.ru" ||
 		req.http.Referer ~ "(?i)trafers\.com" ||
 		req.http.Referer ~ "(?i)traffic\-cash\.xyz" ||

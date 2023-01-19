@@ -1,5 +1,5 @@
 # https://github.com/Stevie-Ray/referrer-spam-blocker
-# Updated 2022-10-16 18:00:22
+# Updated 2023-01-19 19:45:13
 #
 # Move this file next to your Caddy config file given through -conf, and include it by doing:
 #
@@ -131,7 +131,6 @@ redir 444 {
 	if {>Referer} is addblueoff.com.ua
 	if {>Referer} is adelachrist.top
 	if {>Referer} is adelly.bg
-	if {>Referer} is adf.ly
 	if {>Referer} is adpostmalta.com
 	if {>Referer} is adrenalinebot.net
 	if {>Referer} is adrenalinebot.ru
@@ -297,6 +296,7 @@ redir 444 {
 	if {>Referer} is atleticpharm.org
 	if {>Referer} is atley.eu.pn
 	if {>Referer} is atmagroup.ru
+	if {>Referer} is atoblog.online
 	if {>Referer} is atyks.ru
 	if {>Referer} is aucoinhomes.com
 	if {>Referer} is audiobangout.com
@@ -1721,6 +1721,7 @@ redir 444 {
 	if {>Referer} is hsoutdoor.com
 	if {>Referer} is hspline.com
 	if {>Referer} is https-legalrc.biz
+	if {>Referer} is hugblog.xyz
 	if {>Referer} is huhn.altervista.org
 	if {>Referer} is hulfingtonpost.com
 	if {>Referer} is hully.altervista.org
@@ -1921,6 +1922,7 @@ redir 444 {
 	if {>Referer} is josephineblog.top
 	if {>Referer} is journalhome.com
 	if {>Referer} is joyceblog.top
+	if {>Referer} is judyandsimon.com
 	if {>Referer} is juliadiets.com
 	if {>Referer} is juliaworld.net
 	if {>Referer} is jumkite.com
@@ -2409,6 +2411,7 @@ redir 444 {
 	if {>Referer} is mosputana.info
 	if {>Referer} is mosputana.top
 	if {>Referer} is mosrif.ru
+	if {>Referer} is mossiemckenzie.shop
 	if {>Referer} is mossmesi.com
 	if {>Referer} is most-kerch.org
 	if {>Referer} is most.gov.iq
@@ -3002,6 +3005,7 @@ redir 444 {
 	if {>Referer} is research.ifmo.ru
 	if {>Referer} is resell-seo-services.com
 	if {>Referer} is resellerclub.com
+	if {>Referer} is residualforlife.com
 	if {>Referer} is responsive-test.net
 	if {>Referer} is respublica-otel.ru
 	if {>Referer} is resurs-2012.ru
@@ -3192,6 +3196,7 @@ redir 444 {
 	if {>Referer} is seo-services-wordpress.com
 	if {>Referer} is seo-smm.kz
 	if {>Referer} is seo-tips.top
+	if {>Referer} is seo-traffic.xyz
 	if {>Referer} is seoanalyses.com
 	if {>Referer} is seobook.top
 	if {>Referer} is seocheckupx.com
@@ -3255,6 +3260,7 @@ redir 444 {
 	if {>Referer} is shop2hydra.com
 	if {>Referer} is shop4fit.ru
 	if {>Referer} is shopfishing.com.ua
+	if {>Referer} is shoppinglocation.com
 	if {>Referer} is shoppingmiracles.co.uk
 	if {>Referer} is shoprybalka.ru
 	if {>Referer} is shops-ru.ru
@@ -3595,6 +3601,7 @@ redir 444 {
 	if {>Referer} is thedownloadfreeonlinegames.blogspot.com
 	if {>Referer} is thedownloadfromwarez.blogspot.com
 	if {>Referer} is thefds.net
+	if {>Referer} is thegreensociety.net
 	if {>Referer} is theguardlan.com
 	if {>Referer} is theheroes.ru
 	if {>Referer} is thejournal.ru
@@ -3704,6 +3711,7 @@ redir 444 {
 	if {>Referer} is tpu.ru
 	if {>Referer} is track-rankings.online
 	if {>Referer} is tracker24-gps.ru
+	if {>Referer} is trade365.org
 	if {>Referer} is trafaret74.ru
 	if {>Referer} is trafers.com
 	if {>Referer} is traffic-cash.xyz
