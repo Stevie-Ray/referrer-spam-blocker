@@ -4,30 +4,30 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "928c215300c413803a8755aef682d66c",
+    "content-hash": "2a570359aba15dac332098701659524c",
     "packages": [],
     "packages-dev": [
         {
             "name": "algo26-matthias/idna-convert",
-            "version": "v3.0.5",
+            "version": "v4.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/algo26-matthias/idna-convert.git",
-                "reference": "9cbcfa17ecfed54387ca2ed29acb2773f1870a5e"
+                "reference": "a739f3f3a0c61913954ee8da145a9862a39b183f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/algo26-matthias/idna-convert/zipball/9cbcfa17ecfed54387ca2ed29acb2773f1870a5e",
-                "reference": "9cbcfa17ecfed54387ca2ed29acb2773f1870a5e",
+                "url": "https://api.github.com/repos/algo26-matthias/idna-convert/zipball/a739f3f3a0c61913954ee8da145a9862a39b183f",
+                "reference": "a739f3f3a0c61913954ee8da145a9862a39b183f",
                 "shasum": ""
             },
             "require": {
                 "ext-pcre": "*",
                 "jakeasmith/http_build_url": "^1",
-                "php": ">=7.2.0"
+                "php": ">=8.1"
             },
             "require-dev": {
-                "phpunit/phpunit": "^8.0 || ^9.0"
+                "phpunit/phpunit": "^9 || ^10"
             },
             "suggest": {
                 "ext-iconv": "Install ext/iconv for using input / output other than UTF-8 or ISO-8859-1",
@@ -59,9 +59,9 @@
             ],
             "support": {
                 "issues": "https://github.com/algo26-matthias/idna-convert/issues",
-                "source": "https://github.com/algo26-matthias/idna-convert/tree/v3.0.5"
+                "source": "https://github.com/algo26-matthias/idna-convert/tree/v4.0.0"
             },
-            "time": "2020-10-05T05:49:30+00:00"
+            "time": "2023-02-26T10:28:17+00:00"
         },
         {
             "name": "jakeasmith/http_build_url",
@@ -107,7 +107,7 @@
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {
-        "php": ">=7.2"
+        "php": ">=8.1"
     },
     "platform-dev": [],
     "plugin-api-version": "2.3.0"

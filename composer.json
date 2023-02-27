@@ -22,10 +22,10 @@
     }
   ],
   "require": {
-    "php": ">=7.2"
+    "php": ">=8.1"
   },
   "require-dev": {
-    "algo26-matthias/idna-convert": "^3.0.5"
+    "algo26-matthias/idna-convert": "^4.0.0"
   },
   "suggest":  {
     "ext-mbstring": "Install ext/mbstring for using input / output other than UTF-8 or ISO-8859-1",
