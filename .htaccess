@@ -1,5 +1,5 @@
 # https://github.com/Stevie-Ray/referrer-spam-blocker
-# Updated 2023-09-18 19:35:29
+# Updated 2023-09-18 19:49:00
 
 <IfModule mod_rewrite.c>
 
@@ -128,7 +128,6 @@ RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*adcash\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*addblueoff\.com\.ua.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*adelachrist\.top.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*adelly\.bg.*$ [NC,OR]
-RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*adf\.ly.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*adpostmalta\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*adrenalinebot\.net.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*adrenalinebot\.ru.*$ [NC,OR]
@@ -3605,7 +3604,6 @@ RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*stylecaster\.top.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*styro\.ru.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*su1ufa\.ru.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*success\-seo\.com.*$ [NC,OR]
-RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*suche\.t\-online\.de.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*suckoutlet\.xyz.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*sudachitravel\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*sugarkun\.com.*$ [NC,OR]
@@ -4568,7 +4566,6 @@ SetEnvIfNoCase Referer adcash\.com spambot=yes
 SetEnvIfNoCase Referer addblueoff\.com\.ua spambot=yes
 SetEnvIfNoCase Referer adelachrist\.top spambot=yes
 SetEnvIfNoCase Referer adelly\.bg spambot=yes
-SetEnvIfNoCase Referer adf\.ly spambot=yes
 SetEnvIfNoCase Referer adpostmalta\.com spambot=yes
 SetEnvIfNoCase Referer adrenalinebot\.net spambot=yes
 SetEnvIfNoCase Referer adrenalinebot\.ru spambot=yes
@@ -8045,7 +8042,6 @@ SetEnvIfNoCase Referer stylecaster\.top spambot=yes
 SetEnvIfNoCase Referer styro\.ru spambot=yes
 SetEnvIfNoCase Referer su1ufa\.ru spambot=yes
 SetEnvIfNoCase Referer success\-seo\.com spambot=yes
-SetEnvIfNoCase Referer suche\.t\-online\.de spambot=yes
 SetEnvIfNoCase Referer suckoutlet\.xyz spambot=yes
 SetEnvIfNoCase Referer sudachitravel\.com spambot=yes
 SetEnvIfNoCase Referer sugarkun\.com spambot=yes

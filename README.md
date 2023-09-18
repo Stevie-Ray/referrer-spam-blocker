@@ -73,6 +73,15 @@ Include the file `referral_spam.res` into your vassal .ini configuration file:
 ini = referral_spam.res:blacklist_spam
 ```
 
+## HAProxy: referral-spam.haproxy
+
+Use it in your HAProxy config by adding all domains.txt items, in any frontend, listen or backend block:
+
+```
+acl spam_referer hdr_sub(referer) -i -f /etc/haproxy/referral-spam.haproxy
+http-request deny if spam_referer
+```
+
 ## Options for Google Analytics 'ghost' spam
 
 The above methods don't stop the Google Analytics **ghost** referral spam (because they are hitting Analytics directly and don't touching your website). You should use filters in Analytics to prevent **ghost** referral spam and hide spam form the **past**. 

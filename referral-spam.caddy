@@ -1,5 +1,5 @@
 # https://github.com/Stevie-Ray/referrer-spam-blocker
-# Updated 2023-09-18 19:35:29
+# Updated 2023-09-18 19:49:00
 #
 # Move this file next to your Caddy config file given through -conf, and include it by doing:
 #
@@ -132,7 +132,6 @@ redir 444 {
 	if {>Referer} is addblueoff.com.ua
 	if {>Referer} is adelachrist.top
 	if {>Referer} is adelly.bg
-	if {>Referer} is adf.ly
 	if {>Referer} is adpostmalta.com
 	if {>Referer} is adrenalinebot.net
 	if {>Referer} is adrenalinebot.ru
@@ -3609,7 +3608,6 @@ redir 444 {
 	if {>Referer} is styro.ru
 	if {>Referer} is su1ufa.ru
 	if {>Referer} is success-seo.com
-	if {>Referer} is suche.t-online.de
 	if {>Referer} is suckoutlet.xyz
 	if {>Referer} is sudachitravel.com
 	if {>Referer} is sugarkun.com

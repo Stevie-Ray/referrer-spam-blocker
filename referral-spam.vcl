@@ -1,5 +1,5 @@
 # https://github.com/Stevie-Ray/referrer-spam-blocker
-# Updated 2023-09-18 19:35:29
+# Updated 2023-09-18 19:49:00
 sub block_referral_spam {
 	if (
 		req.http.Referer ~ "(?i)0\-0\.fr" ||
@@ -125,7 +125,6 @@ sub block_referral_spam {
 		req.http.Referer ~ "(?i)addblueoff\.com\.ua" ||
 		req.http.Referer ~ "(?i)adelachrist\.top" ||
 		req.http.Referer ~ "(?i)adelly\.bg" ||
-		req.http.Referer ~ "(?i)adf\.ly" ||
 		req.http.Referer ~ "(?i)adpostmalta\.com" ||
 		req.http.Referer ~ "(?i)adrenalinebot\.net" ||
 		req.http.Referer ~ "(?i)adrenalinebot\.ru" ||
@@ -3602,7 +3601,6 @@ sub block_referral_spam {
 		req.http.Referer ~ "(?i)styro\.ru" ||
 		req.http.Referer ~ "(?i)su1ufa\.ru" ||
 		req.http.Referer ~ "(?i)success\-seo\.com" ||
-		req.http.Referer ~ "(?i)suche\.t\-online\.de" ||
 		req.http.Referer ~ "(?i)suckoutlet\.xyz" ||
 		req.http.Referer ~ "(?i)sudachitravel\.com" ||
 		req.http.Referer ~ "(?i)sugarkun\.com" ||
