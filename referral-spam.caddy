@@ -1,5 +1,5 @@
 # https://github.com/Stevie-Ray/referrer-spam-blocker
-# Updated 2023-02-27 10:29:01
+# Updated 2023-09-18 19:35:29
 #
 # Move this file next to your Caddy config file given through -conf, and include it by doing:
 #
@@ -163,6 +163,7 @@ redir 444 {
 	if {>Referer} is ai-seo-services.com
 	if {>Referer} is aibolita.com
 	if {>Referer} is aidarmebel.kz
+	if {>Referer} is aimeesblog.xyz
 	if {>Referer} is aimiot.net
 	if {>Referer} is aitiman.ae
 	if {>Referer} is akama.com
@@ -516,6 +517,7 @@ redir 444 {
 	if {>Referer} is blackle.com
 	if {>Referer} is blackplanet.com
 	if {>Referer} is blackwitchcraft.ru
+	if {>Referer} is blancablog.online
 	if {>Referer} is blavia.00author.com
 	if {>Referer} is bleacherreport.com
 	if {>Referer} is blockchaintop.nl
@@ -558,6 +560,7 @@ redir 444 {
 	if {>Referer} is boltushkiclub.ru
 	if {>Referer} is bombla.org
 	if {>Referer} is bonkers.name
+	if {>Referer} is bonniesblog.online
 	if {>Referer} is bonus-betting.ru
 	if {>Referer} is bonus-spasibo-sberbank.ru
 	if {>Referer} is bonus-vtb.ru
@@ -610,6 +613,7 @@ redir 444 {
 	if {>Referer} is bristolhostel.com
 	if {>Referer} is bristolhotel.com
 	if {>Referer} is bristolhotel.com.ua
+	if {>Referer} is britneyblog.online
 	if {>Referer} is brk-rti.ru
 	if {>Referer} is brokergid.ru
 	if {>Referer} is brooklyn-ads.com
@@ -753,6 +757,7 @@ redir 444 {
 	if {>Referer} is chip35.ru
 	if {>Referer} is chipmp3.ru
 	if {>Referer} is chizhik-2.ru
+	if {>Referer} is chomexun.com
 	if {>Referer} is choosecuisine.com
 	if {>Referer} is ci.ua
 	if {>Referer} is cigarpass.com
@@ -1147,6 +1152,7 @@ redir 444 {
 	if {>Referer} is ekspertmed.com
 	if {>Referer} is ekto.ee
 	if {>Referer} is el-nation.com
+	if {>Referer} is elainasblog.xyz
 	if {>Referer} is eldoradorent.az
 	if {>Referer} is election.interferencer.ru
 	if {>Referer} is electric-blue-industries.com
@@ -1192,6 +1198,7 @@ redir 444 {
 	if {>Referer} is embedle.com
 	if {>Referer} is emctestlab.ru
 	if {>Referer} is emerson-rus.ru
+	if {>Referer} is emicef.com
 	if {>Referer} is empire-market.org
 	if {>Referer} is empire-market.xyz
 	if {>Referer} is empiremarket-link.org
@@ -1217,6 +1224,7 @@ redir 444 {
 	if {>Referer} is eredijovon.com
 	if {>Referer} is ereko.ru
 	if {>Referer} is eric-artem.com
+	if {>Referer} is ericshome.store
 	if {>Referer} is erinhome.xyz
 	if {>Referer} is ero-video-chat.org
 	if {>Referer} is erofus.online
@@ -1345,6 +1353,7 @@ redir 444 {
 	if {>Referer} is fialka.tomsk.ru
 	if {>Referer} is fidalsa.de
 	if {>Referer} is fierrohack.ru
+	if {>Referer} is figensahin.com
 	if {>Referer} is filesclub.net
 	if {>Referer} is filesdatabase.net
 	if {>Referer} is filesvine.com
@@ -1943,6 +1952,7 @@ redir 444 {
 	if {>Referer} is izi24.ru
 	if {>Referer} is j-times.ru
 	if {>Referer} is jabug.xyz
+	if {>Referer} is jacblog.xyz
 	if {>Referer} is janemill.xyz
 	if {>Referer} is janettabridal.com
 	if {>Referer} is japfm.com
@@ -2038,6 +2048,7 @@ redir 444 {
 	if {>Referer} is kazlenta.kz
 	if {>Referer} is kazrent.com
 	if {>Referer} is kellyonline.xyz
+	if {>Referer} is kendrablog.online
 	if {>Referer} is kenyagoods.xyz
 	if {>Referer} is kerch.site
 	if {>Referer} is ketrzyn.pl
@@ -2275,6 +2286,7 @@ redir 444 {
 	if {>Referer} is m.ok.ru
 	if {>Referer} is m1media.net
 	if {>Referer} is macresource.co.uk
+	if {>Referer} is madisonclothingny.com
 	if {>Referer} is madjonline.xyz
 	if {>Referer} is madot.onlinewebshop.net
 	if {>Referer} is mafcards.ru
@@ -2309,6 +2321,7 @@ redir 444 {
 	if {>Referer} is marcogrup.com
 	if {>Referer} is maridan.com.au
 	if {>Referer} is maridan.com.ua
+	if {>Referer} is marihome.online
 	if {>Referer} is marinetraffic.com
 	if {>Referer} is marjorieblog.online
 	if {>Referer} is marketland.ml
@@ -2596,6 +2609,7 @@ redir 444 {
 	if {>Referer} is newstraveller.ru
 	if {>Referer} is newstudio.tv
 	if {>Referer} is nextconseil.com
+	if {>Referer} is nfocusdriver.com
 	if {>Referer} is ngps1.ru
 	if {>Referer} is nhmrcsale.xyz
 	if {>Referer} is nhsports.cl
@@ -3378,6 +3392,7 @@ redir 444 {
 	if {>Referer} is sims-sims.ru
 	if {>Referer} is sinel.info
 	if {>Referer} is sinestesia.host.sk
+	if {>Referer} is singularwebs.net
 	if {>Referer} is sinhronperevod.ru
 	if {>Referer} is siongetadsincome.info
 	if {>Referer} is sirhoutlet.xyz
@@ -3807,6 +3822,7 @@ redir 444 {
 	if {>Referer} is torture.ml
 	if {>Referer} is totppgoods.xyz
 	if {>Referer} is touchmods.fr
+	if {>Referer} is tourburlington.com
 	if {>Referer} is tovaroboom.vast.ru
 	if {>Referer} is tpu.ru
 	if {>Referer} is track-rankings.online
@@ -3926,6 +3942,7 @@ redir 444 {
 	if {>Referer} is urccvfmc.bloger.index.hr
 	if {>Referer} is urlopener.blogspot.com.au
 	if {>Referer} is urlopener.com
+	if {>Referer} is urlumbrella.com
 	if {>Referer} is uruto.ru
 	if {>Referer} is us-america.ru
 	if {>Referer} is usadacha.net

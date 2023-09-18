@@ -9,16 +9,16 @@
     "packages-dev": [
         {
             "name": "algo26-matthias/idna-convert",
-            "version": "v4.0.0",
+            "version": "v4.0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/algo26-matthias/idna-convert.git",
-                "reference": "a739f3f3a0c61913954ee8da145a9862a39b183f"
+                "reference": "047d7ff45b13be72f73b39be2b54ba0fe20b06bd"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/algo26-matthias/idna-convert/zipball/a739f3f3a0c61913954ee8da145a9862a39b183f",
-                "reference": "a739f3f3a0c61913954ee8da145a9862a39b183f",
+                "url": "https://api.github.com/repos/algo26-matthias/idna-convert/zipball/047d7ff45b13be72f73b39be2b54ba0fe20b06bd",
+                "reference": "047d7ff45b13be72f73b39be2b54ba0fe20b06bd",
                 "shasum": ""
             },
             "require": {
@@ -59,9 +59,9 @@
             ],
             "support": {
                 "issues": "https://github.com/algo26-matthias/idna-convert/issues",
-                "source": "https://github.com/algo26-matthias/idna-convert/tree/v4.0.0"
+                "source": "https://github.com/algo26-matthias/idna-convert/tree/v4.0.1"
             },
-            "time": "2023-02-26T10:28:17+00:00"
+            "time": "2023-09-15T18:26:56+00:00"
         },
         {
             "name": "jakeasmith/http_build_url",
