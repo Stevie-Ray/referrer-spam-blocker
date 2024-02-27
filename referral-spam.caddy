@@ -1,5 +1,5 @@
 # https://github.com/Stevie-Ray/referrer-spam-blocker
-# Updated 2023-09-18 19:49:00
+# Updated 2024-02-27 08:30:08
 #
 # Move this file next to your Caddy config file given through -conf, and include it by doing:
 #
@@ -110,6 +110,7 @@ redir 444 {
 	if {>Referer} is a-hau.mk
 	if {>Referer} is a14download.com
 	if {>Referer} is abacoasale.xyz
+	if {>Referer} is abaiak.com
 	if {>Referer} is abbanreddy.com
 	if {>Referer} is abc.xyz
 	if {>Referer} is abcdefh.xyz
@@ -153,6 +154,7 @@ redir 444 {
 	if {>Referer} is affiliate-programs.biz
 	if {>Referer} is affordablewebsitesandmobileapps.com
 	if {>Referer} is afora.ru
+	if {>Referer} is afshan.shop
 	if {>Referer} is agreda.pluto.ro
 	if {>Referer} is agro-gid.com
 	if {>Referer} is agtl.com.ua
@@ -443,6 +445,7 @@ redir 444 {
 	if {>Referer} is bestchoice.cf
 	if {>Referer} is bestempresas.es
 	if {>Referer} is bestfortraders.com
+	if {>Referer} is besthatcheries.com
 	if {>Referer} is bestleofferhdd.info
 	if {>Referer} is bestmobilityscooterstoday.com
 	if {>Referer} is bestofferfyhdd.info
@@ -1676,6 +1679,7 @@ redir 444 {
 	if {>Referer} is hard-porn.mobi
 	if {>Referer} is hardcore.anzwers.net
 	if {>Referer} is hardosale.xyz
+	if {>Referer} is harpro.net
 	if {>Referer} is havepussy.com
 	if {>Referer} is hawaiisurf.com
 	if {>Referer} is hazardky.net
@@ -1703,8 +1707,10 @@ redir 444 {
 	if {>Referer} is hill-accent-withdraw-sentiment.info
 	if {>Referer} is himandmall.xyz
 	if {>Referer} is hit-kino.ru
+	if {>Referer} is hitree.shop
 	if {>Referer} is hitsbox.info
 	if {>Referer} is hiwibyh.bugs3.com
+	if {>Referer} is hiwpro.xyz
 	if {>Referer} is hkdiiohi.skyrock.com
 	if {>Referer} is hkjrsale.xyz
 	if {>Referer} is hmmm.cz
@@ -2227,6 +2233,7 @@ redir 444 {
 	if {>Referer} is lifespeaker.ru
 	if {>Referer} is ligastavok-in.ru
 	if {>Referer} is light.ifmo.ru
+	if {>Referer} is lighthearteds.shop
 	if {>Referer} is likesdesign.com
 	if {>Referer} is lilishopstogether.com
 	if {>Referer} is lindsayblog.online
@@ -2493,6 +2500,7 @@ redir 444 {
 	if {>Referer} is most-kerch.org
 	if {>Referer} is most.gov.iq
 	if {>Referer} is mostantikor.ru
+	if {>Referer} is mostbet-285.com
 	if {>Referer} is mostbet-original.ru
 	if {>Referer} is mostcool.top
 	if {>Referer} is mostorgnerud.ru
@@ -3437,6 +3445,7 @@ redir 444 {
 	if {>Referer} is sms2x2.ru
 	if {>Referer} is smstraf.ru
 	if {>Referer} is smt4.ru
+	if {>Referer} is smzt.shop
 	if {>Referer} is snabs.kz
 	if {>Referer} is snaiper-bg.net
 	if {>Referer} is sneakerfreaker.com
@@ -3560,6 +3569,7 @@ redir 444 {
 	if {>Referer} is stardevine.com
 	if {>Referer} is stariy-baku.com
 	if {>Referer} is start.myplaycity.com
+	if {>Referer} is startraffic.online
 	if {>Referer} is startufa.ru
 	if {>Referer} is startwp.org
 	if {>Referer} is stat.lviv.ua
@@ -3652,6 +3662,7 @@ redir 444 {
 	if {>Referer} is t-rec.su
 	if {>Referer} is t3chtonic.com
 	if {>Referer} is taartstore.xyz
+	if {>Referer} is tagmeanvice.live
 	if {>Referer} is taihouse.ru
 	if {>Referer} is tam-gde-more.ru
 	if {>Referer} is tamada69.com
@@ -3919,6 +3930,7 @@ redir 444 {
 	if {>Referer} is uni.me
 	if {>Referer} is unibus.su
 	if {>Referer} is unimodemhalfduplefw.pen.io
+	if {>Referer} is uniqgen.net
 	if {>Referer} is unitygame3d.com
 	if {>Referer} is univerfiles.com
 	if {>Referer} is unlimitdocs.net
@@ -4218,6 +4230,7 @@ redir 444 {
 	if {>Referer} is wowas31.ucoz.ru
 	if {>Referer} is woweb.com.ua
 	if {>Referer} is wpnull.org
+	if {>Referer} is wptraffic.xyz
 	if {>Referer} is wrazilwispolecznie.pl
 	if {>Referer} is wrc-info.ru
 	if {>Referer} is writingservices17.blogspot.ru
