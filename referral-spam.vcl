@@ -1,5 +1,5 @@
 # https://github.com/Stevie-Ray/referrer-spam-blocker
-# Updated 2024-02-27 08:30:08
+# Updated 2024-04-19 23:32:56
 sub block_referral_spam {
 	if (
 		req.http.Referer ~ "(?i)0\-0\.fr" ||
@@ -126,6 +126,7 @@ sub block_referral_spam {
 		req.http.Referer ~ "(?i)addblueoff\.com\.ua" ||
 		req.http.Referer ~ "(?i)adelachrist\.top" ||
 		req.http.Referer ~ "(?i)adelly\.bg" ||
+		req.http.Referer ~ "(?i)adf\.ly" ||
 		req.http.Referer ~ "(?i)adpostmalta\.com" ||
 		req.http.Referer ~ "(?i)adrenalinebot\.net" ||
 		req.http.Referer ~ "(?i)adrenalinebot\.ru" ||
@@ -185,6 +186,7 @@ sub block_referral_spam {
 		req.http.Referer ~ "(?i)alif\-ba\-ta\.com" ||
 		req.http.Referer ~ "(?i)alinabaniecka\.pl" ||
 		req.http.Referer ~ "(?i)alive\-ua\.com" ||
+		req.http.Referer ~ "(?i)aliviahome\.online" ||
 		req.http.Referer ~ "(?i)alkanfarma\.org" ||
 		req.http.Referer ~ "(?i)all\-news\.kz" ||
 		req.http.Referer ~ "(?i)all4bath\.ru" ||
@@ -948,6 +950,7 @@ sub block_referral_spam {
 		req.http.Referer ~ "(?i)darodar\.com" ||
 		req.http.Referer ~ "(?i)datsun\-do\.com" ||
 		req.http.Referer ~ "(?i)dav\.kz" ||
+		req.http.Referer ~ "(?i)davilaonline\.shop" ||
 		req.http.Referer ~ "(?i)dawlenie\.com" ||
 		req.http.Referer ~ "(?i)dbmkfhqk\.bloger\.index\.hr" ||
 		req.http.Referer ~ "(?i)dbutton\.net" ||
@@ -1951,6 +1954,7 @@ sub block_referral_spam {
 		req.http.Referer ~ "(?i)j\-times\.ru" ||
 		req.http.Referer ~ "(?i)jabug\.xyz" ||
 		req.http.Referer ~ "(?i)jacblog\.xyz" ||
+		req.http.Referer ~ "(?i)jackonline\.store" ||
 		req.http.Referer ~ "(?i)janemill\.xyz" ||
 		req.http.Referer ~ "(?i)janettabridal\.com" ||
 		req.http.Referer ~ "(?i)japfm\.com" ||
@@ -3409,6 +3413,7 @@ sub block_referral_spam {
 		req.http.Referer ~ "(?i)sitevaluation\.com" ||
 		req.http.Referer ~ "(?i)sitevaluation\.org" ||
 		req.http.Referer ~ "(?i)sivs\.ru" ||
+		req.http.Referer ~ "(?i)sjmsw\.net" ||
 		req.http.Referer ~ "(?i)sk\.golden\-praga\.ru" ||
 		req.http.Referer ~ "(?i)ski\-centers\.com" ||
 		req.http.Referer ~ "(?i)skidku\.org\.ua" ||

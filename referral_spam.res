@@ -1,5 +1,5 @@
 # https://github.com/Stevie-Ray/referrer-spam-blocker
-# Updated 2024-02-27 08:30:08
+# Updated 2024-04-19 23:32:56
 #
 # Put referral-spam.res in /path/to/vassals, then include it from within /path/to/vassals/vassal.ini:
 #
@@ -130,6 +130,7 @@ route-referer = (?i)adcash\.com break:403 Forbidden
 route-referer = (?i)addblueoff\.com\.ua break:403 Forbidden
 route-referer = (?i)adelachrist\.top break:403 Forbidden
 route-referer = (?i)adelly\.bg break:403 Forbidden
+route-referer = (?i)adf\.ly break:403 Forbidden
 route-referer = (?i)adpostmalta\.com break:403 Forbidden
 route-referer = (?i)adrenalinebot\.net break:403 Forbidden
 route-referer = (?i)adrenalinebot\.ru break:403 Forbidden
@@ -189,6 +190,7 @@ route-referer = (?i)aliexsale\.ru break:403 Forbidden
 route-referer = (?i)alif\-ba\-ta\.com break:403 Forbidden
 route-referer = (?i)alinabaniecka\.pl break:403 Forbidden
 route-referer = (?i)alive\-ua\.com break:403 Forbidden
+route-referer = (?i)aliviahome\.online break:403 Forbidden
 route-referer = (?i)alkanfarma\.org break:403 Forbidden
 route-referer = (?i)all\-news\.kz break:403 Forbidden
 route-referer = (?i)all4bath\.ru break:403 Forbidden
@@ -952,6 +954,7 @@ route-referer = (?i)darleneblog\.online break:403 Forbidden
 route-referer = (?i)darodar\.com break:403 Forbidden
 route-referer = (?i)datsun\-do\.com break:403 Forbidden
 route-referer = (?i)dav\.kz break:403 Forbidden
+route-referer = (?i)davilaonline\.shop break:403 Forbidden
 route-referer = (?i)dawlenie\.com break:403 Forbidden
 route-referer = (?i)dbmkfhqk\.bloger\.index\.hr break:403 Forbidden
 route-referer = (?i)dbutton\.net break:403 Forbidden
@@ -1955,6 +1958,7 @@ route-referer = (?i)izi24\.ru break:403 Forbidden
 route-referer = (?i)j\-times\.ru break:403 Forbidden
 route-referer = (?i)jabug\.xyz break:403 Forbidden
 route-referer = (?i)jacblog\.xyz break:403 Forbidden
+route-referer = (?i)jackonline\.store break:403 Forbidden
 route-referer = (?i)janemill\.xyz break:403 Forbidden
 route-referer = (?i)janettabridal\.com break:403 Forbidden
 route-referer = (?i)japfm\.com break:403 Forbidden
@@ -3413,6 +3417,7 @@ route-referer = (?i)sitesadd\.com break:403 Forbidden
 route-referer = (?i)sitevaluation\.com break:403 Forbidden
 route-referer = (?i)sitevaluation\.org break:403 Forbidden
 route-referer = (?i)sivs\.ru break:403 Forbidden
+route-referer = (?i)sjmsw\.net break:403 Forbidden
 route-referer = (?i)sk\.golden\-praga\.ru break:403 Forbidden
 route-referer = (?i)ski\-centers\.com break:403 Forbidden
 route-referer = (?i)skidku\.org\.ua break:403 Forbidden

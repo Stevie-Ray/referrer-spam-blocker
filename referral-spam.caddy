@@ -1,5 +1,5 @@
 # https://github.com/Stevie-Ray/referrer-spam-blocker
-# Updated 2024-02-27 08:30:08
+# Updated 2024-04-19 23:32:56
 #
 # Move this file next to your Caddy config file given through -conf, and include it by doing:
 #
@@ -133,6 +133,7 @@ redir 444 {
 	if {>Referer} is addblueoff.com.ua
 	if {>Referer} is adelachrist.top
 	if {>Referer} is adelly.bg
+	if {>Referer} is adf.ly
 	if {>Referer} is adpostmalta.com
 	if {>Referer} is adrenalinebot.net
 	if {>Referer} is adrenalinebot.ru
@@ -192,6 +193,7 @@ redir 444 {
 	if {>Referer} is alif-ba-ta.com
 	if {>Referer} is alinabaniecka.pl
 	if {>Referer} is alive-ua.com
+	if {>Referer} is aliviahome.online
 	if {>Referer} is alkanfarma.org
 	if {>Referer} is all-news.kz
 	if {>Referer} is all4bath.ru
@@ -955,6 +957,7 @@ redir 444 {
 	if {>Referer} is darodar.com
 	if {>Referer} is datsun-do.com
 	if {>Referer} is dav.kz
+	if {>Referer} is davilaonline.shop
 	if {>Referer} is dawlenie.com
 	if {>Referer} is dbmkfhqk.bloger.index.hr
 	if {>Referer} is dbutton.net
@@ -1958,6 +1961,7 @@ redir 444 {
 	if {>Referer} is j-times.ru
 	if {>Referer} is jabug.xyz
 	if {>Referer} is jacblog.xyz
+	if {>Referer} is jackonline.store
 	if {>Referer} is janemill.xyz
 	if {>Referer} is janettabridal.com
 	if {>Referer} is japfm.com
@@ -3416,6 +3420,7 @@ redir 444 {
 	if {>Referer} is sitevaluation.com
 	if {>Referer} is sitevaluation.org
 	if {>Referer} is sivs.ru
+	if {>Referer} is sjmsw.net
 	if {>Referer} is sk.golden-praga.ru
 	if {>Referer} is ski-centers.com
 	if {>Referer} is skidku.org.ua
