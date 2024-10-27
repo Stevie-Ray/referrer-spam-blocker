@@ -1,5 +1,5 @@
 # https://github.com/Stevie-Ray/referrer-spam-blocker
-# Updated 2024-04-19 23:32:56
+# Updated 2024-10-27 12:28:08
 #
 # Move this file next to your Caddy config file given through -conf, and include it by doing:
 #
@@ -19,6 +19,7 @@ redir 444 {
 	if {>Referer} is 03e.info
 	if {>Referer} is 03p.info
 	if {>Referer} is 0n-line.tv
+	if {>Referer} is 1-88.vip
 	if {>Referer} is 1-99seo.com
 	if {>Referer} is 1-best-seo.com
 	if {>Referer} is 1-free-share-buttons.com
@@ -31,6 +32,7 @@ redir 444 {
 	if {>Referer} is 12masterov.com
 	if {>Referer} is 12u.info
 	if {>Referer} is 15-reasons-for-seo.com
+	if {>Referer} is 16lv.com
 	if {>Referer} is 1hwy.com
 	if {>Referer} is 1kinobig.ru
 	if {>Referer} is 1kreditzaim.ru
@@ -102,6 +104,7 @@ redir 444 {
 	if {>Referer} is 7ooo.ru
 	if {>Referer} is 7zap.com
 	if {>Referer} is 8-best-seo.com
+	if {>Referer} is 84lv.com
 	if {>Referer} is 8xv8.com
 	if {>Referer} is 9-best-seo.com
 	if {>Referer} is 99-reasons-for-seo.com
@@ -543,6 +546,7 @@ redir 444 {
 	if {>Referer} is blogking.top
 	if {>Referer} is bloglag.com
 	if {>Referer} is blognet.top
+	if {>Referer} is blogorganictraffic.shop
 	if {>Referer} is blogos.kz
 	if {>Referer} is blogping.xyz
 	if {>Referer} is blogs.rediff.com
@@ -550,6 +554,7 @@ redir 444 {
 	if {>Referer} is blogstar.fun
 	if {>Referer} is blogster.com
 	if {>Referer} is blogtotal.de
+	if {>Referer} is blogtraffic.shop
 	if {>Referer} is blogua.org
 	if {>Referer} is blue-square.biz
 	if {>Referer} is bluerobot.info
@@ -1228,6 +1233,7 @@ redir 444 {
 	if {>Referer} is erank.eu
 	if {>Referer} is eredijovon.com
 	if {>Referer} is ereko.ru
+	if {>Referer} is erias.xyz
 	if {>Referer} is eric-artem.com
 	if {>Referer} is ericshome.store
 	if {>Referer} is erinhome.xyz
@@ -1349,6 +1355,7 @@ redir 444 {
 	if {>Referer} is feedouble.net
 	if {>Referer} is feel-planet.com
 	if {>Referer} is feeriaclub.ru
+	if {>Referer} is feiacmr.shop
 	if {>Referer} is feminist.org.ua
 	if {>Referer} is femmesdenudees.com
 	if {>Referer} is fenoyl.batcave.net
@@ -1633,6 +1640,7 @@ redir 444 {
 	if {>Referer} is gourcy.altervista.org
 	if {>Referer} is goyua.xyz
 	if {>Referer} is gq-catalog.gq
+	if {>Referer} is graceonline.shop
 	if {>Referer} is grafaman.ru
 	if {>Referer} is grand-chlen.ru
 	if {>Referer} is graphid.com
@@ -2256,6 +2264,7 @@ redir 444 {
 	if {>Referer} is livejournal.top
 	if {>Referer} is livia-pache.ru
 	if {>Referer} is livingroomdecoratingideas.website
+	if {>Referer} is livingsimply.com
 	if {>Referer} is lk-gosuslugi.ru
 	if {>Referer} is lk-lk-rt.ru
 	if {>Referer} is llastbuy.ru
@@ -2615,6 +2624,7 @@ redir 444 {
 	if {>Referer} is nevapotolok.ru
 	if {>Referer} is new-apps.ru
 	if {>Referer} is newagebev.com
+	if {>Referer} is newbieseoblog.online
 	if {>Referer} is newsrosprom.ru
 	if {>Referer} is newstaffadsshop.club
 	if {>Referer} is newstraveller.ru
@@ -3747,6 +3757,7 @@ redir 444 {
 	if {>Referer} is timer4web.com
 	if {>Referer} is timetorelax.biz
 	if {>Referer} is timmy.by
+	if {>Referer} is tip8.co
 	if {>Referer} is tizanidine4mg.blogspot.com
 	if {>Referer} is tizanidine4mgprice.blogspot.com
 	if {>Referer} is tizanidine4mgstreetprice.blogspot.com
@@ -3810,6 +3821,7 @@ redir 444 {
 	if {>Referer} is toloka.hurtom.com
 	if {>Referer} is tomatis.gospartner.com
 	if {>Referer} is tomck.com
+	if {>Referer} is tommysautomotivecare.com
 	if {>Referer} is top-gan.ru
 	if {>Referer} is top-instagram.info
 	if {>Referer} is top-kasyna.com
@@ -3818,6 +3830,8 @@ redir 444 {
 	if {>Referer} is top10-online-games.com
 	if {>Referer} is top10-way.com
 	if {>Referer} is top250movies.ru
+	if {>Referer} is top8.co
+	if {>Referer} is topgurudeals.com
 	if {>Referer} is topmebeltorg.ru
 	if {>Referer} is topmira.com
 	if {>Referer} is toposvita.com
@@ -3953,6 +3967,8 @@ redir 444 {
 	if {>Referer} is uptimebot.net
 	if {>Referer} is uptimechecker.com
 	if {>Referer} is ural-buldozer.ru
+	if {>Referer} is urbanblog.shop
+	if {>Referer} is urbanchr.online
 	if {>Referer} is urblog.xyz
 	if {>Referer} is urccvfmc.bloger.index.hr
 	if {>Referer} is urlopener.blogspot.com.au
@@ -4346,6 +4362,9 @@ redir 444 {
 	if {>Referer} is xsion.net
 	if {>Referer} is xtraffic.plus
 	if {>Referer} is xtrafficplus.com
+	if {>Referer} is xtrafficplus.online
+	if {>Referer} is xtrafficplus.shop
+	if {>Referer} is xtrafficplus.xyz
 	if {>Referer} is xtubeporno.net
 	if {>Referer} is xvideosbay.com
 	if {>Referer} is xxart.ru
