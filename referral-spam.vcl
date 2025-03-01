@@ -1,5 +1,5 @@
 # https://github.com/Stevie-Ray/referrer-spam-blocker
-# Updated 2024-10-27 12:28:08
+# Updated 2025-03-01 08:44:20
 sub block_referral_spam {
 	if (
 		req.http.Referer ~ "(?i)0\-0\.fr" ||
@@ -273,6 +273,7 @@ sub block_referral_spam {
 		req.http.Referer ~ "(?i)aramaicmedia\.org" ||
 		req.http.Referer ~ "(?i)arate\.ru" ||
 		req.http.Referer ~ "(?i)arcadepages\.com" ||
+		req.http.Referer ~ "(?i)arcarticle\.online" ||
 		req.http.Referer ~ "(?i)architecturebest\.com" ||
 		req.http.Referer ~ "(?i)arendadogovor\.ru" ||
 		req.http.Referer ~ "(?i)arendakvartir\.kz" ||
@@ -1669,6 +1670,7 @@ sub block_referral_spam {
 		req.http.Referer ~ "(?i)gxcb\.net" ||
 		req.http.Referer ~ "(?i)h2monline\.com" ||
 		req.http.Referer ~ "(?i)hacktougroup\.ru" ||
+		req.http.Referer ~ "(?i)hagirkblog\.space" ||
 		req.http.Referer ~ "(?i)hahashka\.ru" ||
 		req.http.Referer ~ "(?i)haikuware\.com" ||
 		req.http.Referer ~ "(?i)halat\.xyz" ||
@@ -1847,6 +1849,7 @@ sub block_referral_spam {
 		req.http.Referer ~ "(?i)hyip\-zanoza\.me" ||
 		req.http.Referer ~ "(?i)hyipmanager\.in" ||
 		req.http.Referer ~ "(?i)i\-spare\.ru" ||
+		req.http.Referer ~ "(?i)ialgramer\.shop" ||
 		req.http.Referer ~ "(?i)iamsport\.org" ||
 		req.http.Referer ~ "(?i)ib\-homecredit\.ru" ||
 		req.http.Referer ~ "(?i)ib\-rencredit\.ru" ||
@@ -2037,6 +2040,7 @@ sub block_referral_spam {
 		req.http.Referer ~ "(?i)kabinet\-tricolor\.ru" ||
 		req.http.Referer ~ "(?i)kabinet\-ttk\.ru" ||
 		req.http.Referer ~ "(?i)kabinet\-vtb24\.ru" ||
+		req.http.Referer ~ "(?i)kaircm\.shop" ||
 		req.http.Referer ~ "(?i)kakablog\.net" ||
 		req.http.Referer ~ "(?i)kakadu\-interior\.com\.ua" ||
 		req.http.Referer ~ "(?i)kakworldoftanks\.ru" ||
@@ -2308,6 +2312,7 @@ sub block_referral_spam {
 		req.http.Referer ~ "(?i)magicart\.store" ||
 		req.http.Referer ~ "(?i)magicdiet\.gq" ||
 		req.http.Referer ~ "(?i)magnetic\-bracelets\.ru" ||
+		req.http.Referer ~ "(?i)maigralr\.site" ||
 		req.http.Referer ~ "(?i)mail\.allnews24\.in" ||
 		req.http.Referer ~ "(?i)mainhunter\.com" ||
 		req.http.Referer ~ "(?i)mainlinehobby\.net" ||
@@ -2434,6 +2439,7 @@ sub block_referral_spam {
 		req.http.Referer ~ "(?i)minecraft\-neo\.ru" ||
 		req.http.Referer ~ "(?i)minecraft\-rus\.org" ||
 		req.http.Referer ~ "(?i)minegam\.com" ||
+		req.http.Referer ~ "(?i)minghaimuyuan\.net" ||
 		req.http.Referer ~ "(?i)mini\.7zap\.com" ||
 		req.http.Referer ~ "(?i)miningblack\.net" ||
 		req.http.Referer ~ "(?i)minyetki\.ru" ||
@@ -3924,6 +3930,7 @@ sub block_referral_spam {
 		req.http.Referer ~ "(?i)ucoz\.ru" ||
 		req.http.Referer ~ "(?i)ucsfstore\.xyz" ||
 		req.http.Referer ~ "(?i)ucsol\.ru" ||
+		req.http.Referer ~ "(?i)uctraffic\.com" ||
 		req.http.Referer ~ "(?i)udav\.net" ||
 		req.http.Referer ~ "(?i)ufa\.dienai\.ru" ||
 		req.http.Referer ~ "(?i)ufa\.xrus\.org" ||
