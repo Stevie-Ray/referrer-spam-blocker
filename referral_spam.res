@@ -1,5 +1,5 @@
 # https://github.com/Stevie-Ray/referrer-spam-blocker
-# Updated 2025-03-01 08:44:20
+# Updated 2025-03-28 13:48:14
 #
 # Put referral-spam.res in /path/to/vassals, then include it from within /path/to/vassals/vassal.ini:
 #
@@ -2628,6 +2628,7 @@ route-referer = (?i)nevapotolok\.ru break:403 Forbidden
 route-referer = (?i)new\-apps\.ru break:403 Forbidden
 route-referer = (?i)newagebev\.com break:403 Forbidden
 route-referer = (?i)newbieseoblog\.online break:403 Forbidden
+route-referer = (?i)newsfj\.net break:403 Forbidden
 route-referer = (?i)newsrosprom\.ru break:403 Forbidden
 route-referer = (?i)newstaffadsshop\.club break:403 Forbidden
 route-referer = (?i)newstraveller\.ru break:403 Forbidden
@@ -2654,6 +2655,7 @@ route-referer = (?i)notaria\-desalas\.com break:403 Forbidden
 route-referer = (?i)notebook\-pro\.ru break:403 Forbidden
 route-referer = (?i)notfastfood\.ru break:403 Forbidden
 route-referer = (?i)noumeda\.com break:403 Forbidden
+route-referer = (?i)novalskincare\.net break:403 Forbidden
 route-referer = (?i)novgorod\.xrus\.org break:403 Forbidden
 route-referer = (?i)novosibirsk\.xrus\.org break:403 Forbidden
 route-referer = (?i)novosti\-avto\.ru break:403 Forbidden
@@ -3899,6 +3901,7 @@ route-referer = (?i)truebeauty\.cc break:403 Forbidden
 route-referer = (?i)tsatu\.edu\.ua break:403 Forbidden
 route-referer = (?i)tsc\-koleso\.ru break:403 Forbidden
 route-referer = (?i)tsstcorpcddvdwshbbdriverfb\.aircus\.com break:403 Forbidden
+route-referer = (?i)ttechno\.net break:403 Forbidden
 route-referer = (?i)tuberkulezanet\.ru break:403 Forbidden
 route-referer = (?i)tuberkuleznik\.ru break:403 Forbidden
 route-referer = (?i)tudusale\.xyz break:403 Forbidden

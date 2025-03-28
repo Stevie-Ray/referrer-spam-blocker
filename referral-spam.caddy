@@ -1,5 +1,5 @@
 # https://github.com/Stevie-Ray/referrer-spam-blocker
-# Updated 2025-03-01 08:44:20
+# Updated 2025-03-28 13:48:14
 #
 # Move this file next to your Caddy config file given through -conf, and include it by doing:
 #
@@ -2631,6 +2631,7 @@ redir 444 {
 	if {>Referer} is new-apps.ru
 	if {>Referer} is newagebev.com
 	if {>Referer} is newbieseoblog.online
+	if {>Referer} is newsfj.net
 	if {>Referer} is newsrosprom.ru
 	if {>Referer} is newstaffadsshop.club
 	if {>Referer} is newstraveller.ru
@@ -2657,6 +2658,7 @@ redir 444 {
 	if {>Referer} is notebook-pro.ru
 	if {>Referer} is notfastfood.ru
 	if {>Referer} is noumeda.com
+	if {>Referer} is novalskincare.net
 	if {>Referer} is novgorod.xrus.org
 	if {>Referer} is novosibirsk.xrus.org
 	if {>Referer} is novosti-avto.ru
@@ -3902,6 +3904,7 @@ redir 444 {
 	if {>Referer} is tsatu.edu.ua
 	if {>Referer} is tsc-koleso.ru
 	if {>Referer} is tsstcorpcddvdwshbbdriverfb.aircus.com
+	if {>Referer} is ttechno.net
 	if {>Referer} is tuberkulezanet.ru
 	if {>Referer} is tuberkuleznik.ru
 	if {>Referer} is tudusale.xyz

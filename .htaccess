@@ -1,5 +1,5 @@
 # https://github.com/Stevie-Ray/referrer-spam-blocker
-# Updated 2025-03-01 08:44:20
+# Updated 2025-03-28 13:48:14
 
 <IfModule mod_rewrite.c>
 
@@ -2627,6 +2627,7 @@ RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*nevapotolok\.ru.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*new\-apps\.ru.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*newagebev\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*newbieseoblog\.online.*$ [NC,OR]
+RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*newsfj\.net.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*newsrosprom\.ru.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*newstaffadsshop\.club.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*newstraveller\.ru.*$ [NC,OR]
@@ -2653,6 +2654,7 @@ RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*notaria\-desalas\.com.*$ [NC,OR
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*notebook\-pro\.ru.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*notfastfood\.ru.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*noumeda\.com.*$ [NC,OR]
+RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*novalskincare\.net.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*novgorod\.xrus\.org.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*novosibirsk\.xrus\.org.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*novosti\-avto\.ru.*$ [NC,OR]
@@ -3898,6 +3900,7 @@ RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*truebeauty\.cc.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*tsatu\.edu\.ua.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*tsc\-koleso\.ru.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*tsstcorpcddvdwshbbdriverfb\.aircus\.com.*$ [NC,OR]
+RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*ttechno\.net.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*tuberkulezanet\.ru.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*tuberkuleznik\.ru.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*tudusale\.xyz.*$ [NC,OR]
@@ -7109,6 +7112,7 @@ SetEnvIfNoCase Referer nevapotolok\.ru spambot=yes
 SetEnvIfNoCase Referer new\-apps\.ru spambot=yes
 SetEnvIfNoCase Referer newagebev\.com spambot=yes
 SetEnvIfNoCase Referer newbieseoblog\.online spambot=yes
+SetEnvIfNoCase Referer newsfj\.net spambot=yes
 SetEnvIfNoCase Referer newsrosprom\.ru spambot=yes
 SetEnvIfNoCase Referer newstaffadsshop\.club spambot=yes
 SetEnvIfNoCase Referer newstraveller\.ru spambot=yes
@@ -7135,6 +7139,7 @@ SetEnvIfNoCase Referer notaria\-desalas\.com spambot=yes
 SetEnvIfNoCase Referer notebook\-pro\.ru spambot=yes
 SetEnvIfNoCase Referer notfastfood\.ru spambot=yes
 SetEnvIfNoCase Referer noumeda\.com spambot=yes
+SetEnvIfNoCase Referer novalskincare\.net spambot=yes
 SetEnvIfNoCase Referer novgorod\.xrus\.org spambot=yes
 SetEnvIfNoCase Referer novosibirsk\.xrus\.org spambot=yes
 SetEnvIfNoCase Referer novosti\-avto\.ru spambot=yes
@@ -8380,6 +8385,7 @@ SetEnvIfNoCase Referer truebeauty\.cc spambot=yes
 SetEnvIfNoCase Referer tsatu\.edu\.ua spambot=yes
 SetEnvIfNoCase Referer tsc\-koleso\.ru spambot=yes
 SetEnvIfNoCase Referer tsstcorpcddvdwshbbdriverfb\.aircus\.com spambot=yes
+SetEnvIfNoCase Referer ttechno\.net spambot=yes
 SetEnvIfNoCase Referer tuberkulezanet\.ru spambot=yes
 SetEnvIfNoCase Referer tuberkuleznik\.ru spambot=yes
 SetEnvIfNoCase Referer tudusale\.xyz spambot=yes

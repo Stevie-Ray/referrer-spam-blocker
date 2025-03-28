@@ -1,5 +1,5 @@
 # https://github.com/Stevie-Ray/referrer-spam-blocker
-# Updated 2025-03-01 08:44:20
+# Updated 2025-03-28 13:48:14
 sub block_referral_spam {
 	if (
 		req.http.Referer ~ "(?i)0\-0\.fr" ||
@@ -2624,6 +2624,7 @@ sub block_referral_spam {
 		req.http.Referer ~ "(?i)new\-apps\.ru" ||
 		req.http.Referer ~ "(?i)newagebev\.com" ||
 		req.http.Referer ~ "(?i)newbieseoblog\.online" ||
+		req.http.Referer ~ "(?i)newsfj\.net" ||
 		req.http.Referer ~ "(?i)newsrosprom\.ru" ||
 		req.http.Referer ~ "(?i)newstaffadsshop\.club" ||
 		req.http.Referer ~ "(?i)newstraveller\.ru" ||
@@ -2650,6 +2651,7 @@ sub block_referral_spam {
 		req.http.Referer ~ "(?i)notebook\-pro\.ru" ||
 		req.http.Referer ~ "(?i)notfastfood\.ru" ||
 		req.http.Referer ~ "(?i)noumeda\.com" ||
+		req.http.Referer ~ "(?i)novalskincare\.net" ||
 		req.http.Referer ~ "(?i)novgorod\.xrus\.org" ||
 		req.http.Referer ~ "(?i)novosibirsk\.xrus\.org" ||
 		req.http.Referer ~ "(?i)novosti\-avto\.ru" ||
@@ -3895,6 +3897,7 @@ sub block_referral_spam {
 		req.http.Referer ~ "(?i)tsatu\.edu\.ua" ||
 		req.http.Referer ~ "(?i)tsc\-koleso\.ru" ||
 		req.http.Referer ~ "(?i)tsstcorpcddvdwshbbdriverfb\.aircus\.com" ||
+		req.http.Referer ~ "(?i)ttechno\.net" ||
 		req.http.Referer ~ "(?i)tuberkulezanet\.ru" ||
 		req.http.Referer ~ "(?i)tuberkuleznik\.ru" ||
 		req.http.Referer ~ "(?i)tudusale\.xyz" ||
