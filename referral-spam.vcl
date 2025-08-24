@@ -1,9 +1,10 @@
 # https://github.com/Stevie-Ray/referrer-spam-blocker
-# Updated 2025-03-28 13:48:14
+# Updated 2025-08-24 21:12:29
 sub block_referral_spam {
 	if (
 		req.http.Referer ~ "(?i)0\-0\.fr" ||
 		req.http.Referer ~ "(?i)000free\.us" ||
+		req.http.Referer ~ "(?i)007agent\-i\.fr" ||
 		req.http.Referer ~ "(?i)00author\.com" ||
 		req.http.Referer ~ "(?i)00go\.com" ||
 		req.http.Referer ~ "(?i)00it\.com" ||
@@ -183,6 +184,7 @@ sub block_referral_spam {
 		req.http.Referer ~ "(?i)alfa9\.com" ||
 		req.http.Referer ~ "(?i)alfabot\.xyz" ||
 		req.http.Referer ~ "(?i)alfapro\.ru" ||
+		req.http.Referer ~ "(?i)alguiblog\.online" ||
 		req.http.Referer ~ "(?i)alibestsale\.com" ||
 		req.http.Referer ~ "(?i)aliexpress\.com" ||
 		req.http.Referer ~ "(?i)aliexsale\.ru" ||
@@ -374,6 +376,7 @@ sub block_referral_spam {
 		req.http.Referer ~ "(?i)b\-buyeasy\.com" ||
 		req.http.Referer ~ "(?i)b2b\-lounge\.com" ||
 		req.http.Referer ~ "(?i)bablonow\.ru" ||
+		req.http.Referer ~ "(?i)baciakte\.online" ||
 		req.http.Referer ~ "(?i)backgroundpictures\.net" ||
 		req.http.Referer ~ "(?i)backlinks\-fast\-top\.com" ||
 		req.http.Referer ~ "(?i)bag77\.ru" ||
@@ -763,6 +766,7 @@ sub block_referral_spam {
 		req.http.Referer ~ "(?i)chomexun\.com" ||
 		req.http.Referer ~ "(?i)choosecuisine\.com" ||
 		req.http.Referer ~ "(?i)ci\.ua" ||
+		req.http.Referer ~ "(?i)ciarustde\.online" ||
 		req.http.Referer ~ "(?i)cigarpass\.com" ||
 		req.http.Referer ~ "(?i)cilolamall\.xyz" ||
 		req.http.Referer ~ "(?i)cinemaenergy\-hd\.ru" ||
@@ -1209,6 +1213,7 @@ sub block_referral_spam {
 		req.http.Referer ~ "(?i)empiremarketlink24\.com" ||
 		req.http.Referer ~ "(?i)empirestuff\.org" ||
 		req.http.Referer ~ "(?i)empis\.magix\.net" ||
+		req.http.Referer ~ "(?i)encmbtia\.online" ||
 		req.http.Referer ~ "(?i)energomash\.net" ||
 		req.http.Referer ~ "(?i)energy\-ua\.com" ||
 		req.http.Referer ~ "(?i)energydiet\-info\.ru" ||
@@ -2417,6 +2422,7 @@ sub block_referral_spam {
 		req.http.Referer ~ "(?i)metarip\.ru" ||
 		req.http.Referer ~ "(?i)metaxalonevstizanidine\.blogspot\.com" ||
 		req.http.Referer ~ "(?i)meteocast\.net" ||
+		req.http.Referer ~ "(?i)meuikcr\.online" ||
 		req.http.Referer ~ "(?i)mex\-annushka\.ru" ||
 		req.http.Referer ~ "(?i)mhp\.su" ||
 		req.http.Referer ~ "(?i)mhrdmall\.xyz" ||
@@ -3069,6 +3075,7 @@ sub block_referral_spam {
 		req.http.Referer ~ "(?i)ranksonic\.org" ||
 		req.http.Referer ~ "(?i)rapevideosmovies\.com" ||
 		req.http.Referer ~ "(?i)rapidgator\-porn\.ga" ||
+		req.http.Referer ~ "(?i)rapidhits\.net" ||
 		req.http.Referer ~ "(?i)rapidsites\.pro" ||
 		req.http.Referer ~ "(?i)raschtextil\.com\.ua" ||
 		req.http.Referer ~ "(?i)rasteniya\-vs\-zombi\.ru" ||
@@ -3442,6 +3449,7 @@ sub block_referral_spam {
 		req.http.Referer ~ "(?i)sky\-mine\.ru" ||
 		req.http.Referer ~ "(?i)skylta\.com" ||
 		req.http.Referer ~ "(?i)sladkoevideo\.com" ||
+		req.http.Referer ~ "(?i)slashpet\.com" ||
 		req.http.Referer ~ "(?i)slavic\-magic\.ru" ||
 		req.http.Referer ~ "(?i)slavkokacunko\.de" ||
 		req.http.Referer ~ "(?i)sledstvie\-veli\.net" ||

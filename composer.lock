@@ -4,21 +4,21 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "436e3842cc72d8fd544dafad92c34444",
+    "content-hash": "b425f8694176ca1775355bca616b89a5",
     "packages": [],
     "packages-dev": [
         {
             "name": "algo26-matthias/idna-convert",
-            "version": "v4.2.0",
+            "version": "v4.2.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/algo26-matthias/idna-convert.git",
-                "reference": "a51e7bcf31ef5dabd5cdc479d67f779038f52b2d"
+                "reference": "bc263b9d9dd6bf82845cda763a4abea3481d0f83"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/algo26-matthias/idna-convert/zipball/a51e7bcf31ef5dabd5cdc479d67f779038f52b2d",
-                "reference": "a51e7bcf31ef5dabd5cdc479d67f779038f52b2d",
+                "url": "https://api.github.com/repos/algo26-matthias/idna-convert/zipball/bc263b9d9dd6bf82845cda763a4abea3481d0f83",
+                "reference": "bc263b9d9dd6bf82845cda763a4abea3481d0f83",
                 "shasum": ""
             },
             "require": {
@@ -51,7 +51,7 @@
                 }
             ],
             "description": "A library for encoding and decoding internationalized domain names",
-            "homepage": "http://idnaconv.net/",
+            "homepage": "https://github.com/algo26-matthias/idna-convert",
             "keywords": [
                 "idn",
                 "idna",
@@ -59,9 +59,9 @@
             ],
             "support": {
                 "issues": "https://github.com/algo26-matthias/idna-convert/issues",
-                "source": "https://github.com/algo26-matthias/idna-convert/tree/v4.2.0"
+                "source": "https://github.com/algo26-matthias/idna-convert/tree/v4.2.1"
             },
-            "time": "2025-03-26T16:10:16+00:00"
+            "time": "2025-08-11T09:03:12+00:00"
         },
         {
             "name": "jakeasmith/http_build_url",

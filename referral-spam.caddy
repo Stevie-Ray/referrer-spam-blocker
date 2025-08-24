@@ -1,5 +1,5 @@
 # https://github.com/Stevie-Ray/referrer-spam-blocker
-# Updated 2025-03-28 13:48:14
+# Updated 2025-08-24 21:12:29
 #
 # Move this file next to your Caddy config file given through -conf, and include it by doing:
 #
@@ -11,6 +11,7 @@ redir 444 {
 	if_op or
 	if {>Referer} is 0-0.fr
 	if {>Referer} is 000free.us
+	if {>Referer} is 007agent-i.fr
 	if {>Referer} is 00author.com
 	if {>Referer} is 00go.com
 	if {>Referer} is 00it.com
@@ -190,6 +191,7 @@ redir 444 {
 	if {>Referer} is alfa9.com
 	if {>Referer} is alfabot.xyz
 	if {>Referer} is alfapro.ru
+	if {>Referer} is alguiblog.online
 	if {>Referer} is alibestsale.com
 	if {>Referer} is aliexpress.com
 	if {>Referer} is aliexsale.ru
@@ -381,6 +383,7 @@ redir 444 {
 	if {>Referer} is b-buyeasy.com
 	if {>Referer} is b2b-lounge.com
 	if {>Referer} is bablonow.ru
+	if {>Referer} is baciakte.online
 	if {>Referer} is backgroundpictures.net
 	if {>Referer} is backlinks-fast-top.com
 	if {>Referer} is bag77.ru
@@ -770,6 +773,7 @@ redir 444 {
 	if {>Referer} is chomexun.com
 	if {>Referer} is choosecuisine.com
 	if {>Referer} is ci.ua
+	if {>Referer} is ciarustde.online
 	if {>Referer} is cigarpass.com
 	if {>Referer} is cilolamall.xyz
 	if {>Referer} is cinemaenergy-hd.ru
@@ -1216,6 +1220,7 @@ redir 444 {
 	if {>Referer} is empiremarketlink24.com
 	if {>Referer} is empirestuff.org
 	if {>Referer} is empis.magix.net
+	if {>Referer} is encmbtia.online
 	if {>Referer} is energomash.net
 	if {>Referer} is energy-ua.com
 	if {>Referer} is energydiet-info.ru
@@ -2424,6 +2429,7 @@ redir 444 {
 	if {>Referer} is metarip.ru
 	if {>Referer} is metaxalonevstizanidine.blogspot.com
 	if {>Referer} is meteocast.net
+	if {>Referer} is meuikcr.online
 	if {>Referer} is mex-annushka.ru
 	if {>Referer} is mhp.su
 	if {>Referer} is mhrdmall.xyz
@@ -3076,6 +3082,7 @@ redir 444 {
 	if {>Referer} is ranksonic.org
 	if {>Referer} is rapevideosmovies.com
 	if {>Referer} is rapidgator-porn.ga
+	if {>Referer} is rapidhits.net
 	if {>Referer} is rapidsites.pro
 	if {>Referer} is raschtextil.com.ua
 	if {>Referer} is rasteniya-vs-zombi.ru
@@ -3449,6 +3456,7 @@ redir 444 {
 	if {>Referer} is sky-mine.ru
 	if {>Referer} is skylta.com
 	if {>Referer} is sladkoevideo.com
+	if {>Referer} is slashpet.com
 	if {>Referer} is slavic-magic.ru
 	if {>Referer} is slavkokacunko.de
 	if {>Referer} is sledstvie-veli.net

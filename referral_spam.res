@@ -1,5 +1,5 @@
 # https://github.com/Stevie-Ray/referrer-spam-blocker
-# Updated 2025-03-28 13:48:14
+# Updated 2025-08-24 21:12:29
 #
 # Put referral-spam.res in /path/to/vassals, then include it from within /path/to/vassals/vassal.ini:
 #
@@ -8,6 +8,7 @@
 [blacklist_spam]
 route-referer = (?i)0\-0\.fr break:403 Forbidden
 route-referer = (?i)000free\.us break:403 Forbidden
+route-referer = (?i)007agent\-i\.fr break:403 Forbidden
 route-referer = (?i)00author\.com break:403 Forbidden
 route-referer = (?i)00go\.com break:403 Forbidden
 route-referer = (?i)00it\.com break:403 Forbidden
@@ -187,6 +188,7 @@ route-referer = (?i)alfa\-medosmotr\.ru break:403 Forbidden
 route-referer = (?i)alfa9\.com break:403 Forbidden
 route-referer = (?i)alfabot\.xyz break:403 Forbidden
 route-referer = (?i)alfapro\.ru break:403 Forbidden
+route-referer = (?i)alguiblog\.online break:403 Forbidden
 route-referer = (?i)alibestsale\.com break:403 Forbidden
 route-referer = (?i)aliexpress\.com break:403 Forbidden
 route-referer = (?i)aliexsale\.ru break:403 Forbidden
@@ -378,6 +380,7 @@ route-referer = (?i)azlex\.uz break:403 Forbidden
 route-referer = (?i)b\-buyeasy\.com break:403 Forbidden
 route-referer = (?i)b2b\-lounge\.com break:403 Forbidden
 route-referer = (?i)bablonow\.ru break:403 Forbidden
+route-referer = (?i)baciakte\.online break:403 Forbidden
 route-referer = (?i)backgroundpictures\.net break:403 Forbidden
 route-referer = (?i)backlinks\-fast\-top\.com break:403 Forbidden
 route-referer = (?i)bag77\.ru break:403 Forbidden
@@ -767,6 +770,7 @@ route-referer = (?i)chizhik\-2\.ru break:403 Forbidden
 route-referer = (?i)chomexun\.com break:403 Forbidden
 route-referer = (?i)choosecuisine\.com break:403 Forbidden
 route-referer = (?i)ci\.ua break:403 Forbidden
+route-referer = (?i)ciarustde\.online break:403 Forbidden
 route-referer = (?i)cigarpass\.com break:403 Forbidden
 route-referer = (?i)cilolamall\.xyz break:403 Forbidden
 route-referer = (?i)cinemaenergy\-hd\.ru break:403 Forbidden
@@ -1213,6 +1217,7 @@ route-referer = (?i)empiremarket\-link\.org break:403 Forbidden
 route-referer = (?i)empiremarketlink24\.com break:403 Forbidden
 route-referer = (?i)empirestuff\.org break:403 Forbidden
 route-referer = (?i)empis\.magix\.net break:403 Forbidden
+route-referer = (?i)encmbtia\.online break:403 Forbidden
 route-referer = (?i)energomash\.net break:403 Forbidden
 route-referer = (?i)energy\-ua\.com break:403 Forbidden
 route-referer = (?i)energydiet\-info\.ru break:403 Forbidden
@@ -2421,6 +2426,7 @@ route-referer = (?i)metallosajding\.ru break:403 Forbidden
 route-referer = (?i)metarip\.ru break:403 Forbidden
 route-referer = (?i)metaxalonevstizanidine\.blogspot\.com break:403 Forbidden
 route-referer = (?i)meteocast\.net break:403 Forbidden
+route-referer = (?i)meuikcr\.online break:403 Forbidden
 route-referer = (?i)mex\-annushka\.ru break:403 Forbidden
 route-referer = (?i)mhp\.su break:403 Forbidden
 route-referer = (?i)mhrdmall\.xyz break:403 Forbidden
@@ -3073,6 +3079,7 @@ route-referer = (?i)ranksonic\.net break:403 Forbidden
 route-referer = (?i)ranksonic\.org break:403 Forbidden
 route-referer = (?i)rapevideosmovies\.com break:403 Forbidden
 route-referer = (?i)rapidgator\-porn\.ga break:403 Forbidden
+route-referer = (?i)rapidhits\.net break:403 Forbidden
 route-referer = (?i)rapidsites\.pro break:403 Forbidden
 route-referer = (?i)raschtextil\.com\.ua break:403 Forbidden
 route-referer = (?i)rasteniya\-vs\-zombi\.ru break:403 Forbidden
@@ -3446,6 +3453,7 @@ route-referer = (?i)skladvaz\.ru break:403 Forbidden
 route-referer = (?i)sky\-mine\.ru break:403 Forbidden
 route-referer = (?i)skylta\.com break:403 Forbidden
 route-referer = (?i)sladkoevideo\.com break:403 Forbidden
+route-referer = (?i)slashpet\.com break:403 Forbidden
 route-referer = (?i)slavic\-magic\.ru break:403 Forbidden
 route-referer = (?i)slavkokacunko\.de break:403 Forbidden
 route-referer = (?i)sledstvie\-veli\.net break:403 Forbidden
