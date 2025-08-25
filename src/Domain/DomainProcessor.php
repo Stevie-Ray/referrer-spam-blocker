@@ -12,8 +12,8 @@ use RuntimeException;
 
 class DomainProcessor
 {
-    private const DEFAULT_DOMAINS_FILE = __DIR__ . '/../domains.txt';
-    private const IDN_PATTERN = '/[А-Яа-яЁёöɢ]/u';
+    private const string DEFAULT_DOMAINS_FILE = __DIR__ . '/../domains.txt';
+    private const string IDN_PATTERN = '/[А-Яа-яЁёöɢ]/u';
 
     private string $domainsFile;
 

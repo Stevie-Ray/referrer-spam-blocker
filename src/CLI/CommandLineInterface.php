@@ -9,8 +9,7 @@ use RuntimeException;
 
 class CommandLineInterface
 {
-    private const VERSION = '2.0.0';
-    private const SUPPORTED_TYPES = ['apache', 'nginx', 'varnish', 'iis', 'uwsgi', 'caddy', 'caddy2', 'google'];
+    private const array SUPPORTED_TYPES = ['apache', 'nginx', 'varnish', 'iis', 'uwsgi', 'caddy', 'caddy2', 'google'];
 
     /**
      * @param array<int, string> $argv
@@ -147,7 +146,7 @@ class CommandLineInterface
      */
     private function showHelp(): void
     {
-        echo 'Referrer Spam Blocker Generator v' . self::VERSION . "\n\n";
+        echo "Referrer Spam Blocker Generator\n\n";
         echo "Usage: php run.php [options]\n\n";
         echo "Options:\n";
         echo "  -h, --help              Show this help message\n";
@@ -168,7 +167,7 @@ class CommandLineInterface
      */
     private function showVersion(): void
     {
-        echo 'Referrer Spam Blocker Generator v' . self::VERSION . "\n";
+        echo "Referrer Spam Blocker Generator\n";
     }
 
     /**

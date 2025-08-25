@@ -6,7 +6,7 @@ namespace StevieRay\Config;
 
 abstract class AbstractConfigGenerator implements ConfigGeneratorInterface
 {
-    protected const PROJECT_URL = 'https://github.com/Stevie-Ray/referrer-spam-blocker';
+    protected const string PROJECT_URL = 'https://github.com/Stevie-Ray/referrer-spam-blocker';
 
     /**
      * Escape a domain for use in configuration files

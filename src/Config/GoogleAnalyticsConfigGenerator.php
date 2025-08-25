@@ -6,7 +6,7 @@ namespace StevieRay\Config;
 
 class GoogleAnalyticsConfigGenerator extends AbstractConfigGenerator implements MultiFileConfigGeneratorInterface
 {
-    private const GOOGLE_ANALYTICS_LIMIT = 30000;
+    private const int GOOGLE_ANALYTICS_LIMIT = 30000;
 
     #[\Override]
     public function getFilename(): string
