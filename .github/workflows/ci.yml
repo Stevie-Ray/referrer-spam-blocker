@@ -42,6 +42,9 @@ jobs:
     - name: Install dependencies
       run: composer install --prefer-dist --no-progress
 
+    - name: Regenerate autoloader
+      run: composer dump-autoload --optimize
+
     - name: Run quality checks
       run: composer run quality
 
@@ -74,6 +77,9 @@ jobs:
     - name: Install dependencies
       run: composer install --prefer-dist --no-progress
 
+    - name: Regenerate autoloader
+      run: composer dump-autoload --optimize
+
     - name: Run security audit
       run: composer audit
 
@@ -97,6 +103,9 @@ jobs:
 
     - name: Install dependencies
       run: composer install --prefer-dist --no-progress
+
+    - name: Regenerate autoloader
+      run: composer dump-autoload --optimize
 
     - name: Generate configuration files
       run: composer generate
