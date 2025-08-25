@@ -104,6 +104,48 @@ You can also prevent **ghost** referral spam by:
   * [Adding a filter](https://support.google.com/analytics/answer/1033162)
   * [Enabeling bot and Spider Filtering](https://plus.google.com/+GoogleAnalytics/posts/2tJ79CkfnZk)
 
+## Command Line Interface
+
+```bash
+# Basic usage
+php run.php
+php run.php --types apache,nginx
+php run.php --dry-run
+php run.php --output /path/to/configs
+
+# Options: -h (help), -v (version), --dry-run, -o (output), -t (types)
+# Supported types: apache, nginx, varnish, iis, uwsgi, caddy, caddy2, google
+```
+
+## Testing
+
+The project includes comprehensive testing and code quality tools:
+
+```bash
+# Run tests
+composer test
+composer test-coverage
+
+# Code quality
+composer phpstan
+composer phpcs
+composer phpcbf
+composer quality
+```
+
+Tests cover unit testing, configuration generation, domain processing, and file operations. Quality tools include PHPStan (Level 8), PHP CodeSniffer (PSR-12), and Psalm for static analysis.
+
+## Programmatic Usage
+
+```php
+use StevieRay\Generator;
+
+$generator = new Generator('/path/to/output');
+$generator->generateFiles();
+$generator->generateSpecificConfigs(['apache', 'nginx']);
+$stats = $generator->getStatistics();
+```
+
 ## Intregrate in a Dockerfile
 
 You can also integrate these configuration file in your Docker repo, so you will get always the most updated version when you build your image.

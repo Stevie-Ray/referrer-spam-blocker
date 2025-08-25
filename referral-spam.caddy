@@ -1,5 +1,6 @@
 # https://github.com/Stevie-Ray/referrer-spam-blocker
-# Updated 2025-08-24 21:12:29
+# Updated 2025-08-24 23:18:10
+
 #
 # Move this file next to your Caddy config file given through -conf, and include it by doing:
 #
@@ -7,6 +8,7 @@
 #
 # Then start your caddy server. All the referrers will now be redirected to a 444 HTTP answer
 #
+
 redir 444 {
 	if_op or
 	if {>Referer} is 0-0.fr
@@ -1125,7 +1127,6 @@ redir 444 {
 	if {>Referer} is e-stroymart.kz
 	if {>Referer} is e2click.com
 	if {>Referer} is eandsgallery.com
-	if {>Referer} is eaplay.ru/a00af605
 	if {>Referer} is eaptekaplus.ru
 	if {>Referer} is earn-from-articles.com
 	if {>Referer} is earnian-money.info
@@ -2250,7 +2251,6 @@ redir 444 {
 	if {>Referer} is lider82.ru
 	if {>Referer} is life.biz.ua
 	if {>Referer} is lifebyleese.com
-	if {>Referer} is lifehacĸer.com
 	if {>Referer} is lifespeaker.ru
 	if {>Referer} is ligastavok-in.ru
 	if {>Referer} is light.ifmo.ru
@@ -2718,7 +2718,6 @@ redir 444 {
 	if {>Referer} is okna-systems.pro
 	if {>Referer} is okno.ooo
 	if {>Referer} is okoshkah.com
-	if {>Referer} is okout.ru/a00af605
 	if {>Referer} is okroshki.ru
 	if {>Referer} is oktube.ru
 	if {>Referer} is oledonline.xyz

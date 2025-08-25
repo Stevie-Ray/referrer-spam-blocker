@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<psalm
+    errorLevel="1"
+    resolveFromConfigFile="true"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns="https://getpsalm.org/schema/config"
+    xsi:schemaLocation="https://getpsalm.org/schema/config vendor/vimeo/psalm/config.xsd"
+    findUnusedBaselineEntry="true"
+    findUnusedCode="true"
+    checkForThrowsDocblock="true"
+    checkMissingReturnType="true"
+    strictBinaryOperands="true"
+    strictEquality="true"
+    strictInference="true"
+    strictLiteralTypes="true"
+    strictMixedTypes="true"
+    strictNullTypes="true"
+    strictObjectTypes="true"
+    strictOperators="true"
+    strictParamTypes="true"
+    strictPropertyTypes="true"
+    strictReturnTypes="true"
+    strictScalarTypes="true"
+    strictStringTypes="true"
+    strictUnionTypes="true"
+    strictVariableTypes="true"
+>
+    <projectFiles>
+        <directory name="src"/>
+        <ignoreFiles>
+            <directory name="vendor"/>
+            <directory name="tests"/>
+        </ignoreFiles>
+    </projectFiles>
+
+    <issueHandlers>
+        <MissingReturnType errorLevel="info"/>
+        <MissingParamType errorLevel="info"/>
+        <MissingPropertyType errorLevel="info"/>
+        <ClassMustBeFinal errorLevel="suppress"/>
+        <UnusedClass errorLevel="suppress"/>
+        <MissingThrowsDocblock errorLevel="suppress"/>
+        <RedundantCast errorLevel="suppress"/>
+        <InvalidOperand errorLevel="suppress"/>
+        <MixedArgument errorLevel="info"/>
+        <MixedAssignment errorLevel="info"/>
+    </issueHandlers>
+</psalm>

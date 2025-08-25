@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<ruleset name="Referrer Spam Blocker">
+    <description>PHP CodeSniffer rules for Referrer Spam Blocker project</description>
+
+    <file>src</file>
+    <file>tests</file>
+
+    <exclude-pattern>vendor</exclude-pattern>
+
+    <rule ref="PSR12">
+        <exclude name="PSR12.Classes.OpeningBraceSpace"/>
+        <exclude name="PSR12.Functions.ReturnTypeDeclaration"/>
+    </rule>
+
+    <rule ref="Generic.Files.LineLength">
+        <properties>
+            <property name="lineLimit" value="120"/>
+            <property name="absoluteLineLimit" value="150"/>
+        </properties>
+    </rule>
+
+    <rule ref="Generic.Files.LineEndings">
+        <properties>
+            <property name="eolChar" value="\n"/>
+        </properties>
+    </rule>
+
+    <rule ref="Squiz.WhiteSpace.SuperfluousWhitespace">
+        <properties>
+            <property name="ignoreBlankLines" value="false"/>
+        </properties>
+    </rule>
+
+    <rule ref="Squiz.WhiteSpace.FunctionSpacing">
+        <properties>
+            <property name="spacing" value="1"/>
+            <property name="spacingBeforeFirst" value="0"/>
+            <property name="spacingAfterLast" value="0"/>
+        </properties>
+    </rule>
+</ruleset>

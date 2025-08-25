@@ -1,18 +1,117 @@
-name: Create tag and release
+name: CI/CD Pipeline
 on:
   push:
     branches:
       - master
+      - develop
+  pull_request:
+    branches:
+      - master
+      - develop
+
 jobs:
-  build:
+  test:
+    name: Run Tests
     runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        php: [8.1, 8.2, 8.3]
+    
     steps:
       - name: Checkout code
-        uses: actions/checkout@master
+        uses: actions/checkout@v5
+
+      - name: Setup PHP
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: ${{ matrix.php }}
+          extensions: mbstring, iconv
+          coverage: xdebug
+
+      - name: Validate composer.json
+        run: composer validate --strict
+
+      - name: Get composer cache directory
+        id: composer-cache
+        run: echo "dir=$(composer config cache-files-dir)" >> $GITHUB_OUTPUT
+
+      - name: Cache dependencies
+        uses: actions/cache@v4
+        with:
+          path: ${{ steps.composer-cache.outputs.dir }}
+          key: ${{ runner.os }}-php-${{ matrix.php }}-composer-${{ hashFiles('**/composer.lock') }}
+          restore-keys: ${{ runner.os }}-php-${{ matrix.php }}-composer-
+
+      - name: Install dependencies
+        run: composer install --prefer-dist --no-progress
+
+      - name: Run PHPUnit tests
+        run: composer test
+
+      - name: Run PHPUnit with coverage
+        run: composer test-coverage
+
+      - name: Upload coverage to Coveralls
+        if: matrix.php == '8.3'
+        env:
+          COVERALLS_REPO_TOKEN: ${{ secrets.COVERALLS_REPO_TOKEN }}
+        run: |
+          if [ -f vendor/bin/php-coveralls ]; then
+            vendor/bin/php-coveralls --coverage_clover=coverage.xml --json_path=coveralls.json
+          fi
+
+  code-quality:
+    name: Code Quality
+    runs-on: ubuntu-latest
+    needs: test
+    
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup PHP
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: '8.3'
+          extensions: mbstring, iconv
+
+      - name: Install dependencies
+        run: composer install --prefer-dist --no-progress
+
+      - name: Run PHPStan
+        run: composer phpstan
+
+      - name: Run PHP CodeSniffer
+        run: composer phpcs
+
+      - name: Run PHP Code Beautifier and Fixer
+        run: composer phpcbf
+
+  release:
+    name: Create Release
+    runs-on: ubuntu-latest
+    needs: [test, code-quality]
+    if: github.ref == 'refs/heads/master' && github.event_name == 'push'
+    
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup PHP
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: '8.3'
+          extensions: mbstring, iconv
+
+      - name: Install dependencies
+        run: composer install --prefer-dist --no-progress
+
+      - name: Generate configuration files
+        run: composer generate
 
       - name: Bump version and push tag
         id: create_tag
-        uses: mathieudutour/github-tag-action@v6.0
+        uses: mathieudutour/github-tag-action@v6.2
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
 

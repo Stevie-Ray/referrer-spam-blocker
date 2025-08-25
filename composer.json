@@ -22,18 +22,51 @@
     }
   ],
   "require": {
-    "php": ">=8.1"
+    "php": ">=8.1",
+    "algo26-matthias/idna-convert": "^4.2.1"
   },
   "require-dev": {
-    "algo26-matthias/idna-convert": "^4.2.1"
+    "phpunit/phpunit": "^12.3",
+    "phpstan/phpstan": "^2.1",
+    "squizlabs/php_codesniffer": "^3.7",
+    "php-coveralls/php-coveralls": "^2.8",
+    "vimeo/psalm": "^6.13",
+    "friendsofphp/php-cs-fixer": "^3.86",
+    "phpcompatibility/php-compatibility": "^9.3"
   },
   "suggest":  {
     "ext-mbstring": "Install ext/mbstring for using input / output other than UTF-8 or ISO-8859-1",
     "ext-iconv": "Install ext/iconv for using input / output other than UTF-8 or ISO-8859-1"
   },
+  "autoload": {
+    "psr-4": {
+      "StevieRay\\": "src/"
+    }
+  },
   "autoload-dev": {
     "psr-4": {
-      "StevieRay\\": "src"
+      "StevieRay\\Tests\\": "tests/"
     }
+  },
+  "scripts": {
+    "test": "phpunit",
+    "test-coverage": "phpunit --coverage-html coverage",
+    "phpstan": "phpstan analyse",
+    "phpcs": "phpcs src/ tests/",
+    "phpcbf": "phpcbf src/ tests/",
+    "psalm": "psalm",
+    "php-cs-fixer": "php-cs-fixer fix --dry-run --diff",
+    "php-cs-fixer:fix": "php-cs-fixer fix",
+    "quality": [
+      "@phpstan",
+      "@phpcs",
+      "@psalm",
+      "@test"
+    ],
+    "generate": "php run.php"
+  },
+  "config": {
+    "sort-packages": true,
+    "optimize-autoloader": true
   }
 }

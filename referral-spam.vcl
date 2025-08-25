@@ -1,5 +1,6 @@
 # https://github.com/Stevie-Ray/referrer-spam-blocker
-# Updated 2025-08-24 21:12:29
+# Updated 2025-08-24 23:18:10
+
 sub block_referral_spam {
 	if (
 		req.http.Referer ~ "(?i)0\-0\.fr" ||
@@ -1118,7 +1119,6 @@ sub block_referral_spam {
 		req.http.Referer ~ "(?i)e\-stroymart\.kz" ||
 		req.http.Referer ~ "(?i)e2click\.com" ||
 		req.http.Referer ~ "(?i)eandsgallery\.com" ||
-		req.http.Referer ~ "(?i)eaplay\.ru/a00af605" ||
 		req.http.Referer ~ "(?i)eaptekaplus\.ru" ||
 		req.http.Referer ~ "(?i)earn\-from\-articles\.com" ||
 		req.http.Referer ~ "(?i)earnian\-money\.info" ||
@@ -2243,7 +2243,6 @@ sub block_referral_spam {
 		req.http.Referer ~ "(?i)lider82\.ru" ||
 		req.http.Referer ~ "(?i)life\.biz\.ua" ||
 		req.http.Referer ~ "(?i)lifebyleese\.com" ||
-		req.http.Referer ~ "(?i)lifehacĸer\.com" ||
 		req.http.Referer ~ "(?i)lifespeaker\.ru" ||
 		req.http.Referer ~ "(?i)ligastavok\-in\.ru" ||
 		req.http.Referer ~ "(?i)light\.ifmo\.ru" ||
@@ -2711,7 +2710,6 @@ sub block_referral_spam {
 		req.http.Referer ~ "(?i)okna\-systems\.pro" ||
 		req.http.Referer ~ "(?i)okno\.ooo" ||
 		req.http.Referer ~ "(?i)okoshkah\.com" ||
-		req.http.Referer ~ "(?i)okout\.ru/a00af605" ||
 		req.http.Referer ~ "(?i)okroshki\.ru" ||
 		req.http.Referer ~ "(?i)oktube\.ru" ||
 		req.http.Referer ~ "(?i)oledonline\.xyz" ||

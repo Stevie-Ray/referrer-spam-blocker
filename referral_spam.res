@@ -1,9 +1,12 @@
 # https://github.com/Stevie-Ray/referrer-spam-blocker
-# Updated 2025-08-24 21:12:29
+# Updated 2025-08-24 23:18:10
+
 #
-# Put referral-spam.res in /path/to/vassals, then include it from within /path/to/vassals/vassal.ini:
+# Put referral-spam.res in /path/to/vassals, then include it from within
+# /path/to/vassals/vassal.ini:
 #
 # ini = referral_spam.res:blacklist_spam
+
 
 [blacklist_spam]
 route-referer = (?i)0\-0\.fr break:403 Forbidden
@@ -1122,7 +1125,6 @@ route-referer = (?i)e\-kwiaciarz\.pl break:403 Forbidden
 route-referer = (?i)e\-stroymart\.kz break:403 Forbidden
 route-referer = (?i)e2click\.com break:403 Forbidden
 route-referer = (?i)eandsgallery\.com break:403 Forbidden
-route-referer = (?i)eaplay\.ru/a00af605 break:403 Forbidden
 route-referer = (?i)eaptekaplus\.ru break:403 Forbidden
 route-referer = (?i)earn\-from\-articles\.com break:403 Forbidden
 route-referer = (?i)earnian\-money\.info break:403 Forbidden
@@ -2247,7 +2249,6 @@ route-referer = (?i)lida\-ru\.com break:403 Forbidden
 route-referer = (?i)lider82\.ru break:403 Forbidden
 route-referer = (?i)life\.biz\.ua break:403 Forbidden
 route-referer = (?i)lifebyleese\.com break:403 Forbidden
-route-referer = (?i)lifehacĸer\.com break:403 Forbidden
 route-referer = (?i)lifespeaker\.ru break:403 Forbidden
 route-referer = (?i)ligastavok\-in\.ru break:403 Forbidden
 route-referer = (?i)light\.ifmo\.ru break:403 Forbidden
@@ -2715,7 +2716,6 @@ route-referer = (?i)oklogistic\.ru break:403 Forbidden
 route-referer = (?i)okna\-systems\.pro break:403 Forbidden
 route-referer = (?i)okno\.ooo break:403 Forbidden
 route-referer = (?i)okoshkah\.com break:403 Forbidden
-route-referer = (?i)okout\.ru/a00af605 break:403 Forbidden
 route-referer = (?i)okroshki\.ru break:403 Forbidden
 route-referer = (?i)oktube\.ru break:403 Forbidden
 route-referer = (?i)oledonline\.xyz break:403 Forbidden

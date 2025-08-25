@@ -6,9 +6,7 @@ webserver_type: nginx-fpm
 xdebug_enabled: false
 additional_hostnames: []
 additional_fqdns: []
-database:
-    type: mariadb
-    version: "10.11"
+omit_containers: [db, ddev-ssh-agent]
 hooks:
     post-start:
         - exec: composer i

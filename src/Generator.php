@@ -1,324 +1,193 @@
 <?php
 
+declare(strict_types=1);
+
 namespace StevieRay;
 
+use StevieRay\Domain\DomainProcessor;
+use StevieRay\Service\FileWriter;
+use StevieRay\Config\ConfigGeneratorInterface;
+use StevieRay\Config\MultiFileConfigGeneratorInterface;
+use StevieRay\Config\ApacheConfigGenerator;
+use StevieRay\Config\NginxConfigGenerator;
+use StevieRay\Config\VarnishConfigGenerator;
+use StevieRay\Config\IISConfigGenerator;
+use StevieRay\Config\UwsgiConfigGenerator;
+use StevieRay\Config\CaddyConfigGenerator;
+use StevieRay\Config\CaddyV2ConfigGenerator;
+use StevieRay\Config\GoogleAnalyticsConfigGenerator;
 use Algo26\IdnaConvert\Exception\AlreadyPunycodeException;
 use Algo26\IdnaConvert\Exception\InvalidCharacterException;
-use Algo26\IdnaConvert\ToIdn;
-use Algo26\IdnaConvert\EncodingHelper\ToUtf8;
 use RuntimeException;
 
 class Generator
 {
-    private $projectUrl = "https://github.com/Stevie-Ray/referrer-spam-blocker";
+    private DomainProcessor $domainProcessor;
 
-    /**
-     * @var string string
-     */
-    private $outputDir;
+    private FileWriter $fileWriter;
 
-    /**
-     * @param string $outputDir
-     */
-    public function __construct(string $outputDir)
+    /** @var array<ConfigGeneratorInterface> */
+    private array $configGenerators;
+
+    public function __construct(string $outputDirectory)
     {
-        $this->outputDir = $outputDir;
+        $this->domainProcessor = new DomainProcessor();
+        $this->fileWriter = new FileWriter($outputDirectory);
+        $this->configGenerators = $this->initializeConfigGenerators();
     }
 
     /**
+     * Generate all configuration files
+     *
+     * @return void
      * @throws AlreadyPunycodeException
      * @throws InvalidCharacterException
+     * @throws RuntimeException
      */
-    public function generateFiles()
+    public function generateFiles(): void
     {
         $date = date('Y-m-d H:i:s');
-        $lines = $this->domainWorker();
-        $this->createApache($date, $lines);
-        $this->createNginx($date, $lines);
-        $this->createVarnish($date, $lines);
-        $this->createIIS($date, $lines);
-        $this->createuWSGI($date, $lines);
-        $this->createGoogleExclude($lines);
-        $this->createCaddyfile($date, $lines);
-        $this->createCaddyfileV2($date, $lines);
+        $domains = $this->domainProcessor->processDomains();
+
+        foreach ($this->configGenerators as $generator) {
+            $this->generateConfigFile($generator, $domains, $date);
+        }
     }
 
     /**
-     * @return array
+     * Generate a specific configuration file
+     *
+     * @param ConfigGeneratorInterface $generator
+     * @param array<string> $domains
+     * @param string $date
+     * @return void
+     * @throws RuntimeException
+     */
+    private function generateConfigFile(ConfigGeneratorInterface $generator, array $domains, string $date): void
+    {
+        try {
+            if ($generator instanceof MultiFileConfigGeneratorInterface) {
+                // Handle multiple files for generators like Google Analytics
+                $files = $generator->generateMultiple($domains, $date);
+                $this->fileWriter->writeFiles($files);
+            } else {
+                // Handle single file
+                $content = $generator->generate($domains, $date);
+                $this->fileWriter->writeFile($generator->getFilename(), $content);
+            }
+        } catch (\Exception $e) {
+            throw new RuntimeException(
+                "Failed to generate {$generator->getDescription()}: " . $e->getMessage(),
+                0,
+                $e
+            );
+        }
+    }
+
+    /**
+     * Initialize all configuration generators
+     *
+     * @return array<ConfigGeneratorInterface>
+     */
+    private function initializeConfigGenerators(): array
+    {
+        return [
+            new ApacheConfigGenerator(),
+            new NginxConfigGenerator(),
+            new VarnishConfigGenerator(),
+            new IISConfigGenerator(),
+            new UwsgiConfigGenerator(),
+            new CaddyConfigGenerator(),
+            new CaddyV2ConfigGenerator(),
+            new GoogleAnalyticsConfigGenerator(),
+        ];
+    }
+
+    /**
+     * Get available configuration generators
+     *
+     * @return array<ConfigGeneratorInterface>
+     */
+    public function getConfigGenerators(): array
+    {
+        return $this->configGenerators;
+    }
+
+    /**
+     * Get statistics about the generation process
+     *
+     * @return array{
+     *   total_domains: int<0, max>,
+     *   config_files: int<0, max>,
+     *   output_directory: string,
+     *   generated_files: array<array-key, string>
+     * }
+     */
+    public function getStatistics(): array
+    {
+        $domains = $this->domainProcessor->processDomains();
+
+        return [
+            'total_domains' => count($domains),
+            'config_files' => count($this->configGenerators),
+            'output_directory' => $this->fileWriter->getOutputDirectory(),
+            'generated_files' => $this->getGeneratedFileList(),
+        ];
+    }
+
+    /**
+     * Get list of generated files
+     *
+     * @return array<string>
+     */
+    private function getGeneratedFileList(): array
+    {
+        $files = [];
+
+        foreach ($this->configGenerators as $generator) {
+            if ($generator instanceof MultiFileConfigGeneratorInterface) {
+                // Count Google Analytics files
+                $index = 1;
+                while ($this->fileWriter->fileExists("google-exclude-{$index}.txt")) {
+                    $files[] = "google-exclude-{$index}.txt";
+                    $index++;
+                }
+            } else {
+                if ($this->fileWriter->fileExists($generator->getFilename())) {
+                    $files[] = $generator->getFilename();
+                }
+            }
+        }
+
+        return $files;
+    }
+
+    /**
+     * Generate only specific configuration types
+     *
+     * @param array<string> $types
+     * @return void
      * @throws AlreadyPunycodeException
      * @throws InvalidCharacterException
+     * @throws RuntimeException
      */
-    public function domainWorker(): array
+    public function generateSpecificConfigs(array $types): void
     {
-        $domainsFile = __DIR__ . "/domains.txt";
+        $date = date('Y-m-d H:i:s');
+        $domains = $this->domainProcessor->processDomains();
 
-        $handle = fopen($domainsFile, "r");
-        if (!$handle) {
-            throw new RuntimeException('Error opening file ' . $domainsFile);
-        }
-        $lines = array();
-        $IDN = new ToIdn();
-        $encodingHelper = new ToUtf8();
+        $allowedTypes = array_map('strtolower', $types);
 
-        while (($line = fgets($handle)) !== false) {
-            $line = trim(preg_replace('/\s\s+/', ' ', $line));
+        foreach ($this->configGenerators as $generator) {
+            $generatorType = strtolower($generator->getDescription());
 
-            // convert internationalized domain names
-            if (preg_match('/[А-Яа-яЁёöɢ]/u', $line)) {
+            foreach ($allowedTypes as $type) {
+                if (strpos($generatorType, $type) !== false) {
+                    $this->generateConfigFile($generator, $domains, $date);
 
-                $line = $encodingHelper->convert($line);
-
-                $line = $IDN->convert($line);
-
+                    break;
+                }
             }
-
-            if (empty($line)) {
-                continue;
-            }
-            $lines[] = $line;
         }
-        fclose($handle);
-        $uniqueLines = array_unique($lines);
-        sort($uniqueLines, SORT_STRING);
-        if (is_writable($domainsFile)) {
-            file_put_contents($domainsFile, implode("\n", $uniqueLines));
-        } else {
-            trigger_error("Permission denied");
-        }
-
-        return $lines;
-    }
-
-    /**
-     * @param string $filename
-     * @param string $data
-     */
-    protected function writeToFile(string $filename, string $data)
-    {
-        $file = $this->outputDir . '/' . $filename;
-        if (is_writable($file)) {
-            file_put_contents($file, $data);
-            if (!chmod($file, 0644)) {
-                trigger_error("Couldn't not set " . $filename . " permissions to 644");
-            }
-        } else {
-            trigger_error("Permission denied for $filename");
-        }
-    }
-
-    /**
-     * @param string $date
-     * @param array $lines
-     */
-    public function createApache(string $date, array $lines)
-    {
-        $data = "# " . $this->projectUrl . "\n# Updated " . $date . "\n\n" .
-            "<IfModule mod_rewrite.c>\n\nRewriteEngine On\n\n";
-        foreach ($lines as $line) {
-            if ($line === end($lines)) {
-                $data .= "RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*" . preg_quote($line) . ".*$ [NC]\n";
-                break;
-            }
-
-            $data .= "RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*" . preg_quote($line) . ".*$ [NC,OR]\n";
-        }
-
-        $data .= "RewriteRule ^(.*)$ – [F,L]\n\n</IfModule>\n\n<IfModule mod_setenvif.c>\n\n";
-        foreach ($lines as $line) {
-            $data .= "SetEnvIfNoCase Referer " . preg_quote($line) . " spambot=yes\n";
-        }
-        $data .= "\n</IfModule>\n\n# Apache 2.2\n<IfModule !mod_authz_core.c>\n\t<IfModule mod_authz_host.c>\n\t\t" .
-            "Order allow,deny\n\t\tAllow from all\n\t\tDeny from env=spambot\n\t</IfModule>\n</IfModule>\n# " .
-            "Apache 2.4\n<IfModule mod_authz_core.c>\n\t<RequireAll>" .
-            "\n\t\tRequire all granted\n\t\tRequire not env spambot\n\t</RequireAll>\n</IfModule>";
-
-        $this->writeToFile('.htaccess', $data);
-    }
-
-    /**
-     * @param string $date
-     * @param array $lines
-     */
-    public function createNginx(string $date, array $lines)
-    {
-        $data = "# " . $this->projectUrl . "\n# Updated " . $date . "\n#\n# /etc/nginx/referral-spam.conf\n#\n" .
-            "# With referral-spam.conf in /etc/nginx, include it globally from within /etc/nginx/nginx.conf:\n#\n" .
-            "#     include referral-spam.conf;\n#\n" .
-            "# Add the following to each /etc/nginx/site-available/your-site.conf that needs protection:\n#\n" .
-            "#      server {\n#        if (\$bad_referer) {\n#          return 444;\n#        }\n#      }\n" .
-            "#\nmap \$http_referer \$bad_referer {\n\tdefault 0;\n\n";
-        foreach ($lines as $line) {
-            $data .= "\t\"~*" . preg_quote($line) . "\" 1;\n";
-        }
-        $data .= "\n}";
-
-        $this->writeToFile('referral-spam.conf', $data);
-    }
-
-    /**
-     * @param string $date
-     * @param array $lines
-     */
-    public function createVarnish(string $date, array $lines)
-    {
-        $data = "# " . $this->projectUrl . "\n# Updated " . $date . "\nsub block_referral_spam {\n\tif (\n";
-        foreach ($lines as $line) {
-            if ($line === end($lines)) {
-                $data .= "\t\treq.http.Referer ~ \"(?i)" . preg_quote($line) . "\"\n";
-                break;
-            }
-
-            $data .= "\t\treq.http.Referer ~ \"(?i)" . preg_quote($line) . "\" ||\n";
-        }
-
-        $data .= "\t) {\n\t\t\treturn (synth(444, \"No Response\"));\n\t}\n}";
-
-        $this->writeToFile('referral-spam.vcl', $data);
-    }
-
-    /**
-     * @param string $date
-     * @param array $lines
-     */
-    public function createIIS(string $date, array $lines)
-    {
-        $data = "<!-- " . $this->projectUrl . " -->\n<!-- Updated " . $date . " -->\n" .
-            "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n" .
-            "<configuration>\n\t<system.webServer>\n\t\t<rewrite>\n\t\t\t<rules>\n";
-        foreach ($lines as $line) {
-
-            $data .= "\t\t\t\t<rule name=\"Referrer Spam " . $line . "\" stopProcessing=\"true\">" .
-                "<match url=\".*\" /><conditions><add input=\"{HTTP_REFERER}\" pattern=\"(" .
-                preg_quote($line) .
-                ")\"/></conditions><action type=\"AbortRequest\" /></rule>\n";
-        }
-
-        $data .= "\t\t\t</rules>\n\t\t</rewrite>\n\t</system.webServer>\n</configuration>";
-
-        $this->writeToFile('web.config', $data);
-    }
-
-
-    /**
-     * @param string $date
-     * @param array $lines
-     */
-    public function createuWSGI(string $date, array $lines)
-    {
-        $data = "# " . $this->projectUrl . "\n# Updated " . $date . "\n#\n" .
-            "# Put referral-spam.res in /path/to/vassals, then include it from within /path/to/vassals/vassal.ini:\n" .
-            "#\n# ini = referral_spam.res:blacklist_spam\n\n" .
-            "[blacklist_spam]\n";
-        foreach ($lines as $line) {
-            $data .= "route-referer = (?i)" . preg_quote($line) . " break:403 Forbidden\n";
-        }
-        $data .= "route-label = referral_spam";
-
-        $this->writeToFile('referral_spam.res', $data);
-    }
-
-    /**
-     * @param array $lines
-     */
-    public function createGoogleExclude(array $lines)
-    {
-
-        $regexLines = [];
-
-        foreach ($lines as $line) {
-            $regexLines[] = preg_quote($line);
-        }
-        $data = implode('|', $regexLines);
-
-        $googleLimit = 30000;
-        $dataLength = strlen($data);
-
-        // keep track of the last split
-        $lastPosition = 0;
-        for ($x = 1; $lastPosition < $dataLength; $x++) {
-
-            // already in the boundary limits?
-            if (($dataLength - $lastPosition) >= $googleLimit) {
-                // search for the last occurrence of | in the boundary limits
-                $pipePosition = strrpos(substr($data, $lastPosition, $googleLimit), '|');
-
-                $dataSplit = substr($data, $lastPosition, $pipePosition);
-
-                // without trailing pipe at the beginning of next round
-                $lastPosition = $lastPosition + $pipePosition + 1;
-            } else {
-                // Rest of the regex (no pipe at the end)
-                $dataSplit = substr($data, $lastPosition);
-                $lastPosition = $dataLength; // Break
-            }
-
-            $this->writeToFile('google-exclude-' . $x . '.txt', $dataSplit);
-        }
-
-    }
-
-    /**
-     * @param string $date
-     * @param array $lines
-     */
-    public function createCaddyfile(string $date, array $lines)
-    {
-      $redir_rules = "";
-
-      foreach ($lines as $line) {
-        if ( !empty($redir_rules ) ) $redir_rules .= "\n\t";
-        $redir_rules .= "if {>Referer} is $line";
-      }
-
-      $data = <<<EOT
-# $this->projectUrl
-# Updated $date
-#
-# Move this file next to your Caddy config file given through -conf, and include it by doing:
-#
-#     include ./referral-spam.caddy;
-#
-# Then start your caddy server. All the referrers will now be redirected to a 444 HTTP answer
-#
-redir 444 {
-	if_op or
-	$redir_rules
-}
-EOT;
-      $this->writeToFile('referral-spam.caddy', $data);
-    }
-
-    /**
-     * @param string $date
-     * @param array $lines
-     */
-    public function createCaddyfileV2(string $date, array $lines)
-    {
-      $redir_rules = [];
-
-      foreach ($lines as $line) {
-        $redir_rules[] = str_replace('.', '\.', $line);
-      }
-
-      $redir_rules = implode('|', $redir_rules);
-
-      $data = <<<EOT
-# $this->projectUrl
-# Updated $date
-#
-# Move this file next to your main Caddyfile, and include it by doing:
-#
-#     import ./referral-spam.caddy2
-#
-# Then start your caddy server. All the referrers will now be redirected to a 444 HTTP answer
-#
-@blocker {
-    header_regexp Referer "^$redir_rules$"
-}
-respond @blocker "Traffic blocked" 444 {
-     close
-}
-EOT;
-      $this->writeToFile('referral-spam.caddy2', $data);
     }
 }

@@ -1,5 +1,6 @@
 # https://github.com/Stevie-Ray/referrer-spam-blocker
-# Updated 2025-08-24 21:12:29
+# Updated 2025-08-24 23:18:10
+
 
 <IfModule mod_rewrite.c>
 
@@ -1121,7 +1122,6 @@ RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*e\-kwiaciarz\.pl.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*e\-stroymart\.kz.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*e2click\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*eandsgallery\.com.*$ [NC,OR]
-RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*eaplay\.ru/a00af605.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*eaptekaplus\.ru.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*earn\-from\-articles\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*earnian\-money\.info.*$ [NC,OR]
@@ -2246,7 +2246,6 @@ RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*lida\-ru\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*lider82\.ru.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*life\.biz\.ua.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*lifebyleese\.com.*$ [NC,OR]
-RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*lifehacĸer\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*lifespeaker\.ru.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*ligastavok\-in\.ru.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*light\.ifmo\.ru.*$ [NC,OR]
@@ -2714,7 +2713,6 @@ RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*oklogistic\.ru.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*okna\-systems\.pro.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*okno\.ooo.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*okoshkah\.com.*$ [NC,OR]
-RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*okout\.ru/a00af605.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*okroshki\.ru.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*oktube\.ru.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*oledonline\.xyz.*$ [NC,OR]
@@ -5614,7 +5612,6 @@ SetEnvIfNoCase Referer e\-kwiaciarz\.pl spambot=yes
 SetEnvIfNoCase Referer e\-stroymart\.kz spambot=yes
 SetEnvIfNoCase Referer e2click\.com spambot=yes
 SetEnvIfNoCase Referer eandsgallery\.com spambot=yes
-SetEnvIfNoCase Referer eaplay\.ru/a00af605 spambot=yes
 SetEnvIfNoCase Referer eaptekaplus\.ru spambot=yes
 SetEnvIfNoCase Referer earn\-from\-articles\.com spambot=yes
 SetEnvIfNoCase Referer earnian\-money\.info spambot=yes
@@ -6739,7 +6736,6 @@ SetEnvIfNoCase Referer lida\-ru\.com spambot=yes
 SetEnvIfNoCase Referer lider82\.ru spambot=yes
 SetEnvIfNoCase Referer life\.biz\.ua spambot=yes
 SetEnvIfNoCase Referer lifebyleese\.com spambot=yes
-SetEnvIfNoCase Referer lifehacĸer\.com spambot=yes
 SetEnvIfNoCase Referer lifespeaker\.ru spambot=yes
 SetEnvIfNoCase Referer ligastavok\-in\.ru spambot=yes
 SetEnvIfNoCase Referer light\.ifmo\.ru spambot=yes
@@ -7207,7 +7203,6 @@ SetEnvIfNoCase Referer oklogistic\.ru spambot=yes
 SetEnvIfNoCase Referer okna\-systems\.pro spambot=yes
 SetEnvIfNoCase Referer okno\.ooo spambot=yes
 SetEnvIfNoCase Referer okoshkah\.com spambot=yes
-SetEnvIfNoCase Referer okout\.ru/a00af605 spambot=yes
 SetEnvIfNoCase Referer okroshki\.ru spambot=yes
 SetEnvIfNoCase Referer oktube\.ru spambot=yes
 SetEnvIfNoCase Referer oledonline\.xyz spambot=yes
