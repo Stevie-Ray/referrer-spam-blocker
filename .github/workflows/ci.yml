@@ -48,15 +48,6 @@ jobs:
     - name: Run tests with coverage
       run: composer run test-coverage
 
-    - name: Upload coverage to Codecov
-      if: matrix.php == '8.4'
-      uses: codecov/codecov-action@v4
-      with:
-        file: ./coverage.xml
-        flags: unittests
-        name: codecov-umbrella
-        fail_ci_if_error: true
-
   security:
     name: Security Audit
     runs-on: ubuntu-latest
