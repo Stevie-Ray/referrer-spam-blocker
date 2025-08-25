@@ -92,9 +92,16 @@ jobs:
     - name: Generate configuration files
       run: composer generate
 
+    - name: Bump version and push tag
+      id: create_tag
+      uses: mathieudutour/github-tag-action@v6.0
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+
     - name: Create Release
       uses: softprops/action-gh-release@v2
       with:
+        tag_name: ${{ steps.create_tag.outputs.new_tag }}
         generate_release_notes: true
         files: |
           *.conf
