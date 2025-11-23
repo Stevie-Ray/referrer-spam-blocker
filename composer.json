@@ -1,6 +1,6 @@
 {
   "name": "stevie-ray/referrer-spam-blocker",
-  "description": "Apache, Nginx, IIS, uWSGI & Varnish blacklist plus Google Analytics segment to prevent referrer spam traffic",
+  "description": "Apache, Nginx, IIS, uWSGI, Varnish, HAProxy, Traefik & Lighttpd blacklist plus Google Analytics segment to prevent referrer spam traffic",
   "keywords": [
     "spam",
     "blacklist",
@@ -11,7 +11,10 @@
     "nginx",
     "varnish",
     "iis",
-    "uwsgi"
+    "uwsgi",
+    "haproxy",
+    "traefik",
+    "lighttpd"
   ],
   "license": "MIT",
   "authors": [
@@ -26,13 +29,12 @@
     "algo26-matthias/idna-convert": "^4.2.1"
   },
   "require-dev": {
-    "phpunit/phpunit": "^12.3",
+    "phpunit/phpunit": "^12.4",
     "phpstan/phpstan": "^2.1",
-    "squizlabs/php_codesniffer": "^3.7",
-    "php-coveralls/php-coveralls": "^2.8",
+    "squizlabs/php_codesniffer": "^4.0",
+    "php-coveralls/php-coveralls": "^2.9",
     "vimeo/psalm": "^6.13",
-    "friendsofphp/php-cs-fixer": "^3.86",
-    "phpcompatibility/php-compatibility": "^9.3"
+    "friendsofphp/php-cs-fixer": "^3.90"
   },
   "suggest":  {
     "ext-mbstring": "Install ext/mbstring for using input / output other than UTF-8 or ISO-8859-1",

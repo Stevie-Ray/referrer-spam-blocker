@@ -1,5 +1,5 @@
 # https://github.com/Stevie-Ray/referrer-spam-blocker
-# Updated 2025-08-24 23:18:10
+# Updated 2025-11-23 21:50:41
 
 #
 # Put referral-spam.res in /path/to/vassals, then include it from within
@@ -1132,6 +1132,7 @@ route-referer = (?i)earnity\-money\.info break:403 Forbidden
 route-referer = (?i)easycommerce\.cf break:403 Forbidden
 route-referer = (?i)easync\.io break:403 Forbidden
 route-referer = (?i)easytuningshop\.ru break:403 Forbidden
+route-referer = (?i)eavuinsr\.online break:403 Forbidden
 route-referer = (?i)ecblog\.xyz break:403 Forbidden
 route-referer = (?i)ecommerce\-seo\.com break:403 Forbidden
 route-referer = (?i)ecommerce\-seo\.org break:403 Forbidden
@@ -1394,6 +1395,7 @@ route-referer = (?i)firstblog\.top break:403 Forbidden
 route-referer = (?i)fit\-discount\.ru break:403 Forbidden
 route-referer = (?i)fitness\-video\.net break:403 Forbidden
 route-referer = (?i)fitodar\.com\.ua break:403 Forbidden
+route-referer = (?i)fiuagts\.online break:403 Forbidden
 route-referer = (?i)fiuxy\.com break:403 Forbidden
 route-referer = (?i)fiverr\.com break:403 Forbidden
 route-referer = (?i)fix\-website\-errors\.com break:403 Forbidden
@@ -1581,6 +1583,7 @@ route-referer = (?i)getpy\-more\-free\-visitors\.info break:403 Forbidden
 route-referer = (?i)getrichquick\.ml break:403 Forbidden
 route-referer = (?i)getrichquickly\.info break:403 Forbidden
 route-referer = (?i)getyourprofit\.net break:403 Forbidden
+route-referer = (?i)gevciamst\.online break:403 Forbidden
 route-referer = (?i)gezlev\.com\.ua break:403 Forbidden
 route-referer = (?i)gfaq\.ru break:403 Forbidden
 route-referer = (?i)ghazel\.ru break:403 Forbidden
@@ -2843,6 +2846,7 @@ route-referer = (?i)petrushka\-restoran\.ru break:403 Forbidden
 route-referer = (?i)petscar\.ru break:403 Forbidden
 route-referer = (?i)pfrf\-kabinet\.ru break:403 Forbidden
 route-referer = (?i)pharm\-\-shop\.ru break:403 Forbidden
+route-referer = (?i)phimarshcer\.online break:403 Forbidden
 route-referer = (?i)phimmakinhdi\.com break:403 Forbidden
 route-referer = (?i)phobia\.us break:403 Forbidden
 route-referer = (?i)photo\-clip\.ru break:403 Forbidden

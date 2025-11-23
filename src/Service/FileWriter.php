@@ -8,9 +8,9 @@ use RuntimeException;
 
 class FileWriter
 {
-    private string $outputDirectory;
+    private readonly string $outputDirectory;
 
-    private int $filePermissions;
+    private readonly int $filePermissions;
 
     public function __construct(string $outputDirectory, int $filePermissions = 0644)
     {

@@ -9,7 +9,19 @@ use RuntimeException;
 
 class CommandLineInterface
 {
-    private const array SUPPORTED_TYPES = ['apache', 'nginx', 'varnish', 'iis', 'uwsgi', 'caddy', 'caddy2', 'google'];
+    private const array SUPPORTED_TYPES = [
+        'apache',
+        'nginx',
+        'varnish',
+        'iis',
+        'uwsgi',
+        'caddy',
+        'caddy2',
+        'haproxy',
+        'traefik',
+        'lighttpd',
+        'google',
+    ];
 
     /**
      * @param array<int, string> $argv
@@ -39,7 +51,7 @@ class CommandLineInterface
                 return 0;
             }
 
-            if (count($options['types']) > 0) {
+            if ($options['types'] !== []) {
                 $generator->generateSpecificConfigs($options['types']);
                 echo 'Generated specific configuration files: ' . implode(', ', $options['types']) . "\n";
             } else {
@@ -84,61 +96,62 @@ class CommandLineInterface
         for ($i = 0; $i < count($args); $i++) {
             $arg = $args[$i];
 
-            switch ($arg) {
-                case '--help':
-                case '-h':
-                    $options['help'] = true;
-
-                    break;
-
-                case '--version':
-                case '-v':
-                    $options['version'] = true;
-
-                    break;
-
-                case '--dry-run':
-                    $options['dry-run'] = true;
-
-                    break;
-
-                case '--output':
-                case '-o':
-                    if (isset($args[$i + 1])) {
-                        $options['output'] = $args[++$i];
-                    } else {
-                        throw new RuntimeException('--output requires a directory path');
-                    }
-
-                    break;
-
-                case '--types':
-                case '-t':
-                    if (isset($args[$i + 1])) {
-                        $types = explode(',', $args[++$i]);
-                        $types = array_map('trim', $types);
-
-                        foreach ($types as $type) {
-                            if (!in_array($type, self::SUPPORTED_TYPES)) {
-                                throw new RuntimeException(
-                                    "Unsupported type: $type. Supported types: " . implode(', ', self::SUPPORTED_TYPES)
-                                );
-                            }
-                        }
-
-                        $options['types'] = $types;
-                    } else {
-                        throw new RuntimeException('--types requires a comma-separated list');
-                    }
-
-                    break;
-
-                default:
-                    throw new RuntimeException("Unknown option: $arg");
-            }
+            match ($arg) {
+                '--help', '-h' => $options['help'] = true,
+                '--version', '-v' => $options['version'] = true,
+                '--dry-run' => $options['dry-run'] = true,
+                '--output', '-o' => $this->handleOutputOption($args, $i, $options),
+                '--types', '-t' => $this->handleTypesOption($args, $i, $options),
+                default => throw new RuntimeException("Unknown option: $arg"),
+            };
         }
 
         return $options;
+    }
+
+    /**
+     * Handle --output option
+     *
+     * @param array<int, string> $args
+     * @param int $i
+     * @param array{help: bool, version: bool, 'dry-run': bool, output: string, types: array<int, string>} $options
+     * @return void
+     */
+    private function handleOutputOption(array $args, int &$i, array &$options): void
+    {
+        if (isset($args[$i + 1])) {
+            $options['output'] = $args[++$i];
+        } else {
+            throw new RuntimeException('--output requires a directory path');
+        }
+    }
+
+    /**
+     * Handle --types option
+     *
+     * @param array<int, string> $args
+     * @param int $i
+     * @param array{help: bool, version: bool, 'dry-run': bool, output: string, types: array<int, string>} $options
+     * @return void
+     */
+    private function handleTypesOption(array $args, int &$i, array &$options): void
+    {
+        if (isset($args[$i + 1])) {
+            $types = explode(',', $args[++$i]);
+            $types = array_map('trim', $types);
+
+            foreach ($types as $type) {
+                if (!in_array($type, self::SUPPORTED_TYPES, true)) {
+                    throw new RuntimeException(
+                        "Unsupported type: $type. Supported types: " . implode(', ', self::SUPPORTED_TYPES)
+                    );
+                }
+            }
+
+            $options['types'] = $types;
+        } else {
+            throw new RuntimeException('--types requires a comma-separated list');
+        }
     }
 
     /**
@@ -207,7 +220,7 @@ class CommandLineInterface
         echo '- Configuration files generated: ' . count($stats['generated_files']) . "\n";
         echo "- Output directory: {$stats['output_directory']}\n";
 
-        if (!empty($stats['generated_files'])) {
+        if ($stats['generated_files'] !== []) {
             echo "\nGenerated files:\n";
             foreach ($stats['generated_files'] as $file) {
                 echo "- $file\n";

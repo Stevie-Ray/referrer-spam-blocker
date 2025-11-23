@@ -57,7 +57,7 @@ class CaddyConfigGenerator extends AbstractConfigGenerator
         $redirRules = '';
 
         foreach ($domains as $domain) {
-            if (!empty($redirRules)) {
+            if ($redirRules !== '') {
                 $redirRules .= "\n\t";
             }
             $redirRules .= 'if {>Referer} is ' . $domain;

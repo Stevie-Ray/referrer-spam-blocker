@@ -15,11 +15,11 @@ class DomainProcessor
     private const string DEFAULT_DOMAINS_FILE = __DIR__ . '/../domains.txt';
     private const string IDN_PATTERN = '/[А-Яа-яЁёöɢ]/u';
 
-    private string $domainsFile;
+    private readonly string $domainsFile;
 
-    private ToIdn $idnConverter;
+    private readonly ToIdn $idnConverter;
 
-    private ToUtf8 $encodingHelper;
+    private readonly ToUtf8 $encodingHelper;
 
     public function __construct(?string $domainsFile = null)
     {
@@ -66,7 +66,7 @@ class DomainProcessor
             $cleanedLine = preg_replace('/\s\s+/', ' ', $line);
             if ($cleanedLine !== null) {
                 $domain = trim($cleanedLine);
-                if (!empty($domain)) {
+                if ($domain !== '') {
                     $domains[] = $domain;
                 }
             }
@@ -110,7 +110,7 @@ class DomainProcessor
     {
         $domain = trim($domain);
 
-        if (empty($domain)) {
+        if ($domain === '') {
             return null;
         }
 
@@ -138,12 +138,12 @@ class DomainProcessor
     private function isValidDomain(string $domain): bool
     {
         // Basic domain validation - can be enhanced with more sophisticated checks
-        return !empty($domain) &&
+        return $domain !== '' &&
                strlen($domain) <= 253 &&
                preg_match(
                    '/^[a-zA-Z0-9]([a-zA-Z0-9\-]*[a-zA-Z0-9])?(\.[a-zA-Z0-9]([a-zA-Z0-9\-]*[a-zA-Z0-9])?)*$/',
                    $domain
-               );
+               ) === 1;
     }
 
     /**

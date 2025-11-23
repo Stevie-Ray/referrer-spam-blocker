@@ -1,6 +1,6 @@
 <h1 align="center">Referrer Spam Blocker :robot:</h1>
 
-<p align="center">Apache, Nginx, IIS, uWSGI, Caddy & Varnish blacklist + Google Analytics segments to prevent referrer spam traffic</p>
+<p align="center">Apache, Nginx, IIS, uWSGI, Caddy, Varnish, HAProxy, Traefik & Lighttpd blacklist + Google Analytics segments to prevent referrer spam traffic</p>
 
 <br />
 
@@ -82,6 +82,40 @@ acl spam_referer hdr_sub(referer) -i -f /etc/haproxy/referral-spam.haproxy
 http-request deny if spam_referer
 ```
 
+## Traefik: referral-spam.traefik.yml
+
+Traefik doesn't have native support for blocking based on Referer header. You'll need to use a Traefik plugin or custom middleware.
+
+The generated file contains a YAML list of domains that should be blocked. Use this with:
+- A Traefik plugin that supports Referer header blocking
+- A ForwardAuth middleware pointing to a service that checks the Referer header
+- A custom middleware implementation
+
+See the generated file for detailed instructions and example configurations.
+
+## Lighttpd: referral-spam.lighttpd.conf
+
+Include this file in your main `lighttpd.conf`:
+
+```conf
+include "referral-spam.lighttpd.conf"
+```
+
+Make sure `mod_rewrite` is enabled in your `server.modules`:
+
+```conf
+server.modules = ("mod_rewrite", ...)
+```
+
+The configuration blocks referrer spam by redirecting requests with spam referrers. For better performance with large domain lists, consider using `mod_magnet`.
+
+## OpenLiteSpeed: .htaccess
+
+OpenLiteSpeed is Apache-compatible and supports `.htaccess` files. Simply use the Apache `.htaccess` file (see Apache section above).
+
+Make sure `mod_rewrite` is enabled in your OpenLiteSpeed configuration:
+- Admin Panel > Server > Modules > mod_rewrite (enable)
+
 ## Options for Google Analytics 'ghost' spam
 
 The above methods don't stop the Google Analytics **ghost** referral spam (because they are hitting Analytics directly and don't touching your website). You should use filters in Analytics to prevent **ghost** referral spam and hide spam form the **past**. 
@@ -114,7 +148,7 @@ php run.php --dry-run
 php run.php --output /path/to/configs
 
 # Options: -h (help), -v (version), --dry-run, -o (output), -t (types)
-# Supported types: apache, nginx, varnish, iis, uwsgi, caddy, caddy2, google
+# Supported types: apache, nginx, varnish, iis, uwsgi, caddy, caddy2, haproxy, traefik, lighttpd, google
 ```
 
 ## Testing
@@ -169,6 +203,18 @@ ADD https://raw.githubusercontent.com/Stevie-Ray/referrer-spam-blocker/master/re
 
 # uWSGI: Download referral_spam.res to /sitepath/ (change sitepath accordingly)
 ADD https://raw.githubusercontent.com/Stevie-Ray/referrer-spam-blocker/master/referral_spam.res /sitepath/
+
+# HAProxy: Download referral-spam.haproxy to /etc/haproxy/
+ADD https://raw.githubusercontent.com/Stevie-Ray/referrer-spam-blocker/master/referral-spam.haproxy /etc/haproxy/
+
+# Traefik: Download referral-spam.traefik.yml to /sitepath/ (use with Traefik plugin)
+ADD https://raw.githubusercontent.com/Stevie-Ray/referrer-spam-blocker/master/referral-spam.traefik.yml /sitepath/
+
+# Lighttpd: Download referral-spam.lighttpd.conf to /etc/lighttpd/
+ADD https://raw.githubusercontent.com/Stevie-Ray/referrer-spam-blocker/master/referral-spam.lighttpd.conf /etc/lighttpd/
+
+# OpenLiteSpeed: Use the Apache .htaccess file (OpenLiteSpeed is Apache-compatible)
+ADD https://raw.githubusercontent.com/Stevie-Ray/referrer-spam-blocker/master/.htaccess /sitepath/
 ```
 
 ## Like it?

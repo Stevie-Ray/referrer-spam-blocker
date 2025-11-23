@@ -30,7 +30,7 @@ class GeneratorTest extends TestCase
     {
         $generators = $this->generator->getConfigGenerators();
 
-        $this->assertCount(8, $generators); // 8 different config types
+        $this->assertCount(11, $generators); // 11 different config types
 
         foreach ($generators as $generator) {
             $this->assertInstanceOf(ConfigGeneratorInterface::class, $generator);
@@ -51,7 +51,7 @@ class GeneratorTest extends TestCase
         $this->assertIsString($stats['output_directory']);
         $this->assertIsArray($stats['generated_files']);
 
-        $this->assertEquals(8, $stats['config_files']); // 8 different config types
+        $this->assertEquals(11, $stats['config_files']); // 11 different config types
         $this->assertEquals($this->tempDir, $stats['output_directory']);
     }
 
@@ -109,6 +109,9 @@ class GeneratorTest extends TestCase
             'referral_spam.res',
             'referral-spam.caddy',
             'referral-spam.caddy2',
+            'referral-spam.haproxy',
+            'referral-spam.traefik.yml',
+            'referral-spam.lighttpd.conf',
         ];
 
         foreach ($expectedFiles as $file) {
@@ -132,6 +135,9 @@ class GeneratorTest extends TestCase
             'referral_spam.res',
             'referral-spam.caddy',
             'referral-spam.caddy2',
+            'referral-spam.haproxy',
+            'referral-spam.traefik.yml',
+            'referral-spam.lighttpd.conf',
         ];
 
         foreach ($files as $file) {
@@ -157,6 +163,9 @@ class GeneratorTest extends TestCase
             'referral_spam.res',
             'referral-spam.caddy',
             'referral-spam.caddy2',
+            'referral-spam.haproxy',
+            'referral-spam.traefik.yml',
+            'referral-spam.lighttpd.conf',
         ];
 
         foreach ($files as $file) {

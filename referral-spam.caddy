@@ -1,5 +1,5 @@
 # https://github.com/Stevie-Ray/referrer-spam-blocker
-# Updated 2025-08-24 23:18:10
+# Updated 2025-11-23 21:50:41
 
 #
 # Move this file next to your Caddy config file given through -conf, and include it by doing:
@@ -1134,6 +1134,7 @@ redir 444 {
 	if {>Referer} is easycommerce.cf
 	if {>Referer} is easync.io
 	if {>Referer} is easytuningshop.ru
+	if {>Referer} is eavuinsr.online
 	if {>Referer} is ecblog.xyz
 	if {>Referer} is ecommerce-seo.com
 	if {>Referer} is ecommerce-seo.org
@@ -1396,6 +1397,7 @@ redir 444 {
 	if {>Referer} is fit-discount.ru
 	if {>Referer} is fitness-video.net
 	if {>Referer} is fitodar.com.ua
+	if {>Referer} is fiuagts.online
 	if {>Referer} is fiuxy.com
 	if {>Referer} is fiverr.com
 	if {>Referer} is fix-website-errors.com
@@ -1583,6 +1585,7 @@ redir 444 {
 	if {>Referer} is getrichquick.ml
 	if {>Referer} is getrichquickly.info
 	if {>Referer} is getyourprofit.net
+	if {>Referer} is gevciamst.online
 	if {>Referer} is gezlev.com.ua
 	if {>Referer} is gfaq.ru
 	if {>Referer} is ghazel.ru
@@ -2845,6 +2848,7 @@ redir 444 {
 	if {>Referer} is petscar.ru
 	if {>Referer} is pfrf-kabinet.ru
 	if {>Referer} is pharm--shop.ru
+	if {>Referer} is phimarshcer.online
 	if {>Referer} is phimmakinhdi.com
 	if {>Referer} is phobia.us
 	if {>Referer} is photo-clip.ru

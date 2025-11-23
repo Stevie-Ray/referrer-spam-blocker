@@ -16,18 +16,21 @@ use StevieRay\Config\UwsgiConfigGenerator;
 use StevieRay\Config\CaddyConfigGenerator;
 use StevieRay\Config\CaddyV2ConfigGenerator;
 use StevieRay\Config\GoogleAnalyticsConfigGenerator;
+use StevieRay\Config\HAProxyConfigGenerator;
+use StevieRay\Config\TraefikConfigGenerator;
+use StevieRay\Config\LighttpdConfigGenerator;
 use Algo26\IdnaConvert\Exception\AlreadyPunycodeException;
 use Algo26\IdnaConvert\Exception\InvalidCharacterException;
 use RuntimeException;
 
 class Generator
 {
-    private DomainProcessor $domainProcessor;
+    private readonly DomainProcessor $domainProcessor;
 
-    private FileWriter $fileWriter;
+    private readonly FileWriter $fileWriter;
 
     /** @var array<ConfigGeneratorInterface> */
-    private array $configGenerators;
+    private readonly array $configGenerators;
 
     public function __construct(string $outputDirectory)
     {
@@ -99,6 +102,9 @@ class Generator
             new UwsgiConfigGenerator(),
             new CaddyConfigGenerator(),
             new CaddyV2ConfigGenerator(),
+            new HAProxyConfigGenerator(),
+            new TraefikConfigGenerator(),
+            new LighttpdConfigGenerator(),
             new GoogleAnalyticsConfigGenerator(),
         ];
     }
@@ -152,10 +158,8 @@ class Generator
                     $files[] = "google-exclude-{$index}.txt";
                     $index++;
                 }
-            } else {
-                if ($this->fileWriter->fileExists($generator->getFilename())) {
-                    $files[] = $generator->getFilename();
-                }
+            } elseif ($this->fileWriter->fileExists($generator->getFilename())) {
+                $files[] = $generator->getFilename();
             }
         }
 
@@ -182,7 +186,7 @@ class Generator
             $generatorType = strtolower($generator->getDescription());
 
             foreach ($allowedTypes as $type) {
-                if (strpos($generatorType, $type) !== false) {
+                if (str_contains($generatorType, $type)) {
                     $this->generateConfigFile($generator, $domains, $date);
 
                     break;

@@ -1,5 +1,5 @@
 # https://github.com/Stevie-Ray/referrer-spam-blocker
-# Updated 2025-08-24 23:18:10
+# Updated 2025-11-23 21:50:41
 
 sub block_referral_spam {
 	if (
@@ -1126,6 +1126,7 @@ sub block_referral_spam {
 		req.http.Referer ~ "(?i)easycommerce\.cf" ||
 		req.http.Referer ~ "(?i)easync\.io" ||
 		req.http.Referer ~ "(?i)easytuningshop\.ru" ||
+		req.http.Referer ~ "(?i)eavuinsr\.online" ||
 		req.http.Referer ~ "(?i)ecblog\.xyz" ||
 		req.http.Referer ~ "(?i)ecommerce\-seo\.com" ||
 		req.http.Referer ~ "(?i)ecommerce\-seo\.org" ||
@@ -1388,6 +1389,7 @@ sub block_referral_spam {
 		req.http.Referer ~ "(?i)fit\-discount\.ru" ||
 		req.http.Referer ~ "(?i)fitness\-video\.net" ||
 		req.http.Referer ~ "(?i)fitodar\.com\.ua" ||
+		req.http.Referer ~ "(?i)fiuagts\.online" ||
 		req.http.Referer ~ "(?i)fiuxy\.com" ||
 		req.http.Referer ~ "(?i)fiverr\.com" ||
 		req.http.Referer ~ "(?i)fix\-website\-errors\.com" ||
@@ -1575,6 +1577,7 @@ sub block_referral_spam {
 		req.http.Referer ~ "(?i)getrichquick\.ml" ||
 		req.http.Referer ~ "(?i)getrichquickly\.info" ||
 		req.http.Referer ~ "(?i)getyourprofit\.net" ||
+		req.http.Referer ~ "(?i)gevciamst\.online" ||
 		req.http.Referer ~ "(?i)gezlev\.com\.ua" ||
 		req.http.Referer ~ "(?i)gfaq\.ru" ||
 		req.http.Referer ~ "(?i)ghazel\.ru" ||
@@ -2837,6 +2840,7 @@ sub block_referral_spam {
 		req.http.Referer ~ "(?i)petscar\.ru" ||
 		req.http.Referer ~ "(?i)pfrf\-kabinet\.ru" ||
 		req.http.Referer ~ "(?i)pharm\-\-shop\.ru" ||
+		req.http.Referer ~ "(?i)phimarshcer\.online" ||
 		req.http.Referer ~ "(?i)phimmakinhdi\.com" ||
 		req.http.Referer ~ "(?i)phobia\.us" ||
 		req.http.Referer ~ "(?i)photo\-clip\.ru" ||

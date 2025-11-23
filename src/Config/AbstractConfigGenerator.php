@@ -39,7 +39,7 @@ abstract class AbstractConfigGenerator implements ConfigGeneratorInterface
      */
     protected function validateDomains(array $domains): void
     {
-        if (empty($domains)) {
+        if ($domains === []) {
             throw new \InvalidArgumentException('Domains array cannot be empty');
         }
     }
@@ -52,6 +52,6 @@ abstract class AbstractConfigGenerator implements ConfigGeneratorInterface
      */
     protected function formatDomains(array $domains): array
     {
-        return array_map([$this, 'escapeDomain'], $domains);
+        return array_map($this->escapeDomain(...), $domains);
     }
 }
