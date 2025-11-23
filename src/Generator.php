@@ -17,7 +17,6 @@ use StevieRay\Config\CaddyConfigGenerator;
 use StevieRay\Config\CaddyV2ConfigGenerator;
 use StevieRay\Config\GoogleAnalyticsConfigGenerator;
 use StevieRay\Config\HAProxyConfigGenerator;
-use StevieRay\Config\TraefikConfigGenerator;
 use StevieRay\Config\LighttpdConfigGenerator;
 use Algo26\IdnaConvert\Exception\AlreadyPunycodeException;
 use Algo26\IdnaConvert\Exception\InvalidCharacterException;
@@ -103,7 +102,6 @@ class Generator
             new CaddyConfigGenerator(),
             new CaddyV2ConfigGenerator(),
             new HAProxyConfigGenerator(),
-            new TraefikConfigGenerator(),
             new LighttpdConfigGenerator(),
             new GoogleAnalyticsConfigGenerator(),
         ];

@@ -18,7 +18,6 @@ class CommandLineInterface
         'caddy',
         'caddy2',
         'haproxy',
-        'traefik',
         'lighttpd',
         'google',
     ];

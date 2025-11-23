@@ -2,7 +2,7 @@
 
 ## Project Overview
 
-This is the **Referrer Spam Blocker** project - a PHP library that generates configuration files for various web servers (Apache, Nginx, IIS, uWSGI, Caddy, Varnish, HAProxy, Traefik, Lighttpd) and Google Analytics segments to block referrer spam traffic. OpenLiteSpeed users should use the Apache .htaccess file as OpenLiteSpeed is Apache-compatible.
+This is the **Referrer Spam Blocker** project - a PHP library that generates configuration files for various web servers (Apache, Nginx, IIS, uWSGI, Caddy, Varnish, HAProxy, Lighttpd) and Google Analytics segments to block referrer spam traffic. OpenLiteSpeed users should use the Apache .htaccess file as OpenLiteSpeed is Apache-compatible.
 
 ### Key Details
 
@@ -104,7 +104,6 @@ Each server type has its own generator class:
 - `CaddyConfigGenerator` / `CaddyV2ConfigGenerator` → Caddy configs
 - `UwsgiConfigGenerator` → `referral_spam.res`
 - `HAProxyConfigGenerator` → `referral-spam.haproxy`
-- `TraefikConfigGenerator` → `referral-spam.traefik.yml`
 - `LighttpdConfigGenerator` → `referral-spam.lighttpd.conf`
 - `GoogleAnalyticsConfigGenerator` → `google-exclude-*.txt` (split files)
 

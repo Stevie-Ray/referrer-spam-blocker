@@ -1,6 +1,6 @@
 <h1 align="center">Referrer Spam Blocker :robot:</h1>
 
-<p align="center">Apache, Nginx, IIS, uWSGI, Caddy, Varnish, HAProxy, Traefik & Lighttpd blacklist + Google Analytics segments to prevent referrer spam traffic</p>
+<p align="center">Apache, Nginx, IIS, uWSGI, Caddy, Varnish, HAProxy & Lighttpd blacklist + Google Analytics segments to prevent referrer spam traffic</p>
 
 <br />
 
@@ -82,17 +82,6 @@ acl spam_referer hdr_sub(referer) -i -f /etc/haproxy/referral-spam.haproxy
 http-request deny if spam_referer
 ```
 
-## Traefik: referral-spam.traefik.yml
-
-Traefik doesn't have native support for blocking based on Referer header. You'll need to use a Traefik plugin or custom middleware.
-
-The generated file contains a YAML list of domains that should be blocked. Use this with:
-- A Traefik plugin that supports Referer header blocking
-- A ForwardAuth middleware pointing to a service that checks the Referer header
-- A custom middleware implementation
-
-See the generated file for detailed instructions and example configurations.
-
 ## Lighttpd: referral-spam.lighttpd.conf
 
 Include this file in your main `lighttpd.conf`:
@@ -148,7 +137,7 @@ php run.php --dry-run
 php run.php --output /path/to/configs
 
 # Options: -h (help), -v (version), --dry-run, -o (output), -t (types)
-# Supported types: apache, nginx, varnish, iis, uwsgi, caddy, caddy2, haproxy, traefik, lighttpd, google
+# Supported types: apache, nginx, varnish, iis, uwsgi, caddy, caddy2, haproxy, lighttpd, google
 ```
 
 ## Testing
@@ -206,9 +195,6 @@ ADD https://raw.githubusercontent.com/Stevie-Ray/referrer-spam-blocker/master/re
 
 # HAProxy: Download referral-spam.haproxy to /etc/haproxy/
 ADD https://raw.githubusercontent.com/Stevie-Ray/referrer-spam-blocker/master/referral-spam.haproxy /etc/haproxy/
-
-# Traefik: Download referral-spam.traefik.yml to /sitepath/ (use with Traefik plugin)
-ADD https://raw.githubusercontent.com/Stevie-Ray/referrer-spam-blocker/master/referral-spam.traefik.yml /sitepath/
 
 # Lighttpd: Download referral-spam.lighttpd.conf to /etc/lighttpd/
 ADD https://raw.githubusercontent.com/Stevie-Ray/referrer-spam-blocker/master/referral-spam.lighttpd.conf /etc/lighttpd/

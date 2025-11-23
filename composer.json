@@ -1,6 +1,6 @@
 {
   "name": "stevie-ray/referrer-spam-blocker",
-  "description": "Apache, Nginx, IIS, uWSGI, Varnish, HAProxy, Traefik & Lighttpd blacklist plus Google Analytics segment to prevent referrer spam traffic",
+  "description": "Apache, Nginx, IIS, uWSGI, Varnish, HAProxy & Lighttpd blacklist plus Google Analytics segment to prevent referrer spam traffic",
   "keywords": [
     "spam",
     "blacklist",
@@ -13,7 +13,6 @@
     "iis",
     "uwsgi",
     "haproxy",
-    "traefik",
     "lighttpd"
   ],
   "license": "MIT",
