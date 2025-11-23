@@ -19,10 +19,11 @@
 
 ## Nginx: referral-spam.conf
 
-With `referral-spam.conf` in `/etc/nginx`, include it globally from within `/etc/nginx/nginx.conf`:
+**IMPORTANT:** You must increase the map hash bucket size to support the large domain list. With `referral-spam.conf` in `/etc/nginx`, include it globally from within `/etc/nginx/nginx.conf`:
 
 ```conf
 http {
+	map_hash_bucket_size 128;
 	include referral-spam.conf;
 }
 ```
@@ -37,6 +38,7 @@ server {
 }
 ```
 
+**Performance Note:** This configuration uses a performance-optimized approach with hostname matching instead of thousands of regex patterns. Only one regex is evaluated per request to extract the domain from the Referer header, significantly improving NGINX performance compared to traditional regex-based blocking methods.
 
 ## Varnish: .refferal-spam.vcl
 
