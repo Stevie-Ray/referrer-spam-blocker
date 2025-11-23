@@ -1,5 +1,5 @@
 # https://github.com/Stevie-Ray/referrer-spam-blocker
-# Updated 2025-11-23 21:50:41
+# Updated 2025-11-23 22:10:51
 
 #
 # Use it in your HAProxy config by adding all domains.txt items,
@@ -3150,6 +3150,7 @@ rfd\-split\.hr
 rfesc\.net
 rialp\.getenjoyment\.net
 richinvestmonitor\.com
+rida\.tokyo
 riedismall\.xyz
 rietisvi\.co
 rightenergysolutions\.com\.au
@@ -3606,6 +3607,7 @@ startufa\.ru
 startwp\.org
 stat\.lviv\.ua
 statashop\.xyz
+static\.seders\.website
 statustroll\.com
 stauga\.altervista\.org
 stavimdveri\.ru

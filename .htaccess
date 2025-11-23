@@ -1,5 +1,5 @@
 # https://github.com/Stevie-Ray/referrer-spam-blocker
-# Updated 2025-11-23 21:50:41
+# Updated 2025-11-23 22:10:51
 
 
 <IfModule mod_rewrite.c>
@@ -3147,6 +3147,7 @@ RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*rfd\-split\.hr.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*rfesc\.net.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*rialp\.getenjoyment\.net.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*richinvestmonitor\.com.*$ [NC,OR]
+RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*rida\.tokyo.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*riedismall\.xyz.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*rietisvi\.co.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*rightenergysolutions\.com\.au.*$ [NC,OR]
@@ -3603,6 +3604,7 @@ RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*startufa\.ru.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*startwp\.org.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*stat\.lviv\.ua.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*statashop\.xyz.*$ [NC,OR]
+RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*static\.seders\.website.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*statustroll\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*stauga\.altervista\.org.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*stavimdveri\.ru.*$ [NC,OR]
@@ -7641,6 +7643,7 @@ SetEnvIfNoCase Referer rfd\-split\.hr spambot=yes
 SetEnvIfNoCase Referer rfesc\.net spambot=yes
 SetEnvIfNoCase Referer rialp\.getenjoyment\.net spambot=yes
 SetEnvIfNoCase Referer richinvestmonitor\.com spambot=yes
+SetEnvIfNoCase Referer rida\.tokyo spambot=yes
 SetEnvIfNoCase Referer riedismall\.xyz spambot=yes
 SetEnvIfNoCase Referer rietisvi\.co spambot=yes
 SetEnvIfNoCase Referer rightenergysolutions\.com\.au spambot=yes
@@ -8097,6 +8100,7 @@ SetEnvIfNoCase Referer startufa\.ru spambot=yes
 SetEnvIfNoCase Referer startwp\.org spambot=yes
 SetEnvIfNoCase Referer stat\.lviv\.ua spambot=yes
 SetEnvIfNoCase Referer statashop\.xyz spambot=yes
+SetEnvIfNoCase Referer static\.seders\.website spambot=yes
 SetEnvIfNoCase Referer statustroll\.com spambot=yes
 SetEnvIfNoCase Referer stauga\.altervista\.org spambot=yes
 SetEnvIfNoCase Referer stavimdveri\.ru spambot=yes

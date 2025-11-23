@@ -1,5 +1,5 @@
 # https://github.com/Stevie-Ray/referrer-spam-blocker
-# Updated 2025-11-23 21:50:41
+# Updated 2025-11-23 22:10:51
 
 sub block_referral_spam {
 	if (
@@ -3144,6 +3144,7 @@ sub block_referral_spam {
 		req.http.Referer ~ "(?i)rfesc\.net" ||
 		req.http.Referer ~ "(?i)rialp\.getenjoyment\.net" ||
 		req.http.Referer ~ "(?i)richinvestmonitor\.com" ||
+		req.http.Referer ~ "(?i)rida\.tokyo" ||
 		req.http.Referer ~ "(?i)riedismall\.xyz" ||
 		req.http.Referer ~ "(?i)rietisvi\.co" ||
 		req.http.Referer ~ "(?i)rightenergysolutions\.com\.au" ||
@@ -3600,6 +3601,7 @@ sub block_referral_spam {
 		req.http.Referer ~ "(?i)startwp\.org" ||
 		req.http.Referer ~ "(?i)stat\.lviv\.ua" ||
 		req.http.Referer ~ "(?i)statashop\.xyz" ||
+		req.http.Referer ~ "(?i)static\.seders\.website" ||
 		req.http.Referer ~ "(?i)statustroll\.com" ||
 		req.http.Referer ~ "(?i)stauga\.altervista\.org" ||
 		req.http.Referer ~ "(?i)stavimdveri\.ru" ||
