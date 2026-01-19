@@ -1,5 +1,5 @@
 # https://github.com/Stevie-Ray/referrer-spam-blocker
-# Updated 2025-11-23 22:42:02
+# Updated 2026-01-19 22:02:28
 
 #
 # Put referral-spam.res in /path/to/vassals, then include it from within
@@ -309,6 +309,7 @@ route-referer = (?i)ascotgoods\.xyz break:403 Forbidden
 route-referer = (?i)asia\-forum\.ru break:403 Forbidden
 route-referer = (?i)ask\-yug\.com break:403 Forbidden
 route-referer = (?i)asmxsatadriverin\.aircus\.com break:403 Forbidden
+route-referer = (?i)astimvnc\.online break:403 Forbidden
 route-referer = (?i)asupro\.com break:403 Forbidden
 route-referer = (?i)asynt\.net break:403 Forbidden
 route-referer = (?i)aszokshop\.xyz break:403 Forbidden
@@ -2159,10 +2160,12 @@ route-referer = (?i)kvartiry\-remont\.ucoz\.ru break:403 Forbidden
 route-referer = (?i)kw21\.org break:403 Forbidden
 route-referer = (?i)l2soft\.eu break:403 Forbidden
 route-referer = (?i)la\-fa\.ru break:403 Forbidden
+route-referer = (?i)labguamec\.online break:403 Forbidden
 route-referer = (?i)labplus\.ru break:403 Forbidden
 route-referer = (?i)labvis\.host\.sk break:403 Forbidden
 route-referer = (?i)ladov\.ru break:403 Forbidden
 route-referer = (?i)lafppshop\.xyz break:403 Forbidden
+route-referer = (?i)laitrcus\.online break:403 Forbidden
 route-referer = (?i)lakiikraski\.ru break:403 Forbidden
 route-referer = (?i)lalalove\.ru break:403 Forbidden
 route-referer = (?i)lambreshop\.xyz break:403 Forbidden
@@ -3087,6 +3090,7 @@ route-referer = (?i)rapidhits\.net break:403 Forbidden
 route-referer = (?i)rapidsites\.pro break:403 Forbidden
 route-referer = (?i)raschtextil\.com\.ua break:403 Forbidden
 route-referer = (?i)rasteniya\-vs\-zombi\.ru break:403 Forbidden
+route-referer = (?i)ratraiser\.online break:403 Forbidden
 route-referer = (?i)rattan\.co\.ua break:403 Forbidden
 route-referer = (?i)raymondblog\.top break:403 Forbidden
 route-referer = (?i)razamicroelectronics\.com break:403 Forbidden
@@ -3875,6 +3879,7 @@ route-referer = (?i)tpu\.ru break:403 Forbidden
 route-referer = (?i)track\-rankings\.online break:403 Forbidden
 route-referer = (?i)tracker24\-gps\.ru break:403 Forbidden
 route-referer = (?i)trade365\.org break:403 Forbidden
+route-referer = (?i)traderzplanet\.co\.in break:403 Forbidden
 route-referer = (?i)trafaret74\.ru break:403 Forbidden
 route-referer = (?i)trafers\.com break:403 Forbidden
 route-referer = (?i)traffic\-cash\.xyz break:403 Forbidden

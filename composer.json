@@ -28,12 +28,12 @@
     "algo26-matthias/idna-convert": "^4.2.1"
   },
   "require-dev": {
-    "phpunit/phpunit": "^12.4",
+    "phpunit/phpunit": "^12.5",
     "phpstan/phpstan": "^2.1",
     "squizlabs/php_codesniffer": "^4.0",
     "php-coveralls/php-coveralls": "^2.9",
-    "vimeo/psalm": "^6.13",
-    "friendsofphp/php-cs-fixer": "^3.90"
+    "vimeo/psalm": "^6.14",
+    "friendsofphp/php-cs-fixer": "^3.92"
   },
   "suggest":  {
     "ext-mbstring": "Install ext/mbstring for using input / output other than UTF-8 or ISO-8859-1",

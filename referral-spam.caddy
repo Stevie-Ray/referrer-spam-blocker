@@ -1,5 +1,5 @@
 # https://github.com/Stevie-Ray/referrer-spam-blocker
-# Updated 2025-11-23 22:42:02
+# Updated 2026-01-19 22:02:28
 
 #
 # Move this file next to your Caddy config file given through -conf, and include it by doing:
@@ -311,6 +311,7 @@ redir 444 {
 	if {>Referer} is asia-forum.ru
 	if {>Referer} is ask-yug.com
 	if {>Referer} is asmxsatadriverin.aircus.com
+	if {>Referer} is astimvnc.online
 	if {>Referer} is asupro.com
 	if {>Referer} is asynt.net
 	if {>Referer} is aszokshop.xyz
@@ -2161,10 +2162,12 @@ redir 444 {
 	if {>Referer} is kw21.org
 	if {>Referer} is l2soft.eu
 	if {>Referer} is la-fa.ru
+	if {>Referer} is labguamec.online
 	if {>Referer} is labplus.ru
 	if {>Referer} is labvis.host.sk
 	if {>Referer} is ladov.ru
 	if {>Referer} is lafppshop.xyz
+	if {>Referer} is laitrcus.online
 	if {>Referer} is lakiikraski.ru
 	if {>Referer} is lalalove.ru
 	if {>Referer} is lambreshop.xyz
@@ -3089,6 +3092,7 @@ redir 444 {
 	if {>Referer} is rapidsites.pro
 	if {>Referer} is raschtextil.com.ua
 	if {>Referer} is rasteniya-vs-zombi.ru
+	if {>Referer} is ratraiser.online
 	if {>Referer} is rattan.co.ua
 	if {>Referer} is raymondblog.top
 	if {>Referer} is razamicroelectronics.com
@@ -3877,6 +3881,7 @@ redir 444 {
 	if {>Referer} is track-rankings.online
 	if {>Referer} is tracker24-gps.ru
 	if {>Referer} is trade365.org
+	if {>Referer} is traderzplanet.co.in
 	if {>Referer} is trafaret74.ru
 	if {>Referer} is trafers.com
 	if {>Referer} is traffic-cash.xyz

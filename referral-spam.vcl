@@ -1,5 +1,5 @@
 # https://github.com/Stevie-Ray/referrer-spam-blocker
-# Updated 2025-11-23 22:42:02
+# Updated 2026-01-19 22:02:28
 
 sub block_referral_spam {
 	if (
@@ -303,6 +303,7 @@ sub block_referral_spam {
 		req.http.Referer ~ "(?i)asia\-forum\.ru" ||
 		req.http.Referer ~ "(?i)ask\-yug\.com" ||
 		req.http.Referer ~ "(?i)asmxsatadriverin\.aircus\.com" ||
+		req.http.Referer ~ "(?i)astimvnc\.online" ||
 		req.http.Referer ~ "(?i)asupro\.com" ||
 		req.http.Referer ~ "(?i)asynt\.net" ||
 		req.http.Referer ~ "(?i)aszokshop\.xyz" ||
@@ -2153,10 +2154,12 @@ sub block_referral_spam {
 		req.http.Referer ~ "(?i)kw21\.org" ||
 		req.http.Referer ~ "(?i)l2soft\.eu" ||
 		req.http.Referer ~ "(?i)la\-fa\.ru" ||
+		req.http.Referer ~ "(?i)labguamec\.online" ||
 		req.http.Referer ~ "(?i)labplus\.ru" ||
 		req.http.Referer ~ "(?i)labvis\.host\.sk" ||
 		req.http.Referer ~ "(?i)ladov\.ru" ||
 		req.http.Referer ~ "(?i)lafppshop\.xyz" ||
+		req.http.Referer ~ "(?i)laitrcus\.online" ||
 		req.http.Referer ~ "(?i)lakiikraski\.ru" ||
 		req.http.Referer ~ "(?i)lalalove\.ru" ||
 		req.http.Referer ~ "(?i)lambreshop\.xyz" ||
@@ -3081,6 +3084,7 @@ sub block_referral_spam {
 		req.http.Referer ~ "(?i)rapidsites\.pro" ||
 		req.http.Referer ~ "(?i)raschtextil\.com\.ua" ||
 		req.http.Referer ~ "(?i)rasteniya\-vs\-zombi\.ru" ||
+		req.http.Referer ~ "(?i)ratraiser\.online" ||
 		req.http.Referer ~ "(?i)rattan\.co\.ua" ||
 		req.http.Referer ~ "(?i)raymondblog\.top" ||
 		req.http.Referer ~ "(?i)razamicroelectronics\.com" ||
@@ -3869,6 +3873,7 @@ sub block_referral_spam {
 		req.http.Referer ~ "(?i)track\-rankings\.online" ||
 		req.http.Referer ~ "(?i)tracker24\-gps\.ru" ||
 		req.http.Referer ~ "(?i)trade365\.org" ||
+		req.http.Referer ~ "(?i)traderzplanet\.co\.in" ||
 		req.http.Referer ~ "(?i)trafaret74\.ru" ||
 		req.http.Referer ~ "(?i)trafers\.com" ||
 		req.http.Referer ~ "(?i)traffic\-cash\.xyz" ||

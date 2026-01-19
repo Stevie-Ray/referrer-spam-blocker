@@ -11,57 +11,58 @@ This is the **Referrer Spam Blocker** project - a PHP library that generates con
 - **Main Purpose**: Generate blacklist configuration files from a domain list to prevent referrer spam
 - **Output**: Configuration files for multiple web servers and Google Analytics exclusion lists
 
-## Development Environment: DDEV
+## Development Environment: Docker Compose
 
-This project uses **DDEV** for local development. DDEV is a Docker-based local development environment.
+This project uses **Docker Compose** for local development with a PHP 8.3 CLI container.
 
-### DDEV Configuration
+### Docker Configuration
 
-- **Project Name**: `referrer-spam-blocker`
-- **PHP Version**: 8.3
-- **Web Server**: nginx-fpm
-- **Database**: Not used (omitted in config)
-- **Composer Version**: 2
+- **PHP Version**: 8.3-cli
+- **Container Name**: `referrer-spam-blocker-php`
+- **Database**: Not used
+- **Composer**: Included in custom Dockerfile
 
-### Important DDEV Commands
-
-When working with this project, use DDEV commands to run PHP/Composer commands:
+### Quick Start
 
 ```bash
-# Start the DDEV environment
-ddev start
+# Build and start containers
+docker compose build
+docker compose up -d
 
-# Run composer commands
-ddev composer install
-ddev composer update
-ddev composer test
-ddev composer quality
+# Install dependencies
+docker compose exec php composer install
 
-# Run PHP scripts
-ddev exec php run.php
-ddev exec php vendor/bin/phpunit
-
-# Access the container shell
-ddev ssh
-
-# Stop the environment
-ddev stop
+# Generate config files
+docker compose exec php composer generate
 ```
 
-### DDEV Hooks
+### Common Commands
 
-The project has post-start hooks configured in `.ddev/config.yaml`:
-- Automatically runs `composer install` when DDEV starts
-- Automatically runs `php run.php` to generate config files
+```bash
+# Start containers
+docker compose up -d
 
-### Running Commands
+# Stop containers
+docker compose down
 
-**Always use `ddev exec` or `ddev composer`** instead of running commands directly, as PHP and Composer are inside the DDEV container, not on the host system.
+# Install dependencies
+docker compose exec php composer install
 
-Examples:
-- ❌ `composer install` → ✅ `ddev composer install`
-- ❌ `php run.php` → ✅ `ddev exec php run.php`
-- ❌ `phpunit` → ✅ `ddev exec php vendor/bin/phpunit`
+# Generate config files
+docker compose exec php composer generate
+
+# Run tests
+docker compose exec php composer test
+
+# Run all quality checks (PHPStan, PHPCS, Psalm, Tests)
+docker compose exec php composer quality
+
+# Access the container shell
+docker compose exec php sh
+
+# Rebuild containers (after Dockerfile changes)
+docker compose build
+```
 
 ## Project Structure
 
@@ -76,8 +77,8 @@ referrer-spam-blocker/
 ├── tests/
 │   ├── Unit/             # Unit tests
 │   └── Integration/      # Integration tests
-├── .ddev/                # DDEV configuration
-│   └── config.yaml       # DDEV project config
+├── Dockerfile            # Custom PHP 8.3 + Composer image
+├── docker-compose.yml    # Docker Compose configuration
 ├── composer.json         # PHP dependencies
 ├── phpcs.xml            # PHP CodeSniffer rules (PSR-12)
 ├── phpunit.xml          # PHPUnit configuration
@@ -114,12 +115,12 @@ Handles reading and processing the domain list from `src/domains.txt`.
 
 ## Development Workflow
 
-1. **Start DDEV**: `ddev start`
-2. **Install dependencies**: `ddev composer install` (auto-runs on start)
+1. **Start Docker**: `docker compose up -d`
+2. **Install dependencies**: `docker compose exec php composer install`
 3. **Make changes** to source code
-4. **Run tests**: `ddev composer test` or `ddev exec php vendor/bin/phpunit`
-5. **Check code quality**: `ddev composer quality`
-6. **Generate configs**: `ddev exec php run.php` (auto-runs on start)
+4. **Run tests**: `docker compose exec php composer test`
+5. **Check code quality**: `docker compose exec php composer quality`
+6. **Generate configs**: `docker compose exec php composer generate`
 7. **Commit changes** including generated config files
 
 ## Testing
@@ -130,27 +131,44 @@ The project uses:
 - **PHP CodeSniffer 4.0** (PSR-12 standard) for code style
 - **Psalm** for additional static analysis
 
-Run all quality checks:
+Run all quality checks via Composer script:
 ```bash
-ddev composer quality
+docker compose exec php composer quality
 ```
 
-This runs: PHPStan → PHPCS → Psalm → Tests
+This runs in sequence: PHPStan → PHPCS → Psalm → Tests
 
 ## Code Style
 
-- **PSR-12** coding standard
+- **PSR-12** coding standard (enforced by PHP CodeSniffer)
+- **PHP-CS-Fixer** available for additional code formatting
 - PHP 8.3+ features (typed properties, enums, etc.)
 - Strict types: `declare(strict_types=1);` in all files
 
+Available code style tools:
+```bash
+# Check code style (PHPCS - primary tool)
+docker compose exec php composer phpcs
+
+# Auto-fix code style (PHPCS)
+docker compose exec php composer phpcbf
+
+# Check with PHP-CS-Fixer (optional)
+docker compose exec php composer php-cs-fixer
+
+# Auto-fix with PHP-CS-Fixer
+docker compose exec php composer php-cs-fixer:fix
+```
+
 ## Important Notes for Agents
 
-1. **Always use DDEV commands** - PHP/Composer are containerized
-2. **Generated files are tracked** - Config files in the root are committed to git
-3. **Domain list is large** - `src/domains.txt` has 9000+ domains
-4. **No database** - This is a pure PHP library, no DB needed
-5. **PHP 8.3+ only** - Uses modern PHP features
-6. **PHP_CodeSniffer 4.0** - Recently upgraded, no custom sniffs needed
+1. **Always use `docker compose` commands** - PHP/Composer are containerized
+2. **Use Composer scripts** - Prefer `composer generate`, `composer test`, `composer quality` over direct PHP/vendor commands
+3. **Generated files are tracked** - Config files in the root are committed to git
+4. **Domain list is large** - `src/domains.txt` has 9000+ domains
+5. **No database** - This is a pure PHP library, no DB needed
+6. **PHP 8.3+ only** - Uses modern PHP features
+7. **Shell is `sh`** - Container doesn't have bash, use `docker compose exec php sh`
 
 ## Common Tasks
 
@@ -162,17 +180,19 @@ This runs: PHPStan → PHPCS → Psalm → Tests
 
 ### Updating the domain list
 1. Edit `src/domains.txt`
-2. Run `ddev exec php run.php` to regenerate all configs
+2. Run `docker compose exec php composer generate` to regenerate all configs
 3. Commit both the domain list and generated configs
 
 ### Running specific tests
 ```bash
-ddev exec php vendor/bin/phpunit tests/Unit/GeneratorTest.php
+docker compose exec php vendor/bin/phpunit tests/Unit/GeneratorTest.php
 ```
 
-### Checking code style
+### Running individual quality checks
 ```bash
-ddev exec php vendor/bin/phpcs src/ tests/
-ddev exec php vendor/bin/phpcbf src/ tests/  # Auto-fix
+docker compose exec php composer phpstan  # Static analysis
+docker compose exec php composer phpcs    # Code style check
+docker compose exec php composer phpcbf   # Auto-fix code style
+docker compose exec php composer psalm    # Additional static analysis
 ```
 

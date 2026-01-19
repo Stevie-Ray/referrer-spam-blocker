@@ -1,0 +1,13 @@
+services:
+  php:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: referrer-spam-blocker-php
+    working_dir: /app
+    volumes:
+      - .:/app
+    environment:
+      COMPOSER_ALLOW_SUPERUSER: "1"
+    tty: true
+    stdin_open: true
