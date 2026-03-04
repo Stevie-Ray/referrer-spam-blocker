@@ -48,6 +48,9 @@ docker compose down
 # Install dependencies
 docker compose exec php composer install
 
+# Update dependencies
+docker compose exec php composer update
+
 # Generate config files
 docker compose exec php composer generate
 

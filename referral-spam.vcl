@@ -1,5 +1,5 @@
 # https://github.com/Stevie-Ray/referrer-spam-blocker
-# Updated 2026-01-19 22:02:28
+# Updated 2026-03-04 18:14:04
 
 sub block_referral_spam {
 	if (
@@ -600,6 +600,7 @@ sub block_referral_spam {
 		req.http.Referer ~ "(?i)bradleylive\.xyz" ||
 		req.http.Referer ~ "(?i)brains2\.biz" ||
 		req.http.Referer ~ "(?i)brakehawk\.com" ||
+		req.http.Referer ~ "(?i)brandnewtube\.com" ||
 		req.http.Referer ~ "(?i)brandov\.ru" ||
 		req.http.Referer ~ "(?i)brateg\.xyz" ||
 		req.http.Referer ~ "(?i)brauni\.com\.ua" ||
@@ -1340,6 +1341,7 @@ sub block_referral_spam {
 		req.http.Referer ~ "(?i)fashionindeed\.ml" ||
 		req.http.Referer ~ "(?i)fast\-wordpress\-start\.com" ||
 		req.http.Referer ~ "(?i)fastgg\.net" ||
+		req.http.Referer ~ "(?i)fatrizscae\.online" ||
 		req.http.Referer ~ "(?i)favorcosmetics\.com" ||
 		req.http.Referer ~ "(?i)favoritemoney\.ru" ||
 		req.http.Referer ~ "(?i)favoritki\-msk\.ru" ||

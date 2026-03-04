@@ -1,5 +1,5 @@
 # https://github.com/Stevie-Ray/referrer-spam-blocker
-# Updated 2026-01-19 22:02:28
+# Updated 2026-03-04 18:14:04
 
 #
 # Put referral-spam.res in /path/to/vassals, then include it from within
@@ -606,6 +606,7 @@ route-referer = (?i)bpro1\.top break:403 Forbidden
 route-referer = (?i)bradleylive\.xyz break:403 Forbidden
 route-referer = (?i)brains2\.biz break:403 Forbidden
 route-referer = (?i)brakehawk\.com break:403 Forbidden
+route-referer = (?i)brandnewtube\.com break:403 Forbidden
 route-referer = (?i)brandov\.ru break:403 Forbidden
 route-referer = (?i)brateg\.xyz break:403 Forbidden
 route-referer = (?i)brauni\.com\.ua break:403 Forbidden
@@ -1346,6 +1347,7 @@ route-referer = (?i)fashiong\.ru break:403 Forbidden
 route-referer = (?i)fashionindeed\.ml break:403 Forbidden
 route-referer = (?i)fast\-wordpress\-start\.com break:403 Forbidden
 route-referer = (?i)fastgg\.net break:403 Forbidden
+route-referer = (?i)fatrizscae\.online break:403 Forbidden
 route-referer = (?i)favorcosmetics\.com break:403 Forbidden
 route-referer = (?i)favoritemoney\.ru break:403 Forbidden
 route-referer = (?i)favoritki\-msk\.ru break:403 Forbidden

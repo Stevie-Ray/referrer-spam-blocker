@@ -1,5 +1,5 @@
 # https://github.com/Stevie-Ray/referrer-spam-blocker
-# Updated 2026-01-19 22:02:28
+# Updated 2026-03-04 18:14:04
 
 
 <IfModule mod_rewrite.c>
@@ -603,6 +603,7 @@ RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*bpro1\.top.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*bradleylive\.xyz.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*brains2\.biz.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*brakehawk\.com.*$ [NC,OR]
+RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*brandnewtube\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*brandov\.ru.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*brateg\.xyz.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*brauni\.com\.ua.*$ [NC,OR]
@@ -1343,6 +1344,7 @@ RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*fashiong\.ru.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*fashionindeed\.ml.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*fast\-wordpress\-start\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*fastgg\.net.*$ [NC,OR]
+RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*fatrizscae\.online.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*favorcosmetics\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*favoritemoney\.ru.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*favoritki\-msk\.ru.*$ [NC,OR]
@@ -5104,6 +5106,7 @@ SetEnvIfNoCase Referer bpro1\.top spambot=yes
 SetEnvIfNoCase Referer bradleylive\.xyz spambot=yes
 SetEnvIfNoCase Referer brains2\.biz spambot=yes
 SetEnvIfNoCase Referer brakehawk\.com spambot=yes
+SetEnvIfNoCase Referer brandnewtube\.com spambot=yes
 SetEnvIfNoCase Referer brandov\.ru spambot=yes
 SetEnvIfNoCase Referer brateg\.xyz spambot=yes
 SetEnvIfNoCase Referer brauni\.com\.ua spambot=yes
@@ -5844,6 +5847,7 @@ SetEnvIfNoCase Referer fashiong\.ru spambot=yes
 SetEnvIfNoCase Referer fashionindeed\.ml spambot=yes
 SetEnvIfNoCase Referer fast\-wordpress\-start\.com spambot=yes
 SetEnvIfNoCase Referer fastgg\.net spambot=yes
+SetEnvIfNoCase Referer fatrizscae\.online spambot=yes
 SetEnvIfNoCase Referer favorcosmetics\.com spambot=yes
 SetEnvIfNoCase Referer favoritemoney\.ru spambot=yes
 SetEnvIfNoCase Referer favoritki\-msk\.ru spambot=yes
