@@ -8,6 +8,7 @@ use Algo26\IdnaConvert\Exception\AlreadyPunycodeException;
 use Algo26\IdnaConvert\Exception\InvalidCharacterException;
 use Algo26\IdnaConvert\ToIdn;
 use Algo26\IdnaConvert\EncodingHelper\ToUtf8;
+use Composer\InstalledVersions;
 use RuntimeException;
 
 class DomainProcessor
@@ -17,13 +18,24 @@ class DomainProcessor
 
     private readonly string $domainsFile;
 
+    private readonly ?string $matomoDomainsFile;
+
     private readonly ToIdn $idnConverter;
 
     private readonly ToUtf8 $encodingHelper;
 
-    public function __construct(?string $domainsFile = null)
+    public function __construct(?string $domainsFile = null, ?string $matomoDomainsFile = null)
     {
+        if ($domainsFile === null && $matomoDomainsFile === null) {
+            $packagePath = InstalledVersions::getInstallPath('matomo/referrer-spam-blacklist');
+            if ($packagePath === null) {
+                throw new RuntimeException('Cannot locate the Matomo domain list. Run composer install.');
+            }
+            $matomoDomainsFile = $packagePath . '/spammers.txt';
+        }
+
         $this->domainsFile = $domainsFile ?? self::DEFAULT_DOMAINS_FILE;
+        $this->matomoDomainsFile = $matomoDomainsFile;
         $this->idnConverter = new ToIdn();
         $this->encodingHelper = new ToUtf8();
     }
@@ -38,7 +50,10 @@ class DomainProcessor
      */
     public function processDomains(): array
     {
-        $domains = $this->readDomainsFile();
+        $domains = $this->readDomainsFile($this->domainsFile);
+        if ($this->matomoDomainsFile !== null) {
+            $domains = array_merge($domains, $this->readDomainsFile($this->matomoDomainsFile));
+        }
         $processedDomains = $this->processDomainList($domains);
         $uniqueDomains = $this->deduplicateAndSort($processedDomains);
 
@@ -53,11 +68,11 @@ class DomainProcessor
      * @return array<string>
      * @throws RuntimeException
      */
-    private function readDomainsFile(): array
+    private function readDomainsFile(string $domainsFile): array
     {
-        $handle = @fopen($this->domainsFile, 'r');
+        $handle = @fopen($domainsFile, 'r');
         if (!$handle) {
-            throw new RuntimeException('Error opening file ' . $this->domainsFile);
+            throw new RuntimeException('Error opening file ' . $domainsFile);
         }
 
         $domains = [];

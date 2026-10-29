@@ -131,6 +131,14 @@ You can also prevent **ghost** referral spam by:
 
 ## Command Line Interface
 
+Generation merges the list from the installed
+[`matomo/referrer-spam-blacklist`](https://github.com/matomo-org/referrer-spam-list) Composer package into
+`src/domains.txt`. Existing local domains are retained; the combined list is validated, deduplicated and sorted.
+Run `docker compose exec php composer update matomo/referrer-spam-blacklist` to update the packaged list,
+then `docker compose exec php composer generate` to regenerate the configuration files.
+Generation uses the installed package and does not need internet access.
+The package follows Matomo's stable releases, which may lag behind its GitHub `master` list.
+
 ```bash
 # Basic usage
 php run.php
